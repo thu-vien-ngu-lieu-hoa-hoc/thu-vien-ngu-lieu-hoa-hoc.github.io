@@ -614,7 +614,8 @@ let errHidden = false;
 function errBox(){
   let h = '';
   if(NL.loi.length) h += `<div class="box err no-print"><div class="box-title">Có ${NL.loi.length} lỗi dữ liệu – các chủ đề khác vẫn hiển thị bình thường</div><ul>${NL.loi.map(e=>`<li><code>${esc(e.tep||'')}</code> ${esc(e.msg)}</li>`).join('')}</ul></div>`;
-  if(!errHidden && C.hien_ban_nhap && NL.ds.some(x=>ttCua(x)==='nhap')) h += `<div class="box warn no-print small" id="draftNote"><button class="x" aria-label="Ẩn nhắc nhở" data-hide-draft>×</button><b>Đang hiện cả bản nháp</b> (hien_ban_nhap = true). Trước khi nộp, đổi thành <b>false</b> trong khối CAU_HINH để ẩn ngữ liệu chưa kiểm chứng.</div>`;
+  const trenMayNhom = location.protocol === 'file:' || /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
+  if(trenMayNhom && !errHidden && C.hien_ban_nhap && NL.ds.some(x=>ttCua(x)==='nhap')) h += `<div class="box warn no-print small" id="draftNote"><button class="x" aria-label="Ẩn nhắc nhở" data-hide-draft>×</button><b>Đang hiện cả bản nháp</b> (hien_ban_nhap = true). Trước khi nộp, đổi thành <b>false</b> trong khối CAU_HINH để ẩn ngữ liệu chưa kiểm chứng.</div>`;
   return h;
 }
 const crumbs = items => '<nav class="crumbs" aria-label="Đường dẫn">' + items.map((it,i) => i<items.length-1 ? `<a href="#/${it[0]}">${esc(it[1])}</a><span>›</span>` : `<span>${esc(it[1])}</span>`).join('') + '</nav>';
