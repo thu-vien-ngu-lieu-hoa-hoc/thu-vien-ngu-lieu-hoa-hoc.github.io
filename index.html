@@ -480,9 +480,17 @@ figure .table-wrap{margin-bottom:0}
 .htoc ol{columns:2;column-gap:28px;margin:0 0 12px;padding-left:22px} .htoc li{margin:0 0 6px;break-inside:avoid}
 .htoc a{color:var(--accent-ink);text-decoration:none} .htoc a:hover{text-decoration:underline}
 @media (max-width:640px){.htoc ol{columns:1}}
-.hs{scroll-margin-top:84px;margin:34px 0 0}
-.hs-h{display:flex;align-items:center;gap:12px;margin:0 0 14px;padding-bottom:10px;border-bottom:2px solid var(--accent-soft)}
-.hs-h span{flex:none;display:inline-grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--accent);color:#fff;font:600 17px var(--f-display)}
+.hs{scroll-margin-top:84px;margin:12px 0 0;border:1px solid var(--line);border-radius:16px;background:var(--surface);overflow:hidden}
+.hs>summary.hs-h{display:flex;align-items:center;gap:14px;margin:0;padding:14px 18px;border:0;cursor:pointer;list-style:none}
+.hs>summary::-webkit-details-marker{display:none}
+.hs>summary::after{content:"";margin-left:auto;flex:none;width:10px;height:10px;border-right:2px solid var(--ink-3);border-bottom:2px solid var(--ink-3);transform:rotate(45deg);transition:transform .2s}
+.hs[open]>summary::after{transform:rotate(225deg)}
+.hs>summary:hover{background:var(--bg)} .hs[open]>summary{border-bottom:1px solid var(--line);background:var(--accent-soft)}
+.hs-n{flex:none;display:inline-grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--accent);color:#fff;font:600 17px var(--f-display)}
+.hs-t b{display:block;font:600 19px/1.3 var(--f-display);color:var(--ink)} .hs-t small{display:block;color:var(--ink-3);font-size:14px;margin-top:2px}
+.hs-b{padding:16px 18px 8px}
+.htoc-act{display:flex;flex-wrap:wrap;gap:8px}
+@media (max-width:520px){.hs>summary.hs-h{padding:12px 14px;gap:10px}.hs-b{padding:12px 12px 4px}.hs-t b{font-size:17px}}
 .hs .guide{border:0;padding:0;background:none}
 .ht-wrap{margin:8px 0 12px}
 .ht{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--surface);font-size:15.5px}
@@ -502,7 +510,7 @@ figure .table-wrap{margin-bottom:0}
 .hfig figcaption{font-size:14px;font-style:italic;color:var(--ink-3);margin-top:6px}
 .hex{border-left:4px solid var(--accent);background:var(--accent-soft);border-radius:0;padding:10px 14px;margin:10px 0}
 .hol{padding-left:22px;margin:0 0 12px} .hol li{margin:6px 0;line-height:1.6}
-details.acc.hs{margin-top:34px}
+
 .quick{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:12px 0}
 @media (max-width:860px){.quick{grid-template-columns:1fr}}
 .qk{display:flex;flex-direction:column;gap:10px;border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:18px 18px 16px;box-shadow:0 1px 2px rgba(0,0,0,.04)}
@@ -1223,7 +1231,9 @@ function pageHuongDan(){
   const P = promptsFor(null);
   setTimeout(() => wirePrompts($('#main'), P));
   const TOC = ['Dùng thư viện trong 4 bước','Tìm ngữ liệu','Một ngữ liệu gồm những gì?','Sáu loại ngữ liệu','Dùng vào lúc nào trong bài học?','Câu hỏi theo từng biểu hiện','Câu hỏi theo các kì thi','Soạn thêm câu hỏi với AI','Góp ý và đóng góp ngữ liệu'];
-  const sec = (n, body) => '<section class="hs" id="shd-' + n + '"><h2 class="hs-h"><span>' + n + '</span>' + TOC[n-1] + '</h2>' + body + '</section>';
+  const SUB = ['4 thao tác chính, đi kèm đường dẫn','Bộ lọc trên trang Tra cứu','6 mục trong mỗi ngữ liệu','Đặc điểm và cách dùng từng loại','Từ mở đầu bài đến kiểm tra, ôn thi','Gợi ý câu hỏi cho TH1–TH5, VD1–VD5','Tốt nghiệp THPT, TSA, HSA, SPT','5 bước dùng prompt, 9 prompt mẫu','Báo lỗi, góp ý, gửi ngữ liệu mới'];
+  const sec = (n, body, tit, sub) => '<details class="hs" id="shd-' + n + '"' + (n === 1 ? ' open' : '') + '><summary class="hs-h"><span class="hs-n">' + (typeof n === 'number' ? n : '+') + '</span><span class="hs-t"><b>' + (tit || TOC[n-1]) + '</b><small>' + (sub || SUB[n-1]) + '</small></span></summary><div class="hs-b">' + body + '</div></details>';
+  setTimeout(() => { const m = $('#main'); $$('[data-hs]', m).forEach(b => b.addEventListener('click', () => $$('details.hs', m).forEach(d => d.open = b.dataset.hs === '1'))); });
   const tb = (hd, rows, w) => '<div class="ht-wrap"><table class="ht"><thead><tr>' + hd.map((x,i) => '<th' + (w ? ' style="width:' + w[i] + '%"' : '') + '>' + x + '</th>').join('') + '</tr></thead><tbody>' +
     rows.map(r => '<tr>' + r.map((c,i) => '<td data-l="' + hd[i] + '">' + c + '</td>').join('') + '</tr>').join('') + '</tbody></table></div>';
   const fig = (src, cap) => '<figure class="hfig"><img src="' + src + '" alt="' + cap + '" loading="lazy"><figcaption>' + cap + '</figcaption></figure>';
@@ -1232,7 +1242,8 @@ function pageHuongDan(){
     <h1>Hướng dẫn sử dụng</h1>
     <p class="lead">Website cung cấp hệ thống ngữ liệu hoá học gắn với các bối cảnh thực tiễn, kèm theo dữ liệu có thật từ các nguồn tin cậy, là nguyên liệu để xây dựng bài tập, câu hỏi đánh giá năng lực môn Hoá học.</p>
     <nav class="htoc" aria-label="Mục lục hướng dẫn"><b>Mục lục</b><ol>${TOC.map((x,i) => '<li><a href="#shd-' + (i+1) + '">' + x + '</a></li>').join('')}<li><a href="#shd-p">Phụ lục: Bộ 9 prompt mẫu</a></li></ol>
-      ${C.file_huong_dan ? '<a class="btn ghost" href="' + esc(C.file_huong_dan) + '" download>' + icon('print',16) + ' Tải hướng dẫn (Word)</a>' : ''}</nav>
+      <div class="htoc-act">${C.file_huong_dan ? '<a class="btn ghost" href="' + esc(C.file_huong_dan) + '" download>' + icon('print',16) + ' Tải hướng dẫn (Word)</a>' : ''}<button class="btn ghost" data-hs="1">Mở tất cả</button><button class="btn ghost" data-hs="0">Thu gọn tất cả</button></div></nav>
+    <p class="small muted">Bấm vào tên mục để mở hoặc thu gọn.</p>
 
     ${sec(1, guideBand(false).replace('<div class="guide-hd"><h2>Dùng thư viện trong 4 bước</h2></div>',''))}
 
@@ -1278,7 +1289,7 @@ function pageHuongDan(){
     ${sec(9, '<ul class="hol"><li>Trang <a href="#/phan-hoi">Phản hồi &amp; đóng góp</a>: báo lỗi số liệu, nguồn, câu hỏi; góp ý giao diện; gửi ngữ liệu mới. Biểu mẫu không thu thập email.</li><li>Ngữ liệu đóng góp đi qua 4 bước: Gửi → Nhóm tiếp nhận (đối chiếu nguồn, biên tập) → Chuyên gia kiểm duyệt → Công khai, ghi tên người đóng góp.</li><li>Một ngữ liệu đóng góp cần có: bối cảnh gắn với chủ đề Hoá học 10, 11, 12; số liệu thật có đơn vị, năm, điều kiện đo; nguồn gốc với đường dẫn trực tiếp; giấy phép (nếu biết) và gợi ý 1–2 câu hỏi.</li></ul>' +
       '<div class="btn-row">' + (C.link_gop_y ? '<a class="btn" href="' + esc(C.link_gop_y) + '" target="_blank" rel="noopener">Gửi góp ý</a>' : '') + '<a class="btn ghost" href="#/phan-hoi">Đóng góp ngữ liệu</a></div>')}
 
-    <details class="acc hs" id="shd-p"><summary><span class="acc-n">+</span><span class="acc-t"><b>Phụ lục. Bộ 9 prompt mẫu</b><small>Bấm để mở. Trên từng trang ngữ liệu, prompt đã được điền sẵn nội dung.</small></span></summary><div class="acc-b">${promptList(P)}</div></details>
+    ${sec('p', promptList(P), 'Phụ lục. Bộ 9 prompt mẫu', 'Trên từng trang ngữ liệu, prompt đã được điền sẵn nội dung')}
 
     <div class="hd-box team"><div><b>Nhóm thực hiện</b>
       <div class="kv"><div>Đơn vị</div><div>${txt(C.don_vi)}</div><div>Sinh viên</div><div>${txt(C.nhom)}</div></div></div>
