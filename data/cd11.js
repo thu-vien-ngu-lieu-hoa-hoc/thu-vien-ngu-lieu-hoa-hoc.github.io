@@ -52,7 +52,7 @@ NL.add([
    ],
    "ghi_chu": "Theo WHO/FAO/UNU (2007), Technical Report Series 935, Bảng 23 (nhu cầu amino acid thiết yếu của người trưởng thành, mg/kg/ngày)."
   },
-  "hinh_goi_y": "Công thức cấu tạo chung của α-amino acid (nhóm tự vẽ).",
+  "hinh_goi_y": "Công thức cấu tạo chung của α-amino acid (tự vẽ).",
   "nguon": [
    {
     "trich_dan": "WHO, FAO, & UNU. (2007). Protein and amino acid requirements in human nutrition: Report of a joint FAO/WHO/UNU expert consultation (WHO Technical Report Series 935), Bảng 23. Truy cập 06/11/2026.",
@@ -106,7 +106,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -115,7 +115,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Sự đông tụ protein trong lòng trắng trứng",
   "yccd": "Trình bày được tính chất của protein: sự đông tụ, phản ứng màu biuret; thực hiện được thí nghiệm.",
-  "boi_canh": "Lòng trắng trứng sống trong suốt, lỏng sánh; khi luộc, nó đông lại thành màu trắng đục. Khi vắt chanh vào sữa, sữa cũng vón cục. Đó là hiện tượng đông tụ protein.\n\nPhân tử protein là chuỗi dài các amino acid nối với nhau bằng liên kết peptide, cuộn gập thành hình dạng không gian xác định nhờ các liên kết hydrogen, tương tác ion, tương tác kị nước. Nhiệt độ cao, acid, base, muối kim loại nặng hoặc alcohol phá vỡ các tương tác này, làm protein mất hình dạng ban đầu (biến tính), các chuỗi duỗi ra và kết dính với nhau thành khối đông tụ.\n\nThí nghiệm gợi ý (nhóm biên soạn tự thiết kế): chuẩn bị dung dịch lòng trắng trứng pha loãng, chia vào 5 ống nghiệm. Ống 1 để đối chứng; ống 2 đun nóng; ống 3 thêm vài giọt giấm hoặc nước chanh; ống 4 thêm vài giọt ethanol 90°; ống 5 thêm vài giọt dung dịch CuSO₄. Có thể lấy thêm một ống để làm phản ứng màu biuret: thêm NaOH rồi vài giọt CuSO₄ loãng, dung dịch chuyển màu tím đặc trưng cho liên kết peptide.\n\nHiện tượng biến tính giải thích nhiều điều trong đời sống: nấu chín thức ăn, khử trùng bằng cồn, làm đậu phụ, làm sữa chua.",
+  "boi_canh": "Lòng trắng trứng sống trong suốt, lỏng sánh; khi luộc, nó đông lại thành màu trắng đục. Khi vắt chanh vào sữa, sữa cũng vón cục. Đó là hiện tượng đông tụ protein.\n\nPhân tử protein là chuỗi dài các amino acid nối với nhau bằng liên kết peptide, cuộn gập thành hình dạng không gian xác định nhờ các liên kết hydrogen, tương tác ion, tương tác kị nước. Nhiệt độ cao, acid, base, muối kim loại nặng hoặc alcohol phá vỡ các tương tác này, làm protein mất hình dạng ban đầu (biến tính), các chuỗi duỗi ra và kết dính với nhau thành khối đông tụ.\n\nThí nghiệm gợi ý: chuẩn bị dung dịch lòng trắng trứng pha loãng, chia vào 5 ống nghiệm. Ống 1 để đối chứng; ống 2 đun nóng; ống 3 thêm vài giọt giấm hoặc nước chanh; ống 4 thêm vài giọt ethanol 90°; ống 5 thêm vài giọt dung dịch CuSO₄. Có thể lấy thêm một ống để làm phản ứng màu biuret: thêm NaOH rồi vài giọt CuSO₄ loãng, dung dịch chuyển màu tím đặc trưng cho liên kết peptide.\n\nHiện tượng biến tính giải thích nhiều điều trong đời sống: nấu chín thức ăn, khử trùng bằng cồn, làm đậu phụ, làm sữa chua.",
   "bang_so_lieu": {
    "tieu_de": "Bảng ghi kết quả (học sinh tự quan sát)",
    "cot": [
@@ -155,9 +155,9 @@ NL.add([
      ""
     ]
    ],
-   "ghi_chu": "Thiết kế do nhóm biên soạn; kết quả do học sinh quan sát."
+   "ghi_chu": "Thí nghiệm gợi ý; kết quả do học sinh quan sát."
   },
-  "hinh_goi_y": "Ảnh các ống nghiệm sau thí nghiệm, nhất là ống biuret màu tím (nhóm tự chụp).",
+  "hinh_goi_y": "Ảnh các ống nghiệm sau thí nghiệm, nhất là ống biuret màu tím (ảnh tự chụp).",
   "nguon": [
    {
     "trich_dan": "OpenStax. (2018). Biology 2e, mục 3.4 Proteins (phần Protein Structure – denaturation). Truy cập 06/11/2026.",
@@ -210,7 +210,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu đo.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu đo.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -230,10 +230,10 @@ NL.add([
     "giay_phep": "Bài báo EHP (truy cập mở) – chỉ trích số liệu, tự viết lại"
    },
    {
-    "trich_dan": "DairyReporter. (07/07/2010). Codex sets limits for melamine in food to combat adulteration. Truy cập 06/11/2026.",
-    "url": "https://www.dairyreporter.com/Article/2010/07/07/Codex-sets-limits-for-melamine-in-food-to-combat-adulturation/",
-    "loai": "báo chí",
-    "giay_phep": "Chưa rõ – chỉ trích số liệu, tự viết lại"
+    "trich_dan": "Tổ chức Y tế Thế giới (WHO). (2010). International experts limit melamine levels in food (Ủy ban Codex Alimentarius, kì họp 33: 1 mg/kg trong sữa bột trẻ em; 2,5 mg/kg trong thực phẩm khác và thức ăn chăn nuôi). Truy cập 06/11/2026.",
+    "url": "https://www.who.int/news/item/11-12-2010-international-experts-limit-melamine-levels-in-food",
+    "loai": "trang thông tin chính thức",
+    "giay_phep": "© WHO – chỉ trích, tự viết lại"
    },
    {
     "trich_dan": "PubChem. Melamine (CID 7955), Compound summary. Truy cập 06/11/2026.",
@@ -288,7 +288,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -299,12 +299,12 @@ NL.add([
   "yccd": "Trình bày được phản ứng thuỷ phân protein; liên hệ quá trình sản xuất thực phẩm truyền thống Việt Nam.",
   "boi_canh": "Nước mắm là gia vị không thể thiếu của người Việt. Theo TCVN 5107:2018, nước mắm nguyên chất được làm từ chượp chín, tức hỗn hợp cá và muối được ủ lên men tự nhiên trong thời gian ít nhất 6 tháng.\n\nTrong thời gian ủ, các enzyme protease có sẵn trong thịt và ruột cá thuỷ phân dần protein thành peptide và amino acid. Chính các amino acid như glutamic acid tạo nên vị ngọt đậm, “umami” của nước mắm. Muối nồng độ cao ngăn vi khuẩn gây thối phát triển.\n\nTrên nhãn chai nước mắm thường ghi “độ đạm”, ví dụ 30 °N, 40 °N. Đây là lượng nitrogen toàn phần tính bằng gam trong 1 lít nước mắm. Tiêu chuẩn quốc gia TCVN 5107:2018 (thay thế TCVN 5107:2003) quy định các chỉ tiêu chất lượng của nước mắm, trong đó hàm lượng nitrogen toàn phần được tính bằng g/l.\n\nĐộ đạm cao thường cho nước mắm đậm đà hơn. Nhưng như bài học từ vụ melamine, độ đạm đo theo nitrogen cũng có thể bị làm giả bằng các chất giàu nitrogen; vì vậy cần thêm chỉ tiêu đạm amino acid và kiểm tra của cơ quan chức năng.",
   "bang_so_lieu": null,
-  "hinh_goi_y": "Ảnh nhãn hai chai nước mắm có độ đạm khác nhau (nhóm tự chụp).",
+  "hinh_goi_y": "Ảnh nhãn hai chai nước mắm có độ đạm khác nhau (ảnh tự chụp).",
   "nguon": [
    {
-    "trich_dan": "Bộ Khoa học và Công nghệ. (2018). TCVN 5107:2018 Nước mắm (mục 3.1 Thuật ngữ và định nghĩa). Truy cập 06/11/2026.",
-    "url": "https://hethongphapluat.com/tieu-chuan-quoc-gia-tcvn-5107-2018-ve-nuoc-mam.html",
-    "loai": "văn bản pháp quy",
+    "trich_dan": "Bộ Khoa học và Công nghệ. (2018). TCVN 5107:2018 Nước mắm (công bố theo Quyết định 672/QĐ-BKHCN ngày 28/3/2018), mục 3.1 Thuật ngữ và định nghĩa.",
+    "url": "",
+    "loai": "tiêu chuẩn quốc gia",
     "giay_phep": "Văn bản tiêu chuẩn – chỉ trích, tự viết lại"
    }
   ],
@@ -355,7 +355,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -366,7 +366,7 @@ NL.add([
   "yccd": "Vận dụng hiểu biết về protein và nhu cầu dinh dưỡng để phản biện, đưa ra quyết định hợp lí.",
   "boi_canh": "Trên mạng xã hội, nhiều quảng cáo khuyên học sinh, sinh viên tập thể hình uống bột protein (whey protein) hằng ngày để “tăng cơ nhanh”. Một hộp bột protein có giá vài trăm nghìn đến hơn một triệu đồng.\n\nTheo báo cáo của WHO, FAO và UNU (2007), lượng protein an toàn cho người trưởng thành khoẻ mạnh là khoảng 0,83 g cho mỗi kg cân nặng mỗi ngày. Người tập luyện thể thao cường độ cao có thể cần nhiều hơn, theo khuyến nghị của một số hiệp hội dinh dưỡng thể thao.\n\nMột bữa ăn Việt Nam thông thường đã có nhiều protein: Theo cơ sở dữ liệu FoodData Central (Bộ Nông nghiệp Hoa Kỳ): 100 g thịt lợn xay (84% nạc) chứa khoảng 18 g protein; trứng gà có 12,6 g/100 g, tức một quả 50 g khoảng 6,3 g; 100 g đậu phụ cứng khoảng 17,3 g; sữa tươi nguyên kem 3,15 g/100 g, tức một hộp 180 mL khoảng 5,7 g.\n\nProtein dư thừa không được cơ thể dự trữ dưới dạng cơ bắp. Cơ thể phân giải amino acid dư thừa, nhóm amino được chuyển thành urea và thải qua thận, phần còn lại có thể chuyển thành năng lượng hoặc chất béo. Cơ bắp chỉ tăng khi kết hợp tập luyện, ngủ đủ và ăn uống cân bằng.\n\nVậy có nên uống bột protein không?",
   "bang_so_lieu": null,
-  "hinh_goi_y": "Ảnh nhãn dinh dưỡng một hộp bột protein và một hộp sữa tươi (nhóm tự chụp).",
+  "hinh_goi_y": "Ảnh nhãn dinh dưỡng một hộp bột protein và một hộp sữa tươi (ảnh tự chụp).",
   "nguon": [
    {
     "trich_dan": "WHO, FAO, & UNU. (2007). Protein and amino acid requirements in human nutrition (WHO Technical Report Series 935), mục lượng protein an toàn 0,83 g/kg/ngày. Truy cập 06/11/2026.",
@@ -445,7 +445,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -516,7 +516,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  }
 ]);

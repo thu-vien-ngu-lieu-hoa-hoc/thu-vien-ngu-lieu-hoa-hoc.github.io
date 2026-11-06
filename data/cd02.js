@@ -3,7 +3,7 @@ NL.add([
   "id": "cd02-01",
   "chu_de": "cd02",
   "lop": "10",
-  "tieu_de": "Ảnh hưởng của nhiệt độ đến tốc độ phản ứng khi nấu bằng nồi áp suất",
+  "tieu_de": "Vì sao nồi áp suất nấu nhanh hơn?",
   "yccd": "Trình bày được ảnh hưởng của nhiệt độ đến tốc độ phản ứng; vận dụng hệ số nhiệt độ Van’t Hoff để giải thích các hiện tượng trong đời sống.",
   "boi_canh": "Nấu chín thức ăn thực chất là hàng loạt phản ứng hoá học: protein bị biến tính, tinh bột bị hồ hoá, mô sợi bị phân huỷ. Tốc độ các phản ứng này phụ thuộc mạnh vào nhiệt độ.\n\nKhi nấu bằng nồi thường, nhiệt độ của nước không vượt quá nhiệt độ sôi. Nhiệt độ sôi lại phụ thuộc áp suất. Theo dữ liệu tính chất của nước trong NIST Chemistry WebBook, ở 101,4 kPa (xấp xỉ 1 atm) nước sôi ở 100 °C; ở khoảng 198,7 kPa, nước sôi ở 120 °C. Nồi áp suất giữ hơi nước lại, làm áp suất trong nồi tăng lên gần 2 atm, nên nước sôi ở khoảng 120 °C.\n\nNgược lại, ở vùng núi cao, áp suất khí quyển thấp hơn. Theo bảng dưới, khi áp suất chỉ còn khoảng 84,6 kPa, nước sôi ở 95 °C; nấu ăn trên núi cao vì vậy lâu chín hơn.\n\nQuy tắc Van’t Hoff cho biết: với nhiều phản ứng, khi tăng nhiệt độ thêm 10 °C, tốc độ tăng khoảng 2–4 lần (hệ số γ). Nhờ đó có thể ước lượng thời gian nấu ở các điều kiện khác nhau.",
   "bang_so_lieu": {
@@ -36,7 +36,7 @@ NL.add([
    ],
    "ghi_chu": "Áp suất hơi bão hoà của nước, trích từ bảng tính chất bão hoà của nước trên NIST Chemistry WebBook (70,182; 84,608; 101,42; 143,38; 198,67 kPa), làm tròn đến 0,1 kPa."
   },
-  "hinh_goi_y": "Ảnh nồi áp suất có van xả và nhãn áp suất làm việc (nhóm tự chụp).",
+  "hinh_goi_y": "Ảnh nồi áp suất có van xả và nhãn áp suất làm việc (ảnh tự chụp).",
   "nguon": [
    {
     "trich_dan": "Lemmon, E. W., McLinden, M. O., & Friend, D. G. Thermophysical Properties of Fluid Systems. NIST Chemistry WebBook (SRD 69): Water – Saturation properties, 90–120 °C. Truy cập 06/11/2026.",
@@ -93,14 +93,14 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
   "id": "cd02-02",
   "chu_de": "cd02",
   "lop": "10",
-  "tieu_de": "Tốc độ phản ứng giữa đá vôi và hydrochloric acid",
+  "tieu_de": "Ảnh hưởng của diện tích tiếp xúc tới tốc độ phản ứng",
   "yccd": "Thực hiện được thí nghiệm nghiên cứu ảnh hưởng của nồng độ, nhiệt độ, diện tích bề mặt đến tốc độ phản ứng; xử lí số liệu, rút ra kết luận.",
   "boi_canh": "Phản ứng giữa đá vôi và dung dịch hydrochloric acid là thí nghiệm quen thuộc để nghiên cứu tốc độ phản ứng: CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g).\n\nKhí CO₂ thoát ra làm khối lượng cốc phản ứng giảm dần. Đặt cốc lên cân điện tử và ghi khối lượng sau mỗi 30 giây, học sinh có thể vẽ đồ thị khối lượng giảm theo thời gian. Độ dốc của đồ thị cho biết tốc độ phản ứng.\n\nTheo định luật bảo toàn khối lượng, 1,00 g CaCO₃ (0,0100 mol) phản ứng hết sẽ giải phóng 0,0100 mol CO₂, tức 0,44 g. Đây là mức giảm khối lượng tối đa nếu acid dư.\n\nĐể so sánh, có thể làm bốn thí nghiệm với cùng 1,00 g CaCO₃ và 50 mL acid dư, chỉ thay đổi một yếu tố mỗi lần: dạng đá vôi (viên hay bột), nồng độ acid (1 M hay 2 M), nhiệt độ (phòng hay nước ấm 40 °C). Phương pháp thay đổi một biến, giữ nguyên các biến khác là nền tảng của nghiên cứu khoa học.",
   "bang_so_lieu": {
@@ -137,7 +137,7 @@ NL.add([
      "40 °C"
     ]
    ],
-   "ghi_chu": "Thiết kế do nhóm biên soạn; số liệu khối lượng theo thời gian do học sinh đo."
+   "ghi_chu": "Thí nghiệm gợi ý; số liệu khối lượng theo thời gian do học sinh đo."
   },
   "hinh_goi_y": "Đồ thị khối lượng – thời gian của bốn thí nghiệm do học sinh vẽ; hoặc mô phỏng tốc độ phản ứng trong ChemCollective / PhET “Reactions & Rates”.",
   "nguon": [
@@ -200,14 +200,14 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu đo.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu đo.",
   "cap_nhat": "06/11/2026"
  },
  {
   "id": "cd02-03",
   "chu_de": "cd02",
   "lop": "10",
-  "tieu_de": "Ảnh hưởng của diện tích bề mặt đến tốc độ cháy của bụi đường",
+  "tieu_de": "Khi bụi đường trở thành “thuốc nổ”",
   "yccd": "Trình bày được ảnh hưởng của diện tích bề mặt tiếp xúc đến tốc độ phản ứng; vận dụng giải thích các sự cố trong thực tiễn.",
   "boi_canh": "Đường ăn là chất quen thuộc, khó bắt lửa khi ở dạng hạt. Nhưng khi bị nghiền thành bụi mịn lơ lửng trong không khí, đường có thể cháy nhanh đến mức gây nổ.\n\nNgày 7/2/2008, tại nhà máy tinh luyện đường Imperial Sugar ở Port Wentworth, bang Georgia (Hoa Kỳ), lượng lớn bụi đường tích tụ trong toà nhà đóng gói đã bắt lửa và gây ra chuỗi vụ nổ. Theo Ban Điều tra An toàn Hoá chất Hoa Kỳ (CSB), vụ nổ làm 14 người chết và 38 người bị thương, trong đó 14 người bị bỏng nặng, nguy hiểm đến tính mạng. CSB kết luận nguyên nhân chính là bụi đường không được thu gom, vệ sinh thường xuyên.\n\nBụi bột mì, bột gỗ, bột nhôm, bụi than cũng có nguy cơ tương tự. Khi một khối chất rắn bị chia nhỏ, tổng diện tích bề mặt tăng rất nhanh, oxygen tiếp xúc với nhiều phân tử hơn, phản ứng cháy xảy ra gần như tức thời.\n\nVì vậy, các nhà máy chế biến bột, gỗ, than phải có hệ thống hút bụi, chống tĩnh điện và quy trình vệ sinh nghiêm ngặt.",
   "bang_so_lieu": null,
@@ -268,14 +268,14 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
   "id": "cd02-04",
   "chu_de": "cd02",
   "lop": "10",
-  "tieu_de": "Chất xúc tác trong bộ chuyển đổi khí thải xe máy",
+  "tieu_de": "Ống xả xe máy và “phép màu” của chất xúc tác",
   "yccd": "Trình bày được ảnh hưởng của chất xúc tác đến tốc độ phản ứng; nêu được ứng dụng của chất xúc tác trong đời sống, sản xuất.",
   "boi_canh": "Khí thải động cơ chứa các chất độc: carbon monoxide (CO), hydrocarbon chưa cháy hết và các oxide của nitrogen (NOₓ). Để giảm ô nhiễm, Việt Nam áp dụng các tiêu chuẩn khí thải theo lộ trình của Quyết định 49/2011/QĐ-TTg. Theo khoản 2 Điều 4 của Quyết định này, xe mô tô hai bánh sản xuất, lắp ráp và nhập khẩu mới phải áp dụng tiêu chuẩn khí thải mức 3 từ ngày 01/01/2017. Lộ trình sau đó tiếp tục được điều chỉnh, nâng dần mức tiêu chuẩn.\n\nĐể đạt tiêu chuẩn, nhiều xe được lắp bộ chuyển đổi xúc tác trong ống xả. Bên trong là khối gốm hình tổ ong, phủ một lớp rất mỏng kim loại quý platinum (Pt), palladium (Pd), rhodium (Rh).\n\nTrên bề mặt chất xúc tác, các phản ứng xảy ra nhanh hơn nhiều: 2CO + O₂ → 2CO₂; 2NO + 2CO → N₂ + 2CO₂; hydrocarbon bị oxi hoá thành CO₂ và H₂O. Chất xúc tác không bị tiêu hao sau phản ứng.\n\nTuy nhiên, chất xúc tác chỉ hoạt động tốt khi đã nóng; và có thể bị ngộ độc (mất hoạt tính) bởi chì hoặc lưu huỳnh trong nhiên liệu kém chất lượng.",
   "bang_so_lieu": null,
@@ -335,7 +335,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -400,7 +400,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn, dịch nháp và soạn câu hỏi; nhóm đối sánh, chỉnh sửa.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn, dịch nháp và soạn câu hỏi; nội dung được đối sánh với nguồn và chỉnh sửa thủ công.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -488,7 +488,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  }
 ]);

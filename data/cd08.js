@@ -57,7 +57,7 @@ NL.add([
    ],
    "ghi_chu": "Tổng hợp theo các trang Chemguide về màu ion phức, chromium, manganese, iron và mục 22.11 ChemPRIME (LibreTexts); màu thực tế thay đổi theo nồng độ, phối tử và môi trường."
   },
-  "hinh_goi_y": "Ảnh dãy ống nghiệm chứa các dung dịch trên (nhóm tự chụp tại phòng thí nghiệm khoa).",
+  "hinh_goi_y": "Ảnh dãy ống nghiệm chứa các dung dịch trên (ảnh tự chụp tại phòng thí nghiệm khoa).",
   "nguon": [
    {
     "trich_dan": "Clark, J. Chemguide: The colours of complex metal ions (Cu²⁺ hấp thụ vùng đỏ; màu bổ sung). Truy cập 06/11/2026.",
@@ -129,7 +129,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -171,7 +171,7 @@ NL.add([
      ""
     ]
    ],
-   "ghi_chu": "Thiết kế do nhóm biên soạn; số liệu do học sinh đo trong PhET Beer’s Law Lab."
+   "ghi_chu": "Thí nghiệm gợi ý; số liệu do học sinh đo trong PhET Beer’s Law Lab."
   },
   "hinh_goi_y": "Ảnh chụp màn hình PhET Beer’s Law Lab với dung dịch copper(II) sulfate.",
   "nguon": [
@@ -228,7 +228,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu đo.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu đo.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -307,7 +307,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -318,7 +318,7 @@ NL.add([
   "yccd": "Trình bày được nguyên tắc sản xuất gang, thép; vận dụng tính toán theo phương trình phản ứng; liên hệ ngành công nghiệp thép Việt Nam.",
   "boi_canh": "Theo Hiệp hội Thép Thế giới (worldsteel), sản lượng thép thô toàn cầu năm 2023 đạt khoảng 1 892 triệu tấn; riêng Trung Quốc 1 019,1 triệu tấn, hơn một nửa. Việt Nam sản xuất 19,2 triệu tấn, đứng thứ 12 thế giới.\n\nĐể sản xuất gang, người ta nạp quặng sắt (như hematite chứa Fe₂O₃), than cốc và đá vôi vào lò cao. Than cốc cháy tạo CO; CO khử iron oxide ở nhiệt độ cao: Fe₂O₃ + 3CO → 2Fe + 3CO₂. Đá vôi giúp loại tạp chất silicate thành xỉ. Theo Chemguide, gang chứa khoảng 4% carbon nên cứng nhưng rất giòn.\n\nĐể có thép, gang được thổi oxygen trong lò chuyển, đốt bớt carbon và các tạp chất: thép mềm chứa đến khoảng 0,25% carbon, thép carbon cao đến khoảng 1,5% carbon (theo Chemguide). Một cách khác là nấu chảy thép phế liệu trong lò điện hồ quang, ít phát thải hơn.\n\nNgành thép là ngành công nghiệp nền tảng nhưng cũng phát thải nhiều CO₂ (theo worldsteel, khoảng 7–8% lượng khí nhà kính do con người phát thải), đặt ra yêu cầu giảm phát thải và tái chế.",
   "bang_so_lieu": null,
-  "hinh_goi_y": "Sơ đồ lò cao có các vùng nhiệt độ (nhóm tự vẽ lại từ tài liệu mở).",
+  "hinh_goi_y": "Sơ đồ lò cao có các vùng nhiệt độ (vẽ lại từ tài liệu mở).",
   "nguon": [
    {
     "trich_dan": "World Steel Association. (2024). World Steel in Figures 2024 (thế giới 1 892 Mt; Trung Quốc 1 019,1 Mt; Việt Nam 19,2 Mt, hạng 12, năm 2023). Truy cập 06/11/2026.",
@@ -386,7 +386,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -397,11 +397,11 @@ NL.add([
   "yccd": "Vận dụng kiến thức về các số oxi hoá của chromium và phản ứng oxi hoá – khử để đề xuất phương pháp xử lí ô nhiễm.",
   "boi_canh": "Ngành thuộc da dùng muối chromium(III) để biến da sống thành da thuộc bền, mềm. Nước thải từ xưởng thuộc da, mạ điện có thể chứa chromium ở hai dạng với tính chất rất khác nhau.\n\nChromium(III) (Cr³⁺) ít độc hơn, ở lượng rất nhỏ còn là vi chất cần thiết. Chromium(VI), tồn tại dưới dạng ion chromate (CrO₄²⁻) hoặc dichromate (Cr₂O₇²⁻), là chất oxi hoá mạnh, dễ thấm qua màng tế bào và được xếp vào nhóm chất gây ung thư cho người. Vì vậy, quy chuẩn kĩ thuật quốc gia về nước thải công nghiệp QCVN 40:2025/BTNMT (ban hành kèm Thông tư 06/2025/TT-BTNMT, hiệu lực từ 01/9/2025, thay QCVN 40:2011/BTNMT theo lộ trình) đặt giới hạn riêng cho Cr(VI): 0,1 mg/L (cột A) và 0,5 mg/L (cột B, C), thấp hơn nhiều so với giới hạn crom tổng 0,5 mg/L (cột A) và 2,0 mg/L (cột B, C).\n\nMột phương pháp xử lí phổ biến gồm hai bước. Bước 1: trong môi trường acid, dùng chất khử như iron(II) sulfate hoặc sodium hydrogen sulfite để khử Cr(VI) thành Cr(III). Bước 2: nâng pH bằng vôi hoặc NaOH để kết tủa Cr(OH)₃, lắng và tách bùn.\n\nMột làng nghề thuộc da muốn xây hệ thống xử lí nước thải chung. Họ cần chọn hoá chất, tính lượng dùng và quản lí bùn thải chứa chromium.",
   "bang_so_lieu": null,
-  "hinh_goi_y": "Sơ đồ quy trình xử lí nước thải chứa Cr(VI) hai bước (nhóm tự vẽ).",
+  "hinh_goi_y": "Sơ đồ quy trình xử lí nước thải chứa Cr(VI) hai bước (tự vẽ).",
   "nguon": [
    {
-    "trich_dan": "Bộ Tài nguyên và Môi trường. (2025). Thông tư 06/2025/TT-BTNMT ngày 28/02/2025 ban hành QCVN 40:2025/BTNMT Quy chuẩn kĩ thuật quốc gia về nước thải công nghiệp (Bảng giới hạn: Crom VI ≤ 0,1 / 0,5 / 0,5 mg/L; tổng Crom ≤ 0,5 / 2,0 / 2,0 mg/L) – toàn văn trên CaseLaw.vn. Truy cập 06/11/2026.",
-    "url": "https://caselaw.vn/van-ban-phap-luat/412862-thong-tu-so-06-2025-tt-btnmt-ngay-28-02-2025-cua-bo-truong-bo-tai-nguyen-va-moi-truong-quy-chuan-ky-thuat-quoc-gia-ve-nuoc-thai-cong-nghiep",
+    "trich_dan": "Bộ Tài nguyên và Môi trường. (2025). Thông tư số 06/2025/TT-BTNMT ngày 28/02/2025 ban hành QCVN 40:2025/BTNMT Quy chuẩn kĩ thuật quốc gia về nước thải công nghiệp (Bảng giới hạn: Crom VI ≤ 0,1 / 0,5 / 0,5 mg/L; tổng Crom ≤ 0,5 / 2,0 / 2,0 mg/L). Công báo Chính phủ số 559 + 560, ngày 19/03/2025. Truy cập 06/11/2026.",
+    "url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-06-2025-tt-btnmt-44497.htm",
     "loai": "văn bản pháp quy",
     "giay_phep": "Văn bản quy phạm pháp luật, không thuộc đối tượng bảo hộ quyền tác giả"
    },
@@ -460,7 +460,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -539,7 +539,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  }
 ]);

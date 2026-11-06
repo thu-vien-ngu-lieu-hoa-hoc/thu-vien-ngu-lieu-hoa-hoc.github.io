@@ -3,7 +3,7 @@ NL.add([
   "id": "cd06-01",
   "chu_de": "cd06",
   "lop": "12",
-  "tieu_de": "Phân cấp mức độ ăn mòn khí quyển theo ISO 9223",
+  "tieu_de": "Mức độ ăn mòn khí quyển theo ISO 9223",
   "yccd": "Trình bày được khái niệm ăn mòn kim loại, ăn mòn hoá học và ăn mòn điện hoá; nêu được các yếu tố ảnh hưởng đến ăn mòn.",
   "boi_canh": "Cùng một tấm thép, đặt trong phòng điều hoà có thể dùng hàng chục năm vẫn sáng, nhưng đặt ngoài bờ biển chỉ vài năm đã gỉ sét loang lổ. Để thiết kế công trình bền, các kĩ sư cần biết môi trường ăn mòn mạnh đến mức nào.\n\nTiêu chuẩn quốc tế ISO 9223 chia môi trường khí quyển thành 6 cấp độ ăn mòn, từ C1 (rất thấp) đến CX (cực cao). Mỗi cấp được xác định bằng tốc độ ăn mòn của thép carbon trong năm đầu tiên, tính bằng micromet (µm) bề dày bị mất mỗi năm. Bảng dưới tóm tắt các cấp độ này.\n\nCác yếu tố chính làm tăng ăn mòn gồm: thời gian bề mặt bị ướt (độ ẩm cao, mưa, sương), nồng độ ion chloride (từ hơi muối biển) và sulfur dioxide (từ khí thải công nghiệp). Ở bề mặt ẩm, thép bị ăn mòn điện hoá: Fe → Fe²⁺ + 2e (vùng anode), O₂ + 2H₂O + 4e → 4OH⁻ (vùng cathode). Gỉ sắt là các oxide, hydroxide của iron.\n\nViệt Nam có khí hậu nhiệt đới ẩm và đường bờ biển dài, nhiều khu vực ven biển thuộc cấp ăn mòn cao.",
   "bang_so_lieu": {
@@ -52,9 +52,9 @@ NL.add([
      "vùng sóng biển bắn tới, nhiệt đới"
     ]
    ],
-   "ghi_chu": "Giá trị tốc độ ăn mòn theo Bảng 1 trong bài báo truy cập mở của Šmak và cộng sự (2021), trích từ EN ISO 9223; cột ví dụ là minh hoạ của nhóm biên soạn."
+   "ghi_chu": "Giá trị tốc độ ăn mòn theo Bảng 1 trong bài báo truy cập mở của Šmak và cộng sự (2021), trích từ EN ISO 9223; cột ví dụ chỉ mang tính minh hoạ."
   },
-  "hinh_goi_y": "Ảnh so sánh lan can sắt ở khu ven biển và trong đất liền (nhóm tự chụp).",
+  "hinh_goi_y": "Ảnh so sánh lan can sắt ở khu ven biển và trong đất liền (ảnh tự chụp).",
   "nguon": [
    {
     "trich_dan": "Šmak, M., Kubíček, J., Kala, J., Podaný, K., & Vaněrek, J. (2021). The Influence of Hot-Dip Galvanizing on the Mechanical Properties of High-Strength Steels. Materials, 14(18), 5219 – Bảng 1: tốc độ ăn mòn thép và kẽm theo cấp ăn mòn EN ISO 9223. Truy cập 06/11/2026.",
@@ -116,7 +116,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -160,9 +160,9 @@ NL.add([
      ""
     ]
    ],
-   "ghi_chu": "Thiết kế do nhóm biên soạn; kết quả do học sinh quan sát, chụp ảnh."
+   "ghi_chu": "Thí nghiệm gợi ý; kết quả do học sinh quan sát, chụp ảnh."
   },
-  "hinh_goi_y": "Ảnh đinh sắt trong gel ferroxyl có vùng xanh và hồng (nhóm tự làm và chụp).",
+  "hinh_goi_y": "Ảnh đinh sắt trong gel ferroxyl có vùng xanh và hồng (tự làm và chụp).",
   "nguon": [
    {
     "trich_dan": "Royal Society of Chemistry – Education. What causes iron to rust? (class experiment: nước, nước đun sôi dưới lớp dầu, calcium chloride khan, nước muối; để ít nhất 3 ngày). Truy cập 06/11/2026.",
@@ -225,7 +225,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu đo.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu đo.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -291,7 +291,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -371,7 +371,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -449,7 +449,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -485,7 +485,7 @@ NL.add([
    ],
    "ghi_chu": "Theo Bảng 1 trong bài báo truy cập mở của Šmak và cộng sự (2021), trích từ EN ISO 9223 (thép carbon tương ứng: C3 25–50, C4 50–80 µm/năm)."
   },
-  "hinh_goi_y": "Ảnh cột điện mạ kẽm và vết trầy xước trên lớp mạ (nhóm tự chụp).",
+  "hinh_goi_y": "Ảnh cột điện mạ kẽm và vết trầy xước trên lớp mạ (ảnh tự chụp).",
   "nguon": [
    {
     "trich_dan": "Šmak, M., Kubíček, J., Kala, J., Podaný, K., & Vaněrek, J. (2021). The Influence of Hot-Dip Galvanizing on the Mechanical Properties of High-Strength Steels. Materials, 14(18), 5219 – Bảng 1 (EN ISO 9223). Truy cập 06/11/2026.",
@@ -547,7 +547,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  }
 ]);

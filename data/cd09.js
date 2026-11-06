@@ -40,7 +40,7 @@ NL.add([
    ],
    "ghi_chu": "Theo USDA FoodData Central (SR Legacy), mục Fatty acids, total saturated: dầu dừa 82,475 (FDC 171412); dầu cọ 49,3 (171015); mỡ lợn 39,2 (171401); dầu đậu nành 15,65 (171411); dầu ô liu 13,808 (171413); dầu cải 7,365 (172336); làm tròn 0,1 g."
   },
-  "hinh_goi_y": "Ảnh chai dầu dừa bị đông đặc và chai dầu ô liu lỏng ở cùng nhiệt độ (nhóm tự chụp).",
+  "hinh_goi_y": "Ảnh chai dầu dừa bị đông đặc và chai dầu ô liu lỏng ở cùng nhiệt độ (ảnh tự chụp).",
   "nguon": [
    {
     "trich_dan": "USDA Agricultural Research Service. FoodData Central (SR Legacy): Oil, coconut – FDC ID 171412. Truy cập 06/11/2026.",
@@ -132,7 +132,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -141,7 +141,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Phản ứng xà phòng hoá và chỉ số xà phòng hoá",
   "yccd": "Trình bày được phản ứng xà phòng hoá chất béo; thực hiện được thí nghiệm điều chế xà phòng; nêu được cơ chế tẩy rửa.",
-  "boi_canh": "Xà phòng đã được con người làm từ hàng nghìn năm trước bằng cách đun mỡ động vật với tro bếp (chứa base). Ngày nay, phản ứng này được gọi là phản ứng xà phòng hoá: chất béo + NaOH → glycerol + muối sodium của acid béo (xà phòng).\n\nCác nhà sản xuất xà phòng dùng chỉ số xà phòng hoá: số miligam KOH cần để xà phòng hoá hoàn toàn 1 gam chất béo. Chỉ số này khác nhau giữa các loại dầu. Theo tiêu chuẩn Codex về dầu thực vật (CXS 210-1999), dầu dừa có chỉ số 248–265 mg KOH/g vì chứa nhiều acid béo mạch ngắn; dầu đậu nành chỉ 189–195 mg KOH/g. Từ chỉ số này, có thể quy đổi ra lượng NaOH cần dùng (nhân với 40/56).\n\nThí nghiệm gợi ý cho lớp học (nhóm biên soạn thiết kế, giáo viên cần làm thử trước): đun cách thuỷ 10 g dầu dừa với 15 mL dung dịch NaOH 20% trong khoảng 15–20 phút, khuấy đều. Sau đó thêm dung dịch NaCl bão hoà, xà phòng nổi lên trên (quá trình muối kết). Vớt xà phòng, rửa lại, để khô.\n\nPhân tử xà phòng có đầu ion ưa nước và đuôi hydrocarbon dài ưa dầu. Khi giặt, đuôi kị nước hoà tan vào vết dầu mỡ, đầu ưa nước kéo vết bẩn vào nước. Đó là cơ chế tẩy rửa.",
+  "boi_canh": "Xà phòng đã được con người làm từ hàng nghìn năm trước bằng cách đun mỡ động vật với tro bếp (chứa base). Ngày nay, phản ứng này được gọi là phản ứng xà phòng hoá: chất béo + NaOH → glycerol + muối sodium của acid béo (xà phòng).\n\nCác nhà sản xuất xà phòng dùng chỉ số xà phòng hoá: số miligam KOH cần để xà phòng hoá hoàn toàn 1 gam chất béo. Chỉ số này khác nhau giữa các loại dầu. Theo tiêu chuẩn Codex về dầu thực vật (CXS 210-1999), dầu dừa có chỉ số 248–265 mg KOH/g vì chứa nhiều acid béo mạch ngắn; dầu đậu nành chỉ 189–195 mg KOH/g. Từ chỉ số này, có thể quy đổi ra lượng NaOH cần dùng (nhân với 40/56).\n\nThí nghiệm gợi ý cho lớp học (giáo viên cần làm thử trước): đun cách thuỷ 10 g dầu dừa với 15 mL dung dịch NaOH 20% trong khoảng 15–20 phút, khuấy đều. Sau đó thêm dung dịch NaCl bão hoà, xà phòng nổi lên trên (quá trình muối kết). Vớt xà phòng, rửa lại, để khô.\n\nPhân tử xà phòng có đầu ion ưa nước và đuôi hydrocarbon dài ưa dầu. Khi giặt, đuôi kị nước hoà tan vào vết dầu mỡ, đầu ưa nước kéo vết bẩn vào nước. Đó là cơ chế tẩy rửa.",
   "bang_so_lieu": {
    "tieu_de": "Chỉ số xà phòng hoá của một số dầu thực vật (Codex CXS 210-1999)",
    "cot": [
@@ -172,7 +172,7 @@ NL.add([
    ],
    "ghi_chu": "Theo bảng đặc tính hoá học trong Codex Standard for Named Vegetable Oils (CXS 210-1999), bản trên kho tài liệu của FAO. Một sửa đổi năm 2022 đổi khoảng của dầu hướng dương thành 187–194."
   },
-  "hinh_goi_y": "Ảnh các bước làm xà phòng trong phòng thí nghiệm (nhóm tự chụp).",
+  "hinh_goi_y": "Ảnh các bước làm xà phòng trong phòng thí nghiệm (ảnh tự chụp).",
   "nguon": [
    {
     "trich_dan": "Codex Alimentarius Commission. Codex Standard for Named Vegetable Oils (CODEX-STAN 210-1999) – bảng Saponification value (mg KOH/g oil). FAO. Truy cập 06/11/2026.",
@@ -227,7 +227,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -300,7 +300,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -367,7 +367,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -387,10 +387,10 @@ NL.add([
     "giay_phep": "Chưa rõ – chỉ trích số liệu, tự viết lại"
    },
    {
-    "trich_dan": "North Carolina State University News. (2011, 4). Researchers find fat, oil and grease deposits in sewers are made of soap (calcium-based fatty acid salts). Truy cập 06/11/2026.",
-    "url": "https://news.ncsu.edu/2011/04/wms-ducoste-soap/",
-    "loai": "báo chí",
-    "giay_phep": "Chưa rõ – chỉ trích, tự viết lại"
+    "trich_dan": "He, X., Iasmin, M., Dean, L. O., Lappi, S. E., Ducoste, J. J., & de los Reyes, F. L., III. (2011). Evidence for fat, oil, and grease (FOG) deposit formation mechanisms in sewer lines. Environmental Science & Technology, 45(10), 4385–4391.",
+    "url": "https://doi.org/10.1021/es2001997",
+    "loai": "bài báo",
+    "giay_phep": "Bản quyền ACS – chỉ trích, tự viết lại"
    },
    {
     "trich_dan": "He, X., Iasmin, M., Dean, L. O., Lappi, S. E., Ducoste, J. J., & de los Reyes, F. L. (2011). Evidence for Fat, Oil, and Grease (FOG) Deposit Formation Mechanisms in Sewer Lines. Environmental Science & Technology, 45(10), 4385–4391.",
@@ -448,7 +448,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -489,7 +489,7 @@ NL.add([
    ],
    "ghi_chu": "Theo PubChem (mục Odor): isoamyl acetate – mùi chuối; ethyl butyrate – mùi dứa; octyl acetate – mùi trái cây giống cam, hoa nhài; methyl salicylate – mùi dầu gió xanh (wintergreen)."
   },
-  "hinh_goi_y": "Ảnh thí nghiệm điều chế isoamyl acetate trong ống nghiệm (nhóm tự chụp).",
+  "hinh_goi_y": "Ảnh thí nghiệm điều chế isoamyl acetate trong ống nghiệm (ảnh tự chụp).",
   "nguon": [
    {
     "trich_dan": "National Center for Biotechnology Information. PubChem Compound Summary: Isoamyl acetate (CID 31276) – Odor. Truy cập 06/11/2026.",
@@ -561,7 +561,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -595,7 +595,7 @@ NL.add([
    ],
    "ghi_chu": "Nhiệt độ nóng chảy theo PubChem (CID 445639 và 637517), truy cập 06/11/2026."
   },
-  "hinh_goi_y": "Công thức khung của hai đồng phân cis và trans (nhóm tự vẽ).",
+  "hinh_goi_y": "Công thức khung của hai đồng phân cis và trans (tự vẽ).",
   "nguon": [
    {
     "trich_dan": "PubChem. Oleic acid (CID 445639), mục Melting Point. Truy cập 06/11/2026.",
@@ -655,7 +655,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ soạn nháp câu hỏi; nhóm tra số liệu trực tiếp trên PubChem và tự tính chỉ số iodine. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ soạn nháp câu hỏi; số liệu tra trực tiếp trên PubChem; chỉ số iodine được tính thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  }
 ]);

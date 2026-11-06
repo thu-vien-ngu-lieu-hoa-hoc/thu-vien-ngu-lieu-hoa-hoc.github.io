@@ -92,7 +92,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -101,7 +101,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Phân loại chất dẻo theo mã nhận dạng và khối lượng riêng",
   "yccd": "Nêu được tính chất vật lí của một số chất dẻo thông dụng; thực hiện được thí nghiệm phân biệt chúng; vận dụng trong phân loại rác.",
-  "boi_canh": "Muốn tái chế nhựa, trước hết phải phân loại đúng từng loại polymer. Ở đáy chai lọ, hộp nhựa thường có kí hiệu tam giác với một con số từ 1 đến 7 (mã nhận dạng nhựa): 1 – PET, 2 – HDPE, 3 – PVC, 4 – LDPE, 5 – PP, 6 – PS, 7 – các loại khác.\n\nNếu mất nhãn, có thể dựa vào khối lượng riêng để phân biệt. Theo bảng của LibreTexts Chemistry, polypropylene (PP) có khối lượng riêng khoảng 0,90–0,92 g/cm³, polyethylene (PE) khoảng 0,91–0,96 g/cm³, nhẹ hơn nước nên nổi. Polystyrene (PS) khoảng 1,03–1,06 g/cm³, PVC khoảng 1,32–1,42 g/cm³, PET khoảng 1,35–1,38 g/cm³, nặng hơn nước nên chìm.\n\nThí nghiệm gợi ý (nhóm biên soạn tự thiết kế): cắt các mẩu nhựa nhỏ cỡ móng tay từ chai nước (PET), can dầu ăn (HDPE), hộp sữa chua (PS hoặc PP), ống nước (PVC). Thả vào cốc nước, quan sát mẩu nổi, mẩu chìm. Tiếp tục thả mẩu nổi vào hỗn hợp ethanol – nước, hoặc mẩu chìm vào nước muối đặc để tách tiếp.\n\nNhà máy tái chế dùng nguyên lí tương tự trong các bể tuyển nổi để tách các loại nhựa.",
+  "boi_canh": "Muốn tái chế nhựa, trước hết phải phân loại đúng từng loại polymer. Ở đáy chai lọ, hộp nhựa thường có kí hiệu tam giác với một con số từ 1 đến 7 (mã nhận dạng nhựa): 1 – PET, 2 – HDPE, 3 – PVC, 4 – LDPE, 5 – PP, 6 – PS, 7 – các loại khác.\n\nNếu mất nhãn, có thể dựa vào khối lượng riêng để phân biệt. Theo bảng của LibreTexts Chemistry, polypropylene (PP) có khối lượng riêng khoảng 0,90–0,92 g/cm³, polyethylene (PE) khoảng 0,91–0,96 g/cm³, nhẹ hơn nước nên nổi. Polystyrene (PS) khoảng 1,03–1,06 g/cm³, PVC khoảng 1,32–1,42 g/cm³, PET khoảng 1,35–1,38 g/cm³, nặng hơn nước nên chìm.\n\nThí nghiệm gợi ý: cắt các mẩu nhựa nhỏ cỡ móng tay từ chai nước (PET), can dầu ăn (HDPE), hộp sữa chua (PS hoặc PP), ống nước (PVC). Thả vào cốc nước, quan sát mẩu nổi, mẩu chìm. Tiếp tục thả mẩu nổi vào hỗn hợp ethanol – nước, hoặc mẩu chìm vào nước muối đặc để tách tiếp.\n\nNhà máy tái chế dùng nguyên lí tương tự trong các bể tuyển nổi để tách các loại nhựa.",
   "bang_so_lieu": {
    "tieu_de": "Khối lượng riêng và mã nhận dạng của một số chất dẻo",
    "cot": [
@@ -150,7 +150,7 @@ NL.add([
    ],
    "ghi_chu": "Khối lượng riêng theo LibreTexts Chemistry (Sorting Recyclable Plastics by Density); mã nhận dạng theo ASTM D7611. Nhựa có phụ gia, bọt khí có thể khác."
   },
-  "hinh_goi_y": "Ảnh cốc nước có mẩu nhựa nổi, chìm và kí hiệu tam giác dưới đáy chai (nhóm tự chụp).",
+  "hinh_goi_y": "Ảnh cốc nước có mẩu nhựa nổi, chìm và kí hiệu tam giác dưới đáy chai (ảnh tự chụp).",
   "nguon": [
    {
     "trich_dan": "LibreTexts Chemistry. Sorting Recyclable Plastics by Density (bảng khối lượng riêng chất dẻo). Truy cập 06/11/2026.",
@@ -213,7 +213,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -286,18 +286,18 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
   "id": "cd12-04",
   "chu_de": "cd12",
   "lop": "12",
-  "tieu_de": "Túi polyethylene và lộ trình hạn chế theo Nghị định 08/2022/NĐ-CP",
+  "tieu_de": "Túi polyethylene và lộ trình hạn chế",
   "yccd": "Nêu được tác hại của chất thải polymer; vận dụng hiểu biết để thực hiện và tuyên truyền các quy định bảo vệ môi trường ở Việt Nam.",
   "boi_canh": "Túi nilon (thường làm từ polyethylene) gắn liền với chợ, cửa hàng tạp hoá ở Việt Nam. Mỗi chiếc túi chỉ dùng vài phút nhưng có thể tồn tại hàng trăm năm. Theo nghiên cứu thị trường của Ngân hàng Thế giới (World Bank, 2021), năm 2019 Việt Nam mới tái chế được khoảng 33% các loại hạt nhựa chính; phần còn lại bị thải bỏ thay vì quay lại thành nguyên liệu có giá trị.\n\nĐể giải quyết vấn đề, Nghị định 08/2022/NĐ-CP quy định chi tiết Luật Bảo vệ môi trường 2020 đã đặt ra lộ trình hạn chế sản phẩm nhựa dùng một lần và bao bì nhựa khó phân huỷ. Theo Điều 64 của Nghị định, từ ngày 01/01/2026 không sản xuất và nhập khẩu túi nilon khó phân huỷ sinh học có kích thước nhỏ hơn 50 cm × 50 cm và độ dày một lớp màng nhỏ hơn 50 µm (trừ trường hợp sản xuất để xuất khẩu hoặc để đóng gói sản phẩm, hàng hoá); sau ngày 31/12/2030 dừng sản xuất, nhập khẩu sản phẩm nhựa sử dụng một lần (trừ sản phẩm được chứng nhận Nhãn sinh thái Việt Nam) và bao bì nhựa khó phân huỷ sinh học.\n\nCác chuỗi siêu thị đã thử nghiệm túi giấy, túi vải, gói rau bằng lá chuối. Nhiều trường học đã phát động phong trào “nói không với túi nilon và nhựa dùng một lần”.\n\nNhưng thay đổi thói quen của hàng triệu người là việc không dễ.",
   "bang_so_lieu": null,
-  "hinh_goi_y": "Ảnh siêu thị gói rau bằng lá chuối (tìm ảnh CC hoặc nhóm tự chụp).",
+  "hinh_goi_y": "Ảnh siêu thị gói rau bằng lá chuối (tìm ảnh CC hoặc ảnh tự chụp).",
   "nguon": [
    {
     "trich_dan": "Chính phủ. (2022). Nghị định số 08/2022/NĐ-CP ngày 10/01/2022 quy định chi tiết một số điều của Luật Bảo vệ môi trường (Điều 64). Truy cập 06/11/2026.",
@@ -366,7 +366,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -377,7 +377,7 @@ NL.add([
   "yccd": "Phân biệt được polymer tổng hợp và polymer có thể phân huỷ sinh học; phản biện được các tuyên bố về tính thân thiện môi trường trong thực tế.",
   "boi_canh": "Căng tin trường muốn thay cốc nhựa PP và ống hút nhựa bằng sản phẩm “thân thiện môi trường”. Nhà cung cấp giới thiệu cốc làm từ PLA (polylactic acid), quảng cáo là “nhựa sinh học, phân huỷ 100%”.\n\nPLA là polyester được tổng hợp từ lactic acid, mà lactic acid lại được tạo ra từ cây nông nghiệp như ngô, mía. Vì vậy PLA có nguồn gốc tái tạo. PLA có thể bị phân huỷ sinh học nhờ thuỷ phân liên kết ester, nhưng theo UNEP (2015), nhiều loại nhựa dán nhãn “phân huỷ sinh học” chỉ phân huỷ hoàn toàn trong điều kiện ủ phân công nghiệp, với nhiệt độ duy trì trên 50 °C trong thời gian dài. Ở ngoài môi trường tự nhiên, trong đất hoặc nước biển ở nhiệt độ thường, PLA phân huỷ rất chậm, gần giống nhựa thông thường.\n\nNếu cốc PLA bị trộn lẫn vào dòng tái chế PP, PET, nó còn làm giảm chất lượng nhựa tái chế. Trong khi đó, Việt Nam còn rất ít cơ sở ủ phân công nghiệp tiếp nhận loại nhựa này.\n\nCác lựa chọn khác gồm: cốc giấy (thường có lớp phủ nhựa), cốc tái sử dụng (inox, thuỷ tinh), ống hút tre, cỏ bàng, gạo. Căng tin nên chọn phương án nào?",
   "bang_so_lieu": null,
-  "hinh_goi_y": "Ảnh các loại cốc, ống hút thay thế tại căng tin (nhóm tự chụp).",
+  "hinh_goi_y": "Ảnh các loại cốc, ống hút thay thế tại căng tin (ảnh tự chụp).",
   "nguon": [
    {
     "trich_dan": "United Nations Environment Programme. (2015). Biodegradable plastics and marine litter: Misconceptions, concerns and impacts on marine environments. Truy cập 06/11/2026.",
@@ -434,7 +434,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -499,7 +499,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -510,11 +510,11 @@ NL.add([
   "yccd": "Nêu được tính chất, ứng dụng của một số chất dẻo; giải thích tính chất dựa vào cấu tạo; đánh giá được tác động của chất thải polymer đến môi trường.",
   "boi_canh": "Teflon là tên thương mại của polytetrafluoroethylene (PTFE), polymer có mạch carbon được bao kín bởi các nguyên tử fluorine: (–CF₂–CF₂–)ₙ. PTFE được dùng làm lớp chống dính của chảo, vỏ cách điện, gioăng, ống dẫn hoá chất…\n\nĐộ âm điện theo thang Pauling (PubChem): F = 3,98; C = 2,55. Liên kết C–F vì thế phân cực mạnh và rất bền; lớp nguyên tử fluorine bao quanh mạch carbon khiến PTFE gần như không phản ứng với acid, base hay dung môi thông thường.\n\nNhưng chính độ bền này lại thành vấn đề khi thải bỏ. Theo bài tổng quan của Lowe và cộng sự trên tạp chí Chemical Science (2026), PTFE tồn tại rất lâu trong bãi chôn lấp; nhiệt phân PTFE tạo ra các “hoá chất vĩnh cửu” (forever chemicals) phân tử nhỏ; và muốn phân huỷ hoàn toàn thường phải dùng điều kiện rất khắc nghiệt. Vì thế nhiều nhóm nghiên cứu đang tìm cách phân huỷ PTFE ở nhiệt độ thấp (không quá 100 °C), có trường hợp còn thu hồi được fluoride để làm nguyên liệu hoá chất.",
   "bang_so_lieu": null,
-  "hinh_goi_y": "Công thức một đoạn mạch PTFE; ảnh chảo chống dính bị trầy (nhóm tự chụp).",
+  "hinh_goi_y": "Công thức một đoạn mạch PTFE; ảnh chảo chống dính bị trầy (ảnh tự chụp).",
   "nguon": [
    {
-    "trich_dan": "Lowe, M. E., Hopkinson, M. N., Kubicki, D. J., Lu, E., & Armstrong, R. J. (2026). Recent advances in the degradation of polytetrafluoroethylene (PTFE) at low temperature (≤100 °C). Chemical Science. https://doi.org/10.1039/D6SC03192G (bản tóm tắt trên kho ePrints Đại học Newcastle). Truy cập 06/11/2026.",
-    "url": "https://eprints.ncl.ac.uk/312399",
+    "trich_dan": "Lowe, M. E., Hopkinson, M. N., Kubicki, D. J., Lu, E., & Armstrong, R. J. (2026). Recent advances in the degradation of polytetrafluoroethylene (PTFE) at low temperature (≤100 °C). Chemical Science.",
+    "url": "https://doi.org/10.1039/D6SC03192G",
     "loai": "bài báo",
     "giay_phep": "CC BY 3.0"
    },
@@ -572,7 +572,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ đọc tóm tắt bài báo, soạn nháp câu hỏi; nhóm đối sánh với bản gốc. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ đọc tóm tắt bài báo, soạn nháp câu hỏi; nội dung được đối sánh với bản gốc. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  }
 ]);

@@ -90,7 +90,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -141,7 +141,7 @@ NL.add([
    ],
    "ghi_chu": "Màu ngọn lửa theo bảng “Flame Tests” của LibreTexts; bước sóng (trong không khí) theo bảng Strong Lines của NIST, đổi Å sang nm và làm tròn 0,1 nm. Màu của Ca, Sr, Ba chủ yếu do phân tử phát xạ (ví dụ CaOH, SrOH) nên không ghi một vạch nguyên tử."
   },
-  "hinh_goi_y": "Ảnh dãy ngọn lửa của 6 muối (nhóm tự chụp khi làm thí nghiệm).",
+  "hinh_goi_y": "Ảnh dãy ngọn lửa của 6 muối (ảnh tự chụp khi làm thí nghiệm).",
   "nguon": [
    {
     "trich_dan": "NIST Physical Measurement Laboratory. Basic Atomic Spectroscopic Data: Strong Lines of Sodium (5889,950 và 5895,924 Å). Truy cập 06/11/2026.",
@@ -212,7 +212,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -246,7 +246,7 @@ NL.add([
      "17"
     ]
    ],
-   "ghi_chu": "Theo bảng World Mine Production của USGS Mineral Commodity Summaries 2024 – Lithium (2023, ước tính): Úc 86 000 t, Chile 44 000 t, Trung Quốc 33 000 t, tổng thế giới 180 000 t (không gồm Hoa Kỳ); “Các nước khác” do nhóm tính bằng hiệu số."
+   "ghi_chu": "Theo bảng World Mine Production của USGS Mineral Commodity Summaries 2024 – Lithium (2023, ước tính): Úc 86 000 t, Chile 44 000 t, Trung Quốc 33 000 t, tổng thế giới 180 000 t (không gồm Hoa Kỳ); “Các nước khác” tính bằng hiệu số."
   },
   "hinh_goi_y": "Ảnh vệ tinh các hồ bay hơi lithium ở sa mạc Atacama (NASA Earth Observatory, phạm vi công cộng).",
   "nguon": [
@@ -302,7 +302,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -313,11 +313,11 @@ NL.add([
   "yccd": "Trình bày được khái niệm nước cứng, tác hại và phương pháp làm mềm nước cứng; liên hệ quy chuẩn nước sinh hoạt Việt Nam.",
   "boi_canh": "Ở nhiều vùng của Việt Nam, đặc biệt vùng núi đá vôi như Hà Giang, Ninh Bình, hoặc nơi dùng nước giếng khoan, đáy ấm đun nước nhanh chóng phủ một lớp cặn trắng. Đó là dấu hiệu của nước cứng.\n\nNước cứng chứa nhiều ion Ca²⁺ và Mg²⁺. Khi nước chảy qua núi đá vôi có CO₂ hoà tan, đá vôi bị hoà tan dần: CaCO₃ + CO₂ + H₂O → Ca(HCO₃)₂. Khi đun sôi, phản ứng xảy ra theo chiều ngược lại, CaCO₃ kết tủa bám vào ấm. Nước cứng còn làm xà phòng ít bọt, quần áo giặt bị cứng, đường ống nồi hơi bị tắc.\n\nQuy chuẩn kĩ thuật quốc gia về chất lượng nước sạch sử dụng cho mục đích sinh hoạt QCVN 01-1:2024/BYT có thông số “Độ cứng, tính theo CaCO₃” và dẫn TCVN 6224:1996 (xác định tổng calcium và magnesium – phương pháp chuẩn độ EDTA) làm một phương pháp thử.\n\nCó nhiều cách làm mềm nước: đun sôi (với nước cứng tạm thời), dùng hoá chất như sodium carbonate, hoặc dùng cột trao đổi ion trong máy lọc nước gia đình.",
   "bang_so_lieu": null,
-  "hinh_goi_y": "Ảnh đáy ấm đun nước có cặn (nhóm tự chụp); ảnh lõi lọc trao đổi ion.",
+  "hinh_goi_y": "Ảnh đáy ấm đun nước có cặn (ảnh tự chụp); ảnh lõi lọc trao đổi ion.",
   "nguon": [
    {
-    "trich_dan": "Bộ Y tế. (2024). QCVN 01-1:2024/BYT Quy chuẩn kĩ thuật quốc gia về chất lượng nước sạch sử dụng cho mục đích sinh hoạt (ban hành kèm Thông tư 52/2024/TT-BYT) – bản PDF trên LuatVietnam: thông số “Độ cứng, tính theo CaCO₃”, phương pháp thử TCVN 6224:1996. Truy cập 06/11/2026.",
-    "url": "https://static.luatvietnam.vn/xem-noi-dung-file-quy-chuan-qcvn-01-12024-byt-chat-luong-nuoc-sach-su-dung-cho-muc-dich-sinh-hoat-383277-d3/uploaded/vietlawfile/2025/1/qcvn_01_1_2024_byt_020125132444.pdf.aspx",
+    "trich_dan": "Bộ Y tế. (2024). Thông tư số 52/2024/TT-BYT ban hành QCVN 01-1:2024/BYT Quy chuẩn kĩ thuật quốc gia về chất lượng nước sạch sử dụng cho mục đích sinh hoạt: thông số “Độ cứng, tính theo CaCO₃”, phương pháp thử TCVN 6224:1996. Cổng thông tin điện tử Bộ Y tế. Truy cập 06/11/2026.",
+    "url": "https://moh.gov.vn/en/thong-tin-chi-dao-dieu-hanh/-/asset_publisher/DOHhlnDN87WZ/content/thong-tu-so-52-2024-tt-byt-ban-hanh-quy-chuan-ky-thuat-quoc-gia-va-quy-inh-kiem-tra-giam-sat-chat-luong-nuoc-sach-su-dung-cho-muc-ich-sinh-hoat",
     "loai": "văn bản pháp quy",
     "giay_phep": "Văn bản quy phạm pháp luật, không thuộc đối tượng bảo hộ quyền tác giả"
    }
@@ -369,7 +369,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -380,7 +380,7 @@ NL.add([
   "yccd": "Nêu được vai trò sinh học và ứng dụng của hợp chất kim loại nhóm IA; vận dụng tính toán để đề xuất giải pháp bảo vệ sức khoẻ.",
   "boi_canh": "Sodium (Na⁺) cần thiết cho cơ thể: giữ cân bằng nước, dẫn truyền thần kinh, co cơ. Nhưng ăn quá nhiều sodium làm tăng huyết áp, nguy cơ đột quỵ và bệnh tim mạch.\n\nTổ chức Y tế Thế giới (WHO) khuyến cáo người trưởng thành nên ăn dưới 2 g sodium mỗi ngày, tương đương dưới 5 g muối ăn (NaCl). Theo phân tích dữ liệu điều tra STEPS của Việt Nam (Vu Thi Hoang Lan và cộng sự, 2025), người trưởng thành 18–69 tuổi ăn trung bình 9,42 g muối mỗi ngày năm 2015 và 8,07 g năm 2021, vẫn cao hơn nhiều so với khuyến cáo.\n\nPhần lớn sodium không đến từ lọ muối trên bàn mà từ nước mắm, nước chấm, bột canh, mì gói, đồ ăn chế biến sẵn. Trên nhãn dinh dưỡng, lượng sodium thường được ghi bằng mg. Để đổi sang lượng muối tương đương, có thể nhân với khoảng 2,54 (vì 58,44 : 23,0 ≈ 2,54); WHO dùng quy đổi gần đúng 1 g muối ≈ 400 mg sodium (hệ số 2,5).\n\nMuối “ít natri” thay một phần NaCl bằng KCl là một giải pháp. Nhưng potassium dư cũng có thể nguy hiểm với người bệnh thận. Giảm muối là bài toán cần cân nhắc nhiều mặt: sức khoẻ, khẩu vị, thói quen văn hoá và giá thành.",
   "bang_so_lieu": null,
-  "hinh_goi_y": "Ảnh nhãn dinh dưỡng của gói mì ăn liền ghi lượng sodium (nhóm tự chụp).",
+  "hinh_goi_y": "Ảnh nhãn dinh dưỡng của gói mì ăn liền ghi lượng sodium (ảnh tự chụp).",
   "nguon": [
    {
     "trich_dan": "World Health Organization. Sodium reduction (Fact sheet): người trưởng thành nên ăn dưới 2 000 mg sodium/ngày (tương đương dưới 5 g muối). Truy cập 06/11/2026.",
@@ -441,7 +441,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -450,7 +450,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Nhiệt phân calcium carbonate và phát thải CO₂ trong sản xuất vôi, xi măng",
   "yccd": "Trình bày được ứng dụng của hợp chất calcium trong xây dựng; vận dụng tính toán theo phương trình hoá học; liên hệ ngành nghề vật liệu.",
-  "boi_canh": "Vôi sống (CaO) và xi măng là vật liệu xây dựng không thể thiếu. Cả hai đều được sản xuất từ đá vôi bằng phản ứng nung: CaCO₃(s) → CaO(s) + CO₂(g), ΔrH° ≈ +179 kJ (nhóm tính từ nhiệt tạo thành chuẩn trong bảng T1 của LibreTexts: CaCO₃ −1 207,6; CaO −634,9; CO₂ −393,5 kJ/mol). Phản ứng thu nhiệt mạnh nên phải nung ở nhiệt độ cao.\n\nCông nghiệp xi măng là một trong những nguồn phát thải CO₂ lớn nhất thế giới. Phát thải đến từ hai nguồn: đốt nhiên liệu để nung lò và chính phản ứng phân huỷ CaCO₃. Theo Andrew (2019), riêng CO₂ từ phản ứng phân huỷ (phát thải quá trình) của sản xuất xi măng toàn cầu năm 2018 khoảng 1,50 tỉ tấn, tương đương khoảng 4% lượng CO₂ từ nhiên liệu hoá thạch. Nguồn thứ hai không giảm được bằng cách đổi nhiên liệu: dù dùng năng lượng sạch, đá vôi vẫn giải phóng CO₂.\n\nTheo USGS, năm 2023 Việt Nam sản xuất khoảng 110 triệu tấn xi măng, đứng thứ ba thế giới sau Trung Quốc và Ấn Độ. Các kĩ sư vật liệu xây dựng đang nghiên cứu nhiều giải pháp: thay một phần clinker bằng tro bay, xỉ lò cao; thu giữ CO₂; phát triển xi măng mới.\n\nĐây là ngành nghề cần nhiều kĩ sư hoá học, kĩ sư vật liệu và chuyên gia môi trường.",
+  "boi_canh": "Vôi sống (CaO) và xi măng là vật liệu xây dựng không thể thiếu. Cả hai đều được sản xuất từ đá vôi bằng phản ứng nung: CaCO₃(s) → CaO(s) + CO₂(g), ΔrH° ≈ +179 kJ (tính từ nhiệt tạo thành chuẩn trong CRC Handbook of Chemistry and Physics (84th ed., 2004): CaCO₃ −1 207,6; CaO −634,9; CO₂ −393,5 kJ/mol). Phản ứng thu nhiệt mạnh nên phải nung ở nhiệt độ cao.\n\nCông nghiệp xi măng là một trong những nguồn phát thải CO₂ lớn nhất thế giới. Phát thải đến từ hai nguồn: đốt nhiên liệu để nung lò và chính phản ứng phân huỷ CaCO₃. Theo Andrew (2019), riêng CO₂ từ phản ứng phân huỷ (phát thải quá trình) của sản xuất xi măng toàn cầu năm 2018 khoảng 1,50 tỉ tấn, tương đương khoảng 4% lượng CO₂ từ nhiên liệu hoá thạch. Nguồn thứ hai không giảm được bằng cách đổi nhiên liệu: dù dùng năng lượng sạch, đá vôi vẫn giải phóng CO₂.\n\nTheo USGS, năm 2023 Việt Nam sản xuất khoảng 110 triệu tấn xi măng, đứng thứ ba thế giới sau Trung Quốc và Ấn Độ. Các kĩ sư vật liệu xây dựng đang nghiên cứu nhiều giải pháp: thay một phần clinker bằng tro bay, xỉ lò cao; thu giữ CO₂; phát triển xi măng mới.\n\nĐây là ngành nghề cần nhiều kĩ sư hoá học, kĩ sư vật liệu và chuyên gia môi trường.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Ảnh lò quay xi măng hoặc lò vôi thủ công (nhóm tìm ảnh giấy phép CC).",
   "nguon": [
@@ -467,10 +467,10 @@ NL.add([
     "giay_phep": "Tài liệu của Chính phủ Hoa Kỳ – trích, ghi nguồn"
    },
    {
-    "trich_dan": "LibreTexts Chemistry. Reference Table T1: Standard Thermodynamic Quantities for Chemical Substances at 25 °C. Truy cập 06/11/2026.",
-    "url": "https://chem.libretexts.org/Ancillary_Materials/Reference/Reference_Tables/Thermodynamics_Tables/T1:_Standard_Thermodynamic_Quantities",
-    "loai": "CSDL",
-    "giay_phep": "CC BY-NC-SA – trích số liệu, ghi nguồn"
+    "trich_dan": "Lide, D. R. (Chủ biên). (2004). CRC Handbook of Chemistry and Physics (84th ed.). CRC Press. Mục 5: Standard Thermodynamic Properties of Chemical Substances (CaCO₃(s) −1 207,6; CaO(s) −634,9; CO₂(g) −393,5 kJ/mol).",
+    "url": "",
+    "loai": "sổ tay tra cứu",
+    "giay_phep": "Trích số liệu, ghi nguồn"
    }
   ],
   "hinh_thuc": "Biên soạn lại",
@@ -520,7 +520,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  }
 ]);

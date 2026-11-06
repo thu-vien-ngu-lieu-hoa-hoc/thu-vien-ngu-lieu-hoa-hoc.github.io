@@ -3,9 +3,9 @@ NL.add([
   "id": "cd01-01",
   "chu_de": "cd01",
   "lop": "10",
-  "tieu_de": "Enthalpy đốt cháy của một số nhiên liệu",
+  "tieu_de": "Nhiên liệu nào toả ra nhiều năng lượng hơn khi đốt cháy?",
   "yccd": "Trình bày được khái niệm phản ứng toả nhiệt, thu nhiệt; điều kiện chuẩn; biến thiên enthalpy chuẩn của phản ứng. Vận dụng ý nghĩa của biến thiên enthalpy để giải thích ứng dụng của phản ứng đốt cháy nhiên liệu.",
-  "boi_canh": "Khi chọn nhiên liệu cho bếp, xe máy hay tên lửa, các kĩ sư luôn hỏi: đốt 1 gam nhiên liệu thu được bao nhiêu nhiệt? Câu trả lời nằm trong các cơ sở dữ liệu nhiệt động học, được dùng rộng rãi là NIST Chemistry WebBook của Viện Tiêu chuẩn và Công nghệ Quốc gia Hoa Kỳ.\n\nTheo NIST, biến thiên enthalpy đốt cháy chuẩn (ΔcH°, ở 25 °C, 1 bar, sản phẩm là CO₂(g) và H₂O(l)) của một số chất: hydrogen −285,8 kJ/mol; methane −890,7 kJ/mol; propane −2 219,2 kJ/mol; butane −2 877,5 kJ/mol; ethanol −1 367,6 kJ/mol; carbon (than chì) −393,5 kJ/mol. Dấu âm cho biết các phản ứng này đều toả nhiệt.\n\nTính theo mol, butane toả nhiều nhiệt nhất. Nhưng người mua gas, mua xăng lại quan tâm đến khối lượng hoặc thể tích. Nhóm biên soạn đã chia ΔcH° cho khối lượng mol để có nhiệt toả ra khi đốt 1 gam mỗi chất (bảng dưới). Thứ tự thay đổi hoàn toàn: hydrogen có nhiệt toả ra trên 1 gam lớn nhất, còn ethanol chỉ bằng khoảng một nửa so với methane.\n\nVì sao có sự khác biệt này? Phân tử nào chứa nhiều liên kết C–H, O–H được tạo thành mới và ít nguyên tử oxygen sẵn có thì toả nhiều nhiệt hơn trên mỗi gam.",
+  "boi_canh": "Khi chọn nhiên liệu cho bếp, xe máy hay tên lửa, các kĩ sư luôn hỏi: đốt 1 gam nhiên liệu thu được bao nhiêu nhiệt? Câu trả lời nằm trong các cơ sở dữ liệu nhiệt động học, được dùng rộng rãi là NIST Chemistry WebBook của Viện Tiêu chuẩn và Công nghệ Quốc gia Hoa Kỳ.\n\nTheo NIST, biến thiên enthalpy đốt cháy chuẩn (ΔcH°, ở 25 °C, 1 bar, sản phẩm là CO₂(g) và H₂O(l)) của một số chất: hydrogen −285,8 kJ/mol; methane −890,7 kJ/mol; propane −2 219,2 kJ/mol; butane −2 877,5 kJ/mol; ethanol −1 367,6 kJ/mol; carbon (than chì) −393,5 kJ/mol. Dấu âm cho biết các phản ứng này đều toả nhiệt.\n\nTính theo mol, butane toả nhiều nhiệt nhất. Nhưng người mua gas, mua xăng lại quan tâm đến khối lượng hoặc thể tích. Chia ΔcH° cho khối lượng mol, thu được nhiệt toả ra khi đốt 1 gam mỗi chất (bảng dưới). Thứ tự thay đổi hoàn toàn: hydrogen có nhiệt toả ra trên 1 gam lớn nhất, còn ethanol chỉ bằng khoảng một nửa so với methane.\n\nVì sao có sự khác biệt này? Phân tử nào chứa nhiều liên kết C–H, O–H được tạo thành mới và ít nguyên tử oxygen sẵn có thì toả nhiều nhiệt hơn trên mỗi gam.",
   "bang_so_lieu": {
    "tieu_de": "Nhiệt toả ra khi đốt cháy hoàn toàn 1 gam nhiên liệu (25 °C, 1 bar)",
    "cot": [
@@ -38,7 +38,7 @@ NL.add([
      "29,7"
     ]
    ],
-   "ghi_chu": "Nhóm biên soạn tính từ ΔcH° trên NIST Chemistry WebBook (methane, propane, butane: Pittam và Pilcher, 1972; ethanol: Chao và Rossini, 1965; hydrogen và carbon: lấy bằng ΔfH° của H₂O(l) và CO₂(g), CODATA) và khối lượng mol (H₂ 2,016; CH₄ 16,04; C₃H₈ 44,10; C₄H₁₀ 58,12; C 12,01; C₂H₅OH 46,07 g/mol)."
+   "ghi_chu": "Tính từ ΔcH° trên NIST Chemistry WebBook (methane, propane, butane: Pittam và Pilcher, 1972; ethanol: Chao và Rossini, 1965; hydrogen và carbon: lấy bằng ΔfH° của H₂O(l) và CO₂(g), CODATA) và khối lượng mol (H₂ 2,016; CH₄ 16,04; C₃H₈ 44,10; C₄H₁₀ 58,12; C 12,01; C₂H₅OH 46,07 g/mol)."
   },
   "hinh_goi_y": "Ảnh chụp trang “Gas phase thermochemistry data” của methane trên NIST WebBook, khoanh vào dòng ΔcH°gas.",
   "nguon": [
@@ -125,16 +125,16 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Số liệu lấy từ NIST, phép chia do nhóm tính.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Số liệu lấy từ NIST; phép chia được tính thủ công và kiểm tra lại.",
   "cap_nhat": "06/11/2026"
  },
  {
   "id": "cd01-02",
   "chu_de": "cd01",
   "lop": "10",
-  "tieu_de": "Xác định nhiệt phản ứng trung hoà bằng nhiệt lượng kế cốc xốp",
+  "tieu_de": "Xác định nhiệt của phản ứng trung hoà bằng nhiệt lượng kế cốc xốp đơn giản",
   "yccd": "Trình bày được khái niệm phản ứng toả nhiệt, thu nhiệt. Thực hiện được thí nghiệm đo nhiệt của phản ứng trung hoà và rút ra kết luận từ số liệu đo.",
-  "boi_canh": "Không cần thiết bị đắt tiền, học sinh có thể đo nhiệt phản ứng bằng nhiệt lượng kế cốc xốp: hai cốc xốp lồng vào nhau, có nắp và một nhiệt kế. Đây là thí nghiệm quen thuộc trong chương trình hoá học phổ thông của nhiều nước.\n\nCách làm: cho 50 mL dung dịch HCl 1,0 M vào cốc, đo nhiệt độ ban đầu. Thêm nhanh 50 mL dung dịch NaOH 1,0 M có cùng nhiệt độ, khuấy nhẹ và ghi nhiệt độ cao nhất.\n\nTheo bảng số liệu nhiệt động chuẩn ở 25 °C trên LibreTexts (trích từ CRC Handbook of Chemistry and Physics), phản ứng H⁺(aq) + OH⁻(aq) → H₂O(l) có ΔrH° = −55,8 kJ/mol. Nếu coi dung dịch có khối lượng 100 g, nhiệt dung riêng 4,18 J/(g·K) và không thất thoát nhiệt, nhóm biên soạn tính được nhiệt độ dung dịch tăng khoảng 6,7 °C.\n\nTrên thực tế, học sinh thường đo được mức tăng nhỏ hơn. Một phần nhiệt đã truyền sang cốc, nhiệt kế và không khí. So sánh kết quả đo với giá trị tính toán là cơ hội tốt để học sinh tìm hiểu về sai số thí nghiệm.",
+  "boi_canh": "Không cần thiết bị đắt tiền, học sinh có thể đo nhiệt phản ứng bằng nhiệt lượng kế cốc xốp: hai cốc xốp lồng vào nhau, có nắp và một nhiệt kế. Đây là thí nghiệm quen thuộc trong chương trình hoá học phổ thông của nhiều nước.\n\nCách làm: cho 50 mL dung dịch HCl 1,0 M vào cốc, đo nhiệt độ ban đầu. Thêm nhanh 50 mL dung dịch NaOH 1,0 M có cùng nhiệt độ, khuấy nhẹ và ghi nhiệt độ cao nhất.\n\nTheo bảng số liệu nhiệt động chuẩn ở 25 °C trong CRC Handbook of Chemistry and Physics (84th ed., 2004), phản ứng H⁺(aq) + OH⁻(aq) → H₂O(l) có ΔrH° = −55,8 kJ/mol. Nếu coi dung dịch có khối lượng 100 g, nhiệt dung riêng 4,18 J/(g·K) và không thất thoát nhiệt, nhiệt độ dung dịch tính được tăng khoảng 6,7 °C.\n\nTrên thực tế, học sinh thường đo được mức tăng nhỏ hơn. Một phần nhiệt đã truyền sang cốc, nhiệt kế và không khí. So sánh kết quả đo với giá trị tính toán là cơ hội tốt để học sinh tìm hiểu về sai số thí nghiệm.",
   "bang_so_lieu": {
    "tieu_de": "Thông số thí nghiệm và giá trị dự đoán",
    "cot": [
@@ -161,23 +161,23 @@ NL.add([
     [
      "Nhiệt toả ra lí thuyết",
      "2,79 kJ",
-     "nhóm tính"
+     "tính toán"
     ],
     [
      "ΔT dự đoán",
      "6,7 °C",
-     "nhóm tính, bỏ qua thất thoát"
+     "tính toán, bỏ qua thất thoát"
     ]
    ],
-   "ghi_chu": "ΔrH° tính từ enthalpy tạo thành chuẩn của H₂O(l) (−285,8 kJ/mol) và OH⁻(aq) (−230,0 kJ/mol) trong bảng T1 của LibreTexts; các phép tính còn lại do nhóm biên soạn thực hiện."
+   "ghi_chu": "ΔrH° tính từ enthalpy tạo thành chuẩn của H₂O(l) (−285,8 kJ/mol) và OH⁻(aq) (−230,0 kJ/mol) trong CRC Handbook of Chemistry and Physics (84th ed., 2004); các giá trị còn lại được tính từ số liệu trên."
   },
-  "hinh_goi_y": "Ảnh hoặc sơ đồ nhiệt lượng kế cốc xốp (nhóm tự chụp khi làm thí nghiệm); đồ thị nhiệt độ – thời gian do học sinh đo.",
+  "hinh_goi_y": "Ảnh hoặc sơ đồ nhiệt lượng kế cốc xốp (ảnh tự chụp khi làm thí nghiệm); đồ thị nhiệt độ – thời gian do học sinh đo.",
   "nguon": [
    {
-    "trich_dan": "LibreTexts Chemistry. Reference Table T1: Standard Thermodynamic Quantities (số liệu từ CRC Handbook of Chemistry and Physics, 84th ed.): H₂O(l) −285,8; OH⁻(aq) −230,0; H⁺(aq) 0 kJ/mol. Truy cập 06/11/2026.",
-    "url": "https://chem.libretexts.org/Ancillary_Materials/Reference/Reference_Tables/Thermodynamics_Tables/T1:_Standard_Thermodynamic_Quantities",
-    "loai": "CSDL",
-    "giay_phep": "CC BY-NC-SA – trích số liệu, ghi nguồn"
+    "trich_dan": "Lide, D. R. (Chủ biên). (2004). CRC Handbook of Chemistry and Physics (84th ed.). CRC Press. Mục 5: Standard Thermodynamic Properties of Chemical Substances (H₂O(l) −285,8; OH⁻(aq) −230,0; H⁺(aq) 0 kJ/mol).",
+    "url": "",
+    "loai": "sổ tay tra cứu",
+    "giay_phep": "Trích số liệu, ghi nguồn"
    },
    {
     "trich_dan": "Royal Society of Chemistry – Education. Temperature change of neutralisation (practical video, 14–16). Truy cập 06/11/2026.",
@@ -232,16 +232,16 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu đo.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu đo.",
   "cap_nhat": "06/11/2026"
  },
  {
   "id": "cd01-03",
   "chu_de": "cd01",
   "lop": "10",
-  "tieu_de": "Phản ứng phân huỷ ammonium nitrate và vụ nổ kho phân bón West (2013)",
+  "tieu_de": "Phân bón cũng có thể phát nổ?",
   "yccd": "Tính được biến thiên enthalpy chuẩn của phản ứng dựa vào enthalpy tạo thành chuẩn. Nêu được ý nghĩa của dấu và giá trị ΔrH°.",
-  "boi_canh": "Ammonium nitrate (NH₄NO₃) là phân đạm phổ biến trên thế giới. Ở điều kiện bình thường, chất này khá bền. Nhưng khi bị nung nóng mạnh trong khối lớn, bị nhiễm bẩn hoặc gặp đám cháy, nó có thể phân huỷ dữ dội.\n\nNgày 17/4/2013, một đám cháy tại kho phân bón West Fertilizer ở bang Texas (Hoa Kỳ) đã dẫn tới vụ nổ ammonium nitrate. Ban Điều tra An toàn Hoá chất Hoa Kỳ (CSB) kết luận vụ nổ làm 15 người chết (trong đó có 12 lính cứu hoả tình nguyện), khoảng 260 người bị thương, và phá huỷ nhiều nhà dân, trường học xung quanh. Ngày 4/8/2020, vụ nổ khoảng 2 750 tấn ammonium nitrate lưu kho lâu năm tại cảng Beirut (Lebanon) tiếp tục gây thảm hoạ.\n\nMột phản ứng phân huỷ có thể xảy ra là: 2NH₄NO₃(s) → 2N₂(g) + O₂(g) + 4H₂O(g). Theo bảng số liệu nhiệt động chuẩn trên LibreTexts (trích CRC Handbook), enthalpy tạo thành chuẩn của NH₄NO₃(s) là −365,6 kJ/mol, của H₂O(g) là −241,8 kJ/mol. Từ đó có thể tính được lượng nhiệt toả ra.\n\nĐiều nguy hiểm không chỉ ở lượng nhiệt mà ở chỗ phản ứng tạo ra rất nhiều khí trong thời gian rất ngắn. Sau các thảm hoạ, nhiều nước đã siết chặt quy định lưu trữ phân bón này.",
+  "boi_canh": "Ammonium nitrate (NH₄NO₃) là phân đạm phổ biến trên thế giới. Ở điều kiện bình thường, chất này khá bền. Nhưng khi bị nung nóng mạnh trong khối lớn, bị nhiễm bẩn hoặc gặp đám cháy, nó có thể phân huỷ dữ dội.\n\nNgày 17/4/2013, một đám cháy tại kho phân bón West Fertilizer ở bang Texas (Hoa Kỳ) đã dẫn tới vụ nổ ammonium nitrate. Ban Điều tra An toàn Hoá chất Hoa Kỳ (CSB) kết luận vụ nổ làm 15 người chết (trong đó có 12 lính cứu hoả tình nguyện), khoảng 260 người bị thương, và phá huỷ nhiều nhà dân, trường học xung quanh. Ngày 4/8/2020, vụ nổ khoảng 2 750 tấn ammonium nitrate lưu kho lâu năm tại cảng Beirut (Lebanon) tiếp tục gây thảm hoạ.\n\nMột phản ứng phân huỷ có thể xảy ra là: 2NH₄NO₃(s) → 2N₂(g) + O₂(g) + 4H₂O(g). Theo bảng số liệu nhiệt động chuẩn trong CRC Handbook of Chemistry and Physics (84th ed., 2004), enthalpy tạo thành chuẩn của NH₄NO₃(s) là −365,6 kJ/mol, của H₂O(g) là −241,8 kJ/mol. Từ đó có thể tính được lượng nhiệt toả ra.\n\nĐiều nguy hiểm không chỉ ở lượng nhiệt mà ở chỗ phản ứng tạo ra rất nhiều khí trong thời gian rất ngắn. Sau các thảm hoạ, nhiều nước đã siết chặt quy định lưu trữ phân bón này.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Ảnh hiện trường trong báo cáo CSB (kiểm tra giấy phép trước khi dùng) hoặc sơ đồ kho chứa trong báo cáo.",
   "nguon": [
@@ -258,10 +258,10 @@ NL.add([
     "giay_phep": "CC BY 4.0"
    },
    {
-    "trich_dan": "LibreTexts Chemistry. Reference Table T1: Standard Thermodynamic Quantities (CRC Handbook): NH₄NO₃(s) −365,6; H₂O(g) −241,8 kJ/mol. Truy cập 06/11/2026.",
-    "url": "https://chem.libretexts.org/Ancillary_Materials/Reference/Reference_Tables/Thermodynamics_Tables/T1:_Standard_Thermodynamic_Quantities",
-    "loai": "CSDL",
-    "giay_phep": "CC BY-NC-SA – trích số liệu, ghi nguồn"
+    "trich_dan": "Lide, D. R. (Chủ biên). (2004). CRC Handbook of Chemistry and Physics (84th ed.). CRC Press. Mục 5: Standard Thermodynamic Properties of Chemical Substances (NH₄NO₃(s) −365,6; H₂O(g) −241,8 kJ/mol).",
+    "url": "",
+    "loai": "sổ tay tra cứu",
+    "giay_phep": "Trích số liệu, ghi nguồn"
    }
   ],
   "hinh_thuc": "Biên soạn lại",
@@ -311,7 +311,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -320,7 +320,7 @@ NL.add([
   "lop": "10",
   "tieu_de": "Nhiệt toả ra khi đốt cháy xăng E10 và xăng khoáng",
   "yccd": "Vận dụng biến thiên enthalpy của phản ứng đốt cháy để so sánh, đánh giá nhiên liệu trong thực tiễn.",
-  "boi_canh": "Theo Thông tư 50/2025/TT-BCT của Bộ Công Thương (ban hành ngày 7/11/2025), từ ngày 1/6/2026, xăng không chì phải được phối trộn thành xăng E10 để dùng cho động cơ xăng trên toàn quốc; xăng E5 RON92 vẫn được tiếp tục pha chế đến hết ngày 31/12/2030. Thông tư này thay cho lộ trình cũ tại Quyết định 53/2012/QĐ-TTg (đã bị bãi bỏ). Xăng E10 chứa khoảng 10% thể tích ethanol pha vào xăng khoáng.\n\nNhiều người lo lắng: ethanol toả ít nhiệt hơn xăng nên xe sẽ tốn nhiên liệu hơn. Để kiểm tra, có thể dùng octane (C₈H₁₈) làm chất đại diện cho xăng. Theo NIST Chemistry WebBook, ΔcH° của octane lỏng là −5 430 kJ/mol (giá trị trung bình), của ethanol lỏng là −1 367,6 kJ/mol. Ở 20 °C, khối lượng riêng của octane là 0,7026 g/mL (NIST), của ethanol là 0,7893 g/mL (PubChem).\n\nNhóm biên soạn tính được: 1 lít octane cháy toả khoảng 33,4 MJ, 1 lít ethanol toả khoảng 23,4 MJ. Như vậy 1 lít hỗn hợp 90% octane – 10% ethanol toả khoảng 32,4 MJ, chỉ thấp hơn octane khoảng 3%.\n\nBên cạnh năng lượng, ethanol có lợi ích khác: được sản xuất từ sắn, mía; phân tử có oxygen giúp cháy sạch hơn, giảm CO. Việc chọn nhiên liệu vì vậy cần cân nhắc nhiều tiêu chí, không chỉ nhiệt toả ra.",
+  "boi_canh": "Theo Thông tư 50/2025/TT-BCT của Bộ Công Thương (ban hành ngày 7/11/2025), từ ngày 1/6/2026, xăng không chì phải được phối trộn thành xăng E10 để dùng cho động cơ xăng trên toàn quốc; xăng E5 RON92 vẫn được tiếp tục pha chế đến hết ngày 31/12/2030. Thông tư này thay cho lộ trình cũ tại Quyết định 53/2012/QĐ-TTg (đã bị bãi bỏ). Xăng E10 chứa khoảng 10% thể tích ethanol pha vào xăng khoáng.\n\nNhiều người lo lắng: ethanol toả ít nhiệt hơn xăng nên xe sẽ tốn nhiên liệu hơn. Để kiểm tra, có thể dùng octane (C₈H₁₈) làm chất đại diện cho xăng. Theo NIST Chemistry WebBook, ΔcH° của octane lỏng là −5 430 kJ/mol (giá trị trung bình), của ethanol lỏng là −1 367,6 kJ/mol. Ở 20 °C, khối lượng riêng của octane là 0,7026 g/mL (NIST), của ethanol là 0,7893 g/mL (PubChem).\n\nTheo tính toán, 1 lít octane cháy toả khoảng 33,4 MJ, 1 lít ethanol toả khoảng 23,4 MJ. Như vậy 1 lít hỗn hợp 90% octane – 10% ethanol toả khoảng 32,4 MJ, chỉ thấp hơn octane khoảng 3%.\n\nBên cạnh năng lượng, ethanol có lợi ích khác: được sản xuất từ sắn, mía; phân tử có oxygen giúp cháy sạch hơn, giảm CO. Việc chọn nhiên liệu vì vậy cần cân nhắc nhiều tiêu chí, không chỉ nhiệt toả ra.",
   "bang_so_lieu": {
    "tieu_de": "Nhiệt toả ra khi đốt cháy hoàn toàn 1 lít nhiên liệu (20 °C)",
    "cot": [
@@ -345,15 +345,15 @@ NL.add([
      "23,4"
     ]
    ],
-   "ghi_chu": "Nhóm biên soạn tính từ ΔcH° (NIST: octane −5 430; ethanol −1 367,6 kJ/mol), khối lượng mol (114,23; 46,07 g/mol) và khối lượng riêng ở 20 °C (octane 0,7026 – NIST; ethanol 0,7893 g/mL – PubChem); coi xăng là octane tinh khiết (đơn giản hoá)."
+   "ghi_chu": "Tính từ ΔcH° (NIST: octane −5 430; ethanol −1 367,6 kJ/mol), khối lượng mol (114,23; 46,07 g/mol) và khối lượng riêng ở 20 °C (octane 0,7026 – NIST; ethanol 0,7893 g/mL – PubChem); coi xăng là octane tinh khiết (đơn giản hoá)."
   },
-  "hinh_goi_y": "Ảnh cột bơm xăng E10 tại cửa hàng xăng dầu (nhóm tự chụp).",
+  "hinh_goi_y": "Ảnh cột bơm xăng E10 tại cửa hàng xăng dầu (ảnh tự chụp).",
   "nguon": [
    {
-    "trich_dan": "Bộ Công Thương. (2025). Thông tư số 50/2025/TT-BCT quy định lộ trình áp dụng tỷ lệ phối trộn nhiên liệu sinh học với nhiên liệu truyền thống (khoản 1, 2 Điều 4) – nội dung được trích trong bài “Từ hôm nay (1/6), chính thức bán xăng E10 trên toàn quốc”, Báo Đại biểu Nhân dân, 01/06/2026. Truy cập 06/11/2026.",
-    "url": "https://daibieunhandan.vn/tu-hom-nay-1-6-chinh-thuc-ban-xang-e10-tren-toan-quoc-10418892.html",
+    "trich_dan": "Bộ Công Thương. (2025). Thông tư số 50/2025/TT-BCT ngày 07/11/2025 quy định lộ trình áp dụng tỷ lệ phối trộn nhiên liệu sinh học với nhiên liệu truyền thống tại Việt Nam (khoản 1, 2 Điều 4). Cổng thông tin điện tử Bộ Công Thương. Truy cập 06/11/2026.",
+    "url": "https://moit.gov.vn/van-ban-phap-luat/van-ban-phap-quy/thong-tu-quy-dinh-lo-trinh-ap-dung-ty-le-phoi-tron-nhien-lieu-sinh-hoc-voi-nhien-lieu-truyen-thong-tai-viet-nam.html",
     "loai": "văn bản pháp quy",
-    "giay_phep": "Văn bản quy phạm pháp luật không thuộc đối tượng bảo hộ quyền tác giả; bài báo – chỉ trích, ghi nguồn"
+    "giay_phep": "Văn bản quy phạm pháp luật, không thuộc đối tượng bảo hộ quyền tác giả"
    },
    {
     "trich_dan": "NIST Chemistry WebBook: Octane – Condensed phase thermochemistry data (ΔcH°liquid = −5 430 ± 100 kJ/mol). Truy cập 06/11/2026.",
@@ -427,7 +427,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -436,7 +436,7 @@ NL.add([
   "lop": "10",
   "tieu_de": "Lượng CO₂ phát thải khi đốt một số nhiên liệu đun nấu",
   "yccd": "Vận dụng biến thiên enthalpy của phản ứng đốt cháy để đề xuất lựa chọn nhiên liệu phù hợp, bảo vệ môi trường.",
-  "boi_canh": "Một trường bán trú cần chọn nhiên liệu cho bếp ăn: than (coi là carbon), gas (propane, butane) hay khí thiên nhiên (methane). Ban giám hiệu muốn biết: để có cùng một lượng nhiệt, nhiên liệu nào thải ít khí CO₂ nhất?\n\nTừ phương trình đốt cháy, đốt 1 mol carbon tạo 1 mol CO₂, đốt 1 mol propane tạo 3 mol CO₂. Kết hợp với ΔcH° trong NIST Chemistry WebBook (C −393,5; CH₄ −890,7; C₃H₈ −2 219,2; C₄H₁₀ −2 877,5 kJ/mol), nhóm biên soạn tính được khối lượng CO₂ thải ra khi mỗi nhiên liệu toả 1 MJ nhiệt (bảng dưới).\n\nKết quả cho thấy than thải CO₂ gấp hơn hai lần methane. Lí do là trong methane, phần lớn nhiệt sinh ra từ việc tạo liên kết O–H trong nước chứ không chỉ từ tạo CO₂.\n\nTuy vậy, lựa chọn thực tế còn phụ thuộc giá, sự sẵn có, an toàn và khói bụi. Than tổ ong còn sinh khí CO độc và bụi mịn trong bếp. Đây là một bài toán mở, không có một đáp án duy nhất.",
+  "boi_canh": "Một trường bán trú cần chọn nhiên liệu cho bếp ăn: than (coi là carbon), gas (propane, butane) hay khí thiên nhiên (methane). Ban giám hiệu muốn biết: để có cùng một lượng nhiệt, nhiên liệu nào thải ít khí CO₂ nhất?\n\nTừ phương trình đốt cháy, đốt 1 mol carbon tạo 1 mol CO₂, đốt 1 mol propane tạo 3 mol CO₂. Kết hợp với ΔcH° trong NIST Chemistry WebBook (C −393,5; CH₄ −890,7; C₃H₈ −2 219,2; C₄H₁₀ −2 877,5 kJ/mol), tính được khối lượng CO₂ thải ra khi mỗi nhiên liệu toả 1 MJ nhiệt (bảng dưới).\n\nKết quả cho thấy than thải CO₂ gấp hơn hai lần methane. Lí do là trong methane, phần lớn nhiệt sinh ra từ việc tạo liên kết O–H trong nước chứ không chỉ từ tạo CO₂.\n\nTuy vậy, lựa chọn thực tế còn phụ thuộc giá, sự sẵn có, an toàn và khói bụi. Than tổ ong còn sinh khí CO độc và bụi mịn trong bếp. Đây là một bài toán mở, không có một đáp án duy nhất.",
   "bang_so_lieu": {
    "tieu_de": "Khối lượng CO₂ thải ra khi nhiên liệu toả 1 MJ nhiệt",
    "cot": [
@@ -461,7 +461,7 @@ NL.add([
      "111,8"
     ]
    ],
-   "ghi_chu": "Nhóm biên soạn tính từ ΔcH° (NIST Chemistry WebBook) và M(CO₂) = 44,01 g/mol, coi cháy hoàn toàn."
+   "ghi_chu": "Tính từ ΔcH° (NIST Chemistry WebBook) và M(CO₂) = 44,01 g/mol, coi cháy hoàn toàn."
   },
   "hinh_goi_y": "",
   "nguon": [
@@ -537,14 +537,14 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ soạn nháp; nhóm đối sánh, chỉnh sửa. Số liệu tính từ NIST.",
+  "ai_su_dung": "AI hỗ trợ soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Số liệu tính từ NIST.",
   "cap_nhat": "06/11/2026"
  },
  {
   "id": "cd01-06",
   "chu_de": "cd01",
   "lop": "10",
-  "tieu_de": "Hydrogen làm nhiên liệu: nhiệt lượng và phát thải CO₂",
+  "tieu_de": "Hydrogen: nhiên liệu của tương lai?",
   "yccd": "Vận dụng biến thiên enthalpy của phản ứng để giải thích ưu, nhược điểm của nhiên liệu; liên hệ ngành nghề năng lượng.",
   "boi_canh": "Hydrogen cháy chỉ tạo ra nước: 2H₂(g) + O₂(g) → 2H₂O(l), ΔrH° = −571,6 kJ. Vì vậy nhiều quốc gia xem hydrogen là giải pháp quan trọng để giảm phát thải trong công nghiệp thép, phân bón, vận tải nặng.\n\nTheo báo cáo Global Hydrogen Review 2023 của Cơ quan Năng lượng Quốc tế (IEA), nhu cầu hydrogen toàn cầu năm 2022 đạt khoảng 95 triệu tấn. Tuy nhiên, phần lớn được sản xuất từ khí thiên nhiên và than, quá trình này thải nhiều CO₂. Hydrogen phát thải thấp (từ điện phân nước bằng điện tái tạo, hoặc có thu giữ CO₂) chiếm chưa tới 1% sản lượng.\n\nMột khó khăn khác là lưu trữ. Theo NIST, ở 0 °C, 1 atm, khối lượng riêng của H₂ chỉ 0,0899 g/L, của CH₄ là 0,717 g/L. Dù 1 gam hydrogen toả nhiệt gấp 2,6 lần 1 gam methane, 1 lít khí hydrogen lại toả ít nhiệt hơn nhiều.\n\nNgành hydrogen cần kĩ sư hoá học, kĩ sư điện hoá, chuyên gia an toàn khí và vật liệu. Đây là hướng nghề nghiệp mới cho học sinh yêu thích hoá học.",
   "bang_so_lieu": {
@@ -563,7 +563,7 @@ NL.add([
      "39,8"
     ]
    ],
-   "ghi_chu": "Nhóm biên soạn tính: (nhiệt toả ra trên mỗi gam theo NIST) × (khối lượng riêng ở 0 °C, 1 atm)."
+   "ghi_chu": "Cách tính: (nhiệt toả ra trên mỗi gam theo NIST) × (khối lượng riêng ở 0 °C, 1 atm)."
   },
   "hinh_goi_y": "Biểu đồ cơ cấu sản xuất hydrogen theo nguồn trong IEA Global Hydrogen Review 2023 (vẽ lại, ghi nguồn).",
   "nguon": [
@@ -639,7 +639,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  }
 ]);

@@ -5,7 +5,7 @@ NL.add([
   "lop": "11",
   "tieu_de": "Chọn chất chỉ thị cho phép chuẩn độ acid – base",
   "yccd": "Trình bày được nguyên tắc chuẩn độ acid – base; lựa chọn được chất chỉ thị phù hợp; thực hiện được thí nghiệm chuẩn độ.",
-  "boi_canh": "Trong phép chuẩn độ acid – base, người làm thí nghiệm nhỏ từ từ dung dịch chuẩn từ burette vào dung dịch cần xác định nồng độ. Điểm tương đương là lúc lượng acid và base phản ứng vừa đủ. Mắt người không thấy được điểm này, nên cần dùng chất chỉ thị acid – base.\n\nChất chỉ thị là acid hoặc base hữu cơ yếu, có màu ở dạng acid khác màu ở dạng base. Mỗi chất đổi màu trong một khoảng pH nhất định. Bảng dưới tổng hợp khoảng đổi màu của bốn chất chỉ thị phổ biến theo bảng tra cứu của LibreTexts Chemistry.\n\nNguyên tắc chọn: khoảng đổi màu của chất chỉ thị phải nằm trong bước nhảy pH quanh điểm tương đương. Chuẩn độ acid mạnh bằng base mạnh (HCl bằng NaOH) có bước nhảy rất rộng: với dung dịch 0,1 M, nhóm biên soạn tính được pH tăng từ khoảng 4,3 lên 9,7 khi lượng NaOH thêm vào đi từ 99,9% đến 100,1% lượng cần dùng, nên dùng được nhiều chất chỉ thị. Chuẩn độ acid yếu bằng base mạnh (CH₃COOH bằng NaOH) có điểm tương đương ở pH khoảng 8,7 (nhóm tính cho dung dịch 0,1 M, Ka = 1,75 × 10⁻⁵), bước nhảy hẹp hơn và nằm ở vùng base.\n\nMô phỏng “Acid-Base Solutions” của PhET giúp học sinh quan sát pH của acid mạnh, acid yếu ở cấp độ phân tử.",
+  "boi_canh": "Trong phép chuẩn độ acid – base, người làm thí nghiệm nhỏ từ từ dung dịch chuẩn từ burette vào dung dịch cần xác định nồng độ. Điểm tương đương là lúc lượng acid và base phản ứng vừa đủ. Mắt người không thấy được điểm này, nên cần dùng chất chỉ thị acid – base.\n\nChất chỉ thị là acid hoặc base hữu cơ yếu, có màu ở dạng acid khác màu ở dạng base. Mỗi chất đổi màu trong một khoảng pH nhất định. Bảng dưới tổng hợp khoảng đổi màu của bốn chất chỉ thị phổ biến theo bảng tra cứu của LibreTexts Chemistry.\n\nNguyên tắc chọn: khoảng đổi màu của chất chỉ thị phải nằm trong bước nhảy pH quanh điểm tương đương. Chuẩn độ acid mạnh bằng base mạnh (chẳng hạn chuẩn độ HCl bằng NaOH) có bước nhảy chuẩn độ rất rộng: với dung dịch NaOH 0,1 M, pH tăng từ 4,3 lên 9,7 khi lượng NaOH thêm vào tăng từ 99,9% đến 100,1% lượng cần dùng, do đó dùng được nhiều loại chất chỉ thị. Chuẩn độ acid yếu bằng base mạnh (CH₃COOH bằng NaOH) có điểm tương đương ở pH khoảng 8,7 (tính cho dung dịch 0,1 M, Ka = 1,75 × 10⁻⁵), bước nhảy hẹp hơn và nằm ở vùng base.\n\nMô phỏng “Acid-Base Solutions” của PhET giúp học sinh quan sát pH của acid mạnh, acid yếu ở cấp độ phân tử.",
   "bang_so_lieu": {
    "tieu_de": "Khoảng pH đổi màu của một số chất chỉ thị",
    "cot": [
@@ -37,7 +37,7 @@ NL.add([
    ],
    "ghi_chu": "Theo bảng “Acid-Base Indicators” của LibreTexts Chemistry (truy cập 06/11/2026)."
   },
-  "hinh_goi_y": "Ảnh dãy ống nghiệm chứa bốn chất chỉ thị ở các pH khác nhau (nhóm tự chụp).",
+  "hinh_goi_y": "Ảnh dãy ống nghiệm chứa bốn chất chỉ thị ở các pH khác nhau (ảnh tự chụp).",
   "nguon": [
    {
     "trich_dan": "LibreTexts Chemistry. Reference Table: Acid-Base Indicators (methyl orange 3,2–4,4; methyl red 4,8–6,0; bromothymol blue 6,0–7,6; phenolphthalein 8,2–10,0). Truy cập 06/11/2026.",
@@ -98,7 +98,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -142,15 +142,15 @@ NL.add([
      ""
     ]
    ],
-   "ghi_chu": "Quy trình do nhóm biên soạn dựa trên phép chuẩn độ acid yếu – base mạnh."
+   "ghi_chu": "Quy trình xây dựng dựa trên phép chuẩn độ acid yếu – base mạnh."
   },
-  "hinh_goi_y": "Ảnh bình tam giác trước và sau điểm cuối (không màu → hồng nhạt), nhóm tự chụp.",
+  "hinh_goi_y": "Ảnh bình tam giác trước và sau điểm cuối (không màu → hồng nhạt), ảnh tự chụp.",
   "nguon": [
    {
-    "trich_dan": "LibreTexts Chemistry. Reference Table E1: Acid Dissociation Constants at 25 °C (acetic acid Ka = 1,75 × 10⁻⁵) – dùng để giải thích chọn phenolphthalein. Truy cập 06/11/2026.",
-    "url": "https://chem.libretexts.org/Ancillary_Materials/Reference/Reference_Tables/Equilibrium_Constants/E1%3A_Acid_Dissociation_Constants_at_25C",
-    "loai": "CSDL",
-    "giay_phep": "CC BY-NC-SA – trích số liệu, ghi nguồn"
+    "trich_dan": "Lide, D. R. (Chủ biên). (2004). CRC Handbook of Chemistry and Physics (84th ed.). CRC Press. Mục 8: Dissociation Constants of Organic Acids (acetic acid Ka = 1,75 × 10⁻⁵) – dùng để giải thích chọn phenolphthalein.",
+    "url": "",
+    "loai": "sổ tay tra cứu",
+    "giay_phep": "Trích số liệu, ghi nguồn"
    },
    {
     "trich_dan": "LibreTexts Chemistry. Reference Table: Acid-Base Indicators (phenolphthalein 8,2–10,0). Truy cập 06/11/2026.",
@@ -205,7 +205,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu đo.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu đo.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -239,9 +239,9 @@ NL.add([
      "7,6"
     ]
    ],
-   "ghi_chu": "Nhóm biên soạn tính theo phương trình (7) Benson – Krause trong Bản ghi nhớ kĩ thuật 2011.03 của USGS (14,62; 11,29; 9,09; 7,56 mg/L), làm tròn đến 0,1; có thể tra lại bằng công cụ DOTABLES của USGS."
+   "ghi_chu": "Tính theo phương trình (7) Benson – Krause trong Bản ghi nhớ kĩ thuật 2011.03 của USGS (14,62; 11,29; 9,09; 7,56 mg/L), làm tròn đến 0,1; có thể tra lại bằng công cụ DOTABLES của USGS."
   },
-  "hinh_goi_y": "Ảnh bình BOD và quá trình cố định oxygen (kết tủa nâu MnO(OH)₂), nhóm tự chụp hoặc lấy ảnh CC.",
+  "hinh_goi_y": "Ảnh bình BOD và quá trình cố định oxygen (kết tủa nâu MnO(OH)₂), ảnh tự chụp hoặc lấy ảnh CC.",
   "nguon": [
    {
     "trich_dan": "U.S. Geological Survey, Office of Water Quality. (2011). Technical Memorandum 2011.03: Change to solubility equations for oxygen in water (phương trình 7 – Benson và Krause). Truy cập 06/11/2026.",
@@ -309,7 +309,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -320,11 +320,11 @@ NL.add([
   "yccd": "Trình bày được nguyên tắc chuẩn độ oxi hoá – khử bằng potassium permanganate; vận dụng trong kiểm tra chất lượng nước.",
   "boi_canh": "Nước sinh hoạt có thể chứa chất hữu cơ từ lá cây mục, nước thải, rác thải. Một cách đánh giá nhanh lượng chất hữu cơ này là đo chỉ số permanganate. Ở Việt Nam, phương pháp được quy định trong tiêu chuẩn TCVN 6186:1996 (tương đương ISO 8467:1993).\n\nNguyên tắc: đun mẫu nước với một lượng dư potassium permanganate (KMnO₄) trong môi trường sulfuric acid. Các chất hữu cơ dễ bị oxi hoá sẽ khử một phần MnO₄⁻. Sau đó thêm lượng biết trước sodium oxalate để khử hết KMnO₄ còn dư, rồi chuẩn độ lượng oxalate dư bằng KMnO₄ cho đến khi xuất hiện màu hồng nhạt. Chính KMnO₄ đóng vai trò chất chỉ thị vì ion MnO₄⁻ có màu tím, còn Mn²⁺ gần như không màu.\n\nKết quả được quy đổi ra số mg oxygen tương ứng trong 1 lít nước. Chỉ số này càng cao, nước càng nhiều chất hữu cơ.\n\nQuy chuẩn kĩ thuật quốc gia về chất lượng nước sạch dùng cho mục đích sinh hoạt QCVN 01-1:2024/BYT (ban hành kèm Thông tư 52/2024/TT-BYT) có thông số “Permanganat” trong danh mục chỉ tiêu và dẫn TCVN 6186:1996 làm phương pháp thử. Phòng xét nghiệm ở các nhà máy nước, trung tâm y tế dự phòng thực hiện phép đo này định kì.",
   "bang_so_lieu": null,
-  "hinh_goi_y": "Ảnh dãy bình tam giác ở các giai đoạn chuẩn độ permanganate (nhóm tự chụp tại phòng thí nghiệm khoa).",
+  "hinh_goi_y": "Ảnh dãy bình tam giác ở các giai đoạn chuẩn độ permanganate (ảnh tự chụp tại phòng thí nghiệm khoa).",
   "nguon": [
    {
-    "trich_dan": "Bộ Y tế. (2024). QCVN 01-1:2024/BYT Quy chuẩn kĩ thuật quốc gia về chất lượng nước sạch sử dụng cho mục đích sinh hoạt (ban hành kèm Thông tư 52/2024/TT-BYT) – bản PDF trên LuatVietnam: thông số Permanganat; phương pháp thử TCVN 6186:1996 (ISO 8467:1993). Truy cập 06/11/2026.",
-    "url": "https://static.luatvietnam.vn/xem-noi-dung-file-quy-chuan-qcvn-01-12024-byt-chat-luong-nuoc-sach-su-dung-cho-muc-dich-sinh-hoat-383277-d3/uploaded/vietlawfile/2025/1/qcvn_01_1_2024_byt_020125132444.pdf.aspx",
+    "trich_dan": "Bộ Y tế. (2024). Thông tư số 52/2024/TT-BYT ban hành QCVN 01-1:2024/BYT Quy chuẩn kĩ thuật quốc gia về chất lượng nước sạch sử dụng cho mục đích sinh hoạt: thông số Permanganat; phương pháp thử TCVN 6186:1996 (ISO 8467:1993). Cổng thông tin điện tử Bộ Y tế. Truy cập 06/11/2026.",
+    "url": "https://moh.gov.vn/en/thong-tin-chi-dao-dieu-hanh/-/asset_publisher/DOHhlnDN87WZ/content/thong-tu-so-52-2024-tt-byt-ban-hanh-quy-chuan-ky-thuat-quoc-gia-va-quy-inh-kiem-tra-giam-sat-chat-luong-nuoc-sach-su-dung-cho-muc-ich-sinh-hoat",
     "loai": "văn bản pháp quy",
     "giay_phep": "Văn bản quy phạm pháp luật, không thuộc đối tượng bảo hộ quyền tác giả"
    }
@@ -375,7 +375,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -386,7 +386,7 @@ NL.add([
   "yccd": "Vận dụng phản ứng trung hoà và tính toán theo phương trình để đề xuất phương án xử lí sự cố hoá chất an toàn.",
   "boi_canh": "Trong giờ thực hành, một học sinh làm vỡ chai chứa 500 mL dung dịch hydrochloric acid 1,0 M, acid chảy loang ra mặt bàn. Giáo viên cần quyết định nhanh: dùng chất gì để trung hoà?\n\nCó ba lựa chọn trong tủ hoá chất: dung dịch NaOH 1,0 M; bột sodium hydrogen carbonate (NaHCO₃, “baking soda”); bột calcium carbonate (CaCO₃, đá vôi nghiền).\n\nNaOH phản ứng nhanh: HCl + NaOH → NaCl + H₂O, nhưng chính NaOH cũng ăn mòn da và toả nhiều nhiệt khi trung hoà. Nếu đổ dư, mặt bàn lại có base mạnh. NaHCO₃ phản ứng: HCl + NaHCO₃ → NaCl + H₂O + CO₂, sủi bọt khí giúp nhận biết phản ứng đã kết thúc; NaHCO₃ dư chỉ là base rất yếu, ít nguy hiểm. CaCO₃ phản ứng chậm hơn, tạo CaCl₂ và CO₂.\n\nHướng dẫn xử lí tràn đổ hoá chất của nhiều trường đại học (ví dụ North Dakota State University, San José State University) liệt kê sodium bicarbonate là chất trung hoà dùng cho acid tràn đổ. Đây là một bài toán lựa chọn cần cân nhắc cả hoá học, an toàn và chi phí.",
   "bang_so_lieu": null,
-  "hinh_goi_y": "Ảnh bộ dụng cụ xử lí tràn đổ hoá chất trong phòng thí nghiệm của khoa (nhóm tự chụp).",
+  "hinh_goi_y": "Ảnh bộ dụng cụ xử lí tràn đổ hoá chất trong phòng thí nghiệm của khoa (ảnh tự chụp).",
   "nguon": [
    {
     "trich_dan": "North Dakota State University. (2026). Chemical Spill Guidance (mục bộ dụng cụ xử lí tràn đổ: “Sodium bicarbonate (for acid spills)”). Truy cập 06/11/2026.",
@@ -446,7 +446,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -457,7 +457,7 @@ NL.add([
   "yccd": "Vận dụng phép chuẩn độ oxi hoá – khử để xác định hàm lượng chất; liên hệ nghề nghiệp kiểm nghiệm.",
   "boi_canh": "Vitamin C (ascorbic acid, C₆H₈O₆) là chất chống oxi hoá cần thiết cho cơ thể. Theo cơ sở dữ liệu FoodData Central của Bộ Nông nghiệp Hoa Kỳ (USDA), 100 g cam tươi chứa khoảng 53,2 mg vitamin C. Vitamin C dễ bị oxi hoá bởi không khí, ánh sáng và nhiệt, nên nước cam để lâu hoặc đun nóng sẽ mất bớt vitamin.\n\nNgười kiểm nghiệm có thể xác định vitamin C bằng phép chuẩn độ iodine: C₆H₈O₆ + I₂ → C₆H₆O₆ + 2HI. Dung dịch iodine được nhỏ từ burette vào mẫu nước cam có hồ tinh bột. Khi vitamin C đã phản ứng hết, giọt I₂ dư làm dung dịch chuyển sang màu xanh đen.\n\nỞ các viện kiểm nghiệm an toàn vệ sinh thực phẩm, trung tâm kiểm nghiệm thuốc, phòng QC của nhà máy nước giải khát, kiểm nghiệm viên thực hiện hằng ngày những phép phân tích như vậy để kiểm tra nhãn sản phẩm có trung thực hay không.\n\nĐây là nghề phù hợp với người cẩn thận, thích làm thí nghiệm và có kiến thức hoá phân tích vững.",
   "bang_so_lieu": null,
-  "hinh_goi_y": "Ảnh nhãn dinh dưỡng của một hộp nước cam có ghi hàm lượng vitamin C (nhóm tự chụp).",
+  "hinh_goi_y": "Ảnh nhãn dinh dưỡng của một hộp nước cam có ghi hàm lượng vitamin C (ảnh tự chụp).",
   "nguon": [
    {
     "trich_dan": "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central: Oranges, raw, all commercial varieties (FDC ID 169097) – Vitamin C, total ascorbic acid: 53,2 mg/100 g. Truy cập 06/11/2026.",
@@ -513,7 +513,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  }
 ]);

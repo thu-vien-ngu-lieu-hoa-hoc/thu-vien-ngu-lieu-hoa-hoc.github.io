@@ -219,6 +219,34 @@ p,li,td,.lead,.kv>div{text-wrap:pretty}
 .steps li::before{content:counter(s);position:absolute;left:16px;top:13px;width:32px;height:32px;border-radius:50%;background:var(--accent-soft);color:var(--accent-ink);display:grid;place-items:center;font:600 16px var(--f-display)}
 .steps.grid{grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
 .steps.grid li{padding:56px 16px 16px}
+.lanes{display:grid;grid-template-columns:118px repeat(6,minmax(0,1fr));grid-template-rows:auto auto auto;gap:8px 8px;margin:14px 0 6px}
+.lanes .lab{display:grid;align-content:center;gap:2px;padding:10px 12px;border-radius:12px;font:600 14px var(--f-display);line-height:1.25}
+.lanes .lab small{font-family:var(--f-body,inherit);font-size:12px;font-weight:400;opacity:.85}
+.lanes .lab.ai{grid-row:2;background:var(--warn-bg);color:var(--warn-ink);border:1px dashed var(--warn-line)}
+.lanes .lab.hu{grid-row:3;background:var(--accent-soft);color:var(--accent-ink);border:1px solid color-mix(in srgb,var(--accent) 35%,transparent)}
+.lanes .col{display:grid;grid-row:1/span 3;grid-template-rows:subgrid;gap:8px;position:relative}
+.lanes .hd{display:flex;gap:8px;align-items:center;font-weight:600;line-height:1.25;padding:2px 2px 0;font-size:14.5px}
+.lanes .hd i{flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff;font:600 13px var(--f-display);font-style:normal}
+.lanes .c{padding:9px 11px;border-radius:10px;font-size:13.5px;line-height:1.42}
+.lanes .c.ai{background:var(--warn-bg);color:var(--warn-ink);border:1px dashed var(--warn-line)}
+.lanes .c.ai.none{background:transparent;color:var(--ink-3);border:1px dashed var(--line);font-style:italic}
+.lanes .c.hu{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent)}
+.lanes .c.hu b{color:var(--accent-ink)}
+.lanes .col:not(:last-child) .hd::after{content:"→";margin-left:auto;color:var(--ink-3);font-weight:400}
+.lanes-key{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;color:var(--ink-2);margin:2px 0 18px}
+.lanes-key span{display:inline-flex;align-items:center;gap:6px}
+.lanes-key span::before{content:"";width:14px;height:14px;border-radius:4px}
+.lanes-key .k-ai::before{background:var(--warn-bg);border:1px dashed var(--warn-line)}
+.lanes-key .k-hu::before{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent)}
+@media (max-width:900px){
+  .lanes{grid-template-columns:1fr;grid-template-rows:none;gap:10px}
+  .lanes .lab{display:none}
+  .lanes .col{grid-row:auto;grid-template-rows:none;padding:12px;border:1px solid var(--line);border-radius:14px;background:var(--bg,transparent)}
+  .lanes .col:not(:last-child)::after{content:"↓";position:absolute;left:50%;bottom:-17px;transform:translateX(-50%);color:var(--ink-3);font-size:15px;line-height:1}
+  .lanes .col:not(:last-child) .hd::after{content:none}
+  .lanes .c.ai::before{content:"AI · ";font-weight:600;font-style:normal}
+  .lanes .c.hu::before{content:"Con người · ";font-weight:600;color:var(--accent-ink)}
+}
 
 /* ---------- Bảng ---------- */
 .table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:12px 0 16px;background:var(--surface)}
@@ -417,7 +445,24 @@ figure .table-wrap{margin-bottom:0}
   .print-head{display:block;font-size:10pt;color:#444;margin-bottom:8px}
   body.in-hs .gv-only,body.in-hs .answer{display:none!important}
   a{color:#000;text-decoration:none}
-  h2{break-after:avoid}
+  @page{margin:16mm 15mm}
+  html,body{font-size:11.5pt}
+  h1,h2,h3,.fig-title,.q-head{break-after:avoid;page-break-after:avoid}
+  h2,h3{break-inside:avoid}
+  p,li,dd{orphans:3;widows:3}
+  .table-wrap,figure,.kv{overflow:visible!important}
+  .table-wrap{box-shadow:none}
+  figure{break-inside:avoid;page-break-inside:avoid;box-shadow:none}
+  .chart,.chart svg{break-inside:avoid;page-break-inside:avoid}
+  table{break-inside:auto}
+  thead{display:table-header-group} tfoot{display:table-footer-group}
+  tr,td,th{break-inside:avoid;page-break-inside:avoid}
+  .kv{break-inside:avoid;page-break-inside:avoid}
+  .kv>*,.luuy li,.src-list li,.meta-foot,.box,.answer,.ds li,.ds .row,.mc li,.lanes .col,.steps li,.motto{break-inside:avoid;page-break-inside:avoid}
+  .q{break-inside:avoid;page-break-inside:avoid} .q>*{break-inside:avoid}
+  .lanes{grid-template-columns:repeat(3,1fr);grid-template-rows:none} .lanes .lab{display:none}
+  .lanes .col{grid-row:auto;grid-template-rows:none} .lanes .col .hd::after,.lanes .col::after{content:none!important}
+  .lanes .c.ai::before{content:"AI · ";font-weight:600} .lanes .c.hu::before{content:"Con người · ";font-weight:600}
 }
 </style>
 </head>
@@ -781,7 +826,7 @@ const heroArt = `<svg class="hero-art" viewBox="0 0 200 200" fill="none" stroke=
   <line x1="48" y1="130" x2="22" y2="145"/><circle cx="18" cy="147" r="6" fill="currentColor"/></svg>
   <svg class="hero-art2" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><circle cx="50" cy="50" r="10" fill="currentColor"/><ellipse cx="50" cy="50" rx="44" ry="16"/><ellipse cx="50" cy="50" rx="44" ry="16" transform="rotate(60 50 50)"/><ellipse cx="50" cy="50" rx="44" ry="16" transform="rotate(120 50 50)"/></svg>`;
 function pageHome(){
-  const tdi = DS.filter(x=>ttCua(x)==='tham_dinh').length, nQ = DS.reduce((s,x)=>s+x.cau_hoi.length,0);
+  const tdi = DS.filter(x=>ttCua(x)==='tham_dinh').length, nQ = DS.reduce((s,x)=>s+x.cau_hoi.length,0), nNg = new Set(DS.flatMap(x=>(x.nguon||[]).map(n=>n.url||n.trich_dan))).size;
   const moi = DS.slice().sort((a,b) => TT_HIEN.indexOf(ttCua(b)) - TT_HIEN.indexOf(ttCua(a))).slice(0, 3);
   const words = ['bảng số liệu', 'đồ thị', 'thí nghiệm', 'quy chuẩn', 'tình huống'];
   return `<div class="page wide">${errBox()}
@@ -796,7 +841,7 @@ function pageHome(){
       <div class="stat rv"><b data-count="${C.chu_de.length}">0</b><span>chủ đề CT 2018</span></div>
       <div class="stat rv"><b data-count="${DS.length}">0</b><span>ngữ liệu</span></div>
       <div class="stat rv"><b data-count="${nQ}">0</b><span>câu hỏi minh hoạ</span></div>
-      <div class="stat rv good"><b data-count="${tdi}">0</b><span>đã thẩm định</span></div>
+      ${tdi?`<div class="stat rv good"><b data-count="${tdi}">0</b><span>đã thẩm định</span></div>`:`<div class="stat rv good"><b data-count="${nNg}">0</b><span>nguồn trích dẫn</span></div>`}
     </div></section>
     <h2>${C.chu_de.length} chủ đề</h2>
     <div class="chips" id="lopChips" role="group" aria-label="Lọc theo lớp">${['', '10', '11', '12'].map(l => `<button class="chip${l===''?' on':''}" data-l="${l}">${l?'Lớp '+l:'Tất cả'}</button>`).join('')}</div>
@@ -887,7 +932,7 @@ function pageNL(id){
       <div class="toolbar"><button class="btn" data-print="gv">${icon('print',16)} In bản giáo viên</button><button class="btn ghost" data-print="hs">${icon('print',16)} In bản học sinh</button><button class="btn ghost" data-copyall>${icon('copy',16)} Sao chép câu hỏi</button></div>
     </header>
     <nav class="toc-inline" aria-label="Mục trong ngữ liệu"><a href="#s1" data-s="s1">1. Bối cảnh</a><a href="#s2" data-s="s2">2. Nguồn</a><a href="#s3" data-s="s3">3. Định hướng</a><a href="#s4" data-s="s4">4. Câu hỏi</a><a href="#s5" data-s="s5">5. Lưu ý khoa học</a></nav>
-    <h2 id="s1">${sec(1,'Bối cảnh', x.hinh_thuc?esc(x.hinh_thuc):'')}</h2><div class="prose">${paras(x.boi_canh)}</div>`;
+    <h2 id="s1">${sec(1,'Bối cảnh')}</h2><div class="prose">${paras(x.boi_canh)}</div>`;
   if(b && Array.isArray(b.cot) && Array.isArray(b.dong) && b.dong.length){
     const numCol = b.cot.map((_,c) => c>0 && b.dong.every(r => Array.isArray(r) && !isNaN(soHoc(r[c]))));
     h += `<figure class="rv">${b.tieu_de?`<div class="fig-title">${txt(b.tieu_de)}</div>`:''}${chartFrom(b,'ch1')}
@@ -911,7 +956,7 @@ function pageNL(id){
     <div class="gv-only"><h2 id="s5">${sec(5,'Lưu ý khoa học cho giáo viên')}</h2>
     ${x.luu_y_khoa_hoc.length?`<ol class="luuy">${x.luu_y_khoa_hoc.map(l=>`<li class="rv">${txt(l)}</li>`).join('')}</ol>`:'<p class="muted">Chưa có lưu ý.</p>'}
     <div class="meta-foot">
-      <div><b>Người biên soạn:</b> ${txt(x.nguoi_bien_soan||'[chưa điền]')} · <b>Đối sánh / thẩm định:</b> ${txt(x.nguoi_tham_dinh||'[chưa điền]')}</div>
+      ${(x.nguoi_bien_soan||x.nguoi_tham_dinh)?`<div>${[x.nguoi_bien_soan?`<b>Người biên soạn:</b> ${txt(x.nguoi_bien_soan)}`:'', x.nguoi_tham_dinh?`<b>Đối sánh / thẩm định:</b> ${txt(x.nguoi_tham_dinh)}`:''].filter(Boolean).join(' · ')}</div>`:''}
       <div><b>Trạng thái:</b> ${TRANG_THAI[ttCua(x)]} · <b>Cập nhật:</b> ${esc(x.cap_nhat||'')}</div>
       <div><b>Sử dụng AI:</b> ${txt(x.ai_su_dung||'')}</div>
     </div></div>
@@ -983,8 +1028,10 @@ function pageNguon(){
     <ul>
       <li>Ưu tiên dữ liệu công cộng, truy cập mở, giấy phép Creative Commons.</li>
       <li>Với tài liệu không mở: chỉ lấy số liệu, tự vẽ lại bảng/đồ thị, tự viết phần dẫn, trích ngắn có ghi nguồn.</li>
-      <li>Không sao chép sách giáo khoa. Mỗi ngữ liệu ghi rõ hình thức: giữ nguyên, dịch hay biên soạn lại.</li>
-      <li>Số liệu quan trọng đối chiếu ít nhất hai nguồn; văn bản pháp quy kiểm tra hiệu lực; phép tính của nhóm ghi tách khỏi số liệu nguồn.</li>
+      <li>Không sao chép sách giáo khoa.</li>
+      <li>Trích dẫn nguồn gốc, không trích dẫn lại qua nguồn trung gian: khi một trang lấy số liệu từ tài liệu khác (ví dụ bảng tra lấy từ CRC Handbook of Chemistry and Physics), ghi trực tiếp tài liệu gốc đó.</li>
+      <li>Không dùng các trang chỉ đăng lại, chia sẻ tài liệu làm nguồn; văn bản pháp luật lấy từ cổng thông tin chính thức của cơ quan ban hành, bài báo khoa học dẫn theo tạp chí (DOI).</li>
+      <li>Số liệu quan trọng đối chiếu ít nhất hai nguồn; văn bản pháp quy kiểm tra hiệu lực; giá trị tính từ số liệu nguồn ghi rõ cách tính và nguồn dữ liệu.</li>
     </ul>
     <h2>Danh mục nguồn (${rows.length})</h2>
     <div class="filters" style="grid-template-columns:1fr"><label>Lọc nhanh trong danh mục<input id="srcQ" type="search" placeholder="Gõ tên nguồn, giấy phép, mã ngữ liệu…"></label></div>
@@ -1013,22 +1060,27 @@ function pageAI(){
   return `<div class="page wide">${errBox()}${crumbs([['','Trang chủ'],['','Minh bạch AI']])}
     <h1>Minh bạch về sử dụng AI</h1>
     <div class="motto rv"><span class="motto-k">Nguyên tắc</span><p class="motto-t">AI hỗ trợ, <em>con người kiểm soát.</em></p><p class="motto-s">AI không được dùng để tạo hoặc ước lượng số liệu.</p></div>
-    <h2>Quy trình xây dựng ngữ liệu</h2>
-    <ol class="steps grid">
-      <li class="rv"><b>AI soạn nháp</b><br><span class="muted small">tìm nguồn, soạn nháp theo bộ câu lệnh chuẩn hoá; không bịa DOI hay số liệu</span></li>
-      <li class="rv"><b>Kiểm tra nguồn</b><br><span class="muted small">sinh viên mở từng nguồn, chấm phiếu 8 tiêu chí</span></li>
-      <li class="rv"><b>Đối sánh số liệu</b><br><span class="muted small">hiệu chỉnh theo nguồn; sinh viên khác đọc chéo</span></li>
-      <li class="rv"><b>Chuyên gia góp ý</b><br><span class="muted small">Hoá học và Lí luận – PPDH Hoá học</span></li>
-      <li class="rv"><b>Hoàn thiện</b><br><span class="muted small">sửa, đưa lên web, kiểm tra nội dung và thao tác</span></li>
-      <li class="rv"><b>Thử nghiệm</b><br><span class="muted small">với giáo viên, sinh viên sư phạm</span></li>
-    </ol>
+    <h2>Quy trình xây dựng ngữ liệu: AI làm gì, con người kiểm soát gì</h2>
+    <div class="lanes" role="list" aria-label="Sáu bước xây dựng ngữ liệu, chia theo phần việc của AI và của con người">
+      <div class="lab ai" aria-hidden="true">AI hỗ trợ<small>bản nháp, chưa dùng được</small></div>
+      <div class="lab hu" aria-hidden="true">Con người<small>kiểm soát, quyết định</small></div>
+      ${[
+        ['Soạn nháp','Gợi ý nguồn, từ khoá; soạn nháp bối cảnh, câu hỏi, đáp án theo bộ câu lệnh chuẩn hoá','Chọn vấn đề, chủ đề, yêu cầu cần đạt; ra câu lệnh; <b>không nhận số liệu do AI đưa ra</b>'],
+        ['Kiểm tra nguồn','','Mở từng nguồn, xác nhận tồn tại; chấm phiếu 8 tiêu chí; <b>loại nguồn không đạt</b>, thay bằng nguồn gốc'],
+        ['Đối sánh số liệu','','Đối chiếu từng số liệu, đơn vị, năm, tên riêng với nguồn gốc; viết lại; sinh viên khác đọc chéo'],
+        ['Chuyên gia góp ý','','Chuyên gia Hoá học và Lí luận – PPDH Hoá học góp ý; nhóm sửa theo góp ý'],
+        ['Hoàn thiện','Viết mã HTML/JavaScript cho trang web','Nhập dữ liệu, cấu hình; <b>kiểm tra lại nội dung</b> và thao tác trên máy tính, điện thoại'],
+        ['Thử nghiệm','','Giáo viên, sinh viên sư phạm dùng thử, góp ý; nhóm tổng hợp và điều chỉnh']
+      ].map((s,i)=>`<div class="col rv" role="listitem"><div class="hd"><i>${i+1}</i>${s[0]}</div><div class="c ai${s[1]?'':' none'}">${s[1]||'Không dùng AI'}</div><div class="c hu">${s[2]}</div></div>`).join('')}
+    </div>
+    <div class="lanes-key"><span class="k-ai">Phần AI hỗ trợ (khung nét đứt: chỉ là bản nháp)</span><span class="k-hu">Phần con người thực hiện và chịu trách nhiệm</span></div>
     <h2>AI hỗ trợ ở khâu nào</h2>
     <div class="table-wrap"><table><thead><tr><th>Khâu</th><th>AI hỗ trợ</th><th>Mức độ</th><th>Con người thực hiện, kiểm chứng</th></tr></thead><tbody>
     ${kh.map(r=>`<tr>${r.map((c,j)=>`<td>${j===2?`<span class="tag">${esc(c)}</span>`:esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>
     <h2>Những phần không dùng AI</h2>
     <ul><li>Số liệu khoa học: lấy trực tiếp từ nguồn gốc.</li><li>Thẩm định chuyên môn, khảo sát giáo viên, thử nghiệm và tổng hợp kết quả.</li><li>Quyết định cuối cùng về nội dung, việc chọn hay loại ngữ liệu.</li></ul>
     <h2>Công khai trên từng ngữ liệu</h2>
-    <p>Chân trang mỗi ngữ liệu ghi người biên soạn, người đối sánh/thẩm định, trạng thái và mức độ dùng AI. Không nhập dữ liệu cá nhân của học sinh, giáo viên vào công cụ AI. Sản phẩm miễn phí, phi thương mại.</p>
+    <p>Chân trang mỗi ngữ liệu ghi trạng thái kiểm chứng và mức độ dùng AI. Không nhập dữ liệu cá nhân của học sinh, giáo viên vào công cụ AI. Sản phẩm miễn phí, phi thương mại.</p>
     <p><b>Bộ câu lệnh AI:</b> ${C.link_bo_cau_lenh?link(C.link_bo_cau_lenh,'xem toàn bộ câu lệnh'):'<span class="todo">[chưa có link bộ câu lệnh]</span>'} · Chi tiết trong Bản khai báo AI (Phụ lục 6, Mẫu 2) nộp kèm hồ sơ.</p>
     ${pagePager('minh-bach-ai')}</div>`;
 }

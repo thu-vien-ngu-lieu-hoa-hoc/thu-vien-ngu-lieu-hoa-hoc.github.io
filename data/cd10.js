@@ -5,7 +5,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Hàm lượng đường trong nước ngọt và khuyến cáo của WHO",
   "yccd": "Nêu được trạng thái tự nhiên, vai trò của glucose, fructose, saccharose; vận dụng hiểu biết về carbohydrate để đánh giá chế độ ăn uống.",
-  "boi_canh": "Đường ăn (saccharose) là disaccharide tạo từ một gốc glucose và một gốc fructose. Trong nước ngọt, nước trái cây, sữa có đường, đường là nguồn năng lượng nhanh nhưng dễ bị tiêu thụ quá mức.\n\nTổ chức Y tế Thế giới (WHO) khuyến cáo lượng “đường tự do” (đường thêm vào thực phẩm và đường có sẵn trong mật ong, siro, nước ép trái cây) nên dưới 10% tổng năng lượng, và giảm xuống dưới 5% sẽ có thêm lợi ích. Với khẩu phần 2 000 kcal, 5% là 100 kcal, tương ứng khoảng 25 g đường (nhóm tính với 4 kcal/g đường).\n\nTheo cơ sở dữ liệu FoodData Central của Bộ Nông nghiệp Hoa Kỳ (USDA), nước ngọt có ga vị cola (loại bán ở cửa hàng ăn nhanh) chứa khoảng 9 g đường trong 100 g; nước cam ép tươi chứa khoảng 8,4 g đường (tự nhiên) trong 100 g; sữa bò nguyên kem chứa khoảng 5 g đường (lactose) trong 100 g.\n\nĐường trong nước ép trái cây vẫn được WHO tính là đường tự do vì đã tách khỏi chất xơ của quả. Uống nhiều đồ uống có đường liên quan đến thừa cân, béo phì, sâu răng và đái tháo đường type 2.",
+  "boi_canh": "Đường ăn (saccharose) là disaccharide tạo từ một gốc glucose và một gốc fructose. Trong nước ngọt, nước trái cây, sữa có đường, đường là nguồn năng lượng nhanh nhưng dễ bị tiêu thụ quá mức.\n\nTổ chức Y tế Thế giới (WHO) khuyến cáo lượng “đường tự do” (đường thêm vào thực phẩm và đường có sẵn trong mật ong, siro, nước ép trái cây) nên dưới 10% tổng năng lượng, và giảm xuống dưới 5% sẽ có thêm lợi ích. Với khẩu phần 2 000 kcal, 5% là 100 kcal, tương ứng khoảng 25 g đường (tính với 4 kcal/g đường).\n\nTheo cơ sở dữ liệu FoodData Central của Bộ Nông nghiệp Hoa Kỳ (USDA), nước ngọt có ga vị cola (loại bán ở cửa hàng ăn nhanh) chứa khoảng 9 g đường trong 100 g; nước cam ép tươi chứa khoảng 8,4 g đường (tự nhiên) trong 100 g; sữa bò nguyên kem chứa khoảng 5 g đường (lactose) trong 100 g.\n\nĐường trong nước ép trái cây vẫn được WHO tính là đường tự do vì đã tách khỏi chất xơ của quả. Uống nhiều đồ uống có đường liên quan đến thừa cân, béo phì, sâu răng và đái tháo đường type 2.",
   "bang_so_lieu": {
    "tieu_de": "Hàm lượng đường trong 100 g đồ uống",
    "cot": [
@@ -28,7 +28,7 @@ NL.add([
    ],
    "ghi_chu": "Theo USDA FoodData Central (SR Legacy), mục Total Sugars: cola fast-food 8,97 g (FDC 175093); nước cam ép tươi 8,4 g (FDC 169098); sữa nguyên kem 3,25% béo 5,05 g (FDC 171265). Cola loại “regular” (FDC 174852) có 9,94 g."
   },
-  "hinh_goi_y": "Ảnh 6 thìa đường xếp cạnh một chai nước ngọt 330 mL (nhóm tự chụp).",
+  "hinh_goi_y": "Ảnh 6 thìa đường xếp cạnh một chai nước ngọt 330 mL (ảnh tự chụp).",
   "nguon": [
    {
     "trich_dan": "World Health Organization. (2015). Guideline: Sugars intake for adults and children. Truy cập 06/11/2026.",
@@ -102,7 +102,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -111,7 +111,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Thuỷ phân tinh bột bởi amylase trong nước bọt",
   "yccd": "Trình bày được phản ứng thuỷ phân tinh bột; thực hiện được thí nghiệm nhận biết tinh bột bằng iodine và glucose bằng thuốc thử phù hợp.",
-  "boi_canh": "Nhai một miếng cơm trắng thật lâu, ta sẽ thấy vị ngọt dần. Nguyên nhân là trong nước bọt có enzyme amylase, xúc tác phản ứng thuỷ phân tinh bột thành các đường nhỏ hơn như maltose, có vị ngọt.\n\nCó thể kiểm chứng điều này bằng thí nghiệm đơn giản (nhóm biên soạn thiết kế, dựa trên nguyên tắc thử iodine trong bài thực hành về amylase của Practical Biology). Chuẩn bị hồ tinh bột loãng (1%) và chia vào hai ống nghiệm. Ống 1 thêm nước cất, ống 2 thêm một ít nước bọt pha loãng. Giữ hai ống ở khoảng 37 °C trong 10–15 phút. Sau đó, lấy từng phần nhỏ thử với dung dịch iodine: tinh bột tạo màu xanh tím với iodine. Phần còn lại thử với thuốc thử Benedict (hoặc Cu(OH)₂ trong môi trường kiềm, đun nóng): đường khử tạo kết tủa đỏ gạch Cu₂O.\n\nCó thể mở rộng: thêm ống đun sôi nước bọt trước khi dùng, hoặc ống thêm giấm để thay đổi pH. Enzyme là protein nên bị mất hoạt tính khi đun nóng hoặc ở pH không phù hợp.\n\nThí nghiệm giúp học sinh liên hệ giữa hoá học carbohydrate và sinh học tiêu hoá.",
+  "boi_canh": "Nhai một miếng cơm trắng thật lâu, ta sẽ thấy vị ngọt dần. Nguyên nhân là trong nước bọt có enzyme amylase, xúc tác phản ứng thuỷ phân tinh bột thành các đường nhỏ hơn như maltose, có vị ngọt.\n\nCó thể kiểm chứng điều này bằng thí nghiệm đơn giản (dựa trên nguyên tắc thử iodine trong bài thực hành về amylase của Practical Biology). Chuẩn bị hồ tinh bột loãng (1%) và chia vào hai ống nghiệm. Ống 1 thêm nước cất, ống 2 thêm một ít nước bọt pha loãng. Giữ hai ống ở khoảng 37 °C trong 10–15 phút. Sau đó, lấy từng phần nhỏ thử với dung dịch iodine: tinh bột tạo màu xanh tím với iodine. Phần còn lại thử với thuốc thử Benedict (hoặc Cu(OH)₂ trong môi trường kiềm, đun nóng): đường khử tạo kết tủa đỏ gạch Cu₂O.\n\nCó thể mở rộng: thêm ống đun sôi nước bọt trước khi dùng, hoặc ống thêm giấm để thay đổi pH. Enzyme là protein nên bị mất hoạt tính khi đun nóng hoặc ở pH không phù hợp.\n\nThí nghiệm giúp học sinh liên hệ giữa hoá học carbohydrate và sinh học tiêu hoá.",
   "bang_so_lieu": {
    "tieu_de": "Bảng ghi kết quả (học sinh tự quan sát)",
    "cot": [
@@ -146,9 +146,9 @@ NL.add([
      ""
     ]
    ],
-   "ghi_chu": "Thiết kế do nhóm biên soạn; kết quả do học sinh quan sát."
+   "ghi_chu": "Thí nghiệm gợi ý; kết quả do học sinh quan sát."
   },
-  "hinh_goi_y": "Ảnh dãy ống nghiệm sau khi thử iodine (nhóm tự chụp).",
+  "hinh_goi_y": "Ảnh dãy ống nghiệm sau khi thử iodine (ảnh tự chụp).",
   "nguon": [
    {
     "trich_dan": "Royal Society of Biology / Practical Biology. Investigating the effect of pH on amylase activity (thử iodine: hết màu xanh đen khi tinh bột bị thuỷ phân; lưu ý vệ sinh khi dùng nước bọt theo CLEAPSS). Truy cập 06/11/2026.",
@@ -208,7 +208,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu đo.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu đo.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -228,16 +228,16 @@ NL.add([
     "giay_phep": "Chưa rõ – chỉ trích số liệu, tự viết lại"
    },
    {
-    "trich_dan": "Argus Media. (25/6/2025). Brazil’s E30, B15 blends to start 1 Aug. Truy cập 06/11/2026.",
-    "url": "https://www.argusmedia.com/de/news-and-insights/latest-market-news/2703625-brazil-s-e30-b15-blends-to-start-1-aug",
-    "loai": "báo chí",
-    "giay_phep": "Chưa rõ – chỉ trích, tự viết lại"
+    "trich_dan": "Bộ Mỏ và Năng lượng Brazil (MME). Gasolina C com adição de 30% de etanol anidro (E30) – theo Nghị quyết CNPE số 9 ngày 25/6/2025, E30 có hiệu lực từ 01/8/2025. Truy cập 06/11/2026.",
+    "url": "https://www.gov.br/mme/pt-br/assuntos/secretarias/petroleo-gas-natural-e-biocombustiveis/combustivel-do-futuro/e30",
+    "loai": "trang thông tin chính thức",
+    "giay_phep": "Tài liệu của Chính phủ Brazil – trích, ghi nguồn"
    },
    {
-    "trich_dan": "Báo Đại biểu Nhân dân. (01/06/2026). Từ hôm nay (1/6), chính thức bán xăng E10 trên toàn quốc (trích Thông tư 50/2025/TT-BCT). Truy cập 06/11/2026.",
-    "url": "https://daibieunhandan.vn/tu-hom-nay-1-6-chinh-thuc-ban-xang-e10-tren-toan-quoc-10418892.html",
-    "loai": "báo chí",
-    "giay_phep": "Chưa rõ – chỉ trích, tự viết lại"
+    "trich_dan": "Bộ Công Thương. (2025). Thông tư số 50/2025/TT-BCT ngày 07/11/2025 quy định lộ trình áp dụng tỷ lệ phối trộn nhiên liệu sinh học với nhiên liệu truyền thống tại Việt Nam. Cổng thông tin điện tử Bộ Công Thương. Truy cập 06/11/2026.",
+    "url": "https://moit.gov.vn/van-ban-phap-luat/van-ban-phap-quy/thong-tu-quy-dinh-lo-trinh-ap-dung-ty-le-phoi-tron-nhien-lieu-sinh-hoc-voi-nhien-lieu-truyen-thong-tai-viet-nam.html",
+    "loai": "văn bản pháp quy",
+    "giay_phep": "Văn bản quy phạm pháp luật, không thuộc đối tượng bảo hộ quyền tác giả"
    }
   ],
   "hinh_thuc": "Biên soạn lại",
@@ -287,7 +287,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -298,7 +298,7 @@ NL.add([
   "yccd": "Trình bày được cấu tạo, tính chất của tinh bột; phản ứng thuỷ phân tinh bột; liên hệ sản xuất ở Việt Nam.",
   "boi_canh": "Sắn (khoai mì) từng là món ăn độn trong những năm khó khăn. Ngày nay, sắn là cây công nghiệp quan trọng, nguyên liệu cho tinh bột, thức ăn chăn nuôi và nhiên liệu sinh học.\n\nTheo cơ sở dữ liệu FoodData Central (USDA), 100 g củ sắn tươi chứa khoảng 59,7 g nước và 38,1 g carbohydrate, tức hơn một phần ba khối lượng, chủ yếu là tinh bột. Tinh bột gồm hai thành phần: amylose (mạch không phân nhánh) và amylopectin (mạch phân nhánh), đều tạo từ các gốc α-glucose.\n\nTinh bột sắn được dùng làm bánh, mì sợi, trân châu trà sữa; trong công nghiệp được thuỷ phân bằng acid hoặc enzyme thành glucose, siro, sau đó lên men thành ethanol (pha vào xăng sinh học), bột ngọt (monosodium glutamate), acid citric. Phản ứng thuỷ phân hoàn toàn: (C₆H₁₀O₅)ₙ + nH₂O → nC₆H₁₂O₆.\n\nLưu ý an toàn: theo FAO, củ sắn chứa glycoside sinh cyanide, có thể giải phóng hydrogen cyanide (HCN) gây ngộ độc; vỏ chứa nhiều hơn ruột. Bóc vỏ, ngâm nước (thay nước nhiều lần), luộc kĩ, mở vung khi luộc giúp giảm lượng chất độc.",
   "bang_so_lieu": null,
-  "hinh_goi_y": "Ảnh củ sắn, bột sắn và trân châu (nhóm tự chụp).",
+  "hinh_goi_y": "Ảnh củ sắn, bột sắn và trân châu (ảnh tự chụp).",
   "nguon": [
    {
     "trich_dan": "USDA Agricultural Research Service. FoodData Central (SR Legacy): Cassava, raw – FDC ID 169985 (nước 59,7 g; carbohydrate 38,1 g/100 g). Truy cập 06/11/2026.",
@@ -366,7 +366,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -377,7 +377,7 @@ NL.add([
   "yccd": "Vận dụng hiểu biết về carbohydrate và sức khoẻ để phản biện, đánh giá một chính sách thực tiễn.",
   "boi_canh": "Theo báo cáo toàn cầu năm 2023 của Tổ chức Y tế Thế giới (WHO), tính đến tháng 7/2022 ít nhất 108 quốc gia đã áp thuế tiêu thụ đặc biệt ở cấp quốc gia đối với ít nhất một loại đồ uống có đường. WHO khuyến nghị các nước dùng chính sách thuế để giảm tiêu thụ đường, phòng chống thừa cân, béo phì, đái tháo đường và sâu răng.\n\nMột ví dụ nổi bật là Vương quốc Anh. Từ tháng 4/2018, Anh áp dụng “thuế đường” (Soft Drinks Industry Levy) theo bậc: đồ uống có đường thêm vào chứa từ 5 g đường trong 100 mL chịu mức thuế thấp; từ 8 g trở lên chịu mức cao hơn. Nhiều nhà sản xuất đã chủ động giảm đường trong sản phẩm để tránh thuế.\n\nỞ Việt Nam, Luật Thuế tiêu thụ đặc biệt năm 2025 đã bổ sung nước giải khát theo tiêu chuẩn quốc gia có hàm lượng đường trên 5 g/100 mL vào diện chịu thuế, với thuế suất 8% từ năm 2027 và 10% từ năm 2028.\n\nNgười ủng hộ cho rằng thuế giúp bảo vệ sức khoẻ cộng đồng và tạo nguồn thu cho y tế. Người phản đối lo ngại ảnh hưởng đến doanh nghiệp, giá cả và cho rằng cần giáo dục dinh dưỡng hơn là đánh thuế. Đây là một vấn đề mở cần nhìn từ nhiều phía.",
   "bang_so_lieu": null,
-  "hinh_goi_y": "Ảnh nhãn dinh dưỡng của hai loại nước ngọt: có đường và không đường (nhóm tự chụp).",
+  "hinh_goi_y": "Ảnh nhãn dinh dưỡng của hai loại nước ngọt: có đường và không đường (ảnh tự chụp).",
   "nguon": [
    {
     "trich_dan": "World Health Organization. (2023). Global report on the use of sugar-sweetened beverage taxes, 2023 (ít nhất 108 quốc gia, tính đến 7/2022). Truy cập 06/11/2026.",
@@ -392,10 +392,10 @@ NL.add([
     "giay_phep": "Open Government Licence v3.0"
    },
    {
-    "trich_dan": "Báo Đại biểu Nhân dân. Luật Thuế tiêu thụ đặc biệt: điều tiết tiêu dùng với những mặt hàng có hại cho sức khoẻ (nước giải khát trên 5 g đường/100 mL: 8% từ 2027, 10% từ 2028). Truy cập 06/11/2026.",
-    "url": "https://daibieunhandan.vn/luat-thue-tieu-thu-dac-biet-dieu-tiet-tieu-dung-voi-nhung-mat-hang-co-hai-cho-suc-khoe-10379708.html",
-    "loai": "báo chí",
-    "giay_phep": "Chưa rõ – chỉ trích, tự viết lại"
+    "trich_dan": "Quốc hội. (2025). Luật Thuế tiêu thụ đặc biệt số 66/2025/QH15 ngày 14/6/2025, Biểu thuế tại khoản 1 Điều 8 (nước giải khát theo TCVN có hàm lượng đường trên 5 g/100 mL: 8% từ 01/01/2027, 10% từ 01/01/2028). Hệ thống văn bản Chính phủ. Truy cập 06/11/2026.",
+    "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=214598&classid=1&typegroupid=3",
+    "loai": "văn bản pháp quy",
+    "giay_phep": "Văn bản quy phạm pháp luật, không thuộc đối tượng bảo hộ quyền tác giả"
    }
   ],
   "hinh_thuc": "Biên soạn lại",
@@ -437,14 +437,14 @@ NL.add([
    }
   ],
   "luu_y_khoa_hoc": [
-   "Ngưỡng và thuế suất ở Việt Nam lấy theo bài của Báo Đại biểu Nhân dân dẫn lời Thứ trưởng Bộ Tài chính; khi dạy nên đối chiếu thêm nguyên văn Luật số 66/2025/QH15.",
+   "Ngưỡng và thuế suất ở Việt Nam theo Biểu thuế tại khoản 1 Điều 8 Luật Thuế tiêu thụ đặc biệt số 66/2025/QH15.",
    "Giáo viên giữ vai trò trung lập khi tổ chức tranh biện, không áp đặt quan điểm.",
    "Đồ uống dùng chất tạo ngọt không đường không phải là “hoàn toàn tốt”; nên khuyến khích uống nước lọc."
   ],
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -522,7 +522,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  }
 ]);

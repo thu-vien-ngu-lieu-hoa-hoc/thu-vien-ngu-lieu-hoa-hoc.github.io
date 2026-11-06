@@ -5,7 +5,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Thế điện cực chuẩn và sức điện động của pin",
   "yccd": "Nêu được khái niệm thế điện cực chuẩn; so sánh được tính oxi hoá – khử của các cặp oxi hoá – khử; tính được sức điện động chuẩn của pin.",
-  "boi_canh": "Mỗi cặp oxi hoá – khử như Zn²⁺/Zn hay Cu²⁺/Cu có khả năng nhường, nhận electron khác nhau, đặc trưng bằng thế điện cực chuẩn E° (ở 25 °C, nồng độ ion 1 M, so với điện cực hydrogen chuẩn có E° = 0,00 V).\n\nBảng dưới trích thế điện cực chuẩn của một số cặp theo bảng tra cứu “Standard Reduction Potentials by Element” của LibreTexts Chemistry. E° càng âm, kim loại càng dễ nhường electron (tính khử mạnh). E° càng dương, ion kim loại càng dễ nhận electron (tính oxi hoá mạnh).\n\nKhi ghép hai điện cực thành pin điện, kim loại có E° nhỏ hơn đóng vai trò cực âm (anode), bị oxi hoá; kim loại có E° lớn hơn là cực dương (cathode). Sức điện động chuẩn của pin: E°pin = E°cathode − E°anode. Ví dụ pin Daniell Zn–Cu có E°pin = 0,34 − (−0,76) = 1,10 V.\n\nLithium có E° rất âm (−3,04 V) và khối lượng nguyên tử nhỏ. Đó là một lí do pin lithium-ion có điện áp cao, nhẹ, được dùng trong điện thoại và xe điện.",
+  "boi_canh": "Mỗi cặp oxi hoá – khử như Zn²⁺/Zn hay Cu²⁺/Cu có khả năng nhường, nhận electron khác nhau, đặc trưng bằng thế điện cực chuẩn E° (ở 25 °C, nồng độ ion 1 M, so với điện cực hydrogen chuẩn có E° = 0,00 V).\n\nBảng dưới trích thế điện cực chuẩn của một số cặp theo các bảng thế điện cực chuẩn của Bard, Parsons và Jordan (1985, IUPAC) và Milazzo, Caroli và Sharma (1978). E° càng âm, kim loại càng dễ nhường electron (tính khử mạnh). E° càng dương, ion kim loại càng dễ nhận electron (tính oxi hoá mạnh).\n\nKhi ghép hai điện cực thành pin điện, kim loại có E° nhỏ hơn đóng vai trò cực âm (anode), bị oxi hoá; kim loại có E° lớn hơn là cực dương (cathode). Sức điện động chuẩn của pin: E°pin = E°cathode − E°anode. Ví dụ pin Daniell Zn–Cu có E°pin = 0,34 − (−0,76) = 1,10 V.\n\nLithium có E° rất âm (−3,04 V) và khối lượng nguyên tử nhỏ. Đó là một lí do pin lithium-ion có điện áp cao, nhẹ, được dùng trong điện thoại và xe điện.",
   "bang_so_lieu": {
    "tieu_de": "Thế điện cực chuẩn ở 25 °C",
    "cot": [
@@ -44,13 +44,13 @@ NL.add([
    ],
    "ghi_chu": "Theo bảng P1 của LibreTexts Chemistry (Li −3,040; Zn −0,7618; Fe −0,44; Pb −0,126; Cu +0,3419; Ag +0,7996 V), làm tròn 2 chữ số thập phân."
   },
-  "hinh_goi_y": "Sơ đồ pin Daniell có cầu muối (nhóm tự vẽ).",
+  "hinh_goi_y": "Sơ đồ pin Daniell có cầu muối (tự vẽ).",
   "nguon": [
    {
-    "trich_dan": "LibreTexts Chemistry. Reference Table P1: Standard Reduction Potentials by Element. Truy cập 06/11/2026.",
-    "url": "https://chem.libretexts.org/Ancillary_Materials/Reference/Reference_Tables/Electrochemistry_Tables/P1%3A_Standard_Reduction_Potentials_by_Element",
-    "loai": "CSDL",
-    "giay_phep": "CC BY-NC-SA – trích số liệu, ghi nguồn"
+    "trich_dan": "Bard, A. J., Parsons, R., & Jordan, J. (Chủ biên). (1985). Standard Potentials in Aqueous Solution. Marcel Dekker (IUPAC); Milazzo, G., Caroli, S., & Sharma, V. K. (1978). Tables of Standard Electrode Potentials. Wiley.",
+    "url": "",
+    "loai": "sách tra cứu",
+    "giay_phep": "Trích số liệu, ghi nguồn"
    }
   ],
   "hinh_thuc": "Biên soạn lại",
@@ -98,7 +98,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -148,9 +148,9 @@ NL.add([
      ""
     ]
    ],
-   "ghi_chu": "Thiết kế do nhóm biên soạn; số liệu do học sinh đo bằng đồng hồ vạn năng."
+   "ghi_chu": "Thí nghiệm gợi ý; số liệu do học sinh đo bằng đồng hồ vạn năng."
   },
-  "hinh_goi_y": "Ảnh pin 3 quả chanh nối tiếp thắp sáng LED (nhóm tự chụp).",
+  "hinh_goi_y": "Ảnh pin 3 quả chanh nối tiếp thắp sáng LED (ảnh tự chụp).",
   "nguon": [
    {
     "trich_dan": "The Australian National University, ANU College of Science. How to make a lemon battery (hướng dẫn thí nghiệm: mỗi quả chanh khoảng 0,8 V; ghép nối tiếp để cộng điện áp). Truy cập 06/11/2026.",
@@ -206,7 +206,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu đo.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu đo.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -298,7 +298,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -309,7 +309,7 @@ NL.add([
   "yccd": "Trình bày được nguyên tắc điện phân nóng chảy; vận dụng định luật Faraday tính lượng chất thu được ở điện cực.",
   "boi_canh": "Theo báo cáo Mineral Commodity Summaries của Cục Khảo sát Địa chất Hoa Kỳ (USGS), Việt Nam có trữ lượng bauxite khoảng 5,8 tỉ tấn, thuộc nhóm lớn nhất thế giới. Quặng bauxite được tinh chế thành alumina (Al₂O₃) theo quy trình Bayer.\n\nĐể có kim loại nhôm, alumina phải được điện phân nóng chảy theo quy trình Hall – Héroult. Al₂O₃ có nhiệt độ nóng chảy trên 2 000 °C (PubChem ghi 2 072 °C), nên người ta hoà tan nó trong cryolite (Na₃AlF₆) nóng chảy; theo Chemguide, bể điện phân làm việc ở khoảng 1 000 °C. Ở cathode: Al³⁺ + 3e → Al. Ở anode bằng carbon: oxygen sinh ra đốt cháy dần anode tạo CO₂.\n\nĐiện phân nhôm cần dòng điện rất lớn và tiêu tốn nhiều điện năng. Vì vậy các nhà máy luyện nhôm thường đặt gần nguồn điện rẻ.\n\nTrong khi đó, theo Viện Nhôm Quốc tế (IAI), tái chế nhôm tiết kiệm khoảng 95% năng lượng so với sản xuất nhôm mới (khoảng 8,3 GJ so với 186 GJ cho mỗi tấn). Thu gom lon nhôm là cách tiết kiệm điện đáng kể.",
   "bang_so_lieu": null,
-  "hinh_goi_y": "Sơ đồ bể điện phân Hall – Héroult (nhóm tự vẽ lại).",
+  "hinh_goi_y": "Sơ đồ bể điện phân Hall – Héroult (vẽ lại).",
   "nguon": [
    {
     "trich_dan": "U.S. Geological Survey. (2024). Mineral Commodity Summaries 2024: Bauxite and Alumina (trữ lượng Việt Nam 5 800 000 nghìn tấn). Truy cập 06/11/2026.",
@@ -383,7 +383,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -394,7 +394,7 @@ NL.add([
   "yccd": "Nêu được tác hại của pin, ắc quy thải bỏ không đúng cách; đề xuất được giải pháp thu gom, xử lí phù hợp.",
   "boi_canh": "Mỗi gia đình đều có pin cũ: pin tiểu AA, pin cúc áo của đồng hồ, pin điện thoại, ắc quy xe máy. Nhiều người vứt chung với rác sinh hoạt.\n\nPin và ắc quy chứa kim loại nặng (chì trong ắc quy, có thể có thuỷ ngân, cadmium trong một số pin cũ), chất điện li ăn mòn (sulfuric acid trong ắc quy chì, kiềm trong pin alkaline) và với pin lithium-ion là nguy cơ cháy. Khi bị nghiền nát hoặc đâm thủng trong xe ép rác, pin lithium-ion có thể bị đoản mạch, nóng lên và bốc cháy. Cơ quan Bảo vệ Môi trường Hoa Kỳ (EPA) cảnh báo pin lithium-ion không được bỏ vào thùng rác sinh hoạt hay thùng tái chế thông thường vì có thể bị dập nát khi vận chuyển, phân loại và gây cháy; EPA khuyên dán băng keo cực pin hoặc cho từng pin vào túi nhựa riêng.\n\nỞ Việt Nam, Nghị định 08/2022/NĐ-CP quy định trách nhiệm tái chế của nhà sản xuất, nhập khẩu (trách nhiệm mở rộng của nhà sản xuất – EPR); pin và ắc quy nằm trong danh mục sản phẩm phải tái chế (Phụ lục XXII).\n\nTrường học có thể là điểm thu gom pin cũ. Nhưng tổ chức thu gom thế nào cho an toàn và hiệu quả?",
   "bang_so_lieu": null,
-  "hinh_goi_y": "Ảnh thùng thu gom pin cũ tại siêu thị hoặc trường học (nhóm tự chụp).",
+  "hinh_goi_y": "Ảnh thùng thu gom pin cũ tại siêu thị hoặc trường học (ảnh tự chụp).",
   "nguon": [
    {
     "trich_dan": "Chính phủ. (2022). Nghị định số 08/2022/NĐ-CP ngày 10/01/2022 quy định chi tiết một số điều của Luật Bảo vệ môi trường (Phụ lục XXII – danh mục sản phẩm, bao bì phải tái chế). Hệ thống văn bản Chính phủ. Truy cập 06/11/2026.",
@@ -457,7 +457,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -468,7 +468,7 @@ NL.add([
   "yccd": "Trình bày được ứng dụng của điện phân trong mạ điện, tinh chế kim loại; vận dụng định luật Faraday.",
   "boi_canh": "Vòi nước sáng bóng, khoá cửa, ốc vít, linh kiện điện tử đều được phủ một lớp kim loại mỏng bằng phương pháp mạ điện. Lớp mạ giúp chống ăn mòn, tăng độ cứng hoặc làm đẹp.\n\nNguyên tắc: vật cần mạ được nối với cực âm của nguồn điện một chiều (cathode), thanh kim loại dùng để mạ nối với cực dương (anode). Cả hai nhúng trong dung dịch chứa ion của kim loại mạ. Ví dụ khi mạ đồng: tại anode, Cu → Cu²⁺ + 2e; tại cathode, Cu²⁺ + 2e → Cu bám lên vật. Nồng độ Cu²⁺ trong dung dịch gần như không đổi.\n\nĐịnh luật Faraday cho phép tính khối lượng kim loại bám vào: m = A·I·t / (n·F), với F = 96 485 C/mol (giá trị CODATA do NIST công bố: 96 485,332 12 C/mol). Người thợ mạ điều chỉnh cường độ dòng điện và thời gian để có lớp mạ đúng độ dày yêu cầu.\n\nNghề mạ cần hiểu biết về hoá học, an toàn hoá chất và xử lí nước thải, vì dung dịch mạ có thể chứa kim loại nặng, cyanide hoặc chromium(VI). Theo giáo trình Chemistry 2e (OpenStax), các kim loại thường dùng để mạ gồm cadmium, chromium, đồng, vàng, nickel, bạc và thiếc.",
   "bang_so_lieu": null,
-  "hinh_goi_y": "Sơ đồ bể mạ đồng (nhóm tự vẽ); ảnh vật trước và sau khi mạ trong thí nghiệm của khoa.",
+  "hinh_goi_y": "Sơ đồ bể mạ đồng (tự vẽ); ảnh vật trước và sau khi mạ trong thí nghiệm của khoa.",
   "nguon": [
    {
     "trich_dan": "Flowers, P., Theopold, K., Langley, R., & Robinson, W. R. (2019). Chemistry 2e, mục 17.7 Electrolysis (Electroplating; định luật Faraday). OpenStax. Truy cập 06/11/2026.",
@@ -529,7 +529,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  }
 ]);

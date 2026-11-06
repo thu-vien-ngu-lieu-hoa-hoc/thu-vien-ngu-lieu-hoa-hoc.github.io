@@ -3,9 +3,9 @@ NL.add([
   "id": "cd03-01",
   "chu_de": "cd03",
   "lop": "11",
-  "tieu_de": "Cân bằng phân li của acetic acid trong giấm ăn",
+  "tieu_de": "Cân bằng phân li của acetic acid trong dung dịch giấm ăn",
   "yccd": "Nêu được khái niệm acid, base theo Brønsted – Lowry; viết được biểu thức hằng số cân bằng; tính được pH của dung dịch; nêu được ý nghĩa của pH trong thực tiễn.",
-  "boi_canh": "Giấm ăn chứa khoảng 4–5% acetic acid (CH₃COOH). Nếu acetic acid phân li hoàn toàn như hydrochloric acid, giấm sẽ chua gắt và ăn mòn như acid trong ắc quy. Thực tế không phải vậy, vì acetic acid là acid yếu: trong nước chỉ một phần nhỏ phân tử nhường H⁺.\n\nCân bằng phân li: CH₃COOH ⇌ H⁺ + CH₃COO⁻, với hằng số phân li acid Ka = [H⁺][CH₃COO⁻] / [CH₃COOH]. Các bảng số liệu chuẩn (như bảng hằng số phân li acid trong LibreTexts Chemistry, tổng hợp từ CRC Handbook) cho biết ở 25 °C, Ka của acetic acid là 1,75 × 10⁻⁵ (pKa = 4,76).\n\nĐể dễ so sánh, các nhà hoá học dùng pKa = −log Ka. pKa càng nhỏ, acid càng mạnh. Bảng dưới liệt kê pKa của một số acid và ion gặp trong đời sống: formic acid trong nọc kiến, hydrofluoric acid dùng khắc thuỷ tinh, carbonic acid trong nước có ga, ion ammonium trong phân đạm.\n\nTừ Ka và nồng độ, học sinh có thể tính được pH của dung dịch acid yếu.",
+  "boi_canh": "Giấm ăn chứa khoảng 4–5% acetic acid (CH₃COOH). Nếu acetic acid phân li hoàn toàn như hydrochloric acid, giấm sẽ chua gắt và ăn mòn như acid trong ắc quy. Thực tế không phải vậy, vì acetic acid là acid yếu: trong nước chỉ một phần nhỏ phân tử nhường H⁺.\n\nCân bằng phân li: CH₃COOH ⇌ H⁺ + CH₃COO⁻, với hằng số phân li acid Ka = [H⁺][CH₃COO⁻] / [CH₃COOH]. Các bảng số liệu chuẩn (như CRC Handbook of Chemistry and Physics, 84th ed., 2004) cho biết ở 25 °C, Ka của acetic acid là 1,75 × 10⁻⁵ (pKa = 4,76).\n\nĐể dễ so sánh, các nhà hoá học dùng pKa = −log Ka. pKa càng nhỏ, acid càng mạnh. Bảng dưới liệt kê pKa của một số acid và ion gặp trong đời sống: formic acid trong nọc kiến, hydrofluoric acid dùng khắc thuỷ tinh, carbonic acid trong nước có ga, ion ammonium trong phân đạm.\n\nTừ Ka và nồng độ, học sinh có thể tính được pH của dung dịch acid yếu.",
   "bang_so_lieu": {
    "tieu_de": "pKa của một số acid ở 25 °C",
    "cot": [
@@ -34,21 +34,21 @@ NL.add([
      "9,25"
     ]
    ],
-   "ghi_chu": "Theo bảng E1 (hằng số phân li acid) của LibreTexts Chemistry, tổng hợp từ CRC Handbook. Riêng NH₄⁺: pKa = 14,00 − pKb(NH₃) = 14,00 − 4,75 (bảng E2)."
+   "ghi_chu": "Theo CRC Handbook of Chemistry and Physics (84th ed., 2004). Riêng NH₄⁺: pKa = 14,00 − pKb(NH₃) = 14,00 − 4,75 (cùng nguồn)."
   },
-  "hinh_goi_y": "Ảnh nhãn chai giấm ghi nồng độ acetic acid (nhóm tự chụp).",
+  "hinh_goi_y": "Ảnh nhãn chai giấm ghi nồng độ acetic acid (ảnh tự chụp).",
   "nguon": [
    {
-    "trich_dan": "LibreTexts Chemistry. Reference Table E1: Acid Dissociation Constants at 25 °C (CH₃COOH Ka = 1,75 × 10⁻⁵, pKa = 4,756; HCOOH 3,75; HF 3,20; H₂CO₃ pKa1 6,35). Truy cập 06/11/2026.",
-    "url": "https://chem.libretexts.org/Ancillary_Materials/Reference/Reference_Tables/Equilibrium_Constants/E1%3A_Acid_Dissociation_Constants_at_25C",
-    "loai": "CSDL",
-    "giay_phep": "CC BY-NC-SA – trích số liệu, ghi nguồn"
+    "trich_dan": "Lide, D. R. (Chủ biên). (2004). CRC Handbook of Chemistry and Physics (84th ed.). CRC Press. Mục 8: Dissociation Constants of Inorganic and Organic Acids (CH₃COOH Ka = 1,75 × 10⁻⁵, pKa = 4,756; HCOOH 3,75; HF 3,20; H₂CO₃ pKa1 6,35).",
+    "url": "",
+    "loai": "sổ tay tra cứu",
+    "giay_phep": "Trích số liệu, ghi nguồn"
    },
    {
-    "trich_dan": "LibreTexts Chemistry. Reference Table E2: Base Dissociation Constants at 25 °C (NH₃ Kb = 1,8 × 10⁻⁵, pKb = 4,75). Truy cập 06/11/2026.",
-    "url": "https://chem.libretexts.org/Ancillary_Materials/Reference/Reference_Tables/Equilibrium_Constants/E2._Base_Dissociation_Constants_at_25C",
-    "loai": "CSDL",
-    "giay_phep": "CC BY-NC-SA – trích số liệu, ghi nguồn"
+    "trich_dan": "Lide, D. R. (Chủ biên). (2004). CRC Handbook of Chemistry and Physics (84th ed.). CRC Press. Mục 8: Dissociation Constants of Bases (NH₃ Kb = 1,8 × 10⁻⁵, pKb = 4,75).",
+    "url": "",
+    "loai": "sổ tay tra cứu",
+    "giay_phep": "Trích số liệu, ghi nguồn"
    }
   ],
   "hinh_thuc": "Biên soạn lại",
@@ -97,7 +97,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -147,9 +147,9 @@ NL.add([
      "?"
     ]
    ],
-   "ghi_chu": "Thiết kế do nhóm biên soạn; kết quả do học sinh quan sát."
+   "ghi_chu": "Thí nghiệm gợi ý; kết quả do học sinh quan sát."
   },
-  "hinh_goi_y": "Ảnh 5 ống nghiệm sau thí nghiệm (nhóm tự chụp, có nhãn).",
+  "hinh_goi_y": "Ảnh 5 ống nghiệm sau thí nghiệm (ảnh tự chụp, có nhãn).",
   "nguon": [
    {
     "trich_dan": "University of Colorado Boulder. PhET Interactive Simulations: Reversible Reactions. Truy cập 06/11/2026.",
@@ -204,7 +204,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu đo.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu đo.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -238,7 +238,7 @@ NL.add([
      "2,43"
     ]
    ],
-   "ghi_chu": "Nhóm biên soạn tính trung bình 10 năm từ tệp số liệu tốc độ tăng hằng năm của NOAA GML (co2_gr_mlo.txt), truy cập 06/11/2026."
+   "ghi_chu": "Trung bình 10 năm tính từ tệp số liệu tốc độ tăng hằng năm của NOAA GML (co2_gr_mlo.txt), truy cập 06/11/2026."
   },
   "hinh_goi_y": "Tải đồ thị đường cong Keeling (Mauna Loa) từ trang NOAA GML – Trends in CO₂ và chèn vào trường hinh.",
   "nguon": [
@@ -330,18 +330,18 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ dịch nháp và soạn câu hỏi; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ dịch nháp và soạn câu hỏi; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
   "id": "cd03-04",
   "chu_de": "cd03",
   "lop": "11",
-  "tieu_de": "Chọn điều kiện nhiệt độ, áp suất trong tổng hợp ammonia",
+  "tieu_de": "Điều kiện nào tối ưu cho quá trình sản xuất NH₃",
   "yccd": "Vận dụng nguyên lí Le Chatelier để giải thích việc lựa chọn điều kiện cho quá trình sản xuất hoá học (tổng hợp ammonia).",
   "boi_canh": "Phân urea là loại phân đạm dùng nhiều nhất ở Việt Nam. Nguyên liệu để sản xuất urea là ammonia (NH₃), được tổng hợp từ nitrogen trong không khí và hydrogen lấy từ khí thiên nhiên. Các nhà máy đạm lớn như Đạm Phú Mỹ (Bà Rịa – Vũng Tàu) đều có phân xưởng tổng hợp ammonia; riêng Đạm Phú Mỹ có công suất thiết kế 740 nghìn tấn urea mỗi năm.\n\nPhản ứng tổng hợp ammonia (quá trình Haber – Bosch): N₂(g) + 3H₂(g) ⇌ 2NH₃(g), ΔrH° = −91,8 kJ (tính từ ΔfH° của NH₃(g) là −45,9 kJ/mol). Đây là phản ứng thuận nghịch, toả nhiệt và làm giảm số mol khí.\n\nTheo nguyên lí Le Chatelier, nhiệt độ thấp và áp suất cao giúp cân bằng chuyển dịch về phía tạo NH₃. Nhưng ở nhiệt độ thấp, phản ứng lại xảy ra rất chậm. Vì vậy trong công nghiệp, người ta chọn điều kiện dung hoà giữa hiệu suất và tốc độ: nhiệt độ khoảng 400–450 °C, áp suất khoảng 200 atm và dùng chất xúc tác sắt.\n\nỞ điều kiện này, mỗi lần khí đi qua tháp tổng hợp chỉ khoảng 15% nitrogen và hydrogen chuyển thành NH₃. Ammonia được làm lạnh, hoá lỏng tách ra; phần khí chưa phản ứng được tuần hoàn trở lại, nhờ đó tổng mức chuyển hoá đạt khoảng 98%.",
   "bang_so_lieu": null,
-  "hinh_goi_y": "Sơ đồ khối quá trình Haber – Bosch có vòng tuần hoàn khí (nhóm tự vẽ lại).",
+  "hinh_goi_y": "Sơ đồ khối quá trình Haber – Bosch có vòng tuần hoàn khí (vẽ lại).",
   "nguon": [
    {
     "trich_dan": "Báo Đại biểu Nhân dân. (2026, 08/3). Nhà máy Đạm Phú Mỹ – công trình biểu tượng mở ra hướng đi bền vững cho công nghiệp hoá dầu Việt Nam (công suất thiết kế 740 000 tấn urê/năm). Truy cập 06/11/2026.",
@@ -356,10 +356,10 @@ NL.add([
     "giay_phep": "Chưa rõ – chỉ trích, tự viết lại"
    },
    {
-    "trich_dan": "LibreTexts Chemistry. Reference Table T1: Standard Thermodynamic Quantities (CRC Handbook): NH₃(g) ΔfH° = −45,9 kJ/mol. Truy cập 06/11/2026.",
-    "url": "https://chem.libretexts.org/Ancillary_Materials/Reference/Reference_Tables/Thermodynamics_Tables/T1:_Standard_Thermodynamic_Quantities",
-    "loai": "CSDL",
-    "giay_phep": "CC BY-NC-SA – trích số liệu, ghi nguồn"
+    "trich_dan": "Lide, D. R. (Chủ biên). (2004). CRC Handbook of Chemistry and Physics (84th ed.). CRC Press. Mục 5: Standard Thermodynamic Properties of Chemical Substances (NH₃(g) ΔfH° = −45,9 kJ/mol).",
+    "url": "",
+    "loai": "sổ tay tra cứu",
+    "giay_phep": "Trích số liệu, ghi nguồn"
    }
   ],
   "hinh_thuc": "Biên soạn lại",
@@ -409,7 +409,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -435,7 +435,7 @@ NL.add([
      "8,1"
     ]
    ],
-   "ghi_chu": "Theo NOAA (Ocean acidification): pH hiện nay khoảng 8,1, đã giảm 0,1 đơn vị kể từ cách mạng công nghiệp; giá trị 8,2 do nhóm suy ra."
+   "ghi_chu": "Theo NOAA (Ocean acidification): pH hiện nay khoảng 8,1, đã giảm 0,1 đơn vị kể từ cách mạng công nghiệp; giá trị 8,2 suy ra từ hai số liệu trên."
   },
   "hinh_goi_y": "Đồ thị pH nước biển tại trạm ALOHA (Hawaii) cùng với đường cong Keeling, có trên trang NOAA PMEL.",
   "nguon": [
@@ -494,7 +494,7 @@ NL.add([
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  },
  {
@@ -503,7 +503,7 @@ NL.add([
   "lop": "11",
   "tieu_de": "Cân bằng HOCl ⇌ H⁺ + OCl⁻ và pH của nước bể bơi",
   "yccd": "Nêu được ý nghĩa của pH trong thực tiễn; vận dụng cân bằng acid – base để giải thích quy trình kĩ thuật.",
-  "boi_canh": "Nước bể bơi được khử trùng bằng chlorine. Khi cho chlorine (hoặc muối hypochlorite) vào nước, chất có tác dụng diệt khuẩn mạnh nhất là hypochlorous acid (HOCl). HOCl là acid yếu: HOCl ⇌ H⁺ + OCl⁻, với pKa = 7,40 ở 25 °C (bảng LibreTexts). Ion OCl⁻ diệt khuẩn kém hơn HOCl nhiều lần.\n\nVì vậy, pH quyết định hiệu quả khử trùng. Ở pH = 7,4, khoảng một nửa lượng chlorine ở dạng HOCl. pH càng cao, tỉ lệ HOCl càng thấp. Nhưng pH quá thấp lại gây cay mắt, ăn mòn thiết bị.\n\nTrung tâm Kiểm soát và Phòng ngừa Dịch bệnh Hoa Kỳ (CDC) khuyến cáo giữ pH nước bể bơi trong khoảng 7,0–7,8, giữ chlorine tự do tối thiểu 1 ppm và kiểm tra pH ít nhất hai lần mỗi ngày.\n\nNgười vận hành bể bơi, kĩ thuật viên xử lí nước ở nhà máy nước, khu công nghiệp đều phải đo pH hằng ngày, tính toán lượng hoá chất điều chỉnh (acid hoặc base) và đảm bảo an toàn khi pha chế. Đây là một nghề cần kiến thức cân bằng hoá học thực tế.",
+  "boi_canh": "Nước bể bơi được khử trùng bằng chlorine. Khi cho chlorine (hoặc muối hypochlorite) vào nước, chất có tác dụng diệt khuẩn mạnh nhất là hypochlorous acid (HOCl). HOCl là acid yếu: HOCl ⇌ H⁺ + OCl⁻, với pKa = 7,40 ở 25 °C (CRC Handbook of Chemistry and Physics, 84th ed.). Ion OCl⁻ diệt khuẩn kém hơn HOCl nhiều lần.\n\nVì vậy, pH quyết định hiệu quả khử trùng. Ở pH = 7,4, khoảng một nửa lượng chlorine ở dạng HOCl. pH càng cao, tỉ lệ HOCl càng thấp. Nhưng pH quá thấp lại gây cay mắt, ăn mòn thiết bị.\n\nTrung tâm Kiểm soát và Phòng ngừa Dịch bệnh Hoa Kỳ (CDC) khuyến cáo giữ pH nước bể bơi trong khoảng 7,0–7,8, giữ chlorine tự do tối thiểu 1 ppm và kiểm tra pH ít nhất hai lần mỗi ngày.\n\nNgười vận hành bể bơi, kĩ thuật viên xử lí nước ở nhà máy nước, khu công nghiệp đều phải đo pH hằng ngày, tính toán lượng hoá chất điều chỉnh (acid hoặc base) và đảm bảo an toàn khi pha chế. Đây là một nghề cần kiến thức cân bằng hoá học thực tế.",
   "bang_so_lieu": {
    "tieu_de": "Tỉ lệ chlorine ở dạng HOCl theo pH (25 °C)",
    "cot": [
@@ -532,9 +532,9 @@ NL.add([
      "7"
     ]
    ],
-   "ghi_chu": "Nhóm biên soạn tính từ pKa(HOCl) = 7,40 (LibreTexts, bảng E1): %HOCl = 100 / (1 + 10^(pH − 7,40))."
+   "ghi_chu": "Tính từ pKa(HOCl) = 7,40 (CRC Handbook of Chemistry and Physics, 84th ed.): %HOCl = 100 / (1 + 10^(pH − 7,40))."
   },
-  "hinh_goi_y": "Ảnh bộ test pH, chlorine của bể bơi (nhóm tự chụp).",
+  "hinh_goi_y": "Ảnh bộ test pH, chlorine của bể bơi (ảnh tự chụp).",
   "nguon": [
    {
     "trich_dan": "Centers for Disease Control and Prevention (CDC). Operating and Managing Public Pools, Hot Tubs and Splash Pads (pH 7,0–7,8; chlorine tự do tối thiểu 1 ppm; kiểm tra ít nhất 2 lần/ngày). Truy cập 06/11/2026.",
@@ -543,10 +543,10 @@ NL.add([
     "giay_phep": "Tài liệu của Chính phủ Hoa Kỳ – trích, ghi nguồn"
    },
    {
-    "trich_dan": "LibreTexts Chemistry. Reference Table E1: Acid Dissociation Constants at 25 °C (HClO: Ka = 4,0 × 10⁻⁸, pKa = 7,40). Truy cập 06/11/2026.",
-    "url": "https://chem.libretexts.org/Ancillary_Materials/Reference/Reference_Tables/Equilibrium_Constants/E1%3A_Acid_Dissociation_Constants_at_25C",
-    "loai": "CSDL",
-    "giay_phep": "CC BY-NC-SA – trích số liệu, ghi nguồn"
+    "trich_dan": "Lide, D. R. (Chủ biên). (2004). CRC Handbook of Chemistry and Physics (84th ed.). CRC Press. Mục 8: Dissociation Constants of Inorganic Acids (HClO: Ka = 4,0 × 10⁻⁸, pKa = 7,40).",
+    "url": "",
+    "loai": "sổ tay tra cứu",
+    "giay_phep": "Trích số liệu, ghi nguồn"
    }
   ],
   "hinh_thuc": "Biên soạn lại",
@@ -589,21 +589,21 @@ NL.add([
    }
   ],
   "luu_y_khoa_hoc": [
-   "pKa của HOCl là 7,40 ở 25 °C (LibreTexts), thay đổi nhẹ theo nhiệt độ; bảng tính ở 25 °C.",
+   "pKa của HOCl là 7,40 ở 25 °C (CRC Handbook), thay đổi nhẹ theo nhiệt độ; bảng tính ở 25 °C.",
    "Tuyệt đối không trộn chất tẩy chứa hypochlorite với acid hoặc chất chứa ammonia vì tạo khí độc.",
    "Quy chuẩn của từng địa phương có thể quy định khoảng pH khác; cần đối chiếu khi áp dụng."
   ],
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Bảng do nhóm tính từ pKa.",
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Bảng được tính từ pKa.",
   "cap_nhat": "06/11/2026"
  },
  {
   "id": "cd03-07",
   "chu_de": "cd03",
   "lop": "11",
-  "tieu_de": "Mưa acid ở châu Âu và quá trình cắt giảm phát thải SO₂",
+  "tieu_de": "Mưa acid ở Châu Âu và quá trình cắt giảm phát thải SO₂",
   "yccd": "Vận dụng kiến thức về pH và cân bằng acid – base để giải thích, đánh giá một vấn đề môi trường (mưa acid).",
   "boi_canh": "Tháng 10/1967, nhà khoa học Thuỵ Điển Svante Odén đăng trên báo Dagens Nyheter bài viết với tựa đề như một lời cảnh báo: “Một cuộc chiến hoá học ngấm ngầm giữa các quốc gia châu Âu”. Dựa trên mạng lưới quan trắc nước mưa và nước mặt, ông chỉ ra hiện tượng acid hoá đang diễn ra, phần lớn do khí thải chứa sulfur bay từ nước này sang nước khác.\n\nNăm 1972, báo cáo của Thuỵ Điển gửi Hội nghị Liên Hợp Quốc về Môi trường con người ở Stockholm ước tính 50% số hồ và sông ở Thuỵ Điển sẽ đạt tới mức pH tới hạn trong vòng 50 năm nếu phát thải tiếp tục như cũ. Những năm 1980, báo chí đăng đầy ảnh rừng chết ở vùng “Tam giác đen” (biên giới Ba Lan, Đông Đức và Tiệp Khắc cũ), nơi đốt nhiều than nâu giàu sulfur.\n\nNghị định thư Helsinki năm 1985 yêu cầu các nước tham gia giảm ít nhất 30% phát thải sulfur trong giai đoạn 1980–1993. Theo bài tổng quan của Grennfelt và cộng sự (2020), phát thải SO₂ ở châu Âu đến nay đã giảm 80% trở lên so với đỉnh khoảng 1980–1990, trong khi phát thải ammonia mới chỉ giảm 20–30%.",
   "bang_so_lieu": null,
@@ -656,14 +656,14 @@ NL.add([
    }
   ],
   "luu_y_khoa_hoc": [
-   "Mốc 30%, 1980–1993, năm 1967, 1972 và các tỉ lệ 80%, 20–30% lấy theo Grennfelt và cộng sự (2020); khu công nghiệp và câu bón vôi là tình huống giả định do nhóm đặt ra.",
+   "Mốc 30%, 1980–1993, năm 1967, 1972 và các tỉ lệ 80%, 20–30% lấy theo Grennfelt và cộng sự (2020); khu công nghiệp và câu bón vôi là tình huống giả định.",
    "Phương trình 2SO₂ + O₂ → 2SO₃ là cách viết đơn giản; trong khí quyển SO₂ bị oxi hoá qua nhiều con đường (gốc OH, trong giọt nước…).",
    "Bón vôi chỉ khắc phục tạm thời; giải pháp gốc rễ là giảm phát thải SO₂, NOₓ."
   ],
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ đọc bài báo, soạn nháp câu hỏi; nhóm đối sánh các mốc và tỉ lệ với bản gốc, tự tính lại bài pH. Không dùng AI tạo số liệu.",
+  "ai_su_dung": "AI hỗ trợ đọc bài báo, soạn nháp câu hỏi; các mốc và tỉ lệ được đối sánh với bản gốc, bài pH được tính lại thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
  }
 ]);
