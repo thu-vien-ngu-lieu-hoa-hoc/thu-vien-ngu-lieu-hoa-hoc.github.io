@@ -88,9 +88,9 @@ kbd{font:600 12px var(--f-ui);border:1px solid var(--line-2);border-bottom-width
 
 /* ---------- Bố cục ---------- */
 .layout{display:flex;max-width:1320px;margin:0 auto}
-.sidebar{width:286px;flex:none;position:sticky;top:64px;height:calc(100vh - 64px);overflow:auto;padding:18px 14px 40px;border-right:1px solid var(--line);background:var(--surface)}
+.sidebar{width:330px;flex:none;position:sticky;top:64px;height:calc(100vh - 64px);overflow:auto;padding:18px 14px 40px;border-right:1px solid var(--line);background:var(--surface)}
 .sidebar h4{margin:20px 10px 6px;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);font-weight:700}
-.sidebar a{position:relative;display:flex;gap:10px;align-items:center;padding:7px 10px;border-radius:10px;text-decoration:none;color:var(--ink-2);font-size:15px;line-height:1.35;margin:1px 0;transition:background .15s,color .15s,padding-left .2s}
+.sidebar a{position:relative;display:flex;gap:10px;align-items:center;padding:7px 10px;border-radius:10px;text-decoration:none;color:var(--ink-2);font-size:14px;line-height:1.35;margin:1px 0;transition:background .15s,color .15s,padding-left .2s}
 .sidebar a:hover{background:var(--surface-2);color:var(--ink);padding-left:13px}
 .sidebar a.current{background:var(--accent-soft);color:var(--accent-ink);font-weight:600}
 .sidebar a.current::before{content:"";position:absolute;left:0;top:8px;bottom:8px;width:3px;border-radius:3px;background:var(--accent)}
@@ -156,7 +156,8 @@ a.tag:hover{border-color:var(--accent);color:var(--accent-ink);transform:transla
 .hero-art2{position:absolute;right:120px;bottom:-50px;width:150px;height:150px;opacity:.18;pointer-events:none;color:var(--blue);animation:floaty 7s ease-in-out infinite}
 .hero-inner{position:relative;display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center}
 .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--accent-ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:4px 13px;margin-bottom:16px}
-.hero h1 .h1-sub{display:block;font-size:.46em;line-height:1.3;letter-spacing:-.005em;margin-top:6px;color:var(--ink-2)}
+.nw{white-space:nowrap}
+.hero h1 .h1-sub{text-wrap:balance;display:block;font-size:.46em;line-height:1.3;letter-spacing:-.005em;margin-top:6px;color:var(--ink-2)}
 .hero h1{font-size:clamp(36px,6vw,58px);margin-bottom:8px;font-weight:600;letter-spacing:-.025em}
 .hero h1 em{font-style:italic;font-weight:500;color:var(--accent)}
 .hero .slogan{font:italic 500 clamp(19px,2.4vw,23px)/1.4 var(--f-read);color:var(--ink-2);margin-bottom:14px}
@@ -645,7 +646,7 @@ const pager = (prev, next) => `<nav class="pager" aria-label="Chuyển trang">${
 const pagePager = r => { const i = PAGES.indexOf(r); return pager(i>0?[PAGES[i-1],PAGE_T[PAGES[i-1]]]:null, i<PAGES.length-1?[PAGES[i+1],PAGE_T[PAGES[i+1]]]:null); };
 
 function buildSidebar(){
-  const a = (r, t, pre='', post='', style='') => `<a href="#/${r}" data-r="${r}"${style?` style="${style}"`:''}>${pre}<span>${esc(t)}</span>${post}</a>`;
+  const a = (r, t, pre='', post='', style='') => `<a href="#/${r}" data-r="${r}"${style?` style="${style}"`:''}>${pre}<span>${esc(t).split(', ').map(p => `<span class="nw">${p}</span>`).join(', ')}</span>${post}</a>`;
   const ic = n => `<span class="ico">${icon(n)}</span>`;
   $('#sidebar').innerHTML = a('', 'Trang chủ', ic('home')) + a('tra-cuu', 'Tra cứu ngữ liệu', ic('search')) +
     '<h4>' + C.chu_de.length + ' chủ đề</h4>' + C.chu_de.map(c => a('tra-cuu?cd='+c.ma, c.ten, `<span class="sym">${esc(c.ki_hieu)}</span>`, `<span class="cnt">${ofCd(c.ma).length}</span>`, cvar(c))).join('') +
@@ -784,7 +785,7 @@ function pageHome(){
   return `<div class="page wide">${errBox()}
     <section class="hero">${heroArt}<div class="hero-inner"><div>
       <div class="eyebrow">${icon('spark',15)} ${txt(C.don_vi)}</div>
-      <h1>Thư viện ngữ liệu<span class="h1-sub">trong dạy học và đánh giá năng lực môn <em>Hóa học</em> ở trường phổ thông</span></h1>
+      <h1>Thư viện ngữ liệu<span class="h1-sub">trong dạy học và đánh giá năng lực môn <em>Hóa học</em> <span class="nw">ở trường phổ thông</span></span></h1>
       <div class="slogan">${esc(C.khau_hieu)} – từ <span class="rotator" id="rot">${words[0]}</span></div>
       <p>Ngữ liệu có dữ liệu thật, kèm nguồn, giấy phép và trạng thái kiểm chứng; gắn mã biểu hiện năng lực Tìm hiểu thế giới tự nhiên (TH1–TH5) và Vận dụng (VD1–VD5) theo Chương trình Hoá học 2018.</p>
       <div class="btn-row"><a class="btn" href="#/tra-cuu">${icon('search',17)} Tra cứu ngữ liệu</a>${DS.length?`<button class="btn ghost" id="randBtn">${icon('dice',17)} Ngữ liệu ngẫu nhiên</button>`:''}<a class="btn ghost" href="#/huong-dan">Hướng dẫn</a></div>
