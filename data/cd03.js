@@ -598,5 +598,72 @@ NL.add([
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Bảng do nhóm tính từ pKa.",
   "cap_nhat": "06/11/2026"
+ },
+ {
+  "id": "cd03-07",
+  "chu_de": "cd03",
+  "lop": "11",
+  "tieu_de": "Mưa acid: 50 năm từ lời cảnh báo đến hành động",
+  "yccd": "Vận dụng kiến thức về pH và cân bằng acid – base để giải thích, đánh giá một vấn đề môi trường (mưa acid).",
+  "boi_canh": "Tháng 10/1967, nhà khoa học Thuỵ Điển Svante Odén đăng trên báo Dagens Nyheter bài viết với tựa đề như một lời cảnh báo: “Một cuộc chiến hoá học ngấm ngầm giữa các quốc gia châu Âu”. Dựa trên mạng lưới quan trắc nước mưa và nước mặt, ông chỉ ra hiện tượng acid hoá đang diễn ra, phần lớn do khí thải chứa sulfur bay từ nước này sang nước khác.\n\nNăm 1972, báo cáo của Thuỵ Điển gửi Hội nghị Liên Hợp Quốc về Môi trường con người ở Stockholm ước tính 50% số hồ và sông ở Thuỵ Điển sẽ đạt tới mức pH tới hạn trong vòng 50 năm nếu phát thải tiếp tục như cũ. Những năm 1980, báo chí đăng đầy ảnh rừng chết ở vùng “Tam giác đen” (biên giới Ba Lan, Đông Đức và Tiệp Khắc cũ), nơi đốt nhiều than nâu giàu sulfur.\n\nNghị định thư Helsinki năm 1985 yêu cầu các nước tham gia giảm ít nhất 30% phát thải sulfur trong giai đoạn 1980–1993. Theo bài tổng quan của Grennfelt và cộng sự (2020), phát thải SO₂ ở châu Âu đến nay đã giảm 80% trở lên so với đỉnh khoảng 1980–1990, trong khi phát thải ammonia mới chỉ giảm 20–30%.",
+  "bang_so_lieu": null,
+  "hinh_goi_y": "Biểu đồ phát thải SO₂, NOₓ, NH₃ ở châu Âu 1880–2020 (Hình 1 của bài báo, giấy phép CC BY 4.0, ghi nguồn khi dùng).",
+  "nguon": [
+   {
+    "trich_dan": "Grennfelt, P., Engleryd, A., Forsius, M., et al. (2020). Acid rain and air pollution: 50 years of progress in environmental science and policy. Ambio, 49, 849–864. https://doi.org/10.1007/s13280-019-01244-4. Truy cập 06/11/2026.",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7028813/",
+    "loai": "bài báo",
+    "giay_phep": "CC BY 4.0"
+   }
+  ],
+  "hinh_thuc": "Biên soạn lại",
+  "ma_TH": [
+   "TH1",
+   "TH4",
+   "TH5"
+  ],
+  "ma_VD": [
+   "VD2",
+   "VD5"
+  ],
+  "dinh_huong": "Lớp 11, bài pH của dung dịch; liên hệ cd03-05 (acid hoá đại dương).\nHình thức: đọc ngữ liệu, làm bài tập pH, sau đó thảo luận “bài học hợp tác quốc tế về môi trường”; ý tưởng từ bài sưu tầm của sinh viên Trần Gia Khánh.",
+  "cau_hoi": [
+   {
+    "ma": [
+     "TH1"
+    ],
+    "dang": "Tự luận",
+    "noi_dung": "Viết các phương trình hoá học mô tả quá trình sulfur trong than nâu tạo thành sulfuric acid trong nước mưa.",
+    "dap_an": "S + O₂ → SO₂ (khi đốt than); 2SO₂ + O₂ ⇌ 2SO₃ (trong khí quyển, quá trình thực tế phức tạp hơn); SO₃ + H₂O → H₂SO₄."
+   },
+   {
+    "ma": [
+     "TH4",
+     "VD2"
+    ],
+    "dang": "Đúng/sai",
+    "noi_dung": "Một khu công nghiệp phát thải 24 000 tấn SO₂ năm 1980 và 16 000 tấn năm 1993. Mỗi nhận định sau đúng hay sai?\na) Khu công nghiệp đạt mục tiêu của Nghị định thư Helsinki.\nb) Lượng SO₂ đã giảm khoảng 33%.\nc) Khu công nghiệp giảm vượt mục tiêu 800 tấn SO₂.\nd) Nếu pH một hồ giảm từ 6,5 xuống 5,5 thì nồng độ H⁺ tăng 10 lần.",
+    "dap_an": "a) Đúng.\nb) Đúng – 8 000 : 24 000 ≈ 33,3%.\nc) Đúng – mục tiêu giảm 24 000 × 30% = 7 200 tấn; thực tế giảm 8 000 tấn.\nd) Đúng – 10⁻⁵·⁵ : 10⁻⁶·⁵ = 10."
+   },
+   {
+    "ma": [
+     "TH4",
+     "VD5"
+    ],
+    "dang": "Trả lời ngắn",
+    "noi_dung": "(Tình huống giả định) Lấy 100 mL nước một hồ bị acid hoá, thêm 0,105 mg Ca(OH)₂, sau phản ứng pH đạt 5,5. Tính pH ban đầu của mẫu nước (bỏ qua các cân bằng khác; Ca = 40; O = 16; H = 1; làm tròn đến hàng phần mười).",
+    "dap_an": "4,5. Cách tính: n(Ca(OH)₂) = 0,105 × 10⁻³ : 74 ≈ 1,419 × 10⁻⁶ mol → n(OH⁻) ≈ 2,838 × 10⁻⁶ mol. Sau phản ứng n(H⁺) = 10⁻⁵·⁵ × 0,1 ≈ 3,16 × 10⁻⁷ mol. Ban đầu n(H⁺) ≈ 3,16 × 10⁻⁷ + 2,838 × 10⁻⁶ ≈ 3,15 × 10⁻⁶ mol → [H⁺] ≈ 3,15 × 10⁻⁵ M → pH ≈ 4,5."
+   }
+  ],
+  "luu_y_khoa_hoc": [
+   "Mốc 30%, 1980–1993, năm 1967, 1972 và các tỉ lệ 80%, 20–30% lấy theo Grennfelt và cộng sự (2020); khu công nghiệp và câu bón vôi là tình huống giả định do nhóm đặt ra.",
+   "Phương trình 2SO₂ + O₂ → 2SO₃ là cách viết đơn giản; trong khí quyển SO₂ bị oxi hoá qua nhiều con đường (gốc OH, trong giọt nước…).",
+   "Bón vôi chỉ khắc phục tạm thời; giải pháp gốc rễ là giảm phát thải SO₂, NOₓ."
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "",
+  "nguoi_tham_dinh": "",
+  "ai_su_dung": "AI hỗ trợ đọc bài báo, soạn nháp câu hỏi; nhóm đối sánh các mốc và tỉ lệ với bản gốc, tự tính lại bài pH. Không dùng AI tạo số liệu.",
+  "cap_nhat": "06/11/2026"
  }
 ]);

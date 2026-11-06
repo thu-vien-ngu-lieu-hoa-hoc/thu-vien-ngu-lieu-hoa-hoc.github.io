@@ -470,9 +470,7 @@ const CAU_HINH = {
     { ma: 'cd09', ten: 'Ester – lipid', lop: '12', ki_hieu: 'COO', mau: '#a17a05', nguon: 'Codex CXS 210-1999; USDA FoodData Central; WHO' },
     { ma: 'cd10', ten: 'Carbohydrate', lop: '12', ki_hieu: 'C₆', mau: '#5a8a0c', nguon: 'USDA FoodData Central; WHO; Renewable Fuels Association' },
     { ma: 'cd11', ten: 'Amino acid, peptide, protein', lop: '12', ki_hieu: 'NH₂', mau: '#c0266d', nguon: 'WHO/FAO/UNU TRS 935; USDA FoodData Central; RCSB PDB' },
-    { ma: 'cd12', ten: 'Polymer', lop: '12', ki_hieu: '(…)ₙ', mau: '#4f46e5', nguon: 'OECD Global Plastics Outlook; World Bank (2021); NĐ 08/2022/NĐ-CP' },
-    { ma: 'cd13', ten: 'Nitrogen và sulfur', lop: '11', ki_hieu: 'N', mau: '#2f7d32', nguon: 'UNEP – UNIDO – IFA (1998); Sustainability (2021); Ambio (2020)' },
-    { ma: 'cd14', ten: 'Liên kết hoá học', lop: '10', ki_hieu: 'σ', mau: '#8a3ffc', nguon: 'PubChem; Berkeley Science Review; Chemical Science (2026)' }
+    { ma: 'cd12', ten: 'Polymer', lop: '12', ki_hieu: '(…)ₙ', mau: '#4f46e5', nguon: 'OECD Global Plastics Outlook; World Bank (2021); NĐ 08/2022/NĐ-CP' }
   ]
 };
 /* ======================= HẾT KHỐI CAU_HINH ========================== */
@@ -844,7 +842,7 @@ function pageTraCuu(P){
         (!tk || tk.split(/\s+/).every(w => norm([x.id,x.tieu_de,x.boi_canh,CD(x.chu_de).ten,JSON.stringify(x.nguon),x.dinh_huong].join(' ')).includes(w))));
       $('#fCount').innerHTML = `Tìm thấy <b>${rs.length}</b>/${DS.length} ngữ liệu`;
       $('#fOut').innerHTML = rs.length ? C.chu_de.map(c => { const g = rs.filter(x=>x.chu_de===c.ma); return g.length ? `<div class="grp-h" style="${cvar(c)}"><span class="sym">${esc(c.ki_hieu)}</span><div><h2>${esc(c.ten)}</h2><span>Lớp ${esc(c.lop)} · ${g.length} ngữ liệu</span></div></div><div class="cards">${g.map(card).join('')}</div>` : ''; }).join('')
-        : `<div class="empty-state">${DS.length ? 'Không có ngữ liệu phù hợp. Hãy bỏ bớt điều kiện lọc.' : 'Chưa có ngữ liệu nào. Lưu các tệp data/cd01.js … data/cd14.js rồi tải lại trang.'}</div>`;
+        : `<div class="empty-state">${DS.length ? 'Không có ngữ liệu phù hợp. Hãy bỏ bớt điều kiện lọc.' : 'Chưa có ngữ liệu nào. Lưu các tệp data/cd01.js … data/cd12.js rồi tải lại trang.'}</div>`;
       reveal($('#fOut'));
       Object.values(map).forEach(s => { const el = $(s); if(el.tagName === 'SELECT') el.classList.toggle('set', !!el.value); });
       $('#fChips').innerHTML = Object.keys(map).filter(k => v(k)).map(k => { const el = $(map[k]); const lab = el.tagName === 'SELECT' ? el.options[el.selectedIndex].text : v(k);

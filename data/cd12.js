@@ -501,5 +501,78 @@ NL.add([
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
+ },
+ {
+  "id": "cd12-07",
+  "chu_de": "cd12",
+  "lop": "12",
+  "tieu_de": "Teflon: liên kết bền đến mức thành “hoá chất vĩnh cửu”",
+  "yccd": "Nêu được tính chất, ứng dụng của một số chất dẻo; giải thích tính chất dựa vào cấu tạo; đánh giá được tác động của chất thải polymer đến môi trường.",
+  "boi_canh": "Teflon là tên thương mại của polytetrafluoroethylene (PTFE), polymer có mạch carbon được bao kín bởi các nguyên tử fluorine: (–CF₂–CF₂–)ₙ. PTFE được dùng làm lớp chống dính của chảo, vỏ cách điện, gioăng, ống dẫn hoá chất…\n\nĐộ âm điện theo thang Pauling (PubChem): F = 3,98; C = 2,55. Liên kết C–F vì thế phân cực mạnh và rất bền; lớp nguyên tử fluorine bao quanh mạch carbon khiến PTFE gần như không phản ứng với acid, base hay dung môi thông thường.\n\nNhưng chính độ bền này lại thành vấn đề khi thải bỏ. Theo bài tổng quan của Lowe và cộng sự trên tạp chí Chemical Science (2026), PTFE tồn tại rất lâu trong bãi chôn lấp; nhiệt phân PTFE tạo ra các “hoá chất vĩnh cửu” (forever chemicals) phân tử nhỏ; và muốn phân huỷ hoàn toàn thường phải dùng điều kiện rất khắc nghiệt. Vì thế nhiều nhóm nghiên cứu đang tìm cách phân huỷ PTFE ở nhiệt độ thấp (không quá 100 °C), có trường hợp còn thu hồi được fluoride để làm nguyên liệu hoá chất.",
+  "bang_so_lieu": null,
+  "hinh_goi_y": "Công thức một đoạn mạch PTFE; ảnh chảo chống dính bị trầy (nhóm tự chụp).",
+  "nguon": [
+   {
+    "trich_dan": "Lowe, M. E., Hopkinson, M. N., Kubicki, D. J., Lu, E., & Armstrong, R. J. (2026). Recent advances in the degradation of polytetrafluoroethylene (PTFE) at low temperature (≤100 °C). Chemical Science. https://doi.org/10.1039/D6SC03192G (bản tóm tắt trên kho ePrints Đại học Newcastle). Truy cập 06/11/2026.",
+    "url": "https://eprints.ncl.ac.uk/312399",
+    "loai": "bài báo",
+    "giay_phep": "CC BY 3.0"
+   },
+   {
+    "trich_dan": "PubChem. Periodic Table of Elements – Electronegativity (Pauling). Truy cập 06/11/2026.",
+    "url": "https://pubchem.ncbi.nlm.nih.gov/periodic-table/#property=Electronegativity",
+    "loai": "CSDL",
+    "giay_phep": "Dữ liệu cơ quan chính phủ Hoa Kỳ, dùng tự do kèm ghi nguồn"
+   }
+  ],
+  "hinh_thuc": "Biên soạn lại",
+  "ma_TH": [
+   "TH1",
+   "TH4"
+  ],
+  "ma_VD": [
+   "VD1",
+   "VD2",
+   "VD5"
+  ],
+  "dinh_huong": "Lớp 12, bài Vật liệu polymer (chất dẻo); ôn lại độ âm điện, liên kết cộng hoá trị phân cực (lớp 10); liên hệ cd12-01, cd12-05.\nHình thức: tính hiệu độ âm điện, thảo luận ưu – nhược điểm của vật liệu “quá bền”; ý tưởng từ bài sưu tầm của sinh viên Lê Anh Đức.",
+  "cau_hoi": [
+   {
+    "ma": [
+     "TH4"
+    ],
+    "dang": "Trả lời ngắn",
+    "noi_dung": "Tính hiệu độ âm điện giữa F và C. Theo quy ước trong SGK, liên kết C–F thuộc loại liên kết nào?",
+    "dap_an": "1,43. Cách tính: 3,98 − 2,55 = 1,43; nằm trong khoảng 0,4 ≤ Δχ < 1,7 nên là liên kết cộng hoá trị phân cực."
+   },
+   {
+    "ma": [
+     "TH1",
+     "VD1"
+    ],
+    "dang": "Đúng/sai",
+    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Trong liên kết C–F, cặp electron dùng chung lệch về phía nguyên tử F.\nb) PTFE trơ về hoá học vì mạch carbon được bao bọc bởi các nguyên tử fluorine.\nc) Liên kết C–F là liên kết ion vì F có độ âm điện lớn nhất.\nd) Theo Lowe và cộng sự (2026), PTFE phân huỷ nhanh trong bãi chôn lấp.",
+    "dap_an": "a) Đúng.\nb) Đúng.\nc) Sai – Δχ = 1,43 < 1,7, là liên kết cộng hoá trị phân cực.\nd) Sai – PTFE tồn tại rất lâu (highly persistent) trong bãi chôn lấp."
+   },
+   {
+    "ma": [
+     "VD2",
+     "VD5"
+    ],
+    "dang": "Tự luận",
+    "noi_dung": "Vì sao nói độ bền của liên kết C–F vừa là ưu điểm vừa là thách thức đối với môi trường? Đề xuất một cách ứng xử của người dùng với chảo chống dính cũ.",
+    "dap_an": "Ưu điểm: bền nhiệt, bền hoá học, chống dính, dùng lâu. Thách thức: khó phân huỷ, tồn tại lâu trong bãi rác; đốt hoặc nhiệt phân có thể tạo hoá chất chứa fluorine bền vững gây ô nhiễm. Người dùng: không đun chảo rỗng ở lửa quá lớn, không đốt chảo cũ, thu gom theo nhóm rác kim loại hoặc rác thải nguy hại theo hướng dẫn địa phương."
+   }
+  ],
+  "luu_y_khoa_hoc": [
+   "Nhóm mới đọc được phần tóm tắt của bài báo Lowe và cộng sự (2026); các ý trong bài chỉ lấy từ phần tóm tắt.",
+   "Không đưa nhiệt độ phân huỷ cụ thể của PTFE khi chưa có nguồn đối chiếu.",
+   "Ranh giới 0,4 và 1,7 là quy ước của SGK Hoá học 10, không phải ranh giới tuyệt đối."
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "",
+  "nguoi_tham_dinh": "",
+  "ai_su_dung": "AI hỗ trợ đọc tóm tắt bài báo, soạn nháp câu hỏi; nhóm đối sánh với bản gốc. Không dùng AI tạo số liệu.",
+  "cap_nhat": "06/11/2026"
  }
 ]);
