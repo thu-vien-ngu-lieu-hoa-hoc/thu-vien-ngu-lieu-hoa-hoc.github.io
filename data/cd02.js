@@ -102,7 +102,7 @@ NL.add([
   "lop": "10",
   "tieu_de": "Tốc độ phản ứng giữa đá vôi và hydrochloric acid",
   "yccd": "Thực hiện được thí nghiệm nghiên cứu ảnh hưởng của nồng độ, nhiệt độ, diện tích bề mặt đến tốc độ phản ứng; xử lí số liệu, rút ra kết luận.",
-  "boi_canh": "Phản ứng giữa đá vôi và dung dịch hydrochloric acid là thí nghiệm quen thuộc để nghiên cứu tốc độ phản ứng: CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g).\n\nKhí CO₂ thoát ra làm khối lượng cốc phản ứng giảm dần. Đặt cốc lên cân điện tử và ghi khối lượng sau mỗi 30 giây, học sinh có thể vẽ đồ thị khối lượng giảm theo thời gian. Độ dốc của đồ thị cho biết tốc độ phản ứng.\n\nTheo định luật bảo toàn khối lượng, 1,00 g CaCO₃ (0,0100 mol) phản ứng hết sẽ giải phóng 0,0100 mol CO₂, tức 0,44 g. Đây là mức giảm khối lượng tối đa nếu acid dư.\n\nĐể so sánh, có thể làm bốn thí nghiệm với cùng 1,00 g CaCO₃ và 50 mL acid dư, chỉ thay đổi một yếu tố mỗi lần: dạng đá vôi (viên hay bột), nồng độ acid (1 M hay 2 M), nhiệt độ (phòng hay nước ấm 40 °C). Phương pháp “thay đổi một biến, giữ nguyên các biến khác” là nền tảng của nghiên cứu khoa học.",
+  "boi_canh": "Phản ứng giữa đá vôi và dung dịch hydrochloric acid là thí nghiệm quen thuộc để nghiên cứu tốc độ phản ứng: CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g).\n\nKhí CO₂ thoát ra làm khối lượng cốc phản ứng giảm dần. Đặt cốc lên cân điện tử và ghi khối lượng sau mỗi 30 giây, học sinh có thể vẽ đồ thị khối lượng giảm theo thời gian. Độ dốc của đồ thị cho biết tốc độ phản ứng.\n\nTheo định luật bảo toàn khối lượng, 1,00 g CaCO₃ (0,0100 mol) phản ứng hết sẽ giải phóng 0,0100 mol CO₂, tức 0,44 g. Đây là mức giảm khối lượng tối đa nếu acid dư.\n\nĐể so sánh, có thể làm bốn thí nghiệm với cùng 1,00 g CaCO₃ và 50 mL acid dư, chỉ thay đổi một yếu tố mỗi lần: dạng đá vôi (viên hay bột), nồng độ acid (1 M hay 2 M), nhiệt độ (phòng hay nước ấm 40 °C). Phương pháp thay đổi một biến, giữ nguyên các biến khác là nền tảng của nghiên cứu khoa học.",
   "bang_so_lieu": {
    "tieu_de": "Thiết kế bốn thí nghiệm (học sinh tự đo và điền kết quả)",
    "cot": [
@@ -277,7 +277,7 @@ NL.add([
   "lop": "10",
   "tieu_de": "Chất xúc tác trong bộ chuyển đổi khí thải xe máy",
   "yccd": "Trình bày được ảnh hưởng của chất xúc tác đến tốc độ phản ứng; nêu được ứng dụng của chất xúc tác trong đời sống, sản xuất.",
-  "boi_canh": "Khí thải động cơ chứa các chất độc: carbon monoxide (CO), hydrocarbon chưa cháy hết và các oxide của nitrogen (NOₓ). Để giảm ô nhiễm, Việt Nam áp dụng các tiêu chuẩn khí thải theo lộ trình của Quyết định 49/2011/QĐ-TTg. Theo khoản 2 Điều 4 của Quyết định này, xe mô tô hai bánh sản xuất, lắp ráp và nhập khẩu mới phải áp dụng tiêu chuẩn khí thải mức 3 từ ngày 01/01/2017. Lộ trình sau đó tiếp tục được điều chỉnh, nâng dần mức tiêu chuẩn.\n\nĐể đạt tiêu chuẩn, nhiều xe được lắp bộ chuyển đổi xúc tác trong ống xả. Bên trong là khối gốm hình tổ ong, phủ một lớp rất mỏng kim loại quý platinum (Pt), palladium (Pd), rhodium (Rh).\n\nTrên bề mặt chất xúc tác, các phản ứng xảy ra nhanh hơn nhiều: 2CO + O₂ → 2CO₂; 2NO + 2CO → N₂ + 2CO₂; hydrocarbon bị oxi hoá thành CO₂ và H₂O. Chất xúc tác không bị tiêu hao sau phản ứng.\n\nTuy nhiên, chất xúc tác chỉ hoạt động tốt khi đã nóng; và có thể bị “ngộ độc” bởi chì hoặc lưu huỳnh trong nhiên liệu kém chất lượng.",
+  "boi_canh": "Khí thải động cơ chứa các chất độc: carbon monoxide (CO), hydrocarbon chưa cháy hết và các oxide của nitrogen (NOₓ). Để giảm ô nhiễm, Việt Nam áp dụng các tiêu chuẩn khí thải theo lộ trình của Quyết định 49/2011/QĐ-TTg. Theo khoản 2 Điều 4 của Quyết định này, xe mô tô hai bánh sản xuất, lắp ráp và nhập khẩu mới phải áp dụng tiêu chuẩn khí thải mức 3 từ ngày 01/01/2017. Lộ trình sau đó tiếp tục được điều chỉnh, nâng dần mức tiêu chuẩn.\n\nĐể đạt tiêu chuẩn, nhiều xe được lắp bộ chuyển đổi xúc tác trong ống xả. Bên trong là khối gốm hình tổ ong, phủ một lớp rất mỏng kim loại quý platinum (Pt), palladium (Pd), rhodium (Rh).\n\nTrên bề mặt chất xúc tác, các phản ứng xảy ra nhanh hơn nhiều: 2CO + O₂ → 2CO₂; 2NO + 2CO → N₂ + 2CO₂; hydrocarbon bị oxi hoá thành CO₂ và H₂O. Chất xúc tác không bị tiêu hao sau phản ứng.\n\nTuy nhiên, chất xúc tác chỉ hoạt động tốt khi đã nóng; và có thể bị ngộ độc (mất hoạt tính) bởi chì hoặc lưu huỳnh trong nhiên liệu kém chất lượng.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Ảnh cắt ngang bộ chuyển đổi xúc tác dạng tổ ong (tìm ảnh giấy phép CC trên Wikimedia Commons).",
   "nguon": [
@@ -394,7 +394,7 @@ NL.add([
   ],
   "luu_y_khoa_hoc": [
    "Thời gian nhân đôi 20 phút là điều kiện thuận lợi nhất; thực tế phụ thuộc loại vi khuẩn và thực phẩm.",
-   "Đun sôi lại không phá huỷ được mọi độc tố mà vi khuẩn đã tiết ra; không nên coi hâm nóng là “khử độc”.",
+   "Đun sôi lại không phá huỷ được mọi độc tố mà vi khuẩn đã tiết ra; không nên coi hâm nóng là cách loại bỏ độc tố.",
    "Khuyến cáo của USDA dùng độ F; khi dạy cần đổi sang độ C và nêu rõ làm tròn."
   ],
   "trang_thai": "nhap",
@@ -409,7 +409,7 @@ NL.add([
   "lop": "10",
   "tieu_de": "Chất xúc tác trong quá trình cracking dầu mỏ",
   "yccd": "Nêu được ứng dụng của chất xúc tác trong sản xuất; liên hệ ngành nghề liên quan đến hoá học.",
-  "boi_canh": "Việt Nam có hai nhà máy lọc dầu lớn: Nhà máy lọc dầu Dung Quất (Quảng Ngãi), công suất thiết kế 6,5 triệu tấn dầu thô mỗi năm, và Liên hợp lọc hoá dầu Nghi Sơn (Thanh Hoá), công suất khoảng 10 triệu tấn mỗi năm. Hai nhà máy cung cấp phần lớn xăng dầu cho thị trường trong nước.\n\nTrái tim của nhà máy là phân xưởng cracking xúc tác (FCC). Tại đây, các phân tử hydrocarbon dài, nặng trong dầu thô được “bẻ gãy” thành các phân tử ngắn hơn như thành phần của xăng và khí hoá lỏng. Nếu không có xúc tác, quá trình này cần nhiệt độ cao hơn nhiều và xảy ra rất chậm.\n\nChất xúc tác FCC thường là zeolite, một loại vật liệu có rất nhiều lỗ xốp kích thước phân tử. Sau một thời gian, chất xúc tác bị phủ một lớp than cốc và mất hoạt tính. Người ta đốt lớp than này để “tái sinh” xúc tác rồi đưa trở lại thiết bị phản ứng.\n\nKĩ sư hoá học, kĩ sư công nghệ lọc hoá dầu cần hiểu rõ tốc độ phản ứng, chất xúc tác và an toàn quy trình để vận hành nhà máy.",
+  "boi_canh": "Việt Nam có hai nhà máy lọc dầu lớn: Nhà máy lọc dầu Dung Quất (Quảng Ngãi), công suất thiết kế 6,5 triệu tấn dầu thô mỗi năm, và Liên hợp lọc hoá dầu Nghi Sơn (Thanh Hoá), công suất khoảng 10 triệu tấn mỗi năm. Hai nhà máy cung cấp phần lớn xăng dầu cho thị trường trong nước.\n\nCông đoạn chính của nhà máy là phân xưởng cracking xúc tác (FCC). Tại đây, các phân tử hydrocarbon dài, nặng trong dầu thô được phân cắt thành các phân tử ngắn hơn như thành phần của xăng và khí hoá lỏng. Nếu không có xúc tác, quá trình này cần nhiệt độ cao hơn nhiều và xảy ra rất chậm.\n\nChất xúc tác FCC thường là zeolite, một loại vật liệu có rất nhiều lỗ xốp kích thước phân tử. Sau một thời gian, chất xúc tác bị phủ một lớp than cốc và mất hoạt tính. Người ta đốt lớp than này để tái sinh xúc tác rồi đưa trở lại thiết bị phản ứng.\n\nKĩ sư hoá học, kĩ sư công nghệ lọc hoá dầu cần hiểu rõ tốc độ phản ứng, chất xúc tác và an toàn quy trình để vận hành nhà máy.",
   "bang_so_lieu": {
    "tieu_de": "Công suất thiết kế hai nhà máy lọc dầu của Việt Nam",
    "cot": [
@@ -459,7 +459,7 @@ NL.add([
      "TH1"
     ],
     "dang": "Tự luận",
-    "noi_dung": "Vì sao chất xúc tác FCC cần có nhiều lỗ xốp? Vì sao phải “tái sinh” chất xúc tác?",
+    "noi_dung": "Vì sao chất xúc tác FCC cần có nhiều lỗ xốp? Vì sao phải tái sinh chất xúc tác?",
     "dap_an": "Nhiều lỗ xốp tạo diện tích bề mặt lớn, phản ứng xảy ra nhanh hơn. Than cốc bám trên bề mặt che lấp các vị trí hoạt động, xúc tác mất hoạt tính; đốt than cốc giúp khôi phục bề mặt."
    },
    {

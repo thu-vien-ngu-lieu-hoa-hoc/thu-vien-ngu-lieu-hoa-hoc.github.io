@@ -72,7 +72,7 @@ NL.add([
      "VD2"
     ],
     "dang": "Tự luận",
-    "noi_dung": "Vì sao tính chất “bền” của polymer vừa là ưu điểm vừa là nhược điểm? Vì sao tỉ lệ tái chế nhựa lại thấp?",
+    "noi_dung": "Vì sao tính bền của polymer vừa là ưu điểm vừa là nhược điểm? Vì sao tỉ lệ tái chế nhựa lại thấp?",
     "dap_an": "Bền giúp nhựa dùng lâu, chịu nước, hoá chất; nhưng khi thải bỏ lại tồn tại rất lâu, khó phân huỷ. Tái chế thấp vì nhựa bị trộn lẫn nhiều loại, bị bẩn, có nhiều lớp, phụ gia; chi phí thu gom, phân loại cao; nhựa mới rẻ."
    },
    {
@@ -374,7 +374,7 @@ NL.add([
   "chu_de": "cd12",
   "lop": "12",
   "tieu_de": "Khả năng phân huỷ sinh học của poly(lactic acid) (PLA)",
-  "yccd": "Phân biệt được polymer tổng hợp và polymer có thể phân huỷ sinh học; phản biện được các tuyên bố “xanh” trong thực tế.",
+  "yccd": "Phân biệt được polymer tổng hợp và polymer có thể phân huỷ sinh học; phản biện được các tuyên bố về tính thân thiện môi trường trong thực tế.",
   "boi_canh": "Căng tin trường muốn thay cốc nhựa PP và ống hút nhựa bằng sản phẩm “thân thiện môi trường”. Nhà cung cấp giới thiệu cốc làm từ PLA (polylactic acid), quảng cáo là “nhựa sinh học, phân huỷ 100%”.\n\nPLA là polyester được tổng hợp từ lactic acid, mà lactic acid lại được tạo ra từ cây nông nghiệp như ngô, mía. Vì vậy PLA có nguồn gốc tái tạo. PLA có thể bị phân huỷ sinh học nhờ thuỷ phân liên kết ester, nhưng theo UNEP (2015), nhiều loại nhựa dán nhãn “phân huỷ sinh học” chỉ phân huỷ hoàn toàn trong điều kiện ủ phân công nghiệp, với nhiệt độ duy trì trên 50 °C trong thời gian dài. Ở ngoài môi trường tự nhiên, trong đất hoặc nước biển ở nhiệt độ thường, PLA phân huỷ rất chậm, gần giống nhựa thông thường.\n\nNếu cốc PLA bị trộn lẫn vào dòng tái chế PP, PET, nó còn làm giảm chất lượng nhựa tái chế. Trong khi đó, Việt Nam còn rất ít cơ sở ủ phân công nghiệp tiếp nhận loại nhựa này.\n\nCác lựa chọn khác gồm: cốc giấy (thường có lớp phủ nhựa), cốc tái sử dụng (inox, thuỷ tinh), ống hút tre, cỏ bàng, gạo. Căng tin nên chọn phương án nào?",
   "bang_so_lieu": null,
   "hinh_goi_y": "Ảnh các loại cốc, ống hút thay thế tại căng tin (nhóm tự chụp).",
@@ -428,7 +428,7 @@ NL.add([
   ],
   "luu_y_khoa_hoc": [
    "Phân biệt “có nguồn gốc sinh học” (bio-based) và “có thể phân huỷ sinh học” (biodegradable): hai khái niệm khác nhau.",
-   "Ngưỡng “trên 50 °C” theo UNEP (2015); các tiêu chuẩn ủ phân như EN 13432, ISO 17088 quy định điều kiện chi tiết.",
+   "Ngưỡng trên 50 °C theo UNEP (2015); các tiêu chuẩn ủ phân như EN 13432, ISO 17088 quy định điều kiện chi tiết.",
    "Không khẳng định một vật liệu “tốt nhất” tuyệt đối; khuyến khích đánh giá theo vòng đời."
   ],
   "trang_thai": "nhap",
@@ -535,7 +535,7 @@ NL.add([
    "VD2",
    "VD5"
   ],
-  "dinh_huong": "Lớp 12, bài Vật liệu polymer (chất dẻo); ôn lại độ âm điện, liên kết cộng hoá trị phân cực (lớp 10); liên hệ cd12-01, cd12-05.\nHình thức: tính hiệu độ âm điện, thảo luận ưu – nhược điểm của vật liệu “quá bền”; ý tưởng từ bài sưu tầm của sinh viên Lê Anh Đức.",
+  "dinh_huong": "Lớp 12, bài Vật liệu polymer (chất dẻo); ôn lại độ âm điện, liên kết cộng hoá trị phân cực (lớp 10); liên hệ cd12-01, cd12-05.\nHình thức: tính hiệu độ âm điện, thảo luận ưu – nhược điểm của vật liệu có độ bền hoá học cao; ý tưởng từ bài sưu tầm của sinh viên Lê Anh Đức.",
   "cau_hoi": [
    {
     "ma": [

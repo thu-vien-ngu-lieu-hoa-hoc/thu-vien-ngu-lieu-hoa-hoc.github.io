@@ -5,7 +5,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Màu của ion kim loại chuyển tiếp",
   "yccd": "Nêu được đặc điểm cấu hình electron và tính chất đặc trưng của kim loại chuyển tiếp dãy thứ nhất (nhiều số oxi hoá, hợp chất có màu).",
-  "boi_canh": "Dung dịch sodium chloride, calcium chloride đều không màu. Nhưng dung dịch copper(II) sulfate có màu xanh lam, iron(III) chloride màu vàng nâu, potassium permanganate màu tím. Điểm chung của những chất có màu này là đều chứa nguyên tố chuyển tiếp.\n\nNguyên tử kim loại chuyển tiếp dãy thứ nhất (từ Sc đến Zn) có phân lớp 3d chưa bão hoà (trừ Zn). Trong ion phức với nước hoặc các phối tử khác, các orbital 3d bị tách thành những mức năng lượng hơi khác nhau. Electron d hấp thụ một phần ánh sáng nhìn thấy để chuyển lên mức cao hơn. Màu ta thấy là màu bổ sung của phần ánh sáng bị hấp thụ. Ví dụ theo Chemguide, ion copper(II) trong dung dịch hấp thụ ánh sáng vùng đỏ nên ta thấy màu xanh lam (màu bổ sung của đỏ).\n\nMột nguyên tố chuyển tiếp có thể có nhiều số oxi hoá, mỗi số oxi hoá cho màu khác nhau. Manganese trong MnO₄⁻ (+7) màu tím, trong Mn²⁺ (+2) gần như không màu. Chromium trong Cr₂O₇²⁻ (+6) màu da cam; chromium(III) trong nước thường thấy màu xanh lục (khi có phối tử Cl⁻), còn ion [Cr(H₂O)₆]³⁺ “thuần” có màu tím xám.\n\nCác nhà hoá học tận dụng sự đổi màu này để nhận biết ion và theo dõi phản ứng oxi hoá – khử.",
+  "boi_canh": "Dung dịch sodium chloride, calcium chloride đều không màu. Nhưng dung dịch copper(II) sulfate có màu xanh lam, iron(III) chloride màu vàng nâu, potassium permanganate màu tím. Điểm chung của những chất có màu này là đều chứa nguyên tố chuyển tiếp.\n\nNguyên tử kim loại chuyển tiếp dãy thứ nhất (từ Sc đến Zn) có phân lớp 3d chưa bão hoà (trừ Zn). Trong ion phức với nước hoặc các phối tử khác, các orbital 3d bị tách thành những mức năng lượng hơi khác nhau. Electron d hấp thụ một phần ánh sáng nhìn thấy để chuyển lên mức cao hơn. Màu ta thấy là màu bổ sung của phần ánh sáng bị hấp thụ. Ví dụ theo Chemguide, ion copper(II) trong dung dịch hấp thụ ánh sáng vùng đỏ nên ta thấy màu xanh lam (màu bổ sung của đỏ).\n\nMột nguyên tố chuyển tiếp có thể có nhiều số oxi hoá, mỗi số oxi hoá cho màu khác nhau. Manganese trong MnO₄⁻ (+7) màu tím, trong Mn²⁺ (+2) gần như không màu. Chromium trong Cr₂O₇²⁻ (+6) màu da cam; chromium(III) trong nước thường thấy màu xanh lục (khi có phối tử Cl⁻), còn ion [Cr(H₂O)₆]³⁺ (chỉ có phối tử nước) có màu tím xám.\n\nCác nhà hoá học tận dụng sự đổi màu này để nhận biết ion và theo dõi phản ứng oxi hoá – khử.",
   "bang_so_lieu": {
    "tieu_de": "Màu dung dịch của một số ion trong nước",
    "cot": [
@@ -123,7 +123,7 @@ NL.add([
   ],
   "luu_y_khoa_hoc": [
    "Ở phổ thông chỉ giải thích định tính; không yêu cầu thuyết trường tinh thể.",
-   "Dung dịch Fe³⁺ có màu vàng nâu một phần do thuỷ phân tạo phức hydroxo; Fe³⁺ “thuần” có màu nhạt hơn.",
+   "Dung dịch Fe³⁺ có màu vàng nâu một phần do thuỷ phân tạo phức hydroxo; [Fe(H₂O)₆]³⁺ (chưa thuỷ phân) có màu nhạt hơn.",
    "Cr₂O₇²⁻ (chromium(VI)) độc, gây ung thư; chỉ giáo viên thao tác, lượng nhỏ."
   ],
   "trang_thai": "nhap",
@@ -138,7 +138,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Xác định nồng độ phức đồng – ammonia bằng phép đo quang",
   "yccd": "Trình bày được sự tạo thành phức chất của Cu²⁺ với NH₃; thực hiện được thí nghiệm và xử lí số liệu liên quan đến màu của phức chất.",
-  "boi_canh": "Khi nhỏ từ từ dung dịch ammonia vào dung dịch copper(II) sulfate, lúc đầu xuất hiện kết tủa xanh nhạt Cu(OH)₂, sau đó kết tủa tan tạo dung dịch xanh lam đậm. Màu xanh đậm là của ion phức [Cu(NH₃)₄(H₂O)₂]²⁺ (thường viết gọn [Cu(NH₃)₄]²⁺).\n\nMàu càng đậm, nồng độ phức càng lớn. Các nhà khoa học đo “độ đậm” bằng máy quang phổ: chiếu ánh sáng qua cuvet chứa dung dịch và đo độ hấp thụ quang A. Theo định luật Beer – Lambert, A = ε·l·C: độ hấp thụ tỉ lệ thuận với nồng độ C (khi l và bước sóng không đổi). Đây là cơ sở của phương pháp đo màu dùng phổ biến trong phòng xét nghiệm.\n\nMô phỏng Beer’s Law Lab của PhET (Đại học Colorado Boulder) cho phép học sinh thay đổi nồng độ, độ dày cuvet, bước sóng và quan sát độ hấp thụ ngay lập tức. Học sinh có thể tự xây dựng đường chuẩn rồi dùng nó để xác định nồng độ của một dung dịch “bí ẩn”.\n\nNếu không có máy đo, có thể so sánh màu bằng mắt với dãy dung dịch chuẩn, hoặc dùng ứng dụng đo màu trên điện thoại.",
+  "boi_canh": "Khi nhỏ từ từ dung dịch ammonia vào dung dịch copper(II) sulfate, lúc đầu xuất hiện kết tủa xanh nhạt Cu(OH)₂, sau đó kết tủa tan tạo dung dịch xanh lam đậm. Màu xanh đậm là của ion phức [Cu(NH₃)₄(H₂O)₂]²⁺ (thường viết gọn [Cu(NH₃)₄]²⁺).\n\nMàu càng đậm, nồng độ phức càng lớn. Các nhà khoa học đo mức độ hấp thụ ánh sáng bằng máy quang phổ: chiếu ánh sáng qua cuvet chứa dung dịch và đo độ hấp thụ quang A. Theo định luật Beer – Lambert, A = ε·l·C: độ hấp thụ tỉ lệ thuận với nồng độ C (khi l và bước sóng không đổi). Đây là cơ sở của phương pháp đo màu dùng phổ biến trong phòng xét nghiệm.\n\nMô phỏng Beer’s Law Lab của PhET (Đại học Colorado Boulder) cho phép học sinh thay đổi nồng độ, độ dày cuvet, bước sóng và quan sát độ hấp thụ ngay lập tức. Học sinh có thể tự xây dựng đường chuẩn rồi dùng nó để xác định nồng độ của một dung dịch chưa biết nồng độ.\n\nNếu không có máy đo, có thể so sánh màu bằng mắt với dãy dung dịch chuẩn, hoặc dùng ứng dụng đo màu trên điện thoại.",
   "bang_so_lieu": {
    "tieu_de": "Bảng ghi số liệu xây dựng đường chuẩn (học sinh đo trong mô phỏng PhET)",
    "cot": [
@@ -208,7 +208,7 @@ NL.add([
      "VD3"
     ],
     "dang": "Tự luận",
-    "noi_dung": "Lập kế hoạch dùng mô phỏng PhET để xác định nồng độ một dung dịch “bí ẩn”: các bước, biến cần giữ không đổi, cách xử lí số liệu.",
+    "noi_dung": "Lập kế hoạch dùng mô phỏng PhET để xác định nồng độ một dung dịch chưa biết nồng độ: các bước, biến cần giữ không đổi, cách xử lí số liệu.",
     "dap_an": "Chọn chất và bước sóng cố định, cuvet 1 cm; đo A của 4–5 dung dịch chuẩn có nồng độ biết trước; vẽ đồ thị A theo C (đường thẳng qua gốc); đo A của mẫu bí ẩn; dùng đồ thị hoặc hệ số góc để tính C. Giữ không đổi bước sóng và độ dày cuvet."
    },
    {
@@ -237,7 +237,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Phức chất heme và ngộ độc carbon monoxide",
   "yccd": "Nêu được vai trò của phức chất trong cơ thể sống; giải thích được tác hại của một số chất dựa trên khả năng tạo phức.",
-  "boi_canh": "Mỗi phân tử hemoglobin trong hồng cầu chứa bốn nhóm heme. Theo PDB-101, hemoglobin gồm bốn chuỗi protein, mỗi chuỗi có một nhóm heme dạng vòng chứa một nguyên tử sắt; ở trung tâm heme, ion iron(II) liên kết với bốn nguyên tử nitrogen, tạo thành một phức chất. Phân tử O₂ gắn vào ion sắt này như một phối tử, được vận chuyển từ phổi đến các tế bào.\n\nCarbon monoxide (CO) là khí không màu, không mùi, sinh ra khi đốt nhiên liệu thiếu oxygen: bếp than tổ ong trong phòng kín, máy phát điện, xe nổ máy trong ga-ra đóng cửa. CO cũng gắn vào ion sắt trong hemoglobin, với ái lực lớn hơn O₂ khoảng 200–250 lần (theo Hội đồng Nghiên cứu Quốc gia Hoa Kỳ – NRC). Khi đó hemoglobin không còn chỗ để chở oxygen, cơ thể bị thiếu oxygen dù vẫn thở bình thường.\n\nTheo Trung tâm Kiểm soát và Phòng ngừa Dịch bệnh Hoa Kỳ (CDC), triệu chứng ngộ độc CO thường gặp là đau đầu, chóng mặt, mệt yếu, khó chịu dạ dày, nôn, đau ngực và lú lẫn; hít nhiều CO có thể ngất và tử vong. Người đang ngủ có thể tử vong trước khi kịp có triệu chứng. Ở Việt Nam, mùa đông hằng năm vẫn có những vụ ngộ độc khí CO do đốt than sưởi trong phòng kín.\n\nCách cấp cứu chính là đưa nạn nhân ra nơi thoáng khí và cho thở oxygen nồng độ cao, để O₂ dần “đẩy” CO ra khỏi hemoglobin.",
+  "boi_canh": "Mỗi phân tử hemoglobin trong hồng cầu chứa bốn nhóm heme. Theo PDB-101, hemoglobin gồm bốn chuỗi protein, mỗi chuỗi có một nhóm heme dạng vòng chứa một nguyên tử sắt; ở trung tâm heme, ion iron(II) liên kết với bốn nguyên tử nitrogen, tạo thành một phức chất. Phân tử O₂ gắn vào ion sắt này như một phối tử, được vận chuyển từ phổi đến các tế bào.\n\nCarbon monoxide (CO) là khí không màu, không mùi, sinh ra khi đốt nhiên liệu thiếu oxygen: bếp than tổ ong trong phòng kín, máy phát điện, xe nổ máy trong ga-ra đóng cửa. CO cũng gắn vào ion sắt trong hemoglobin, với ái lực lớn hơn O₂ khoảng 200–250 lần (theo Hội đồng Nghiên cứu Quốc gia Hoa Kỳ – NRC). Khi đó hemoglobin không còn chỗ để chở oxygen, cơ thể bị thiếu oxygen dù vẫn thở bình thường.\n\nTheo Trung tâm Kiểm soát và Phòng ngừa Dịch bệnh Hoa Kỳ (CDC), triệu chứng ngộ độc CO thường gặp là đau đầu, chóng mặt, mệt yếu, khó chịu dạ dày, nôn, đau ngực và lú lẫn; hít nhiều CO có thể ngất và tử vong. Người đang ngủ có thể tử vong trước khi kịp có triệu chứng. Ở Việt Nam, mùa đông hằng năm vẫn có những vụ ngộ độc khí CO do đốt than sưởi trong phòng kín.\n\nCách cấp cứu chính là đưa nạn nhân ra nơi thoáng khí và cho thở oxygen nồng độ cao, để O₂ dần thay thế CO trong hemoglobin.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Mô hình 3D hemoglobin trên RCSB PDB-101 (Molecule of the Month: Hemoglobin).",
   "nguon": [
@@ -349,7 +349,7 @@ NL.add([
    "VD2",
    "VD5"
   ],
-  "dinh_huong": "Lớp 12, bài Sắt và hợp chất; sản xuất gang thép.\nHình thức: luyện tập tính toán; thảo luận “thép xanh” 15 phút.",
+  "dinh_huong": "Lớp 12, bài Sắt và hợp chất; sản xuất gang thép.\nHình thức: luyện tập tính toán; thảo luận về sản xuất thép phát thải thấp 15 phút.",
   "cau_hoi": [
    {
     "ma": [
@@ -469,7 +469,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Cisplatin – phức chất platinum dùng trong điều trị ung thư",
   "yccd": "Nêu được ứng dụng của phức chất trong y học; liên hệ ngành nghề hoá dược.",
-  "boi_canh": "Năm 1965, nhà vật lí – sinh học Barnett Rosenberg (Đại học Bang Michigan, Hoa Kỳ) nghiên cứu ảnh hưởng của dòng điện đến vi khuẩn E. coli. Ông bất ngờ thấy vi khuẩn ngừng phân chia. Nguyên nhân không phải dòng điện, mà là một phức chất platinum hình thành từ điện cực platinum và các ion trong dung dịch.\n\nPhức chất đó là cisplatin, cis-[Pt(NH₃)₂Cl₂]: một ion platinum(II) liên kết với hai phân tử NH₃ và hai ion Cl⁻, tất cả nằm trên một mặt phẳng vuông, hai Cl⁻ ở cùng một phía. Trong tế bào, cisplatin gắn vào DNA, làm DNA bị “gập”, tế bào ung thư không phân chia được. Đồng phân trans (hai Cl⁻ ở hai phía đối diện) gần như không có tác dụng chữa bệnh.\n\nTheo Viện Ung thư Quốc gia Hoa Kỳ (NCI), năm 1978 cisplatin được Cục Quản lí Thực phẩm và Dược phẩm Hoa Kỳ (FDA) phê duyệt điều trị ung thư tinh hoàn, sau đó cả ung thư buồng trứng và bàng quang giai đoạn muộn. Ngày nay, cisplatin và các thuốc cùng họ (carboplatin, oxaliplatin) vẫn được dùng rộng rãi.\n\nCâu chuyện cisplatin cho thấy: phát hiện tình cờ cộng với đầu óc tò mò có thể thay đổi y học. Các nhà hoá dược, dược sĩ nghiên cứu phát triển thuốc tiếp tục tìm kiếm những phức chất mới ít tác dụng phụ hơn.",
+  "boi_canh": "Năm 1965, nhà vật lí – sinh học Barnett Rosenberg (Đại học Bang Michigan, Hoa Kỳ) nghiên cứu ảnh hưởng của dòng điện đến vi khuẩn E. coli. Ông nhận thấy vi khuẩn ngừng phân chia. Nguyên nhân không phải dòng điện, mà là một phức chất platinum hình thành từ điện cực platinum và các ion trong dung dịch.\n\nPhức chất đó là cisplatin, cis-[Pt(NH₃)₂Cl₂]: một ion platinum(II) liên kết với hai phân tử NH₃ và hai ion Cl⁻, tất cả nằm trên một mặt phẳng vuông, hai Cl⁻ ở cùng một phía. Trong tế bào, cisplatin gắn vào DNA, làm chuỗi DNA bị uốn cong, tế bào ung thư không phân chia được. Đồng phân trans (hai Cl⁻ ở hai phía đối diện) gần như không có tác dụng chữa bệnh.\n\nTheo Viện Ung thư Quốc gia Hoa Kỳ (NCI), năm 1978 cisplatin được Cục Quản lí Thực phẩm và Dược phẩm Hoa Kỳ (FDA) phê duyệt điều trị ung thư tinh hoàn, sau đó cả ung thư buồng trứng và bàng quang giai đoạn muộn. Ngày nay, cisplatin và các thuốc cùng họ (carboplatin, oxaliplatin) vẫn được dùng rộng rãi.\n\nCâu chuyện cisplatin cho thấy: phát hiện tình cờ cộng với đầu óc tò mò có thể thay đổi y học. Các nhà hoá dược, dược sĩ nghiên cứu phát triển thuốc tiếp tục tìm kiếm những phức chất mới ít tác dụng phụ hơn.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Cấu trúc 2D và 3D của cisplatin từ PubChem (CID 5702198 – nhóm kiểm tra lại mã).",
   "nguon": [

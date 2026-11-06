@@ -71,7 +71,7 @@ NL.add([
     ],
     "dang": "Tự luận",
     "noi_dung": "Nhận xét xu hướng biến đổi năng lượng ion hoá trong bảng. Dự đoán phản ứng của francium (Fr, dưới Cs) với nước và giải thích.",
-    "dap_an": "Năng lượng ion hoá giảm dần từ Li đến Cs. Fr có năng lượng ion hoá thấp (dự đoán khoảng 4 eV hoặc thấp hơn), tính khử rất mạnh, phản ứng với nước cực kì mãnh liệt. (Thực tế Fr là nguyên tố phóng xạ, rất hiếm, chưa quan sát được phản ứng với lượng lớn.)"
+    "dap_an": "Năng lượng ion hoá giảm dần từ Li đến Cs. Fr có năng lượng ion hoá thấp (dự đoán khoảng 4 eV hoặc thấp hơn), tính khử rất mạnh, phản ứng với nước rất mạnh. (Thực tế Fr là nguyên tố phóng xạ, rất hiếm, chưa quan sát được phản ứng với lượng lớn.)"
    },
    {
     "ma": [
@@ -99,7 +99,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Phổ phát xạ và màu ngọn lửa của ion kim loại",
   "yccd": "Thực hiện được thí nghiệm thử màu ngọn lửa của hợp chất kim loại nhóm IA, IIA; nêu được ứng dụng.",
-  "boi_canh": "Màu sắc rực rỡ của pháo hoa đến từ các muối kim loại: muối strontium cho màu đỏ, muối barium cho màu lục, muối sodium cho màu vàng, muối potassium cho màu tím nhạt.\n\nKhi bị đốt nóng, electron trong ion kim loại nhận năng lượng và nhảy lên mức năng lượng cao hơn. Khi trở về mức thấp, chúng phát ra ánh sáng có bước sóng xác định. Mỗi nguyên tố có một bộ vạch phổ riêng, giống như “dấu vân tay”. Theo bảng vạch phổ mạnh (Strong Lines) trong cơ sở dữ liệu của NIST, sodium có hai vạch vàng ở 589,0 và 589,6 nm, lithium có vạch đỏ ở 670,8 nm, potassium có hai vạch ở 766,5 và 769,9 nm (đỏ sẫm, gần hồng ngoại) cùng các vạch tím ở khoảng 404 nm.\n\nTrong phòng thí nghiệm, có thể làm “thử màu ngọn lửa”: nhúng que nichrome sạch vào dung dịch muối, đưa vào ngọn lửa đèn khí. Đây là phương pháp nhận biết nhanh nhiều ion kim loại.\n\nNguyên lí này còn được dùng trong máy quang phổ phát xạ để đo hàm lượng Na⁺, K⁺ trong máu, nước khoáng, đất trồng.",
+  "boi_canh": "Màu của pháo hoa đến từ các muối kim loại: muối strontium cho màu đỏ, muối barium cho màu lục, muối sodium cho màu vàng, muối potassium cho màu tím nhạt.\n\nKhi bị đốt nóng, electron trong ion kim loại nhận năng lượng và nhảy lên mức năng lượng cao hơn. Khi trở về mức thấp, chúng phát ra ánh sáng có bước sóng xác định. Mỗi nguyên tố có một bộ vạch phổ riêng, đặc trưng cho nguyên tố đó. Theo bảng vạch phổ mạnh (Strong Lines) trong cơ sở dữ liệu của NIST, sodium có hai vạch vàng ở 589,0 và 589,6 nm, lithium có vạch đỏ ở 670,8 nm, potassium có hai vạch ở 766,5 và 769,9 nm (đỏ sẫm, gần hồng ngoại) cùng các vạch tím ở khoảng 404 nm.\n\nTrong phòng thí nghiệm, có thể thử màu ngọn lửa: nhúng que nichrome sạch vào dung dịch muối, đưa vào ngọn lửa đèn khí. Đây là phương pháp nhận biết nhanh nhiều ion kim loại.\n\nNguyên lí này còn được dùng trong máy quang phổ phát xạ để đo hàm lượng Na⁺, K⁺ trong máu, nước khoáng, đất trồng.",
   "bang_so_lieu": {
    "tieu_de": "Màu ngọn lửa và vạch phổ đặc trưng",
    "cot": [
@@ -177,7 +177,7 @@ NL.add([
    "VD1",
    "VD3"
   ],
-  "dinh_huong": "Lớp 12, bài Kim loại nhóm IA, IIA: thực hành nhận biết.\nHình thức: thực hành 20 phút, sau đó giải bài toán nhận biết ion “bí ẩn”.",
+  "dinh_huong": "Lớp 12, bài Kim loại nhóm IA, IIA: thực hành nhận biết.\nHình thức: thực hành 20 phút, sau đó giải bài toán nhận biết ion chưa biết.",
   "cau_hoi": [
    {
     "ma": [
@@ -221,7 +221,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Lithium: sản lượng khai thác và ứng dụng trong pin",
   "yccd": "Nêu được trạng thái tự nhiên và ứng dụng của kim loại nhóm IA; đánh giá được vấn đề khai thác tài nguyên.",
-  "boi_canh": "Lithium là kim loại nhẹ nhất, nằm đầu nhóm IA. Trước đây lithium chủ yếu dùng trong gốm, thuỷ tinh, dầu bôi trơn. Ngày nay, theo USGS, khoảng 87% lượng lithium tiêu thụ trên thế giới dùng cho pin; vì vậy lithium được gọi là “vàng trắng”.\n\nTheo báo cáo Mineral Commodity Summaries 2024 của Cục Khảo sát Địa chất Hoa Kỳ (USGS), sản lượng lithium khai thác toàn cầu năm 2023 ước khoảng 180 nghìn tấn (tính theo lithium kim loại), tăng so với khoảng 146 nghìn tấn năm 2022. Úc, Chile và Trung Quốc là ba nước sản xuất lớn nhất.\n\nLithium được khai thác theo hai cách chính. Ở Úc, người ta khai thác quặng đá cứng spodumene. Ở vùng “tam giác lithium” Chile – Argentina – Bolivia, người ta bơm nước muối ngầm giàu lithium lên các hồ bay hơi dưới nắng sa mạc, sau nhiều tháng thu được muối lithium. Cách thứ hai tiêu tốn rất nhiều nước ở vùng vốn khô hạn.\n\nNhu cầu lithium được dự báo tiếp tục tăng. Tái chế pin và tìm loại pin thay thế (như pin sodium-ion) là những hướng nghiên cứu quan trọng.",
+  "boi_canh": "Lithium là kim loại nhẹ nhất, nằm đầu nhóm IA. Trước đây lithium chủ yếu dùng trong gốm, thuỷ tinh, dầu bôi trơn. Ngày nay, theo USGS, khoảng 87% lượng lithium tiêu thụ trên thế giới dùng cho pin.\n\nTheo báo cáo Mineral Commodity Summaries 2024 của Cục Khảo sát Địa chất Hoa Kỳ (USGS), sản lượng lithium khai thác toàn cầu năm 2023 ước khoảng 180 nghìn tấn (tính theo lithium kim loại), tăng so với khoảng 146 nghìn tấn năm 2022. Úc, Chile và Trung Quốc là ba nước sản xuất lớn nhất.\n\nLithium được khai thác theo hai cách chính. Ở Úc, người ta khai thác quặng đá cứng spodumene. Ở vùng “tam giác lithium” Chile – Argentina – Bolivia, người ta bơm nước muối ngầm giàu lithium lên các hồ bay hơi dưới nắng sa mạc, sau nhiều tháng thu được muối lithium. Cách thứ hai tiêu tốn rất nhiều nước ở vùng vốn khô hạn.\n\nNhu cầu lithium được dự báo tiếp tục tăng. Tái chế pin và tìm loại pin thay thế (như pin sodium-ion) là những hướng nghiên cứu quan trọng.",
   "bang_so_lieu": {
    "tieu_de": "Sản lượng lithium khai thác năm 2023 (ước tính)",
    "cot": [
@@ -450,7 +450,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Nhiệt phân calcium carbonate và phát thải CO₂ trong sản xuất vôi, xi măng",
   "yccd": "Trình bày được ứng dụng của hợp chất calcium trong xây dựng; vận dụng tính toán theo phương trình hoá học; liên hệ ngành nghề vật liệu.",
-  "boi_canh": "Vôi sống (CaO) và xi măng là vật liệu xây dựng không thể thiếu. Cả hai đều được sản xuất từ đá vôi bằng phản ứng nung: CaCO₃(s) → CaO(s) + CO₂(g), ΔrH° ≈ +179 kJ (nhóm tính từ nhiệt tạo thành chuẩn trong bảng T1 của LibreTexts: CaCO₃ −1 207,6; CaO −634,9; CO₂ −393,5 kJ/mol). Phản ứng thu nhiệt mạnh nên phải nung ở nhiệt độ cao.\n\nCông nghiệp xi măng là một trong những nguồn phát thải CO₂ lớn nhất thế giới. Phát thải đến từ hai nguồn: đốt nhiên liệu để nung lò và chính phản ứng phân huỷ CaCO₃. Theo Andrew (2019), riêng CO₂ từ phản ứng phân huỷ (phát thải quá trình) của sản xuất xi măng toàn cầu năm 2018 khoảng 1,50 tỉ tấn, tương đương khoảng 4% lượng CO₂ từ nhiên liệu hoá thạch. Nguồn thứ hai “khó tránh”: dù dùng năng lượng sạch, đá vôi vẫn giải phóng CO₂.\n\nTheo USGS, năm 2023 Việt Nam sản xuất khoảng 110 triệu tấn xi măng, đứng thứ ba thế giới sau Trung Quốc và Ấn Độ. Các kĩ sư vật liệu xây dựng đang nghiên cứu nhiều giải pháp: thay một phần clinker bằng tro bay, xỉ lò cao; thu giữ CO₂; phát triển xi măng mới.\n\nĐây là ngành nghề cần nhiều kĩ sư hoá học, kĩ sư vật liệu và chuyên gia môi trường.",
+  "boi_canh": "Vôi sống (CaO) và xi măng là vật liệu xây dựng không thể thiếu. Cả hai đều được sản xuất từ đá vôi bằng phản ứng nung: CaCO₃(s) → CaO(s) + CO₂(g), ΔrH° ≈ +179 kJ (nhóm tính từ nhiệt tạo thành chuẩn trong bảng T1 của LibreTexts: CaCO₃ −1 207,6; CaO −634,9; CO₂ −393,5 kJ/mol). Phản ứng thu nhiệt mạnh nên phải nung ở nhiệt độ cao.\n\nCông nghiệp xi măng là một trong những nguồn phát thải CO₂ lớn nhất thế giới. Phát thải đến từ hai nguồn: đốt nhiên liệu để nung lò và chính phản ứng phân huỷ CaCO₃. Theo Andrew (2019), riêng CO₂ từ phản ứng phân huỷ (phát thải quá trình) của sản xuất xi măng toàn cầu năm 2018 khoảng 1,50 tỉ tấn, tương đương khoảng 4% lượng CO₂ từ nhiên liệu hoá thạch. Nguồn thứ hai không giảm được bằng cách đổi nhiên liệu: dù dùng năng lượng sạch, đá vôi vẫn giải phóng CO₂.\n\nTheo USGS, năm 2023 Việt Nam sản xuất khoảng 110 triệu tấn xi măng, đứng thứ ba thế giới sau Trung Quốc và Ấn Độ. Các kĩ sư vật liệu xây dựng đang nghiên cứu nhiều giải pháp: thay một phần clinker bằng tro bay, xỉ lò cao; thu giữ CO₂; phát triển xi măng mới.\n\nĐây là ngành nghề cần nhiều kĩ sư hoá học, kĩ sư vật liệu và chuyên gia môi trường.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Ảnh lò quay xi măng hoặc lò vôi thủ công (nhóm tìm ảnh giấy phép CC).",
   "nguon": [
@@ -499,7 +499,7 @@ NL.add([
      "VD2"
     ],
     "dang": "Tự luận",
-    "noi_dung": "Vì sao nói một phần CO₂ của ngành xi măng là “khó tránh” ngay cả khi dùng điện mặt trời để nung lò? Đề xuất một hướng giảm phát thải.",
+    "noi_dung": "Vì sao nói một phần CO₂ của ngành xi măng không giảm được ngay cả khi dùng điện mặt trời để nung lò? Đề xuất một hướng giảm phát thải.",
     "dap_an": "Vì CO₂ sinh ra trực tiếp từ phản ứng phân huỷ CaCO₃, không liên quan đến nhiên liệu. Hướng giảm: thay một phần clinker bằng tro bay, xỉ; thu giữ, sử dụng CO₂; dùng bê tông bền hơn, ít xi măng hơn."
    },
    {

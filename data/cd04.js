@@ -5,7 +5,7 @@ NL.add([
   "lop": "11",
   "tieu_de": "Chọn chất chỉ thị cho phép chuẩn độ acid – base",
   "yccd": "Trình bày được nguyên tắc chuẩn độ acid – base; lựa chọn được chất chỉ thị phù hợp; thực hiện được thí nghiệm chuẩn độ.",
-  "boi_canh": "Trong phép chuẩn độ acid – base, người làm thí nghiệm nhỏ từ từ dung dịch chuẩn từ burette vào dung dịch cần xác định nồng độ. Điểm tương đương là lúc lượng acid và base phản ứng vừa đủ. Mắt người không thấy được điểm này, nên cần một “đèn báo”: chất chỉ thị acid – base.\n\nChất chỉ thị là acid hoặc base hữu cơ yếu, có màu ở dạng acid khác màu ở dạng base. Mỗi chất đổi màu trong một khoảng pH nhất định. Bảng dưới tổng hợp khoảng đổi màu của bốn chất chỉ thị phổ biến theo bảng tra cứu của LibreTexts Chemistry.\n\nNguyên tắc chọn: khoảng đổi màu của chất chỉ thị phải nằm trong “bước nhảy pH” quanh điểm tương đương. Chuẩn độ acid mạnh bằng base mạnh (HCl bằng NaOH) có bước nhảy rất rộng: với dung dịch 0,1 M, nhóm biên soạn tính được pH tăng từ khoảng 4,3 lên 9,7 khi lượng NaOH thêm vào đi từ 99,9% đến 100,1% lượng cần dùng, nên dùng được nhiều chất chỉ thị. Chuẩn độ acid yếu bằng base mạnh (CH₃COOH bằng NaOH) có điểm tương đương ở pH khoảng 8,7 (nhóm tính cho dung dịch 0,1 M, Ka = 1,75 × 10⁻⁵), bước nhảy hẹp hơn và nằm ở vùng base.\n\nMô phỏng “Acid-Base Solutions” của PhET giúp học sinh quan sát pH của acid mạnh, acid yếu ở cấp độ phân tử.",
+  "boi_canh": "Trong phép chuẩn độ acid – base, người làm thí nghiệm nhỏ từ từ dung dịch chuẩn từ burette vào dung dịch cần xác định nồng độ. Điểm tương đương là lúc lượng acid và base phản ứng vừa đủ. Mắt người không thấy được điểm này, nên cần dùng chất chỉ thị acid – base.\n\nChất chỉ thị là acid hoặc base hữu cơ yếu, có màu ở dạng acid khác màu ở dạng base. Mỗi chất đổi màu trong một khoảng pH nhất định. Bảng dưới tổng hợp khoảng đổi màu của bốn chất chỉ thị phổ biến theo bảng tra cứu của LibreTexts Chemistry.\n\nNguyên tắc chọn: khoảng đổi màu của chất chỉ thị phải nằm trong bước nhảy pH quanh điểm tương đương. Chuẩn độ acid mạnh bằng base mạnh (HCl bằng NaOH) có bước nhảy rất rộng: với dung dịch 0,1 M, nhóm biên soạn tính được pH tăng từ khoảng 4,3 lên 9,7 khi lượng NaOH thêm vào đi từ 99,9% đến 100,1% lượng cần dùng, nên dùng được nhiều chất chỉ thị. Chuẩn độ acid yếu bằng base mạnh (CH₃COOH bằng NaOH) có điểm tương đương ở pH khoảng 8,7 (nhóm tính cho dung dịch 0,1 M, Ka = 1,75 × 10⁻⁵), bước nhảy hẹp hơn và nằm ở vùng base.\n\nMô phỏng “Acid-Base Solutions” của PhET giúp học sinh quan sát pH của acid mạnh, acid yếu ở cấp độ phân tử.",
   "bang_so_lieu": {
    "tieu_de": "Khoảng pH đổi màu của một số chất chỉ thị",
    "cot": [
@@ -506,7 +506,7 @@ NL.add([
    }
   ],
   "luu_y_khoa_hoc": [
-   "Nước cam có các chất khử khác cũng phản ứng với I₂; kết quả là “chất khử quy về vitamin C”.",
+   "Nước cam có các chất khử khác cũng phản ứng với I₂; kết quả là tổng lượng chất khử, quy đổi theo vitamin C.",
    "Nước cam đóng hộp có màu đậm, có thể cần pha loãng để thấy điểm cuối.",
    "Giá trị 53,2 mg/100 g là trung bình; thực tế thay đổi theo giống cam, độ chín."
   ],
