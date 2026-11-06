@@ -641,7 +641,7 @@ const CAU_HINH = {
   khau_hieu: 'Từ dữ liệu thật đến nhiệm vụ năng lực',
   don_vi: 'Khoa Hóa học, Trường Khoa học Tự nhiên và Công nghệ – Trường Đại học Sư phạm Hà Nội',
   nhom: 'Nhóm sinh viên Giải pháp số Liên Chi đoàn – Khoa Hóa học, Trường Khoa học Tự nhiên và Công nghệ – Trường Đại học Sư phạm Hà Nội',
-  file_huong_dan: 'data/Huong-dan-su-dung-thu-vien-ngu-lieu.docx',
+  file_huong_dan: 'data/Gioi_thieu_va_Huong_dan_Thu_vien_ngu_lieu.docx',
   link_gop_y: 'https://docs.google.com/forms/d/e/1FAIpQLSedxVpFf3Q9Hd2KUtUu0saDOFOr0A0DE_jqGPIykzxYzidbtw/viewform',          // link Google Form góp ý
   link_tro_li_ai: '',      // link Gem / Custom GPT cho giáo viên (P6), để trống nếu không có
   link_bo_cau_lenh: '',    // link tệp bộ câu lệnh AI nộp kèm
@@ -1242,7 +1242,7 @@ function pageHuongDan(){
     <h1>Hướng dẫn sử dụng</h1>
     <p class="lead">Website cung cấp hệ thống ngữ liệu hoá học gắn với các bối cảnh thực tiễn, kèm theo dữ liệu có thật từ các nguồn tin cậy, là nguyên liệu để xây dựng bài tập, câu hỏi đánh giá năng lực môn Hoá học.</p>
     <nav class="htoc" aria-label="Mục lục hướng dẫn"><b>Mục lục</b><ol>${TOC.map((x,i) => '<li><a href="#shd-' + (i+1) + '">' + x + '</a></li>').join('')}<li><a href="#shd-p">Phụ lục: Bộ 9 prompt mẫu</a></li></ol>
-      <div class="htoc-act">${C.file_huong_dan ? '<a class="btn ghost" href="' + esc(C.file_huong_dan) + '" download>' + icon('print',16) + ' Tải hướng dẫn (Word)</a>' : ''}<button class="btn ghost" data-hs="1">Mở tất cả</button><button class="btn ghost" data-hs="0">Thu gọn tất cả</button></div></nav>
+      <div class="htoc-act">${C.file_huong_dan ? '<a class="btn ghost" href="' + esc(C.file_huong_dan) + '" download>' + icon('print',16) + ' Tải giới thiệu và hướng dẫn (Word)</a>' : ''}<button class="btn ghost" data-hs="1">Mở tất cả</button><button class="btn ghost" data-hs="0">Thu gọn tất cả</button></div></nav>
     <p class="small muted">Bấm vào tên mục để mở hoặc thu gọn.</p>
 
     ${sec(1, guideBand(false).replace('<div class="guide-hd"><h2>Dùng thư viện trong 4 bước</h2></div>',''))}
