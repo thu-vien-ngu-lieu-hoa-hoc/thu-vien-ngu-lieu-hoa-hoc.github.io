@@ -469,6 +469,8 @@ figure .table-wrap{margin-bottom:0}
 .gp{display:inline-flex;align-items:center;gap:4px;border:1px solid var(--line-2);border-radius:999px;padding:2px 9px;background:var(--surface);color:var(--ink-2)}
 .gp.on{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
 .gb{display:inline-flex;align-items:center;gap:5px;border-radius:8px;padding:3px 9px;background:var(--accent);color:#fff;font-weight:600}
+.gs-go{margin-top:auto;font-weight:600;font-size:14px;color:var(--accent-ink)} .gs:hover .gs-go{text-decoration:underline}
+.guide-act{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
 .guide-rule{margin:14px 0 0;border:1px solid var(--warn-line);background:var(--warn-bg);color:var(--warn-ink);border-radius:12px;padding:9px 14px;font-size:14.5px}
 .page.hd .guide{margin-top:8px}
 .stage,.loai-card{border-top-width:1px;border-color:var(--line)}
@@ -925,16 +927,18 @@ const heroArt = `<svg class="hero-art" viewBox="0 0 200 200" fill="none" stroke=
   <svg class="hero-art2" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><circle cx="50" cy="50" r="10" fill="currentColor"/><ellipse cx="50" cy="50" rx="44" ry="16"/><ellipse cx="50" cy="50" rx="44" ry="16" transform="rotate(60 50 50)"/><ellipse cx="50" cy="50" rx="44" ry="16" transform="rotate(120 50 50)"/></svg>`;
 function guideBand(home){
   const vd = DS.find(x=>x.id==='cd03-03') ? '#/nl/cd03-03' : '#/tra-cuu';
-  const st = (n, href, tit, ui, p) => `<a class="gs rv" href="${href}"><span class="gs-n">${n}</span><b>${tit}</b><div class="gs-ui">${ui}</div><p>${p}</p></a>`;
+  const pr = home ? '#/huong-dan?mo=shd-p' : '#shd-p';
+  const st = (n, href, tit, ui, p, go) => `<a class="gs rv" href="${href}"><span class="gs-n">${n}</span><b>${tit}</b><div class="gs-ui">${ui}</div><p>${p}</p>${go?`<span class="gs-go">${go} →</span>`:''}</a>`;
   return `<section class="guide">
     <div class="guide-hd"><h2>Dùng thư viện trong 4 bước</h2>${home?'<a href="#/huong-dan">Hướng dẫn chi tiết →</a>':''}</div>
     <div class="gsteps">
-      ${st(1,'#/tra-cuu','Tìm ngữ liệu','<span class="gp on">Lớp 11</span><span class="gp">Cân bằng</span><span class="gp">TH4</span>','Lọc theo lớp, chủ đề, năng lực cần phát triển hoặc gõ từ khoá.')}
-      ${st(2,vd,'Đọc bối cảnh',`<span class="gp ic">${icon('table',14)} Bảng số liệu</span><span class="gp">Nguồn: NOAA ↗</span>`,'Xem số liệu, mở nguồn gốc, đọc lưu ý khoa học.')}
-      ${st(3,vd,'Dùng câu hỏi',`<span class="gb">${icon('print',14)} In bản học sinh</span><span class="gp">Bản GV</span>`,'Làm thử, che ô số liệu để ra đề, in phiếu cho lớp.')}
-      ${st(4,vd,'Soạn thêm với AI',`<span class="gb">${icon('copy',14)} Sao chép prompt</span><span class="gp">→ ChatGPT</span>`,'Prompt có sẵn nội dung ngữ liệu; kiểm tra lại đáp án trước khi dùng.')}
+      ${st(1,'#/tra-cuu','Tìm ngữ liệu','<span class="gp on">Lớp 11</span><span class="gp">Cân bằng</span><span class="gp">TH4</span>','Lọc theo lớp, chủ đề, năng lực cần phát triển hoặc gõ từ khoá.','Mở Tra cứu')}
+      ${st(2,vd,'Đọc bối cảnh',`<span class="gp ic">${icon('table',14)} Bảng số liệu</span><span class="gp">Nguồn: NOAA ↗</span>`,'Xem số liệu, mở nguồn gốc, đọc lưu ý khoa học.','Xem ngữ liệu mẫu')}
+      ${st(3,vd,'Dùng câu hỏi',`<span class="gb">${icon('print',14)} In bản học sinh</span><span class="gp">Bản GV</span>`,'Làm thử, che ô số liệu để ra đề, in phiếu cho lớp.','Xem ngữ liệu mẫu')}
+      ${st(4,pr,'Soạn thêm với AI',`<span class="gb">${icon('copy',14)} Sao chép prompt</span><span class="gp">→ ChatGPT</span>`,'Dùng bộ 9 prompt mẫu; trong mỗi ngữ liệu, prompt đã điền sẵn nội dung. Kiểm tra lại đáp án trước khi dùng.','Mở bộ prompt')}
     </div>
     <p class="guide-rule"><b>Lưu ý:</b> AI chỉ soạn nháp, không dùng AI để tạo số liệu. Thầy cô kiểm tra lại số liệu, đáp án và ghi nguồn ngữ liệu khi sử dụng.</p>
+    ${home?`<div class="guide-act"><a class="btn" href="#/huong-dan">${icon('book',17)} Xem hướng dẫn sử dụng đầy đủ</a><a class="btn ghost" href="#/huong-dan?mo=shd-p">${icon('spark',17)} Bộ prompt AI</a></div>`:''}
   </section>`;
 }
 function pageHome(){
@@ -1430,6 +1434,7 @@ function route(){
   document.body.classList.remove('nav-open'); $('#menuBtn').setAttribute('aria-expanded','false');
   bar.style.width = '0'; pop.classList.remove('show');
   window.scrollTo(0, 0);
+  if(path === 'huong-dan' && P.mo){ const d = document.getElementById(P.mo); if(d){ if(d.tagName === 'DETAILS') d.open = true; setTimeout(() => d.scrollIntoView({behavior:'smooth', block:'start'}), 80); } }
 }
 document.addEventListener('click', e => { const a = e.target.closest('a[href^="#s"]'); if(a){ e.preventDefault(); const t = document.getElementById(a.getAttribute('href').slice(1)); if(t){ const d = t.closest('details'); if(d) d.open = true; t.scrollIntoView({behavior:'smooth'}); } } });
 window.addEventListener('beforeprint', () => $$('.rv').forEach(el => el.classList.add('in')));
