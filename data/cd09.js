@@ -563,5 +563,99 @@ NL.add([
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Không dùng AI tạo số liệu.",
   "cap_nhat": "06/11/2026"
+ },
+ {
+  "id": "cd09-07",
+  "chu_de": "cd09",
+  "lop": "12",
+  "tieu_de": "Cùng công thức, khác hình dạng: oleic acid và elaidic acid",
+  "yccd": "Nêu được khái niệm acid béo, chất béo; phân biệt acid béo no và không no; giải thích được trạng thái của chất béo dựa vào cấu tạo.",
+  "boi_canh": "Oleic acid và elaidic acid có cùng công thức phân tử C₁₇H₃₃COOH, mạch 18 carbon với một liên kết đôi C=C ở vị trí số 9. Điểm khác duy nhất là cấu hình của liên kết đôi: oleic acid là đồng phân cis (Z), hai phần mạch carbon nằm cùng phía; elaidic acid là đồng phân trans (E), hai phần mạch nằm khác phía.\n\nOleic acid có nhiều trong dầu ô liu. Elaidic acid là acid béo trans chính hình thành khi hydrogen hoá không hoàn toàn dầu thực vật để làm bơ thực vật, shortening.\n\nTheo cơ sở dữ liệu PubChem, oleic acid nóng chảy ở khoảng 13,4 °C, nên là chất lỏng ở nhiệt độ phòng; elaidic acid nóng chảy ở 42–44 °C, nên là chất rắn. Mạch “gập” của đồng phân cis khó xếp sát nhau, còn mạch gần thẳng của đồng phân trans xếp khít như mạch acid béo no.\n\nMức độ không no của chất béo được đánh giá bằng chỉ số iodine: số gam iodine cộng vào 100 g chất béo hoặc acid béo.",
+  "bang_so_lieu": {
+   "tieu_de": "Hai đồng phân của C₁₇H₃₃COOH",
+   "cot": [
+    "Acid béo",
+    "Cấu hình C=C",
+    "Nhiệt độ nóng chảy (°C)",
+    "Trạng thái ở 25 °C"
+   ],
+   "dong": [
+    [
+     "Oleic acid",
+     "cis (Z)",
+     "13,4",
+     "lỏng"
+    ],
+    [
+     "Elaidic acid",
+     "trans (E)",
+     "42–44",
+     "rắn"
+    ]
+   ],
+   "ghi_chu": "Nhiệt độ nóng chảy theo PubChem (CID 445639 và 637517), truy cập 06/11/2026."
+  },
+  "hinh_goi_y": "Công thức khung của hai đồng phân cis và trans (nhóm tự vẽ).",
+  "nguon": [
+   {
+    "trich_dan": "PubChem. Oleic acid (CID 445639), mục Melting Point. Truy cập 06/11/2026.",
+    "url": "https://pubchem.ncbi.nlm.nih.gov/compound/445639#section=Melting-Point",
+    "loai": "CSDL",
+    "giay_phep": "Dữ liệu cơ quan chính phủ Hoa Kỳ, dùng tự do kèm ghi nguồn"
+   },
+   {
+    "trich_dan": "PubChem. Elaidic acid (CID 637517), mục Melting Point. Truy cập 06/11/2026.",
+    "url": "https://pubchem.ncbi.nlm.nih.gov/compound/637517#section=Melting-Point",
+    "loai": "CSDL",
+    "giay_phep": "Dữ liệu cơ quan chính phủ Hoa Kỳ, dùng tự do kèm ghi nguồn"
+   }
+  ],
+  "hinh_thuc": "Biên soạn lại",
+  "ma_TH": [
+   "TH2",
+   "TH4"
+  ],
+  "ma_VD": [
+   "VD1",
+   "VD2"
+  ],
+  "dinh_huong": "Lớp 12, bài Ester – lipid (chất béo); liên hệ cd09-01 và cd09-03 (chất béo trans).\nHình thức: so sánh hai đồng phân, tính chỉ số iodine; ý tưởng từ bài sưu tầm của sinh viên Hà Sỹ Thiện (dạng câu hỏi trong đề OCR A-level).",
+  "cau_hoi": [
+   {
+    "ma": [
+     "TH2"
+    ],
+    "dang": "Tự luận",
+    "noi_dung": "Hai acid béo có cùng công thức phân tử nhưng nhiệt độ nóng chảy chênh nhau khoảng 30 °C. Giải thích dựa trên hình dạng phân tử và tương tác giữa các phân tử.",
+    "dap_an": "Mạch trans (elaidic) gần thẳng nên các phân tử xếp khít, diện tích tiếp xúc lớn, tương tác van der Waals mạnh, cần nhiệt độ cao hơn để nóng chảy. Mạch cis (oleic) bị gập ở liên kết đôi, khó xếp khít, tương tác yếu hơn nên nóng chảy ở nhiệt độ thấp."
+   },
+   {
+    "ma": [
+     "TH4"
+    ],
+    "dang": "Trả lời ngắn",
+    "noi_dung": "Tính chỉ số iodine của oleic acid (số gam I₂ cộng vào 100 g acid). (M(C₁₇H₃₃COOH) = 282; M(I₂) = 253,8; làm tròn đến hàng phần mười.)",
+    "dap_an": "90,0. Cách tính: mỗi phân tử có 1 liên kết C=C cộng 1 phân tử I₂; chỉ số = 253,8 × 100 : 282 ≈ 90,0. Elaidic acid có cùng giá trị; stearic acid (no) có chỉ số 0."
+   },
+   {
+    "ma": [
+     "VD1",
+     "VD2"
+    ],
+    "dang": "Đúng/sai",
+    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Oleic acid và elaidic acid là hai đồng phân hình học.\nb) Chỉ số iodine phân biệt được oleic acid với elaidic acid.\nc) Elaidic acid ở thể rắn ở nhiệt độ phòng.\nd) Hydrogen hoá không hoàn toàn dầu thực vật có thể tạo acid béo trans.",
+    "dap_an": "a) Đúng.\nb) Sai – cùng số liên kết đôi nên cùng chỉ số iodine (90,0).\nc) Đúng – nóng chảy ở 42–44 °C.\nd) Đúng."
+   }
+  ],
+  "luu_y_khoa_hoc": [
+   "PubChem ghi nhiều giá trị nóng chảy cho oleic acid (13,4 °C; 16,3 °C) do có nhiều dạng tinh thể; bài dùng 13,4 °C.",
+   "Đề OCR (Anh) chỉ là gợi ý dạng câu hỏi; số liệu lấy từ PubChem.",
+   "Ở chương trình 2018, gọi tên theo IUPAC: (9Z)-octadec-9-enoic acid và (9E)-octadec-9-enoic acid."
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "",
+  "nguoi_tham_dinh": "",
+  "ai_su_dung": "AI hỗ trợ soạn nháp câu hỏi; nhóm tra số liệu trực tiếp trên PubChem và tự tính chỉ số iodine. Không dùng AI tạo số liệu.",
+  "cap_nhat": "06/11/2026"
  }
 ]);

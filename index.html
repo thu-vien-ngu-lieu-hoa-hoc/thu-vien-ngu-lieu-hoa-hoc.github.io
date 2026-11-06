@@ -468,9 +468,11 @@ const CAU_HINH = {
     { ma: 'cd07', ten: 'Kim loại nhóm IA, IIA', lop: '12', ki_hieu: 'Na', mau: '#0e7f9e', nguon: 'USGS; NIST Atomic Spectra Database; QCVN 01-1:2024/BYT' },
     { ma: 'cd08', ten: 'Kim loại chuyển tiếp, phức chất', lop: '12', ki_hieu: 'Cu', mau: '#b4501a', nguon: 'worldsteel; PubChem; PhET Beer’s Law Lab' },
     { ma: 'cd09', ten: 'Ester – lipid', lop: '12', ki_hieu: 'COO', mau: '#a17a05', nguon: 'Codex CXS 210-1999; USDA FoodData Central; WHO' },
-    { ma: 'cd10', ten: 'Carbohydrate', lop: '12', ki_hieu: 'C₆', mau: '#5a8a0c', nguon: 'Bảng thành phần thực phẩm Việt Nam; WHO; IEA' },
-    { ma: 'cd11', ten: 'Amino acid, peptide, protein', lop: '12', ki_hieu: 'NH₂', mau: '#c0266d', nguon: 'RCSB PDB-101; WHO (melamine 2008)' },
-    { ma: 'cd12', ten: 'Polymer', lop: '12', ki_hieu: '(…)ₙ', mau: '#4f46e5', nguon: 'OECD Global Plastics Outlook; World Bank – IFC (2021); NĐ 08/2022/NĐ-CP' }
+    { ma: 'cd10', ten: 'Carbohydrate', lop: '12', ki_hieu: 'C₆', mau: '#5a8a0c', nguon: 'USDA FoodData Central; WHO; Renewable Fuels Association' },
+    { ma: 'cd11', ten: 'Amino acid, peptide, protein', lop: '12', ki_hieu: 'NH₂', mau: '#c0266d', nguon: 'WHO/FAO/UNU TRS 935; USDA FoodData Central; RCSB PDB' },
+    { ma: 'cd12', ten: 'Polymer', lop: '12', ki_hieu: '(…)ₙ', mau: '#4f46e5', nguon: 'OECD Global Plastics Outlook; World Bank (2021); NĐ 08/2022/NĐ-CP' },
+    { ma: 'cd13', ten: 'Nitrogen và sulfur', lop: '11', ki_hieu: 'N', mau: '#2f7d32', nguon: 'UNEP – UNIDO – IFA (1998); Sustainability (2021); Ambio (2020)' },
+    { ma: 'cd14', ten: 'Liên kết hoá học', lop: '10', ki_hieu: 'σ', mau: '#8a3ffc', nguon: 'PubChem; Berkeley Science Review; Chemical Science (2026)' }
   ]
 };
 /* ======================= HẾT KHỐI CAU_HINH ========================== */
@@ -630,7 +632,7 @@ function card(x){
 function progress(ma){
   const g = ofCd(ma), n = k => g.filter(x=>ttCua(x)===k).length, tot = Math.max(6, g.length);
   const seg = (k, cls) => n(k) ? `<i class="${cls}" style="--w:${n(k)/tot*100}%"></i>` : '';
-  return `<div class="prog"><span class="track">${seg('tham_dinh','td')}${seg('doi_sanh','ds')}${seg('nhap','nh')}</span><span>${g.length}/6</span></div>`;
+  return `<div class="prog"><span class="track">${seg('tham_dinh','td')}${seg('doi_sanh','ds')}${seg('nhap','nh')}</span><span>${g.length}/${Math.max(6, g.length)}</span></div>`;
 }
 const PAGES = ['', 'tra-cuu', 'khung-nang-luc', 'huong-dan', 'nguon', 'minh-bach-ai'];
 const PAGE_T = {'':'Trang chủ','tra-cuu':'Tra cứu ngữ liệu','khung-nang-luc':'Khung năng lực','huong-dan':'Hướng dẫn sử dụng','nguon':'Nguồn & bản quyền','minh-bach-ai':'Minh bạch AI'};
@@ -641,7 +643,7 @@ function buildSidebar(){
   const a = (r, t, pre='', post='', style='') => `<a href="#/${r}" data-r="${r}"${style?` style="${style}"`:''}>${pre}<span>${esc(t)}</span>${post}</a>`;
   const ic = n => `<span class="ico">${icon(n)}</span>`;
   $('#sidebar').innerHTML = a('', 'Trang chủ', ic('home')) + a('tra-cuu', 'Tra cứu ngữ liệu', ic('search')) +
-    '<h4>12 chủ đề</h4>' + C.chu_de.map(c => a('tra-cuu?cd='+c.ma, c.ten, `<span class="sym">${esc(c.ki_hieu)}</span>`, `<span class="cnt">${ofCd(c.ma).length}</span>`, cvar(c))).join('') +
+    '<h4>' + C.chu_de.length + ' chủ đề</h4>' + C.chu_de.map(c => a('tra-cuu?cd='+c.ma, c.ten, `<span class="sym">${esc(c.ki_hieu)}</span>`, `<span class="cnt">${ofCd(c.ma).length}</span>`, cvar(c))).join('') +
     '<h4>Dành cho giáo viên</h4>' + a('khung-nang-luc', 'Khung năng lực', ic('grid')) + a('huong-dan', 'Hướng dẫn sử dụng', ic('book')) +
     '<h4>Về sản phẩm</h4>' + a('nguon', 'Nguồn & bản quyền', ic('link')) + a('minh-bach-ai', 'Minh bạch AI', ic('spark'));
 }
@@ -788,7 +790,7 @@ function pageHome(){
       <div class="stat rv"><b data-count="${nQ}">0</b><span>câu hỏi minh hoạ</span></div>
       <div class="stat rv good"><b data-count="${tdi}">0</b><span>đã thẩm định</span></div>
     </div></section>
-    <h2>12 chủ đề</h2>
+    <h2>${C.chu_de.length} chủ đề</h2>
     <div class="chips" id="lopChips" role="group" aria-label="Lọc theo lớp">${['', '10', '11', '12'].map(l => `<button class="chip${l===''?' on':''}" data-l="${l}">${l?'Lớp '+l:'Tất cả'}</button>`).join('')}</div>
     <div class="topics">${C.chu_de.map((c,i) => `<a class="topic rv" data-lop="${lopSo(c.lop).join(' ')}" style="${cvar(c)}" href="#/tra-cuu?cd=${c.ma}">
       <div class="topic-top"><span class="sym">${esc(c.ki_hieu)}</span><div><div class="no">Chủ đề ${String(i+1).padStart(2,'0')} · Lớp ${esc(c.lop)}</div><strong>${esc(c.ten)}</strong></div></div>
@@ -842,7 +844,7 @@ function pageTraCuu(P){
         (!tk || tk.split(/\s+/).every(w => norm([x.id,x.tieu_de,x.boi_canh,CD(x.chu_de).ten,JSON.stringify(x.nguon),x.dinh_huong].join(' ')).includes(w))));
       $('#fCount').innerHTML = `Tìm thấy <b>${rs.length}</b>/${DS.length} ngữ liệu`;
       $('#fOut').innerHTML = rs.length ? C.chu_de.map(c => { const g = rs.filter(x=>x.chu_de===c.ma); return g.length ? `<div class="grp-h" style="${cvar(c)}"><span class="sym">${esc(c.ki_hieu)}</span><div><h2>${esc(c.ten)}</h2><span>Lớp ${esc(c.lop)} · ${g.length} ngữ liệu</span></div></div><div class="cards">${g.map(card).join('')}</div>` : ''; }).join('')
-        : `<div class="empty-state">${DS.length ? 'Không có ngữ liệu phù hợp. Hãy bỏ bớt điều kiện lọc.' : 'Chưa có ngữ liệu nào. Lưu các tệp data/cd01.js … data/cd12.js rồi tải lại trang.'}</div>`;
+        : `<div class="empty-state">${DS.length ? 'Không có ngữ liệu phù hợp. Hãy bỏ bớt điều kiện lọc.' : 'Chưa có ngữ liệu nào. Lưu các tệp data/cd01.js … data/cd14.js rồi tải lại trang.'}</div>`;
       reveal($('#fOut'));
       Object.values(map).forEach(s => { const el = $(s); if(el.tagName === 'SELECT') el.classList.toggle('set', !!el.value); });
       $('#fChips').innerHTML = Object.keys(map).filter(k => v(k)).map(k => { const el = $(map[k]); const lab = el.tagName === 'SELECT' ? el.options[el.selectedIndex].text : v(k);
