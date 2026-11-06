@@ -435,6 +435,14 @@ figure .table-wrap{margin-bottom:0}
 .prompts pre{white-space:pre-wrap;word-break:break-word;max-height:340px;overflow:auto;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font:13.5px/1.55 ui-monospace,Consolas,monospace;margin:0 0 10px}
 .ai-goi-y h3,.hd h3{margin:22px 0 8px;font-size:1.05em}
 .fmt td,.fmt th{vertical-align:top}
+.loai-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:12px;margin:12px 0}
+.loai-card{border:1px solid var(--line);border-top:3px solid var(--accent);border-radius:12px;background:var(--surface);padding:14px 16px}
+.loai-card .lc-hd{display:flex;align-items:center;gap:10px;font-size:1.05em;margin-bottom:6px}
+.loai-card .lc-n{flex:none;display:inline-grid;place-items:center;min-width:30px;height:30px;border-radius:8px;background:var(--accent);color:#fff;font-weight:700;font-size:13px}
+.loai-card p{margin:0 0 10px;color:var(--ink-2)}
+.loai-card .lc-sub{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--ink-3);margin-bottom:4px}
+.loai-card ul{margin:0;padding-left:18px} .loai-card li{margin:3px 0}
+@media print{.loai-card{break-inside:avoid;border-color:#999!important}}
 @media print{
   .prompts{display:none!important}
   body{background:#fff;color:#000;font-size:12pt}
@@ -979,18 +987,18 @@ function pageNL(id){
 
 /* ---------- Gợi ý sử dụng và phát triển với AI ---------- */
 const GOI_Y_LOAI = {
-  '01': {ten:'ngữ liệu số liệu chuẩn', mo_ta:'Số liệu tra cứu từ cơ sở dữ liệu, sổ tay khoa học chuẩn (NIST, CRC Handbook, PubChem…), đã được đo đạc và công bố. Dùng để tính toán, so sánh, tìm quy luật với số liệu thật thay cho số liệu giả định.',
-    dung:['Luyện tập tính toán bằng số liệu thật; yêu cầu học sinh ghi rõ nguồn số liệu khi trình bày lời giải.','Cho học sinh tìm quy luật, so sánh, giải thích xu hướng trong bảng.','Dùng nút “Che ô để ra đề” ở bảng số liệu để học sinh tự tính hoặc dự đoán rồi đối chiếu.']},
-  '02': {ten:'ngữ liệu thực nghiệm', mo_ta:'Mô tả một thí nghiệm (mục đích, điều kiện, quy trình) kèm kết quả đo thật lấy từ tài liệu thí nghiệm giáo dục hoặc bài báo khoa học. Phù hợp để phát triển năng lực tìm hiểu tự nhiên theo tiến trình khoa học.',
-    dung:['Tổ chức theo tiến trình: đặt câu hỏi → nêu giả thuyết → thiết kế phương án → xử lí số liệu → kết luận.','Cho học sinh phân tích sai số, chỉ ra số liệu bất thường, đề xuất cải tiến thí nghiệm.','Nếu có điều kiện, cho học sinh làm lại thí nghiệm rồi so sánh với số liệu trong ngữ liệu.']},
-  '03': {ten:'ngữ liệu thực tiễn quốc tế', mo_ta:'Số liệu, báo cáo của tổ chức quốc tế và cơ quan khoa học (USGS, IEA, WHO, OECD, NOAA…) về sản xuất, tài nguyên, môi trường, sức khoẻ.',
-    dung:['Đọc bảng, biểu đồ thống kê; tính tỉ lệ, tốc độ thay đổi.','Liên hệ kiến thức hoá học với vấn đề toàn cầu.','Thảo luận, phản biện một nhận định dựa trên số liệu.']},
-  '04': {ten:'ngữ liệu bối cảnh Việt Nam', mo_ta:'Bối cảnh trong nước: quy chuẩn, tiêu chuẩn, văn bản pháp luật, số liệu sản xuất và môi trường của Việt Nam.',
-    dung:['Đối chiếu kết quả tính toán với giới hạn trong quy chuẩn, tiêu chuẩn (QCVN, TCVN).','Gắn bài học với địa phương và ngành sản xuất của Việt Nam.','Giao nhiệm vụ tìm hiểu và đề xuất giải pháp cho một vấn đề trong nước.']},
-  '05': {ten:'ngữ liệu vấn đề mở, sự cố', mo_ta:'Tình huống thật chưa có một đáp án duy nhất: sự cố công nghiệp, lựa chọn công nghệ, tranh luận khoa học.',
-    dung:['Thảo luận nhóm, tranh biện; học sinh nêu và bảo vệ quan điểm bằng bằng chứng.','Phân tích nguyên nhân sự cố, đề xuất biện pháp an toàn.','Đánh giá bằng tiêu chí chất lượng lập luận thay vì một đáp án đúng.']},
-  '06': {ten:'ngữ liệu công nghệ, nghề nghiệp', mo_ta:'Quy trình công nghệ, sản phẩm và nghề nghiệp có liên quan đến hoá học.',
-    dung:['Giới thiệu quy trình công nghệ và nguyên lí hoá học phía sau.','Định hướng nghề nghiệp: ngành học, vị trí việc làm, kĩ năng cần có.','Giao dự án nhỏ: tìm hiểu một sản phẩm, công nghệ hoặc doanh nghiệp.']}
+  '01': {ten:'ngữ liệu số liệu chuẩn', mo_ta:'Số liệu lấy từ các bộ dữ liệu, sổ tay khoa học uy tín như NIST, CRC Handbook, PubChem. Học sinh được làm việc với con số thật thay cho số liệu tự đặt ra.',
+    dung:['Ra bài tính toán bằng số liệu thật, yêu cầu học sinh ghi nguồn số liệu.','Cho học sinh so sánh, tìm quy luật và giải thích vì sao có quy luật đó.','Che bớt vài ô trong bảng (nút “Che ô để ra đề”) để học sinh tự tính hoặc dự đoán, rồi so với số liệu gốc.']},
+  '02': {ten:'ngữ liệu thực nghiệm', mo_ta:'Một thí nghiệm có mục đích, cách làm và kết quả đo thật, lấy từ tài liệu thí nghiệm hoặc bài báo khoa học. Rất hợp để học sinh tập làm việc như nhà khoa học.',
+    dung:['Đi theo các bước: đặt câu hỏi, nêu giả thuyết, đề xuất cách làm, xử lí kết quả, rút ra kết luận.','Cho học sinh tìm sai số, chỉ ra kết quả bất thường và đề xuất cách làm tốt hơn.','Nếu có điều kiện, cho học sinh làm lại thí nghiệm và so sánh với kết quả trong ngữ liệu.']},
+  '03': {ten:'ngữ liệu thực tiễn quốc tế', mo_ta:'Số liệu, báo cáo của các tổ chức quốc tế như USGS, IEA, WHO, OECD, NOAA về sản xuất, tài nguyên, môi trường và sức khoẻ.',
+    dung:['Cho học sinh đọc bảng, biểu đồ, tính tỉ lệ phần trăm và mức tăng, giảm.','Nối kiến thức hoá học với những vấn đề chung của thế giới.','Đưa ra một nhận định để học sinh dùng số liệu đồng tình hoặc phản bác.']},
+  '04': {ten:'ngữ liệu bối cảnh Việt Nam', mo_ta:'Tình huống trong nước: quy chuẩn, tiêu chuẩn, văn bản pháp luật, số liệu sản xuất và môi trường của Việt Nam.',
+    dung:['Cho học sinh so kết quả tính được với giới hạn cho phép trong quy chuẩn, tiêu chuẩn (QCVN, TCVN).','Gắn bài học với địa phương và các ngành sản xuất của Việt Nam.','Giao nhiệm vụ tìm hiểu một vấn đề trong nước và đề xuất cách giải quyết.']},
+  '05': {ten:'ngữ liệu vấn đề mở, sự cố', mo_ta:'Tình huống có thật nhưng chưa có một đáp án duy nhất: sự cố công nghiệp, lựa chọn công nghệ, vấn đề còn tranh luận.',
+    dung:['Tổ chức thảo luận, tranh luận nhóm; học sinh nêu và bảo vệ ý kiến bằng bằng chứng.','Tìm nguyên nhân sự cố và đề xuất biện pháp an toàn.','Chấm theo chất lượng lập luận, không chỉ theo một đáp án đúng.']},
+  '06': {ten:'ngữ liệu công nghệ, nghề nghiệp', mo_ta:'Quy trình sản xuất, sản phẩm và nghề nghiệp có liên quan đến hoá học.',
+    dung:['Giới thiệu quy trình sản xuất và giải thích phần hoá học ở mỗi công đoạn.','Giúp học sinh tìm hiểu ngành học, công việc và kĩ năng cần có.','Giao dự án nhỏ: tìm hiểu một sản phẩm, một công nghệ hoặc một nhà máy.']}
 };
 const GOI_Y_MA = {
   TH1:'Từ bối cảnh, bảng số liệu, nêu một câu hỏi khoa học có thể kiểm chứng; chỉ ra đại lượng cần đo, cần so sánh.',
@@ -1104,9 +1112,7 @@ function pageHuongDan(){
     <p class="small muted">Mục 2, 3, 5, 6 và đáp án chỉ có ở <i>bản giáo viên</i>; nút <i>In bản học sinh</i> tự ẩn các phần này.</p>
 
     <h2 id="shd3">3. Sáu loại ngữ liệu và cách dùng</h2>
-    <div class="table-wrap"><table class="fmt"><thead><tr><th>Loại</th><th>Đặc điểm</th><th>Gợi ý sử dụng</th></tr></thead><tbody>
-    ${Object.entries(GOI_Y_LOAI).map(([k,g]) => `<tr><td><b>${k}</b> ${esc(LOAI[k])}</td><td>${esc(g.mo_ta)}</td><td>${g.dung.map(esc).join('<br>')}</td></tr>`).join('')}
-    </tbody></table></div>
+    <div class="loai-grid">${Object.entries(GOI_Y_LOAI).map(([k,g]) => `<div class="loai-card rv"><div class="lc-hd"><span class="lc-n">${k}</span><b>${esc(LOAI[k])}</b></div><p>${esc(g.mo_ta)}</p><div class="lc-sub">Có thể dùng để</div><ul>${g.dung.map(d => `<li>${esc(d)}</li>`).join('')}</ul></div>`).join('')}</div>
 
     <h2 id="shd4">4. Giáo viên sử dụng như thế nào?</h2>
     <ol class="steps">
