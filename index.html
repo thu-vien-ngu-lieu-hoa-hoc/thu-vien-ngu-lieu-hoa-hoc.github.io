@@ -161,9 +161,9 @@ p,li,td,.lead,.kv>div{text-wrap:pretty}
 .hero h1{color:var(--accent-ink)}
 .hero h1 .h1-sub{text-wrap:balance;display:block;font-size:.46em;line-height:1.3;letter-spacing:-.005em;margin-top:6px;color:var(--ink-2)}
 .hero h1{font-size:clamp(36px,6vw,58px);margin-bottom:8px;font-weight:600;letter-spacing:-.025em}
-.hero h1 em{font-style:italic;font-weight:500;color:var(--accent)}
-.hero .slogan{font:italic 500 clamp(19px,2.4vw,23px)/1.4 var(--f-read);color:var(--ink-2);margin-bottom:14px}
-.rotator{display:inline-block;min-width:8ch;color:var(--accent);font-style:normal;font-weight:600;border-bottom:2px solid var(--accent-soft);transition:opacity .3s}
+.hero h1 em{font-style:normal;font-weight:inherit;color:var(--accent)}
+.hero .slogan{font:500 clamp(19px,2.4vw,23px)/1.4 var(--f-read);color:var(--ink-2);margin-bottom:14px}
+.rotator{display:inline-block;color:var(--accent);font-style:normal;font-weight:600;border-bottom:2px solid var(--accent-soft);transition:opacity .3s}
 .hero p{font-family:var(--f-read);color:var(--ink-2);max-width:600px;font-size:16.5px}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:12px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;border:1px solid var(--accent);cursor:pointer;font-size:15.5px;box-shadow:0 1px 2px rgba(11,125,104,.25);transition:background .15s,transform .15s,box-shadow .15s}
 .btn:hover{background:var(--accent-2);color:#fff;transform:translateY(-1px);box-shadow:0 6px 16px rgba(11,125,104,.25)}
@@ -219,34 +219,23 @@ p,li,td,.lead,.kv>div{text-wrap:pretty}
 .steps li::before{content:counter(s);position:absolute;left:16px;top:13px;width:32px;height:32px;border-radius:50%;background:var(--accent-soft);color:var(--accent-ink);display:grid;place-items:center;font:600 16px var(--f-display)}
 .steps.grid{grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
 .steps.grid li{padding:56px 16px 16px}
-.lanes{display:grid;grid-template-columns:118px repeat(6,minmax(0,1fr));grid-template-rows:auto auto auto;gap:8px 8px;margin:14px 0 6px}
-.lanes .lab{display:grid;align-content:center;gap:2px;padding:10px 12px;border-radius:12px;font:600 14px var(--f-display);line-height:1.25}
-.lanes .lab small{font-family:var(--f-body,inherit);font-size:12px;font-weight:400;opacity:.85}
-.lanes .lab.ai{grid-row:2;background:var(--warn-bg);color:var(--warn-ink);border:1px dashed var(--warn-line)}
-.lanes .lab.hu{grid-row:3;background:var(--accent-soft);color:var(--accent-ink);border:1px solid color-mix(in srgb,var(--accent) 35%,transparent)}
-.lanes .col{display:grid;grid-row:1/span 3;grid-template-rows:subgrid;gap:8px;position:relative}
-.lanes .hd{display:flex;gap:8px;align-items:center;font-weight:600;line-height:1.25;padding:2px 2px 0;font-size:14.5px}
-.lanes .hd i{flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff;font:600 13px var(--f-display);font-style:normal}
-.lanes .c{padding:9px 11px;border-radius:10px;font-size:13.5px;line-height:1.42}
-.lanes .c.ai{background:var(--warn-bg);color:var(--warn-ink);border:1px dashed var(--warn-line)}
-.lanes .c.ai.none{background:transparent;color:var(--ink-3);border:1px dashed var(--line);font-style:italic}
-.lanes .c.hu{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent)}
+.lanes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:14px 0 10px}
+.lanes .col{display:flex;flex-direction:column;gap:8px;padding:14px 16px;background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--accent);border-radius:12px;box-shadow:var(--shadow-sm)}
+.lanes .hd{display:flex;gap:10px;align-items:center;font:600 16.5px/1.3 var(--f-display)}
+.lanes .hd i{flex:none;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff;font:600 13.5px var(--f-display);font-style:normal}
+.lanes .c.hu{font-size:14.5px;line-height:1.5}
 .lanes .c.hu b{color:var(--accent-ink)}
-.lanes .col:not(:last-child) .hd::after{content:"→";margin-left:auto;color:var(--ink-3);font-weight:400}
+.lanes .c.ai{margin-top:auto;font-size:13.5px;line-height:1.45;background:var(--warn-bg);color:var(--warn-ink);border:1px dashed var(--warn-line);border-radius:9px;padding:7px 10px}
+.lanes .c.ai::before{content:"AI hỗ trợ (bản nháp): ";font-weight:600}
+.lanes .c.ai.none{background:var(--bg);color:var(--ink-3);border-color:var(--line);font-style:italic}
+.lanes .c.ai.none::before{content:"AI: ";font-style:normal}
 .lanes-key{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;color:var(--ink-2);margin:2px 0 18px}
 .lanes-key span{display:inline-flex;align-items:center;gap:6px}
 .lanes-key span::before{content:"";width:14px;height:14px;border-radius:4px}
 .lanes-key .k-ai::before{background:var(--warn-bg);border:1px dashed var(--warn-line)}
-.lanes-key .k-hu::before{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent)}
-@media (max-width:900px){
-  .lanes{grid-template-columns:1fr;grid-template-rows:none;gap:10px}
-  .lanes .lab{display:none}
-  .lanes .col{grid-row:auto;grid-template-rows:none;padding:12px;border:1px solid var(--line);border-radius:14px;background:var(--bg,transparent)}
-  .lanes .col:not(:last-child)::after{content:"↓";position:absolute;left:50%;bottom:-17px;transform:translateX(-50%);color:var(--ink-3);font-size:15px;line-height:1}
-  .lanes .col:not(:last-child) .hd::after{content:none}
-  .lanes .c.ai::before{content:"AI · ";font-weight:600;font-style:normal}
-  .lanes .c.hu::before{content:"Con người · ";font-weight:600;color:var(--accent-ink)}
-}
+.lanes-key .k-hu::before{background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--accent)}
+@media (max-width:860px){.lanes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.lanes{grid-template-columns:1fr}}
 
 /* ---------- Bảng ---------- */
 .table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:12px 0 16px;background:var(--surface)}
@@ -460,9 +449,7 @@ figure .table-wrap{margin-bottom:0}
   .kv{break-inside:avoid;page-break-inside:avoid}
   .kv>*,.luuy li,.src-list li,.meta-foot,.box,.answer,.ds li,.ds .row,.mc li,.lanes .col,.steps li,.motto{break-inside:avoid;page-break-inside:avoid}
   .q{break-inside:avoid;page-break-inside:avoid} .q>*{break-inside:avoid}
-  .lanes{grid-template-columns:repeat(3,1fr);grid-template-rows:none} .lanes .lab{display:none}
-  .lanes .col{grid-row:auto;grid-template-rows:none} .lanes .col .hd::after,.lanes .col::after{content:none!important}
-  .lanes .c.ai::before{content:"AI · ";font-weight:600} .lanes .c.hu::before{content:"Con người · ";font-weight:600}
+  .lanes{grid-template-columns:repeat(3,1fr);gap:8px} .lanes .col{box-shadow:none}
 }
 </style>
 </head>
@@ -510,7 +497,7 @@ const CAU_HINH = {
   link_tro_li_ai: '',      // link Gem / Custom GPT cho giáo viên (P6), để trống nếu không có
   link_bo_cau_lenh: '',    // link tệp bộ câu lệnh AI nộp kèm
   anh_qr: '',              // ví dụ 'data/img/qr.png' – ảnh QR tạo sau khi có link
-  hien_ban_nhap: true,     // ĐỔI THÀNH false TRƯỚC KHI NỘP: ẩn ngữ liệu trạng thái "nhap"
+  hien_ban_nhap: true,     // GIỮ true: các ngữ liệu đều đang ghi trang_thai "nhap", đặt false sẽ ẩn hết
   cap_nhat: '06/11/2026',
   // ki_hieu: chữ hiển thị trên ô biểu tượng của chủ đề; mau: màu nhận diện chủ đề
   chu_de: [
@@ -595,7 +582,7 @@ const cvar = cd => `--c:${cd.mau};--c-soft:color-mix(in srgb, ${cd.mau} 13%, var
 const loaiCua = x => LOAI[String(x.id||'').split('-')[1]] || '';
 const lopSo = s => (String(s||'').match(/\d+/g)||[]).map(Number);
 const ttCua = x => TRANG_THAI[x.trang_thai] ? x.trang_thai : 'nhap';
-const stTag = x => `<span class="tag st ${ttCua(x)}">${TRANG_THAI[ttCua(x)]}</span>`;
+const stTag = x => '';
 const moTa = m => (MA_BIEU_HIEN.find(b=>b[0]===m)||[])[1] || '';
 const maCua = x => [...(x.ma_TH||[]), ...(x.ma_VD||[])];
 const soHoc = v => { const s = String(v).trim(); return /^-?\d[\d\s]*([.,]\d+)?$/.test(s) ? parseFloat(s.replace(/\s/g,'').replace(',', '.')) : NaN; };
@@ -669,8 +656,6 @@ let errHidden = false;
 function errBox(){
   let h = '';
   if(NL.loi.length) h += `<div class="box err no-print"><div class="box-title">Có ${NL.loi.length} lỗi dữ liệu – các chủ đề khác vẫn hiển thị bình thường</div><ul>${NL.loi.map(e=>`<li><code>${esc(e.tep||'')}</code> ${esc(e.msg)}</li>`).join('')}</ul></div>`;
-  const trenMayNhom = location.protocol === 'file:' || /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
-  if(trenMayNhom && !errHidden && C.hien_ban_nhap && NL.ds.some(x=>ttCua(x)==='nhap')) h += `<div class="box warn no-print small" id="draftNote"><button class="x" aria-label="Ẩn nhắc nhở" data-hide-draft>×</button><b>Đang hiện cả bản nháp</b> (hien_ban_nhap = true). Trước khi nộp, đổi thành <b>false</b> trong khối CAU_HINH để ẩn ngữ liệu chưa kiểm chứng.</div>`;
   return h;
 }
 const crumbs = items => '<nav class="crumbs" aria-label="Đường dẫn">' + items.map((it,i) => i<items.length-1 ? `<a href="#/${it[0]}">${esc(it[1])}</a><span>›</span>` : `<span>${esc(it[1])}</span>`).join('') + '</nav>';
@@ -685,7 +670,7 @@ function card(x){
 function progress(ma){
   const g = ofCd(ma), n = k => g.filter(x=>ttCua(x)===k).length, tot = Math.max(6, g.length);
   const seg = (k, cls) => n(k) ? `<i class="${cls}" style="--w:${n(k)/tot*100}%"></i>` : '';
-  return `<div class="prog"><span class="track">${seg('tham_dinh','td')}${seg('doi_sanh','ds')}${seg('nhap','nh')}</span><span>${g.length}/${Math.max(6, g.length)}</span></div>`;
+  return `<div class="prog"><span class="track">${g.length?`<i class="td" style="--w:${g.length/tot*100}%"></i>`:''}</span><span>${g.length}/${Math.max(6, g.length)}</span></div>`;
 }
 const PAGES = ['', 'tra-cuu', 'khung-nang-luc', 'huong-dan', 'nguon', 'minh-bach-ai'];
 const PAGE_T = {'':'Trang chủ','tra-cuu':'Tra cứu ngữ liệu','khung-nang-luc':'Khung năng lực','huong-dan':'Hướng dẫn sử dụng','nguon':'Nguồn & bản quyền','minh-bach-ai':'Minh bạch AI'};
@@ -833,8 +818,8 @@ function pageHome(){
     <section class="hero">${heroArt}<div class="hero-inner"><div>
       <div class="eyebrow">${icon('spark',15)} ${txt(C.don_vi)}</div>
       <h1>Thư viện ngữ liệu<span class="h1-sub">trong dạy học và đánh giá năng lực môn <em>Hóa học</em> <span class="nw">ở trường phổ thông</span></span></h1>
-      <div class="slogan">${esc(C.khau_hieu)} – từ <span class="rotator" id="rot">${words[0]}</span></div>
-      <p>Ngữ liệu có dữ liệu thật, kèm nguồn, giấy phép và trạng thái kiểm chứng; gắn mã biểu hiện năng lực Tìm hiểu thế giới tự nhiên (TH1–TH5) và Vận dụng (VD1–VD5) theo Chương trình Hoá học 2018.</p>
+      <div class="slogan">Từ <span class="rotator" id="rot">${words[0]}</span> đến nhiệm vụ năng lực</div>
+      <p>Ngữ liệu từ dữ liệu thật, kèm nguồn và giấy phép; gắn mã biểu hiện năng lực Tìm hiểu thế giới tự nhiên (TH1–TH5) và Vận dụng (VD1–VD5) theo Chương trình Hoá học 2018.</p>
       <div class="btn-row"><a class="btn" href="#/tra-cuu">${icon('search',17)} Tra cứu ngữ liệu</a>${DS.length?`<button class="btn ghost" id="randBtn">${icon('dice',17)} Ngữ liệu ngẫu nhiên</button>`:''}<a class="btn ghost" href="#/huong-dan">Hướng dẫn</a></div>
     </div>${C.anh_qr?`<div class="qr"><img src="${esc(C.anh_qr)}" alt="Mã QR mở trang"><small>Quét để mở trên điện thoại</small></div>`:''}</div>
     <div class="stats">
@@ -848,7 +833,7 @@ function pageHome(){
     <div class="topics">${C.chu_de.map((c,i) => `<a class="topic rv" data-lop="${lopSo(c.lop).join(' ')}" style="${cvar(c)}" href="#/tra-cuu?cd=${c.ma}">
       <div class="topic-top"><span class="sym">${esc(c.ki_hieu)}</span><div><div class="no">Chủ đề ${String(i+1).padStart(2,'0')} · Lớp ${esc(c.lop)}</div><strong>${esc(c.ten)}</strong></div></div>
       <div class="src">${esc(c.nguon)}</div>${progress(c.ma)}</a>`).join('')}</div>
-    <p class="muted small">Thanh tiến độ: <span style="color:var(--good)">●</span> đã thẩm định · <span style="color:#d9a400">●</span> đã đối sánh nguồn${C.hien_ban_nhap?' · <span style="color:#b9bfb9">●</span> bản nháp':''} – mục tiêu 6 ngữ liệu mỗi chủ đề.</p>
+    <p class="muted small">Thanh tiến độ: số ngữ liệu đã có so với mục tiêu 6 ngữ liệu mỗi chủ đề.</p>
     ${moi.length?`<h2>Ngữ liệu tiêu biểu</h2><div class="cards">${moi.map(card).join('')}</div>`:''}
     <h2>6 loại ngữ liệu trong mỗi chủ đề</h2>
     <div class="types">${Object.entries(LOAI).map(([k,v])=>`<a class="type rv" href="#/tra-cuu?loai=${k}"><b>${k}</b>${v}<span>${DS.filter(x=>x.id.endsWith('-'+k)).length}</span></a>`).join('')}</div>
@@ -874,26 +859,25 @@ function wireHome(){
 /* ---------- Tra cứu ---------- */
 function pageTraCuu(P){
   const html = `<div class="page wide">${errBox()}${crumbs([['','Trang chủ'],['','Tra cứu ngữ liệu']])}
-    <h1>Tra cứu ngữ liệu</h1><p class="lead">Lọc theo lớp, chủ đề, loại ngữ liệu, mã biểu hiện năng lực hoặc trạng thái kiểm chứng. Kết quả cập nhật ngay khi bạn chọn.</p>
+    <h1>Tra cứu ngữ liệu</h1><p class="lead">Lọc theo lớp, chủ đề, loại ngữ liệu, mã biểu hiện năng lực hoặc từ khoá. Kết quả cập nhật ngay khi bạn chọn.</p>
     <div class="filters">
       <label>Lớp<select id="fLop"><option value="">Tất cả</option><option>10</option><option>11</option><option>12</option></select></label>
       <label>Chủ đề<select id="fCd"><option value="">Tất cả</option>${C.chu_de.map(c=>`<option value="${c.ma}">${esc(c.ten)}</option>`).join('')}</select></label>
       <label>Loại<select id="fLoai"><option value="">Tất cả</option>${Object.entries(LOAI).map(([k,v])=>`<option value="${k}">${k} – ${v}</option>`).join('')}</select></label>
       <label>Mã biểu hiện<select id="fMa"><option value="">Tất cả</option>${MA_BIEU_HIEN.map(m=>`<option value="${m[0]}">${m[0]}</option>`).join('')}</select></label>
-      <label>Trạng thái<select id="fTt"><option value="">Tất cả</option>${TT_HIEN.map(k=>`<option value="${k}">${TRANG_THAI[k]}</option>`).join('')}</select></label>
       <label>Từ khoá<input id="fTk" type="search" placeholder="VD: CO₂, pin, nhựa…"></label>
       <button class="reset" id="fReset">Xoá lọc</button>
     </div>
     <div class="chips" id="fChips"></div>
     <div class="count" id="fCount" aria-live="polite"></div><div id="fOut"></div></div>`;
   setTimeout(() => {
-    const map = {lop:'#fLop', cd:'#fCd', loai:'#fLoai', ma:'#fMa', tt:'#fTt', q:'#fTk'};
+    const map = {lop:'#fLop', cd:'#fCd', loai:'#fLoai', ma:'#fMa', q:'#fTk'};
     const NAME = {lop:'Lớp', cd:'Chủ đề', loai:'Loại', ma:'Mã', tt:'Trạng thái', q:'Từ khoá'};
     Object.entries(map).forEach(([k,s]) => { const el = $(s); if(!P[k]) return; if(el.tagName === 'SELECT'){ if([...el.options].some(o=>o.value===P[k])) el.value = P[k]; } else el.value = P[k]; });
     const run = () => {
       const v = k => $(map[k]).value, tk = norm(v('q').trim());
       const rs = DS.filter(x => (!v('lop') || lopSo(x.lop||CD(x.chu_de).lop).includes(+v('lop'))) && (!v('cd') || x.chu_de===v('cd')) &&
-        (!v('loai') || x.id.endsWith('-'+v('loai'))) && (!v('ma') || maCua(x).includes(v('ma'))) && (!v('tt') || ttCua(x)===v('tt')) &&
+        (!v('loai') || x.id.endsWith('-'+v('loai'))) && (!v('ma') || maCua(x).includes(v('ma'))) &&
         (!tk || tk.split(/\s+/).every(w => norm([x.id,x.tieu_de,x.boi_canh,CD(x.chu_de).ten,JSON.stringify(x.nguon),x.dinh_huong].join(' ')).includes(w))));
       $('#fCount').innerHTML = `Tìm thấy <b>${rs.length}</b>/${DS.length} ngữ liệu`;
       $('#fOut').innerHTML = rs.length ? C.chu_de.map(c => { const g = rs.filter(x=>x.chu_de===c.ma); return g.length ? `<div class="grp-h" style="${cvar(c)}"><span class="sym">${esc(c.ki_hieu)}</span><div><h2>${esc(c.ten)}</h2><span>Lớp ${esc(c.lop)} · ${g.length} ngữ liệu</span></div></div><div class="cards">${g.map(card).join('')}</div>` : ''; }).join('')
@@ -918,7 +902,7 @@ function pageTraCuu(P){
 /* ---------- Trang ngữ liệu ---------- */
 function pageNL(id){
   const x = DS.find(n => n.id === id);
-  if(!x) return `<div class="page">${errBox()}<h1>Không tìm thấy ngữ liệu</h1><p>Ngữ liệu "${esc(id)}" không tồn tại hoặc đang ở trạng thái bản nháp (đã ẩn).</p><p><a href="#/tra-cuu">← Về trang tra cứu</a></p></div>`;
+  if(!x) return `<div class="page">${errBox()}<h1>Không tìm thấy ngữ liệu</h1><p>Ngữ liệu "${esc(id)}" không tồn tại.</p><p><a href="#/tra-cuu">← Về trang tra cứu</a></p></div>`;
   const cd = CD(x.chu_de), ds = ofCd(x.chu_de), i = ds.indexOf(x), b = x.bang_so_lieu;
   const sec = (n, t, sub='') => `<span class="sec"><span class="n">${n}</span><span>${t}${sub?` <small>${sub}</small>`:''}</span></span>`;
   const maRows = arr => arr.map(m=>`<b>${esc(m)}</b> – ${esc(moTa(m))}`).join('<br>') || '–';
@@ -957,7 +941,7 @@ function pageNL(id){
     ${x.luu_y_khoa_hoc.length?`<ol class="luuy">${x.luu_y_khoa_hoc.map(l=>`<li class="rv">${txt(l)}</li>`).join('')}</ol>`:'<p class="muted">Chưa có lưu ý.</p>'}
     <div class="meta-foot">
       ${(x.nguoi_bien_soan||x.nguoi_tham_dinh)?`<div>${[x.nguoi_bien_soan?`<b>Người biên soạn:</b> ${txt(x.nguoi_bien_soan)}`:'', x.nguoi_tham_dinh?`<b>Đối sánh / thẩm định:</b> ${txt(x.nguoi_tham_dinh)}`:''].filter(Boolean).join(' · ')}</div>`:''}
-      <div><b>Trạng thái:</b> ${TRANG_THAI[ttCua(x)]} · <b>Cập nhật:</b> ${esc(x.cap_nhat||'')}</div>
+      <div><b>Cập nhật:</b> ${esc(x.cap_nhat||'')}</div>
       <div><b>Sử dụng AI:</b> ${txt(x.ai_su_dung||'')}</div>
     </div></div>
     ${pager(i>0?['nl/'+encodeURIComponent(ds[i-1].id), ds[i-1].id+' · '+ds[i-1].tieu_de]:null, i<ds.length-1?['nl/'+encodeURIComponent(ds[i+1].id), ds[i+1].id+' · '+ds[i+1].tieu_de]:null)}</div>`;
@@ -994,8 +978,8 @@ function pageKhung(){
       <tbody>${C.chu_de.map(c => `<tr><th>${esc(c.ten)}</th>${MA_BIEU_HIEN.map(m => cell(c, m)).join('')}</tr>`).join('')}</tbody></table>
       <div class="heat-legend">Ít <i style="background:color-mix(in srgb,var(--accent) 15%,var(--surface))"></i><i style="background:color-mix(in srgb,var(--accent) 50%,var(--surface))"></i><i style="background:color-mix(in srgb,var(--accent) 85%,var(--surface))"></i> Nhiều</div></div>
     <h2>Số ngữ liệu mỗi chủ đề</h2>
-    <div class="table-wrap"><table><thead><tr><th>Chủ đề</th><th>Lớp</th>${TT_HIEN.map(k=>`<th class="num">${TRANG_THAI[k]}</th>`).join('')}<th class="num">Tổng</th></tr></thead><tbody>
-    ${C.chu_de.map(c => { const g = ofCd(c.ma); return `<tr><td><a href="#/tra-cuu?cd=${c.ma}">${esc(c.ten)}</a></td><td>${esc(c.lop)}</td>${TT_HIEN.map(k=>`<td class="num">${g.filter(x=>ttCua(x)===k).length}</td>`).join('')}<td class="num"><b>${g.length}</b></td></tr>`; }).join('')}
+    <div class="table-wrap"><table><thead><tr><th>Chủ đề</th><th>Lớp</th><th class="num">Số ngữ liệu</th></tr></thead><tbody>
+    ${C.chu_de.map(c => { const g = ofCd(c.ma); return `<tr><td><a href="#/tra-cuu?cd=${c.ma}">${esc(c.ten)}</a></td><td>${esc(c.lop)}</td><td class="num"><b>${g.length}</b></td></tr>`; }).join('')}
     </tbody></table></div>${pagePager('khung-nang-luc')}</div>`;
 }
 function pageHuongDan(){
@@ -1007,10 +991,6 @@ function pageHuongDan(){
       <li class="rv"><b>Biến đổi câu hỏi minh hoạ:</b> đổi dạng câu, thêm yêu cầu thiết kế thí nghiệm, hoặc dùng nút <i>Che ô để ra đề</i> ở bảng số liệu để giấu bớt dữ liệu cho học sinh tự tính.</li>
       <li class="rv"><b>In bản học sinh để tổ chức dạy học</b>; dùng bản giáo viên (có đáp án, tiêu chí) để đánh giá; gửi góp ý cho nhóm.</li>
     </ol>
-    <h2>Ý nghĩa nhãn trạng thái</h2>
-    <div class="kv"><div><span class="tag st doi_sanh">${TRANG_THAI.doi_sanh}</span></div><div>Đã kiểm tra nguồn tồn tại, tin cậy và đối sánh từng số liệu với nguồn; đã được sinh viên khác đọc chéo.</div>
-      <div><span class="tag st tham_dinh">${TRANG_THAI.tham_dinh}</span></div><div>Đã được chuyên gia Hoá học và chuyên gia Lí luận và phương pháp dạy học Hoá học góp ý, nhóm đã sửa xong.</div>
-      ${C.hien_ban_nhap?`<div><span class="tag st nhap">${TRANG_THAI.nhap}</span></div><div>Bản nháp chưa kiểm chứng – chỉ hiện khi nhóm đang làm việc, ẩn khi công khai.</div>`:''}</div>
     <h2>Liên kết</h2>
     <ul>
       <li><b>Góp ý, báo lỗi, đề xuất ngữ liệu mới:</b> ${C.link_gop_y?link(C.link_gop_y,'mở biểu mẫu góp ý'):'<span class="todo">[chưa có link góp ý]</span>'}</li>
@@ -1062,8 +1042,6 @@ function pageAI(){
     <div class="motto rv"><span class="motto-k">Nguyên tắc</span><p class="motto-t">AI hỗ trợ, <em>con người kiểm soát.</em></p><p class="motto-s">AI không được dùng để tạo hoặc ước lượng số liệu.</p></div>
     <h2>Quy trình xây dựng ngữ liệu: AI làm gì, con người kiểm soát gì</h2>
     <div class="lanes" role="list" aria-label="Sáu bước xây dựng ngữ liệu, chia theo phần việc của AI và của con người">
-      <div class="lab ai" aria-hidden="true">AI hỗ trợ<small>bản nháp, chưa dùng được</small></div>
-      <div class="lab hu" aria-hidden="true">Con người<small>kiểm soát, quyết định</small></div>
       ${[
         ['Soạn nháp','Gợi ý nguồn, từ khoá; soạn nháp bối cảnh, câu hỏi, đáp án theo bộ câu lệnh chuẩn hoá','Chọn vấn đề, chủ đề, yêu cầu cần đạt; ra câu lệnh; <b>không nhận số liệu do AI đưa ra</b>'],
         ['Kiểm tra nguồn','','Mở từng nguồn, xác nhận tồn tại; chấm phiếu 8 tiêu chí; <b>loại nguồn không đạt</b>, thay bằng nguồn gốc'],
@@ -1071,23 +1049,23 @@ function pageAI(){
         ['Chuyên gia góp ý','','Chuyên gia Hoá học và Lí luận – PPDH Hoá học góp ý; nhóm sửa theo góp ý'],
         ['Hoàn thiện','Viết mã HTML/JavaScript cho trang web','Nhập dữ liệu, cấu hình; <b>kiểm tra lại nội dung</b> và thao tác trên máy tính, điện thoại'],
         ['Thử nghiệm','','Giáo viên, sinh viên sư phạm dùng thử, góp ý; nhóm tổng hợp và điều chỉnh']
-      ].map((s,i)=>`<div class="col rv" role="listitem"><div class="hd"><i>${i+1}</i>${s[0]}</div><div class="c ai${s[1]?'':' none'}">${s[1]||'Không dùng AI'}</div><div class="c hu">${s[2]}</div></div>`).join('')}
+      ].map((s,i)=>`<div class="col rv" role="listitem"><div class="hd"><i>${i+1}</i>${s[0]}</div><div class="c hu">${s[2]}</div><div class="c ai${s[1]?'':' none'}">${s[1]||'Không dùng AI'}</div></div>`).join('')}
     </div>
-    <div class="lanes-key"><span class="k-ai">Phần AI hỗ trợ (khung nét đứt: chỉ là bản nháp)</span><span class="k-hu">Phần con người thực hiện và chịu trách nhiệm</span></div>
+    <div class="lanes-key"><span class="k-hu">Việc con người thực hiện và chịu trách nhiệm</span><span class="k-ai">Phần AI hỗ trợ (khung nét đứt: chỉ là bản nháp)</span></div>
     <h2>AI hỗ trợ ở khâu nào</h2>
     <div class="table-wrap"><table><thead><tr><th>Khâu</th><th>AI hỗ trợ</th><th>Mức độ</th><th>Con người thực hiện, kiểm chứng</th></tr></thead><tbody>
     ${kh.map(r=>`<tr>${r.map((c,j)=>`<td>${j===2?`<span class="tag">${esc(c)}</span>`:esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>
     <h2>Những phần không dùng AI</h2>
     <ul><li>Số liệu khoa học: lấy trực tiếp từ nguồn gốc.</li><li>Thẩm định chuyên môn, khảo sát giáo viên, thử nghiệm và tổng hợp kết quả.</li><li>Quyết định cuối cùng về nội dung, việc chọn hay loại ngữ liệu.</li></ul>
     <h2>Công khai trên từng ngữ liệu</h2>
-    <p>Chân trang mỗi ngữ liệu ghi trạng thái kiểm chứng và mức độ dùng AI. Không nhập dữ liệu cá nhân của học sinh, giáo viên vào công cụ AI. Sản phẩm miễn phí, phi thương mại.</p>
+    <p>Chân trang mỗi ngữ liệu ghi ngày cập nhật và mức độ dùng AI. Không nhập dữ liệu cá nhân của học sinh, giáo viên vào công cụ AI. Sản phẩm miễn phí, phi thương mại.</p>
     <p><b>Bộ câu lệnh AI:</b> ${C.link_bo_cau_lenh?link(C.link_bo_cau_lenh,'xem toàn bộ câu lệnh'):'<span class="todo">[chưa có link bộ câu lệnh]</span>'} · Chi tiết trong Bản khai báo AI (Phụ lục 6, Mẫu 2) nộp kèm hồ sơ.</p>
     ${pagePager('minh-bach-ai')}</div>`;
 }
 
 /* ---------- Tìm kiếm nhanh ---------- */
 const INDEX = [
-  ...DS.map(x => ({r:'nl/'+encodeURIComponent(x.id), t:x.id+' · '+x.tieu_de, sub:CD(x.chu_de).ten+' · '+TRANG_THAI[ttCua(x)], s:norm([x.id,x.tieu_de,x.boi_canh,CD(x.chu_de).ten,maCua(x).join(' '),JSON.stringify(x.nguon),JSON.stringify(x.cau_hoi)].join(' '))})),
+  ...DS.map(x => ({r:'nl/'+encodeURIComponent(x.id), t:x.id+' · '+x.tieu_de, sub:CD(x.chu_de).ten, s:norm([x.id,x.tieu_de,x.boi_canh,CD(x.chu_de).ten,maCua(x).join(' '),JSON.stringify(x.nguon),JSON.stringify(x.cau_hoi)].join(' '))})),
   ...C.chu_de.map(c => ({r:'tra-cuu?cd='+c.ma, t:c.ten, sub:'Chủ đề · Lớp '+c.lop, s:norm(c.ten+' '+c.nguon)})),
   ...MA_BIEU_HIEN.map(m => ({r:'tra-cuu?ma='+m[0], t:m[0]+' – '+m[1], sub:'Mã biểu hiện', s:norm(m.join(' '))}))
 ];

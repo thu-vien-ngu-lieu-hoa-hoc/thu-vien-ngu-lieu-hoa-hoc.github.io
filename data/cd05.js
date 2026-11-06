@@ -47,8 +47,8 @@ NL.add([
   "hinh_goi_y": "Sơ đồ pin Daniell có cầu muối (tự vẽ).",
   "nguon": [
    {
-    "trich_dan": "Bard, A. J., Parsons, R., & Jordan, J. (Chủ biên). (1985). Standard Potentials in Aqueous Solution. Marcel Dekker (IUPAC); Milazzo, G., Caroli, S., & Sharma, V. K. (1978). Tables of Standard Electrode Potentials. Wiley.",
-    "url": "",
+    "trich_dan": "Bard, A. J., Parsons, R., & Jordan, J. (Chủ biên). (1985). Standard Potentials in Aqueous Solution. Marcel Dekker (IUPAC); Milazzo, G., Caroli, S., & Sharma, V. K. (1978). Tables of Standard Electrode Potentials. Wiley. Truy cập qua bảng tham khảo P1 của LibreTexts Chemistry, 06/11/2026.",
+    "url": "https://chem.libretexts.org/Ancillary_Materials/Reference/Reference_Tables/Electrochemistry_Tables/P1%3A_Standard_Reduction_Potentials_by_Element",
     "loai": "sách tra cứu",
     "giay_phep": "Trích số liệu, ghi nguồn"
    }
@@ -307,7 +307,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Sản xuất nhôm bằng điện phân nóng chảy aluminium oxide",
   "yccd": "Trình bày được nguyên tắc điện phân nóng chảy; vận dụng định luật Faraday tính lượng chất thu được ở điện cực.",
-  "boi_canh": "Theo báo cáo Mineral Commodity Summaries của Cục Khảo sát Địa chất Hoa Kỳ (USGS), Việt Nam có trữ lượng bauxite khoảng 5,8 tỉ tấn, thuộc nhóm lớn nhất thế giới. Quặng bauxite được tinh chế thành alumina (Al₂O₃) theo quy trình Bayer.\n\nĐể có kim loại nhôm, alumina phải được điện phân nóng chảy theo quy trình Hall – Héroult. Al₂O₃ có nhiệt độ nóng chảy trên 2 000 °C (PubChem ghi 2 072 °C), nên người ta hoà tan nó trong cryolite (Na₃AlF₆) nóng chảy; theo Chemguide, bể điện phân làm việc ở khoảng 1 000 °C. Ở cathode: Al³⁺ + 3e → Al. Ở anode bằng carbon: oxygen sinh ra đốt cháy dần anode tạo CO₂.\n\nĐiện phân nhôm cần dòng điện rất lớn và tiêu tốn nhiều điện năng. Vì vậy các nhà máy luyện nhôm thường đặt gần nguồn điện rẻ.\n\nTrong khi đó, theo Viện Nhôm Quốc tế (IAI), tái chế nhôm tiết kiệm khoảng 95% năng lượng so với sản xuất nhôm mới (khoảng 8,3 GJ so với 186 GJ cho mỗi tấn). Thu gom lon nhôm là cách tiết kiệm điện đáng kể.",
+  "boi_canh": "Theo báo cáo Mineral Commodity Summaries của Cục Khảo sát Địa chất Hoa Kỳ (USGS), Việt Nam có trữ lượng bauxite khoảng 5,8 tỉ tấn, thuộc nhóm lớn nhất thế giới. Quặng bauxite được tinh chế thành alumina (Al₂O₃) theo quy trình Bayer.\n\nĐể có kim loại nhôm, alumina phải được điện phân nóng chảy theo quy trình Hall – Héroult. Al₂O₃ có nhiệt độ nóng chảy trên 2 000 °C (PubChem ghi 2 072 °C), nên người ta hoà tan nó trong cryolite (Na₃AlF₆) nóng chảy; theo Kvande và Drabløs (2014), bể điện phân làm việc ở khoảng 950–960 °C. Ở cathode: Al³⁺ + 3e → Al. Ở anode bằng carbon: oxygen sinh ra đốt cháy dần anode tạo CO₂.\n\nĐiện phân nhôm cần dòng điện rất lớn và tiêu tốn nhiều điện năng. Vì vậy các nhà máy luyện nhôm thường đặt gần nguồn điện rẻ.\n\nTrong khi đó, theo Viện Nhôm Quốc tế (IAI), tái chế nhôm tiết kiệm khoảng 95% năng lượng so với sản xuất nhôm mới (khoảng 8,3 GJ so với 186 GJ cho mỗi tấn). Thu gom lon nhôm là cách tiết kiệm điện đáng kể.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Sơ đồ bể điện phân Hall – Héroult (vẽ lại).",
   "nguon": [
@@ -324,10 +324,10 @@ NL.add([
     "giay_phep": "Chưa rõ – chỉ trích số liệu, tự viết lại"
    },
    {
-    "trich_dan": "Clark, J. Chemguide: Extraction of aluminium (bể điện phân khoảng 1 000 °C; alumina hoà tan trong cryolite). Truy cập 06/11/2026.",
-    "url": "https://www.chemguide.co.uk/inorganic/extraction/aluminium.html",
-    "loai": "tài liệu giáo dục",
-    "giay_phep": "Chưa rõ – chỉ trích, tự viết lại"
+    "trich_dan": "Kvande, H., & Drabløs, P. A. (2014). The aluminum smelting process and innovative alternative technologies. Journal of Occupational and Environmental Medicine, 56(5 Suppl), S23–S32 (alumina hoà tan trong chất điện li chủ yếu là cryolite nóng chảy; bể làm việc khoảng 950–960 °C).",
+    "url": "https://doi.org/10.1097/JOM.0000000000000062",
+    "loai": "bài báo",
+    "giay_phep": "Truy cập mở – chỉ trích, tự viết lại"
    },
    {
     "trich_dan": "National Center for Biotechnology Information. PubChem Compound Summary: Aluminum oxide (CID 9989226) – Melting Point. Truy cập 06/11/2026.",
@@ -363,7 +363,7 @@ NL.add([
     ],
     "dang": "Tự luận",
     "noi_dung": "Vì sao phải hoà tan Al₂O₃ trong cryolite thay vì điện phân Al₂O₃ nóng chảy trực tiếp? Vì sao anode carbon phải được thay định kì?",
-    "dap_an": "Cryolite giúp giảm nhiệt độ làm việc từ trên 2 000 °C xuống khoảng 1 000 °C, tiết kiệm năng lượng, tăng độ dẫn điện. Anode carbon bị oxygen sinh ra đốt cháy thành CO₂ nên hao mòn dần."
+    "dap_an": "Cryolite giúp giảm nhiệt độ làm việc từ trên 2 000 °C xuống khoảng 950–960 °C, tiết kiệm năng lượng, tăng độ dẫn điện. Anode carbon bị oxygen sinh ra đốt cháy thành CO₂ nên hao mòn dần."
    },
    {
     "ma": [

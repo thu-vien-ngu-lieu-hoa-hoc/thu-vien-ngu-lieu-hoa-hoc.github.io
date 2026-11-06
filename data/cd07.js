@@ -467,8 +467,8 @@ NL.add([
     "giay_phep": "Tài liệu của Chính phủ Hoa Kỳ – trích, ghi nguồn"
    },
    {
-    "trich_dan": "Lide, D. R. (Chủ biên). (2004). CRC Handbook of Chemistry and Physics (84th ed.). CRC Press. Mục 5: Standard Thermodynamic Properties of Chemical Substances (CaCO₃(s) −1 207,6; CaO(s) −634,9; CO₂(g) −393,5 kJ/mol).",
-    "url": "",
+    "trich_dan": "Lide, D. R. (Chủ biên). (2004). CRC Handbook of Chemistry and Physics (84th ed.). CRC Press. Mục 5: Standard Thermodynamic Properties of Chemical Substances (CaCO₃(s) −1 207,6; CaO(s) −634,9; CO₂(g) −393,5 kJ/mol). Truy cập qua bảng tham khảo T1 của LibreTexts Chemistry, 06/11/2026.",
+    "url": "https://chem.libretexts.org/Ancillary_Materials/Reference/Reference_Tables/Thermodynamics_Tables/T1:_Standard_Thermodynamic_Quantities",
     "loai": "sổ tay tra cứu",
     "giay_phep": "Trích số liệu, ghi nguồn"
    }

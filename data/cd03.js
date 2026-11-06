@@ -39,14 +39,14 @@ NL.add([
   "hinh_goi_y": "Ảnh nhãn chai giấm ghi nồng độ acetic acid (ảnh tự chụp).",
   "nguon": [
    {
-    "trich_dan": "Lide, D. R. (Chủ biên). (2004). CRC Handbook of Chemistry and Physics (84th ed.). CRC Press. Mục 8: Dissociation Constants of Inorganic and Organic Acids (CH₃COOH Ka = 1,75 × 10⁻⁵, pKa = 4,756; HCOOH 3,75; HF 3,20; H₂CO₃ pKa1 6,35).",
-    "url": "",
+    "trich_dan": "Lide, D. R. (Chủ biên). (2004). CRC Handbook of Chemistry and Physics (84th ed.). CRC Press. Mục 8: Dissociation Constants of Inorganic and Organic Acids (CH₃COOH Ka = 1,75 × 10⁻⁵, pKa = 4,756; HCOOH 3,75; HF 3,20; H₂CO₃ pKa1 6,35). Truy cập qua bảng tham khảo E1 của LibreTexts Chemistry, 06/11/2026.",
+    "url": "https://chem.libretexts.org/Ancillary_Materials/Reference/Reference_Tables/Equilibrium_Constants/E1%3A_Acid_Dissociation_Constants_at_25C",
     "loai": "sổ tay tra cứu",
     "giay_phep": "Trích số liệu, ghi nguồn"
    },
    {
-    "trich_dan": "Lide, D. R. (Chủ biên). (2004). CRC Handbook of Chemistry and Physics (84th ed.). CRC Press. Mục 8: Dissociation Constants of Bases (NH₃ Kb = 1,8 × 10⁻⁵, pKb = 4,75).",
-    "url": "",
+    "trich_dan": "Lide, D. R. (Chủ biên). (2004). CRC Handbook of Chemistry and Physics (84th ed.). CRC Press. Mục 8: Dissociation Constants of Bases (NH₃ Kb = 1,8 × 10⁻⁵, pKb = 4,75). Truy cập qua bảng tham khảo E2 của LibreTexts Chemistry, 06/11/2026.",
+    "url": "https://chem.libretexts.org/Ancillary_Materials/Reference/Reference_Tables/Equilibrium_Constants/E2._Base_Dissociation_Constants_at_25C",
     "loai": "sổ tay tra cứu",
     "giay_phep": "Trích số liệu, ghi nguồn"
    }
@@ -339,7 +339,7 @@ NL.add([
   "lop": "11",
   "tieu_de": "Điều kiện nào tối ưu cho quá trình sản xuất NH₃",
   "yccd": "Vận dụng nguyên lí Le Chatelier để giải thích việc lựa chọn điều kiện cho quá trình sản xuất hoá học (tổng hợp ammonia).",
-  "boi_canh": "Phân urea là loại phân đạm dùng nhiều nhất ở Việt Nam. Nguyên liệu để sản xuất urea là ammonia (NH₃), được tổng hợp từ nitrogen trong không khí và hydrogen lấy từ khí thiên nhiên. Các nhà máy đạm lớn như Đạm Phú Mỹ (Bà Rịa – Vũng Tàu) đều có phân xưởng tổng hợp ammonia; riêng Đạm Phú Mỹ có công suất thiết kế 740 nghìn tấn urea mỗi năm.\n\nPhản ứng tổng hợp ammonia (quá trình Haber – Bosch): N₂(g) + 3H₂(g) ⇌ 2NH₃(g), ΔrH° = −91,8 kJ (tính từ ΔfH° của NH₃(g) là −45,9 kJ/mol). Đây là phản ứng thuận nghịch, toả nhiệt và làm giảm số mol khí.\n\nTheo nguyên lí Le Chatelier, nhiệt độ thấp và áp suất cao giúp cân bằng chuyển dịch về phía tạo NH₃. Nhưng ở nhiệt độ thấp, phản ứng lại xảy ra rất chậm. Vì vậy trong công nghiệp, người ta chọn điều kiện dung hoà giữa hiệu suất và tốc độ: nhiệt độ khoảng 400–450 °C, áp suất khoảng 200 atm và dùng chất xúc tác sắt.\n\nỞ điều kiện này, mỗi lần khí đi qua tháp tổng hợp chỉ khoảng 15% nitrogen và hydrogen chuyển thành NH₃. Ammonia được làm lạnh, hoá lỏng tách ra; phần khí chưa phản ứng được tuần hoàn trở lại, nhờ đó tổng mức chuyển hoá đạt khoảng 98%.",
+  "boi_canh": "Phân urea là loại phân đạm dùng nhiều nhất ở Việt Nam. Nguyên liệu để sản xuất urea là ammonia (NH₃), được tổng hợp từ nitrogen trong không khí và hydrogen lấy từ khí thiên nhiên. Các nhà máy đạm lớn như Đạm Phú Mỹ (Bà Rịa – Vũng Tàu) đều có phân xưởng tổng hợp ammonia; riêng Đạm Phú Mỹ có công suất thiết kế 740 nghìn tấn urea mỗi năm.\n\nPhản ứng tổng hợp ammonia (quá trình Haber – Bosch): N₂(g) + 3H₂(g) ⇌ 2NH₃(g), ΔrH° = −91,8 kJ (tính từ ΔfH° của NH₃(g) là −45,9 kJ/mol). Đây là phản ứng thuận nghịch, toả nhiệt và làm giảm số mol khí.\n\nTheo nguyên lí Le Chatelier, nhiệt độ thấp và áp suất cao giúp cân bằng chuyển dịch về phía tạo NH₃. Nhưng ở nhiệt độ thấp, phản ứng lại xảy ra rất chậm. Vì vậy trong công nghiệp, người ta chọn điều kiện dung hoà giữa hiệu suất và tốc độ: nhiệt độ khoảng 400–500 °C, áp suất trên 100 bar và dùng chất xúc tác sắt.\n\nỞ điều kiện này, mỗi lần khí đi qua tháp tổng hợp chỉ một phần nhỏ nitrogen và hydrogen chuyển thành NH₃. Ammonia được làm lạnh, hoá lỏng tách ra; phần khí chưa phản ứng được tuần hoàn trở lại tháp, nhờ đó nguyên liệu được tận dụng gần hết.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Sơ đồ khối quá trình Haber – Bosch có vòng tuần hoàn khí (vẽ lại).",
   "nguon": [
@@ -350,14 +350,14 @@ NL.add([
     "giay_phep": "Chưa rõ – chỉ trích số liệu, tự viết lại"
    },
    {
-    "trich_dan": "Clark, J. Chemguide: The Haber process (400–450 °C; 200 atm; xúc tác sắt; khoảng 15% chuyển hoá mỗi lượt; tổng chuyển hoá khoảng 98% nhờ tuần hoàn). Truy cập 06/11/2026.",
-    "url": "https://www.chemguide.co.uk/physical/equilibria/haber.html",
-    "loai": "tài liệu giáo dục",
+    "trich_dan": "Appl, M. (1997). The Haber–Bosch Heritage: The Ammonia Production Technology. Báo cáo tại Hội nghị Kĩ thuật kỉ niệm 50 năm của Hiệp hội Phân bón Quốc tế (IFA), Sevilla, 25–26/9/1997 (xúc tác sắt; 400–500 °C; áp suất trên 100 bar; tách NH₃ rồi tuần hoàn khí chưa phản ứng). Truy cập 06/11/2026.",
+    "url": "https://www.fertilizer.org/wp-content/uploads/2023/01/HABER.pdf",
+    "loai": "báo cáo",
     "giay_phep": "Chưa rõ – chỉ trích, tự viết lại"
    },
    {
-    "trich_dan": "Lide, D. R. (Chủ biên). (2004). CRC Handbook of Chemistry and Physics (84th ed.). CRC Press. Mục 5: Standard Thermodynamic Properties of Chemical Substances (NH₃(g) ΔfH° = −45,9 kJ/mol).",
-    "url": "",
+    "trich_dan": "Lide, D. R. (Chủ biên). (2004). CRC Handbook of Chemistry and Physics (84th ed.). CRC Press. Mục 5: Standard Thermodynamic Properties of Chemical Substances (NH₃(g) ΔfH° = −45,9 kJ/mol). Truy cập qua bảng tham khảo T1 của LibreTexts Chemistry, 06/11/2026.",
+    "url": "https://chem.libretexts.org/Ancillary_Materials/Reference/Reference_Tables/Thermodynamics_Tables/T1:_Standard_Thermodynamic_Quantities",
     "loai": "sổ tay tra cứu",
     "giay_phep": "Trích số liệu, ghi nguồn"
    }
@@ -404,7 +404,7 @@ NL.add([
   "luu_y_khoa_hoc": [
    "Công suất urea và điều kiện vận hành cụ thể của từng nhà máy cần đối chiếu với thông tin công bố chính thức.",
    "Áp suất cao làm tăng hiệu suất nhưng tốn năng lượng nén khí và chi phí thiết bị; đó cũng là lí do phải chọn điều kiện dung hoà.",
-   "Tỉ lệ chuyển hoá mỗi lượt (khoảng 15%) khác với hiệu suất toàn quá trình (rất cao nhờ tuần hoàn)."
+   "Tỉ lệ chuyển hoá mỗi lượt (nhỏ) khác với mức tận dụng nguyên liệu của toàn quá trình (cao nhờ tuần hoàn khí)."
   ],
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
@@ -543,8 +543,8 @@ NL.add([
     "giay_phep": "Tài liệu của Chính phủ Hoa Kỳ – trích, ghi nguồn"
    },
    {
-    "trich_dan": "Lide, D. R. (Chủ biên). (2004). CRC Handbook of Chemistry and Physics (84th ed.). CRC Press. Mục 8: Dissociation Constants of Inorganic Acids (HClO: Ka = 4,0 × 10⁻⁸, pKa = 7,40).",
-    "url": "",
+    "trich_dan": "Lide, D. R. (Chủ biên). (2004). CRC Handbook of Chemistry and Physics (84th ed.). CRC Press. Mục 8: Dissociation Constants of Inorganic Acids (HClO: Ka = 4,0 × 10⁻⁸, pKa = 7,40). Truy cập qua bảng tham khảo E1 của LibreTexts Chemistry, 06/11/2026.",
+    "url": "https://chem.libretexts.org/Ancillary_Materials/Reference/Reference_Tables/Equilibrium_Constants/E1%3A_Acid_Dissociation_Constants_at_25C",
     "loai": "sổ tay tra cứu",
     "giay_phep": "Trích số liệu, ghi nguồn"
    }

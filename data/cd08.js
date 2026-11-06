@@ -5,7 +5,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Màu của ion kim loại chuyển tiếp",
   "yccd": "Nêu được đặc điểm cấu hình electron và tính chất đặc trưng của kim loại chuyển tiếp dãy thứ nhất (nhiều số oxi hoá, hợp chất có màu).",
-  "boi_canh": "Dung dịch sodium chloride, calcium chloride đều không màu. Nhưng dung dịch copper(II) sulfate có màu xanh lam, iron(III) chloride màu vàng nâu, potassium permanganate màu tím. Điểm chung của những chất có màu này là đều chứa nguyên tố chuyển tiếp.\n\nNguyên tử kim loại chuyển tiếp dãy thứ nhất (từ Sc đến Zn) có phân lớp 3d chưa bão hoà (trừ Zn). Trong ion phức với nước hoặc các phối tử khác, các orbital 3d bị tách thành những mức năng lượng hơi khác nhau. Electron d hấp thụ một phần ánh sáng nhìn thấy để chuyển lên mức cao hơn. Màu ta thấy là màu bổ sung của phần ánh sáng bị hấp thụ. Ví dụ theo Chemguide, ion copper(II) trong dung dịch hấp thụ ánh sáng vùng đỏ nên ta thấy màu xanh lam (màu bổ sung của đỏ).\n\nMột nguyên tố chuyển tiếp có thể có nhiều số oxi hoá, mỗi số oxi hoá cho màu khác nhau. Manganese trong MnO₄⁻ (+7) màu tím, trong Mn²⁺ (+2) gần như không màu. Chromium trong Cr₂O₇²⁻ (+6) màu da cam; chromium(III) trong nước thường thấy màu xanh lục (khi có phối tử Cl⁻), còn ion [Cr(H₂O)₆]³⁺ (chỉ có phối tử nước) có màu tím xám.\n\nCác nhà hoá học tận dụng sự đổi màu này để nhận biết ion và theo dõi phản ứng oxi hoá – khử.",
+  "boi_canh": "Dung dịch sodium chloride, calcium chloride đều không màu. Nhưng dung dịch copper(II) sulfate có màu xanh lam, iron(III) chloride màu vàng nâu, potassium permanganate màu tím. Điểm chung của những chất có màu này là đều chứa nguyên tố chuyển tiếp.\n\nNguyên tử kim loại chuyển tiếp dãy thứ nhất (từ Sc đến Zn) có phân lớp 3d chưa bão hoà (trừ Zn). Trong ion phức với nước hoặc các phối tử khác, các orbital 3d bị tách thành những mức năng lượng hơi khác nhau. Electron d hấp thụ một phần ánh sáng nhìn thấy để chuyển lên mức cao hơn. Màu ta thấy là màu bổ sung của phần ánh sáng bị hấp thụ. Ví dụ, ion phức [Cu(NH₃)₄]²⁺ hấp thụ ánh sáng vùng da cam và đỏ nên ta thấy màu xanh lam (theo OpenStax Chemistry 2e).\n\nMột nguyên tố chuyển tiếp có thể có nhiều số oxi hoá, mỗi số oxi hoá cho màu khác nhau. Manganese trong MnO₄⁻ (+7) màu tím, trong Mn²⁺ (+2) gần như không màu. Chromium trong Cr₂O₇²⁻ (+6) màu da cam; chromium(III) trong nước thường thấy màu xanh lục (khi có phối tử Cl⁻), còn ion [Cr(H₂O)₆]³⁺ (chỉ có phối tử nước) có màu tím xám.\n\nCác nhà hoá học tận dụng sự đổi màu này để nhận biết ion và theo dõi phản ứng oxi hoá – khử.",
   "bang_so_lieu": {
    "tieu_de": "Màu dung dịch của một số ion trong nước",
    "cot": [
@@ -55,30 +55,30 @@ NL.add([
      "không màu"
     ]
    ],
-   "ghi_chu": "Tổng hợp theo các trang Chemguide về màu ion phức, chromium, manganese, iron và mục 22.11 ChemPRIME (LibreTexts); màu thực tế thay đổi theo nồng độ, phối tử và môi trường."
+   "ghi_chu": "Tổng hợp theo ChemPRIME mục 22.11, OpenStax Chemistry 2e mục 19.3 và tài liệu thí nghiệm của Đại học Washington, Triton College; màu thực tế thay đổi theo nồng độ, phối tử và môi trường."
   },
   "hinh_goi_y": "Ảnh dãy ống nghiệm chứa các dung dịch trên (ảnh tự chụp tại phòng thí nghiệm khoa).",
   "nguon": [
    {
-    "trich_dan": "Clark, J. Chemguide: The colours of complex metal ions (Cu²⁺ hấp thụ vùng đỏ; màu bổ sung). Truy cập 06/11/2026.",
-    "url": "https://www.chemguide.co.uk/inorganic/complexions/colour.html",
+    "trich_dan": "Flowers, P., Theopold, K., Langley, R., & Robinson, W. R. (2019). Chemistry 2e, mục 19.3: Spectroscopic and Magnetic Properties of Coordination Compounds. OpenStax ([Cu(NH₃)₄]²⁺ hấp thụ ánh sáng da cam và đỏ nên có màu xanh lam). Truy cập 06/11/2026.",
+    "url": "https://openstax.org/books/chemistry-2e/pages/19-3-spectroscopic-and-magnetic-properties-of-coordination-compounds",
+    "loai": "sách",
+    "giay_phep": "CC BY 4.0 – trích, ghi nguồn"
+   },
+   {
+    "trich_dan": "Department of Chemistry, University of Washington. Lecture Demonstrations: Breathalyzer Test (chromium(VI) màu da cam bị khử thành chromium(III) màu xanh lục). Truy cập 06/11/2026.",
+    "url": "https://chem.washington.edu/lecture-demos/breathalyzer-test",
     "loai": "tài liệu giáo dục",
     "giay_phep": "Chưa rõ – chỉ trích, tự viết lại"
    },
    {
-    "trich_dan": "Clark, J. Chemguide: Chromium (Cr³⁺ tím – xanh – xám, thường thấy màu xanh lục; dichromate(VI) màu da cam). Truy cập 06/11/2026.",
-    "url": "https://www.chemguide.co.uk/inorganic/transition/chromium.html",
+    "trich_dan": "Hradil, V. General Chemistry II Lab Manual (Triton College), thí nghiệm 8: Redox Reactions (MnO₄⁻ tím đậm; Mn²⁺ không màu hoặc hồng nhạt). LibreTexts Chemistry. Truy cập 06/11/2026.",
+    "url": "https://chem.libretexts.org/Courses/Triton_College/General_Chemistry_II_Lab_Manual/08%3A_Redox_Reactions",
     "loai": "tài liệu giáo dục",
-    "giay_phep": "Chưa rõ – chỉ trích, tự viết lại"
+    "giay_phep": "CC BY 4.0 – trích, ghi nguồn"
    },
    {
-    "trich_dan": "Clark, J. Chemguide: Manganese (Mn²⁺ gần như không màu; manganate(VII) mất màu khi phản ứng). Truy cập 06/11/2026.",
-    "url": "https://www.chemguide.co.uk/inorganic/transition/manganese.html",
-    "loai": "tài liệu giáo dục",
-    "giay_phep": "Chưa rõ – chỉ trích, tự viết lại"
-   },
-   {
-    "trich_dan": "Moore, J. W. và cộng sự. ChemPRIME, mục 22.11: Transitional Metal Ions in Aqueous Solutions. LibreTexts Chemistry. Truy cập 06/11/2026.",
+    "trich_dan": "Moore, J. W. và cộng sự. ChemPRIME, mục 22.11: Transitional Metal Ions in Aqueous Solutions ([Cr(H₂O)₆]³⁺ tím xám, phức chloro của Cr(III) xanh lục; Cu²⁺ xanh lam; Fe³⁺ vàng nâu do thuỷ phân). LibreTexts Chemistry. Truy cập 06/11/2026.",
     "url": "https://chem.libretexts.org/Bookshelves/General_Chemistry/ChemPRIME_(Moore_et_al.)/22%3A_Metals/22.11%3A_Transitional_Metal_Ions_in_Aqueous_Solutions",
     "loai": "sách",
     "giay_phep": "CC BY-NC-SA – trích, ghi nguồn"
@@ -316,7 +316,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Luyện gang trong lò cao và sản lượng thép",
   "yccd": "Trình bày được nguyên tắc sản xuất gang, thép; vận dụng tính toán theo phương trình phản ứng; liên hệ ngành công nghiệp thép Việt Nam.",
-  "boi_canh": "Theo Hiệp hội Thép Thế giới (worldsteel), sản lượng thép thô toàn cầu năm 2023 đạt khoảng 1 892 triệu tấn; riêng Trung Quốc 1 019,1 triệu tấn, hơn một nửa. Việt Nam sản xuất 19,2 triệu tấn, đứng thứ 12 thế giới.\n\nĐể sản xuất gang, người ta nạp quặng sắt (như hematite chứa Fe₂O₃), than cốc và đá vôi vào lò cao. Than cốc cháy tạo CO; CO khử iron oxide ở nhiệt độ cao: Fe₂O₃ + 3CO → 2Fe + 3CO₂. Đá vôi giúp loại tạp chất silicate thành xỉ. Theo Chemguide, gang chứa khoảng 4% carbon nên cứng nhưng rất giòn.\n\nĐể có thép, gang được thổi oxygen trong lò chuyển, đốt bớt carbon và các tạp chất: thép mềm chứa đến khoảng 0,25% carbon, thép carbon cao đến khoảng 1,5% carbon (theo Chemguide). Một cách khác là nấu chảy thép phế liệu trong lò điện hồ quang, ít phát thải hơn.\n\nNgành thép là ngành công nghiệp nền tảng nhưng cũng phát thải nhiều CO₂ (theo worldsteel, khoảng 7–8% lượng khí nhà kính do con người phát thải), đặt ra yêu cầu giảm phát thải và tái chế.",
+  "boi_canh": "Theo Hiệp hội Thép Thế giới (worldsteel), sản lượng thép thô toàn cầu năm 2023 đạt khoảng 1 892 triệu tấn; riêng Trung Quốc 1 019,1 triệu tấn, hơn một nửa. Việt Nam sản xuất 19,2 triệu tấn, đứng thứ 12 thế giới.\n\nĐể sản xuất gang, người ta nạp quặng sắt (như hematite chứa Fe₂O₃), than cốc và đá vôi vào lò cao. Than cốc cháy tạo CO; CO khử iron oxide ở nhiệt độ cao: Fe₂O₃ + 3CO → 2Fe + 3CO₂. Đá vôi giúp loại tạp chất silicate thành xỉ. Theo ChemPRIME (Moore và cộng sự), gang lò cao điển hình chứa khoảng 4% carbon cùng các tạp chất P, Si, Mn, S nên giòn, độ bền kéo thấp.\n\nĐể có thép, gang được thổi oxygen trong lò chuyển, đốt bớt carbon và các tạp chất: phần lớn thép chỉ còn khoảng 0,04–2,5% carbon (theo OpenStax Chemistry 2e). Một cách khác là nấu chảy thép phế liệu trong lò điện hồ quang, ít phát thải hơn.\n\nNgành thép là ngành công nghiệp nền tảng nhưng cũng phát thải nhiều CO₂ (theo worldsteel, khoảng 7–8% lượng khí nhà kính do con người phát thải), đặt ra yêu cầu giảm phát thải và tái chế.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Sơ đồ lò cao có các vùng nhiệt độ (vẽ lại từ tài liệu mở).",
   "nguon": [
@@ -333,10 +333,16 @@ NL.add([
     "giay_phep": "Chưa rõ – chỉ trích số liệu, tự viết lại"
    },
    {
-    "trich_dan": "Clark, J. Chemguide: The extraction of iron (gang khoảng 4% C; thép mềm đến 0,25% C; thép carbon cao đến 1,5% C). Truy cập 06/11/2026.",
-    "url": "https://www.chemguide.co.uk/inorganic/extraction/iron.html",
-    "loai": "tài liệu giáo dục",
-    "giay_phep": "Chưa rõ – chỉ trích, tự viết lại"
+    "trich_dan": "Moore, J. W. và cộng sự. ChemPRIME, mục 22.6: Refining of Metals (gang lò cao điển hình khoảng 4% C, 2% P, 2,5% Si, 2,5% Mn, 0,1% S; luyện thép bằng thổi oxygen). LibreTexts Chemistry. Truy cập 06/11/2026.",
+    "url": "https://chem.libretexts.org/Bookshelves/General_Chemistry/ChemPRIME_(Moore_et_al.)/22%3A_Metals/22.06%3A_Refining_of_Metals",
+    "loai": "sách",
+    "giay_phep": "CC BY-NC-SA – trích, ghi nguồn"
+   },
+   {
+    "trich_dan": "Flowers, P., Theopold, K., Langley, R., & Robinson, W. R. (2019). Chemistry 2e, mục 19.1: Occurrence, Preparation, and Properties of Transition Metals and Their Compounds. OpenStax (phần lớn thép chứa 0,04–2,5% carbon). Truy cập 06/11/2026.",
+    "url": "https://openstax.org/books/chemistry-2e/pages/19-1-occurrence-preparation-and-properties-of-transition-metals-and-their-compounds",
+    "loai": "sách",
+    "giay_phep": "CC BY 4.0 – trích, ghi nguồn"
    }
   ],
   "hinh_thuc": "Biên soạn lại",
@@ -366,7 +372,7 @@ NL.add([
     ],
     "dang": "Tự luận",
     "noi_dung": "Gang và thép khác nhau cơ bản ở điểm nào? Vì sao phải luyện gang thành thép để làm thép xây dựng?",
-    "dap_an": "Khác nhau chủ yếu ở hàm lượng carbon: gang khoảng 4% C, thép thường chỉ đến khoảng 1,5% C (thép mềm khoảng 0,25%). Gang giòn, khó cán, khó hàn; thép dẻo, bền, cán kéo được thành thanh, sợi nên phù hợp xây dựng."
+    "dap_an": "Khác nhau chủ yếu ở hàm lượng carbon: gang khoảng 4% C, còn phần lớn thép chỉ chứa khoảng 0,04–2,5% C. Gang giòn, khó cán, khó hàn; thép dẻo, bền, cán kéo được thành thanh, sợi nên phù hợp xây dựng."
    },
    {
     "ma": [

@@ -147,8 +147,8 @@ NL.add([
   "hinh_goi_y": "Ảnh bình tam giác trước và sau điểm cuối (không màu → hồng nhạt), ảnh tự chụp.",
   "nguon": [
    {
-    "trich_dan": "Lide, D. R. (Chủ biên). (2004). CRC Handbook of Chemistry and Physics (84th ed.). CRC Press. Mục 8: Dissociation Constants of Organic Acids (acetic acid Ka = 1,75 × 10⁻⁵) – dùng để giải thích chọn phenolphthalein.",
-    "url": "",
+    "trich_dan": "Lide, D. R. (Chủ biên). (2004). CRC Handbook of Chemistry and Physics (84th ed.). CRC Press. Mục 8: Dissociation Constants of Organic Acids (acetic acid Ka = 1,75 × 10⁻⁵) – dùng để giải thích chọn phenolphthalein. Truy cập qua bảng tham khảo E1 của LibreTexts Chemistry, 06/11/2026.",
+    "url": "https://chem.libretexts.org/Ancillary_Materials/Reference/Reference_Tables/Equilibrium_Constants/E1%3A_Acid_Dissociation_Constants_at_25C",
     "loai": "sổ tay tra cứu",
     "giay_phep": "Trích số liệu, ghi nguồn"
    },
