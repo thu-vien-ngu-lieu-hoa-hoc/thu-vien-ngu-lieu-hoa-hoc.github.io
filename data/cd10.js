@@ -393,7 +393,7 @@ NL.add([
    },
    {
     "trich_dan": "Quốc hội. (2025). Luật Thuế tiêu thụ đặc biệt số 66/2025/QH15 ngày 14/6/2025, Biểu thuế tại khoản 1 Điều 8 (nước giải khát theo TCVN có hàm lượng đường trên 5 g/100 mL: 8% từ 01/01/2027, 10% từ 01/01/2028). Hệ thống văn bản Chính phủ. Truy cập 06/11/2026.",
-    "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=214598&classid=1&typegroupid=3",
+    "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=214598",
     "loai": "văn bản pháp quy",
     "giay_phep": "Văn bản quy phạm pháp luật, không thuộc đối tượng bảo hộ quyền tác giả"
    }

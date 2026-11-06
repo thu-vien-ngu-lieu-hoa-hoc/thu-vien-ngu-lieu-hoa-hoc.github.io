@@ -316,8 +316,8 @@ NL.add([
   "hinh_goi_y": "Ảnh đáy ấm đun nước có cặn (ảnh tự chụp); ảnh lõi lọc trao đổi ion.",
   "nguon": [
    {
-    "trich_dan": "Bộ Y tế. (2024). Thông tư số 52/2024/TT-BYT ban hành QCVN 01-1:2024/BYT Quy chuẩn kĩ thuật quốc gia về chất lượng nước sạch sử dụng cho mục đích sinh hoạt: thông số “Độ cứng, tính theo CaCO₃”, phương pháp thử TCVN 6224:1996. Cổng thông tin điện tử Bộ Y tế. Truy cập 06/11/2026.",
-    "url": "https://moh.gov.vn/en/thong-tin-chi-dao-dieu-hanh/-/asset_publisher/DOHhlnDN87WZ/content/thong-tu-so-52-2024-tt-byt-ban-hanh-quy-chuan-ky-thuat-quoc-gia-va-quy-inh-kiem-tra-giam-sat-chat-luong-nuoc-sach-su-dung-cho-muc-ich-sinh-hoat",
+    "trich_dan": "Bộ Y tế. (2024). Thông tư số 52/2024/TT-BYT ban hành QCVN 01-1:2024/BYT Quy chuẩn kĩ thuật quốc gia về chất lượng nước sạch sử dụng cho mục đích sinh hoạt: thông số “Độ cứng, tính theo CaCO₃”, phương pháp thử TCVN 6224:1996.",
+    "url": "",
     "loai": "văn bản pháp quy",
     "giay_phep": "Văn bản quy phạm pháp luật, không thuộc đối tượng bảo hộ quyền tác giả"
    }

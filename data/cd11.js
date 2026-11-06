@@ -302,8 +302,8 @@ NL.add([
   "hinh_goi_y": "Ảnh nhãn hai chai nước mắm có độ đạm khác nhau (ảnh tự chụp).",
   "nguon": [
    {
-    "trich_dan": "Bộ Khoa học và Công nghệ. (2018). TCVN 5107:2018 Nước mắm (công bố theo Quyết định 672/QĐ-BKHCN ngày 28/3/2018), mục 3.1 Thuật ngữ và định nghĩa.",
-    "url": "",
+    "trich_dan": "Bộ Khoa học và Công nghệ. (2018). TCVN 5107:2018 Nước mắm (công bố theo Quyết định 672/QĐ-BKHCN ngày 28/3/2018), mục 3.1 Thuật ngữ và định nghĩa. Thông tin tiêu chuẩn tại Cơ sở dữ liệu tiêu chuẩn của Viện Tiêu chuẩn Chất lượng Việt Nam. Truy cập 06/11/2026.",
+    "url": "https://tieuchuan.vsqi.gov.vn/tieuchuan/view?sohieu=TCVN+5107%3A2018",
     "loai": "tiêu chuẩn quốc gia",
     "giay_phep": "Văn bản tiêu chuẩn – chỉ trích, tự viết lại"
    }
