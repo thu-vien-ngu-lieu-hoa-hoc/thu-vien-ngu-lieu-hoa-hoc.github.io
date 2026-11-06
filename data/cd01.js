@@ -3,7 +3,7 @@ NL.add([
   "id": "cd01-01",
   "chu_de": "cd01",
   "lop": "10",
-  "tieu_de": "Gam nào “chở” nhiều năng lượng nhất?",
+  "tieu_de": "Enthalpy đốt cháy của một số nhiên liệu",
   "yccd": "Trình bày được khái niệm phản ứng toả nhiệt, thu nhiệt; điều kiện chuẩn; biến thiên enthalpy chuẩn của phản ứng. Vận dụng ý nghĩa của biến thiên enthalpy để giải thích ứng dụng của phản ứng đốt cháy nhiên liệu.",
   "boi_canh": "Khi chọn nhiên liệu cho bếp, xe máy hay tên lửa, các kĩ sư luôn hỏi: đốt 1 gam nhiên liệu thu được bao nhiêu nhiệt? Câu trả lời nằm trong các cơ sở dữ liệu nhiệt động học, nổi tiếng nhất là NIST Chemistry WebBook của Viện Tiêu chuẩn và Công nghệ Quốc gia Hoa Kỳ.\n\nTheo NIST, biến thiên enthalpy đốt cháy chuẩn (ΔcH°, ở 25 °C, 1 bar, sản phẩm là CO₂(g) và H₂O(l)) của một số chất: hydrogen −285,8 kJ/mol; methane −890,7 kJ/mol; propane −2 219,2 kJ/mol; butane −2 877,5 kJ/mol; ethanol −1 367,6 kJ/mol; carbon (than chì) −393,5 kJ/mol. Dấu âm cho biết các phản ứng này đều toả nhiệt.\n\nTính theo mol, butane toả nhiều nhiệt nhất. Nhưng người mua gas, mua xăng lại quan tâm đến khối lượng hoặc thể tích. Nhóm biên soạn đã chia ΔcH° cho khối lượng mol để có nhiệt toả ra khi đốt 1 gam mỗi chất (bảng dưới). Thứ tự thay đổi hoàn toàn: hydrogen “nhẹ mà mạnh”, còn ethanol chỉ bằng khoảng một nửa so với methane.\n\nVì sao có sự khác biệt này? Phân tử nào chứa nhiều liên kết C–H, O–H được tạo thành mới và ít nguyên tử oxygen sẵn có thì toả nhiều nhiệt hơn trên mỗi gam.",
   "bang_so_lieu": {
@@ -132,7 +132,7 @@ NL.add([
   "id": "cd01-02",
   "chu_de": "cd01",
   "lop": "10",
-  "tieu_de": "Cốc xốp đo được nhiệt của phản ứng",
+  "tieu_de": "Xác định nhiệt phản ứng trung hoà bằng nhiệt lượng kế cốc xốp",
   "yccd": "Trình bày được khái niệm phản ứng toả nhiệt, thu nhiệt. Thực hiện được thí nghiệm đo nhiệt của phản ứng trung hoà và rút ra kết luận từ số liệu đo.",
   "boi_canh": "Không cần thiết bị đắt tiền, học sinh có thể đo nhiệt phản ứng bằng một “nhiệt lượng kế cốc xốp”: hai cốc xốp lồng vào nhau, có nắp và một nhiệt kế. Đây là thí nghiệm kinh điển trong chương trình hoá học phổ thông của nhiều nước.\n\nCách làm: cho 50 mL dung dịch HCl 1,0 M vào cốc, đo nhiệt độ ban đầu. Thêm nhanh 50 mL dung dịch NaOH 1,0 M có cùng nhiệt độ, khuấy nhẹ và ghi nhiệt độ cao nhất.\n\nTheo bảng số liệu nhiệt động chuẩn ở 25 °C trên LibreTexts (trích từ CRC Handbook of Chemistry and Physics), phản ứng H⁺(aq) + OH⁻(aq) → H₂O(l) có ΔrH° = −55,8 kJ/mol. Nếu coi dung dịch có khối lượng 100 g, nhiệt dung riêng 4,18 J/(g·K) và không thất thoát nhiệt, nhóm biên soạn tính được nhiệt độ dung dịch tăng khoảng 6,7 °C.\n\nTrên thực tế, học sinh thường đo được mức tăng nhỏ hơn. Một phần nhiệt đã truyền sang cốc, nhiệt kế và không khí. So sánh kết quả đo với giá trị tính toán là cơ hội tốt để học sinh tìm hiểu về sai số thí nghiệm.",
   "bang_so_lieu": {
@@ -239,7 +239,7 @@ NL.add([
   "id": "cd01-03",
   "chu_de": "cd01",
   "lop": "10",
-  "tieu_de": "Phân bón cũng có thể phát nổ",
+  "tieu_de": "Phản ứng phân huỷ ammonium nitrate và vụ nổ kho phân bón West (2013)",
   "yccd": "Tính được biến thiên enthalpy chuẩn của phản ứng dựa vào enthalpy tạo thành chuẩn. Nêu được ý nghĩa của dấu và giá trị ΔrH°.",
   "boi_canh": "Ammonium nitrate (NH₄NO₃) là phân đạm phổ biến trên thế giới. Ở điều kiện bình thường, chất này khá bền. Nhưng khi bị nung nóng mạnh trong khối lớn, bị nhiễm bẩn hoặc gặp đám cháy, nó có thể phân huỷ dữ dội.\n\nNgày 17/4/2013, một đám cháy tại kho phân bón West Fertilizer ở bang Texas (Hoa Kỳ) đã dẫn tới vụ nổ ammonium nitrate. Ban Điều tra An toàn Hoá chất Hoa Kỳ (CSB) kết luận vụ nổ làm 15 người chết (trong đó có 12 lính cứu hoả tình nguyện), khoảng 260 người bị thương, và phá huỷ nhiều nhà dân, trường học xung quanh. Ngày 4/8/2020, vụ nổ khoảng 2 750 tấn ammonium nitrate lưu kho lâu năm tại cảng Beirut (Lebanon) tiếp tục gây thảm hoạ.\n\nMột phản ứng phân huỷ có thể xảy ra là: 2NH₄NO₃(s) → 2N₂(g) + O₂(g) + 4H₂O(g). Theo bảng số liệu nhiệt động chuẩn trên LibreTexts (trích CRC Handbook), enthalpy tạo thành chuẩn của NH₄NO₃(s) là −365,6 kJ/mol, của H₂O(g) là −241,8 kJ/mol. Từ đó có thể tính được lượng nhiệt toả ra.\n\nĐiều nguy hiểm không chỉ ở lượng nhiệt mà ở chỗ phản ứng tạo ra rất nhiều khí trong thời gian rất ngắn. Sau các thảm hoạ, nhiều nước đã siết chặt quy định lưu trữ phân bón này.",
   "bang_so_lieu": null,
@@ -318,7 +318,7 @@ NL.add([
   "id": "cd01-04",
   "chu_de": "cd01",
   "lop": "10",
-  "tieu_de": "Xăng E10: thêm cồn có giảm sức mạnh?",
+  "tieu_de": "Nhiệt toả ra khi đốt cháy xăng E10 và xăng khoáng",
   "yccd": "Vận dụng biến thiên enthalpy của phản ứng đốt cháy để so sánh, đánh giá nhiên liệu trong thực tiễn.",
   "boi_canh": "Theo Thông tư 50/2025/TT-BCT của Bộ Công Thương (ban hành ngày 7/11/2025), từ ngày 1/6/2026, xăng không chì phải được phối trộn thành xăng E10 để dùng cho động cơ xăng trên toàn quốc; xăng E5 RON92 vẫn được tiếp tục pha chế đến hết ngày 31/12/2030. Thông tư này thay cho lộ trình cũ tại Quyết định 53/2012/QĐ-TTg (đã bị bãi bỏ). Xăng E10 chứa khoảng 10% thể tích ethanol pha vào xăng khoáng.\n\nNhiều người lo lắng: ethanol “yếu” hơn xăng nên xe sẽ tốn nhiên liệu hơn. Để kiểm tra, có thể dùng octane (C₈H₁₈) làm chất đại diện cho xăng. Theo NIST Chemistry WebBook, ΔcH° của octane lỏng là −5 430 kJ/mol (giá trị trung bình), của ethanol lỏng là −1 367,6 kJ/mol. Ở 20 °C, khối lượng riêng của octane là 0,7026 g/mL (NIST), của ethanol là 0,7893 g/mL (PubChem).\n\nNhóm biên soạn tính được: 1 lít octane cháy toả khoảng 33,4 MJ, 1 lít ethanol toả khoảng 23,4 MJ. Như vậy 1 lít hỗn hợp 90% octane – 10% ethanol toả khoảng 32,4 MJ, chỉ thấp hơn octane khoảng 3%.\n\nBên cạnh năng lượng, ethanol có lợi ích khác: được sản xuất từ sắn, mía; phân tử có oxygen giúp cháy sạch hơn, giảm CO. Việc chọn nhiên liệu vì vậy cần cân nhắc nhiều tiêu chí, không chỉ nhiệt toả ra.",
   "bang_so_lieu": {
@@ -434,7 +434,7 @@ NL.add([
   "id": "cd01-05",
   "chu_de": "cd01",
   "lop": "10",
-  "tieu_de": "Nấu cùng nồi cơm, nhiên liệu nào ít CO₂ nhất?",
+  "tieu_de": "Lượng CO₂ phát thải khi đốt một số nhiên liệu đun nấu",
   "yccd": "Vận dụng biến thiên enthalpy của phản ứng đốt cháy để đề xuất lựa chọn nhiên liệu phù hợp, bảo vệ môi trường.",
   "boi_canh": "Một trường bán trú cần chọn nhiên liệu cho bếp ăn: than (coi là carbon), gas (propane, butane) hay khí thiên nhiên (methane). Ban giám hiệu muốn biết: để có cùng một lượng nhiệt, nhiên liệu nào thải ít khí CO₂ nhất?\n\nTừ phương trình đốt cháy, đốt 1 mol carbon tạo 1 mol CO₂, đốt 1 mol propane tạo 3 mol CO₂. Kết hợp với ΔcH° trong NIST Chemistry WebBook (C −393,5; CH₄ −890,7; C₃H₈ −2 219,2; C₄H₁₀ −2 877,5 kJ/mol), nhóm biên soạn tính được khối lượng CO₂ thải ra khi mỗi nhiên liệu toả 1 MJ nhiệt (bảng dưới).\n\nKết quả cho thấy than thải CO₂ gấp hơn hai lần methane. Lí do là trong methane, phần lớn nhiệt sinh ra từ việc tạo liên kết O–H trong nước chứ không chỉ từ tạo CO₂.\n\nTuy vậy, lựa chọn thực tế còn phụ thuộc giá, sự sẵn có, an toàn và khói bụi. Than tổ ong còn sinh khí CO độc và bụi mịn trong bếp. Đây là một bài toán mở, không có một đáp án duy nhất.",
   "bang_so_lieu": {
@@ -544,7 +544,7 @@ NL.add([
   "id": "cd01-06",
   "chu_de": "cd01",
   "lop": "10",
-  "tieu_de": "Hydrogen: nhiên liệu của tương lai?",
+  "tieu_de": "Hydrogen làm nhiên liệu: nhiệt lượng và phát thải CO₂",
   "yccd": "Vận dụng biến thiên enthalpy của phản ứng để giải thích ưu, nhược điểm của nhiên liệu; liên hệ ngành nghề năng lượng.",
   "boi_canh": "Hydrogen cháy chỉ tạo ra nước: 2H₂(g) + O₂(g) → 2H₂O(l), ΔrH° = −571,6 kJ. Vì vậy nhiều quốc gia xem hydrogen là chìa khoá để giảm phát thải trong công nghiệp thép, phân bón, vận tải nặng.\n\nTheo báo cáo Global Hydrogen Review 2023 của Cơ quan Năng lượng Quốc tế (IEA), nhu cầu hydrogen toàn cầu năm 2022 đạt khoảng 95 triệu tấn. Tuy nhiên, phần lớn được sản xuất từ khí thiên nhiên và than, quá trình này thải nhiều CO₂. Hydrogen “phát thải thấp” (từ điện phân nước bằng điện tái tạo, hoặc có thu giữ CO₂) chiếm chưa tới 1% sản lượng.\n\nMột khó khăn khác là lưu trữ. Theo NIST, ở 0 °C, 1 atm, khối lượng riêng của H₂ chỉ 0,0899 g/L, của CH₄ là 0,717 g/L. Dù 1 gam hydrogen toả nhiệt gấp 2,6 lần 1 gam methane, 1 lít khí hydrogen lại toả ít nhiệt hơn nhiều.\n\nNgành hydrogen cần kĩ sư hoá học, kĩ sư điện hoá, chuyên gia an toàn khí và vật liệu. Đây là hướng nghề nghiệp mới cho học sinh yêu thích hoá học.",
   "bang_so_lieu": {

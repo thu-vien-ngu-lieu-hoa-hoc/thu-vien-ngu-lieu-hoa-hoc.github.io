@@ -3,7 +3,7 @@ NL.add([
   "id": "cd03-01",
   "chu_de": "cd03",
   "lop": "11",
-  "tieu_de": "Giấm chua đến mức nào?",
+  "tieu_de": "Cân bằng phân li của acetic acid trong giấm ăn",
   "yccd": "Nêu được khái niệm acid, base theo Brønsted – Lowry; viết được biểu thức hằng số cân bằng; tính được pH của dung dịch; nêu được ý nghĩa của pH trong thực tiễn.",
   "boi_canh": "Giấm ăn chứa khoảng 4–5% acetic acid (CH₃COOH). Nếu acetic acid phân li hoàn toàn như hydrochloric acid, giấm sẽ chua gắt và ăn mòn như acid trong ắc quy. Thực tế không phải vậy, vì acetic acid là acid yếu: trong nước chỉ một phần nhỏ phân tử nhường H⁺.\n\nCân bằng phân li: CH₃COOH ⇌ H⁺ + CH₃COO⁻, với hằng số phân li acid Ka = [H⁺][CH₃COO⁻] / [CH₃COOH]. Các bảng số liệu chuẩn (như bảng hằng số phân li acid trong LibreTexts Chemistry, tổng hợp từ CRC Handbook) cho biết ở 25 °C, Ka của acetic acid là 1,75 × 10⁻⁵ (pKa = 4,76).\n\nĐể dễ so sánh, các nhà hoá học dùng pKa = −log Ka. pKa càng nhỏ, acid càng mạnh. Bảng dưới liệt kê pKa của một số acid và ion gặp trong đời sống: formic acid trong nọc kiến, hydrofluoric acid dùng khắc thuỷ tinh, carbonic acid trong nước có ga, ion ammonium trong phân đạm.\n\nTừ Ka và nồng độ, học sinh có thể tính được pH của dung dịch acid yếu.",
   "bang_so_lieu": {
@@ -104,7 +104,7 @@ NL.add([
   "id": "cd03-02",
   "chu_de": "cd03",
   "lop": "11",
-  "tieu_de": "Màu đỏ máu “đổi ý” theo hoá chất thêm vào",
+  "tieu_de": "Chuyển dịch cân bằng tạo phức FeSCN²⁺",
   "yccd": "Thực hiện được thí nghiệm nghiên cứu ảnh hưởng của nồng độ, nhiệt độ đến chuyển dịch cân bằng; vận dụng nguyên lí Le Chatelier để giải thích.",
   "boi_canh": "Khi nhỏ dung dịch iron(III) chloride vào dung dịch potassium thiocyanate, dung dịch chuyển ngay sang màu đỏ máu. Màu đỏ là của ion phức FeSCN²⁺ tạo thành theo cân bằng: Fe³⁺(aq) + SCN⁻(aq) ⇌ FeSCN²⁺(aq).\n\nĐây là thí nghiệm kinh điển để quan sát chuyển dịch cân bằng, vì chỉ cần nhìn màu là biết cân bằng dịch theo chiều nào. Màu càng đậm, nồng độ FeSCN²⁺ càng lớn.\n\nCách tiến hành gợi ý: pha một dung dịch đỏ nhạt chung, chia vào 4 ống nghiệm. Ống 1 để so sánh. Ống 2 thêm vài giọt FeCl₃. Ống 3 thêm vài giọt KSCN. Ống 4 thêm một ít tinh thể NaF; ion F⁻ kết hợp mạnh với Fe³⁺ tạo phức không màu. Có thể dùng thêm ống 5 ngâm vào cốc nước nóng để xét ảnh hưởng của nhiệt độ.\n\nMô phỏng “Reversible Reactions” trên PhET cho phép học sinh lặp lại thí nghiệm nhiều lần và quan sát ở cấp độ phân tử.",
   "bang_so_lieu": {
@@ -211,7 +211,7 @@ NL.add([
   "id": "cd03-03",
   "chu_de": "cd03",
   "lop": "11",
-  "tieu_de": "Vì sao Trái Đất “thở” theo mùa?",
+  "tieu_de": "Biến thiên theo mùa của nồng độ CO₂ khí quyển tại Mauna Loa",
   "yccd": "Trình bày được khái niệm phản ứng thuận nghịch và trạng thái cân bằng; vận dụng nguyên lí Le Chatelier để giải thích sự chuyển dịch cân bằng (liên hệ cân bằng CO₂ giữa khí quyển, sinh quyển và đại dương).",
   "boi_canh": "Năm 1958, nhà khoa học Charles David Keeling (Viện Hải dương học Scripps, Hoa Kỳ) bắt đầu đo nồng độ carbon dioxide trong không khí tại đài quan sát Mauna Loa, trên một ngọn núi lửa ở Hawaii. Nơi đây nằm giữa Thái Bình Dương, xa các thành phố và nhà máy, nên không khí đại diện cho khí quyển “nền” của Trái Đất. Từ tháng 5/1974, Cơ quan Khí quyển và Đại dương Quốc gia Hoa Kỳ (NOAA) cũng đo song song tại đây. Chuỗi số liệu liên tục hơn 65 năm này được gọi là “đường cong Keeling”.\n\nKhi biểu diễn số liệu theo thời gian, người ta thấy hai đặc điểm nổi bật. Thứ nhất, nồng độ CO₂ tăng liên tục: từ khoảng 316 ppm năm 1959 lên gần 427 ppm vào tháng 5/2024 (ppm: số µmol CO₂ trong 1 mol không khí khô). Theo NOAA, giá trị trung bình tháng 5/2024 là 426,90 ppm. Thứ hai, đường biểu diễn “gợn sóng” đều đặn mỗi năm: cao nhất vào khoảng tháng 5, thấp nhất vào khoảng tháng 9–10, chênh lệch khoảng 5 ppm (năm 2024: tháng 5 là 426,90 ppm, tháng 9 là 422,03 ppm). Các nhà khoa học ví đây như nhịp “thở” của Trái Đất.\n\nTốc độ tăng cũng không cố định. Bảng dưới cho biết mức tăng trung bình mỗi năm theo từng thập niên. Năm 2024, mức tăng lên tới 3,33 ppm, cao nhất trong chuỗi số liệu của NOAA. Khi núi lửa Mauna Loa phun trào (cuối năm 2022), việc đo được chuyển tạm sang đỉnh Maunakea gần đó và trở lại Mauna Loa từ tháng 7/2023.\n\nViệt Nam đã cam kết tại COP26 (2021) đưa phát thải ròng về “0” vào năm 2050. Hiểu đường cong Keeling giúp học sinh thấy vì sao mục tiêu này cần thiết và vì sao nó khó.",
   "bang_so_lieu": {
@@ -337,7 +337,7 @@ NL.add([
   "id": "cd03-04",
   "chu_de": "cd03",
   "lop": "11",
-  "tieu_de": "Nhà máy đạm chọn nhiệt độ như thế nào?",
+  "tieu_de": "Chọn điều kiện nhiệt độ, áp suất trong tổng hợp ammonia",
   "yccd": "Vận dụng nguyên lí Le Chatelier để giải thích việc lựa chọn điều kiện cho quá trình sản xuất hoá học (tổng hợp ammonia).",
   "boi_canh": "Phân urea là loại phân đạm dùng nhiều nhất ở Việt Nam. Nguyên liệu để sản xuất urea là ammonia (NH₃), được tổng hợp từ nitrogen trong không khí và hydrogen lấy từ khí thiên nhiên. Các nhà máy đạm lớn như Đạm Phú Mỹ (Bà Rịa – Vũng Tàu) đều có phân xưởng tổng hợp ammonia; riêng Đạm Phú Mỹ có công suất thiết kế 740 nghìn tấn urea mỗi năm.\n\nPhản ứng tổng hợp ammonia (quá trình Haber – Bosch): N₂(g) + 3H₂(g) ⇌ 2NH₃(g), ΔrH° = −91,8 kJ (tính từ ΔfH° của NH₃(g) là −45,9 kJ/mol). Đây là phản ứng thuận nghịch, toả nhiệt và làm giảm số mol khí.\n\nTheo nguyên lí Le Chatelier, nhiệt độ thấp và áp suất cao giúp cân bằng chuyển dịch về phía tạo NH₃. Nhưng ở nhiệt độ thấp, phản ứng lại xảy ra rất chậm. Vì vậy trong công nghiệp, người ta chọn điều kiện “thoả hiệp”: nhiệt độ khoảng 400–450 °C, áp suất khoảng 200 atm và dùng chất xúc tác sắt.\n\nỞ điều kiện này, mỗi lần khí đi qua tháp tổng hợp chỉ khoảng 15% nitrogen và hydrogen chuyển thành NH₃. Ammonia được làm lạnh, hoá lỏng tách ra; phần khí chưa phản ứng được tuần hoàn trở lại, nhờ đó tổng mức chuyển hoá đạt khoảng 98%.",
   "bang_so_lieu": null,
@@ -416,7 +416,7 @@ NL.add([
   "id": "cd03-05",
   "chu_de": "cd03",
   "lop": "11",
-  "tieu_de": "Đại dương đang chua dần",
+  "tieu_de": "Cân bằng của CO₂ trong nước biển và sự acid hoá đại dương",
   "yccd": "Vận dụng kiến thức về cân bằng hoá học và pH để giải thích, đánh giá một vấn đề môi trường.",
   "boi_canh": "Theo NOAA, đại dương hấp thụ khoảng 30% lượng CO₂ thải vào khí quyển. Điều này làm chậm biến đổi khí hậu, nhưng lại gây ra một vấn đề khác: acid hoá đại dương.\n\nKhi CO₂ tan vào nước biển, xảy ra chuỗi cân bằng: CO₂(g) ⇌ CO₂(aq); CO₂(aq) + H₂O(l) ⇌ H₂CO₃(aq) ⇌ H⁺(aq) + HCO₃⁻(aq). Nồng độ CO₂ trong khí quyển càng cao, các cân bằng càng dịch chuyển sang phải, nồng độ H⁺ tăng, pH giảm.\n\nCũng theo NOAA, từ đầu cách mạng công nghiệp, pH nước biển bề mặt đã giảm 0,1 đơn vị; hiện nay pH trung bình khoảng 8,1 (tức trước đây khoảng 8,2). Nghe có vẻ nhỏ, nhưng pH là thang logarit: nồng độ H⁺ đã tăng khoảng 30%.\n\nH⁺ tăng còn làm giảm nồng độ ion carbonate (CO₃²⁻) mà san hô, hàu, sò dùng để xây vỏ, xương bằng CaCO₃. Các rạn san hô ở biển Việt Nam cũng có thể chịu ảnh hưởng. Đây là vấn đề cần giải pháp toàn cầu.",
   "bang_so_lieu": {
@@ -501,7 +501,7 @@ NL.add([
   "id": "cd03-06",
   "chu_de": "cd03",
   "lop": "11",
-  "tieu_de": "Người giữ pH cho bể bơi",
+  "tieu_de": "Cân bằng HOCl ⇌ H⁺ + OCl⁻ và pH của nước bể bơi",
   "yccd": "Nêu được ý nghĩa của pH trong thực tiễn; vận dụng cân bằng acid – base để giải thích quy trình kĩ thuật.",
   "boi_canh": "Nước bể bơi được khử trùng bằng chlorine. Khi cho chlorine (hoặc muối hypochlorite) vào nước, chất có tác dụng diệt khuẩn mạnh nhất là hypochlorous acid (HOCl). HOCl là acid yếu: HOCl ⇌ H⁺ + OCl⁻, với pKa = 7,40 ở 25 °C (bảng LibreTexts). Ion OCl⁻ diệt khuẩn kém hơn HOCl nhiều lần.\n\nVì vậy, pH quyết định hiệu quả khử trùng. Ở pH = 7,4, khoảng một nửa lượng chlorine ở dạng HOCl. pH càng cao, tỉ lệ HOCl càng thấp. Nhưng pH quá thấp lại gây cay mắt, ăn mòn thiết bị.\n\nTrung tâm Kiểm soát và Phòng ngừa Dịch bệnh Hoa Kỳ (CDC) khuyến cáo giữ pH nước bể bơi trong khoảng 7,0–7,8, giữ chlorine tự do tối thiểu 1 ppm và kiểm tra pH ít nhất hai lần mỗi ngày.\n\nNgười vận hành bể bơi, kĩ thuật viên xử lí nước ở nhà máy nước, khu công nghiệp đều phải đo pH hằng ngày, tính toán lượng hoá chất điều chỉnh (acid hoặc base) và đảm bảo an toàn khi pha chế. Đây là một nghề cần kiến thức cân bằng hoá học thực tế.",
   "bang_so_lieu": {
@@ -603,7 +603,7 @@ NL.add([
   "id": "cd03-07",
   "chu_de": "cd03",
   "lop": "11",
-  "tieu_de": "Mưa acid: 50 năm từ lời cảnh báo đến hành động",
+  "tieu_de": "Mưa acid ở châu Âu và quá trình cắt giảm phát thải SO₂",
   "yccd": "Vận dụng kiến thức về pH và cân bằng acid – base để giải thích, đánh giá một vấn đề môi trường (mưa acid).",
   "boi_canh": "Tháng 10/1967, nhà khoa học Thuỵ Điển Svante Odén đăng trên báo Dagens Nyheter bài viết với tựa đề như một lời cảnh báo: “Một cuộc chiến hoá học ngấm ngầm giữa các quốc gia châu Âu”. Dựa trên mạng lưới quan trắc nước mưa và nước mặt, ông chỉ ra hiện tượng acid hoá đang diễn ra, phần lớn do khí thải chứa sulfur bay từ nước này sang nước khác.\n\nNăm 1972, báo cáo của Thuỵ Điển gửi Hội nghị Liên Hợp Quốc về Môi trường con người ở Stockholm ước tính 50% số hồ và sông ở Thuỵ Điển sẽ đạt tới mức pH tới hạn trong vòng 50 năm nếu phát thải tiếp tục như cũ. Những năm 1980, báo chí đăng đầy ảnh rừng chết ở vùng “Tam giác đen” (biên giới Ba Lan, Đông Đức và Tiệp Khắc cũ), nơi đốt nhiều than nâu giàu sulfur.\n\nNghị định thư Helsinki năm 1985 yêu cầu các nước tham gia giảm ít nhất 30% phát thải sulfur trong giai đoạn 1980–1993. Theo bài tổng quan của Grennfelt và cộng sự (2020), phát thải SO₂ ở châu Âu đến nay đã giảm 80% trở lên so với đỉnh khoảng 1980–1990, trong khi phát thải ammonia mới chỉ giảm 20–30%.",
   "bang_so_lieu": null,
