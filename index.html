@@ -7,7 +7,7 @@
 <meta name="description" content="Thư viện ngữ liệu trong dạy học và đánh giá năng lực môn Hóa học ở trường phổ thông – Từ dữ liệu thật đến nhiệm vụ năng lực. Ngữ liệu có nguồn, giấy phép, gắn mã biểu hiện năng lực theo Chương trình Hoá học 2018.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600;1,700&family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600;1,700&family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Noto+Sans+Display:wdth,wght@62.5..100,500..600&display=swap" rel="stylesheet">
 <style>
 /* Phông: Noto Serif (tiêu đề) · Noto Sans (nội dung đọc và giao diện) – đều hỗ trợ tiếng Việt.
    Không có mạng thì tự dùng phông có sẵn trong máy. */
@@ -203,8 +203,10 @@ p,li,td,.lead,.kv>div{text-wrap:pretty}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;margin:12px 0 24px}
 .card{position:relative;display:flex;flex-direction:column;gap:6px;padding:16px 18px;border:1px solid var(--line);border-top:3px solid var(--c,var(--accent));border-radius:var(--r);background:var(--surface);text-decoration:none;color:var(--ink);box-shadow:var(--shadow-sm);transition:transform .2s,box-shadow .2s}
 .card:hover{transform:translateY(-3px);box-shadow:var(--shadow);color:var(--ink)}
-.card .kicker{font-size:13px;color:var(--ink-3);display:flex;flex-wrap:wrap;justify-content:space-between;gap:2px 10px;font-weight:600}
+.card .kicker{font:600 13px/1.4 "Noto Sans Display",var(--f-ui);font-stretch:78%;color:var(--ink-3);display:flex;justify-content:space-between;align-items:baseline;gap:8px}
 .card .kicker>span{white-space:nowrap}
+.card .kicker>span:first-child{flex:none}
+.card .kicker>span:last-child{min-width:0;overflow:hidden;text-overflow:ellipsis;text-align:right}
 .card strong{font:600 17px/1.35 var(--f-display)}
 .card .sub{font-size:14px;color:var(--ink-2)}
 .card .peek{font:14px/1.55 var(--f-read);color:var(--ink-3);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;max-height:0;opacity:0;transition:max-height .3s,opacity .3s}
@@ -491,9 +493,8 @@ const CAU_HINH = {
   ten_san_pham: 'Thư viện ngữ liệu trong dạy học và đánh giá năng lực môn Hóa học ở trường phổ thông',
   ten_ngan: 'Thư viện ngữ liệu Hóa học',
   khau_hieu: 'Từ dữ liệu thật đến nhiệm vụ năng lực',
-  don_vi: 'Khoa Hoá học, Trường Đại học Sư phạm Hà Nội',
-  nhom: '[họ tên 7 sinh viên]',
-  giang_vien: '[họ tên giảng viên hướng dẫn]',
+  don_vi: 'Khoa Hóa học – Trường Khoa học Tự nhiên và Công nghệ',
+  nhom: 'Nhóm sinh viên Giải pháp số Liên Chi đoàn – Khoa Hóa học, Trường Khoa học Tự nhiên và Công nghệ',
   link_gop_y: '',          // link Google Form góp ý
   link_tro_li_ai: '',      // link Gem / Custom GPT cho giáo viên (P6), để trống nếu không có
   link_bo_cau_lenh: '',    // link tệp bộ câu lệnh AI nộp kèm
@@ -998,7 +999,7 @@ function pageHuongDan(){
       ${C.link_tro_li_ai?`<li><b>Trợ lí AI cho giáo viên:</b> ${link(C.link_tro_li_ai,'mở trợ lí')} – trợ lí chỉ gợi ý câu hỏi từ dữ liệu trong ngữ liệu; thầy cô cần kiểm tra lại trước khi dùng.</li>`:''}
     </ul>
     <h2>Nhóm thực hiện</h2>
-    <div class="kv"><div>Đơn vị</div><div>${txt(C.don_vi)}</div><div>Sinh viên</div><div>${txt(C.nhom)}</div><div>Giảng viên hướng dẫn</div><div>${txt(C.giang_vien)}</div></div>
+    <div class="kv"><div>Đơn vị</div><div>${txt(C.don_vi)}</div><div>Sinh viên</div><div>${txt(C.nhom)}</div></div>
     ${pagePager('huong-dan')}</div>`;
 }
 function pageNguon(){
