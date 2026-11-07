@@ -437,6 +437,12 @@ figure .table-wrap{margin-bottom:0}
 .prompts summary small{font-weight:400;color:var(--ink-3)}
 .prompts .pn{flex:none;display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--accent);color:#fff;font-size:13px}
 .prompts .pbody{padding:0 16px 14px}
+.prompts .pbody .btn-row{display:flex;flex-wrap:wrap;gap:8px}
+.prompts details.k0{border-color:var(--accent);border-width:2px}
+.prompts .k0 .pn{background:var(--ink-2)}
+.prompts mark{background:#fff1a8;color:#5a4500;border-radius:3px;padding:0 2px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .prompts mark{background:#5a4a10;color:#ffe9a0}}
+:root[data-theme="dark"] .prompts mark{background:#5a4a10;color:#ffe9a0}
 .prompts pre{white-space:pre-wrap;word-break:break-word;max-height:340px;overflow:auto;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font:13.5px/1.55 ui-monospace,Consolas,monospace;margin:0 0 10px}
 .ai-goi-y h3,.hd h3{margin:22px 0 8px;font-size:1.05em}
 .fmt td,.fmt th{vertical-align:top}
@@ -640,9 +646,10 @@ const CAU_HINH = {
   ten_ngan: 'Thư viện ngữ liệu Hóa học',
   khau_hieu: 'Từ dữ liệu thật đến nhiệm vụ năng lực',
   don_vi: 'Khoa Hóa học, Trường Khoa học Tự nhiên và Công nghệ – Trường Đại học Sư phạm Hà Nội',
-  nhom: 'Nhóm sinh viên Giải pháp số Liên Chi đoàn – Khoa Hóa học, Trường Khoa học Tự nhiên và Công nghệ – Trường Đại học Sư phạm Hà Nội',
+  nhom: 'Nhóm sinh viên Giải pháp nghiệp vụ số – Liên Chi đoàn – Khoa Hóa học, Trường Khoa học Tự nhiên và Công nghệ – Trường Đại học Sư phạm Hà Nội',
   file_huong_dan: 'data/Gioi_thieu_va_Huong_dan_Thu_vien_ngu_lieu.docx',
   link_gop_y: 'https://docs.google.com/forms/d/e/1FAIpQLSedxVpFf3Q9Hd2KUtUu0saDOFOr0A0DE_jqGPIykzxYzidbtw/viewform',          // link Google Form góp ý
+  link_dong_gop: 'https://docs.google.com/forms/d/e/1FAIpQLSf1qYCrakNzTiPdUBvYVu8a84MNqOq4VcplxAtpUatdjMtgLg/viewform',          // link Google Form ĐÓNG GÓP NGỮ LIỆU (riêng); để trống thì ẩn nút
   link_tro_li_ai: '',      // link Gem / Custom GPT cho giáo viên (P6), để trống nếu không có
   link_bo_cau_lenh: '',    // link tệp bộ câu lệnh AI nộp kèm
   anh_qr: '',              // ví dụ 'data/img/qr.png' – ảnh QR tạo sau khi có link
@@ -825,7 +832,7 @@ function progress(ma){
   return `<div class="prog"><span class="track">${g.length?`<i class="td" style="--w:${g.length/tot*100}%"></i>`:''}</span><span>${g.length}/${Math.max(6, g.length)}</span></div>`;
 }
 const PAGES = ['', 'tra-cuu', 'khung-nang-luc', 'huong-dan', 'phan-hoi', 'nguon', 'minh-bach-ai'];
-const PAGE_T = {'':'Trang chủ','tra-cuu':'Tra cứu ngữ liệu','khung-nang-luc':'Khung năng lực','huong-dan':'Hướng dẫn sử dụng','phan-hoi':'Phản hồi & đóng góp','nguon':'Nguồn & bản quyền','minh-bach-ai':'Minh bạch AI'};
+const PAGE_T = {'':'Trang chủ','tra-cuu':'Tra cứu ngữ liệu','khung-nang-luc':'Khung năng lực','huong-dan':'Hướng dẫn sử dụng','phan-hoi':'Phản hồi và chia sẻ dữ liệu','nguon':'Nguồn & bản quyền','minh-bach-ai':'Minh bạch AI'};
 const pager = (prev, next) => `<nav class="pager" aria-label="Chuyển trang">${prev?`<a class="prev" href="#/${prev[0]}"><small>‹ Trước</small>${esc(prev[1])}</a>`:'<span></span>'}${next?`<a class="next" href="#/${next[0]}"><small>Sau ›</small>${esc(next[1])}</a>`:''}</nav>`;
 const pagePager = r => { const i = PAGES.indexOf(r); return pager(i>0?[PAGES[i-1],PAGE_T[PAGES[i-1]]]:null, i<PAGES.length-1?[PAGES[i+1],PAGE_T[PAGES[i+1]]]:null); };
 
@@ -834,7 +841,7 @@ function buildSidebar(){
   const ic = n => `<span class="ico">${icon(n)}</span>`;
   $('#sidebar').innerHTML = a('', 'Trang chủ', ic('home')) + a('tra-cuu', 'Tra cứu ngữ liệu', ic('search')) +
     '<h4>' + C.chu_de.length + ' chủ đề</h4>' + C.chu_de.map(c => a('tra-cuu?cd='+c.ma, c.ten, `<span class="sym">${esc(c.ki_hieu)}</span>`, `<span class="cnt">${ofCd(c.ma).length}</span>`, cvar(c))).join('') +
-    '<h4>Dành cho giáo viên</h4>' + a('khung-nang-luc', 'Khung năng lực', ic('grid')) + a('huong-dan', 'Hướng dẫn sử dụng', ic('book')) + a('phan-hoi', 'Phản hồi & đóng góp', ic('chat')) +
+    '<h4>Dành cho giáo viên</h4>' + a('khung-nang-luc', 'Khung năng lực', ic('grid')) + a('huong-dan', 'Hướng dẫn sử dụng', ic('book')) + a('phan-hoi', 'Phản hồi và chia sẻ dữ liệu', ic('chat')) +
     '<h4>Về sản phẩm</h4>' + a('nguon', 'Nguồn & bản quyền', ic('link')) + a('minh-bach-ai', 'Minh bạch AI', ic('spark'));
 }
 const setCurrent = r => $$('.sidebar a').forEach(a => a.classList.toggle('current', a.dataset.r === r));
@@ -972,7 +979,7 @@ function guideBand(home){
       ${st(1,'#/tra-cuu','Tìm ngữ liệu','<span class="gp on">Lớp 11</span><span class="gp">Cân bằng</span><span class="gp">TH4</span>','Lọc theo lớp, chủ đề, năng lực cần phát triển hoặc gõ từ khoá.','Mở Tra cứu')}
       ${st(2,vd,'Đọc bối cảnh',`<span class="gp ic">${icon('table',14)} Bảng số liệu</span><span class="gp">Nguồn: NOAA ↗</span>`,'Xem số liệu, mở nguồn gốc, đọc lưu ý khoa học.','Xem ngữ liệu mẫu')}
       ${st(3,vd,'Dùng câu hỏi',`<span class="gb">${icon('print',14)} In bản học sinh</span><span class="gp">Bản GV</span>`,'Làm thử, che ô số liệu để ra đề, in phiếu cho lớp.','Xem ngữ liệu mẫu')}
-      ${st(4,pr,'Soạn thêm với AI',`<span class="gb">${icon('copy',14)} Sao chép prompt</span><span class="gp">→ ChatGPT</span>`,'Dùng bộ 9 prompt mẫu; trong mỗi ngữ liệu, prompt đã điền sẵn nội dung. Kiểm tra lại đáp án trước khi dùng.','Mở bộ prompt')}
+      ${st(4,pr,'Soạn thêm với AI',`<span class="gb">${icon('copy',14)} Sao chép prompt</span><span class="gp">→ ChatGPT</span>`,'Dán Khối 0 rồi chọn 1 trong 12 prompt mẫu; trong mỗi ngữ liệu, prompt đã điền sẵn nội dung. Tự giải lại, thẩm định chéo trước khi dùng.','Mở bộ prompt')}
     </div>
     <p class="guide-rule"><b>Lưu ý:</b> AI chỉ soạn nháp, không dùng AI để tạo số liệu. Thầy cô kiểm tra lại số liệu, đáp án và ghi nguồn ngữ liệu khi sử dụng.</p>
     ${home?`<div class="guide-act"><a class="btn" href="#/huong-dan">${icon('book',17)} Xem hướng dẫn sử dụng đầy đủ</a><a class="btn ghost" href="#/huong-dan?mo=shd-p">${icon('spark',17)} Bộ prompt AI</a></div>`:''}
@@ -1162,36 +1169,180 @@ function nlText(x){
   if((x.luu_y_khoa_hoc||[]).length) t += `\n\nLƯU Ý KHOA HỌC (quan niệm dễ sai):\n${x.luu_y_khoa_hoc.map(l => '- '+l).join('\n')}`;
   return t;
 }
+/* Bộ prompt: Khối 0 + 12 prompt (theo "Bộ prompt cải tiến và Hướng dẫn GV") */
+function khoi0(x){
+  const lop = x ? String(x.lop||CD(x.chu_de).lop) : '[10/11/12]';
+  return `<vai_tro>
+Bạn là giáo viên Hoá học THPT giàu kinh nghiệm ra đề đánh giá năng lực theo Chương trình GDPT môn Hoá học 2018 (Thông tư 32/2018/TT-BGDĐT), am hiểu cấu trúc đề thi tốt nghiệp THPT từ 2025 (QĐ 764/QĐ-BGDĐT ngày 08/3/2024).
+</vai_tro>
+<rang_buoc_chung>
+1. SỐ LIỆU: Chỉ dùng số liệu, sự kiện có trong <ngu_lieu>. Không tự tạo số liệu. Nếu cần thêm, ghi "[CẦN BỔ SUNG SỐ LIỆU – nội dung – nguồn gợi ý]" và KHÔNG dùng số đó để tính đáp án.
+2. TRÍCH DẪN: Với mỗi câu, ghi mục "Dữ liệu dùng" chép nguyên văn dòng/ô của bảng hoặc câu trong ngữ liệu mà câu hỏi dựa vào.
+3. CHƯƠNG TRÌNH: Kiến thức không vượt CT Hoá học 2018 lớp ${lop} (kể cả chuyên đề học tập nếu ghi rõ). Danh pháp, thuật ngữ, kí hiệu theo SGK Hoá học CT 2018 (tên IUPAC tiếng Anh cho chất; ví dụ: sodium hydroxide, ethanoic acid / acetic acid).
+4. HẰNG SỐ: Nguyên tử khối và hằng số lấy theo bảng trong SGK; liệt kê đầy đủ các giá trị đã dùng.
+5. MÃ NĂNG LỰC: Mỗi câu ghi (a) thành phần năng lực theo ma trận đề: NT (Nhận thức hoá học) / TH (Tìm hiểu thế giới tự nhiên dưới góc độ hoá học) / VD (Vận dụng kiến thức, kĩ năng đã học); (b) mã biểu hiện của thư viện: NT1–NT…, TH1–TH5, VD1–VD5; (c) cấp độ: Biết / Hiểu / Vận dụng. Giải thích 1 câu vì sao gán mã đó.
+6. ĐÁP ÁN: Đáp án duy nhất, không gây tranh cãi. Tự giải lại mọi phép tính lần 2 theo cách khác; kiểm tra đơn vị; chỉ làm tròn ở bước cuối.
+7. VIẾT CÂU HỎI: Thân câu nêu rõ nhiệm vụ; tránh phủ định (nếu bắt buộc thì IN HOA "KHÔNG"); không dùng "tất cả các ý trên", "không có ý nào"; 4 phương án cùng loại, độ dài tương đương, không để phương án đúng dài nhất hay lặp từ khoá của thân câu; vị trí đáp án đúng phân bố đều; phương án nhiễu dựa trên lỗi/quan niệm sai cụ thể và ghi tên lỗi đó.
+8. AN TOÀN – THỰC TIỄN: Mọi thí nghiệm nêu trong câu hỏi phải an toàn, khả thi ở trường phổ thông; nêu lưu ý an toàn nếu có hoá chất độc, dễ cháy.
+9. GIẢ ĐỊNH: Cuối bài liệt kê mọi giả định đã đặt ra (điều kiện chuẩn, hiệu suất 100%, bỏ qua thể tích...).
+10. ĐẦU RA: Xuất 2 phần tách biệt: "BẢN HỌC SINH" (chỉ đề) và "BẢN GIÁO VIÊN" (đáp án, lời giải, mã, dữ liệu dùng, phân tích nhiễu, thời gian ước tính, độ khó dự kiến). Không viết lời dẫn thừa.
+11. Nếu yêu cầu mâu thuẫn với ngữ liệu hoặc không thể đáp ứng, nói rõ thay vì cố tạo câu hỏi.
+</rang_buoc_chung>
+<quy_tac_tra_loi_ngan_TN_THPT>
+Đáp số là MỘT số viết được bằng tối đa 4 kí tự trên phiếu (tính cả dấu "-" và dấu ","), tô từ trái sang phải. Ví dụ hợp lệ: 1256; 42,9; 0,64; -1,5. Nếu kết quả có quá 4 kí tự, đổi đơn vị hoặc đổi yêu cầu làm tròn. Ví dụ: 250 g × 49,5 kJ/g = 12 375 kJ → hỏi theo MJ, "làm tròn đến hàng phần mười" → 12,4.
+</quy_tac_tra_loi_ngan_TN_THPT>`;
+}
 function promptsFor(x){
-  const lop = x ? 'lớp '+(x.lop||CD(x.chu_de).lop) : 'lớp [10/11/12]';
+  const lop = x ? String(x.lop||CD(x.chu_de).lop) : '[10/11/12]';
   const ma = x ? maCua(x) : [];
-  const maTxt = ma.length ? ma.map(m => `- ${m} (${moTa(m)}): ${GOI_Y_MA[m]||''}`).join('\n') : '- [ghi các mã biểu hiện cần phát triển, ví dụ TH2, TH4, VD2]';
-  const QT = `Yêu cầu bắt buộc:\n- Chỉ dùng số liệu, sự kiện có trong ngữ liệu bên dưới; không tự tạo số liệu mới. Nếu cần thêm số liệu, ghi rõ "[CẦN BỔ SUNG SỐ LIỆU – nguồn]".\n- Kiến thức không vượt Chương trình Hoá học 2018 (${lop}); danh pháp theo sách giáo khoa Hoá học Chương trình 2018.\n- Mỗi câu ghi: mã biểu hiện năng lực (TH1–TH5, VD1–VD5), đáp án, lời giải hoặc tiêu chí chấm.\n- Đáp án phải duy nhất; tự kiểm tra lại mọi phép tính và đơn vị.`;
-  const VAI = `Bạn là giáo viên Hoá học THPT giàu kinh nghiệm ra đề đánh giá năng lực theo Chương trình giáo dục phổ thông 2018.`;
-  const NL = `NGỮ LIỆU:\n"""\n${nlText(x)}\n"""`;
+  const maTxt = ma.length ? ma.join(', ') + ' (' + ma.map(m => m + ': ' + moTa(m)).join('; ') + ')' : '[ví dụ: NT…, TH2, TH4, VD2, VD5]';
+  const NL = d => x ? `<ngu_lieu>\n${nlText(x)}\n</ngu_lieu>` : `<ngu_lieu>${d||'[DÁN NGỮ LIỆU]'}</ngu_lieu>`;
   return [
-    {k:'chum', ten:'Câu hỏi theo cấu trúc đề thi tốt nghiệp THPT', mo:'đủ 3 dạng: nhiều lựa chọn, đúng/sai, trả lời ngắn',
-     t:`${VAI}\nNhiệm vụ: Từ ngữ liệu dưới đây, soạn bộ câu hỏi theo các dạng câu của đề thi tốt nghiệp THPT môn Hoá học từ năm 2025:\n- 2 câu trắc nghiệm nhiều lựa chọn (4 phương án A, B, C, D; 1 phương án đúng; phương án nhiễu dựa trên lỗi học sinh hay mắc).\n- 1 câu đúng/sai gồm 4 ý a), b), c), d).\n- 1 câu trả lời ngắn: đáp số là một số, viết được bằng tối đa 4 kí tự (kể cả dấu "-" và dấu ","); ghi rõ yêu cầu làm tròn.\nCác câu khai thác các khía cạnh khác nhau của ngữ liệu, mức độ tăng dần (biết → hiểu → vận dụng), không lặp ý.\n${QT}\n\n${NL}`},
-    {k:'ngan', ten:'Câu hỏi trả lời ngắn', mo:'đáp số là số, có lời giải từng bước',
-     t:`${VAI}\nNhiệm vụ: Soạn 4 câu hỏi TRẢ LỜI NGẮN từ ngữ liệu dưới đây. Mỗi câu yêu cầu học sinh đọc, xử lí số liệu trong ngữ liệu (không chỉ nhớ kiến thức). Đáp số là một số viết được bằng tối đa 4 kí tự (kể cả dấu "-" và dấu ","); ghi rõ đơn vị và yêu cầu làm tròn. Kèm lời giải từng bước và các hằng số, nguyên tử khối cần dùng.\n${QT}\n\n${NL}`},
-    {k:'dungsai', ten:'Câu hỏi đúng/sai', mo:'4 ý, khai thác quan niệm dễ sai',
-     t:`${VAI}\nNhiệm vụ: Soạn 2 câu hỏi ĐÚNG/SAI, mỗi câu gồm 4 ý a), b), c), d), từ ngữ liệu dưới đây. Mỗi câu có cả ý đúng và ý sai; ý sai xây dựng từ quan niệm sai phổ biến (xem mục Lưu ý khoa học) hoặc từ cách đọc sai số liệu. Giải thích vì sao mỗi ý đúng hoặc sai, dẫn số liệu trong ngữ liệu.\n${QT}\n\n${NL}`},
-    {k:'bieuhien', ten:'Câu hỏi theo biểu hiện năng lực', mo:'mỗi biểu hiện một câu hỏi, có tiêu chí chấm',
-     t:`${VAI}\nNhiệm vụ: Với MỖI biểu hiện năng lực dưới đây, soạn 1 câu hỏi hoặc nhiệm vụ từ ngữ liệu, đúng với biểu hiện đó:\n${maTxt}\nVới câu tự luận, ghi tiêu chí chấm 3 mức: Tốt – Đạt – Chưa đạt (mô tả cụ thể sản phẩm của học sinh ở từng mức).\n${QT}\n\n${NL}`},
-    {k:'tsa', ten:'Câu hỏi kiểu TSA (Đánh giá tư duy ĐH Bách khoa Hà Nội)', mo:'phần Tư duy khoa học: 1 đoạn thông tin + 5 câu',
-     t:`${VAI}\nNhiệm vụ: Soạn 1 nhóm 5 câu hỏi theo phần Tư duy khoa học của kì thi Đánh giá tư duy (TSA) – Đại học Bách khoa Hà Nội, lĩnh vực Hoá học. Đối chiếu thêm Cẩm nang thi Đánh giá tư duy do Đại học Bách khoa Hà Nội phát hành.\n- Viết lại ngữ liệu thành đoạn thông tin khoa học đặt trước câu hỏi, có tiêu đề và nguồn, đủ thông tin để học sinh tự suy luận. Chọn MỘT định dạng phù hợp: biểu diễn dữ liệu (bảng, đồ thị, sơ đồ); tóm tắt nghiên cứu (thiết kế – quy trình – kết quả thí nghiệm); hoặc quan điểm mâu thuẫn (hai, ba giả thuyết khác nhau về cùng hiện tượng).\n- Soạn 5 câu (Câu 1. … Câu 5.), phương án A., B., C., D. mỗi phương án một dòng. Phân bổ mức độ tư duy theo kiểu 2–2–1 (2 câu Tái hiện M1, 2 câu Suy luận M2, 1 câu Bậc cao M3) hoặc 2–1–2.\n- Mỗi câu ghi: đáp án, mức độ tư duy, giải thích đáp án. Các câu không lặp cùng một ý tưởng; không sao chép câu hỏi đã công bố.\n${QT}\n\n${NL}`},
-    {k:'spt', ten:'Câu hỏi kiểu SPT (Đánh giá năng lực ĐHSP Hà Nội)', mo:'bám cấu trúc đề chính thức của năm thi',
-     t:`${VAI}\nNhiệm vụ: Soạn câu hỏi môn Hoá học theo định dạng kì thi đánh giá năng lực SPT của Trường Đại học Sư phạm Hà Nội.\nCấu trúc đề chính thức của năm thi: [DÁN MÔ TẢ CẤU TRÚC ĐỀ SPT MÔN HOÁ HỌC DO TRƯỜNG ĐHSP HÀ NỘI CÔNG BỐ – số câu, dạng câu, thời gian, thang điểm].\nBám sát cấu trúc trên. Câu hỏi đặt trong bối cảnh ngữ liệu, đòi hỏi đọc hiểu và xử lí thông tin chứ không chỉ ghi nhớ; mức độ phù hợp học sinh lớp 12.\n${QT}\n\n${NL}`},
-    {k:'hsa', ten:'Câu hỏi kiểu HSA (Đánh giá năng lực ĐHQG Hà Nội)', mo:'phần Khoa học, bám cấu trúc đề chính thức',
-     t:`${VAI}\nNhiệm vụ: Soạn câu hỏi Hoá học theo phần Khoa học của kì thi Đánh giá năng lực (HSA) do Đại học Quốc gia Hà Nội tổ chức.\nCấu trúc đề chính thức của năm thi: [DÁN MÔ TẢ CẤU TRÚC PHẦN KHOA HỌC (HOÁ HỌC) DO ĐẠI HỌC QUỐC GIA HÀ NỘI CÔNG BỐ – số câu, dạng câu, thời gian].\nBám sát cấu trúc trên. Câu hỏi đặt trong bối cảnh ngữ liệu, đòi hỏi đọc hiểu, xử lí thông tin và suy luận chứ không chỉ ghi nhớ; mức độ phù hợp học sinh lớp 12.\n${QT}\n\n${NL}`},
-    {k:'nhiemvu', ten:'Phiếu học tập, nhiệm vụ trên lớp', mo:'15–20 phút, phân hoá 3 mức',
-     t:`${VAI}\nNhiệm vụ: Thiết kế 1 phiếu học tập 15–20 phút cho học sinh ${lop} từ ngữ liệu dưới đây, theo tiến trình: nêu vấn đề → giả thuyết → xử lí dữ liệu → kết luận → vận dụng. Ghi: mục tiêu (gắn mã biểu hiện), nhiệm vụ cho học sinh, câu hỏi gợi mở, sản phẩm cần nộp, tiêu chí đánh giá. Có 3 mức nhiệm vụ (cơ bản – vừa – nâng cao) để phân hoá.\n${QT}\n\n${NL}`},
-    {k:'kiemtra', ten:'Kiểm tra lại câu hỏi do AI soạn', mo:'bước bắt buộc trước khi dùng',
-     t:`Bạn là chuyên gia thẩm định đề Hoá học. Hãy kiểm tra bộ câu hỏi dưới đây so với ngữ liệu gốc. Liệt kê từng lỗi (nếu có) theo các mục: (1) số liệu không có trong ngữ liệu hoặc sai so với ngữ liệu; (2) phép tính, đơn vị, làm tròn sai; (3) đáp án không duy nhất hoặc gây tranh cãi; (4) vượt Chương trình Hoá học 2018; (5) sai danh pháp, thuật ngữ; (6) gắn sai mã biểu hiện năng lực. Đề xuất cách sửa cho từng lỗi.\n\nBỘ CÂU HỎI CẦN KIỂM TRA:\n"""\n[DÁN CÂU HỎI DO AI SOẠN]\n"""\n\n${NL}`}
+    {n:'0', k:'k0', ten:'Khối 0 – Ràng buộc chung', mo:'dán một lần ở đầu phiên chat', t: khoi0(x)},
+    {n:'1', k:'p1', k0:1, ten:'Chùm câu mô phỏng đề tốt nghiệp THPT', mo:'2 câu Phần I, 1 câu Phần II, 1 câu Phần III',
+     t:`<nhiem_vu>
+Từ <ngu_lieu>, soạn MỘT CHÙM CÂU mô phỏng đề thi tốt nghiệp THPT môn Hoá học (QĐ 764/QĐ-BGDĐT), tất cả dùng chung bối cảnh của ngữ liệu, gồm:
+- 2 câu Phần I (4 phương án A–D, 1 đúng; 0,25 điểm/câu), có thể là 2 câu liên tiếp dùng chung một đoạn dẫn.
+- 1 câu Phần II (đúng/sai, 4 ý a–d; thang điểm: đúng 1 ý 0,1; 2 ý 0,25; 3 ý 0,5; 4 ý 1 điểm). Có 1–3 ý sai; 4 ý trả lời được độc lập, không ý nào là tiền đề của ý khác.
+- 1 câu Phần III (trả lời ngắn, 0,25 điểm) theo <quy_tac_tra_loi_ngan_TN_THPT>; ghi rõ đơn vị và yêu cầu làm tròn.
+Phân bổ cấp độ gần với đề thật: Phần I chủ yếu Biết/Hiểu (có thể 1 câu Vận dụng); Phần II trộn Biết–Hiểu–Vận dụng; Phần III Hiểu hoặc Vận dụng (không dùng mức Biết). Có ít nhất 1 lệnh hỏi thuộc TH và 1 lệnh hỏi thuộc VD. Các câu khai thác các khía cạnh khác nhau, không lặp ý.
+</nhiem_vu>
+<dinh_dang_ban_giao_vien>
+Bảng: | Câu/ý | Phần | Đáp án | NT/TH/VD – mã biểu hiện | Cấp độ | Dữ liệu dùng (trích nguyên văn) | Lời giải ngắn | Lỗi học sinh mà nhiễu/ý sai khai thác | Thời gian (giây) |
+Cuối bảng: tổng thời gian ước tính; tỉ lệ cấp độ; danh sách giả định.
+</dinh_dang_ban_giao_vien>
+${x ? NL() : '<ngu_lieu>\n[DÁN: tiêu đề, bối cảnh, bảng số liệu, nguồn, lưu ý khoa học]\n</ngu_lieu>'}`},
+    {n:'2', k:'p2', k0:1, ten:'Câu trả lời ngắn', mo:'4 câu kiểu Phần III, có kiểm tra biên làm tròn',
+     t:`<nhiem_vu>
+Soạn 4 câu TRẢ LỜI NGẮN kiểu Phần III đề tốt nghiệp THPT (0,25 điểm/câu) từ <ngu_lieu>. Mỗi câu bắt buộc phải đọc và xử lí số liệu trong ngữ liệu (không giải được chỉ bằng ghi nhớ). Trong 4 câu có ít nhất 1 câu cần đổi đơn vị và 1 câu cần so sánh/kết hợp ≥ 2 dòng số liệu.
+Với mỗi câu:
+1. Đề bài, đơn vị đáp số, yêu cầu làm tròn (ví dụ "làm tròn đến hàng phần mười").
+2. Đáp số dạng tô phiếu (≤ 4 kí tự, kể cả "-" và ","), ví dụ: | 1 | 2 | , | 4 |.
+3. Lời giải từng bước; liệt kê nguyên tử khối/hằng số dùng (theo SGK).
+4. KIỂM TRA BIÊN LÀM TRÒN: tính lại với giá trị trung gian chưa làm tròn và với cách làm tròn trung gian phổ biến của học sinh; nếu đáp số sau làm tròn thay đổi, sửa đề (đổi yêu cầu làm tròn hoặc số liệu dùng) cho đến khi đáp án ổn định.
+5. Sai lầm thường gặp dẫn tới đáp số sai (ghi đáp số sai tương ứng).
+</nhiem_vu>
+${NL()}`},
+    {n:'3', k:'p3', k0:1, ten:'Câu đúng/sai', mo:'2 câu × 4 ý, ý sai từ quan niệm sai',
+     t:`<nhiem_vu>
+Soạn 2 câu ĐÚNG/SAI (mỗi câu 4 ý a–d, kiểu Phần II đề tốt nghiệp THPT) từ <ngu_lieu>.
+Yêu cầu:
+- Mỗi câu có 1–3 ý sai; tổng 8 ý có 3–5 ý đúng.
+- Mỗi ý kiểm tra MỘT kiến thức/kĩ năng; trả lời được độc lập (không ý nào dùng kết quả của ý khác).
+- Phân bổ cấp độ trong mỗi câu: ≥ 1 ý Biết, ≥ 1 ý Hiểu, ≥ 1 ý Vận dụng (đọc/xử lí số liệu).
+- Ý sai xây dựng từ: (i) quan niệm sai nêu ở mục "Lưu ý khoa học" của ngữ liệu, hoặc (ii) cách đọc sai bảng/đồ thị (nhầm đơn vị, nhầm cột, nhầm xu hướng, nhầm tương quan với nhân quả). Ghi tên quan niệm sai.
+- Tránh từ tuyệt đối ("luôn", "chỉ", "mọi") trừ khi đúng về khoa học; tránh ý đúng/sai do một chữ bị đánh tráo quá lộ.
+- Giải thích từng ý, dẫn nguyên văn số liệu trong ngữ liệu.
+Bản giáo viên: bảng | Ý | Đ/S | Cấp độ | Mã | Dữ liệu dùng | Giải thích | Quan niệm sai khai thác |.
+</nhiem_vu>
+${NL()}`},
+    {n:'4', k:'p4', k0:1, ten:'Câu hỏi/nhiệm vụ theo biểu hiện năng lực', mo:'mỗi mã một câu, có rubric 3 mức',
+     t:`<nhiem_vu>
+Với MỖI mã biểu hiện sau: ${maTxt}, soạn 1 câu hỏi hoặc nhiệm vụ từ <ngu_lieu> đo ĐÚNG biểu hiện đó.
+Với mỗi mã:
+1. Nhiệm vụ cho học sinh (dạng phù hợp: TH1, TH3 ưu tiên nhiệm vụ mở; TH4 cần xử lí số liệu; TH5 cần sản phẩm trình bày; VD2 cần lập luận đánh giá; VD5 gắn phát triển bền vững).
+2. Lí do gán mã (1–2 câu): hành vi quan sát được nào của học sinh chứng tỏ biểu hiện.
+3. Đáp án/sản phẩm mẫu.
+4. Với câu tự luận: rubric 3 mức Tốt – Đạt – Chưa đạt; mỗi mức mô tả sản phẩm cụ thể, quan sát được (ví dụ "nêu đúng biến độc lập, biến phụ thuộc và ≥ 2 biến cần kiểm soát"), không dùng từ cảm tính.
+5. Nếu nhiệm vụ có thí nghiệm: hoá chất, dụng cụ phổ thông, lưu ý an toàn.
+</nhiem_vu>
+${NL()}`},
+    {n:'5', k:'p5', k0:1, ten:'Câu hỏi kiểu TSA (Tư duy Khoa học/Giải quyết vấn đề)', mo:'1 đoạn thông tin + 5 câu, M1–M3',
+     t:`<boi_canh_ky_thi>
+TSA (ĐH Bách khoa Hà Nội), phần Tư duy Khoa học/Giải quyết vấn đề: 40 câu/60 phút; tích hợp Lí–Hoá–Sinh; không kiểm tra trực diện kiến thức môn học. Thông tin khoa học trình bày theo MỘT trong ba định dạng: biểu diễn dữ liệu (bảng, đồ thị, sơ đồ); tóm tắt nghiên cứu (thiết kế – quy trình – kết quả một hoặc nhiều thí nghiệm); quan điểm xung đột (hai hay nhiều giả thuyết/mô hình khác nhau về cùng hiện tượng). Mức độ: M1 Tái hiện (xác định, tìm kiếm, lựa chọn, ghép nối), M2 Suy luận (so sánh, phân loại, giải thích, áp dụng), M3 Bậc cao (phân tích, đánh giá, lập luận nhiều bước, kiểm tra giả thuyết); tỉ lệ M1:M2:M3 = 4:3:3. Dạng câu: chọn 1 trong 4; Đúng/Sai (nhiều phát biểu); chọn nhiều đáp án đúng; kéo thả; điền đáp án — câu nhiều ý chỉ được điểm khi đúng hết.
+[NẾU CÓ: DÁN TRÍCH ĐOẠN CẨM NANG/CÂU MINH HOẠ CỦA ĐHBK]
+</boi_canh_ky_thi>
+<nhiem_vu>
+1. Viết lại <ngu_lieu> thành đoạn thông tin khoa học 250–400 chữ, có tiêu đề và dòng nguồn, chọn MỘT định dạng ở trên và nêu lí do chọn. Đoạn phải đủ thông tin để giải mọi câu mà không cần kiến thức ngoài chương trình THPT.
+2. Soạn 5 câu (Câu 1 … Câu 5), phân bổ 2 M1 – 2 M2 – 1 M3; dùng ít nhất 3 dạng câu khác nhau (ví dụ: 2 câu chọn 1/4, 1 câu Đúng/Sai 3–4 phát biểu, 1 câu kéo thả hoặc chọn nhiều đáp án, 1 câu điền đáp án). Câu chọn 1/4: A., B., C., D. mỗi phương án một dòng. Câu kéo thả: ghi danh sách mục kéo và vị trí thả.
+3. Mỗi câu ghi: dạng câu, mức M, đáp án, giải thích, và trả lời "Có giải được chỉ từ đoạn thông tin không? (Có/Không – cần kiến thức gì)".
+4. Các câu không lặp ý tưởng; không sao chép câu đã công bố của ĐHBK.
+</nhiem_vu>
+${NL()}`},
+    {n:'6', k:'p6', k0:1, ten:'Câu hỏi kiểu SPT (ĐHSP Hà Nội)', mo:'cụm câu bám cấu trúc đề minh hoạ',
+     t:`<boi_canh_ky_thi>
+Bài thi SPT môn Hoá học (ĐHSP Hà Nội), theo đề minh hoạ 2025 – trường công bố giữ ổn định cấu trúc năm 2026 [giáo viên kiểm tra lại tại khaothi.hnue.edu.vn / tuyensinh.hnue.edu.vn]: 60 phút, 10 điểm, ... câu.
+- Phần I (... điểm): ... câu TN 4 phương án, 0,25 điểm/câu.
+- Phần II (... điểm): .. câu Đúng/Sai, mỗi câu 4 ý; đúng 1/2/3/4 ý được 0,1/0,25/0,5/1 điểm.
+- Phần III (... điểm): .. câu trả lời ngắn, 0,25 điểm/câu, viết trên giấy thi, chỉ ghi kết quả; kết quả có thể là số, công thức, phương trình hoá học hoặc tên gọi.
+- Phần IV (... điểm): .. câu chùm nhiều ý, trình bày quá trình và kết quả suy luận.
+</boi_canh_ky_thi>
+<nhiem_vu>
+Từ <ngu_lieu>, soạn một CỤM câu bám cấu trúc trên, gồm: [ví dụ: 3 câu Phần I, 1 câu Phần II, 2 câu Phần III (1 dạng số, 1 dạng công thức/phương trình/tên gọi), 1 câu Phần IV gồm 3–4 ý a, b, c, d]. Câu hỏi đặt trong bối cảnh ngữ liệu, đòi hỏi đọc hiểu, xử lí thông tin; mức độ phù hợp học sinh lớp 12.
+Phần IV: đáp án và thang điểm chi tiết đến 0,25 điểm; nêu các cách giải khác được chấp nhận.
+Phần III dạng không phải số: ghi các cách viết tương đương được chấp nhận (ví dụ công thức thu gọn/khung).
+</nhiem_vu>
+${NL()}`},
+    {n:'7', k:'p7', k0:1, ten:'Câu hỏi kiểu HSA (ĐHQG Hà Nội)', mo:'1 chùm 3 câu + 2 câu đơn',
+     t:`<boi_canh_ky_thi>
+Bài thi HSA 2026 (QĐ 01/QĐ-ĐTSKT ngày 05/01/2026 – [giáo viên kiểm tra văn bản mới nhất trên hsa.edu.vn]): thi trên máy tính; Phần 3 Khoa học 50 câu/60 phút, thí sinh chọn 3/5 chủ đề. Chủ đề Hoá học có 16–17 câu gồm câu đơn và 1–3 CHÙM, mỗi chùm = 1 ngữ cảnh + 3 câu hỏi. Dạng câu: trắc nghiệm 4 phương án (1 đúng) và điền đáp án (mỗi chủ đề Lí/Hoá/Sinh có tối thiểu 1 câu điền đáp án). Mỗi câu đúng 1 điểm, không có điểm từng phần. Độ khó: cấp độ 1/2/3 = 20%/60%/20%. Phạm vi: khoảng 60% lớp 12, 30% lớp 11, 10% lớp 10.
+</boi_canh_ky_thi>
+<nhiem_vu>
+Từ <ngu_lieu>, soạn 1 CHÙM (ngữ cảnh 150–300 chữ viết lại từ ngữ liệu, có nguồn + 3 câu hỏi) và 2 câu đơn liên quan. Trong 5 câu: 1 câu điền đáp án (đáp số là số, ghi đơn vị và yêu cầu làm tròn), còn lại trắc nghiệm 4 phương án. Phân bổ cấp độ: 1 câu cấp độ 1, 3 câu cấp độ 2, 1 câu cấp độ 3. KHÔNG dùng dạng đúng/sai, kéo thả.
+Mỗi câu ghi: cấp độ, đáp án, giải thích, dữ liệu dùng, thời gian ước tính (mục tiêu trung bình ~70 giây/câu).
+</nhiem_vu>
+${NL()}`},
+    {n:'8', k:'p8', k0:1, ten:'Phiếu học tập 15–20 phút', mo:'phân hoá 3 mức trên cùng dữ liệu',
+     t:`<nhiem_vu>
+Thiết kế 1 phiếu học tập dùng trong [15/20] phút cho học sinh lớp ${lop} từ <ngu_lieu>, theo tiến trình: nêu vấn đề → giả thuyết → xử lí dữ liệu → kết luận → vận dụng.
+Ghi:
+1. Mục tiêu (gắn mã NT/TH/VD).
+2. Nhiệm vụ theo từng bước, kèm thời gian từng bước (tổng không vượt thời lượng).
+3. Phân hoá 3 mức trên CÙNG dữ liệu: Cơ bản (có gợi ý từng bước, câu điền khuyết), Vừa (câu hỏi mở có định hướng), Nâng cao (tự đặt câu hỏi/đề xuất kiểm chứng hoặc đánh giá giới hạn của dữ liệu).
+4. Câu hỏi gợi mở cho giáo viên; 2–3 sai lầm/quan niệm sai dự kiến và cách phản hồi.
+5. Sản phẩm cần nộp; tiêu chí đánh giá dạng bảng kiểm (có/chưa).
+6. Nếu có thí nghiệm: an toàn và phương án thay thế khi không có thiết bị.
+Xuất "PHIẾU HỌC SINH" và "HƯỚNG DẪN GIÁO VIÊN" riêng.
+</nhiem_vu>
+${NL()}`},
+    {n:'9', k:'p9', ten:'Thẩm định độc lập', mo:'chạy ở mô hình khác hoặc phiên chat mới',
+     t:`<vai_tro>Bạn là chuyên gia thẩm định đề Hoá học THPT, độc lập với người soạn. Hãy hoài nghi.</vai_tro>
+<quy_trinh>
+BƯỚC 1 – GIẢI MÙ: Chỉ đọc <bo_cau_hoi_ban_hoc_sinh> và <ngu_lieu>; tự giải từng câu, ghi đáp án của bạn. Chưa xem đáp án của người soạn.
+BƯỚC 2 – ĐỐI CHIẾU: So với <ban_giao_vien>; mọi khác biệt phải được giải thích.
+BƯỚC 3 – KIỂM TRA theo các mục:
+(1) Số liệu không có hoặc sai so với ngữ liệu; "Dữ liệu dùng" không khớp nguyên văn.
+(2) Phép tính, đơn vị, làm tròn; đáp số trả lời ngắn có vừa 4 ô (kể cả "-", ",") không; đáp án có đổi khi làm tròn trung gian không.
+(3) Đáp án không duy nhất/gây tranh cãi; ý Đ/S mơ hồ.
+(4) Vượt CT Hoá học 2018 (lớp, chuyên đề).
+(5) Danh pháp, thuật ngữ, kí hiệu sai so với SGK CT 2018.
+(6) Gán sai thành phần năng lực, mã biểu hiện, cấp độ.
+(7) Chất lượng phương án nhiễu: nhiễu vô lí, nhiễu có thể đúng, manh mối (phương án đúng dài nhất, lặp từ thân câu, "tất cả đều đúng").
+(8) Tính độc lập giữa các ý Đ/S và giữa các câu trong chùm (câu này có lộ đáp án câu kia không).
+(9) Độ dài đọc và thời gian làm so với định dạng kì thi.
+(10) Tính phân hoá: câu nào quá dễ/quá khó so với cấp độ ghi.
+(11) An toàn thí nghiệm; thiên lệch vùng miền, văn hoá, giới.
+(12) Bản quyền: có sao chép nguyên văn câu hỏi đã công bố không.
+</quy_trinh>
+<dau_ra>
+Bảng: | Câu/ý | Mục lỗi (1–12) | Mô tả | Mức độ (Nghiêm trọng/Trung bình/Nhẹ) | Đề xuất sửa cụ thể |
+Kết luận: Dùng được / Dùng sau khi sửa / Loại bỏ cho từng câu.
+</dau_ra>
+<bo_cau_hoi_ban_hoc_sinh>[DÁN]</bo_cau_hoi_ban_hoc_sinh>
+<ban_giao_vien>[DÁN]</ban_giao_vien>
+${NL('[DÁN]')}`},
+    {n:'10', k:'p10', k0:1, ten:'Bảng đặc tả/ma trận cho một bộ câu', mo:'lập trước khi soạn câu hỏi',
+     t:`Từ <ngu_lieu> và yêu cầu cần đạt sau ${x && x.yccd ? '"' + x.yccd + '"' : '[DÁN YÊU CẦU CẦN ĐẠT CỦA CHỦ ĐỀ TRONG CT 2018]'}, lập BẢNG ĐẶC TẢ cho [số] lệnh hỏi theo dạng đề tốt nghiệp THPT:
+| STT | Yêu cầu cần đạt | Thành phần năng lực (NT/TH/VD) + mã | Cấp độ | Dạng (Phần I/II/III) | Nội dung ngữ liệu dùng | Ghi chú |
+Tỉ lệ mục tiêu: Biết/Hiểu/Vận dụng ≈ 40/30/30; NT/TH/VD tham chiếu đề minh hoạ ≈ 47,5/10/42,5 (điều chỉnh tăng TH nếu ngữ liệu là thí nghiệm). Chỉ lập bảng, CHƯA soạn câu hỏi.
+${NL('[DÁN]')}`},
+    {n:'11', k:'p11', k0:1, ten:'Phương án nhiễu từ quan niệm sai', mo:'tính ra nhiễu, ghi lỗi để chẩn đoán',
+     t:`Cho câu hỏi gốc và đáp án đúng: [DÁN]. Dựa trên <ngu_lieu> (đặc biệt mục Lưu ý khoa học):
+1. Liệt kê 5–6 quan niệm sai/lỗi tính toán phổ biến của học sinh THPT liên quan (nhầm đơn vị, nhầm dấu ΔH, nhầm hệ số tỉ lượng, nhầm tương quan–nhân quả, áp dụng sai nguyên lí Le Chatelier...).
+2. Với mỗi lỗi, tính ra phương án sai tương ứng (ghi phép tính).
+3. Chọn 3 nhiễu tốt nhất: hợp lí với học sinh chưa vững, chắc chắn sai với học sinh vững, không trùng nhau, độ dài/định dạng tương đương đáp án đúng.
+4. Ghi lỗi tương ứng với từng nhiễu (để giáo viên chẩn đoán khi phân tích bài làm).
+${NL('[DÁN]')}`},
+    {n:'12', k:'p12', ten:'Chuyển bản giáo viên → bản học sinh, kiểm tra rò rỉ', mo:'xoá đáp án, kiểm tra gợi ý ngầm',
+     t:`Từ <ban_giao_vien>, tạo BẢN HỌC SINH: giữ nguyên đề, xoá mọi đáp án, lời giải, mã năng lực, ghi chú nhiễu; đánh số liên tục; thêm hướng dẫn trả lời theo dạng kì thi (Phần III: "tô/ghi tối đa 4 kí tự, kể cả dấu - và dấu ,"). Sau đó tự kiểm tra: bản học sinh còn chứa từ ngữ, định dạng (in đậm, gạch chân) hay thứ tự nào gợi ý đáp án không? Liệt kê nếu có.
+<ban_giao_vien>[DÁN]</ban_giao_vien>`}
   ];
 }
-const promptList = P => `<div class="prompts">${P.map((p,i) => `<details${i===0?' open':''}><summary><span class="pn">${i+1}</span><span>${esc(p.ten)} <small>· ${esc(p.mo)}</small></span></summary><div class="pbody"><pre>${esc(p.t)}</pre><button class="mini" data-prompt="${p.k}">${icon('copy',16)}<span>Sao chép prompt</span></button></div></details>`).join('')}</div>`;
-const AI_NGUYEN_TAC = `<div class="box warn small"><b>Nguyên tắc khi dùng AI:</b> AI chỉ soạn nháp từ ngữ liệu đã kiểm chứng; <b>không dùng AI để tạo số liệu</b>. Thầy cô đối chiếu từng số liệu, phép tính, đáp án với ngữ liệu (có thể dùng prompt cuối cùng để AI tự rà lỗi), sửa lại rồi mới dùng; ghi nguồn ngữ liệu khi sử dụng. Không nhập thông tin cá nhân của học sinh vào công cụ AI.</div>`;
+/* Tô vàng chỗ [ ] cần điền (trừ phần ngữ liệu đã điền sẵn) */
+const markCho = t => esc(t).split(/(&lt;ngu_lieu&gt;[\s\S]*?&lt;\/ngu_lieu&gt;)/).map((seg, i) => i % 2 ? seg.replace(/\[[^\]\n]*\]/g, m => /^\[DÁN/.test(m) ? '<mark>' + m + '</mark>' : m) : seg.replace(/\[[^\]\n]*\]/g, '<mark>$&</mark>')).join('');
+const promptList = P => `<div class="prompts">${P.map((p,i) => `<details class="${p.k==='k0'?'k0':''}"${i<2?' open':''}><summary><span class="pn">${p.n}</span><span>${esc(p.ten)} <small>· ${esc(p.mo)}</small></span></summary><div class="pbody"><pre>${markCho(p.t)}</pre><div class="btn-row">${p.k0?`<button class="mini" data-prompt="${p.k}" data-k0="1">${icon('copy',16)}<span>Sao chép kèm Khối 0</span></button>`:''}<button class="mini${p.k0?' ghost':''}" data-prompt="${p.k}">${icon('copy',16)}<span>${p.k==='k0'?'Sao chép Khối 0':'Sao chép riêng prompt '+p.n}</span></button></div></div></details>`).join('')}</div>`;
+const PROMPT_CACH_DUNG = `<p class="small muted"><b>Cách dùng:</b> mở phiên chat mới → dán <b>Khối 0</b> (một lần) → dán một prompt nhiệm vụ (1–12) kèm ngữ liệu; hoặc bấm <i>Sao chép kèm Khối 0</i> để sao chép cả hai cùng lúc. Các phần trong ngoặc vuông <mark>[ ]</mark> (tô vàng) là chỗ giáo viên điền hoặc dán tài liệu. Prompt 9 (thẩm định) chạy ở mô hình khác hoặc phiên chat mới.</p>`;
+const AI_NGUYEN_TAC = `<div class="box warn small"><b>Nguyên tắc khi dùng AI:</b> AI chỉ soạn nháp từ ngữ liệu đã kiểm chứng; <b>không dùng AI để tạo số liệu</b>. Thầy cô tự giải lại đáp án, thẩm định chéo bằng Prompt 9 ở phiên chat mới hoặc mô hình khác, sửa lại rồi mới dùng; ghi nguồn ngữ liệu và mức độ dùng AI. Không dán đề chưa thi hoặc dữ liệu học sinh vào công cụ AI công cộng.</div>`;
 function goiYHtml(x, sec){
   const g = GOI_Y_LOAI[loaiMa(x)], ma = maCua(x);
   return `<div class="gv-only ai-goi-y"><h2 id="s6">${sec(6,'Gợi ý sử dụng và phát triển với AI')}</h2>
@@ -1200,11 +1351,11 @@ function goiYHtml(x, sec){
     <h3>Hướng xây dựng câu hỏi theo biểu hiện của ngữ liệu này</h3>
     <div class="kv">${ma.map(m => `<div><span class="tag ma">${esc(m)}</span></div><div>${esc(GOI_Y_MA[m]||moTa(m))}</div>`).join('')}</div>
     <h3>Prompt AI để phát triển ngữ liệu</h3>
-    <p class="small muted">Mỗi prompt đã gắn sẵn toàn bộ nội dung ngữ liệu này. Bấm <i>Sao chép prompt</i>, dán vào công cụ AI (ChatGPT, Gemini, Copilot…), rồi kiểm tra kết quả trước khi dùng.</p>
+    <p class="small muted">Mỗi prompt đã gắn sẵn toàn bộ nội dung ngữ liệu này. Mở phiên chat mới trong công cụ AI (ChatGPT, Gemini, Copilot…), bấm <i>Sao chép kèm Khối 0</i> rồi dán; chỗ tô vàng <mark>[ ]</mark> là phần thầy cô tự điền. Xem <a href="#/huong-dan?mo=shd-8">quy trình 7 bước dùng prompt an toàn</a>.</p>
     ${AI_NGUYEN_TAC}
     ${promptList(promptsFor(x))}</div>`;
 }
-function wirePrompts(root, P){ $$('[data-prompt]', root).forEach(b => b.addEventListener('click', () => { const p = P.find(q => q.k === b.dataset.prompt); if(p) copy(p.t); })); }
+function wirePrompts(root, P){ const k0 = P.find(q => q.k === 'k0'); $$('[data-prompt]', root).forEach(b => b.addEventListener('click', () => { const p = P.find(q => q.k === b.dataset.prompt); if(p) copy(b.dataset.k0 && k0 ? k0.t + '\n\n' + p.t : p.t); })); }
 /* ---------- Các trang phụ ---------- */
 function pageKhung(){
   const max = Math.max(1, ...C.chu_de.flatMap(c => MA_BIEU_HIEN.map(m => ofCd(c.ma).filter(x => maCua(x).includes(m[0])).length)));
@@ -1231,17 +1382,17 @@ function pageHuongDan(){
   const P = promptsFor(null);
   setTimeout(() => wirePrompts($('#main'), P));
   const TOC = ['Dùng thư viện trong 4 bước','Tìm ngữ liệu','Một ngữ liệu gồm những gì?','Sáu loại ngữ liệu','Dùng vào lúc nào trong bài học?','Câu hỏi theo từng biểu hiện','Câu hỏi theo các kì thi','Soạn thêm câu hỏi với AI','Góp ý và đóng góp ngữ liệu'];
-  const SUB = ['4 thao tác chính, đi kèm đường dẫn','Bộ lọc trên trang Tra cứu','6 mục trong mỗi ngữ liệu','Đặc điểm và cách dùng từng loại','Từ mở đầu bài đến kiểm tra, ôn thi','Gợi ý câu hỏi cho TH1–TH5, VD1–VD5','Tốt nghiệp THPT, TSA, HSA, SPT','5 bước dùng prompt, 9 prompt mẫu','Báo lỗi, góp ý, gửi ngữ liệu mới'];
+  const SUB = ['4 thao tác chính, đi kèm đường dẫn','Bộ lọc trên trang Tra cứu','6 mục trong mỗi ngữ liệu','Đặc điểm và cách dùng từng loại','Từ mở đầu bài đến kiểm tra, ôn thi','Gợi ý câu hỏi cho TH1–TH5, VD1–VD5','Cấu trúc đề tốt nghiệp THPT, TSA, HSA, SPT','Quy trình 7 bước, trách nhiệm, lỗi AI thường gặp','Báo lỗi, góp ý, gửi ngữ liệu mới'];
   const sec = (n, body, tit, sub) => '<details class="hs" id="shd-' + n + '"' + (n === 1 ? ' open' : '') + '><summary class="hs-h"><span class="hs-n">' + (typeof n === 'number' ? n : '+') + '</span><span class="hs-t"><b>' + (tit || TOC[n-1]) + '</b><small>' + (sub || SUB[n-1]) + '</small></span></summary><div class="hs-b">' + body + '</div></details>';
   setTimeout(() => { const m = $('#main'); $$('[data-hs]', m).forEach(b => b.addEventListener('click', () => $$('details.hs', m).forEach(d => d.open = b.dataset.hs === '1'))); });
   const tb = (hd, rows, w) => '<div class="ht-wrap"><table class="ht"><thead><tr>' + hd.map((x,i) => '<th' + (w ? ' style="width:' + w[i] + '%"' : '') + '>' + x + '</th>').join('') + '</tr></thead><tbody>' +
     rows.map(r => '<tr>' + r.map((c,i) => '<td data-l="' + hd[i] + '">' + c + '</td>').join('') + '</tr>').join('') + '</tbody></table></div>';
   const fig = (src, cap) => '<figure class="hfig"><img src="' + src + '" alt="' + cap + '" loading="lazy"><figcaption>' + cap + '</figcaption></figure>';
-  const DUNG = ['Soạn đủ ba dạng câu theo đề tốt nghiệp THPT','Cần câu tính toán điền đáp số','Cần câu 4 ý a, b, c, d','Đánh giá đúng một biểu hiện TH, VD','Ôn thi Đánh giá tư duy TSA','Ôn thi SPT (dán cấu trúc đề)','Ôn thi HSA (dán cấu trúc đề)','Tổ chức hoạt động trên lớp','Rà lỗi câu hỏi AI vừa soạn'];
+  const DUNG = ['Dán một lần ở đầu mỗi phiên chat','Soạn chùm câu đủ ba phần theo đề tốt nghiệp THPT','Cần câu tính toán điền đáp số','Cần câu 4 ý a, b, c, d','Đánh giá đúng một biểu hiện NT, TH, VD','Ôn thi Đánh giá tư duy TSA','Ôn thi SPT','Ôn thi HSA','Tổ chức hoạt động trên lớp','Thẩm định câu hỏi AI vừa soạn (phiên chat mới hoặc mô hình khác)','Lập bảng đặc tả trước khi soạn câu','Soạn phương án nhiễu từ quan niệm sai','Tách bản học sinh, kiểm tra rò rỉ đáp án'];
   return `<div class="page hd">${errBox()}${crumbs([['','Trang chủ'],['','Hướng dẫn sử dụng']])}
     <h1>Hướng dẫn sử dụng</h1>
     <p class="lead">Website cung cấp hệ thống ngữ liệu hoá học gắn với các bối cảnh thực tiễn, kèm theo dữ liệu có thật từ các nguồn tin cậy, là nguyên liệu để xây dựng bài tập, câu hỏi đánh giá năng lực môn Hoá học.</p>
-    <nav class="htoc" aria-label="Mục lục hướng dẫn"><b>Mục lục</b><ol>${TOC.map((x,i) => '<li><a href="#shd-' + (i+1) + '">' + x + '</a></li>').join('')}<li><a href="#shd-p">Phụ lục: Bộ 9 prompt mẫu</a></li></ol>
+    <nav class="htoc" aria-label="Mục lục hướng dẫn"><b>Mục lục</b><ol>${TOC.map((x,i) => '<li><a href="#shd-' + (i+1) + '">' + x + '</a></li>').join('')}<li><a href="#shd-p">Phụ lục: Bộ prompt mẫu (Khối 0 và 12 prompt)</a></li></ol>
       <div class="htoc-act">${C.file_huong_dan ? '<a class="btn ghost" href="' + esc(C.file_huong_dan) + '" download>' + icon('print',16) + ' Tải giới thiệu và hướng dẫn (Word)</a>' : ''}<button class="btn ghost" data-hs="1">Mở tất cả</button><button class="btn ghost" data-hs="0">Thu gọn tất cả</button></div></nav>
     <p class="small muted">Bấm vào tên mục để mở hoặc thu gọn.</p>
 
@@ -1260,7 +1411,7 @@ function pageHuongDan(){
       ['<b>3. Định hướng</b>','Lớp, chủ đề, yêu cầu cần đạt, mã biểu hiện, gợi ý tổ chức dạy học.','Chọn thời điểm dùng trong bài học.'],
       ['<b>4. Câu hỏi</b>','Câu hỏi minh hoạ có đáp án, lời giải; gồm cả dạng đúng/sai, trả lời ngắn.','Dùng nguyên hoặc biến đổi; làm thử ngay trên trang.'],
       ['<b>5. Lưu ý khoa học</b>','Những chỗ học sinh hay hiểu sai, giới hạn của số liệu.','Lấy làm ý sai trong câu đúng/sai; nhấn mạnh khi giảng.'],
-      ['<b>6. Gợi ý và AI</b>','Cách dùng theo loại ngữ liệu, hướng ra câu hỏi theo biểu hiện, 9 prompt đã điền sẵn ngữ liệu.','Sao chép prompt để soạn thêm câu hỏi, phiếu học tập.']],[22,42,36]) +
+      ['<b>6. Gợi ý và AI</b>','Cách dùng theo loại ngữ liệu, hướng ra câu hỏi theo biểu hiện, Khối 0 và 12 prompt đã điền sẵn ngữ liệu.','Sao chép prompt để soạn thêm câu hỏi, phiếu học tập.']],[22,42,36]) +
       '<p class="small muted"><i>Bản học sinh</i> tự ẩn nguồn, định hướng, lưu ý khoa học, gợi ý AI và đáp án; <i>bản giáo viên</i> in đầy đủ.</p>')}
 
     ${sec(4, tb(['Loại','Đặc điểm','Có thể dùng để'], Object.entries(GOI_Y_LOAI).map(([k,g]) => ['<a href="#/tra-cuu?loai=' + k + '"><b>' + k + '. ' + esc(LOAI[k]) + '</b></a>', esc(g.mo_ta), '<ul>' + g.dung.map(d => '<li>' + esc(d) + '</li>').join('') + '</ul>']),[24,34,42]))}
@@ -1275,21 +1426,44 @@ function pageHuongDan(){
 
     ${sec(6, tb(['Mã','Biểu hiện','Đầu đề gợi ý cho câu hỏi'], MA_BIEU_HIEN.map(m => ['<a class="tag ma" href="#/tra-cuu?ma=' + m[0] + '">' + m[0] + '</a>', esc(m[1]), esc(GOI_Y_MA[m[0]]||'')]),[10,42,48]))}
 
-    ${sec(7, tb(['Kì thi','Đặc điểm cần bám','Cách dùng ngữ liệu','Prompt'],[
-      ['<b>Tốt nghiệp THPT</b><br><small>Bộ GD&amp;ĐT, từ năm 2025</small>','Trắc nghiệm nhiều lựa chọn (4 phương án); đúng/sai (mỗi câu 4 ý a, b, c, d); trả lời ngắn (điền đáp số).','Từ một ngữ liệu soạn đủ ba dạng câu; câu trả lời ngắn khai thác phép tính trên bảng số liệu; ý sai của câu đúng/sai lấy từ mục Lưu ý khoa học.','1, 2, 3'],
-      ['<b>TSA</b> – Đánh giá tư duy<br><small>ĐH Bách khoa Hà Nội</small>','Mỗi đoạn thông tin khoa học đi kèm 5 câu hỏi; ba mức Tái hiện, Suy luận, Bậc cao; thông tin dạng biểu diễn dữ liệu, tóm tắt nghiên cứu hoặc quan điểm mâu thuẫn.','Số liệu chuẩn, thực tiễn quốc tế → biểu diễn dữ liệu; thực nghiệm → tóm tắt nghiên cứu; vấn đề mở → quan điểm mâu thuẫn.','5'],
-      ['<b>HSA</b> – Đánh giá năng lực<br><small>ĐHQG Hà Nội</small>','Bám cấu trúc đề do ĐHQG Hà Nội công bố cho từng năm thi.','Dán cấu trúc đề chính thức vào chỗ trống của prompt; AI soạn câu hỏi trên nền ngữ liệu.','7'],
-      ['<b>SPT</b> – Đánh giá năng lực<br><small>Trường ĐHSP Hà Nội</small>','Bám cấu trúc đề môn Hoá học do Trường ĐHSP Hà Nội công bố cho từng năm thi.','Dán cấu trúc đề chính thức vào chỗ trống của prompt; AI soạn câu hỏi trên nền ngữ liệu.','6']],[20,32,38,10]) +
-      '<p class="small muted">Trước khi ra đề, thầy cô đối chiếu cấu trúc đề, đề minh hoạ mới nhất do Bộ Giáo dục và Đào tạo, Đại học Bách khoa Hà Nội, Đại học Quốc gia Hà Nội, Trường Đại học Sư phạm Hà Nội công bố.</p>')}
+    ${sec(7, tb(['Kì thi','Cấu trúc phần Hoá học','Văn bản, nguồn','Prompt'],[
+      ['<b>Tốt nghiệp THPT</b><br><small>2025, 2026</small>','50 phút; 28 câu/40 lệnh hỏi. Phần I: 18 câu × 0,25 điểm. Phần II: 4 câu đúng/sai (đúng 1 ý 0,1; 2 ý 0,25; 3 ý 0,5; 4 ý 1 điểm). Phần III: 6 câu trả lời ngắn × 0,25 điểm, tối đa 4 kí tự. Biết/Hiểu/Vận dụng ≈ 40/30/30.','QĐ 764/QĐ-BGDĐT (08/3/2024); CV 1239/BGDĐT-QLCL (24/3/2025)','1, 2, 3'],
+      ['<b>TSA</b> – Đánh giá tư duy<br><small>ĐH Bách khoa Hà Nội</small>','Tư duy Khoa học/Giải quyết vấn đề: 40 câu/60 phút, tích hợp Lí–Hoá–Sinh; 3 định dạng thông tin (biểu diễn dữ liệu, tóm tắt nghiên cứu, quan điểm xung đột); mức M1–M3, tỉ lệ 4:3:3; 5 dạng câu.','ts.hust.edu.vn; câu hỏi minh hoạ 2023','5'],
+      ['<b>HSA</b> – Đánh giá năng lực<br><small>ĐHQG Hà Nội, 2026</small>','Phần 3 Khoa học: 50 câu/60 phút, chọn 3/5 chủ đề. Hoá học 16–17 câu, 1–3 chùm “1 ngữ cảnh + 3 câu”, ≥ 1 câu điền đáp án; độ khó 20/60/20; chỉ trắc nghiệm 4 lựa chọn và điền đáp án.','QĐ 01/QĐ-ĐTSKT (05/01/2026), hsa.edu.vn','7'],
+      ['<b>SPT</b> – Đánh giá năng lực<br><small>Trường ĐHSP Hà Nội</small>','60 phút, 27 câu, 10 điểm: 20 trắc nghiệm – 2 đúng/sai – 4 trả lời ngắn (viết trên giấy, có thể là công thức, tên gọi) – 1 tự luận chùm (5 – 2 – 1 – 2 điểm).','Đề minh hoạ 2025; tuyensinh.hnue.edu.vn – đối chiếu bản PDF chính thức','6']],[18,46,24,12]) +
+      '<p class="small muted">Các thông tin trên đã được đưa sẵn vào Prompt 1–7. Trước khi dùng, thầy cô đối chiếu văn bản chính thức, đề minh hoạ mới nhất của năm thi do Bộ Giáo dục và Đào tạo, Đại học Bách khoa Hà Nội, Đại học Quốc gia Hà Nội, Trường Đại học Sư phạm Hà Nội công bố.</p>')}
 
-    ${sec(8, '<ol class="hol"><li>Mở trang ngữ liệu, xuống mục <i>6. Gợi ý và AI</i>, chọn prompt phù hợp mục đích.</li><li>Bấm <i>Sao chép prompt</i> (nội dung ngữ liệu đã được điền sẵn), dán vào công cụ AI.</li><li>Đối chiếu từng số liệu, phép tính, đơn vị, đáp án với ngữ liệu; kiểm tra danh pháp và phạm vi Chương trình 2018.</li><li>Dùng prompt 9 để AI tự rà lỗi, sau đó thầy cô sửa lại.</li><li>Ghi nguồn ngữ liệu và ghi rõ có dùng AI hỗ trợ khi đưa vào đề, phiếu học tập.</li></ol>' +
-      tb(['STT','Prompt','Dùng khi'], P.map((x,i) => [String(i+1), esc(x.ten), DUNG[i]||'']),[10,50,40]) +
-      '<p class="small muted">Nguyên văn 9 prompt ở <a href="#shd-p">Phụ lục</a> cuối trang.</p>')}
+    ${sec(8, '<h3>Quy trình 7 bước dùng prompt an toàn</h3><ol class="hol">' +
+      '<li><b>Chuẩn bị ngữ liệu.</b> Dán đủ bảng số liệu ở dạng văn bản/bảng (không chỉ dán ảnh), ghi nguồn và năm của số liệu. Mô hình AI đọc ảnh bảng, đồ thị kém chính xác hơn đọc văn bản.</li>' +
+      '<li>Mở phiên chat mới, dán <b>Khối 0</b> (ràng buộc chung) rồi mới dán prompt nhiệm vụ (Prompt 1–12) kèm ngữ liệu.</li>' +
+      '<li><b>Lập bảng đặc tả trước</b> (Prompt 10), duyệt bảng, sau đó mới yêu cầu soạn câu hỏi.</li>' +
+      '<li><b>Tự giải lại</b> toàn bộ đáp án bằng tay hoặc máy tính cầm tay; đếm kí tự đáp số trả lời ngắn (tối đa 4 ô, kể cả dấu "-" và ",").</li>' +
+      '<li><b>Thẩm định chéo</b> (Prompt 9) bằng mô hình khác hoặc phiên chat mới (không để AI tự chấm bài của chính nó). Với đề dùng chính thức, cần thêm ít nhất 1 đồng nghiệp duyệt.</li>' +
+      '<li><b>Thử nghiệm nhỏ</b> với một lớp, xem tỉ lệ chọn từng phương án; phương án nhiễu không ai chọn thì thay. Mức độ AI ghi cho câu hỏi thường khớp yếu với độ khó thực tế khi học sinh làm.</li>' +
+      '<li><b>Ghi mức độ dùng AI</b> trong mục ghi chú của ngữ liệu (như thư viện đang làm) và lưu phiên bản đã thẩm định.</li></ol>' +
+      '<h3>Trách nhiệm, bảo mật, bản quyền</h3><ul class="hol">' +
+      '<li><b>Trách nhiệm cuối cùng thuộc về giáo viên.</b> UNESCO (<i>Guidance for generative AI in education and research</i>, 2023) khuyến nghị tiếp cận lấy con người làm trung tâm, kiểm định sự phù hợp sư phạm, đạo đức và bảo vệ dữ liệu cá nhân. Bộ GD&amp;ĐT đã giới thiệu tài liệu “Hướng dẫn sử dụng trí tuệ nhân tạo trong dạy và học” (Công văn 2250/BGDĐT-GDPT, 12/5/2025); giáo viên đối chiếu văn bản mới nhất của Bộ, Sở về sử dụng AI.</li>' +
+      '<li><b>Bảo mật đề.</b> Không dán đề kiểm tra chưa thi, đề thi chưa công bố hoặc dữ liệu học sinh vào công cụ AI công cộng. Tắt tuỳ chọn cho phép dùng dữ liệu để huấn luyện mô hình nếu công cụ có.</li>' +
+      '<li><b>Bản quyền.</b> Số liệu từ NIST, PubChem, USGS, WHO… dùng được kèm trích dẫn, nhưng điều khoản từng nguồn khác nhau – kiểm tra giấy phép từng nguồn trước khi công bố. Không dùng nguyên văn đề TSA/HSA/SPT làm ví dụ mẫu công khai; luôn yêu cầu AI không sao chép câu hỏi đã công bố.</li></ul>' +
+      '<h3>Lỗi AI thường gặp với đề Hoá học và cách phát hiện</h3>' +
+      tb(['Lỗi','Dấu hiệu','Cách phát hiện nhanh'],[
+        ['<b>Bịa/sai số liệu</b>','Số “tròn đẹp”, không có trong bảng','Đối chiếu cột “Dữ liệu dùng” với ngữ liệu'],
+        ['<b>Sai tính toán, đơn vị</b>','kJ/mol ↔ kJ/g, mL ↔ L, nhầm hệ số','Tự giải lại; bước giải mù của Prompt 9'],
+        ['<b>Đáp số không tô được</b>','Quá 4 kí tự (ví dụ 12375)','Đếm kí tự, kể cả “-” và “,”'],
+        ['<b>Danh pháp không theo SGK 2018</b>','Tên phiên âm cũ, lẫn tên thông thường với tên IUPAC','So với bảng danh pháp SGK'],
+        ['<b>Vượt chương trình</b>','Cơ chế, hằng số, khái niệm bậc đại học','Đối chiếu yêu cầu cần đạt CT 2018'],
+        ['<b>Nhiễu kém</b>','Nhiễu vô lí; phương án đúng dài nhất','Dùng Prompt 11; thử nghiệm trên lớp'],
+        ['<b>Ý đúng/sai phụ thuộc nhau</b>','Ý d dùng kết quả của ý c','Hỏi: “trả lời ý này mà không cần ý kia được không?”'],
+        ['<b>Gán mã năng lực tuỳ tiện</b>','Câu chỉ cần nhớ kiến thức nhưng gán TH4','Yêu cầu AI nêu lí do gán mã; người duyệt kiểm tra'],
+        ['<b>Thuật ngữ lệch, phương án dài ngắn khác nhau</b>','Thường gặp ở câu GPT soạn (Frontiers in Education, 2026)','Đọc lại toàn bộ phương án theo cột']],[26,36,38]) +
+      '<h3>Chọn prompt theo mục đích</h3>' +
+      tb(['STT','Prompt','Dùng khi'], P.map((x,i) => [x.n, esc(x.ten), DUNG[i]||'']),[10,50,40]) +
+      '<p class="small muted">Nguyên văn Khối 0 và 12 prompt ở <a href="#shd-p">Phụ lục</a> cuối trang.</p>')}
 
-    ${sec(9, '<ul class="hol"><li>Trang <a href="#/phan-hoi">Phản hồi &amp; đóng góp</a>: báo lỗi số liệu, nguồn, câu hỏi; góp ý giao diện; gửi ngữ liệu mới. Biểu mẫu không thu thập email.</li><li>Ngữ liệu đóng góp đi qua 4 bước: Gửi → Nhóm tiếp nhận (đối chiếu nguồn, biên tập) → Chuyên gia kiểm duyệt → Công khai, ghi tên người đóng góp.</li><li>Một ngữ liệu đóng góp cần có: bối cảnh gắn với chủ đề Hoá học 10, 11, 12; số liệu thật có đơn vị, năm, điều kiện đo; nguồn gốc với đường dẫn trực tiếp; giấy phép (nếu biết) và gợi ý 1–2 câu hỏi.</li></ul>' +
-      '<div class="btn-row">' + (C.link_gop_y ? '<a class="btn" href="' + esc(C.link_gop_y) + '" target="_blank" rel="noopener">Gửi góp ý</a>' : '') + '<a class="btn ghost" href="#/phan-hoi">Đóng góp ngữ liệu</a></div>')}
+    ${sec(9, '<ul class="hol"><li>Trang <a href="#/phan-hoi">Phản hồi và chia sẻ dữ liệu</a>: báo lỗi số liệu, nguồn, đáp án, câu hỏi; góp ý giao diện, cách tìm kiếm, cách in; hỏi cách dùng ngữ liệu. Khi báo lỗi, ghi kèm số thứ tự và tên ngữ liệu.</li><li>Đóng góp ngữ liệu qua biểu mẫu riêng. Ngữ liệu cần có: bối cảnh và số liệu kèm nguồn kiểm chứng được (tên tài liệu, đường dẫn, năm); chủ đề và lớp áp dụng; câu hỏi đã dùng với học sinh, nếu có.</li><li>Nhóm biên tập, xử lí theo mẫu của thư viện → chuyên gia kiểm tra số liệu, nguồn, mức độ phù hợp với chương trình → công khai, ghi tên người đóng góp. Nếu chưa đạt, nhóm liên hệ để cùng chỉnh sửa.</li></ul>' +
+      '<div class="btn-row">' + (C.link_gop_y ? '<a class="btn" href="' + esc(C.link_gop_y) + '" target="_blank" rel="noopener">Gửi góp ý, báo lỗi</a>' : '') + (C.link_dong_gop ? '<a class="btn ghost" href="' + esc(C.link_dong_gop) + '" target="_blank" rel="noopener">Đóng góp ngữ liệu</a>' : '<a class="btn ghost" href="#/phan-hoi">Đóng góp ngữ liệu</a>') + '</div>')}
 
-    ${sec('p', promptList(P), 'Phụ lục. Bộ 9 prompt mẫu', 'Trên từng trang ngữ liệu, prompt đã được điền sẵn nội dung')}
+    ${sec('p', PROMPT_CACH_DUNG + promptList(P), 'Phụ lục. Bộ prompt mẫu: Khối 0 và 12 prompt', 'Trên từng trang ngữ liệu, prompt đã được điền sẵn nội dung')}
 
     <div class="hd-box team"><div><b>Nhóm thực hiện</b>
       <div class="kv"><div>Đơn vị</div><div>${txt(C.don_vi)}</div><div>Sinh viên</div><div>${txt(C.nhom)}</div></div></div>
@@ -1297,31 +1471,31 @@ function pageHuongDan(){
     ${pagePager('huong-dan')}</div>`;
 }
 function pagePhanHoi(){
-  const gf = C.link_gop_y, nut = (t, cls='') => gf ? `<a class="btn ${cls}" href="${esc(gf)}" target="_blank" rel="noopener">${t}</a>` : '';
-  return `<div class="page">${errBox()}${crumbs([['','Trang chủ'],['','Phản hồi & đóng góp']])}
-    <h1>Phản hồi & đóng góp</h1>
-    <p class="lead">Thư viện được xây dựng cùng người dùng. Thầy cô, sinh viên có thể góp ý, trao đổi và đóng góp ngữ liệu mới; mọi ngữ liệu đóng góp đều được kiểm duyệt trước khi công khai.</p>
+  const nut = (url, t, cls='') => url ? `<a class="btn ${cls}" href="${esc(url)}" target="_blank" rel="noopener">${t}</a>` : '';
+  return `<div class="page">${errBox()}${crumbs([['','Trang chủ'],['','Phản hồi và chia sẻ dữ liệu']])}
+    <h1>Phản hồi và chia sẻ dữ liệu</h1>
+    <p class="lead">Mỗi ngữ liệu phải có số liệu đúng, nguồn rõ ràng và phù hợp sử dụng trong dạy học ở lớp học thực. Thư viện được làm vì cộng đồng và lớn lên nhờ cộng đồng: xin thầy cô và các bạn sinh viên cùng phát hiện lỗi và đóng góp ngữ liệu mới.</p>
     <div class="ph-grid">
-      <div class="ph-card"><span class="ph-ic">${icon('chat',22)}</span><b>Góp ý, trao đổi</b>
-        <p>Báo lỗi số liệu, nguồn, câu hỏi; góp ý giao diện; đặt câu hỏi cho nhóm. Nhóm đọc mọi phản hồi, trả lời và cập nhật thư viện.</p>${nut('Gửi phản hồi')}</div>
-      <div class="ph-card"><span class="ph-ic">${icon('book',22)}</span><b>Đóng góp ngữ liệu mở</b>
-        <p>Gửi bối cảnh có số liệu thật mà thầy cô đã dùng trong dạy học. Sau khi được chuyên gia kiểm duyệt, ngữ liệu được công khai và <b>ghi tên người đóng góp</b>.</p>${nut('Gửi ngữ liệu','ghost')}</div>
+      <div class="ph-card" id="gop-y"><span class="ph-ic">${icon('chat',22)}</span><b>Góp ý, báo lỗi</b>
+        <p>Thầy cô có thể gửi phản hồi cho nhóm xây dựng về các ngữ liệu trên web, gồm các vấn đề:</p>
+        <ul class="need">
+          <li>số liệu, nguồn hoặc đáp án chưa chính xác;</li>
+          <li>câu hỏi chưa rõ, chưa phù hợp với chương trình hoặc với học sinh;</li>
+          <li>góp ý về giao diện, cách tìm kiếm, cách in;</li>
+          <li>câu hỏi về cách dùng ngữ liệu trong dạy học và kiểm tra.</li>
+        </ul>
+        <p>Khi báo lỗi, thầy cô ghi kèm số thứ tự và tên ngữ liệu để nhóm tìm và sửa nhanh hơn. Nhóm trân trọng mọi phản hồi mang tính xây dựng.</p>
+        ${nut(C.link_gop_y, 'Link gửi đóng góp')}</div>
+      <div class="ph-card" id="dong-gop"><span class="ph-ic">${icon('book',22)}</span><b>Đóng góp ngữ liệu</b>
+        <p>Nếu thầy cô đã dùng/sưu tầm được những bối cảnh có số liệu thật, tin cậy, khoa học, xin chia sẻ để đồng nghiệp cùng dùng. Ngữ liệu đóng góp cần có:</p>
+        <ul class="need">
+          <li>bối cảnh và số liệu kèm nguồn kiểm chứng được (tên tài liệu, đường dẫn, năm);</li>
+          <li>chủ đề và lớp áp dụng;</li>
+          <li>câu hỏi đã dùng với học sinh, nếu có.</li>
+        </ul>
+        <p>Nhóm biên tập, xử lí theo mẫu của thư viện. Sau đó, chuyên gia kiểm tra số liệu, nguồn và mức độ phù hợp với chương trình. Ngữ liệu đạt yêu cầu được công khai, ghi tên người đóng góp. Nếu chưa đạt, nhóm sẽ liên hệ để cùng chỉnh sửa.</p>
+        ${C.link_dong_gop ? nut(C.link_dong_gop, 'Link đóng góp ngữ liệu', 'ghost') : '<p class="small muted">Link đóng góp ngữ liệu đang được cập nhật.</p>'}</div>
     </div>
-    <h2>Ngữ liệu đóng góp được xử lí thế nào?</h2>
-    <ol class="flow">
-      <li><b>Gửi ngữ liệu</b><span>Qua biểu mẫu, chọn mục <i>Đề xuất ngữ liệu mới</i>.</span></li>
-      <li><b>Nhóm tiếp nhận</b><span>Mở từng nguồn, đối chiếu số liệu, biên tập theo cấu trúc 6 mục.</span></li>
-      <li><b>Chuyên gia kiểm duyệt</b><span>Chuyên gia Hoá học và Lí luận – Phương pháp dạy học Hoá học góp ý.</span></li>
-      <li><b>Công khai</b><span>Đưa lên thư viện, ghi tên người đóng góp và người thẩm định.</span></li>
-    </ol>
-    <h2>Một ngữ liệu đóng góp cần có</h2>
-    <ul class="need">
-      <li><b>Bối cảnh</b> gắn với một chủ đề Hoá học 10, 11, 12.</li>
-      <li><b>Số liệu thật</b>, ghi rõ đơn vị, năm, điều kiện đo.</li>
-      <li><b>Nguồn gốc</b>: tên tài liệu và đường dẫn trực tiếp (bài báo có DOI, văn bản pháp luật từ cổng thông tin chính thức); không dùng nguồn trích dẫn lại.</li>
-      <li><b>Giấy phép</b> của nguồn (nếu biết) và gợi ý 1–2 câu hỏi.</li>
-    </ul>
-    <div class="box note small">Phản hồi và ngữ liệu gửi qua biểu mẫu không công khai ngay; biểu mẫu không thu thập email. Nếu muốn được ghi tên, thầy cô ghi họ tên, đơn vị trong nội dung gửi.</div>
     ${pagePager('phan-hoi')}</div>`;
 }
 function pageNguon(){
