@@ -5,7 +5,7 @@ NL.add([
   "lop": "11",
   "tieu_de": "Chọn chất chỉ thị cho phép chuẩn độ acid – base",
   "yccd": "Trình bày được nguyên tắc chuẩn độ acid – base; lựa chọn được chất chỉ thị phù hợp; thực hiện được thí nghiệm chuẩn độ.",
-  "boi_canh": "Trong phép chuẩn độ acid – base, người làm thí nghiệm nhỏ từ từ dung dịch chuẩn từ burette vào dung dịch cần xác định nồng độ. Điểm tương đương là lúc lượng acid và base phản ứng vừa đủ. Mắt người không thấy được điểm này, nên cần dùng chất chỉ thị acid – base.\n\nChất chỉ thị là acid hoặc base hữu cơ yếu, có màu ở dạng acid khác màu ở dạng base. Mỗi chất đổi màu trong một khoảng pH nhất định. Bảng dưới tổng hợp khoảng đổi màu của bốn chất chỉ thị phổ biến theo bảng tra cứu của LibreTexts Chemistry.\n\nNguyên tắc chọn: khoảng đổi màu của chất chỉ thị phải nằm trong bước nhảy pH quanh điểm tương đương. Chuẩn độ acid mạnh bằng base mạnh (chẳng hạn chuẩn độ HCl bằng NaOH) có bước nhảy chuẩn độ rất rộng: với dung dịch NaOH 0,1 M, pH tăng từ 4,3 lên 9,7 khi lượng NaOH thêm vào tăng từ 99,9% đến 100,1% lượng cần dùng, do đó dùng được nhiều loại chất chỉ thị. Chuẩn độ acid yếu bằng base mạnh (CH₃COOH bằng NaOH) có điểm tương đương ở pH khoảng 8,7 (tính cho dung dịch 0,1 M, Ka = 1,75 × 10⁻⁵), bước nhảy hẹp hơn và nằm ở vùng base.\n\nMô phỏng “Acid-Base Solutions” của PhET giúp học sinh quan sát pH của acid mạnh, acid yếu ở cấp độ phân tử.",
+  "boi_canh": "Trong phép chuẩn độ acid – base, người làm thí nghiệm nhỏ từ từ dung dịch chuẩn từ burette vào dung dịch cần xác định nồng độ. Điểm tương đương là lúc lượng acid và base phản ứng vừa đủ. Mắt người không thấy được điểm này, nên cần dùng chất chỉ thị acid – base.\n\nChất chỉ thị là acid hoặc base hữu cơ yếu, có màu ở dạng acid khác màu ở dạng base. Mỗi chất đổi màu trong một khoảng pH nhất định. Bảng dưới tổng hợp khoảng đổi màu của bốn chất chỉ thị phổ biến theo bảng tra cứu của LibreTexts Chemistry.\n\nNguyên tắc chọn: khoảng đổi màu của chất chỉ thị phải nằm trong bước nhảy chuẩn độ. Chuẩn độ acid mạnh bằng base mạnh (chẳng hạn chuẩn độ HCl bằng NaOH) có bước nhảy chuẩn độ rất rộng: với dung dịch NaOH 0,1 M, pH tăng từ 4,3 lên 9,7 khi lượng NaOH thêm vào tăng từ 99,9% đến 100,1% lượng cần dùng, do đó dùng được nhiều loại chất chỉ thị. Chuẩn độ acid yếu bằng base mạnh (CH₃COOH bằng NaOH) có điểm tương đương ở pH khoảng 8,7 (tính cho dung dịch 0,1 M, Ka = 1,75 × 10⁻⁵), bước nhảy hẹp hơn và nằm ở vùng base.\n\nMô phỏng “Acid-Base Solutions” của PhET giúp học sinh quan sát pH của acid mạnh, acid yếu ở cấp độ phân tử.",
   "bang_so_lieu": {
    "tieu_de": "Khoảng pH đổi màu của một số chất chỉ thị",
    "cot": [
@@ -107,7 +107,7 @@ NL.add([
   "lop": "11",
   "tieu_de": "Xác định hàm lượng acetic acid trong giấm ăn bằng phép chuẩn độ",
   "yccd": "Thực hiện được thí nghiệm chuẩn độ acid – base; tính được nồng độ dung dịch từ kết quả chuẩn độ; đánh giá được sai số.",
-  "boi_canh": "Nhãn chai giấm ăn thường ghi “độ chua 4–5%”, nghĩa là khoảng 4–5 g acetic acid trong 100 mL giấm. Bằng phép chuẩn độ với dung dịch NaOH, học sinh có thể tự kiểm tra con số này.\n\nQuy trình gợi ý: dùng pipette lấy 10,00 mL giấm, pha loãng thành 100,0 mL bằng nước cất trong bình định mức. Lấy 10,00 mL dung dịch đã pha loãng cho vào bình tam giác, thêm 2 giọt phenolphthalein. Chuẩn độ bằng dung dịch NaOH 0,100 M đến khi xuất hiện màu hồng nhạt bền trong khoảng 30 giây. Lặp lại ít nhất 3 lần, lấy giá trị trung bình.\n\nPhương trình phản ứng: CH₃COOH + NaOH → CH₃COONa + H₂O. Từ thể tích NaOH tiêu tốn, tính được số mol acetic acid và suy ra nồng độ trong giấm ban đầu.\n\nCác nhóm học sinh có thể mang nhiều loại giấm khác nhau (giấm gạo, giấm táo, giấm công nghiệp) để so sánh với nhãn. Đây là một hoạt động kiểm nghiệm thực phẩm đơn giản.",
+  "boi_canh": "Nhãn chai giấm ăn thường ghi “độ chua 4–5%”, nghĩa là khoảng 4–5 g acetic acid trong 100 g dung dịch giấm, xấp xỉ 4–5 g acetic acid trong 100 mL giấm. Bằng phép chuẩn độ với dung dịch NaOH, học sinh có thể tự kiểm tra con số này.\n\nQuy trình gợi ý: dùng pipette lấy 10,00 mL giấm, pha loãng thành 100,0 mL bằng nước cất trong bình định mức. Lấy 10,00 mL dung dịch đã pha loãng cho vào bình tam giác, thêm 2 giọt phenolphthalein. Chuẩn độ bằng dung dịch NaOH 0,100 M đến khi xuất hiện màu hồng nhạt bền trong khoảng 30 giây. Lặp lại ít nhất 3 lần, lấy giá trị trung bình.\n\nPhương trình phản ứng: CH₃COOH + NaOH → CH₃COONa + H₂O. Từ thể tích NaOH tiêu tốn, tính được số mol acetic acid và suy ra nồng độ trong giấm ban đầu.\n\nCác nhóm học sinh có thể mang nhiều loại giấm khác nhau (giấm gạo, giấm táo, giấm công nghiệp) để so sánh với nhãn. Đây là một hoạt động kiểm nghiệm thực phẩm đơn giản.",
   "bang_so_lieu": {
    "tieu_de": "Bảng ghi kết quả chuẩn độ (học sinh tự điền)",
    "cot": [
@@ -185,7 +185,7 @@ NL.add([
     ],
     "dang": "Tự luận",
     "noi_dung": "Vì sao cần pha loãng giấm trước khi chuẩn độ và vì sao phải lặp lại ít nhất 3 lần?",
-    "dap_an": "Pha loãng để thể tích NaOH tiêu tốn nằm trong khoảng đo của burette (tránh phải nạp lại nhiều lần) và màu giấm nhạt đi, dễ quan sát điểm cuối. Lặp lại để giảm sai số ngẫu nhiên, loại kết quả bất thường."
+    "dap_an": "Pha loãng để thể tích NaOH tiêu tốn nằm trong khoảng đo của burette (tránh phải nạp lại nhiều lần) và màu giấm nhạt đi (nếu giấm có màu), dễ quan sát điểm cuối. Lặp lại để giảm sai số ngẫu nhiên, loại kết quả bất thường."
    },
    {
     "ma": [
@@ -193,8 +193,8 @@ NL.add([
      "VD2"
     ],
     "dang": "Đúng/sai",
-    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Có thể dùng methyl da cam thay phenolphthalein mà kết quả không đổi.\nb) Nếu nhỏ NaOH quá điểm cuối (màu hồng đậm), nồng độ acid tính được sẽ lớn hơn thực tế.\nc) Phép chuẩn độ này xác định tổng lượng acid trong giấm, không chỉ riêng acetic acid.\nd) Tráng burette bằng nước cất rồi nạp ngay NaOH sẽ làm kết quả chính xác hơn.",
-    "dap_an": "a) Sai – acid yếu, điểm tương đương ở vùng base, phải dùng phenolphthalein.\nb) Đúng.\nc) Đúng – mọi acid trong giấm đều phản ứng với NaOH.\nd) Sai – cần tráng burette bằng chính dung dịch NaOH để không làm loãng dung dịch chuẩn."
+    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Có thể dùng methyl da cam thay phenolphthalein mà kết quả không đổi.\nb) Nếu nhỏ NaOH quá điểm cuối (màu hồng đậm), nồng độ acid tính được sẽ lớn hơn thực tế.\nc) Phép chuẩn độ này xác định tổng lượng acid trong giấm, không chỉ riêng acetic acid.",
+    "dap_an": "a) Sai – acid yếu, điểm tương đương ở vùng base, phải dùng phenolphthalein.\nb) Đúng.\nc) Đúng – mọi acid trong giấm đều phản ứng với NaOH."
    }
   ],
   "luu_y_khoa_hoc": [
@@ -214,7 +214,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Xác định oxygen hoà tan trong nước bằng phương pháp Winkler",
   "yccd": "Trình bày được nguyên tắc chuẩn độ oxi hoá – khử; vận dụng tính toán theo phương trình hoá học trong phép phân tích.",
-  "boi_canh": "Cá và các sinh vật thuỷ sinh cần oxygen hoà tan trong nước (DO) để thở. Lượng oxygen hoà tan phụ thuộc nhiệt độ: nước càng ấm, càng hoà tan ít oxygen. Tính theo phương trình Benson – Krause mà Cục Khảo sát Địa chất Hoa Kỳ (USGS) sử dụng, ở 0 °C nước ngọt bão hoà chứa khoảng 14,6 mg O₂/L, ở 30 °C chỉ còn khoảng 7,6 mg/L.\n\nTừ năm 1888, nhà hoá học Hungary Lajos Winkler đã đưa ra phương pháp xác định DO bằng chuẩn độ oxi hoá – khử, đến nay vẫn là phương pháp chuẩn để kiểm tra các máy đo điện tử. Nguyên tắc: oxygen trong mẫu nước oxi hoá Mn(II) thành Mn(III/IV) trong môi trường base. Khi acid hoá, sản phẩm này oxi hoá ion I⁻ thành I₂. Lượng I₂ sinh ra được chuẩn độ bằng dung dịch sodium thiosulfate với chỉ thị hồ tinh bột.\n\nTính tổng hợp cả chuỗi phản ứng: 1 mol O₂ tương ứng 2 mol I₂, và 4 mol S₂O₃²⁻ (2S₂O₃²⁻ + I₂ → S₄O₆²⁻ + 2I⁻).\n\nVào mùa hè, nước ao hồ ấm lên, DO giảm, kết hợp với nhiều chất hữu cơ phân huỷ có thể khiến cá chết hàng loạt.",
+  "boi_canh": "Cá và các sinh vật thuỷ sinh cần oxygen hoà tan trong nước (Dissolved oxygen – DO) để hô hấp. Lượng oxygen hoà tan trong nước (DO) được tính bằng số miligam O₂ trong một lít nước (mg O₂/L). Chỉ số DO phụ thuộc nhiệt độ: nước càng ấm, càng hoà tan ít oxygen và hoạt động của các vi sinh vật phân huỷ chất hữu cơ cần tiêu thụ oxygen mạnh lên. Tính theo phương trình Benson – Krause mà Cục Khảo sát Địa chất Hoa Kỳ (USGS) sử dụng, ở 0 °C nước ngọt bão hoà chứa khoảng 14,6 mg O₂/L, ở 30 °C chỉ còn khoảng 7,6 mg/L.\n\nTừ năm 1888, nhà hoá học Hungary Lajos Winkler đã đưa ra phương pháp xác định DO bằng chuẩn độ oxi hoá – khử, đến nay vẫn là phương pháp chuẩn để kiểm tra các thiết bị đo DO. Nguyên tắc: oxygen trong mẫu nước oxi hoá Mn(II) thành MnO₂ trong môi trường base. Khi acid hoá, sản phẩm này oxi hoá ion I⁻ thành I₂. Lượng I₂ sinh ra được chuẩn độ bằng dung dịch sodium thiosulfate với chỉ thị hồ tinh bột (2S₂O₃²⁻ + I₂ → S₄O₆²⁻ + 2I⁻).\n\nTính tổng hợp cả chuỗi phản ứng: 1 mol O₂ tương ứng 2 mol I₂, và 4 mol S₂O₃²⁻ (O₂ + 4H⁺ + 4S₂O₃²⁻ → 2S₄O₆²⁻ + 2H₂O).\n\nVào mùa hè, nước ao hồ ấm lên, làm giảm khả năng hoà tan của oxygen trong nước, đồng thời hoạt động của các vi sinh vật phân huỷ chất hữu cơ cần tiêu thụ oxygen mạnh lên, từ đó làm giảm chỉ số DO của nước, có thể khiến cá chết hàng loạt.",
   "bang_so_lieu": {
    "tieu_de": "Độ hoà tan của oxygen trong nước ngọt (áp suất 1 atm)",
    "cot": [
@@ -241,7 +241,7 @@ NL.add([
    ],
    "ghi_chu": "Tính theo phương trình (7) Benson – Krause trong Bản ghi nhớ kĩ thuật 2011.03 của USGS (14,62; 11,29; 9,09; 7,56 mg/L), làm tròn đến 0,1; có thể tra lại bằng công cụ DOTABLES của USGS."
   },
-  "hinh_goi_y": "Ảnh bình BOD và quá trình cố định oxygen (kết tủa nâu MnO(OH)₂), ảnh tự chụp hoặc lấy ảnh CC.",
+  "hinh_goi_y": "Ảnh bình BOD và quá trình cố định oxygen (kết tủa nâu đen MnO₂), ảnh tự chụp hoặc lấy ảnh CC.",
   "nguon": [
    {
     "trich_dan": "U.S. Geological Survey, Office of Water Quality. (2011). Technical Memorandum 2011.03: Change to solubility equations for oxygen in water (phương trình 7 – Benson và Krause). Truy cập 06/11/2026.",
@@ -289,7 +289,7 @@ NL.add([
     ],
     "dang": "Tự luận",
     "noi_dung": "Từ bảng số liệu, nêu mối liên hệ giữa nhiệt độ và độ hoà tan của oxygen. Dùng mối liên hệ này giải thích hiện tượng cá chết ở ao hồ vào những ngày nắng nóng.",
-    "dap_an": "Nhiệt độ càng cao, oxygen hoà tan càng ít. Ngày nắng nóng, nước ao ấm, DO giảm; đồng thời vi sinh vật phân huỷ chất hữu cơ mạnh hơn, tiêu thụ thêm oxygen, khiến cá thiếu oxygen."
+    "dap_an": "Nhiệt độ càng cao, chỉ số DO của nước càng thấp, do khả năng hoà tan của oxygen vào nước giảm, đồng thời vi sinh vật phân huỷ chất hữu cơ mạnh hơn, tiêu thụ thêm oxygen, khiến cá thiếu oxygen."
    },
    {
     "ma": [
@@ -304,7 +304,7 @@ NL.add([
   "luu_y_khoa_hoc": [
    "Mẫu phải được cố định oxygen ngay tại hiện trường, tránh bọt khí lọt vào bình.",
    "Độ hoà tan oxygen còn phụ thuộc áp suất và độ mặn; bảng áp dụng cho nước ngọt ở 1 atm.",
-   "Chuỗi phản ứng của Mn trong phương pháp Winkler khá phức tạp; ở phổ thông chỉ cần nắm tỉ lệ tổng O₂ : S₂O₃²⁻ = 1 : 4."
+   "Chuỗi phản ứng của Mn(II) trong phương pháp Winkler khá phức tạp; ở phổ thông chỉ cần nắm tỉ lệ tổng O₂ : S₂O₃²⁻ = 1 : 4."
   ],
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
@@ -455,7 +455,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Xác định vitamin C trong nước cam bằng phép chuẩn độ iodine",
   "yccd": "Vận dụng phép chuẩn độ oxi hoá – khử để xác định hàm lượng chất; liên hệ nghề nghiệp kiểm nghiệm.",
-  "boi_canh": "Vitamin C (ascorbic acid, C₆H₈O₆) là chất chống oxi hoá cần thiết cho cơ thể. Theo cơ sở dữ liệu FoodData Central của Bộ Nông nghiệp Hoa Kỳ (USDA), 100 g cam tươi chứa khoảng 53,2 mg vitamin C. Vitamin C dễ bị oxi hoá bởi không khí, ánh sáng và nhiệt, nên nước cam để lâu hoặc đun nóng sẽ mất bớt vitamin.\n\nNgười kiểm nghiệm có thể xác định vitamin C bằng phép chuẩn độ iodine: C₆H₈O₆ + I₂ → C₆H₆O₆ + 2HI. Dung dịch iodine được nhỏ từ burette vào mẫu nước cam có hồ tinh bột. Khi vitamin C đã phản ứng hết, giọt I₂ dư làm dung dịch chuyển sang màu xanh đen.\n\nỞ các viện kiểm nghiệm an toàn vệ sinh thực phẩm, trung tâm kiểm nghiệm thuốc, phòng QC của nhà máy nước giải khát, kiểm nghiệm viên thực hiện hằng ngày những phép phân tích như vậy để kiểm tra nhãn sản phẩm có trung thực hay không.\n\nĐây là nghề phù hợp với người cẩn thận, thích làm thí nghiệm và có kiến thức hoá phân tích vững.",
+  "boi_canh": "Vitamin C (ascorbic acid, C₆H₈O₆) là chất chống oxi hoá cần thiết cho cơ thể. Theo cơ sở dữ liệu FoodData Central của Bộ Nông nghiệp Hoa Kỳ (USDA), 100 g cam tươi chứa khoảng 53,2 mg vitamin C. Vitamin C dễ bị oxi hoá bởi không khí, ánh sáng và nhiệt, nên nước cam để lâu hoặc đun nóng sẽ mất bớt vitamin.\n\nNgười kiểm nghiệm có thể xác định vitamin C bằng phép chuẩn độ iodine: C₆H₈O₆ + I₂ → C₆H₆O₆ + 2HI. Dung dịch iodine được nhỏ từ burette vào mẫu nước cam có hồ tinh bột. Khi vitamin C đã phản ứng hết, giọt I₂ dư làm dung dịch chuyển sang màu xanh đen.\n\nỞ các viện kiểm nghiệm an toàn vệ sinh thực phẩm, trung tâm kiểm nghiệm thuốc, phòng QC của nhà máy nước giải khát, kiểm nghiệm viên thực hiện hằng ngày những phép phân tích như vậy để kiểm tra nhãn sản phẩm có trung thực hay không, các chỉ tiêu có phù hợp với tiêu chuẩn quốc gia hay không. Đối với phụ gia thực phẩm ascorbic acid, cần phải tuân theo tiêu chuẩn quốc gia TCVN 11168:2015.\n\nĐây là nghề phù hợp với người cẩn thận, thích làm thí nghiệm và có kiến thức hoá phân tích vững.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Ảnh nhãn dinh dưỡng của một hộp nước cam có ghi hàm lượng vitamin C (ảnh tự chụp).",
   "nguon": [
@@ -464,6 +464,12 @@ NL.add([
     "url": "https://fdc.nal.usda.gov/food-details/169097/nutrients",
     "loai": "CSDL",
     "giay_phep": "Phạm vi công cộng (CC0)"
+   },
+   {
+    "trich_dan": "Tiêu chuẩn quốc gia TCVN 11168:2015 Phụ gia thực phẩm – Axit ascorbic.",
+    "url": "",
+    "loai": "tiêu chuẩn quốc gia",
+    "giay_phep": "Chưa rõ – chỉ trích, tự viết lại"
    }
   ],
   "hinh_thuc": "Biên soạn lại",
@@ -501,7 +507,7 @@ NL.add([
      "VD4"
     ],
     "dang": "Đúng/sai",
-    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Trong phản ứng với I₂, vitamin C đóng vai trò chất khử.\nb) Điểm cuối chuẩn độ là khi dung dịch chuyển xanh đen bền.\nc) Nước cam vắt để qua đêm trong cốc hở có hàm lượng vitamin C cao hơn khi mới vắt.\nd) Kiểm nghiệm viên cần kiến thức hoá phân tích.",
+    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Trong phản ứng với I₂, vitamin C đóng vai trò chất khử.\nb) Điểm cuối chuẩn độ là khi dung dịch chuyển xanh đen bền.\nc) Nước cam vắt để qua đêm trong cốc hở có hàm lượng vitamin C cao hơn khi mới vắt.\nd) Kiểm nghiệm viên cần có kiến thức hoá phân tích.",
     "dap_an": "a) Đúng.\nb) Đúng.\nc) Sai – vitamin C bị oxi hoá dần bởi không khí.\nd) Đúng."
    }
   ],

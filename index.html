@@ -180,7 +180,7 @@ a.tag:hover{border-color:var(--accent);color:var(--accent-ink);transform:transla
 
 /* ---------- Trang chủ ---------- */
 .hero{position:relative;overflow:hidden;border-radius:24px;padding:40px 38px 30px;background:var(--hero-1);border:1px solid var(--line);margin-bottom:28px}
-.hero-art{position:absolute;right:24px;top:190px;width:280px;height:121px;opacity:.38;pointer-events:none;color:var(--accent);animation:floaty 9s ease-in-out infinite}
+.hero-art{position:absolute;right:24px;top:190px;width:280px;height:121px;opacity:.26;pointer-events:none;color:var(--accent);animation:floaty 9s ease-in-out infinite}
 .hero-art2{position:absolute;right:120px;bottom:-50px;width:150px;height:150px;opacity:.18;pointer-events:none;color:var(--accent);animation:floaty 7s ease-in-out infinite}
 .hero-inner{position:relative;display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center}
 .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--accent-ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:4px 13px;margin-bottom:16px}
@@ -193,6 +193,9 @@ p,li,td,.lead,.kv>div{text-wrap:pretty}
 .hero .slogan{font:500 clamp(19px,2.4vw,23px)/1.4 var(--f-read);color:var(--ink-2);margin-bottom:14px}
 .rotator{display:inline-block;color:var(--accent);font-style:normal;font-weight:600;border-bottom:2px solid var(--accent-soft);transition:opacity .3s}
 .hero p{font-family:var(--f-read);color:var(--ink-2);max-width:520px;font-size:16.5px}
+.hero p.hero-lead{max-width:none;font-size:16px}
+.hero{container-type:inline-size}
+@container (max-width:760px){.hero p.hero-lead br{display:none}.hero p.hero-lead{max-width:560px}}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:12px;background:var(--cta);color:#fff;text-decoration:none;font-weight:700;border:1px solid var(--cta);cursor:pointer;font-size:15.5px;box-shadow:0 1px 2px rgba(249,115,22,.3);transition:background .15s,transform .15s,box-shadow .15s}
 .btn:hover{background:var(--cta-2);border-color:var(--cta-2);color:#fff;transform:translateY(-1px);box-shadow:0 6px 16px rgba(249,115,22,.3)}
 .btn:active{transform:translateY(0) scale(.98)}
@@ -489,7 +492,7 @@ p{margin:0 0 16px}
   .search{width:auto;flex:1;margin-left:4px}
   .search kbd{display:none}
   .hero{padding:26px 18px 20px;border-radius:18px}
-  .hero-art{width:230px;height:106px;right:-60px;top:40px;opacity:.18}
+  .hero-art{width:230px;height:106px;right:-60px;top:40px;opacity:.12}
   .hero-art2{display:none}
   .hero-inner{grid-template-columns:1fr}
   .stats{grid-template-columns:1fr 1fr;gap:8px}
@@ -807,6 +810,7 @@ function napTep(ma){
 const C = CAU_HINH;
 const $ = (s, r=document) => r.querySelector(s);
 const $$ = (s, r=document) => [...r.querySelectorAll(s)];
+const MA_NL = id => String(id == null ? '' : id).toUpperCase();
 const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 /* Chỉ tô vàng ô chờ điền ([CẦN BỔ SUNG…], [họ tên…], [chưa…]) – không tô công thức phức chất như [Cu(NH₃)₄]²⁺ */
 const mark = s => s.replace(/\[((?:CẦN BỔ SUNG|cần bổ sung|họ tên|chưa)[^\]]*)\]/g, '<span class="todo">[$1]</span>');
@@ -911,7 +915,7 @@ const crumbs = items => '<nav class="crumbs" aria-label="Đường dẫn">' + it
 function card(x){
   const cd = CD(x.chu_de), peek = String(x.boi_canh||'').replace(/\s+/g,' ').slice(0, 160);
   return `<a class="card rv" style="${cvar(cd)}" href="#/nl/${encodeURIComponent(x.id)}">
-    <div class="kicker"><span>${esc(x.id)} · Lớp ${esc(x.lop||cd.lop)}</span><span>${SEEN.has(x.id)?'<span class="seen-chip" title="Bạn đã xem">✓ Đã xem</span>':esc(loaiCua(x))}</span></div>
+    <div class="kicker"><span>${esc(MA_NL(x.id))} · Lớp ${esc(x.lop||cd.lop)}</span><span>${SEEN.has(x.id)?'<span class="seen-chip" title="Bạn đã xem">✓ Đã xem</span>':esc(loaiCua(x))}</span></div>
     <strong>${txt(x.tieu_de)}</strong><div class="sub">${esc(cd.ten)}</div>
     <div class="peek">${esc(peek)}…</div>
     <div class="tags">${stTag(x)}${maCua(x).map(m=>`<span class="tag ma">${esc(m)}</span>`).join('')}</div></a>`;
@@ -1079,7 +1083,7 @@ function pageHome(){
     <section class="hero">${heroArt}<div class="hero-inner"><div>
       <div class="eyebrow">${icon('spark',15)} ${txt(C.don_vi)}</div>
       <h1>Thư viện ngữ liệu <em>Hóa học</em><span class="h1-sub">Sử dụng trong dạy học và đánh giá năng lực <span class="nw">ở trường phổ thông</span></span></h1>
-      <p>Website cung cấp hệ thống ngữ liệu hóa học gắn với thực nghiệm và các bối cảnh thực tiễn, được biên tập từ các nguồn dữ liệu tin cậy, có thể sử dụng để phát triển thành các nhiệm vụ, câu hỏi, bài tập trong dạy học và đánh giá năng lực hóa học.</p>
+      <p class="hero-lead">Website cung cấp hệ thống ngữ liệu hóa học gắn với thực nghiệm <br>và các bối cảnh thực tiễn, được biên tập từ các nguồn dữ liệu tin cậy, <br>có thể sử dụng để phát triển thành các nhiệm vụ, câu hỏi, bài tập <br>trong dạy học và đánh giá năng lực hóa học.</p>
       <div class="btn-row"><a class="btn" href="#/tra-cuu">${icon('search',17)} Tra cứu ngữ liệu</a>${DS.length?`<button class="btn ghost" id="randBtn">${icon('dice',17)} Ngữ liệu ngẫu nhiên</button>`:''}<a class="btn ghost" href="#/huong-dan">${icon('book',17)} Hướng dẫn sử dụng</a></div>
     </div>${C.anh_qr?`<div class="qr"><img src="${esc(C.anh_qr)}" alt="Mã QR mở trang"><small>Quét để mở trên điện thoại</small></div>`:''}</div>
     <div class="stats">
@@ -1162,10 +1166,10 @@ function pageNL(id){
   const sec = (n, t, sub='') => `<span class="sec"><span class="n">${n}</span><span>${t}${sub?` <small>${sub}</small>`:''}</span></span>`;
   const maRows = arr => arr.map(m=>`<b>${esc(m)}</b> – ${esc(moTa(m))}`).join('<br>') || '–';
   let h = `<div class="page" style="${cvar(cd)}">${errBox()}
-    <div class="print-head">${esc(C.ten_san_pham)} · ${esc(x.id)} · <span class="ph-ver"></span></div>
-    ${crumbs([['','Trang chủ'],['tra-cuu?cd='+x.chu_de, cd.ten],['', x.id]])}
+    <div class="print-head">${esc(C.ten_san_pham)} · ${esc(MA_NL(x.id))} · <span class="ph-ver"></span></div>
+    ${crumbs([['','Trang chủ'],['tra-cuu?cd='+x.chu_de, cd.ten],['', MA_NL(x.id)]])}
     <header class="nl-head"><span class="big-sym" aria-hidden="true">${esc(cd.ki_hieu)}</span>
-      <div class="topline"><span class="sym">${esc(cd.ki_hieu)}</span><span>${esc(x.id)} · ${esc(cd.ten)}${loaiCua(x)?' · '+esc(loaiCua(x)):''}</span></div>
+      <div class="topline"><span class="sym">${esc(cd.ki_hieu)}</span><span>${esc(MA_NL(x.id))} · ${esc(cd.ten)}${loaiCua(x)?' · '+esc(loaiCua(x)):''}</span></div>
       <h1>${txt(x.tieu_de)}</h1>
       <div class="tags">${stTag(x)}<span class="tag">Lớp ${esc(x.lop||cd.lop)}</span>${maCua(x).map(maTag).join('')}</div>
       <div class="toolbar"><button class="btn" data-print="gv">${icon('print',16)} In bản giáo viên</button><button class="btn ghost" data-print="hs">${icon('print',16)} In bản học sinh</button><button class="btn ghost" data-copyall>${icon('copy',16)} Sao chép câu hỏi</button></div>
@@ -1200,7 +1204,7 @@ function pageNL(id){
       <div><b>Sử dụng AI:</b> ${txt(x.ai_su_dung||'')}</div>
     </div></div>
     ${goiYHtml(x, sec)}
-    ${pager(i>0?['nl/'+encodeURIComponent(ds[i-1].id), ds[i-1].id+' · '+ds[i-1].tieu_de]:null, i<ds.length-1?['nl/'+encodeURIComponent(ds[i+1].id), ds[i+1].id+' · '+ds[i+1].tieu_de]:null)}</div>`;
+    ${pager(i>0?['nl/'+encodeURIComponent(ds[i-1].id), MA_NL(ds[i-1].id)+' · '+ds[i-1].tieu_de]:null, i<ds.length-1?['nl/'+encodeURIComponent(ds[i+1].id), MA_NL(ds[i+1].id)+' · '+ds[i+1].tieu_de]:null)}</div>`;
   setTimeout(() => {
     const root = $('#main'); markSeen(x.id); wireCharts(root); wireTable(root); wireQuestions($('#qs'), x.cau_hoi);
     $$('[data-print]', root).forEach(btn => btn.addEventListener('click', () => {
@@ -1249,7 +1253,7 @@ const NL_CHO = '[DÁN NỘI DUNG NGỮ LIỆU: tiêu đề, bối cảnh, bảng
 function nlText(x){
   if(!x) return NL_CHO;
   const b = x.bang_so_lieu, cd = CD(x.chu_de);
-  let t = `Mã: ${x.id}\nTiêu đề: ${x.tieu_de}\nLớp ${x.lop||cd.lop} – Chủ đề: ${cd.ten}\nYêu cầu cần đạt: ${x.yccd||''}\n\nBỐI CẢNH:\n${x.boi_canh||''}`;
+  let t = `Mã: ${MA_NL(x.id)}\nTiêu đề: ${x.tieu_de}\nLớp ${x.lop||cd.lop} – Chủ đề: ${cd.ten}\nYêu cầu cần đạt: ${x.yccd||''}\n\nBỐI CẢNH:\n${x.boi_canh||''}`;
   if(b && Array.isArray(b.cot) && Array.isArray(b.dong) && b.dong.length) t += `\n\nBẢNG SỐ LIỆU: ${b.tieu_de||''}\n${b.cot.join(' | ')}\n${b.dong.map(r => (Array.isArray(r)?r:[r]).join(' | ')).join('\n')}${b.ghi_chu?'\nGhi chú: '+b.ghi_chu:''}`;
   if((x.nguon||[]).length) t += `\n\nNGUỒN:\n${x.nguon.map(n => '- '+(n.trich_dan||'')+(n.url?' '+n.url:'')).join('\n')}`;
   if((x.luu_y_khoa_hoc||[]).length) t += `\n\nLƯU Ý KHOA HỌC (quan niệm dễ sai):\n${x.luu_y_khoa_hoc.map(l => '- '+l).join('\n')}`;
@@ -1600,7 +1604,7 @@ function pageNguon(){
     <h2>Danh mục nguồn (${rows.length})</h2>
     <div class="filters" style="grid-template-columns:1fr"><label>Lọc nhanh trong danh mục<input id="srcQ" type="search" placeholder="Gõ tên nguồn, giấy phép, mã ngữ liệu…"></label></div>
     <div class="table-wrap"><table class="sortable" id="srcT"><thead><tr><th>Ngữ liệu</th><th>Trích dẫn</th><th>Loại</th><th>Giấy phép</th></tr></thead><tbody>
-    ${rows.map(({x,n}) => `<tr><td data-v="${esc(x.id)}"><a href="#/nl/${encodeURIComponent(x.id)}">${esc(x.id)}</a></td><td class="break" data-v="${esc(n.trich_dan||'')}">${txt(n.trich_dan||'')}${n.url?`<br>${link(n.url)}`:''}</td><td data-v="${esc(n.loai||'')}">${txt(n.loai||'')}</td><td data-v="${esc(n.giay_phep||'')}">${txt(n.giay_phep||'')}</td></tr>`).join('') || '<tr><td colspan="4" class="muted">Chưa có nguồn.</td></tr>'}
+    ${rows.map(({x,n}) => `<tr><td data-v="${esc(x.id)}"><a href="#/nl/${encodeURIComponent(x.id)}">${esc(MA_NL(x.id))}</a></td><td class="break" data-v="${esc(n.trich_dan||'')}">${txt(n.trich_dan||'')}${n.url?`<br>${link(n.url)}`:''}</td><td data-v="${esc(n.loai||'')}">${txt(n.loai||'')}</td><td data-v="${esc(n.giay_phep||'')}">${txt(n.giay_phep||'')}</td></tr>`).join('') || '<tr><td colspan="4" class="muted">Chưa có nguồn.</td></tr>'}
     </tbody></table></div>${pagePager('nguon')}</div>`;
 }
 function wireNguon(){
@@ -1648,7 +1652,7 @@ function pageAI(){
 
 /* ---------- Tìm kiếm nhanh ---------- */
 const INDEX = [
-  ...DS.map(x => ({r:'nl/'+encodeURIComponent(x.id), t:x.id+' · '+x.tieu_de, sub:CD(x.chu_de).ten, s:norm([x.id,x.tieu_de,x.boi_canh,CD(x.chu_de).ten,maCua(x).join(' '),JSON.stringify(x.nguon),JSON.stringify(x.cau_hoi)].join(' '))})),
+  ...DS.map(x => ({r:'nl/'+encodeURIComponent(x.id), t:MA_NL(x.id)+' · '+x.tieu_de, sub:CD(x.chu_de).ten, s:norm([x.id,x.tieu_de,x.boi_canh,CD(x.chu_de).ten,maCua(x).join(' '),JSON.stringify(x.nguon),JSON.stringify(x.cau_hoi)].join(' '))})),
   ...C.chu_de.map(c => ({r:'tra-cuu?cd='+c.ma, t:c.ten, sub:'Chủ đề · Lớp '+c.lop, s:norm(c.ten+' '+c.nguon)})),
   ...MA_BIEU_HIEN.map(m => ({r:'tra-cuu?ma='+m[0], t:m[0]+' – '+m[1], sub:'Mã biểu hiện', s:norm(m.join(' '))}))
 ];

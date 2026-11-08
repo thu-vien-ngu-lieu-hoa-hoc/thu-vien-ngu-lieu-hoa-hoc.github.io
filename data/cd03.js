@@ -339,7 +339,7 @@ NL.add([
   "lop": "11",
   "tieu_de": "Điều kiện nào tối ưu cho quá trình sản xuất NH₃",
   "yccd": "Vận dụng nguyên lí Le Chatelier để giải thích việc lựa chọn điều kiện cho quá trình sản xuất hoá học (tổng hợp ammonia).",
-  "boi_canh": "Phân urea là loại phân đạm dùng nhiều nhất ở Việt Nam. Nguyên liệu để sản xuất urea là ammonia (NH₃), được tổng hợp từ nitrogen trong không khí và hydrogen lấy từ khí thiên nhiên. Các nhà máy đạm lớn như Đạm Phú Mỹ (Bà Rịa – Vũng Tàu) đều có phân xưởng tổng hợp ammonia; riêng Đạm Phú Mỹ có công suất thiết kế 740 nghìn tấn urea mỗi năm.\n\nPhản ứng tổng hợp ammonia (quá trình Haber – Bosch): N₂(g) + 3H₂(g) ⇌ 2NH₃(g), ΔrH° = −91,8 kJ (tính từ ΔfH° của NH₃(g) là −45,9 kJ/mol). Đây là phản ứng thuận nghịch, toả nhiệt và làm giảm số mol khí.\n\nTheo nguyên lí Le Chatelier, nhiệt độ thấp và áp suất cao giúp cân bằng chuyển dịch về phía tạo NH₃. Nhưng ở nhiệt độ thấp, phản ứng lại xảy ra rất chậm. Vì vậy trong công nghiệp, người ta chọn điều kiện dung hoà giữa hiệu suất và tốc độ: nhiệt độ khoảng 400–500 °C, áp suất trên 100 bar và dùng chất xúc tác sắt.\n\nỞ điều kiện này, mỗi lần khí đi qua tháp tổng hợp chỉ một phần nhỏ nitrogen và hydrogen chuyển thành NH₃. Ammonia được làm lạnh, hoá lỏng tách ra; phần khí chưa phản ứng được tuần hoàn trở lại tháp, nhờ đó nguyên liệu được tận dụng gần hết.",
+  "boi_canh": "Phân urea là loại phân đạm dùng nhiều nhất ở Việt Nam. Nguyên liệu để sản xuất urea là ammonia (NH₃), được tổng hợp từ nitrogen trong không khí và hydrogen lấy từ khí thiên nhiên. Các nhà máy đạm lớn như Đạm Phú Mỹ (Bà Rịa – Vũng Tàu) đều có phân xưởng tổng hợp ammonia; riêng Đạm Phú Mỹ có công suất thiết kế 740 nghìn tấn urea mỗi năm.\n\nPhản ứng tổng hợp ammonia (quá trình Haber – Bosch): N₂(g) + 3H₂(g) ⇌ 2NH₃(g), ΔrH° = −91,8 kJ/mol (tính từ ΔfH° của NH₃(g) là −45,9 kJ/mol). Đây là phản ứng thuận nghịch, toả nhiệt và làm giảm số mol khí.\n\nTheo nguyên lí Le Chatelier, nhiệt độ thấp và áp suất cao giúp cân bằng chuyển dịch về phía tạo NH₃. Nhưng ở nhiệt độ thấp, phản ứng lại xảy ra rất chậm. Vì vậy trong công nghiệp, người ta chọn điều kiện dung hoà giữa hiệu suất và tốc độ: nhiệt độ khoảng 400–500 °C, áp suất trên 100 bar và dùng chất xúc tác sắt.\n\nỞ điều kiện này, mỗi lần khí đi qua tháp tổng hợp chỉ một phần nhỏ nitrogen và hydrogen chuyển thành NH₃. Ammonia được làm lạnh, hoá lỏng tách ra; phần khí chưa phản ứng được tuần hoàn trở lại tháp, nhờ đó nguyên liệu được tận dụng gần hết.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Sơ đồ khối quá trình Haber – Bosch có vòng tuần hoàn khí (vẽ lại).",
   "nguon": [
@@ -381,7 +381,7 @@ NL.add([
     ],
     "dang": "Tự luận",
     "noi_dung": "Nếu chỉ dựa vào nguyên lí Le Chatelier, điều kiện nhiệt độ và áp suất nào có lợi nhất cho việc tạo NH₃? Vì sao nhà máy không chọn nhiệt độ thấp nhất có thể?",
-    "dap_an": "Nhiệt độ thấp (phản ứng toả nhiệt) và áp suất cao (số mol khí giảm từ 4 xuống 2). Không chọn nhiệt độ quá thấp vì tốc độ phản ứng rất chậm, năng suất theo thời gian thấp; chất xúc tác cũng cần nhiệt độ đủ cao để hoạt động."
+    "dap_an": "Nhiệt độ thấp (phản ứng toả nhiệt) và áp suất cao (số mol khí giảm từ 4 xuống 2). Không chọn nhiệt độ quá thấp vì tốc độ phản ứng rất chậm, năng suất theo thời gian thấp; phản ứng cũng cần nhiệt độ đủ cao để xảy ra."
    },
    {
     "ma": [
@@ -473,8 +473,8 @@ NL.add([
      "TH2"
     ],
     "dang": "Tự luận",
-    "noi_dung": "Dùng nguyên lí Le Chatelier, giải thích vì sao tăng CO₂ trong khí quyển làm pH nước biển giảm. Dự đoán điều gì xảy ra với quá trình tạo vỏ CaCO₃ của sinh vật biển.",
-    "dap_an": "CO₂ khí tăng, cân bằng hoà tan và cân bằng tạo H₂CO₃, phân li H⁺ dịch sang phải nên [H⁺] tăng, pH giảm. H⁺ kết hợp với CO₃²⁻ tạo HCO₃⁻, làm giảm CO₃²⁻; sinh vật khó tạo vỏ CaCO₃, vỏ có thể bị hoà tan."
+    "noi_dung": "Dùng nguyên lí chuyển dịch cân bằng Le Chatelier, giải thích vì sao tăng CO₂ trong khí quyển làm pH nước biển giảm. Dự đoán điều gì xảy ra với quá trình tạo vỏ CaCO₃ của sinh vật biển.",
+    "dap_an": "CO₂ khí tăng, cân bằng hoà tan và cân bằng tạo H₂CO₃, phân li H⁺ chuyển dịch sang phải nên [H⁺] tăng, pH giảm. H⁺ kết hợp với CO₃²⁻ tạo HCO₃⁻, làm giảm CO₃²⁻; sinh vật khó tạo vỏ CaCO₃, vỏ có thể bị hoà tan."
    },
    {
     "ma": [
