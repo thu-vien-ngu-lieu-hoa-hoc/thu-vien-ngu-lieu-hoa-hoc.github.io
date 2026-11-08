@@ -83,15 +83,6 @@ body[data-page="huong-dan"] .hd-top{background:var(--accent);color:#fff}
 .icon-btn:active{transform:scale(.92)}
 #menuBtn{display:none}
 @media (min-width:981px){#menuBtn{display:grid} body.side-off .sidebar{display:none}}
-.side-close{display:flex;align-items:center;gap:8px;width:100%;margin:0 0 10px;padding:8px 10px;border:1px dashed var(--line-2);border-radius:10px;background:none;color:var(--ink-3);font:600 13.5px var(--f-ui);cursor:pointer;transition:background .15s,color .15s,border-color .15s}
-.side-close:hover{background:var(--accent-soft);color:var(--accent-ink);border-color:var(--accent)}
-.side-open{display:none}
-@media (min-width:981px){
-  body.side-off .side-open{display:flex;position:fixed;left:0;top:50%;transform:translateY(-50%);z-index:25;flex-direction:column;align-items:center;gap:6px;padding:12px 7px;border:1px solid var(--accent);border-left:0;border-radius:0 12px 12px 0;background:var(--accent);color:#fff;font:600 12.5px var(--f-ui);cursor:pointer;box-shadow:var(--shadow);writing-mode:vertical-rl}
-  body.side-off .side-open svg{writing-mode:horizontal-tb}
-  body.side-off .side-open:hover{background:var(--accent-2)}
-}
-@media print{.side-close,.side-open{display:none!important}}
 .search{position:relative;margin-left:auto;width:min(390px,40vw)}
 .search input{width:100%;height:42px;border:1px solid var(--line);border-radius:12px;background:var(--surface-2);padding:0 44px 0 40px;font:inherit;font-size:15.5px;color:var(--ink);transition:border-color .15s,background .15s,box-shadow .15s}
 .search input:focus{outline:none;background:var(--surface);border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
@@ -431,7 +422,7 @@ figure .table-wrap{margin-bottom:0}
 .btn.ghost:hover{background:var(--accent-soft);color:var(--accent-ink);transform:translateY(-2px);box-shadow:0 6px 14px rgba(11,59,102,.12)}
 .icon-btn:hover,.hd-top:hover{transform:translateY(-1px)}
 .btn:active,.btn.ghost:active,.icon-btn:active,.chip:active{transform:translateY(0) scale(.97);transition-duration:.08s}
-.btn:hover svg,.icon-btn:hover svg,.hd-top:hover svg,.mini:hover svg,.side-close:hover svg,.sidebar a:hover .ico svg,.toolbar .btn:hover svg{animation:wiggle .55s var(--ease)}
+.btn:hover svg,.icon-btn:hover svg,.hd-top:hover svg,.mini:hover svg,.sidebar a:hover .ico svg,.toolbar .btn:hover svg{animation:wiggle .55s var(--ease)}
 :focus-visible{outline:3px solid color-mix(in srgb,var(--cta) 70%,transparent);outline-offset:2px;border-radius:8px}
 /* vi tương tác: thẻ nâng lên khi chú ý */
 .topic,.card,.gs,.stat,.type,.lanes .col,.steps li,.guide,.box,.q{transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .35s var(--ease)}
@@ -712,7 +703,6 @@ p{margin:0 0 16px}
 <div class="layout">
   <nav class="sidebar" id="sidebar" aria-label="Mục lục"></nav>
   <div class="scrim" id="scrim"></div>
-  <button class="side-open" type="button" data-side-toggle title="Mở mục lục" aria-label="Mở mục lục"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg><span>Mục lục</span></button>
   <main id="main" tabindex="-1"><div class="page"><p class="muted">Đang tải dữ liệu…</p></div></main>
 </div>
 <footer class="site-foot" id="siteFoot"></footer>
@@ -933,7 +923,7 @@ const pagePager = r => { const i = PAGES.indexOf(r); return pager(i>0?[PAGES[i-1
 function buildSidebar(){
   const a = (r, t, pre='', post='', style='') => `<a href="#/${r}" data-r="${r}"${style?` style="${style}"`:''}>${pre}<span>${esc(t).split(', ').map(p => `<span class="nw">${p}</span>`).join(', ')}</span>${post}</a>`;
   const ic = n => `<span class="ico">${icon(n)}</span>`;
-  $('#sidebar').innerHTML = '<button class="side-close" type="button" data-side-toggle title="Thu gọn mục lục để đọc rộng hơn">' + icon('chevL',16) + '<span>Thu gọn mục lục</span></button>' + a('', 'Trang chủ', ic('home')) + a('tra-cuu', 'Tra cứu ngữ liệu', ic('search')) +
+  $('#sidebar').innerHTML = a('', 'Trang chủ', ic('home')) + a('tra-cuu', 'Tra cứu ngữ liệu', ic('search')) +
     '<h4>' + C.chu_de.length + ' chủ đề</h4>' + C.chu_de.map(c => a('tra-cuu?cd='+c.ma, c.ten, `<span class="sym">${esc(c.ki_hieu)}</span>`, `<span class="cnt">${ofCd(c.ma).length}</span>`, cvar(c))).join('') +
     '<h4>Dành cho giáo viên</h4>' + a('khung-nang-luc', 'Khung năng lực', ic('grid')) + a('huong-dan', 'Hướng dẫn sử dụng', ic('book')) + a('phan-hoi', 'Phản hồi và chia sẻ dữ liệu', ic('chat')) +
     '<h4>Về sản phẩm</h4>' + a('nguon', 'Nguồn & bản quyền', ic('link')) + a('minh-bach-ai', 'Minh bạch AI', ic('spark'));
@@ -1752,7 +1742,6 @@ const doiThanhBen = () => {
   capNhatNutMenu();
 };
 $('#menuBtn').addEventListener('click', doiThanhBen);
-document.addEventListener('click', e => { if(e.target.closest('[data-side-toggle]')) doiThanhBen(); });
 capNhatNutMenu(); window.addEventListener('resize', capNhatNutMenu);
 $('#scrim').addEventListener('click', () => document.body.classList.remove('nav-open'));
 $('#brandName').textContent = C.ten_ngan || C.ten_san_pham; $('#brandSub').textContent = C.khau_hieu;
