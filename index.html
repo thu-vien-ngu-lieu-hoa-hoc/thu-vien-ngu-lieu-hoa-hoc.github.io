@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="data/img/logo.png">
+<link rel="apple-touch-icon" href="data/img/logo.png">
 <title>Thư viện ngữ liệu trong dạy học và đánh giá năng lực môn Hóa học ở trường phổ thông</title>
 <meta name="description" content="Thư viện ngữ liệu trong dạy học và đánh giá năng lực môn Hóa học ở trường phổ thông – Từ dữ liệu thật đến nhiệm vụ năng lực. Ngữ liệu có nguồn, giấy phép, gắn mã biểu hiện năng lực theo Chương trình Hoá học 2018.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,30 +17,33 @@
   --f-display:"Noto Serif",Georgia,"Times New Roman",serif;
   --f-read:"Noto Sans","Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;
   --f-ui:"Noto Sans","Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;
-  --bg:#f7f6f2; --surface:#ffffff; --surface-2:#f1f0ea; --ink:#1c2220; --ink-2:#4b5350; --ink-3:#737b77;
-  --line:#e4e2da; --line-2:#d5d2c8;
-  --accent:#0b7d68; --accent-2:#086453; --accent-soft:#e0f2ec; --accent-ink:#065446;
-  --blue:#2457c5; --blue-soft:#e7eefb;
+  /* 60% nền #F0F4F8 · 30% xanh navy #0B3B66 (màu nền logo) (tiêu đề, thương hiệu, thẻ) · 10% cam #F97316 (nút chính, số liệu) */
+  --bg:#F0F4F8; --surface:#ffffff; --surface-2:#e8eef5; --ink:#0f1b2d; --ink-2:#3b4a60; --ink-3:#64748b;
+  --line:#dbe3ed; --line-2:#c7d2e0;
+  --accent:#0B3B66; --accent-2:#082c4d; --accent-soft:#e1e9f2; --accent-ink:#0B3B66;
+  --cta:#F97316; --cta-2:#ea580c; --cta-soft:#ffedd5; --cta-ink:#c2410c;
+  --blue:#2563eb; --blue-soft:#e6eefc;
   --warn-bg:#fdf5d8; --warn-ink:#735500; --warn-line:#ecd07a;
   --good:#17793c; --good-bg:#e2f4e7; --bad:#bb2a2f; --bad-bg:#fbeaea; --bad-line:#efb7b9;
-  --note-bg:#eef3fb; --note-line:#b3c8ec; --draft-bg:#eeede8; --draft-ink:#575f5b;
-  --hero-1:#e3f3ec; --hero-2:#f3efe2;
-  --bar:#13977f; --grid:#ebe9e2;
-  --shadow-sm:0 1px 2px rgba(30,30,20,.06);
-  --shadow:0 1px 2px rgba(30,30,20,.05),0 8px 22px rgba(30,30,20,.07);
-  --shadow-lg:0 2px 4px rgba(30,30,20,.06),0 16px 36px rgba(30,30,20,.12);
+  --note-bg:#eef3fb; --note-line:#b3c8ec; --draft-bg:#e9eef4; --draft-ink:#4f5b6b;
+  --hero-1:#e1e9f2; --hero-2:#fdeee2;
+  --bar:#0B3B66; --grid:#e3e9f1;
+  --shadow-sm:0 1px 2px rgba(15,27,45,.06);
+  --shadow:0 1px 2px rgba(15,27,45,.05),0 8px 22px rgba(15,27,45,.07);
+  --shadow-lg:0 2px 4px rgba(15,27,45,.06),0 16px 36px rgba(15,27,45,.12);
   --r:14px;
 }
 :root[data-theme="dark"]{
-  --bg:#121614; --surface:#1a201d; --surface-2:#222924; --ink:#ebefe9; --ink-2:#b9c2bc; --ink-3:#8c9690;
-  --line:#2b332e; --line-2:#36403a;
-  --accent:#43c9aa; --accent-2:#71d8c1; --accent-soft:#173a32; --accent-ink:#93e5d2;
-  --blue:#86a9f5; --blue-soft:#1b2537;
+  --bg:#0f1624; --surface:#161f30; --surface-2:#1d283c; --ink:#e8edf5; --ink-2:#b4c0d3; --ink-3:#8593a8;
+  --line:#26324a; --line-2:#33405a;
+  --accent:#7fb0dc; --accent-2:#a6c8e8; --accent-soft:#163049; --accent-ink:#b8d4ee;
+  --cta:#F97316; --cta-2:#fb8a3c; --cta-soft:#3a2312; --cta-ink:#fdba74;
+  --blue:#7fb0ff; --blue-soft:#1b2537;
   --warn-bg:#3a3214; --warn-ink:#f1dc8f; --warn-line:#6b5a1f;
   --good:#71d091; --good-bg:#16301f; --bad:#f28b8b; --bad-bg:#3a1c1d; --bad-line:#7a3a3a;
-  --note-bg:#18243a; --note-line:#36557d; --draft-bg:#262c28; --draft-ink:#bcc5bf;
-  --hero-1:#14352e; --hero-2:#2a2618;
-  --bar:#3fbfa3; --grid:#28302b;
+  --note-bg:#18243a; --note-line:#36557d; --draft-bg:#1f2838; --draft-ink:#bcc6d4;
+  --hero-1:#132b44; --hero-2:#2e2018;
+  --bar:#7fb0dc; --grid:#232e44;
   --shadow-sm:none; --shadow:none; --shadow-lg:0 10px 30px rgba(0,0,0,.4);
 }
 *{box-sizing:border-box}
@@ -51,19 +56,19 @@ img{max-width:100%}
 kbd{font:600 12px var(--f-ui);border:1px solid var(--line-2);border-bottom-width:2px;border-radius:5px;padding:0 5px;color:var(--ink-3);background:var(--surface)}
 
 /* ---------- Hiệu ứng ---------- */
-.rv{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0ms)}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.22,.61,.36,1),transform .9s cubic-bezier(.22,.61,.36,1);transition-delay:var(--d,0ms)}
 .rv.in{opacity:1;transform:none}
 @keyframes spin{to{transform:rotate(360deg)}}
 @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(11,125,104,.35)}100%{box-shadow:0 0 0 12px rgba(11,125,104,0)}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(11,59,102,.35)}100%{box-shadow:0 0 0 12px rgba(11,59,102,0)}}
 @keyframes shake{0%,100%{transform:none}25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
 @media (prefers-reduced-motion: reduce){ .rv{opacity:1;transform:none;transition:none} *{animation:none!important;transition:none!important} }
 
 /* ---------- Thanh trên ---------- */
 .topbar{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:12px;height:64px;padding:0 20px;background:color-mix(in srgb,var(--surface) 90%,transparent);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
-#readbar{position:fixed;top:63px;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--accent),var(--blue));z-index:31;transition:width .1s linear}
+#readbar{position:fixed;top:63px;left:0;height:3px;width:0;background:var(--cta);z-index:31;transition:width .1s linear}
 .brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink);min-width:0}
-.brand-mark{width:38px;height:38px;flex:none;transition:transform .4s}
+.brand-mark{width:38px;height:38px;flex:none;border-radius:10px;transition:transform .4s}
 .brand:hover .brand-mark{transform:rotate(-12deg)}
 .brand .bn{display:flex;flex-direction:column;line-height:1.15;min-width:0}
 .brand b{font:600 18px var(--f-display);white-space:nowrap;letter-spacing:-.01em}
@@ -77,6 +82,16 @@ body[data-page="huong-dan"] .hd-top{background:var(--accent);color:#fff}
 @media (max-width:680px){.hd-top{display:none}}
 .icon-btn:active{transform:scale(.92)}
 #menuBtn{display:none}
+@media (min-width:981px){#menuBtn{display:grid} body.side-off .sidebar{display:none}}
+.side-close{display:flex;align-items:center;gap:8px;width:100%;margin:0 0 10px;padding:8px 10px;border:1px dashed var(--line-2);border-radius:10px;background:none;color:var(--ink-3);font:600 13.5px var(--f-ui);cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.side-close:hover{background:var(--accent-soft);color:var(--accent-ink);border-color:var(--accent)}
+.side-open{display:none}
+@media (min-width:981px){
+  body.side-off .side-open{display:flex;position:fixed;left:0;top:50%;transform:translateY(-50%);z-index:25;flex-direction:column;align-items:center;gap:6px;padding:12px 7px;border:1px solid var(--accent);border-left:0;border-radius:0 12px 12px 0;background:var(--accent);color:#fff;font:600 12.5px var(--f-ui);cursor:pointer;box-shadow:var(--shadow);writing-mode:vertical-rl}
+  body.side-off .side-open svg{writing-mode:horizontal-tb}
+  body.side-off .side-open:hover{background:var(--accent-2)}
+}
+@media print{.side-close,.side-open{display:none!important}}
 .search{position:relative;margin-left:auto;width:min(390px,40vw)}
 .search input{width:100%;height:42px;border:1px solid var(--line);border-radius:12px;background:var(--surface-2);padding:0 44px 0 40px;font:inherit;font-size:15.5px;color:var(--ink);transition:border-color .15s,background .15s,box-shadow .15s}
 .search input:focus{outline:none;background:var(--surface);border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
@@ -116,7 +131,7 @@ h2{font-family:var(--f-display);font-size:24px;line-height:1.28;margin:42px 0 14
 h3{font-size:17px;margin:20px 0 8px}
 p{margin:0 0 14px}
 .lead{font-family:var(--f-read);font-size:18px;color:var(--ink-2);line-height:1.65}
-.motto{position:relative;margin:22px 0 30px;padding:26px 28px 24px 32px;border-radius:var(--r);background:linear-gradient(135deg,var(--hero-1),var(--hero-2));border:1px solid var(--line);border-left:6px solid var(--accent);box-shadow:var(--shadow)}
+.motto{position:relative;margin:22px 0 30px;padding:26px 28px 24px 32px;border-radius:var(--r);background:var(--hero-1);border:1px solid var(--line);border-left:6px solid var(--accent);box-shadow:var(--shadow)}
 .motto-k{display:inline-block;font-family:var(--f-ui);font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);background:var(--accent-soft);padding:3px 10px;border-radius:999px}
 .motto-t{font-family:var(--f-display);font-size:clamp(26px,4.4vw,40px);line-height:1.2;font-weight:600;color:var(--ink);margin:12px 0 8px}
 .motto-t em{font-style:normal;color:var(--accent)}
@@ -124,8 +139,15 @@ p{margin:0 0 14px}
 .muted{color:var(--ink-3)} .small{font-size:14px}
 ul,ol{padding-left:22px;margin:0 0 14px} li{margin:5px 0}
 .sec{display:flex;align-items:center;gap:12px}
+.vt{display:inline-flex;gap:4px;padding:4px;border:1px solid var(--line);border-radius:12px;background:var(--surface-2);margin:2px 0 12px}
+.vt button{display:inline-flex;align-items:center;gap:6px;border:0;background:none;padding:6px 14px;border-radius:9px;font:600 14px var(--f-ui);color:var(--ink-2);cursor:pointer}
+.vt button.on{background:var(--surface);color:var(--accent-ink);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+figure.view-chart .table-wrap,figure.view-chart .fig-tools{display:none}
+figure.view-table .chart{display:none}
+@media print{figure.has-chart .chart{display:none!important} figure.has-chart .table-wrap{display:block!important}}
 .sec .n{flex:none;width:36px;height:36px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font:600 17px var(--f-display)}
 .sec small{font:500 14px var(--f-ui);color:var(--ink-3)}
+.pv-hs{display:none}
 
 /* ---------- Nhãn ---------- */
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 14px}
@@ -156,9 +178,9 @@ a.tag:hover{border-color:var(--accent);color:var(--accent-ink);transform:transla
 .box .x:hover{opacity:1}
 
 /* ---------- Trang chủ ---------- */
-.hero{position:relative;overflow:hidden;border-radius:24px;padding:40px 38px 30px;background:radial-gradient(120% 140% at 100% 0%,var(--hero-2) 0%,transparent 55%),linear-gradient(160deg,var(--hero-1) 0%,var(--surface) 100%);border:1px solid var(--line);margin-bottom:28px}
-.hero-art{position:absolute;right:-60px;top:-40px;width:340px;height:340px;opacity:.28;pointer-events:none;color:var(--accent);animation:spin 90s linear infinite}
-.hero-art2{position:absolute;right:120px;bottom:-50px;width:150px;height:150px;opacity:.18;pointer-events:none;color:var(--blue);animation:floaty 7s ease-in-out infinite}
+.hero{position:relative;overflow:hidden;border-radius:24px;padding:40px 38px 30px;background:var(--hero-1);border:1px solid var(--line);margin-bottom:28px}
+.hero-art{position:absolute;right:24px;top:190px;width:280px;height:121px;opacity:.38;pointer-events:none;color:var(--accent);animation:floaty 9s ease-in-out infinite}
+.hero-art2{position:absolute;right:120px;bottom:-50px;width:150px;height:150px;opacity:.18;pointer-events:none;color:var(--accent);animation:floaty 7s ease-in-out infinite}
 .hero-inner{position:relative;display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center}
 .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--accent-ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:4px 13px;margin-bottom:16px}
 .nw{white-space:nowrap}
@@ -169,9 +191,9 @@ p,li,td,.lead,.kv>div{text-wrap:pretty}
 .hero h1 em{font-style:normal;font-weight:inherit;color:var(--accent)}
 .hero .slogan{font:500 clamp(19px,2.4vw,23px)/1.4 var(--f-read);color:var(--ink-2);margin-bottom:14px}
 .rotator{display:inline-block;color:var(--accent);font-style:normal;font-weight:600;border-bottom:2px solid var(--accent-soft);transition:opacity .3s}
-.hero p{font-family:var(--f-read);color:var(--ink-2);max-width:600px;font-size:16.5px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:12px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;border:1px solid var(--accent);cursor:pointer;font-size:15.5px;box-shadow:0 1px 2px rgba(11,125,104,.25);transition:background .15s,transform .15s,box-shadow .15s}
-.btn:hover{background:var(--accent-2);color:#fff;transform:translateY(-1px);box-shadow:0 6px 16px rgba(11,125,104,.25)}
+.hero p{font-family:var(--f-read);color:var(--ink-2);max-width:520px;font-size:16.5px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:12px;background:var(--cta);color:#fff;text-decoration:none;font-weight:700;border:1px solid var(--cta);cursor:pointer;font-size:15.5px;box-shadow:0 1px 2px rgba(249,115,22,.3);transition:background .15s,transform .15s,box-shadow .15s}
+.btn:hover{background:var(--cta-2);border-color:var(--cta-2);color:#fff;transform:translateY(-1px);box-shadow:0 6px 16px rgba(249,115,22,.3)}
 .btn:active{transform:translateY(0) scale(.98)}
 .btn.ghost{background:var(--surface);color:var(--accent-ink);border-color:var(--line-2);box-shadow:none}
 .btn.ghost:hover{border-color:var(--accent);background:var(--surface)}
@@ -182,9 +204,9 @@ p,li,td,.lead,.kv>div{text-wrap:pretty}
 .qr small{display:block;color:#4b5350;font-size:12px;margin-top:6px}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px}
 .stat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow-sm)}
-.stat b{display:block;font:600 32px/1.1 var(--f-display);color:var(--ink);font-variant-numeric:tabular-nums}
+.stat b{display:block;font:700 32px/1.1 var(--f-display);color:var(--cta);font-variant-numeric:tabular-nums}
 .stat span{font-size:14px;color:var(--ink-3)}
-.stat.good b{color:var(--good)}
+.stat.good b{color:var(--cta)}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 14px}
 .chip{border:1px solid var(--line-2);background:var(--surface);border-radius:999px;padding:5px 14px;cursor:pointer;font-size:14.5px;font-weight:600;color:var(--ink-2);transition:all .15s}
 .chip:hover{border-color:var(--accent);color:var(--accent-ink)}
@@ -265,7 +287,7 @@ table.masking td{cursor:pointer}
 table.masking td:hover{outline:2px dashed var(--accent);outline-offset:-3px}
 td.masked{position:relative}
 td.masked>span{visibility:hidden}
-td.masked::after{content:"?";position:absolute;inset:4px 6px;display:grid;place-items:center;border-radius:6px;background:repeating-linear-gradient(135deg,var(--warn-bg) 0 6px,color-mix(in srgb,var(--warn-line) 45%,var(--warn-bg)) 6px 12px);color:var(--warn-ink);font-weight:800}
+td.masked::after{content:"?";position:absolute;inset:4px 6px;display:grid;place-items:center;border-radius:6px;background:var(--warn-bg);color:var(--warn-ink);font-weight:800}
 .fig-tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0 0}
 .fig-tools .hint{font-size:13.5px;color:var(--ink-3)}
 
@@ -296,7 +318,7 @@ td.masked::after{content:"?";position:absolute;inset:4px 6px;display:grid;place-
 .heat-legend i{display:inline-block;width:22px;height:12px;border-radius:3px}
 
 /* ---------- Trang ngữ liệu ---------- */
-.nl-head{position:relative;overflow:hidden;border-radius:22px;padding:26px 28px 20px;background:linear-gradient(135deg,var(--c-soft),var(--surface) 75%);border:1px solid var(--line);margin-bottom:6px}
+.nl-head{position:relative;overflow:hidden;border-radius:22px;padding:26px 28px 20px;background:var(--surface);border:1px solid var(--line);margin-bottom:6px}
 .nl-head .big-sym{position:absolute;right:20px;top:6px;font:600 110px/1 var(--f-display);color:var(--c);opacity:.09;pointer-events:none;animation:floaty 8s ease-in-out infinite}
 .nl-head .topline{position:relative;display:flex;align-items:center;gap:10px;font-size:14px;color:var(--ink-3);font-weight:600;margin-bottom:8px}
 .nl-head .sym{width:32px;height:32px;border-radius:9px;display:grid;place-items:center;font:700 12px var(--f-ui);background:var(--surface);color:var(--c);border:1px solid var(--line)}
@@ -308,7 +330,7 @@ td.masked::after{content:"?";position:absolute;inset:4px 6px;display:grid;place-
 .toc-inline a{flex:none;text-decoration:none;color:var(--ink-2);padding:5px 13px;border-radius:999px;border:1px solid var(--line);background:var(--surface);font-weight:600;transition:all .2s}
 .toc-inline a:hover{border-color:var(--accent);color:var(--accent-ink)}
 .toc-inline a.active{background:var(--ink);border-color:var(--ink);color:var(--surface)}
-.prose p{font:17.5px/1.85 var(--f-read);color:var(--ink)}
+.prose p{font:17.5px/1.85 var(--f-read);color:var(--ink);text-align:justify;text-justify:inter-word}
 .prose p:first-child::first-letter{float:left;font:600 3.3em/.85 var(--f-display);color:var(--c);margin:6px 10px 0 0}
 figure{margin:22px 0;padding:18px 20px;background:var(--surface);border:1px solid var(--line);border-radius:16px}
 figure img{display:block;margin:0 auto;border-radius:8px;height:auto;cursor:zoom-in}
@@ -397,6 +419,68 @@ figure .table-wrap{margin-bottom:0}
 .site-foot{border-top:1px solid var(--line);padding:22px 16px;text-align:center;font-size:14px;color:var(--ink-3);background:var(--surface)}
 .print-head{display:none}
 
+
+/* ===== Sinh động: vi tương tác, chiều sâu, đồ hoạ động, khoảng thở (chỉ màu đơn) ===== */
+:root{--ease:cubic-bezier(.22,.61,.36,1);--shadow-hover:0 2px 4px rgba(11,59,102,.06),0 14px 32px rgba(11,59,102,.13)}
+:root[data-theme="dark"]{--shadow-hover:0 2px 4px rgba(0,0,0,.3),0 14px 32px rgba(0,0,0,.45)}
+@keyframes wiggle{0%,100%{transform:rotate(0)}25%{transform:rotate(-12deg)}55%{transform:rotate(9deg)}80%{transform:rotate(-4deg)}}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(249,115,22,.45)}70%,100%{box-shadow:0 0 0 10px rgba(249,115,22,0)}}
+/* vi tương tác: nút */
+.btn,.icon-btn,.hd-top,.chip,.tag,.mini{transition:background-color .25s var(--ease),border-color .25s var(--ease),color .25s var(--ease),transform .25s var(--ease),box-shadow .25s var(--ease)}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost:hover{background:var(--accent-soft);color:var(--accent-ink);transform:translateY(-2px);box-shadow:0 6px 14px rgba(11,59,102,.12)}
+.icon-btn:hover,.hd-top:hover{transform:translateY(-1px)}
+.btn:active,.btn.ghost:active,.icon-btn:active,.chip:active{transform:translateY(0) scale(.97);transition-duration:.08s}
+.btn:hover svg,.icon-btn:hover svg,.hd-top:hover svg,.mini:hover svg,.side-close:hover svg,.sidebar a:hover .ico svg,.toolbar .btn:hover svg{animation:wiggle .55s var(--ease)}
+:focus-visible{outline:3px solid color-mix(in srgb,var(--cta) 70%,transparent);outline-offset:2px;border-radius:8px}
+/* vi tương tác: thẻ nâng lên khi chú ý */
+.topic,.card,.gs,.stat,.type,.lanes .col,.steps li,.guide,.box,.q{transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .35s var(--ease)}
+.topic:hover,.card:hover,.gs:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover)}
+.stat:hover,.lanes .col:hover,.steps li:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+.topic:active,.card:active,.gs:active{transform:translateY(-1px) scale(.995);transition-duration:.1s}
+.type:hover{box-shadow:var(--shadow)}
+/* chiều sâu: bóng đổ nhiều lớp, thanh menu kính mờ */
+.topbar{background:color-mix(in srgb,var(--surface) 78%,transparent);box-shadow:0 1px 0 var(--line),0 6px 20px rgba(11,59,102,.06)}
+.hero{box-shadow:var(--shadow)}
+.topic,.card,.stat,.gs{box-shadow:var(--shadow-sm)}
+/* đồ hoạ động: dopamine tự vẽ nét rồi lơ lửng, nguyên tử quay chậm */
+.hero-art polygon,.hero-art polyline,.hero-art line{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.8s var(--ease) .25s forwards}
+.hero-art polyline{animation-delay:.9s}.hero-art line:nth-of-type(n+4){animation-delay:1.1s}
+.hero-art .lbl{opacity:0;animation:fadein .8s ease 1.6s forwards}
+.hero-art2 .orb{transform-origin:50px 50px;animation:spin 28s linear infinite}
+.hero-art2 .nhan{transform-origin:50px 50px;animation:bob 3s ease-in-out infinite}
+/* đồ hoạ động: biểu tượng chủ đề nhịp nhẹ, số bước có vòng toả */
+.topic .sym{animation:bob 5s ease-in-out infinite}
+.topics>*:nth-child(3n+2) .sym{animation-delay:-1.6s}.topics>*:nth-child(3n) .sym{animation-delay:-3.2s}
+.topic:hover .sym{animation:none}
+.gs-n{animation:ring 4s ease-out infinite}
+.gs:nth-child(2) .gs-n{animation-delay:1s}.gs:nth-child(3) .gs-n{animation-delay:2s}.gs:nth-child(4) .gs-n{animation-delay:3s}
+.gs:hover .gs-n{animation:wiggle .55s var(--ease)}
+/* khoảng thở */
+main{padding:40px 56px 104px}
+.page{max-width:880px}
+h2{margin:60px 0 18px}
+p{margin:0 0 16px}
+.hero{padding:52px 48px 42px;margin-bottom:48px}
+.stats{gap:16px;margin-top:40px}
+.stat{padding:18px 20px}
+.topics,.cards{gap:20px;margin-bottom:32px}
+.topic{padding:22px}
+.card{padding:20px 22px}
+.types,.steps{gap:14px}
+.gsteps{gap:18px}
+.guide{padding:28px 28px 24px;margin-bottom:24px}
+.box{margin:24px 0;padding:18px 22px}
+.btn-row{gap:12px;margin-top:26px}
+.sidebar a{margin:2px 0}
+@media (prefers-reduced-motion: reduce){
+  .hero-art polygon,.hero-art polyline,.hero-art line{stroke-dasharray:none;stroke-dashoffset:0}
+  .hero-art .lbl{opacity:1}
+}
+@media print{ .hero-art polygon,.hero-art polyline,.hero-art line{stroke-dasharray:none;stroke-dashoffset:0} .hero-art .lbl{opacity:1} }
 @media (max-width:980px){
   #menuBtn{display:grid}
   .sidebar{position:fixed;left:0;top:64px;bottom:0;height:auto;z-index:40;transform:translateX(-100%);transition:transform .25s cubic-bezier(.2,.7,.2,1);box-shadow:var(--shadow-lg)}
@@ -411,7 +495,7 @@ figure .table-wrap{margin-bottom:0}
   .search{width:auto;flex:1;margin-left:4px}
   .search kbd{display:none}
   .hero{padding:26px 18px 20px;border-radius:18px}
-  .hero-art{width:230px;height:230px;right:-80px;top:-50px;opacity:.2}
+  .hero-art{width:230px;height:106px;right:-60px;top:40px;opacity:.18}
   .hero-art2{display:none}
   .hero-inner{grid-template-columns:1fr}
   .stats{grid-template-columns:1fr 1fr;gap:8px}
@@ -466,7 +550,7 @@ figure .table-wrap{margin-bottom:0}
 .gsteps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;counter-reset:g}
 @media (max-width:900px){.gsteps{grid-template-columns:repeat(2,minmax(0,1fr))}} @media (max-width:520px){.gsteps{grid-template-columns:1fr}}
 .gs{position:relative;display:flex;flex-direction:column;gap:8px;border:1px solid var(--line);border-radius:14px;background:var(--bg);padding:14px;color:var(--ink);text-decoration:none;transition:border-color .2s,transform .2s,box-shadow .2s}
-.gs:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 8px 20px rgba(11,125,104,.12);color:var(--ink)}
+.gs:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 8px 20px rgba(11,59,102,.12);color:var(--ink)}
 .gs:not(:last-child)::after{content:"";position:absolute;right:-10px;top:26px;width:8px;height:8px;border-top:2px solid var(--line-2);border-right:2px solid var(--line-2);transform:rotate(45deg);z-index:1}
 @media (max-width:900px){.gs::after{display:none}}
 .gs-n{display:inline-grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--accent);color:#fff;font:600 16px var(--f-display)}
@@ -586,6 +670,9 @@ figure .table-wrap{margin-bottom:0}
   .answer{display:block;margin-top:8px} .answer .in{background:#f3f3f3;border-color:#bbb}
   .prose p:first-child::first-letter{float:none;font:inherit;margin:0;color:inherit}
   .print-head{display:block;font-size:10pt;color:#444;margin-bottom:8px}
+  p,li,dd,.q-body,.answer .in,.luuy li,.src-list li,.kv>div,figcaption{text-align:justify;text-justify:inter-word}
+  .sec .pv-hs,.pv-hs{display:none}
+  body.in-hs .pv-gv{display:none!important} body.in-hs .pv-hs{display:inline!important}
   body.in-hs .gv-only,body.in-hs .answer{display:none!important}
   a{color:#000;text-decoration:none}
   @page{margin:16mm 15mm}
@@ -614,12 +701,12 @@ figure .table-wrap{margin-bottom:0}
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
   </button>
   <a class="brand" href="#/">
-    <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#0b7d68"/><path d="M15 9h10M17 9v8.5L10.5 29a2.6 2.6 0 0 0 2.3 3.9h14.4a2.6 2.6 0 0 0 2.3-3.9L23 17.5V9" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.4 25.5c2.2-1.4 4.4 1.4 6.6 0s4.4 1.4 6.6 0" fill="none" stroke="#f2c94c" stroke-width="2" stroke-linecap="round"/></svg>
+    <img class="brand-mark" src="data/img/logo.png" alt="" width="38" height="38">
     <span class="bn"><b id="brandName"></b><small id="brandSub"></small></span>
   </a>
   <div class="search" role="search">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-    <input id="q" type="search" placeholder="Tìm ngữ liệu, chủ đề, mã TH/VD…" autocomplete="off" aria-label="Tìm kiếm">
+    <input id="q" type="search" placeholder="Tìm ngữ liệu, chủ đề, mã HH2.1…" autocomplete="off" aria-label="Tìm kiếm">
     <kbd title="Bấm / để tìm">/</kbd>
     <div class="results" id="results"></div>
   </div>
@@ -629,6 +716,7 @@ figure .table-wrap{margin-bottom:0}
 <div class="layout">
   <nav class="sidebar" id="sidebar" aria-label="Mục lục"></nav>
   <div class="scrim" id="scrim"></div>
+  <button class="side-open" type="button" data-side-toggle title="Mở mục lục" aria-label="Mở mục lục"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg><span>Mục lục</span></button>
   <main id="main" tabindex="-1"><div class="page"><p class="muted">Đang tải dữ liệu…</p></div></main>
 </div>
 <footer class="site-foot" id="siteFoot"></footer>
@@ -673,17 +761,19 @@ const CAU_HINH = {
 };
 /* ======================= HẾT KHỐI CAU_HINH ========================== */
 
+/* Mã theo quy ước CT Hoá học 2018: HH2.1–HH2.5 (Tìm hiểu thế giới tự nhiên), HH3.1–HH3.5 (Vận dụng); nhận cả mã cũ HH2.1–HH2.5, HH3.1–HH3.5 */
+function maChuan(m){ return String(m == null ? '' : m).trim().replace(/^(TH|VD)\s*([1-5])$/i, (_, a, n) => (a.toUpperCase() === 'TH' ? 'HH2.' : 'HH3.') + n); }
 const MA_BIEU_HIEN = [
-  ['TH1','Đề xuất vấn đề: nhận ra, đặt câu hỏi, phân tích bối cảnh, biểu đạt vấn đề'],
-  ['TH2','Đưa ra phán đoán, xây dựng và phát biểu giả thuyết'],
-  ['TH3','Lập kế hoạch: khung logic nội dung, chọn phương pháp, kế hoạch triển khai'],
-  ['TH4','Thực hiện kế hoạch: thu thập, phân tích dữ liệu, rút ra và điều chỉnh kết luận'],
-  ['TH5','Viết, trình bày báo cáo; thảo luận, phản biện, bảo vệ kết quả'],
-  ['VD1','Phát hiện, giải thích hiện tượng tự nhiên, ứng dụng của hoá học trong cuộc sống'],
-  ['VD2','Phản biện, đánh giá ảnh hưởng của một vấn đề thực tiễn'],
-  ['VD3','Vận dụng kiến thức tổng hợp đề xuất phương pháp, biện pháp, mô hình, kế hoạch giải quyết'],
-  ['VD4','Định hướng ngành, nghề sau tốt nghiệp THPT'],
-  ['VD5','Ứng xử thích hợp theo yêu cầu phát triển bền vững, bảo vệ môi trường']
+  ['HH2.1','Đề xuất vấn đề: nhận ra, đặt câu hỏi, phân tích bối cảnh, biểu đạt vấn đề'],
+  ['HH2.2','Đưa ra phán đoán, xây dựng và phát biểu giả thuyết'],
+  ['HH2.3','Lập kế hoạch: khung logic nội dung, chọn phương pháp, kế hoạch triển khai'],
+  ['HH2.4','Thực hiện kế hoạch: thu thập, phân tích dữ liệu, rút ra và điều chỉnh kết luận'],
+  ['HH2.5','Viết, trình bày báo cáo; thảo luận, phản biện, bảo vệ kết quả'],
+  ['HH3.1','Phát hiện, giải thích hiện tượng tự nhiên, ứng dụng của hoá học trong cuộc sống'],
+  ['HH3.2','Phản biện, đánh giá ảnh hưởng của một vấn đề thực tiễn'],
+  ['HH3.3','Vận dụng kiến thức tổng hợp đề xuất phương pháp, biện pháp, mô hình, kế hoạch giải quyết'],
+  ['HH3.4','Định hướng ngành, nghề sau tốt nghiệp THPT'],
+  ['HH3.5','Ứng xử thích hợp theo yêu cầu phát triển bền vững, bảo vệ môi trường']
 ];
 const LOAI = {'01':'Số liệu chuẩn','02':'Thí nghiệm có dữ liệu thật','03':'Thực tiễn quốc tế','04':'Bối cảnh Việt Nam','05':'Vấn đề mở, sự cố','06':'Công nghệ, nghề nghiệp'};
 const TRANG_THAI = {nhap:'Bản nháp', doi_sanh:'Đã đối sánh nguồn', tham_dinh:'Đã thẩm định chuyên gia'};
@@ -743,6 +833,7 @@ const moTa = m => (MA_BIEU_HIEN.find(b=>b[0]===m)||[])[1] || '';
 const maCua = x => [...(x.ma_TH||[]), ...(x.ma_VD||[])];
 const soHoc = v => { const s = String(v).trim(); return /^-?\d[\d\s]*([.,]\d+)?$/.test(s) ? parseFloat(s.replace(/\s/g,'').replace(',', '.')) : NaN; };
 const ICON = {
+  chevL:'<path d="m15 6-6 6 6 6"/><path d="M5 5v14"/>',
   home:'<path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v10h14V10"/>',
   search:'<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>',
   grid:'<rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/>',
@@ -752,6 +843,7 @@ const ICON = {
   spark:'<path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/>',
   copy:'<rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/>',
   print:'<path d="M7 9V3h10v6"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M7 14h10v7H7z"/>',
+  chart:'<path d="M4 20h16"/><path d="M7 16v-5M12 16V7M17 16v-9"/>',
   table:'<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M9 4v16"/>',
   eye:'<path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
   mask:'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M9 5v14"/><path d="m13 13 4 4M17 13l-4 4"/>',
@@ -783,6 +875,8 @@ NL.ds = NL.ds.filter(x => {
   if(!C.chu_de.some(c=>c.ma===x.chu_de)) NL.loi.push({tep:x._tep, msg:`Ngữ liệu "${x.id}": chu_de "${x.chu_de}" không có trong CAU_HINH.`});
   if(x.trang_thai && !TRANG_THAI[x.trang_thai]) NL.loi.push({tep:x._tep, msg:`Ngữ liệu "${x.id}": trang_thai "${x.trang_thai}" không hợp lệ (chỉ dùng nhap, doi_sanh, tham_dinh) – đang coi là nhap.`});
   ['cau_hoi','nguon','luu_y_khoa_hoc','hinh','ma_TH','ma_VD'].forEach(k => { if(!Array.isArray(x[k])) x[k] = []; });
+  x.ma_TH = x.ma_TH.map(maChuan); x.ma_VD = x.ma_VD.map(maChuan);
+  x.cau_hoi.forEach(q => { if(q && Array.isArray(q.ma)) q.ma = q.ma.map(maChuan); });
   return true;
 }).sort((a,b) => a.id.localeCompare(b.id));
 const DS = NL.ds.filter(x => C.hien_ban_nhap || ttCua(x) !== 'nhap');
@@ -790,17 +884,21 @@ const ofCd = ma => DS.filter(x=>x.chu_de===ma);
 const TT_HIEN = Object.keys(TRANG_THAI).filter(k => C.hien_ban_nhap || k !== 'nhap');
 const soMa = m => DS.filter(x=>maCua(x).includes(m)).length;
 const popMa = m => esc(`<b>${esc(m)}</b>${esc(moTa(m))}<small>${soMa(m)} ngữ liệu · bấm để lọc</small>`);
-const MA_NGAN = {TH1:'Đặt câu hỏi, đề xuất vấn đề',TH2:'Dự đoán, nêu giả thuyết',TH3:'Lập kế hoạch, thiết kế thí nghiệm',TH4:'Xử lí số liệu, rút ra kết luận',TH5:'Báo cáo, thảo luận, phản biện',VD1:'Giải thích hiện tượng',VD2:'Đánh giá, phản biện vấn đề thực tiễn',VD3:'Đề xuất giải pháp',VD4:'Định hướng nghề nghiệp',VD5:'Bảo vệ môi trường, phát triển bền vững'};
+const MA_NGAN = {'HH2.1':'Đặt câu hỏi, đề xuất vấn đề','HH2.2':'Dự đoán, nêu giả thuyết','HH2.3':'Lập kế hoạch, thiết kế thí nghiệm','HH2.4':'Xử lí số liệu, rút ra kết luận','HH2.5':'Báo cáo, thảo luận, phản biện','HH3.1':'Giải thích hiện tượng','HH3.2':'Đánh giá, phản biện vấn đề thực tiễn','HH3.3':'Đề xuất giải pháp','HH3.4':'Định hướng nghề nghiệp','HH3.5':'Bảo vệ môi trường, phát triển bền vững'};
 const maTag = m => `<a class="tag ma" href="#/tra-cuu?ma=${esc(m)}" data-pop="${popMa(m)}">${esc(m)}</a>`;
 
 /* ---------- Hiệu ứng xuất hiện khi cuộn ---------- */
 const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => {
   if(!e.isIntersecting) return; const el = e.target; el.classList.add('in'); io.unobserve(el);
   $$('[data-count]', el).forEach(countUp); if(el.dataset.count) countUp(el);
-}), {threshold:.08, rootMargin:'0px 0px -30px 0px'}) : null;
+}), {threshold:.01, rootMargin:'0px 0px -6% 0px'}) : null;
+/* các khối nội dung tự hiện dần khi cuộn tới (trừ phần nằm trong khối đã có hiệu ứng) */
+const KHOI_CUON = 'h2,figure,.box,details,.table-wrap,.prose>p,.luuy,.src-list,.kv,.q,.lanes>.col,.steps>li,.cards>*,.topics>*,.types>*,.gsteps>*,.guide,.toc-inline,.pager';
 function reveal(root){
+  $$(KHOI_CUON, root).forEach(el => { if(!el.classList.contains('rv') && !el.parentElement.closest('.rv') && !el.closest('.hero,.results,.sidebar')) el.classList.add('rv'); });
   const els = $$('.rv:not(.in)', root);
-  els.forEach((el, i) => { el.style.setProperty('--d', (i % 8) * 45 + 'ms'); io ? io.observe(el) : el.classList.add('in'); });
+  let k = 0, prev = null;
+  els.forEach(el => { k = (prev && el.parentElement === prev.parentElement) ? Math.min(k + 1, 6) : 0; prev = el; el.style.setProperty('--d', k * 70 + 'ms'); io ? io.observe(el) : el.classList.add('in'); });
   if(!io) $$('[data-count]', root).forEach(countUp);
 }
 function countUp(el){
@@ -839,7 +937,7 @@ const pagePager = r => { const i = PAGES.indexOf(r); return pager(i>0?[PAGES[i-1
 function buildSidebar(){
   const a = (r, t, pre='', post='', style='') => `<a href="#/${r}" data-r="${r}"${style?` style="${style}"`:''}>${pre}<span>${esc(t).split(', ').map(p => `<span class="nw">${p}</span>`).join(', ')}</span>${post}</a>`;
   const ic = n => `<span class="ico">${icon(n)}</span>`;
-  $('#sidebar').innerHTML = a('', 'Trang chủ', ic('home')) + a('tra-cuu', 'Tra cứu ngữ liệu', ic('search')) +
+  $('#sidebar').innerHTML = '<button class="side-close" type="button" data-side-toggle title="Thu gọn mục lục để đọc rộng hơn">' + icon('chevL',16) + '<span>Thu gọn mục lục</span></button>' + a('', 'Trang chủ', ic('home')) + a('tra-cuu', 'Tra cứu ngữ liệu', ic('search')) +
     '<h4>' + C.chu_de.length + ' chủ đề</h4>' + C.chu_de.map(c => a('tra-cuu?cd='+c.ma, c.ten, `<span class="sym">${esc(c.ki_hieu)}</span>`, `<span class="cnt">${ofCd(c.ma).length}</span>`, cvar(c))).join('') +
     '<h4>Dành cho giáo viên</h4>' + a('khung-nang-luc', 'Khung năng lực', ic('grid')) + a('huong-dan', 'Hướng dẫn sử dụng', ic('book')) + a('phan-hoi', 'Phản hồi và chia sẻ dữ liệu', ic('chat')) +
     '<h4>Về sản phẩm</h4>' + a('nguon', 'Nguồn & bản quyền', ic('link')) + a('minh-bach-ai', 'Minh bạch AI', ic('spark'));
@@ -889,6 +987,9 @@ function wireTable(root){
     ths.forEach(t => t.removeAttribute('aria-sort')); th.setAttribute('aria-sort', st.d > 0 ? 'ascending' : 'descending');
   }));
   const mb = $('#maskBtn', root), clr = $('#maskClear', root), hint = $('#maskHint', root);
+  const fg = tb.closest('figure'), xem = v => { if(!fg || !fg.classList.contains('has-chart')) return; fg.classList.toggle('view-chart', v === 'chart'); fg.classList.toggle('view-table', v === 'table'); $$('[data-vt]', fg).forEach(b => { const on = b.dataset.vt === v; b.classList.toggle('on', on); b.setAttribute('aria-selected', on); }); };
+  if(fg) $$('[data-vt]', fg).forEach(b => b.addEventListener('click', () => xem(b.dataset.vt)));
+  mb.addEventListener('click', () => xem('table'));
   const upd = () => { const n = $$('td.masked', tb).length; clr.hidden = !n; hint.textContent = tb.classList.contains('masking') ? 'Bấm vào ô số liệu để che / bỏ che. Ô bị che sẽ in ra là “……” trong bản học sinh.' : (n ? `Đang che ${n} ô.` : ''); };
   mb.addEventListener('click', () => { const on = tb.classList.toggle('masking'); mb.classList.toggle('on', on); mb.querySelector('span').textContent = on ? 'Xong' : 'Che ô để ra đề'; upd(); });
   clr.addEventListener('click', () => { $$('td.masked', tb).forEach(td => td.classList.remove('masked')); upd(); });
@@ -963,12 +1064,12 @@ function wireQuestions(root, qs){
 }
 
 /* ---------- Trang chủ ---------- */
-const heroArt = `<svg class="hero-art" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
-  <polygon points="100,40 152,70 152,130 100,160 48,130 48,70"/><circle cx="100" cy="100" r="34" opacity=".5"/>
-  <line x1="100" y1="40" x2="100" y2="10"/><circle cx="100" cy="7" r="6" fill="currentColor"/>
-  <line x1="152" y1="130" x2="178" y2="145"/><circle cx="182" cy="147" r="6" fill="currentColor"/>
-  <line x1="48" y1="130" x2="22" y2="145"/><circle cx="18" cy="147" r="6" fill="currentColor"/></svg>
-  <svg class="hero-art2" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><circle cx="50" cy="50" r="10" fill="currentColor"/><ellipse cx="50" cy="50" rx="44" ry="16"/><ellipse cx="50" cy="50" rx="44" ry="16" transform="rotate(60 50 50)"/><ellipse cx="50" cy="50" rx="44" ry="16" transform="rotate(120 50 50)"/></svg>`;
+const heroArt = `<svg class="hero-art" viewBox="0 50 266 115" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <polygon pathLength="1" points="90,70 124.6,90 124.6,130 90,150 55.4,130 55.4,90"/><line pathLength="1" x1="91.9" y1="79.9" x2="115.1" y2="93.3"/><line pathLength="1" x1="115.1" y1="126.7" x2="91.9" y2="140.1"/><line pathLength="1" x1="63.0" y1="123.4" x2="63.0" y2="96.6"/>
+  <polyline pathLength="1" points="124.6,90 159.2,70 193.9,90 216,77"/>
+  <line pathLength="1" x1="55.4" y1="90" x2="36" y2="79"/><line pathLength="1" x1="55.4" y1="130" x2="36" y2="141"/>
+  <g class="lbl" fill="currentColor" stroke="none" font-family="Noto Sans,Segoe UI,Arial,sans-serif" font-weight="700" font-size="19"><text x="218" y="78">NH<tspan font-size="13" dy="5">2</tspan></text><text x="33" y="79" text-anchor="end">HO</text><text x="33" y="148" text-anchor="end">HO</text></g></svg>
+  <svg class="hero-art2" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><circle class="nhan" cx="50" cy="50" r="10" fill="currentColor"/><g class="orb"><ellipse cx="50" cy="50" rx="44" ry="16"/><ellipse cx="50" cy="50" rx="44" ry="16" transform="rotate(60 50 50)"/><ellipse cx="50" cy="50" rx="44" ry="16" transform="rotate(120 50 50)"/><circle cx="94" cy="50" r="4" fill="currentColor" stroke="none"/><circle cx="28" cy="88.1" r="4" fill="currentColor" stroke="none"/><circle cx="28" cy="11.9" r="4" fill="currentColor" stroke="none"/></g></svg>`;
 function guideBand(home){
   const vd = DS.find(x=>x.id==='cd03-03') ? '#/nl/cd03-03' : '#/tra-cuu';
   const pr = home ? '#/huong-dan?mo=shd-p' : '#shd-p';
@@ -976,7 +1077,7 @@ function guideBand(home){
   return `<section class="guide">
     <div class="guide-hd"><h2>Dùng thư viện trong 4 bước</h2>${home?'<a href="#/huong-dan">Hướng dẫn chi tiết →</a>':''}</div>
     <div class="gsteps">
-      ${st(1,'#/tra-cuu','Tìm ngữ liệu','<span class="gp on">Lớp 11</span><span class="gp">Cân bằng</span><span class="gp">TH4</span>','Lọc theo lớp, chủ đề, năng lực cần phát triển hoặc gõ từ khoá.','Mở Tra cứu')}
+      ${st(1,'#/tra-cuu','Tìm ngữ liệu','<span class="gp on">Lớp 11</span><span class="gp">Cân bằng</span><span class="gp">HH2.4</span>','Lọc theo lớp, chủ đề, năng lực cần phát triển hoặc gõ từ khoá.','Mở Tra cứu')}
       ${st(2,vd,'Đọc bối cảnh',`<span class="gp ic">${icon('table',14)} Bảng số liệu</span><span class="gp">Nguồn: NOAA ↗</span>`,'Xem số liệu, mở nguồn gốc, đọc lưu ý khoa học.','Xem ngữ liệu mẫu')}
       ${st(3,vd,'Dùng câu hỏi',`<span class="gb">${icon('print',14)} In bản học sinh</span><span class="gp">Bản GV</span>`,'Làm thử, che ô số liệu để ra đề, in phiếu cho lớp.','Xem ngữ liệu mẫu')}
       ${st(4,pr,'Soạn thêm với AI',`<span class="gb">${icon('copy',14)} Sao chép prompt</span><span class="gp">→ ChatGPT</span>`,'Dán Khối 0 rồi chọn 1 trong 12 prompt mẫu; trong mỗi ngữ liệu, prompt đã điền sẵn nội dung. Tự giải lại, thẩm định chéo trước khi dùng.','Mở bộ prompt')}
@@ -988,13 +1089,11 @@ function guideBand(home){
 function pageHome(){
   const tdi = DS.filter(x=>ttCua(x)==='tham_dinh').length, nQ = DS.reduce((s,x)=>s+x.cau_hoi.length,0), nNg = new Set(DS.flatMap(x=>(x.nguon||[]).map(n=>n.url||n.trich_dan))).size;
   const moi = DS.slice().sort((a,b) => TT_HIEN.indexOf(ttCua(b)) - TT_HIEN.indexOf(ttCua(a))).slice(0, 3);
-  const words = ['bảng số liệu', 'đồ thị', 'thí nghiệm', 'quy chuẩn', 'tình huống'];
   return `<div class="page wide">${errBox()}
     <section class="hero">${heroArt}<div class="hero-inner"><div>
       <div class="eyebrow">${icon('spark',15)} ${txt(C.don_vi)}</div>
-      <h1>Thư viện ngữ liệu<span class="h1-sub">trong dạy học và đánh giá năng lực môn <em>Hóa học</em> <span class="nw">ở trường phổ thông</span></span></h1>
-      <div class="slogan">Từ <span class="rotator" id="rot">${words[0]}</span> đến nhiệm vụ năng lực</div>
-      <p>Ngữ liệu từ dữ liệu thật, kèm nguồn và giấy phép; gắn với các biểu hiện năng lực theo Chương trình Hoá học 2018: <b>TH</b> là tìm hiểu tự nhiên (đặt câu hỏi, dự đoán, làm thí nghiệm, xử lí số liệu…), <b>VD</b> là vận dụng kiến thức (giải thích, đánh giá, đề xuất giải pháp…).</p>
+      <h1>Thư viện ngữ liệu <em>Hóa học</em><span class="h1-sub">Sử dụng trong dạy học và đánh giá năng lực <span class="nw">ở trường phổ thông</span></span></h1>
+      <p>Website cung cấp hệ thống ngữ liệu hóa học gắn với thực nghiệm và các bối cảnh thực tiễn, được biên tập từ các nguồn dữ liệu tin cậy, có thể sử dụng để phát triển thành các nhiệm vụ, câu hỏi, bài tập trong dạy học và đánh giá năng lực hóa học.</p>
       <div class="btn-row"><a class="btn" href="#/tra-cuu">${icon('search',17)} Tra cứu ngữ liệu</a>${DS.length?`<button class="btn ghost" id="randBtn">${icon('dice',17)} Ngữ liệu ngẫu nhiên</button>`:''}<a class="btn ghost" href="#/huong-dan">${icon('book',17)} Hướng dẫn sử dụng</a></div>
     </div>${C.anh_qr?`<div class="qr"><img src="${esc(C.anh_qr)}" alt="Mã QR mở trang"><small>Quét để mở trên điện thoại</small></div>`:''}</div>
     <div class="stats">
@@ -1027,6 +1126,7 @@ function wireHome(){
 
 /* ---------- Tra cứu ---------- */
 function pageTraCuu(P){
+  if(P && P.ma) P.ma = maChuan(P.ma);
   const html = `<div class="page wide">${errBox()}${crumbs([['','Trang chủ'],['','Tra cứu ngữ liệu']])}
     <h1>Tra cứu ngữ liệu</h1><p class="lead">Lọc theo lớp, chủ đề, loại ngữ liệu, mã biểu hiện năng lực hoặc từ khoá. Kết quả cập nhật ngay khi bạn chọn.</p>
     <div class="filters">
@@ -1088,7 +1188,8 @@ function pageNL(id){
     <h2 id="s1">${sec(1,'Bối cảnh')}</h2><div class="prose">${paras(x.boi_canh)}</div>`;
   if(b && Array.isArray(b.cot) && Array.isArray(b.dong) && b.dong.length){
     const numCol = b.cot.map((_,c) => c>0 && b.dong.every(r => Array.isArray(r) && !isNaN(soHoc(r[c]))));
-    h += `<figure class="rv">${b.tieu_de?`<div class="fig-title">${txt(b.tieu_de)}</div>`:''}${chartFrom(b,'ch1')}
+    const ch = chartFrom(b,'ch1');
+    h += `<figure class="rv${ch?' has-chart view-chart':''}">${b.tieu_de?`<div class="fig-title">${txt(b.tieu_de)}</div>`:''}${ch?`<div class="vt no-print" role="tablist" aria-label="Cách xem số liệu"><button role="tab" class="on" data-vt="chart" aria-selected="true">${icon('chart',15)} Biểu đồ</button><button role="tab" data-vt="table" aria-selected="false">${icon('table',15)} Bảng số liệu</button></div>`:''}${ch}
       <div class="table-wrap"><table class="sortable" id="tbl"><thead><tr>${b.cot.map((c,j)=>`<th class="${numCol[j]?'num':''}" title="Bấm để sắp xếp">${txt(c)}</th>`).join('')}</tr></thead><tbody>${b.dong.map(r=>`<tr>${(Array.isArray(r)?r:[r]).map((v,j)=>`<td class="${numCol[j]?'num':''}" data-v="${esc(v)}"><span>${txt(v)}</span></td>`).join('')}</tr>`).join('')}</tbody></table></div>
       <div class="fig-tools no-print"><button class="mini" id="maskBtn">${icon('mask',16)}<span>Che ô để ra đề</span></button><button class="mini" id="maskClear" hidden>${icon('reset',16)}<span>Bỏ che tất cả</span></button><span class="hint" id="maskHint"></span></div>
       ${b.ghi_chu?`<figcaption>${txt(b.ghi_chu)}</figcaption>`:''}</figure>`;
@@ -1103,7 +1204,7 @@ function pageNL(id){
       <div>Tìm hiểu tự nhiên</div><div>${maRows(x.ma_TH)}</div>
       <div>Vận dụng</div><div>${maRows(x.ma_VD)}</div>
       <div>Tổ chức dạy học</div><div>${lines(x.dinh_huong||'')}</div></div></div>
-    <h2 id="s4">${sec(4,'Câu hỏi minh hoạ')}</h2>
+    <h2 id="s4"><span class="sec"><span class="n"><span class="pv-gv">4</span><span class="pv-hs">2</span></span><span><span class="pv-gv">Câu hỏi minh hoạ</span><span class="pv-hs">Câu hỏi</span></span></span></h2>
     <p class="muted small no-print">Câu đúng/sai và nhiều lựa chọn: bấm để thử. Trả lời ngắn: nhập đáp số rồi bấm Kiểm tra. Đáp án ẩn cho tới khi bấm xem.</p>
     <div id="qs">${x.cau_hoi.map(question).join('') || '<p class="muted">Chưa có câu hỏi.</p>'}</div>
     <div class="gv-only"><h2 id="s5">${sec(5,'Lưu ý khoa học cho giáo viên')}</h2>
@@ -1147,16 +1248,16 @@ const GOI_Y_LOAI = {
     dung:['Giới thiệu quy trình sản xuất và giải thích phần hoá học ở mỗi công đoạn.','Giúp học sinh tìm hiểu ngành học, công việc và kĩ năng cần có.','Giao dự án nhỏ: tìm hiểu một sản phẩm, một công nghệ hoặc một nhà máy.']}
 };
 const GOI_Y_MA = {
-  TH1:'Từ bối cảnh, bảng số liệu, nêu một câu hỏi khoa học có thể kiểm chứng; chỉ ra đại lượng cần đo, cần so sánh.',
-  TH2:'Dự đoán điều xảy ra khi thay đổi một điều kiện (nhiệt độ, nồng độ, chất…); phát biểu giả thuyết kèm lí do.',
-  TH3:'Thiết kế phương án kiểm chứng: hoá chất, dụng cụ, các bước; biến thay đổi – biến đo – biến giữ nguyên; lưu ý an toàn.',
-  TH4:'Xử lí số liệu: tính toán, lập bảng hoặc vẽ đồ thị, nhận xét xu hướng, chỉ ra số liệu bất thường, rút ra kết luận.',
-  TH5:'Viết kết luận có dẫn số liệu làm bằng chứng; trình bày, phản hồi ý kiến của nhóm khác.',
-  VD1:'Giải thích một hiện tượng hoặc ứng dụng trong bối cảnh bằng kiến thức hoá học.',
-  VD2:'Đánh giá một nhận định, lựa chọn hoặc tác động (lợi ích – rủi ro) dựa trên số liệu của ngữ liệu.',
-  VD3:'Đề xuất biện pháp, quy trình hoặc mô hình giải quyết vấn đề; tính toán để chứng minh tính khả thi.',
-  VD4:'Nêu ngành, nghề, vị trí việc làm liên quan và kiến thức, kĩ năng cần có.',
-  VD5:'Lựa chọn hành vi, giải pháp phù hợp với phát triển bền vững; lập luận bằng số liệu.'
+  'HH2.1':'Từ bối cảnh, bảng số liệu, nêu một câu hỏi khoa học có thể kiểm chứng; chỉ ra đại lượng cần đo, cần so sánh.',
+  'HH2.2':'Dự đoán điều xảy ra khi thay đổi một điều kiện (nhiệt độ, nồng độ, chất…); phát biểu giả thuyết kèm lí do.',
+  'HH2.3':'Thiết kế phương án kiểm chứng: hoá chất, dụng cụ, các bước; biến thay đổi – biến đo – biến giữ nguyên; lưu ý an toàn.',
+  'HH2.4':'Xử lí số liệu: tính toán, lập bảng hoặc vẽ đồ thị, nhận xét xu hướng, chỉ ra số liệu bất thường, rút ra kết luận.',
+  'HH2.5':'Viết kết luận có dẫn số liệu làm bằng chứng; trình bày, phản hồi ý kiến của nhóm khác.',
+  'HH3.1':'Giải thích một hiện tượng hoặc ứng dụng trong bối cảnh bằng kiến thức hoá học.',
+  'HH3.2':'Đánh giá một nhận định, lựa chọn hoặc tác động (lợi ích – rủi ro) dựa trên số liệu của ngữ liệu.',
+  'HH3.3':'Đề xuất biện pháp, quy trình hoặc mô hình giải quyết vấn đề; tính toán để chứng minh tính khả thi.',
+  'HH3.4':'Nêu ngành, nghề, vị trí việc làm liên quan và kiến thức, kĩ năng cần có.',
+  'HH3.5':'Lựa chọn hành vi, giải pháp phù hợp với phát triển bền vững; lập luận bằng số liệu.'
 };
 const loaiMa = x => String(x && x.id || '').split('-')[1] || '';
 const NL_CHO = '[DÁN NỘI DUNG NGỮ LIỆU: tiêu đề, bối cảnh, bảng số liệu, nguồn, lưu ý khoa học – sao chép từ trang ngữ liệu]';
@@ -1180,7 +1281,7 @@ Bạn là giáo viên Hoá học THPT giàu kinh nghiệm ra đề đánh giá n
 2. TRÍCH DẪN: Với mỗi câu, ghi mục "Dữ liệu dùng" chép nguyên văn dòng/ô của bảng hoặc câu trong ngữ liệu mà câu hỏi dựa vào.
 3. CHƯƠNG TRÌNH: Kiến thức không vượt CT Hoá học 2018 lớp ${lop} (kể cả chuyên đề học tập nếu ghi rõ). Danh pháp, thuật ngữ, kí hiệu theo SGK Hoá học CT 2018 (tên IUPAC tiếng Anh cho chất; ví dụ: sodium hydroxide, ethanoic acid / acetic acid).
 4. HẰNG SỐ: Nguyên tử khối và hằng số lấy theo bảng trong SGK; liệt kê đầy đủ các giá trị đã dùng.
-5. MÃ NĂNG LỰC: Mỗi câu ghi (a) thành phần năng lực theo ma trận đề: NT (Nhận thức hoá học) / TH (Tìm hiểu thế giới tự nhiên dưới góc độ hoá học) / VD (Vận dụng kiến thức, kĩ năng đã học); (b) mã biểu hiện của thư viện: NT1–NT…, TH1–TH5, VD1–VD5; (c) cấp độ: Biết / Hiểu / Vận dụng. Giải thích 1 câu vì sao gán mã đó.
+5. MÃ NĂNG LỰC: Mỗi câu ghi (a) thành phần năng lực theo ma trận đề: HH1 (Nhận thức hoá học) / HH2 (Tìm hiểu thế giới tự nhiên dưới góc độ hoá học) / HH3 (Vận dụng kiến thức, kĩ năng đã học); (b) mã biểu hiện của thư viện: HH1.1–HH1.…, HH2.1–HH2.5, HH3.1–HH3.5; (c) cấp độ: Biết / Hiểu / Vận dụng. Giải thích 1 câu vì sao gán mã đó.
 6. ĐÁP ÁN: Đáp án duy nhất, không gây tranh cãi. Tự giải lại mọi phép tính lần 2 theo cách khác; kiểm tra đơn vị; chỉ làm tròn ở bước cuối.
 7. VIẾT CÂU HỎI: Thân câu nêu rõ nhiệm vụ; tránh phủ định (nếu bắt buộc thì IN HOA "KHÔNG"); không dùng "tất cả các ý trên", "không có ý nào"; 4 phương án cùng loại, độ dài tương đương, không để phương án đúng dài nhất hay lặp từ khoá của thân câu; vị trí đáp án đúng phân bố đều; phương án nhiễu dựa trên lỗi/quan niệm sai cụ thể và ghi tên lỗi đó.
 8. AN TOÀN – THỰC TIỄN: Mọi thí nghiệm nêu trong câu hỏi phải an toàn, khả thi ở trường phổ thông; nêu lưu ý an toàn nếu có hoá chất độc, dễ cháy.
@@ -1195,7 +1296,7 @@ Bạn là giáo viên Hoá học THPT giàu kinh nghiệm ra đề đánh giá n
 function promptsFor(x){
   const lop = x ? String(x.lop||CD(x.chu_de).lop) : '[10/11/12]';
   const ma = x ? maCua(x) : [];
-  const maTxt = ma.length ? ma.join(', ') + ' (' + ma.map(m => m + ': ' + moTa(m)).join('; ') + ')' : '[ví dụ: NT…, TH2, TH4, VD2, VD5]';
+  const maTxt = ma.length ? ma.join(', ') + ' (' + ma.map(m => m + ': ' + moTa(m)).join('; ') + ')' : '[ví dụ: HH1.…, HH2.2, HH2.4, HH3.2, HH3.5]';
   const NL = d => x ? `<ngu_lieu>\n${nlText(x)}\n</ngu_lieu>` : `<ngu_lieu>${d||'[DÁN NGỮ LIỆU]'}</ngu_lieu>`;
   return [
     {n:'0', k:'k0', ten:'Khối 0 – Ràng buộc chung', mo:'dán một lần ở đầu phiên chat', t: khoi0(x)},
@@ -1205,10 +1306,10 @@ Từ <ngu_lieu>, soạn MỘT CHÙM CÂU mô phỏng đề thi tốt nghiệp TH
 - 2 câu Phần I (4 phương án A–D, 1 đúng; 0,25 điểm/câu), có thể là 2 câu liên tiếp dùng chung một đoạn dẫn.
 - 1 câu Phần II (đúng/sai, 4 ý a–d; thang điểm: đúng 1 ý 0,1; 2 ý 0,25; 3 ý 0,5; 4 ý 1 điểm). Có 1–3 ý sai; 4 ý trả lời được độc lập, không ý nào là tiền đề của ý khác.
 - 1 câu Phần III (trả lời ngắn, 0,25 điểm) theo <quy_tac_tra_loi_ngan_TN_THPT>; ghi rõ đơn vị và yêu cầu làm tròn.
-Phân bổ cấp độ gần với đề thật: Phần I chủ yếu Biết/Hiểu (có thể 1 câu Vận dụng); Phần II trộn Biết–Hiểu–Vận dụng; Phần III Hiểu hoặc Vận dụng (không dùng mức Biết). Có ít nhất 1 lệnh hỏi thuộc TH và 1 lệnh hỏi thuộc VD. Các câu khai thác các khía cạnh khác nhau, không lặp ý.
+Phân bổ cấp độ gần với đề thật: Phần I chủ yếu Biết/Hiểu (có thể 1 câu Vận dụng); Phần II trộn Biết–Hiểu–Vận dụng; Phần III Hiểu hoặc Vận dụng (không dùng mức Biết). Có ít nhất 1 lệnh hỏi thuộc HH2 và 1 lệnh hỏi thuộc HH3. Các câu khai thác các khía cạnh khác nhau, không lặp ý.
 </nhiem_vu>
 <dinh_dang_ban_giao_vien>
-Bảng: | Câu/ý | Phần | Đáp án | NT/TH/VD – mã biểu hiện | Cấp độ | Dữ liệu dùng (trích nguyên văn) | Lời giải ngắn | Lỗi học sinh mà nhiễu/ý sai khai thác | Thời gian (giây) |
+Bảng: | Câu/ý | Phần | Đáp án | HH1/HH2/HH3 – mã biểu hiện | Cấp độ | Dữ liệu dùng (trích nguyên văn) | Lời giải ngắn | Lỗi học sinh mà nhiễu/ý sai khai thác | Thời gian (giây) |
 Cuối bảng: tổng thời gian ước tính; tỉ lệ cấp độ; danh sách giả định.
 </dinh_dang_ban_giao_vien>
 ${x ? NL() : '<ngu_lieu>\n[DÁN: tiêu đề, bối cảnh, bảng số liệu, nguồn, lưu ý khoa học]\n</ngu_lieu>'}`},
@@ -1240,7 +1341,7 @@ ${NL()}`},
      t:`<nhiem_vu>
 Với MỖI mã biểu hiện sau: ${maTxt}, soạn 1 câu hỏi hoặc nhiệm vụ từ <ngu_lieu> đo ĐÚNG biểu hiện đó.
 Với mỗi mã:
-1. Nhiệm vụ cho học sinh (dạng phù hợp: TH1, TH3 ưu tiên nhiệm vụ mở; TH4 cần xử lí số liệu; TH5 cần sản phẩm trình bày; VD2 cần lập luận đánh giá; VD5 gắn phát triển bền vững).
+1. Nhiệm vụ cho học sinh (dạng phù hợp: HH2.1, HH2.3 ưu tiên nhiệm vụ mở; HH2.4 cần xử lí số liệu; HH2.5 cần sản phẩm trình bày; HH3.2 cần lập luận đánh giá; HH3.5 gắn phát triển bền vững).
 2. Lí do gán mã (1–2 câu): hành vi quan sát được nào của học sinh chứng tỏ biểu hiện.
 3. Đáp án/sản phẩm mẫu.
 4. Với câu tự luận: rubric 3 mức Tốt – Đạt – Chưa đạt; mỗi mức mô tả sản phẩm cụ thể, quan sát được (ví dụ "nêu đúng biến độc lập, biến phụ thuộc và ≥ 2 biến cần kiểm soát"), không dùng từ cảm tính.
@@ -1286,7 +1387,7 @@ ${NL()}`},
      t:`<nhiem_vu>
 Thiết kế 1 phiếu học tập dùng trong [15/20] phút cho học sinh lớp ${lop} từ <ngu_lieu>, theo tiến trình: nêu vấn đề → giả thuyết → xử lí dữ liệu → kết luận → vận dụng.
 Ghi:
-1. Mục tiêu (gắn mã NT/TH/VD).
+1. Mục tiêu (gắn mã HH1/HH2/HH3).
 2. Nhiệm vụ theo từng bước, kèm thời gian từng bước (tổng không vượt thời lượng).
 3. Phân hoá 3 mức trên CÙNG dữ liệu: Cơ bản (có gợi ý từng bước, câu điền khuyết), Vừa (câu hỏi mở có định hướng), Nâng cao (tự đặt câu hỏi/đề xuất kiểm chứng hoặc đánh giá giới hạn của dữ liệu).
 4. Câu hỏi gợi mở cho giáo viên; 2–3 sai lầm/quan niệm sai dự kiến và cách phản hồi.
@@ -1323,8 +1424,8 @@ Kết luận: Dùng được / Dùng sau khi sửa / Loại bỏ cho từng câu
 ${NL('[DÁN]')}`},
     {n:'10', k:'p10', k0:1, ten:'Bảng đặc tả/ma trận cho một bộ câu', mo:'lập trước khi soạn câu hỏi',
      t:`Từ <ngu_lieu> và yêu cầu cần đạt sau ${x && x.yccd ? '"' + x.yccd + '"' : '[DÁN YÊU CẦU CẦN ĐẠT CỦA CHỦ ĐỀ TRONG CT 2018]'}, lập BẢNG ĐẶC TẢ cho [số] lệnh hỏi theo dạng đề tốt nghiệp THPT:
-| STT | Yêu cầu cần đạt | Thành phần năng lực (NT/TH/VD) + mã | Cấp độ | Dạng (Phần I/II/III) | Nội dung ngữ liệu dùng | Ghi chú |
-Tỉ lệ mục tiêu: Biết/Hiểu/Vận dụng ≈ 40/30/30; NT/TH/VD tham chiếu đề minh hoạ ≈ 47,5/10/42,5 (điều chỉnh tăng TH nếu ngữ liệu là thí nghiệm). Chỉ lập bảng, CHƯA soạn câu hỏi.
+| STT | Yêu cầu cần đạt | Thành phần năng lực (HH1/HH2/HH3) + mã | Cấp độ | Dạng (Phần I/II/III) | Nội dung ngữ liệu dùng | Ghi chú |
+Tỉ lệ mục tiêu: Biết/Hiểu/Vận dụng ≈ 40/30/30; HH1/HH2/HH3 tham chiếu đề minh hoạ ≈ 47,5/10/42,5 (điều chỉnh tăng HH2 nếu ngữ liệu là thí nghiệm). Chỉ lập bảng, CHƯA soạn câu hỏi.
 ${NL('[DÁN]')}`},
     {n:'11', k:'p11', k0:1, ten:'Phương án nhiễu từ quan niệm sai', mo:'tính ra nhiễu, ghi lỗi để chẩn đoán',
      t:`Cho câu hỏi gốc và đáp án đúng: [DÁN]. Dựa trên <ngu_lieu> (đặc biệt mục Lưu ý khoa học):
@@ -1367,7 +1468,7 @@ function pageKhung(){
     <p class="lead">Chương trình Hoá học 2018 xác định năng lực hoá học gồm ba thành phần: Nhận thức hoá học; Tìm hiểu thế giới tự nhiên dưới góc độ hoá học; Vận dụng kiến thức, kĩ năng đã học. Kho tập trung vào hai thành phần sau.</p>
     <div class="table-wrap"><table><thead><tr><th>Mã</th><th>Biểu hiện</th><th class="num">Ngữ liệu</th></tr></thead><tbody>
     ${MA_BIEU_HIEN.map(m => `<tr><td><span class="tag ma">${m[0]}</span></td><td>${esc(m[1])}</td><td class="num"><a href="#/tra-cuu?ma=${m[0]}">${soMa(m[0])}</a></td></tr>`).join('')}</tbody></table></div>
-    <p class="caption">TH: Tìm hiểu thế giới tự nhiên dưới góc độ hoá học · VD: Vận dụng kiến thức, kĩ năng đã học.</p>
+    <p class="caption">HH2: Tìm hiểu thế giới tự nhiên dưới góc độ hoá học · HH3: Vận dụng kiến thức, kĩ năng đã học.</p>
     <h2>Bản đồ phủ năng lực: chủ đề × mã biểu hiện</h2>
     <p class="muted small">Mỗi ô là số ngữ liệu của chủ đề có gắn mã đó. Ô đậm = phủ nhiều; ô trống cho thấy chỗ cần bổ sung. Bấm vào ô để xem các ngữ liệu.</p>
     <div class="table-wrap" style="padding:10px"><table class="heat"><thead><tr><th></th>${MA_BIEU_HIEN.map(m=>`<th>${m[0]}</th>`).join('')}</tr></thead>
@@ -1382,13 +1483,13 @@ function pageHuongDan(){
   const P = promptsFor(null);
   setTimeout(() => wirePrompts($('#main'), P));
   const TOC = ['Dùng thư viện trong 4 bước','Tìm ngữ liệu','Một ngữ liệu gồm những gì?','Sáu loại ngữ liệu','Dùng vào lúc nào trong bài học?','Câu hỏi theo từng biểu hiện','Câu hỏi theo các kì thi','Soạn thêm câu hỏi với AI','Góp ý và đóng góp ngữ liệu'];
-  const SUB = ['4 thao tác chính, đi kèm đường dẫn','Bộ lọc trên trang Tra cứu','6 mục trong mỗi ngữ liệu','Đặc điểm và cách dùng từng loại','Từ mở đầu bài đến kiểm tra, ôn thi','Gợi ý câu hỏi cho TH1–TH5, VD1–VD5','Cấu trúc đề tốt nghiệp THPT, TSA, HSA, SPT','Quy trình 7 bước, trách nhiệm, lỗi AI thường gặp','Báo lỗi, góp ý, gửi ngữ liệu mới'];
+  const SUB = ['4 thao tác chính, đi kèm đường dẫn','Bộ lọc trên trang Tra cứu','6 mục trong mỗi ngữ liệu','Đặc điểm và cách dùng từng loại','Từ mở đầu bài đến kiểm tra, ôn thi','Gợi ý câu hỏi cho HH2.1–HH2.5, HH3.1–HH3.5','Cấu trúc đề tốt nghiệp THPT, TSA, HSA, SPT','Quy trình 7 bước, trách nhiệm, lỗi AI thường gặp','Báo lỗi, góp ý, gửi ngữ liệu mới'];
   const sec = (n, body, tit, sub) => '<details class="hs" id="shd-' + n + '"' + (n === 1 ? ' open' : '') + '><summary class="hs-h"><span class="hs-n">' + (typeof n === 'number' ? n : '+') + '</span><span class="hs-t"><b>' + (tit || TOC[n-1]) + '</b><small>' + (sub || SUB[n-1]) + '</small></span></summary><div class="hs-b">' + body + '</div></details>';
   setTimeout(() => { const m = $('#main'); $$('[data-hs]', m).forEach(b => b.addEventListener('click', () => $$('details.hs', m).forEach(d => d.open = b.dataset.hs === '1'))); });
   const tb = (hd, rows, w) => '<div class="ht-wrap"><table class="ht"><thead><tr>' + hd.map((x,i) => '<th' + (w ? ' style="width:' + w[i] + '%"' : '') + '>' + x + '</th>').join('') + '</tr></thead><tbody>' +
     rows.map(r => '<tr>' + r.map((c,i) => '<td data-l="' + hd[i] + '">' + c + '</td>').join('') + '</tr>').join('') + '</tbody></table></div>';
   const fig = (src, cap) => '<figure class="hfig"><img src="' + src + '" alt="' + cap + '" loading="lazy"><figcaption>' + cap + '</figcaption></figure>';
-  const DUNG = ['Dán một lần ở đầu mỗi phiên chat','Soạn chùm câu đủ ba phần theo đề tốt nghiệp THPT','Cần câu tính toán điền đáp số','Cần câu 4 ý a, b, c, d','Đánh giá đúng một biểu hiện NT, TH, VD','Ôn thi Đánh giá tư duy TSA','Ôn thi SPT','Ôn thi HSA','Tổ chức hoạt động trên lớp','Thẩm định câu hỏi AI vừa soạn (phiên chat mới hoặc mô hình khác)','Lập bảng đặc tả trước khi soạn câu','Soạn phương án nhiễu từ quan niệm sai','Tách bản học sinh, kiểm tra rò rỉ đáp án'];
+  const DUNG = ['Dán một lần ở đầu mỗi phiên chat','Soạn chùm câu đủ ba phần theo đề tốt nghiệp THPT','Cần câu tính toán điền đáp số','Cần câu 4 ý a, b, c, d','Đánh giá đúng một biểu hiện HH1, HH2, HH3','Ôn thi Đánh giá tư duy TSA','Ôn thi SPT','Ôn thi HSA','Tổ chức hoạt động trên lớp','Thẩm định câu hỏi AI vừa soạn (phiên chat mới hoặc mô hình khác)','Lập bảng đặc tả trước khi soạn câu','Soạn phương án nhiễu từ quan niệm sai','Tách bản học sinh, kiểm tra rò rỉ đáp án'];
   return `<div class="page hd">${errBox()}${crumbs([['','Trang chủ'],['','Hướng dẫn sử dụng']])}
     <h1>Hướng dẫn sử dụng</h1>
     <p class="lead">Website cung cấp hệ thống ngữ liệu hoá học gắn với các bối cảnh thực tiễn, kèm theo dữ liệu có thật từ các nguồn tin cậy, là nguyên liệu để xây dựng bài tập, câu hỏi đánh giá năng lực môn Hoá học.</p>
@@ -1401,7 +1502,7 @@ function pageHuongDan(){
     ${sec(2, fig('data/img/hd-tracuu.png','Hình 1. Bộ lọc trên trang Tra cứu ngữ liệu') + tb(['Ô lọc','Cách dùng'],[
       ['<b>Lớp, Chủ đề</b>','Chọn đúng bài đang dạy. Trên trang chủ, bấm vào thẻ chủ đề để mở ngay danh sách ngữ liệu của chủ đề đó.'],
       ['<b>Loại ngữ liệu</b>','6 loại, xem <a href="#shd-4">mục 4</a>.'],
-      ['<b>Năng lực cần phát triển</b>','Chọn biểu hiện cần dạy hoặc cần đánh giá, ví dụ <i>TH4 – Xử lí số liệu, rút ra kết luận</i>.'],
+      ['<b>Năng lực cần phát triển</b>','Chọn biểu hiện cần dạy hoặc cần đánh giá, ví dụ <i>HH2.4 – Xử lí số liệu, rút ra kết luận</i>.'],
       ['<b>Từ khoá</b>','Gõ tên chất, hiện tượng, ứng dụng (VD: CO₂, pin, nhựa). Kết quả cập nhật ngay; bấm <i>Xoá lọc</i> để xem lại toàn bộ.']],[28,72]) +
       '<p class="small muted">Trang <a href="#/khung-nang-luc">Khung năng lực</a> cho biết mỗi chủ đề có ngữ liệu nào phát triển biểu hiện nào; bấm vào ô để mở danh sách.</p>')}
 
@@ -1417,12 +1518,12 @@ function pageHuongDan(){
     ${sec(4, tb(['Loại','Đặc điểm','Có thể dùng để'], Object.entries(GOI_Y_LOAI).map(([k,g]) => ['<a href="#/tra-cuu?loai=' + k + '"><b>' + k + '. ' + esc(LOAI[k]) + '</b></a>', esc(g.mo_ta), '<ul>' + g.dung.map(d => '<li>' + esc(d) + '</li>').join('') + '</ul>']),[24,34,42]))}
 
     ${sec(5, tb(['Thời điểm','Thầy cô','Học sinh','Biểu hiện'],[
-      ['<b>Mở đầu bài học</b>','Chiếu bảng số liệu hoặc kể tình huống trong ngữ liệu.','Nêu điều thắc mắc, đoán trước kết quả.','TH1, TH2'],
-      ['<b>Học kiến thức mới</b>','Giao bảng số liệu cho các nhóm.','Tính toán, tìm quy luật, giải thích bằng kiến thức vừa học.','TH4, VD1'],
-      ['<b>Luyện tập, vận dụng</b>','Giao câu hỏi trong ngữ liệu hoặc câu hỏi tự soạn thêm.','Tính với số liệu thật, nhận xét một ý kiến, đề xuất cách giải quyết.','VD2, VD3, VD5'],
-      ['<b>Thực hành, dự án</b>','Dùng ngữ liệu thực nghiệm làm mẫu.','Tự lên cách làm thí nghiệm, làm thử rồi so với kết quả trong ngữ liệu; tìm hiểu nghề liên quan.','TH3, VD4'],
+      ['<b>Mở đầu bài học</b>','Chiếu bảng số liệu hoặc kể tình huống trong ngữ liệu.','Nêu điều thắc mắc, đoán trước kết quả.','HH2.1, HH2.2'],
+      ['<b>Học kiến thức mới</b>','Giao bảng số liệu cho các nhóm.','Tính toán, tìm quy luật, giải thích bằng kiến thức vừa học.','HH2.4, HH3.1'],
+      ['<b>Luyện tập, vận dụng</b>','Giao câu hỏi trong ngữ liệu hoặc câu hỏi tự soạn thêm.','Tính với số liệu thật, nhận xét một ý kiến, đề xuất cách giải quyết.','HH3.2, HH3.3, HH3.5'],
+      ['<b>Thực hành, dự án</b>','Dùng ngữ liệu thực nghiệm làm mẫu.','Tự lên cách làm thí nghiệm, làm thử rồi so với kết quả trong ngữ liệu; tìm hiểu nghề liên quan.','HH2.3, HH3.4'],
       ['<b>Kiểm tra, ôn thi</b>','Lấy câu hỏi có sẵn hoặc dùng prompt để soạn đề.','Làm bài theo dạng đề tốt nghiệp THPT; ôn thi TSA, HSA, SPT.','Mọi biểu hiện']],[20,30,34,16]) +
-      '<p class="hex"><b>Ví dụ:</b> ngữ liệu <a href="#/nl/cd03-03">“Biến thiên theo mùa của nồng độ CO₂ khí quyển tại Mauna Loa”</a> dùng số liệu NOAA từ năm 1958: học sinh đặt câu hỏi từ đồ thị (TH1), giải thích dao động theo mùa bằng quang hợp (TH2, VD1), tính tốc độ tăng từ bảng số liệu (TH4), phản biện nhận định “chỉ cần trồng rừng là đủ” (VD2).</p>')}
+      '<p class="hex"><b>Ví dụ:</b> ngữ liệu <a href="#/nl/cd03-03">“Biến thiên theo mùa của nồng độ CO₂ khí quyển tại Mauna Loa”</a> dùng số liệu NOAA từ năm 1958: học sinh đặt câu hỏi từ đồ thị (HH2.1), giải thích dao động theo mùa bằng quang hợp (HH2.2, HH3.1), tính tốc độ tăng từ bảng số liệu (HH2.4), phản biện nhận định “chỉ cần trồng rừng là đủ” (HH3.2).</p>')}
 
     ${sec(6, tb(['Mã','Biểu hiện','Đầu đề gợi ý cho câu hỏi'], MA_BIEU_HIEN.map(m => ['<a class="tag ma" href="#/tra-cuu?ma=' + m[0] + '">' + m[0] + '</a>', esc(m[1]), esc(GOI_Y_MA[m[0]]||'')]),[10,42,48]))}
 
@@ -1454,7 +1555,7 @@ function pageHuongDan(){
         ['<b>Vượt chương trình</b>','Cơ chế, hằng số, khái niệm bậc đại học','Đối chiếu yêu cầu cần đạt CT 2018'],
         ['<b>Nhiễu kém</b>','Nhiễu vô lí; phương án đúng dài nhất','Dùng Prompt 11; thử nghiệm trên lớp'],
         ['<b>Ý đúng/sai phụ thuộc nhau</b>','Ý d dùng kết quả của ý c','Hỏi: “trả lời ý này mà không cần ý kia được không?”'],
-        ['<b>Gán mã năng lực tuỳ tiện</b>','Câu chỉ cần nhớ kiến thức nhưng gán TH4','Yêu cầu AI nêu lí do gán mã; người duyệt kiểm tra'],
+        ['<b>Gán mã năng lực tuỳ tiện</b>','Câu chỉ cần nhớ kiến thức nhưng gán HH2.4','Yêu cầu AI nêu lí do gán mã; người duyệt kiểm tra'],
         ['<b>Thuật ngữ lệch, phương án dài ngắn khác nhau</b>','Thường gặp ở câu GPT soạn (Frontiers in Education, 2026)','Đọc lại toàn bộ phương án theo cột']],[26,36,38]) +
       '<h3>Chọn prompt theo mục đích</h3>' +
       tb(['STT','Prompt','Dùng khi'], P.map((x,i) => [x.n, esc(x.ten), DUNG[i]||'']),[10,50,40]) +
@@ -1652,7 +1753,18 @@ $('#themeBtn').addEventListener('click', () => {
   try { localStorage.setItem('theme', rootEl.dataset.theme || 'light'); } catch(e){}
   setThemeIcon();
 });
-$('#menuBtn').addEventListener('click', () => { const o = document.body.classList.toggle('nav-open'); $('#menuBtn').setAttribute('aria-expanded', o); });
+const laMayTinh = () => window.matchMedia('(min-width:981px)').matches;
+try { if(localStorage.getItem('an-thanh-ben') === '1') document.body.classList.add('side-off'); } catch(e){}
+const capNhatNutMenu = () => { const mo = laMayTinh() ? !document.body.classList.contains('side-off') : document.body.classList.contains('nav-open');
+  $('#menuBtn').setAttribute('aria-expanded', mo); $('#menuBtn').setAttribute('aria-label', mo ? 'Thu gọn mục lục' : 'Mở mục lục'); $('#menuBtn').title = mo ? 'Thu gọn mục lục' : 'Mở mục lục'; };
+const doiThanhBen = () => {
+  if(laMayTinh()){ const an = document.body.classList.toggle('side-off'); try { localStorage.setItem('an-thanh-ben', an ? '1' : '0'); } catch(e){} }
+  else document.body.classList.toggle('nav-open');
+  capNhatNutMenu();
+};
+$('#menuBtn').addEventListener('click', doiThanhBen);
+document.addEventListener('click', e => { if(e.target.closest('[data-side-toggle]')) doiThanhBen(); });
+capNhatNutMenu(); window.addEventListener('resize', capNhatNutMenu);
 $('#scrim').addEventListener('click', () => document.body.classList.remove('nav-open'));
 $('#brandName').textContent = C.ten_ngan || C.ten_san_pham; $('#brandSub').textContent = C.khau_hieu;
 $('#siteFoot').innerHTML = `${esc(C.ten_san_pham)} · ${txt(C.don_vi)} · Sản phẩm miễn phí, phi thương mại, không thu thập dữ liệu cá nhân · Cập nhật ${esc(C.cap_nhat)}`;
