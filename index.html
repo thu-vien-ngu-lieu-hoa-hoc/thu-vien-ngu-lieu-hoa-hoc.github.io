@@ -142,10 +142,10 @@ ul,ol{padding-left:22px;margin:0 0 14px} li{margin:5px 0}
 .vt{display:inline-flex;gap:4px;padding:4px;border:1px solid var(--line);border-radius:12px;background:var(--surface-2);margin:2px 0 12px}
 .vt button{display:inline-flex;align-items:center;gap:6px;border:0;background:none;padding:6px 14px;border-radius:9px;font:600 14px var(--f-ui);color:var(--ink-2);cursor:pointer}
 .vt button.on{background:var(--surface);color:var(--accent-ink);box-shadow:0 1px 3px rgba(0,0,0,.12)}
-figure.view-chart .table-wrap,figure.view-chart .fig-tools{display:none}
+figure.view-chart .table-wrap{display:none}
 figure.view-table .chart{display:none}
 /* In theo cách xem giáo viên đang chọn: Biểu đồ -> in biểu đồ; Bảng số liệu -> in bảng */
-@media print{figure.view-chart .table-wrap,figure.view-chart .fig-tools{display:none!important} figure.view-chart .chart{display:block!important} figure.view-table .chart{display:none!important} figure.view-table .table-wrap{display:block!important}}
+@media print{figure.view-chart .table-wrap{display:none!important} figure.view-chart .chart{display:block!important} figure.view-table .chart{display:none!important} figure.view-table .table-wrap{display:block!important}}
 .sec .n{flex:none;width:36px;height:36px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font:600 17px var(--f-display)}
 .sec small{font:500 14px var(--f-ui);color:var(--ink-3)}
 .pv-hs{display:none}
@@ -284,13 +284,6 @@ table.sortable th:hover{color:var(--accent-ink)}
 table.sortable th::after{content:"↕";margin-left:6px;opacity:.35;font-size:12px}
 table.sortable th[aria-sort=ascending]::after{content:"↑";opacity:1;color:var(--accent)}
 table.sortable th[aria-sort=descending]::after{content:"↓";opacity:1;color:var(--accent)}
-table.masking td{cursor:pointer}
-table.masking td:hover{outline:2px dashed var(--accent);outline-offset:-3px}
-td.masked{position:relative}
-td.masked>span{visibility:hidden}
-td.masked::after{content:"?";position:absolute;inset:4px 6px;display:grid;place-items:center;border-radius:6px;background:var(--warn-bg);color:var(--warn-ink);font-weight:800}
-.fig-tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0 0}
-.fig-tools .hint{font-size:13.5px;color:var(--ink-3)}
 
 /* ---------- Bộ lọc ---------- */
 .filters{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:12px;align-items:end;padding:16px;background:var(--surface);border:1px solid var(--line);border-radius:16px;margin:18px 0 8px;box-shadow:var(--shadow-sm)}
@@ -662,12 +655,11 @@ p{margin:0 0 16px}
   .prompts{display:none!important}
   body{background:#fff;color:#000;font-size:12pt}
   .rv{opacity:1!important;transform:none!important}
-  .topbar,#readbar,.sidebar,.pager,.toolbar,.q-actions,.crumbs,.site-foot,.toc-inline,.no-print,.ds .choice,.ds .fb,.score,.toast,.tooltip,#toTop,.fig-tools,.big-sym,.short,.pop{display:none!important}
+  .topbar,#readbar,.sidebar,.pager,.toolbar,.q-actions,.crumbs,.site-foot,.toc-inline,.no-print,.ds .choice,.ds .fb,.score,.toast,.tooltip,#toTop,.big-sym,.short,.pop{display:none!important}
   main{padding:0} .page{max-width:none}
   .nl-head{background:#fff;padding:0 0 8px;border:0;border-bottom:1px solid #999;border-radius:0}
   .box,.q,figure,.table-wrap,.kv,.luuy li,.meta-foot,.mc button{border-color:#999!important;background:#fff!important;box-shadow:none!important}
   .chart .bar{transform:none} .chart .val{opacity:1}
-  td.masked::after{content:"……";background:none;color:#000}
   .answer{display:block;margin-top:8px} .answer .in{background:#f3f3f3;border-color:#bbb}
   .prose p:first-child::first-letter{float:none;font:inherit;margin:0;color:inherit}
   .print-head{display:block;font-size:10pt;color:#444;margin-bottom:8px}
@@ -847,7 +839,6 @@ const ICON = {
   chart:'<path d="M4 20h16"/><path d="M7 16v-5M12 16V7M17 16v-9"/>',
   table:'<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M9 4v16"/>',
   eye:'<path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
-  mask:'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M9 5v14"/><path d="m13 13 4 4M17 13l-4 4"/>',
   reset:'<path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/>',
   dice:'<rect x="4" y="4" width="16" height="16" rx="3"/><circle cx="9" cy="9" r="1.2" fill="currentColor"/><circle cx="15" cy="15" r="1.2" fill="currentColor"/><circle cx="15" cy="9" r="1.2" fill="currentColor"/><circle cx="9" cy="15" r="1.2" fill="currentColor"/>',
   moon:'<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>',
@@ -975,7 +966,7 @@ function wireCharts(root){
       h.addEventListener('mouseenter', show); h.addEventListener('mouseleave', hide); h.addEventListener('click', show);
     }); });
 }
-/* Bảng số liệu: bấm tiêu đề để sắp xếp; chế độ "che ô" để ra đề */
+/* Bảng số liệu: bấm tiêu đề để sắp xếp; chuyển giữa biểu đồ và bảng */
 function wireTable(root){
   const tb = $('#tbl', root); if(!tb) return;
   const ths = $$('th', tb), body = tb.tBodies[0]; let st = {c:-1, d:1};
@@ -987,14 +978,8 @@ function wireTable(root){
     rows.forEach(r => body.appendChild(r));
     ths.forEach(t => t.removeAttribute('aria-sort')); th.setAttribute('aria-sort', st.d > 0 ? 'ascending' : 'descending');
   }));
-  const mb = $('#maskBtn', root), clr = $('#maskClear', root), hint = $('#maskHint', root);
   const fg = tb.closest('figure'), xem = v => { if(!fg || !fg.classList.contains('has-chart')) return; fg.classList.toggle('view-chart', v === 'chart'); fg.classList.toggle('view-table', v === 'table'); $$('[data-vt]', fg).forEach(b => { const on = b.dataset.vt === v; b.classList.toggle('on', on); b.setAttribute('aria-selected', on); }); };
   if(fg) $$('[data-vt]', fg).forEach(b => b.addEventListener('click', () => xem(b.dataset.vt)));
-  mb.addEventListener('click', () => xem('table'));
-  const upd = () => { const n = $$('td.masked', tb).length; clr.hidden = !n; hint.textContent = tb.classList.contains('masking') ? 'Bấm vào ô số liệu để che / bỏ che. Ô bị che sẽ in ra là “……” trong bản học sinh.' : (n ? `Đang che ${n} ô.` : ''); };
-  mb.addEventListener('click', () => { const on = tb.classList.toggle('masking'); mb.classList.toggle('on', on); mb.querySelector('span').textContent = on ? 'Xong' : 'Che ô để ra đề'; upd(); });
-  clr.addEventListener('click', () => { $$('td.masked', tb).forEach(td => td.classList.remove('masked')); upd(); });
-  body.addEventListener('click', e => { if(!tb.classList.contains('masking')) return; const td = e.target.closest('td'); if(td){ td.classList.toggle('masked'); upd(); } });
 }
 
 /* ---------- Câu hỏi: tự nhận dạng đúng/sai, nhiều lựa chọn, trả lời ngắn ---------- */
@@ -1080,7 +1065,7 @@ function guideBand(home){
     <div class="gsteps">
       ${st(1,'#/tra-cuu','Tìm ngữ liệu','<span class="gp on">Lớp 11</span><span class="gp">Cân bằng</span><span class="gp">HH2.4</span>','Lọc theo lớp, chủ đề, năng lực cần phát triển hoặc gõ từ khoá.','Mở Tra cứu')}
       ${st(2,vd,'Đọc bối cảnh',`<span class="gp ic">${icon('table',14)} Bảng số liệu</span><span class="gp">Nguồn: NOAA ↗</span>`,'Xem số liệu, mở nguồn gốc, đọc lưu ý khoa học.','Xem ngữ liệu mẫu')}
-      ${st(3,vd,'Dùng câu hỏi',`<span class="gb">${icon('print',14)} In bản học sinh</span><span class="gp">Bản GV</span>`,'Làm thử, che ô số liệu để ra đề, in phiếu cho lớp.','Xem ngữ liệu mẫu')}
+      ${st(3,vd,'Dùng câu hỏi',`<span class="gb">${icon('print',14)} In bản học sinh</span><span class="gp">Bản GV</span>`,'Làm thử, chọn in biểu đồ hoặc bảng, in phiếu cho lớp.','Xem ngữ liệu mẫu')}
       ${st(4,pr,'Soạn thêm với AI',`<span class="gb">${icon('copy',14)} Sao chép prompt</span><span class="gp">→ ChatGPT</span>`,'Dán Khối 0 rồi chọn 1 trong 12 prompt mẫu; trong mỗi ngữ liệu, prompt đã điền sẵn nội dung. Tự giải lại, thẩm định chéo trước khi dùng.','Mở bộ prompt')}
     </div>
     <p class="guide-rule"><b>Lưu ý:</b> AI chỉ soạn nháp, không dùng AI để tạo số liệu. Thầy cô kiểm tra lại số liệu, đáp án và ghi nguồn ngữ liệu khi sử dụng.</p>
@@ -1192,7 +1177,6 @@ function pageNL(id){
     const ch = chartFrom(b,'ch1');
     h += `<figure class="rv${ch?' has-chart view-chart':''}">${b.tieu_de?`<div class="fig-title">${txt(b.tieu_de)}</div>`:''}${ch?`<div class="vt no-print" role="tablist" aria-label="Cách xem số liệu"><button role="tab" class="on" data-vt="chart" aria-selected="true">${icon('chart',15)} Biểu đồ</button><button role="tab" data-vt="table" aria-selected="false">${icon('table',15)} Bảng số liệu</button></div>`:''}${ch}
       <div class="table-wrap"><table class="sortable" id="tbl"><thead><tr>${b.cot.map((c,j)=>`<th class="${numCol[j]?'num':''}" title="Bấm để sắp xếp">${txt(c)}</th>`).join('')}</tr></thead><tbody>${b.dong.map(r=>`<tr>${(Array.isArray(r)?r:[r]).map((v,j)=>`<td class="${numCol[j]?'num':''}" data-v="${esc(v)}"><span>${txt(v)}</span></td>`).join('')}</tr>`).join('')}</tbody></table></div>
-      <div class="fig-tools no-print"><button class="mini" id="maskBtn">${icon('mask',16)}<span>Che ô để ra đề</span></button><button class="mini" id="maskClear" hidden>${icon('reset',16)}<span>Bỏ che tất cả</span></button><span class="hint" id="maskHint"></span></div>
       ${b.ghi_chu?`<figcaption>${txt(b.ghi_chu)}</figcaption>`:''}</figure>`;
   }
   x.hinh.forEach(f => { if(f && f.src) h += `<figure class="rv"><img src="${esc(f.src)}" alt="${esc(f.chu_thich||'')}" loading="lazy" data-zoom><figcaption>${txt(f.chu_thich||'')}${f.nguon?' Nguồn: '+txt(f.nguon)+'.':''}</figcaption></figure>`; });
@@ -1236,7 +1220,7 @@ function pageNL(id){
 /* ---------- Gợi ý sử dụng và phát triển với AI ---------- */
 const GOI_Y_LOAI = {
   '01': {ten:'ngữ liệu số liệu chuẩn', mo_ta:'Số liệu lấy từ các bộ dữ liệu, sổ tay khoa học uy tín như NIST, CRC Handbook, PubChem. Học sinh được làm việc với con số thật thay cho số liệu tự đặt ra.',
-    dung:['Ra bài tính toán bằng số liệu thật, yêu cầu học sinh ghi nguồn số liệu.','Cho học sinh so sánh, tìm quy luật và giải thích vì sao có quy luật đó.','Che bớt vài ô trong bảng (nút “Che ô để ra đề”) để học sinh tự tính hoặc dự đoán, rồi so với số liệu gốc.']},
+    dung:['Ra bài tính toán bằng số liệu thật, yêu cầu học sinh ghi nguồn số liệu.','Cho học sinh so sánh, tìm quy luật và giải thích vì sao có quy luật đó.','Khi ra đề, bỏ bớt vài số liệu trong bảng để học sinh tự tính hoặc dự đoán, rồi so với số liệu gốc.']},
   '02': {ten:'ngữ liệu thực nghiệm', mo_ta:'Một thí nghiệm có mục đích, cách làm và kết quả đo thật, lấy từ tài liệu thí nghiệm hoặc bài báo khoa học. Rất hợp để học sinh tập làm việc như nhà khoa học.',
     dung:['Đi theo các bước: đặt câu hỏi, nêu giả thuyết, đề xuất cách làm, xử lí kết quả, rút ra kết luận.','Cho học sinh tìm sai số, chỉ ra kết quả bất thường và đề xuất cách làm tốt hơn.','Nếu có điều kiện, cho học sinh làm lại thí nghiệm và so sánh với kết quả trong ngữ liệu.']},
   '03': {ten:'ngữ liệu thực tiễn quốc tế', mo_ta:'Số liệu, báo cáo của các tổ chức quốc tế như USGS, IEA, WHO, OECD, NOAA về sản xuất, tài nguyên, môi trường và sức khoẻ.',
@@ -1449,7 +1433,7 @@ function goiYHtml(x, sec){
   const g = GOI_Y_LOAI[loaiMa(x)], ma = maCua(x);
   return `<div class="gv-only ai-goi-y"><h2 id="s6">${sec(6,'Gợi ý sử dụng và phát triển với AI')}</h2>
     ${g?`<div class="box note"><div class="box-title">Đây là ${esc(g.ten)} (loại ${esc(loaiMa(x))} – ${esc(loaiCua(x))})</div><p>${esc(g.mo_ta)}</p></div>
-    <h3>Gợi ý cách sử dụng</h3><ul>${g.dung.map(d => `<li>${esc(d)}</li>`).join('')}<li>Dùng nguyên câu hỏi minh hoạ ở mục 4, hoặc đổi dạng câu, che bớt dữ liệu, thêm yêu cầu thiết kế thí nghiệm.</li></ul>`:''}
+    <h3>Gợi ý cách sử dụng</h3><ul>${g.dung.map(d => `<li>${esc(d)}</li>`).join('')}<li>Dùng nguyên câu hỏi minh hoạ ở mục 4, hoặc đổi dạng câu, bỏ bớt dữ liệu, thêm yêu cầu thiết kế thí nghiệm.</li></ul>`:''}
     <h3>Hướng xây dựng câu hỏi theo biểu hiện của ngữ liệu này</h3>
     <div class="kv">${ma.map(m => `<div><span class="tag ma">${esc(m)}</span></div><div>${esc(GOI_Y_MA[m]||moTa(m))}</div>`).join('')}</div>
     <h3>Prompt AI để phát triển ngữ liệu</h3>
