@@ -1633,15 +1633,6 @@ function wireNguon(){
     ths.forEach(x => x.removeAttribute('aria-sort')); th.setAttribute('aria-sort', st.d > 0 ? 'ascending' : 'descending'); }));
 }
 function pageAI(){
-  const kh = [
-    ['Xác định vấn đề, ý tưởng','Tóm tắt thể lệ; gợi ý, nhận xét ý tưởng và rủi ro','Trung bình','Nhóm chọn vấn đề từ thực tế dạy học, quyết định ý tưởng'],
-    ['Thiết kế khung sản phẩm','Đề xuất cấu trúc 5 mục, hệ mã biểu hiện, sơ đồ web','Trung bình','Mã biểu hiện đối chiếu nguyên văn CT Hoá học 2018; nhóm và giảng viên chỉnh sửa'],
-    ['Tìm nguồn','Gợi ý nguồn, từ khoá','Trung bình','Sinh viên mở từng nguồn, xác nhận tồn tại, đánh giá theo phiếu 8 tiêu chí; loại nguồn không đạt'],
-    ['Soạn ngữ liệu','Soạn nháp bối cảnh, câu hỏi, đáp án, lưu ý; dịch nháp','Cao (bản nháp)','Đối sánh từng số liệu, tên riêng, năm, đơn vị với nguồn gốc; viết lại'],
-    ['Thẩm định','Không dùng AI','Không','Chuyên gia Hoá học và chuyên gia Lí luận và PPDH Hoá học góp ý; nhóm sửa'],
-    ['Xây dựng trang web','Viết mã HTML/JavaScript','Cao','Nhóm cấu hình, nhập dữ liệu, kiểm thử trên máy tính và điện thoại'],
-    ['Hồ sơ dự thi','Soạn bản thảo bản mô tả, bản khai báo','Trung bình','Nhóm điền minh chứng thật, sửa và chịu trách nhiệm nội dung']
-  ];
   return `<div class="page wide">${errBox()}${crumbs([['','Trang chủ'],['','Minh bạch AI']])}
     <h1>Minh bạch về sử dụng AI</h1>
     <div class="motto rv"><span class="motto-k">Nguyên tắc</span><p class="motto-t">AI hỗ trợ, <em>con người kiểm soát.</em></p><p class="motto-s">AI không được dùng để tạo hoặc ước lượng số liệu.</p></div>
@@ -1655,11 +1646,6 @@ function pageAI(){
         ['Công bố, thử nghiệm','Đưa lên web; kiểm tra nội dung, thao tác; GV, SV dùng thử','Con người','']
       ].map((s,i)=>`<li class="rv"><span class="no" aria-hidden="true">${i+1}</span><div class="tx"><b>${s[0]}</b><span>${s[1]}</span></div><span class="who${s[3]?' '+s[3]:''}">${s[2]}</span></li>`).join('')}
     </ol>
-    <h2>AI hỗ trợ ở khâu nào</h2>
-    <div class="table-wrap"><table><thead><tr><th>Khâu</th><th>AI hỗ trợ</th><th>Mức độ</th><th>Con người thực hiện, kiểm chứng</th></tr></thead><tbody>
-    ${kh.map(r=>`<tr>${r.map((c,j)=>`<td>${j===2?`<span class="tag">${esc(c)}</span>`:esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>
-    <h2>Những phần không dùng AI</h2>
-    <ul><li>Số liệu khoa học: lấy trực tiếp từ nguồn gốc.</li><li>Thẩm định chuyên môn, khảo sát giáo viên, thử nghiệm và tổng hợp kết quả.</li><li>Quyết định cuối cùng về nội dung, việc chọn hay loại ngữ liệu.</li></ul>
     <h2>Công khai trên từng ngữ liệu</h2>
     <p>Chân trang mỗi ngữ liệu ghi ngày cập nhật và mức độ dùng AI. Không nhập dữ liệu cá nhân của học sinh, giáo viên vào công cụ AI. Sản phẩm miễn phí, phi thương mại.</p>
     ${pagePager('minh-bach-ai')}</div>`;
