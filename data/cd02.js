@@ -102,7 +102,7 @@ NL.add([
   "lop": "10",
   "tieu_de": "Ảnh hưởng của diện tích tiếp xúc tới tốc độ phản ứng",
   "yccd": "Thực hiện được thí nghiệm nghiên cứu ảnh hưởng của nồng độ, nhiệt độ, diện tích bề mặt đến tốc độ phản ứng; xử lí số liệu, rút ra kết luận.",
-  "boi_canh": "Phản ứng giữa đá vôi và dung dịch hydrochloric acid là thí nghiệm quen thuộc để nghiên cứu tốc độ phản ứng: CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g).\nKhí CO₂ thoát ra làm khối lượng cốc phản ứng giảm dần. Bằng cách đặt cốc lên cân điện tử và ghi lại khối lượng sau mỗi 30 giây, học sinh có thể vẽ đồ thị biểu diễn sự giảm khối lượng theo thời gian. Độ dốc âm của đồ thị khối lượng – thời gian (g/s) phản ánh tốc độ khối lượng khí CO₂ thoát ra; để biểu diễn theo mol/s cần chia cho M(CO₂), và giả thiết lượng nước mất đi do bay hơi hoặc bắn khỏi dung dịch là không đáng kể.\nTheo định luật bảo toàn khối lượng, 1,00 g CaCO₃ (0,0100 mol) phản ứng hết sẽ giải phóng 0,0100 mol CO₂, tức 0,44 g. Đây là mức giảm khối lượng tối đa nếu acid dư.\nĐể so sánh, có thể làm bốn thí nghiệm với cùng 1,00 g CaCO₃ và 50 mL acid dư, chỉ thay đổi một yếu tố mỗi lần: dạng đá vôi (viên hay bột), nồng độ acid (1 M hay 2 M), nhiệt độ (phòng hay nước ấm 40 °C). Phương pháp thay đổi một biến, giữ nguyên các biến khác là nền tảng của nghiên cứu khoa học.",
+  "boi_canh": "Phản ứng giữa đá vôi và dung dịch hydrochloric acid là thí nghiệm quen thuộc để nghiên cứu tốc độ phản ứng: CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g).\nKhí CO₂ thoát ra làm khối lượng cốc phản ứng giảm dần. Bằng cách đặt cốc lên cân điện tử và ghi lại khối lượng sau mỗi 30 giây, học sinh có thể vẽ đồ thị biểu diễn sự giảm khối lượng theo thời gian. Độ dốc âm của đồ thị khối lượng – thời gian (g/s) phản ánh tốc độ khối lượng khí CO₂ thoát ra; để biểu diễn theo mol/s cần chia cho M(CO₂), và giả thiết lượng nước mất đi do bay hơi hoặc bắn khỏi dung dịch là không đáng kể.\nTheo định luật bảo toàn khối lượng, 1,00 g CaCO₃ (0,0100 mol) phản ứng hết sẽ giải phóng 0,0100 mol CO₂, tức 0,44 g. Đây là mức giảm khối lượng tối đa nếu acid dư.\nĐể so sánh, có thể làm bốn thí nghiệm với cùng 1,00 g CaCO₃ và 50 mL acid dư, chỉ thay đổi một yếu tố mỗi lần: dạng đá vôi (viên hay bột), nồng độ acid (1 M hay 2 M), nhiệt độ (phòng hay nước ấm 40 °C). Phương pháp thay đổi một biến, giữ nguyên các biến khác là nền tảng của nghiên cứu khoa học.\nĐể tìm hiểu ảnh hưởng của nồng độ và nhiệt độ đến tốc độ phản ứng ở cấp độ phân tử, hãy truy cập mô phỏng Reactions & Rates của PhET, thay đổi từng yếu tố và quan sát các va chạm giữa các hạt. Ảnh hưởng của diện tích bề mặt đá vôi được khảo sát bằng thí nghiệm thực tế mô tả dưới đây.",
   "bang_so_lieu": {
    "tieu_de": "Thiết kế bốn thí nghiệm (học sinh tự đo và điền kết quả)",
    "cot": [
@@ -201,7 +201,13 @@ NL.add([
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu đo.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "06/11/2026",
+  "mo_phong": {
+   "ten": "Reactions & Rates (PhET)",
+   "url_nhung": "https://phet.colorado.edu/sims/cheerpj/reactions-and-rates/latest/reactions-and-rates.html?simulation=reactions-and-rates&locale=vi",
+   "url": "https://phet.colorado.edu/en/simulations/reactions-and-rates",
+   "nguon": "PhET Interactive Simulations, University of Colorado Boulder (CC BY 4.0)."
+  }
  },
  {
   "id": "cd02-03",

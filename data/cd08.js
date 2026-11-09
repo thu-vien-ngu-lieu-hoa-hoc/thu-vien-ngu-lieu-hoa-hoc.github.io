@@ -138,7 +138,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Xác định nồng độ phức đồng – ammonia bằng phép đo quang",
   "yccd": "Trình bày được sự tạo thành phức chất của Cu²⁺ với NH₃; thực hiện được thí nghiệm và xử lí số liệu liên quan đến màu của phức chất.",
-  "boi_canh": "Khi nhỏ từ từ dung dịch ammonia vào dung dịch copper(II) sulfate, lúc đầu xuất hiện kết tủa màu xanh nhạt Cu(OH)₂; khi NH₃ dư, kết tủa tan tạo thành dung dịch màu xanh lam đậm. Màu xanh đậm là màu của ion phức [Cu(NH₃)₄(H₂O)₂]²⁺ (thường viết gọn [Cu(NH₃)₄]²⁺).\nMàu càng đậm, nồng độ phức càng lớn. Mức độ hấp thụ ánh sáng của dung dịch được đo bằng máy quang phổ: chiếu ánh sáng qua cuvet chứa dung dịch và đo độ hấp thụ quang A. Theo định luật Beer – Lambert, A = ε·l·C (ε là hệ số hấp thụ mol, l là độ dày lớp dung dịch): độ hấp thụ tỉ lệ thuận với nồng độ C (khi l và bước sóng không đổi). Đây là cơ sở của phương pháp đo quang (so màu) được dùng phổ biến trong phòng xét nghiệm.\nMô phỏng Beer’s Law Lab của PhET cho phép học sinh thay đổi nồng độ, độ dày cuvet, bước sóng và quan sát ngay sự thay đổi của độ hấp thụ. Học sinh có thể tự xây dựng đường chuẩn, rồi dùng đường chuẩn để xác định nồng độ của một dung dịch chưa biết.",
+  "boi_canh": "Khi nhỏ từ từ dung dịch ammonia vào dung dịch copper(II) sulfate, lúc đầu xuất hiện kết tủa màu xanh nhạt Cu(OH)₂; khi NH₃ dư, kết tủa tan tạo thành dung dịch màu xanh lam đậm. Màu xanh đậm là màu của ion phức [Cu(NH₃)₄(H₂O)₂]²⁺ (thường viết gọn [Cu(NH₃)₄]²⁺).\nMàu càng đậm, nồng độ phức càng lớn. Mức độ hấp thụ ánh sáng của dung dịch được đo bằng máy quang phổ: chiếu ánh sáng qua cuvet chứa dung dịch và đo độ hấp thụ quang A. Theo định luật Beer – Lambert, A = ε·l·C (ε là hệ số hấp thụ mol, l là độ dày lớp dung dịch): độ hấp thụ tỉ lệ thuận với nồng độ C (khi l và bước sóng không đổi). Đây là cơ sở của phương pháp đo quang (so màu) được dùng phổ biến trong phòng xét nghiệm.\nĐể tìm hiểu cơ sở của phương pháp đo quang, hãy truy cập mô phỏng Beer’s Law Lab của PhET, chọn dung dịch copper(II) sulfate, giữ cố định bước sóng và độ dày cuvet, rồi thay đổi nồng độ để ghi độ hấp thụ và xây dựng đường chuẩn. Đường chuẩn thu được chỉ áp dụng cho dung dịch đã chọn trong mô phỏng; phép xác định nồng độ phức đồng – ammonia cần đường chuẩn riêng của phức này.",
   "bang_so_lieu": {
    "tieu_de": "Bảng ghi số liệu xây dựng đường chuẩn (học sinh đo trong mô phỏng PhET)",
    "cot": [
@@ -229,7 +229,13 @@ NL.add([
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu đo.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "06/11/2026",
+  "mo_phong": {
+   "ten": "Beer’s Law Lab (PhET)",
+   "url_nhung": "https://phet.colorado.edu/sims/html/beers-law-lab/latest/beers-law-lab_vi.html",
+   "url": "https://phet.colorado.edu/en/simulations/beers-law-lab",
+   "nguon": "PhET Interactive Simulations, University of Colorado Boulder (CC BY 4.0)."
+  }
  },
  {
   "id": "cd08-03",

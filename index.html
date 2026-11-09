@@ -21,6 +21,7 @@
   --bg:#F0F4F8; --surface:#ffffff; --surface-2:#e8eef5; --ink:#0f1b2d; --ink-2:#3b4a60; --ink-3:#64748b;
   --line:#dbe3ed; --line-2:#c7d2e0;
   --accent:#0B3B66; --accent-2:#082c4d; --accent-soft:#e1e9f2; --accent-ink:#0B3B66;
+  --flow-bg:#0B3B66; --flow-ink:#ffffff;
   --cta:#F97316; --cta-2:#ea580c; --cta-soft:#ffedd5; --cta-ink:#c2410c;
   --blue:#2563eb; --blue-soft:#e6eefc;
   --warn-bg:#fdf5d8; --warn-ink:#735500; --warn-line:#ecd07a;
@@ -37,6 +38,7 @@
   --bg:#0f1624; --surface:#161f30; --surface-2:#1d283c; --ink:#e8edf5; --ink-2:#b4c0d3; --ink-3:#8593a8;
   --line:#26324a; --line-2:#33405a;
   --accent:#7fb0dc; --accent-2:#a6c8e8; --accent-soft:#163049; --accent-ink:#b8d4ee;
+  --flow-bg:#1f4a75; --flow-ink:#ffffff;
   --cta:#F97316; --cta-2:#fb8a3c; --cta-soft:#3a2312; --cta-ink:#fdba74;
   --blue:#7fb0ff; --blue-soft:#1b2537;
   --warn-bg:#3a3214; --warn-ink:#f1dc8f; --warn-line:#6b5a1f;
@@ -249,6 +251,16 @@ p,li,td,.lead,.kv>div{text-wrap:pretty}
 .steps li::before{content:counter(s);position:absolute;left:16px;top:13px;width:32px;height:32px;border-radius:50%;background:var(--accent-soft);color:var(--accent-ink);display:grid;place-items:center;font:600 16px var(--f-display)}
 .steps.grid{grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
 .steps.grid li{padding:56px 16px 16px}
+.flow5{list-style:none;margin:14px 0 22px;padding:0;display:flex;flex-direction:column;gap:26px;max-width:860px}
+.flow5 li{position:relative;display:flex;align-items:center;gap:18px;padding:18px 20px;border-radius:14px;background:var(--flow-bg);color:var(--flow-ink)}
+.flow5 li:not(:last-child)::after{content:"";position:absolute;left:50%;bottom:-19px;transform:translateX(-50%);border:8px solid transparent;border-top:10px solid var(--flow-bg);border-bottom:0}
+.flow5 .no{flex:none;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:#fff;color:var(--flow-bg);font:700 22px var(--f-display)}
+.flow5 .tx{flex:1;display:flex;flex-direction:column;gap:3px;min-width:0}
+.flow5 .tx b{font:700 19px/1.3 var(--f-display)}
+.flow5 .tx span{font-size:15px;line-height:1.5;opacity:.92}
+.flow5 .who{flex:none;padding:5px 14px;border-radius:999px;background:#fff;color:var(--flow-bg);font:700 13.5px var(--f-ui);white-space:nowrap}
+.flow5 .who.ai{background:#fbe3d4;color:#8a3d12;box-shadow:inset 0 0 0 2px #b4572a}
+@media (max-width:560px){.flow5 li{flex-wrap:wrap;gap:12px;padding:16px}.flow5 .no{width:42px;height:42px;font-size:18px}.flow5 .tx{flex-basis:calc(100% - 60px)}.flow5 .who{margin-left:54px}}
 .lanes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:14px 0 10px}
 .lanes .col{display:flex;flex-direction:column;gap:8px;padding:14px 16px;background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--accent);border-radius:12px;box-shadow:var(--shadow-sm)}
 .lanes .hd{display:flex;gap:10px;align-items:center;font:600 16.5px/1.3 var(--f-display)}
@@ -682,7 +694,7 @@ p{margin:0 0 16px}
   thead{display:table-header-group} tfoot{display:table-footer-group}
   tr,td,th{break-inside:avoid;page-break-inside:avoid}
   .kv{break-inside:avoid;page-break-inside:avoid}
-  .kv>*,.luuy li,.src-list li,.meta-foot,.box,.answer,.ds li,.ds .row,.mc li,.lanes .col,.steps li,.motto{break-inside:avoid;page-break-inside:avoid}
+  .kv>*,.luuy li,.src-list li,.meta-foot,.box,.answer,.ds li,.ds .row,.mc li,.lanes .col,.flow5 li,.steps li,.motto{break-inside:avoid;page-break-inside:avoid}
   .q{break-inside:avoid;page-break-inside:avoid} .q>*{break-inside:avoid}
   .lanes{grid-template-columns:repeat(3,1fr);gap:8px} .lanes .col{box-shadow:none}
 }
@@ -888,7 +900,7 @@ const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.
   $$('[data-count]', el).forEach(countUp); if(el.dataset.count) countUp(el);
 }), {threshold:.01, rootMargin:'0px 0px -6% 0px'}) : null;
 /* các khối nội dung tự hiện dần khi cuộn tới (trừ phần nằm trong khối đã có hiệu ứng) */
-const KHOI_CUON = 'h2,figure,.box,details,.table-wrap,.prose>p,.luuy,.src-list,.kv,.q,.lanes>.col,.steps>li,.cards>*,.topics>*,.types>*,.gsteps>*,.guide,.toc-inline,.pager';
+const KHOI_CUON = 'h2,figure,.box,details,.table-wrap,.prose>p,.luuy,.src-list,.kv,.q,.lanes>.col,.flow5>li,.steps>li,.cards>*,.topics>*,.types>*,.gsteps>*,.guide,.toc-inline,.pager';
 function reveal(root){
   $$(KHOI_CUON, root).forEach(el => { if(!el.classList.contains('rv') && !el.parentElement.closest('.rv') && !el.closest('.hero,.results,.sidebar')) el.classList.add('rv'); });
   const els = $$('.rv:not(.in)', root);
@@ -1633,18 +1645,16 @@ function pageAI(){
   return `<div class="page wide">${errBox()}${crumbs([['','Trang chủ'],['','Minh bạch AI']])}
     <h1>Minh bạch về sử dụng AI</h1>
     <div class="motto rv"><span class="motto-k">Nguyên tắc</span><p class="motto-t">AI hỗ trợ, <em>con người kiểm soát.</em></p><p class="motto-s">AI không được dùng để tạo hoặc ước lượng số liệu.</p></div>
-    <h2>Quy trình xây dựng ngữ liệu: AI làm gì, con người kiểm soát gì</h2>
-    <div class="lanes" role="list" aria-label="Sáu bước xây dựng ngữ liệu, chia theo phần việc của AI và của con người">
+    <h2>Quy trình 5 bước xây dựng ngữ liệu</h2>
+    <ol class="flow5" aria-label="Quy trình 5 bước xây dựng ngữ liệu">
       ${[
-        ['Soạn nháp','Gợi ý nguồn, từ khoá; soạn nháp bối cảnh, câu hỏi, đáp án theo bộ câu lệnh chuẩn hoá','Chọn vấn đề, chủ đề, yêu cầu cần đạt; ra câu lệnh; <b>không nhận số liệu do AI đưa ra</b>'],
-        ['Kiểm tra nguồn','','Mở từng nguồn, xác nhận tồn tại; chấm phiếu 8 tiêu chí; <b>loại nguồn không đạt</b>, thay bằng nguồn gốc'],
-        ['Đối sánh số liệu','','Đối chiếu từng số liệu, đơn vị, năm, tên riêng với nguồn gốc; viết lại; sinh viên khác đọc chéo'],
-        ['Chuyên gia góp ý','','Chuyên gia Hoá học và Lí luận – PPDH Hoá học góp ý; nhóm sửa theo góp ý'],
-        ['Hoàn thiện','Viết mã HTML/JavaScript cho trang web','Nhập dữ liệu, cấu hình; <b>kiểm tra lại nội dung</b> và thao tác trên máy tính, điện thoại'],
-        ['Thử nghiệm','','Giáo viên, sinh viên sư phạm dùng thử, góp ý; nhóm tổng hợp và điều chỉnh']
-      ].map((s,i)=>`<div class="col rv" role="listitem"><div class="hd"><i>${i+1}</i>${s[0]}</div><div class="c hu">${s[2]}</div><div class="c ai${s[1]?'':' none'}">${s[1]||'Không dùng AI'}</div></div>`).join('')}
-    </div>
-    <div class="lanes-key"><span class="k-hu">Việc con người thực hiện và chịu trách nhiệm</span><span class="k-ai">Phần AI hỗ trợ (khung nét đứt: chỉ là bản nháp)</span></div>
+        ['Lập bản đồ ngữ liệu','Chủ đề, YCCĐ, biểu hiện, nguồn ưu tiên 4 tầng','Con người',''],
+        ['Tìm nguồn, soạn nháp','Theo bộ câu lệnh chuẩn hoá','AI hỗ trợ','ai'],
+        ['Kiểm tra, đối sánh','Mở bản gốc; chấm 8 tiêu chí; đối chiếu từng số liệu; đọc chéo','Con người',''],
+        ['Thẩm định','Chuyên gia Hoá học và chuyên gia Lí luận và PPDH Hoá học đọc, nhận xét, góp ý; nhóm sinh viên hoàn thiện theo góp ý','Chuyên gia',''],
+        ['Công bố, thử nghiệm','Đưa lên web; kiểm tra nội dung, thao tác; GV, SV dùng thử','Con người','']
+      ].map((s,i)=>`<li class="rv"><span class="no" aria-hidden="true">${i+1}</span><div class="tx"><b>${s[0]}</b><span>${s[1]}</span></div><span class="who${s[3]?' '+s[3]:''}">${s[2]}</span></li>`).join('')}
+    </ol>
     <h2>AI hỗ trợ ở khâu nào</h2>
     <div class="table-wrap"><table><thead><tr><th>Khâu</th><th>AI hỗ trợ</th><th>Mức độ</th><th>Con người thực hiện, kiểm chứng</th></tr></thead><tbody>
     ${kh.map(r=>`<tr>${r.map((c,j)=>`<td>${j===2?`<span class="tag">${esc(c)}</span>`:esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>
