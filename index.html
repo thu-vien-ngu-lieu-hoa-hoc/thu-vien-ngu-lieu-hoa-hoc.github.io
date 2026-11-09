@@ -1077,7 +1077,6 @@ function guideBand(home){
 }
 function pageHome(){
   const tdi = DS.filter(x=>ttCua(x)==='tham_dinh').length, nQ = DS.reduce((s,x)=>s+x.cau_hoi.length,0), nNg = new Set(DS.flatMap(x=>(x.nguon||[]).map(n=>n.url||n.trich_dan))).size;
-  const moi = DS.slice().sort((a,b) => TT_HIEN.indexOf(ttCua(b)) - TT_HIEN.indexOf(ttCua(a))).slice(0, 3);
   return `<div class="page wide">${errBox()}
     <section class="hero">${heroArt}<div class="hero-inner"><div>
       <div class="eyebrow">${icon('spark',15)} ${txt(C.don_vi)}</div>
@@ -1091,6 +1090,7 @@ function pageHome(){
       <div class="stat rv"><b data-count="${nQ}">0</b><span>câu hỏi minh hoạ</span></div>
       ${tdi?`<div class="stat rv good"><b data-count="${tdi}">0</b><span>đã thẩm định</span></div>`:`<div class="stat rv good"><b data-count="${nNg}">0</b><span>nguồn trích dẫn</span></div>`}
     </div></section>
+    <div class="box note loi-ngo"><b>Lời ngỏ.</b> Thư viện chia sẻ các ngữ liệu có đường dẫn đến nguồn. Các câu hỏi đi kèm là một số ví dụ minh hoạ, được phát triển từ dữ liệu mà ngữ liệu cung cấp. Ngoài ra, trang web có gợi ý prompt để giáo viên tham khảo nếu sử dụng AI thiết kế câu hỏi. Việc lựa chọn và sử dụng thuộc quyết định của giáo viên.</div>
     ${guideBand(true)}
     <h2>${C.chu_de.length} chủ đề</h2>
     <div class="chips" id="lopChips" role="group" aria-label="Lọc theo lớp">${['', '10', '11', '12'].map(l => `<button class="chip${l===''?' on':''}" data-l="${l}">${l?'Lớp '+l:'Tất cả'}</button>`).join('')}</div>
@@ -1098,7 +1098,6 @@ function pageHome(){
       <div class="topic-top"><span class="sym">${esc(c.ki_hieu)}</span><div><div class="no">Chủ đề ${String(i+1).padStart(2,'0')} · Lớp ${esc(c.lop)}</div><strong>${esc(c.ten)}</strong></div></div>
       <div class="src">${esc(c.nguon)}</div>${progress(c.ma)}</a>`).join('')}</div>
     <p class="muted small">Thanh tiến độ: số ngữ liệu đã có so với mục tiêu 6 ngữ liệu mỗi chủ đề.</p>
-    ${moi.length?`<h2>Ngữ liệu tiêu biểu</h2><div class="cards">${moi.map(card).join('')}</div>`:''}
     <h2>6 loại ngữ liệu trong mỗi chủ đề</h2>
     <div class="types">${Object.entries(LOAI).map(([k,v])=>`<a class="type rv" href="#/tra-cuu?loai=${k}"><b>${k}</b>${v}<span>${DS.filter(x=>x.id.endsWith('-'+k)).length}</span></a>`).join('')}</div></div>`;
 }
