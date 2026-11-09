@@ -5,7 +5,7 @@ NL.add([
   "lop": "11",
   "tieu_de": "Cân bằng phân li của acetic acid trong dung dịch giấm ăn",
   "yccd": "Nêu được khái niệm acid, base theo Brønsted – Lowry; viết được biểu thức hằng số cân bằng; tính được pH của dung dịch; nêu được ý nghĩa của pH trong thực tiễn.",
-  "boi_canh": "Giấm ăn chứa khoảng 4–5% acetic acid (CH₃COOH). Nếu acetic acid phân li hoàn toàn như hydrochloric acid, giấm sẽ chua gắt và ăn mòn như acid trong ắc quy. Thực tế không phải vậy, vì acetic acid là acid yếu: trong nước chỉ một phần nhỏ phân tử nhường H⁺.\n\nCân bằng phân li: CH₃COOH ⇌ H⁺ + CH₃COO⁻, với hằng số phân li acid Ka = [H⁺][CH₃COO⁻] / [CH₃COOH]. Các bảng số liệu chuẩn (như CRC Handbook of Chemistry and Physics, 84th ed., 2004) cho biết ở 25 °C, Ka của acetic acid là 1,75 × 10⁻⁵ (pKa = 4,76).\n\nĐể dễ so sánh, các nhà hoá học dùng pKa = −log Ka. pKa càng nhỏ, acid càng mạnh. Bảng dưới liệt kê pKa của một số acid và ion gặp trong đời sống: formic acid trong nọc kiến, hydrofluoric acid dùng khắc thuỷ tinh, carbonic acid trong nước có ga, ion ammonium trong phân đạm.\n\nTừ Ka và nồng độ, học sinh có thể tính được pH của dung dịch acid yếu.",
+  "boi_canh": "Giấm ăn chứa khoảng 4–5% acetic acid (CH₃COOH). Nếu acetic acid phân li hoàn toàn như hydrochloric acid, giấm sẽ chua gắt và ăn mòn như acid trong ắc quy. Thực tế không phải vậy, vì acetic acid là acid yếu: trong nước chỉ một phần nhỏ phân tử nhường H⁺.\n\nCân bằng phân li: CH₃COOH ⇌ H⁺ + CH₃COO⁻, với hằng số phân li acid Ka = [H⁺][CH₃COO⁻] / [CH₃COOH]. Bảng “E1: Acid Dissociation Constants at 25°C” của CRC Handbook of Chemistry and Physics (84th ed., 2004) cho biết ở 25 °C, Ka của acetic acid là 1,75 × 10⁻⁵ (pKa = 4,76).\n\nĐể dễ so sánh, các nhà hoá học dùng pKa = −log Ka. pKa càng nhỏ, acid càng mạnh. Bảng dưới liệt kê pKa của một số acid và ion gặp trong đời sống: formic acid trong nọc kiến, hydrofluoric acid dùng khắc thuỷ tinh, carbonic acid trong nước có ga, ion ammonium trong phân đạm.\n\nTừ Ka và nồng độ, học sinh có thể tính được pH của dung dịch acid yếu.",
   "bang_so_lieu": {
    "tieu_de": "pKa của một số acid ở 25 °C",
    "cot": [
@@ -34,7 +34,7 @@ NL.add([
      "9,25"
     ]
    ],
-   "ghi_chu": "Theo CRC Handbook of Chemistry and Physics (84th ed., 2004). Riêng NH₄⁺: pKa = 14,00 − pKb(NH₃) = 14,00 − 4,75 (cùng nguồn)."
+   "ghi_chu": "Tra cứu từ bảng “E1: Acid Dissociation Constants at 25°C” của CRC Handbook of Chemistry and Physics (84th ed., 2004). Riêng NH₄⁺: pKa = 14,00 − pKb(NH₃) = 14,00 − 4,75 (cùng nguồn)."
   },
   "hinh_goi_y": "Ảnh nhãn chai giấm ghi nồng độ acetic acid (ảnh tự chụp).",
   "nguon": [
@@ -104,9 +104,9 @@ NL.add([
   "id": "cd03-02",
   "chu_de": "cd03",
   "lop": "11",
-  "tieu_de": "Chuyển dịch cân bằng tạo phức FeSCN²⁺",
+  "tieu_de": "Thí nghiệm chuyển dịch cân bằng tạo phức FeSCN²⁺",
   "yccd": "Thực hiện được thí nghiệm nghiên cứu ảnh hưởng của nồng độ, nhiệt độ đến chuyển dịch cân bằng; vận dụng nguyên lí Le Chatelier để giải thích.",
-  "boi_canh": "Khi nhỏ dung dịch iron(III) chloride vào dung dịch potassium thiocyanate, dung dịch chuyển ngay sang màu đỏ máu. Màu đỏ là của ion phức FeSCN²⁺ tạo thành theo cân bằng: Fe³⁺(aq) + SCN⁻(aq) ⇌ FeSCN²⁺(aq).\n\nĐây là thí nghiệm thường dùng để quan sát chuyển dịch cân bằng, vì chỉ cần nhìn màu là biết cân bằng dịch theo chiều nào. Màu càng đậm, nồng độ FeSCN²⁺ càng lớn.\n\nCách tiến hành gợi ý: pha một dung dịch đỏ nhạt chung, chia vào 4 ống nghiệm. Ống 1 để so sánh. Ống 2 thêm vài giọt FeCl₃. Ống 3 thêm vài giọt KSCN. Ống 4 thêm một ít tinh thể NaF; ion F⁻ kết hợp mạnh với Fe³⁺ tạo phức không màu. Có thể dùng thêm ống 5 ngâm vào cốc nước nóng để xét ảnh hưởng của nhiệt độ.\n\nMô phỏng “Reversible Reactions” trên PhET cho phép học sinh lặp lại thí nghiệm nhiều lần và quan sát ở cấp độ phân tử.",
+  "boi_canh": "Khi nhỏ dung dịch iron(III) chloride vào dung dịch potassium thiocyanate, dung dịch chuyển ngay sang màu đỏ máu. Màu đỏ là của ion phức FeSCN²⁺ tạo thành theo cân bằng: Fe³⁺(aq) + SCN⁻(aq) ⇌ FeSCN²⁺(aq).\n\nĐây là thí nghiệm thường dùng để quan sát chuyển dịch cân bằng, vì chỉ cần nhìn màu là biết cân bằng dịch theo chiều nào. Màu càng đậm, nồng độ FeSCN²⁺ càng lớn.\n\nCách tiến hành gợi ý: pha một dung dịch đỏ nhạt chung, chia vào 4 ống nghiệm. Ống 1 để so sánh. Ống 2 thêm vài giọt FeCl₃. Ống 3 thêm vài giọt KSCN. Ống 4 thêm một ít tinh thể NaF; ion F⁻ kết hợp mạnh với Fe³⁺ tạo phức không màu. Có thể dùng thêm ống 5 ngâm vào cốc nước nóng để xét ảnh hưởng của nhiệt độ.\n\nHọc sinh có thể quan sát ở cấp độ phân tử qua mô phỏng “Reversible Reactions” của PhET (bên dưới).",
   "bang_so_lieu": {
    "tieu_de": "Bảng ghi kết quả (học sinh tự quan sát)",
    "cot": [
@@ -205,7 +205,13 @@ NL.add([
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu đo.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "06/11/2026",
+  "mo_phong": {
+   "ten": "Reversible Reactions (PhET)",
+   "url_nhung": "https://phet.colorado.edu/sims/cheerpj/ideal-gas/latest/ideal-gas.html?simulation=reversible-reactions&locale=vi",
+   "url": "https://phet.colorado.edu/en/simulations/reversible-reactions",
+   "nguon": "PhET Interactive Simulations, University of Colorado Boulder (CC BY 4.0)."
+  }
  },
  {
   "id": "cd03-03",
@@ -213,7 +219,7 @@ NL.add([
   "lop": "11",
   "tieu_de": "Biến thiên theo mùa của nồng độ CO₂ khí quyển tại Mauna Loa",
   "yccd": "Trình bày được khái niệm phản ứng thuận nghịch và trạng thái cân bằng; vận dụng nguyên lí Le Chatelier để giải thích sự chuyển dịch cân bằng (liên hệ cân bằng CO₂ giữa khí quyển, sinh quyển và đại dương).",
-  "boi_canh": "Năm 1958, nhà khoa học Charles David Keeling (Viện Hải dương học Scripps, Hoa Kỳ) bắt đầu đo nồng độ carbon dioxide trong không khí tại đài quan sát Mauna Loa, trên một ngọn núi lửa ở Hawaii. Nơi đây nằm giữa Thái Bình Dương, xa các thành phố và nhà máy, nên không khí đại diện cho khí quyển nền của Trái Đất. Từ tháng 5/1974, Cơ quan Khí quyển và Đại dương Quốc gia Hoa Kỳ (NOAA) cũng đo song song tại đây. Chuỗi số liệu liên tục hơn 65 năm này được gọi là “đường cong Keeling”.\n\nKhi biểu diễn số liệu theo thời gian, người ta thấy hai đặc điểm nổi bật. Thứ nhất, nồng độ CO₂ tăng liên tục: từ khoảng 316 ppm năm 1959 lên gần 427 ppm vào tháng 5/2024 (ppm: số µmol CO₂ trong 1 mol không khí khô). Theo NOAA, giá trị trung bình tháng 5/2024 là 426,90 ppm. Thứ hai, đường biểu diễn dao động đều đặn mỗi năm: cao nhất vào khoảng tháng 5, thấp nhất vào khoảng tháng 9–10, chênh lệch khoảng 5 ppm (năm 2024: tháng 5 là 426,90 ppm, tháng 9 là 422,03 ppm). Dao động này gắn với chu kì quang hợp và hô hấp của thực vật theo mùa.\n\nTốc độ tăng cũng không cố định. Bảng dưới cho biết mức tăng trung bình mỗi năm theo từng thập niên. Năm 2024, mức tăng lên tới 3,33 ppm, cao nhất trong chuỗi số liệu của NOAA. Khi núi lửa Mauna Loa phun trào (cuối năm 2022), việc đo được chuyển tạm sang đỉnh Maunakea gần đó và trở lại Mauna Loa từ tháng 7/2023.\n\nViệt Nam đã cam kết tại COP26 (2021) đưa phát thải ròng bằng 0 vào năm 2050. Hiểu đường cong Keeling giúp học sinh thấy vì sao mục tiêu này cần thiết và vì sao nó khó.",
+  "boi_canh": "Năm 1958, nhà khoa học Charles David Keeling (giáo sư Hải dương học, nhà nghiên cứu của Viện Hải dương học Scripps, Hoa Kỳ) bắt đầu đo nồng độ carbon dioxide trong không khí tại đài quan sát Mauna Loa, trên một ngọn núi lửa ở Hawaii. Nơi đây nằm giữa Thái Bình Dương, xa các thành phố và nhà máy, nên không khí đại diện cho khí quyển nền của Trái Đất. Từ tháng 5/1974, Cơ quan Khí quyển và Đại dương Quốc gia Hoa Kỳ (NOAA) cũng đo song song tại đây. Chuỗi số liệu liên tục hơn 65 năm này được gọi là “đường cong Keeling”.\n\nKhi biểu diễn số liệu theo thời gian, người ta thấy hai đặc điểm nổi bật. Thứ nhất, nồng độ CO₂ tăng liên tục: từ khoảng 316 ppm năm 1959 lên gần 427 ppm vào tháng 5/2024 (ppm: số µmol CO₂ trong 1 mol không khí khô). Theo NOAA, giá trị trung bình tháng 5/2024 là 426,90 ppm. Thứ hai, đường biểu diễn dao động đều đặn mỗi năm: cao nhất vào khoảng tháng 5, thấp nhất vào khoảng tháng 9–10, chênh lệch khoảng 5 ppm (năm 2024: tháng 5 là 426,90 ppm, tháng 9 là 422,03 ppm). Dao động này gắn với chu kì quang hợp và hô hấp của thực vật theo mùa.\n\nTốc độ tăng cũng không cố định. Bảng tốc độ tăng dưới đây cho biết mức tăng trung bình mỗi năm theo từng thập niên. Năm 2024, mức tăng lên tới 3,33 ppm, cao nhất trong chuỗi số liệu của NOAA. Khi núi lửa Mauna Loa phun trào (cuối năm 2022), việc đo được chuyển tạm sang đỉnh Maunakea gần đó và trở lại Mauna Loa từ tháng 7/2023.\n\nViệt Nam đã cam kết tại COP26 (2021) đưa phát thải ròng bằng 0 vào năm 2050. Hiểu đường cong Keeling giúp học sinh thấy vì sao mục tiêu này cần thiết và vì sao nó khó.",
   "bang_so_lieu": {
    "tieu_de": "Tốc độ tăng CO₂ trung bình theo thập niên tại Mauna Loa",
    "cot": [
@@ -337,7 +343,7 @@ NL.add([
   "id": "cd03-04",
   "chu_de": "cd03",
   "lop": "11",
-  "tieu_de": "Điều kiện nào tối ưu cho quá trình sản xuất NH₃",
+  "tieu_de": "Lựa chọn điều kiện tối ưu cho quá trình sản xuất NH₃",
   "yccd": "Vận dụng nguyên lí Le Chatelier để giải thích việc lựa chọn điều kiện cho quá trình sản xuất hoá học (tổng hợp ammonia).",
   "boi_canh": "Phân urea là loại phân đạm dùng nhiều nhất ở Việt Nam. Nguyên liệu để sản xuất urea là ammonia (NH₃), được tổng hợp từ nitrogen trong không khí và hydrogen lấy từ khí thiên nhiên. Các nhà máy đạm lớn như Đạm Phú Mỹ (Bà Rịa – Vũng Tàu) đều có phân xưởng tổng hợp ammonia; riêng Đạm Phú Mỹ có công suất thiết kế 740 nghìn tấn urea mỗi năm.\n\nPhản ứng tổng hợp ammonia (quá trình Haber – Bosch): N₂(g) + 3H₂(g) ⇌ 2NH₃(g), ΔrH° = −91,8 kJ/mol (tính từ ΔfH° của NH₃(g) là −45,9 kJ/mol). Đây là phản ứng thuận nghịch, toả nhiệt và làm giảm số mol khí.\n\nTheo nguyên lí Le Chatelier, nhiệt độ thấp và áp suất cao giúp cân bằng chuyển dịch về phía tạo NH₃. Nhưng ở nhiệt độ thấp, phản ứng lại xảy ra rất chậm. Vì vậy trong công nghiệp, người ta chọn điều kiện dung hoà giữa hiệu suất và tốc độ: nhiệt độ khoảng 400–500 °C, áp suất trên 100 bar và dùng chất xúc tác sắt.\n\nỞ điều kiện này, mỗi lần khí đi qua tháp tổng hợp chỉ một phần nhỏ nitrogen và hydrogen chuyển thành NH₃. Ammonia được làm lạnh, hoá lỏng tách ra; phần khí chưa phản ứng được tuần hoàn trở lại tháp, nhờ đó nguyên liệu được tận dụng gần hết.",
   "bang_so_lieu": null,
@@ -501,7 +507,7 @@ NL.add([
   "id": "cd03-06",
   "chu_de": "cd03",
   "lop": "11",
-  "tieu_de": "Cân bằng HOCl ⇌ H⁺ + OCl⁻ và pH của nước bể bơi",
+  "tieu_de": "Phương trình cân bằng HOCl ⇌ H⁺ + OCl⁻ và pH của nước bể bơi",
   "yccd": "Nêu được ý nghĩa của pH trong thực tiễn; vận dụng cân bằng acid – base để giải thích quy trình kĩ thuật.",
   "boi_canh": "Nước bể bơi được khử trùng bằng chlorine. Khi cho chlorine (hoặc muối hypochlorite) vào nước, chất có tác dụng diệt khuẩn mạnh nhất là hypochlorous acid (HOCl). HOCl là acid yếu: HOCl ⇌ H⁺ + OCl⁻, với pKa = 7,40 ở 25 °C (CRC Handbook of Chemistry and Physics, 84th ed.). Ion OCl⁻ diệt khuẩn kém hơn HOCl nhiều lần.\n\nVì vậy, pH quyết định hiệu quả khử trùng. Ở pH = 7,4, khoảng một nửa lượng chlorine ở dạng HOCl. pH càng cao, tỉ lệ HOCl càng thấp. Nhưng pH quá thấp lại gây cay mắt, ăn mòn thiết bị.\n\nTrung tâm Kiểm soát và Phòng ngừa Dịch bệnh Hoa Kỳ (CDC) khuyến cáo giữ pH nước bể bơi trong khoảng 7,0–7,8, giữ chlorine tự do tối thiểu 1 ppm và kiểm tra pH ít nhất hai lần mỗi ngày.\n\nNgười vận hành bể bơi, kĩ thuật viên xử lí nước ở nhà máy nước, khu công nghiệp đều phải đo pH hằng ngày, tính toán lượng hoá chất điều chỉnh (acid hoặc base) và đảm bảo an toàn khi pha chế. Đây là một nghề cần kiến thức cân bằng hoá học thực tế.",
   "bang_so_lieu": {
@@ -589,7 +595,7 @@ NL.add([
    }
   ],
   "luu_y_khoa_hoc": [
-   "pKa của HOCl là 7,40 ở 25 °C (CRC Handbook), thay đổi nhẹ theo nhiệt độ; bảng tính ở 25 °C.",
+   "pKa của HOCl là 7,40 ở 25 °C (tra cứu từ bảng “E1: Acid Dissociation Constants at 25°C” của CRC Handbook of Chemistry and Physics, 84th ed., 2004), thay đổi nhẹ theo nhiệt độ; bảng tính ở 25 °C.",
    "Tuyệt đối không trộn chất tẩy chứa hypochlorite với acid hoặc chất chứa ammonia vì tạo khí độc.",
    "Quy chuẩn của từng địa phương có thể quy định khoảng pH khác; cần đối chiếu khi áp dụng."
   ],

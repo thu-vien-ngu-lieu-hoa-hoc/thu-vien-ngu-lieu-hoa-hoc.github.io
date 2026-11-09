@@ -5,7 +5,7 @@ NL.add([
   "lop": "10",
   "tieu_de": "Nhiên liệu nào toả ra nhiều năng lượng hơn khi đốt cháy?",
   "yccd": "Trình bày được khái niệm phản ứng toả nhiệt, thu nhiệt; điều kiện chuẩn; biến thiên enthalpy chuẩn của phản ứng. Vận dụng ý nghĩa của biến thiên enthalpy để giải thích ứng dụng của phản ứng đốt cháy nhiên liệu.",
-  "boi_canh": "Khi chọn nhiên liệu cho bếp, xe máy hay tên lửa, các kĩ sư luôn hỏi: đốt 1 gam nhiên liệu thu được bao nhiêu nhiệt? Câu trả lời nằm trong các cơ sở dữ liệu nhiệt động học, được dùng rộng rãi là NIST Chemistry WebBook của Viện Tiêu chuẩn và Công nghệ Quốc gia Hoa Kỳ.\n\nTheo NIST, biến thiên enthalpy đốt cháy chuẩn (ΔcH°, ở 25 °C, 1 bar, sản phẩm là CO₂(g) và H₂O(l)) của một số chất: hydrogen −285,8 kJ/mol; methane −890,7 kJ/mol; propane −2 219,2 kJ/mol; butane −2 877,5 kJ/mol; ethanol −1 367,6 kJ/mol; carbon (than chì) −393,5 kJ/mol. Dấu âm cho biết các phản ứng này đều toả nhiệt.\n\nTính theo mol, butane toả nhiều nhiệt nhất. Nhưng người mua gas, mua xăng lại quan tâm đến khối lượng hoặc thể tích. Chia ΔcH° cho khối lượng mol, thu được nhiệt toả ra khi đốt 1 gam mỗi chất (bảng dưới). Thứ tự thay đổi hoàn toàn: hydrogen có nhiệt toả ra trên 1 gam lớn nhất, còn ethanol chỉ bằng khoảng một nửa so với methane.\n\nVì sao có sự khác biệt này? Phân tử nào chứa nhiều liên kết C–H, O–H được tạo thành mới và ít nguyên tử oxygen sẵn có thì toả nhiều nhiệt hơn trên mỗi gam.",
+  "boi_canh": "Khi chọn nhiên liệu phục vụ đun nấu hằng ngày, vận hành xe máy hay phóng một tên lửa, câu hỏi mà các kĩ sư luôn đặt ra là: mỗi gam nhiên liệu khi cháy sẽ toả ra bao nhiêu nhiệt lượng? Câu trả lời nằm trong các cơ sở dữ liệu nhiệt động học uy tín, tiêu biểu là NIST Chemistry WebBook của Viện Tiêu chuẩn và Công nghệ Quốc gia Hoa Kỳ.\n\nTheo NIST, biến thiên enthalpy đốt cháy chuẩn (ΔcH°, ở 25 °C, 1 bar, ứng với phản ứng cháy tạo CO₂(g) và H₂O(l)) của một số nhiên liệu lần lượt là: hydrogen −285,8 kJ/mol; carbon (than chì) −393,5 kJ/mol; methane −890,7 kJ/mol; ethanol −1 367,6 kJ/mol; propane −2 219,2 kJ/mol; butane −2 877,5 kJ/mol. Các giá trị ΔcH° đều mang dấu âm, cho biết các phản ứng cháy đều toả nhiệt.\n\nTính trên 1 mol, phản ứng đốt cháy butane toả nhiều nhiệt nhất. Nhưng trong thực tế, người tiêu dùng thường định giá nhiên liệu theo khối lượng hoặc thể tích. Khi lấy trị tuyệt đối của ΔcH° chia cho khối lượng mol, ta thu được nhiệt lượng toả ra khi đốt 1 gam mỗi chất. Lúc này, ưu thế về nhiệt thay đổi hoàn toàn: hydrogen dẫn đầu với nhiệt lượng toả ra trên 1 gam lớn nhất, còn ethanol chỉ đạt xấp xỉ một nửa so với methane.\n\nSự chênh lệch này phụ thuộc đồng thời vào hiệu số giữa năng lượng tạo thành liên kết mới (trong CO₂, H₂O) và năng lượng phá vỡ các liên kết cũ, cũng như khối lượng mol của nhiên liệu. Thông thường, một nhiên liệu sẽ giải phóng càng nhiều nhiệt trên mỗi gam nếu phân tử của nó có tỉ lệ hydrogen cao (để tạo thành nhiều liên kết O–H bền vững trong sản phẩm) và chứa càng ít nguyên tử oxygen sẵn có trong cấu trúc.",
   "bang_so_lieu": {
    "tieu_de": "Nhiệt toả ra khi đốt cháy hoàn toàn 1 gam nhiên liệu (25 °C, 1 bar)",
    "cot": [
@@ -38,7 +38,7 @@ NL.add([
      "29,7"
     ]
    ],
-   "ghi_chu": "Tính từ ΔcH° trên NIST Chemistry WebBook (methane, propane, butane: Pittam và Pilcher, 1972; ethanol: Chao và Rossini, 1965; hydrogen và carbon: lấy bằng ΔfH° của H₂O(l) và CO₂(g), CODATA) và khối lượng mol (H₂ 2,016; CH₄ 16,04; C₃H₈ 44,10; C₄H₁₀ 58,12; C 12,01; C₂H₅OH 46,07 g/mol)."
+   "ghi_chu": "Số liệu được tính dựa vào ΔcH° tra cứu từ NIST Chemistry WebBook (methane, propane, butane: Pittam và Pilcher, 1972; ethanol: Chao và Rossini, 1965; hydrogen và carbon: lấy bằng ΔfH° của H₂O(l) và CO₂(g), CODATA) và khối lượng mol (H₂ 2,016; CH₄ 16,04; C₃H₈ 44,10; C₄H₁₀ 58,12; C 12,01; C₂H₅OH 46,07 g/mol)."
   },
   "hinh_goi_y": "Ảnh chụp trang “Gas phase thermochemistry data” của methane trên NIST WebBook, khoanh vào dòng ΔcH°gas.",
   "nguon": [
@@ -81,52 +81,52 @@ NL.add([
   ],
   "hinh_thuc": "Biên soạn lại",
   "ma_TH": [
-   "TH1",
-   "TH4"
+   "HH2.1",
+   "HH2.4"
   ],
   "ma_VD": [
-   "VD1",
-   "VD3"
+   "HH3.1",
+   "HH3.3"
   ],
-  "dinh_huong": "Lớp 10, bài Enthalpy tạo thành và biến thiên enthalpy của phản ứng: dùng sau khi học khái niệm ΔrH°.\nHình thức: hoạt động nhóm 15 phút, mỗi nhóm tính lại 2 dòng của bảng rồi so sánh; có thể dùng câu 3 làm câu kiểm tra.",
+  "dinh_huong": "Lớp 10, chủ đề Năng lượng hoá học, bài Enthalpy tạo thành và biến thiên enthalpy của phản ứng. Sử dụng khi học sinh đã nắm vững khái niệm biến thiên enthalpy chuẩn của phản ứng ΔrH° và ý nghĩa dấu của ΔrH.\nHình thức tổ chức: dạy học hợp tác theo nhóm nhỏ (thời lượng gợi ý: 10–15 phút). Mỗi nhóm được phân công tính toán quy đổi nhiệt toả ra trên 1 gam cho 2 nhiên liệu trong bảng từ giá trị ΔcH° và khối lượng mol, sau đó đối chiếu kết quả chung toàn lớp để rút ra nhận xét về sự thay đổi thứ tự so sánh nhiệt toả ra giữa mol và gam. Có thể sử dụng Câu 3 làm công cụ kiểm tra nhanh hoặc phiếu học tập cá nhân ở hoạt động Luyện tập – Vận dụng.",
   "cau_hoi": [
    {
     "ma": [
-     "TH1"
+     "HH2.1"
     ],
     "dang": "Tự luận",
-    "noi_dung": "So sánh thứ tự toả nhiệt của các chất khi tính theo mol và khi tính theo gam. Từ đó đặt một câu hỏi mà một kĩ sư chọn nhiên liệu cho xe máy cần trả lời.",
-    "dap_an": "Theo mol: butane > propane > ethanol > methane > carbon > hydrogen. Theo gam: hydrogen > methane > propane > butane > carbon > ethanol. Câu hỏi hợp lí, ví dụ: “Nhiên liệu nào cho nhiều năng lượng nhất trên 1 lít bình chứa?” hoặc “Đốt nhiên liệu nào ít phát thải CO₂ nhất cho cùng một lượng nhiệt?”."
+    "noi_dung": "Hãy so sánh thứ tự về nhiệt lượng toả ra của các nhiên liệu kể trên khi tính theo mol và khi tính theo gam. Từ kết quả so sánh, hãy đề xuất một câu hỏi mang tính thực tiễn mà một kĩ sư thiết kế động cơ xe máy cần đặt ra khi lựa chọn nhiên liệu.",
+    "dap_an": "So sánh thứ tự nhiệt lượng toả ra:\nTheo mol: butane > propane > ethanol > methane > carbon > hydrogen.\nTheo gam: hydrogen > methane > propane > butane > carbon > ethanol.\nNhận xét: khi chuyển từ tính theo mol sang tính theo gam, thứ tự bị đảo ngược gần như hoàn toàn.\nVí dụ về câu hỏi đề xuất:\n– Về nhiệt toả ra theo thể tích: “Nhiên liệu nào giải phóng nhiều năng lượng nhất trên cùng một đơn vị thể tích?”\n– Về khía cạnh môi trường: “Để cung cấp cùng một lượng nhiệt, việc đốt cháy nhiên liệu nào sẽ phát thải ít khí nhà kính (CO₂) nhất?”\n– Về an toàn và lưu trữ: “Nhiên liệu toả nhiều nhiệt như hydrogen cần được lưu trữ như thế nào để bảo đảm an toàn?”"
    },
    {
     "ma": [
-     "TH4",
-     "VD1"
+     "HH2.4",
+     "HH3.1"
     ],
     "dang": "Trả lời ngắn",
-    "noi_dung": "Một bình gas mini chứa 250 g butane. Đốt cháy hoàn toàn lượng butane này toả ra bao nhiêu kJ nhiệt? (Dùng số liệu trong bảng, làm tròn đến hàng đơn vị.)",
-    "dap_an": "12375. Cách tính: 250 g × 49,5 kJ/g = 12 375 kJ."
+    "noi_dung": "Một bình gas mini chứa 250 g butane (C₄H₁₀). Khi đốt cháy hoàn toàn lượng butane trên ở điều kiện chuẩn, nhiệt lượng toả ra là bao nhiêu kJ? (Dùng số liệu trong bảng, làm tròn đến hàng đơn vị.)",
+    "dap_an": "12 375. Cách tính: 250 g × 49,5 kJ/g = 12 375 kJ."
    },
    {
     "ma": [
-     "TH4",
-     "VD3"
+     "HH2.4",
+     "HH3.3"
     ],
     "dang": "Đúng/sai",
-    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Tất cả phản ứng đốt cháy trong bảng đều có ΔcH° < 0.\nb) Butane toả nhiều nhiệt nhất khi tính trên mỗi mol nên cũng toả nhiều nhiệt nhất khi tính trên mỗi gam.\nc) Đốt 1 g hydrogen toả nhiệt gấp khoảng 2,6 lần đốt 1 g methane.\nd) Ethanol có nhiệt toả ra trên mỗi gam thấp hơn methane vì phân tử ethanol đã chứa sẵn nguyên tử oxygen.",
-    "dap_an": "a) Đúng.\nb) Sai – tính theo gam, butane (49,5 kJ/g) đứng sau hydrogen, methane và propane.\nc) Đúng – 141,8 : 55,5 ≈ 2,6.\nd) Đúng – một phần phân tử ethanol đã bị oxi hoá một phần nên khi cháy toả ít nhiệt hơn trên mỗi gam."
+    "noi_dung": "Dựa vào bảng số liệu đã cho, mỗi nhận định sau đúng hay sai?\na) Tất cả phản ứng đốt cháy trong bảng đều có ΔcH° < 0.\nb) Butane toả nhiều nhiệt nhất khi tính trên mỗi mol nên cũng toả nhiều nhiệt nhất khi tính trên mỗi gam.\nc) Ở điều kiện chuẩn, đốt cháy hoàn toàn 1 g hydrogen toả nhiệt nhiều gấp khoảng 2,6 lần đốt cháy hoàn toàn 1 g methane.\nd) Ethanol có nhiệt toả ra trên mỗi gam thấp hơn methane vì phân tử ethanol đã chứa sẵn nguyên tử oxygen.",
+    "dap_an": "a) Đúng. Phản ứng đốt cháy nhiên liệu luôn giải phóng năng lượng dưới dạng nhiệt, do đó biến thiên enthalpy phản ứng luôn âm (ΔcH° < 0).\nb) Sai. Khi tính theo gam, butane (49,5 kJ/g) đứng sau hydrogen, methane và propane.\nc) Đúng. 141,8 : 55,5 ≈ 2,6.\nd) Đúng. Phân tử ethanol (C₂H₅OH) đã chứa sẵn nguyên tử oxygen trong cấu trúc (tương đương đã bị oxi hoá một phần), khối lượng mol lớn hơn nhiều nhưng không đóng góp thêm vào năng lượng giải phóng nên nhiệt lượng toả ra tính trên mỗi gam thấp hơn so với methane."
    }
   ],
   "luu_y_khoa_hoc": [
-   "Giá trị trong bảng ứng với sản phẩm là nước lỏng (nhiệt trị cao). Trong động cơ, nước thoát ra ở dạng hơi nên nhiệt thực tế thu được thấp hơn.",
-   "Hydrogen toả nhiều nhiệt nhất trên mỗi gam nhưng rất ít trên mỗi lít khí; muốn chở nhiều phải nén ở áp suất cao hoặc hoá lỏng ở −253 °C.",
-   "Không nhầm “toả nhiều nhiệt” với “cháy nhanh”: ΔH là đại lượng nhiệt động, không cho biết tốc độ phản ứng."
+   "Giá trị trong bảng ứng với sản phẩm cháy là nước lỏng (nhiệt trị cao). Trong động cơ, nước thoát ra ở dạng hơi (ứng với nhiệt trị thấp) nên nhiệt thực tế thu được sẽ thấp hơn giá trị lí thuyết trong bảng.",
+   "Hydrogen có mật độ năng lượng theo khối lượng cao nhất (141,8 kJ/g) nhưng do khối lượng riêng của chất khí rất nhỏ nên mật độ năng lượng theo thể tích lại rất thấp ở điều kiện thường. Để ứng dụng làm nhiên liệu vận tải hoặc hàng không vũ trụ, hydrogen phải được nén ở áp suất rất cao hoặc hoá lỏng ở nhiệt độ rất thấp (−253 °C).",
+   "Không đồng nhất “toả nhiều nhiệt” với “cháy nhanh”: ΔH là đại lượng nhiệt động, không cho biết tốc độ phản ứng."
   ],
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Số liệu lấy từ NIST; phép chia được tính thủ công và kiểm tra lại.",
-  "cap_nhat": "06/11/2026"
+  "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Số liệu được lấy từ NIST, các phép quy đổi do nhóm tự thực hiện.",
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd01-02",
@@ -134,11 +134,11 @@ NL.add([
   "lop": "10",
   "tieu_de": "Xác định nhiệt của phản ứng trung hoà bằng nhiệt lượng kế cốc xốp đơn giản",
   "yccd": "Trình bày được khái niệm phản ứng toả nhiệt, thu nhiệt. Thực hiện được thí nghiệm đo nhiệt của phản ứng trung hoà và rút ra kết luận từ số liệu đo.",
-  "boi_canh": "Không cần thiết bị đắt tiền, học sinh có thể đo nhiệt phản ứng bằng nhiệt lượng kế cốc xốp: hai cốc xốp lồng vào nhau, có nắp và một nhiệt kế. Đây là thí nghiệm quen thuộc trong chương trình hoá học phổ thông của nhiều nước.\n\nCách làm: cho 50 mL dung dịch HCl 1,0 M vào cốc, đo nhiệt độ ban đầu. Thêm nhanh 50 mL dung dịch NaOH 1,0 M có cùng nhiệt độ, khuấy nhẹ và ghi nhiệt độ cao nhất.\n\nTheo bảng số liệu nhiệt động chuẩn ở 25 °C trong CRC Handbook of Chemistry and Physics (84th ed., 2004), phản ứng H⁺(aq) + OH⁻(aq) → H₂O(l) có ΔrH° = −55,8 kJ/mol. Nếu coi dung dịch có khối lượng 100 g, nhiệt dung riêng 4,18 J/(g·K) và không thất thoát nhiệt, nhiệt độ dung dịch tính được tăng khoảng 6,7 °C.\n\nTrên thực tế, học sinh thường đo được mức tăng nhỏ hơn. Một phần nhiệt đã truyền sang cốc, nhiệt kế và không khí. So sánh kết quả đo với giá trị tính toán là cơ hội tốt để học sinh tìm hiểu về sai số thí nghiệm.",
+  "boi_canh": "Không cần đến các thiết bị chuyên dụng đắt tiền, học sinh hoàn toàn có thể tự đo nhiệt phản ứng bằng một nhiệt lượng kế cốc xốp đơn giản với cấu tạo như sau: hai cốc xốp được lồng vào nhau, có nắp xốp đậy kín và một nhiệt kế cắm xuyên qua nắp. Để xác định nhiệt phản ứng, người ta cho các dung dịch phản ứng với nhau trong cốc xốp và theo dõi sự thay đổi nhiệt độ của hệ trước và sau phản ứng thông qua nhiệt kế. Đây là bài thực hành quen thuộc trong chương trình hoá học phổ thông tại nhiều quốc gia.\n\nTheo dữ liệu nhiệt động chuẩn ở 25 °C (tra cứu từ CRC Handbook of Chemistry and Physics qua nền tảng LibreTexts), phản ứng H⁺(aq) + OH⁻(aq) → H₂O(l) có ΔrH° = −55,8 kJ/mol. Xét bài toán lí thuyết khi cho 50 mL dung dịch HCl 1,0 M tác dụng với 50 mL dung dịch NaOH 1,0 M: giả định hệ không thất thoát nhiệt ra môi trường, dung dịch sau phản ứng có khối lượng m ≈ 100 g, nhiệt dung riêng xấp xỉ nhiệt dung riêng của nước tinh khiết c = 4,18 J/(g·K), độ tăng nhiệt độ lí thuyết của dung dịch là:\n\nΔT(lí thuyết) = Q : (m·c) = (1,0 mol/L × 0,05 L × 55 800 J/mol) : (100 g × 4,18 J/(g·K)) ≈ 6,7 °C\n\nTuy nhiên, khi thực hiện thí nghiệm, độ tăng nhiệt độ thực tế đo được thường thấp hơn lí thuyết do trao đổi nhiệt với dụng cụ và môi trường: một phần nhiệt toả ra đã truyền sang cốc, nhiệt kế và không khí. Việc đối chiếu kết quả đo thực tế với giá trị tính toán lí thuyết là cơ hội tốt để học sinh phân tích sai số thực nghiệm, đồng thời rèn luyện tư duy tối ưu hoá khi thiết kế quy trình thí nghiệm.",
   "bang_so_lieu": {
-   "tieu_de": "Thông số thí nghiệm và giá trị dự đoán",
+   "tieu_de": "Bảng số liệu tham khảo",
    "cot": [
-    "Đại lượng",
+    "Đại lượng/thông số",
     "Giá trị",
     "Ghi chú"
    ],
@@ -146,32 +146,32 @@ NL.add([
     [
      "Thể tích HCl 1,0 M",
      "50 mL",
-     "0,050 mol H⁺"
+     "Tương ứng 0,050 mol H⁺"
     ],
     [
      "Thể tích NaOH 1,0 M",
      "50 mL",
-     "0,050 mol OH⁻"
+     "Tương ứng 0,050 mol OH⁻"
     ],
     [
-     "ΔrH° trung hoà",
+     "ΔrH°",
      "−55,8 kJ/mol",
-     "LibreTexts (CRC)"
+     "Theo CRC Handbook of Chemistry and Physics"
     ],
     [
      "Nhiệt toả ra lí thuyết",
      "2,79 kJ",
-     "tính toán"
+     "Tính toán từ lí thuyết"
     ],
     [
      "ΔT dự đoán",
      "6,7 °C",
-     "tính toán, bỏ qua thất thoát"
+     "Tính toán từ lí thuyết"
     ]
    ],
    "ghi_chu": "ΔrH° tính từ enthalpy tạo thành chuẩn của H₂O(l) (−285,8 kJ/mol) và OH⁻(aq) (−230,0 kJ/mol) trong CRC Handbook of Chemistry and Physics (84th ed., 2004); các giá trị còn lại được tính từ số liệu trên."
   },
-  "hinh_goi_y": "Ảnh hoặc sơ đồ nhiệt lượng kế cốc xốp (ảnh tự chụp khi làm thí nghiệm); đồ thị nhiệt độ – thời gian do học sinh đo.",
+  "hinh_goi_y": "Ảnh hoặc sơ đồ mặt cắt nhiệt lượng kế cốc xốp; bảng ghi số liệu thực nghiệm.",
   "nguon": [
    {
     "trich_dan": "Lide, D. R. (Chủ biên). (2004). CRC Handbook of Chemistry and Physics (84th ed.). CRC Press. Mục 5: Standard Thermodynamic Properties of Chemical Substances (H₂O(l) −285,8; OH⁻(aq) −230,0; H⁺(aq) 0 kJ/mol). Truy cập qua bảng tham khảo T1 của LibreTexts Chemistry, 06/11/2026.",
@@ -188,52 +188,52 @@ NL.add([
   ],
   "hinh_thuc": "Biên soạn lại",
   "ma_TH": [
-   "TH3",
-   "TH4",
-   "TH5"
+   "HH2.3",
+   "HH2.4",
+   "HH2.5"
   ],
   "ma_VD": [
-   "VD1",
-   "VD3"
+   "HH3.1",
+   "HH3.3"
   ],
-  "dinh_huong": "Lớp 10, bài Năng lượng hoá học: tiết thực hành.\nHình thức: nhóm 4 học sinh làm thí nghiệm 20 phút, ghi số liệu vào bảng, sau đó so sánh với giá trị dự đoán và báo cáo nguyên nhân sai số.",
+  "dinh_huong": "Lớp 10, chủ đề Năng lượng hoá học, bài Biến thiên enthalpy của phản ứng hoá học; sử dụng để vận dụng sau khi học sinh đã học khái niệm ΔrH.\nHình thức tổ chức: dạy học thực hành theo nhóm nhỏ khoảng 4 học sinh/nhóm, thời lượng khoảng 20 phút. Học sinh thực hiện thí nghiệm, ghi số liệu và tính toán, so sánh với giá trị lí thuyết và báo cáo nguyên nhân dẫn đến sai số.",
   "cau_hoi": [
    {
     "ma": [
-     "TH3"
+     "HH2.3"
     ],
     "dang": "Tự luận",
-    "noi_dung": "Em hãy lập kế hoạch thí nghiệm: cần dụng cụ, hoá chất gì; đo những đại lượng nào; làm gì để giảm thất thoát nhiệt?",
-    "dap_an": "Dụng cụ: 2 cốc xốp, nắp, nhiệt kế (0,1 °C nếu có), ống đong. Đo nhiệt độ đầu của hai dung dịch, nhiệt độ cao nhất sau khi trộn. Giảm thất thoát: đậy nắp, trộn nhanh, dùng hai cốc lồng nhau, khuấy nhẹ, đọc nhiệt độ liên tục để lấy giá trị cao nhất."
+    "noi_dung": "Dựa vào mô tả cấu tạo nhiệt lượng kế cốc xốp và bài toán lí thuyết, hãy đề xuất cách tiến hành thí nghiệm nhằm xác định độ tăng nhiệt độ của phản ứng trung hoà. Bản kế hoạch cần nêu rõ:\n– Các dụng cụ, hoá chất cần thiết;\n– Trình tự các thao tác thực hiện thí nghiệm;\n– Các thời điểm và giá trị nhiệt độ cần ghi nhận;\n– Những biện pháp kĩ thuật giúp giảm thiểu sự thất thoát nhiệt ra môi trường.",
+    "dap_an": "Dụng cụ: 2 cốc xốp có kích thước vừa vặn để lồng khít vào nhau, dung tích khoảng 150–250 mL; 1 nắp xốp đậy vừa khít miệng cốc, đục sẵn 1 lỗ nhỏ (để cắm vừa nhiệt kế); 1 nhiệt kế; 2 ống đong dung tích 50 mL hoặc 100 mL. Hoá chất: dung dịch HCl 1,0 M, dung dịch NaOH 1,0 M (đều ở nhiệt độ phòng).\nTrình tự thao tác: (1) Lồng 2 cốc xốp vào nhau, đặt nắp xốp lên trên, luồn nhiệt kế qua lỗ trên nắp sao cho đầu nhiệt kế không chạm sát đáy cốc. (2) Dùng ống đong thứ nhất lấy chính xác 50 mL dung dịch HCl 1,0 M, rót vào cốc xốp, đậy nắp cốc và theo dõi nhiệt độ trên nhiệt kế. (3) Dùng ống đong thứ hai lấy chính xác 50 mL dung dịch NaOH 1,0 M. (4) Mở nắp cốc và rót nhanh toàn bộ dung dịch NaOH vào cốc. Lập tức đậy kín nắp cốc, lắc nhẹ cốc và theo dõi sự thay đổi nhiệt độ trên nhiệt kế.\nCác thời điểm và giá trị nhiệt độ cần ghi nhận: nhiệt độ ban đầu (T₁): đọc và ghi nhiệt độ của dung dịch HCl trong cốc xốp ngay trước khi thêm NaOH. Nhiệt độ cực đại (T₂): theo dõi liên tục sau khi rót dung dịch NaOH vào cốc và ghi lại giá trị nhiệt độ cao nhất trên nhiệt kế trước khi nhiệt độ bắt đầu có xu hướng giảm dần. Độ tăng nhiệt độ của phản ứng: ΔT = T₂ − T₁.\nBiện pháp giảm thất thoát nhiệt: thao tác rót hoá chất vào cốc cần nhanh, dứt khoát và đậy nắp kín ngay sau khi rót; bảo đảm 2 cốc xốp lồng khít vào nhau và nắp đậy khít chặt miệng cốc; bầu nhiệt kế phải được nhúng ngập hoàn toàn trong lòng dung dịch nhưng không chạm đáy hoặc thành cốc; lắc nhẹ cốc sau khi rót dung dịch NaOH để nhiệt phân tán đều khắp dung dịch."
    },
    {
     "ma": [
-     "TH4"
+     "HH2.4"
     ],
     "dang": "Trả lời ngắn",
-    "noi_dung": "Một nhóm đo được nhiệt độ tăng 6,0 °C. Tính ΔrH (kJ/mol) theo số liệu của nhóm, coi khối lượng dung dịch là 100 g và nhiệt dung riêng 4,18 J/(g·K). (Làm tròn đến hàng phần mười.)",
-    "dap_an": "-50,2. Cách tính: q = 100 × 4,18 × 6,0 = 2 508 J = 2,508 kJ; ΔrH = −2,508 : 0,050 ≈ −50,2 kJ/mol."
+    "noi_dung": "Một nhóm học sinh tiến hành thí nghiệm với 50 mL dung dịch HCl 1,0 M và 50 mL dung dịch NaOH 1,0 M (cùng ở nhiệt độ phòng) thì đo được độ tăng nhiệt độ là 6,0 °C. Giả thiết hệ hoàn toàn không thất thoát nhiệt ra môi trường, dung dịch sau phản ứng có khối lượng 100 gam và nhiệt dung riêng là 4,18 J/(g·K). Tính ΔrH (kJ/mol) theo số liệu của nhóm. (Làm tròn đến hàng phần mười.)",
+    "dap_an": "-50,2. Cách tính: Q = m·c·ΔT = 100 × 4,18 × 6,0 = 2 508 J = 2,508 kJ; ΔrH = −2,508 : 0,050 ≈ −50,2 kJ/mol."
    },
    {
     "ma": [
-     "TH5",
-     "VD1"
+     "HH2.5",
+     "HH3.1"
     ],
     "dang": "Đúng/sai",
-    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Phản ứng trung hoà giữa HCl và NaOH là phản ứng toả nhiệt.\nb) Kết quả đo thường có độ lớn nhỏ hơn 55,8 kJ/mol chủ yếu vì nhiệt bị thất thoát ra môi trường.\nc) Nếu dùng 100 mL HCl 1,0 M và 100 mL NaOH 1,0 M thì nhiệt độ tăng gấp đôi.\nd) Dùng cốc thuỷ tinh thay cốc xốp sẽ cho kết quả gần giá trị lí thuyết hơn.",
-    "dap_an": "a) Đúng.\nb) Đúng.\nc) Sai – lượng chất và khối lượng dung dịch đều tăng gấp đôi nên ΔT gần như không đổi (khoảng 6,7 °C).\nd) Sai – thuỷ tinh dẫn nhiệt tốt hơn xốp nên thất thoát nhiều hơn."
+    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Phản ứng trung hoà giữa HCl và NaOH là phản ứng toả nhiệt.\nb) Trong thực tế, giá trị tuyệt đối của biến thiên enthalpy xác định từ thí nghiệm thường nhỏ hơn 55,8 kJ/mol, chủ yếu do nhiệt bị thất thoát ra môi trường.\nc) Nếu dùng 100 mL HCl 1,0 M và 100 mL NaOH 1,0 M thì độ tăng nhiệt độ cũng tăng gấp đôi.\nd) Việc thay thế cốc xốp bằng cốc thuỷ tinh có cùng kích thước sẽ giúp kết quả thí nghiệm đạt độ chính xác cao hơn và gần với giá trị lí thuyết hơn.",
+    "dap_an": "a) Đúng.\nb) Đúng.\nc) Sai. Lượng chất và khối lượng dung dịch đều tăng gấp đôi nên ΔT gần như không đổi.\nd) Sai. Thuỷ tinh dẫn nhiệt tốt hơn xốp nên nhiệt thất thoát nhiều hơn."
    }
   ],
   "luu_y_khoa_hoc": [
-   "Giá trị −55,8 kJ/mol áp dụng cho acid mạnh – base mạnh ở dung dịch loãng; với acid yếu như CH₃COOH, độ lớn nhỏ hơn vì một phần nhiệt dùng để phân li acid.",
-   "ΔT không phụ thuộc thể tích nếu nồng độ không đổi; nhiều học sinh nhầm “nhiều chất hơn thì nóng hơn”.",
-   "NaOH và HCl 1,0 M gây bỏng da, mắt: bắt buộc đeo kính bảo hộ."
+   "Giá trị −55,8 kJ/mol áp dụng cho acid mạnh – base mạnh ở dung dịch loãng; với acid yếu như CH₃COOH, độ lớn nhỏ hơn vì một phần nhiệt tiêu tốn cho quá trình điện li của acid.",
+   "ΔT không phụ thuộc thể tích nếu nồng độ không đổi; nhiều học sinh nhầm “nhiều chất hơn thì nhiệt độ tăng nhiều hơn”.",
+   "NaOH và HCl 1,0 M gây bỏng da, mắt. Nên trang bị găng tay, kính bảo hộ cho học sinh khi thực hiện thí nghiệm."
   ],
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu đo.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd01-03",

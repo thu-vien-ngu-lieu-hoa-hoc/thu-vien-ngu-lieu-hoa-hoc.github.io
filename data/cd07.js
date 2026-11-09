@@ -5,7 +5,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Năng lượng ion hoá và khả năng phản ứng của kim loại kiềm",
   "yccd": "Giải thích được xu hướng biến đổi tính chất của các kim loại nhóm IA; liên hệ với năng lượng ion hoá và bán kính nguyên tử.",
-  "boi_canh": "Thả một mẩu lithium vào nước, nó sủi bọt nhẹ nhàng. Sodium chạy vòng tròn trên mặt nước, có thể bốc cháy. Potassium bốc cháy ngay với ngọn lửa tím. Rubidium và caesium phản ứng gần như nổ. Vì sao các nguyên tố cùng nhóm lại khác nhau như vậy?\n\nCâu trả lời nằm ở năng lượng ion hoá thứ nhất: năng lượng cần để tách electron ngoài cùng khỏi nguyên tử ở thể khí, M(g) → M⁺(g) + e. Cơ sở dữ liệu phổ nguyên tử của Viện Tiêu chuẩn và Công nghệ Quốc gia Hoa Kỳ (NIST Atomic Spectra Database) cung cấp giá trị chính xác cho từng nguyên tố (bảng dưới, đơn vị electronvolt).\n\nTừ lithium đến caesium, số lớp electron tăng, electron ngoài cùng ở xa hạt nhân hơn và bị các lớp bên trong che chắn nhiều hơn. Vì vậy electron này dễ bị tách ra hơn: năng lượng ion hoá giảm, tính khử tăng.\n\nTính chất này giải thích vì sao kim loại kiềm phải được bảo quản trong dầu hoả và chỉ được dùng lượng rất nhỏ trong phòng thí nghiệm trường học.",
+  "boi_canh": "Thả một mẩu lithium vào nước, nó sủi bọt nhẹ nhàng. Sodium chạy vòng tròn trên mặt nước, có thể bốc cháy. Potassium bốc cháy ngay với ngọn lửa tím. Rubidium và caesium phản ứng gần như nổ. Vì sao các nguyên tố cùng nhóm lại khác nhau như vậy?\n\nCâu trả lời nằm ở năng lượng ion hoá thứ nhất: năng lượng cần để tách electron ngoài cùng khỏi nguyên tử ở thể khí, M(g) → M⁺(g) + e⁻. Cơ sở dữ liệu phổ nguyên tử của Viện Tiêu chuẩn và Công nghệ Quốc gia Hoa Kỳ (NIST Atomic Spectra Database) cung cấp giá trị chính xác cho từng nguyên tố (bảng dưới, đơn vị electronvolt).\n\nTừ lithium đến caesium, số lớp electron tăng, bán kính nguyên tử lớn hơn và electron hoá trị ở xa hạt nhân hơn. Đồng thời, hiệu ứng chắn của các electron ở lớp bên trong tăng lên. Vì vậy, electron hoá trị dễ bị tách ra hơn, khiến năng lượng ion hoá thứ nhất giảm dần. Tuy nhiên, năng lượng ion hoá không phải yếu tố duy nhất quyết định mức độ phản ứng của các kim loại kiềm với nước. Cần xem xét thêm enthalpy nguyên tử hoá, enthalpy hydrat hoá và các yếu tố động học của phản ứng.\n\nTính chất này giải thích vì sao kim loại kiềm phải được bảo quản trong dầu hoả và chỉ được dùng lượng rất nhỏ trong phòng thí nghiệm trường học.",
   "bang_so_lieu": {
    "tieu_de": "Năng lượng ion hoá thứ nhất của kim loại kiềm",
    "cot": [
@@ -71,14 +71,14 @@ NL.add([
     ],
     "dang": "Tự luận",
     "noi_dung": "Nhận xét xu hướng biến đổi năng lượng ion hoá trong bảng. Dự đoán phản ứng của francium (Fr, dưới Cs) với nước và giải thích.",
-    "dap_an": "Năng lượng ion hoá giảm dần từ Li đến Cs. Fr có năng lượng ion hoá thấp (dự đoán khoảng 4 eV hoặc thấp hơn), tính khử rất mạnh, phản ứng với nước rất mạnh. (Thực tế Fr là nguyên tố phóng xạ, rất hiếm, chưa quan sát được phản ứng với lượng lớn.)"
+    "dap_an": "Năng lượng ion hoá giảm dần từ Li đến Cs. Fr có năng lượng ion hoá thấp (dự đoán khoảng 4 eV hoặc thấp hơn), tính khử rất mạnh, phản ứng với nước rất mạnh. Lưu ý: năng lượng ion hoá chỉ là một yếu tố; mức độ phản ứng với nước còn phụ thuộc enthalpy nguyên tử hoá, enthalpy hydrat hoá và yếu tố động học. (Thực tế Fr là nguyên tố phóng xạ, rất hiếm, chưa quan sát được phản ứng với lượng lớn.)"
    },
    {
     "ma": [
      "VD1"
     ],
     "dang": "Đúng/sai",
-    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Từ Li đến Cs, năng lượng ion hoá thứ nhất giảm dần.\nb) Potassium phản ứng với nước mãnh liệt hơn sodium.\nc) Kim loại kiềm được bảo quản trong nước để tránh tiếp xúc với không khí.\nd) Phản ứng của sodium với nước tạo dung dịch base và khí hydrogen.",
+    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Từ Li đến Cs, năng lượng ion hoá thứ nhất giảm dần.\nb) Potassium phản ứng với nước mãnh liệt hơn sodium.\nc) Kim loại kiềm được bảo quản trong nước để tránh tiếp xúc với không khí.\nd) Phản ứng của sodium với nước tạo dung dịch base và giải phóng khí hydrogen.",
     "dap_an": "a) Đúng.\nb) Đúng.\nc) Sai – bảo quản trong dầu hoả vì phản ứng mạnh với nước.\nd) Đúng – 2Na + 2H₂O → 2NaOH + H₂."
    }
   ],
@@ -341,7 +341,7 @@ NL.add([
     ],
     "dang": "Tự luận",
     "noi_dung": "Vì sao nước ở vùng núi đá vôi thường cứng? Viết phương trình giải thích sự hình thành cặn khi đun sôi.",
-    "dap_an": "Nước mưa có CO₂ hoà tan đá vôi: CaCO₃ + CO₂ + H₂O → Ca(HCO₃)₂, làm nước chứa nhiều Ca²⁺. Khi đun: Ca(HCO₃)₂ → CaCO₃↓ + CO₂ + H₂O; CaCO₃ bám thành cặn."
+    "dap_an": "Nước mưa có CO₂ hoà tan đá vôi: CaCO₃ + CO₂ + H₂O → Ca(HCO₃)₂, làm nước chứa nhiều Ca²⁺. Khi đun: Ca(HCO₃)₂ → CaCO₃↓ + CO₂ + H₂O; Mg(HCO₃)₂ → MgCO₃↓ + CO₂ + H₂O. CaCO₃ và MgCO₃ bám thành cặn."
    },
    {
     "ma": [
@@ -378,7 +378,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Lượng sodium trong khẩu phần ăn",
   "yccd": "Nêu được vai trò sinh học và ứng dụng của hợp chất kim loại nhóm IA; vận dụng tính toán để đề xuất giải pháp bảo vệ sức khoẻ.",
-  "boi_canh": "Sodium (Na⁺) cần thiết cho cơ thể: giữ cân bằng nước, dẫn truyền thần kinh, co cơ. Nhưng ăn quá nhiều sodium làm tăng huyết áp, nguy cơ đột quỵ và bệnh tim mạch.\n\nTổ chức Y tế Thế giới (WHO) khuyến cáo người trưởng thành nên ăn dưới 2 g sodium mỗi ngày, tương đương dưới 5 g muối ăn (NaCl). Theo phân tích dữ liệu điều tra STEPS của Việt Nam (Vu Thi Hoang Lan và cộng sự, 2025), người trưởng thành 18–69 tuổi ăn trung bình 9,42 g muối mỗi ngày năm 2015 và 8,07 g năm 2021, vẫn cao hơn nhiều so với khuyến cáo.\n\nPhần lớn sodium không đến từ lọ muối trên bàn mà từ nước mắm, nước chấm, bột canh, mì gói, đồ ăn chế biến sẵn. Trên nhãn dinh dưỡng, lượng sodium thường được ghi bằng mg. Để đổi sang lượng muối tương đương, có thể nhân với khoảng 2,54 (vì 58,44 : 23,0 ≈ 2,54); WHO dùng quy đổi gần đúng 1 g muối ≈ 400 mg sodium (hệ số 2,5).\n\nMuối “ít natri” thay một phần NaCl bằng KCl là một giải pháp. Nhưng potassium dư cũng có thể nguy hiểm với người bệnh thận. Giảm muối là bài toán cần cân nhắc nhiều mặt: sức khoẻ, khẩu vị, thói quen văn hoá và giá thành.",
+  "boi_canh": "Sodium (Na⁺) cần thiết cho cơ thể: giữ cân bằng nước, dẫn truyền thần kinh, co cơ. Nhưng ăn quá nhiều sodium làm tăng huyết áp, nguy cơ đột quỵ và bệnh tim mạch.\n\nTổ chức Y tế Thế giới (WHO) khuyến cáo người trưởng thành nên ăn dưới 2 g sodium mỗi ngày, tương đương dưới 5 g muối ăn (NaCl). Theo phân tích dữ liệu điều tra STEPS của Việt Nam (Vu Thi Hoang Lan và cộng sự, 2025), người trưởng thành 18–69 tuổi ăn trung bình 9,42 g muối mỗi ngày năm 2015 và 8,07 g năm 2021, vẫn cao hơn nhiều so với khuyến cáo.\n\nPhần lớn sodium không đến từ lọ muối trên bàn mà từ nước mắm, nước chấm, bột canh, mì gói, đồ ăn chế biến sẵn. Trên nhãn dinh dưỡng, lượng sodium thường được ghi bằng mg. Để đổi sang lượng muối tương đương, có thể nhân với khoảng 2,54 (vì 58,44 : 23,0 ≈ 2,54); WHO dùng quy đổi gần đúng 1 g muối ≈ 400 mg sodium (hệ số 2,5).\n\nMuối “ít natri” thay một phần NaCl bằng KCl là một giải pháp. Nhưng ion potassium (K⁺) dư cũng có thể nguy hiểm với người bệnh thận. Giảm muối là bài toán cần cân nhắc nhiều mặt: sức khoẻ, khẩu vị, thói quen văn hoá và giá thành.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Ảnh nhãn dinh dưỡng của gói mì ăn liền ghi lượng sodium (ảnh tự chụp).",
   "nguon": [

@@ -5,7 +5,7 @@ NL.add([
   "lop": "11",
   "tieu_de": "Chọn chất chỉ thị cho phép chuẩn độ acid – base",
   "yccd": "Trình bày được nguyên tắc chuẩn độ acid – base; lựa chọn được chất chỉ thị phù hợp; thực hiện được thí nghiệm chuẩn độ.",
-  "boi_canh": "Trong phép chuẩn độ acid – base, người làm thí nghiệm nhỏ từ từ dung dịch chuẩn từ burette vào dung dịch cần xác định nồng độ. Điểm tương đương là lúc lượng acid và base phản ứng vừa đủ. Mắt người không thấy được điểm này, nên cần dùng chất chỉ thị acid – base.\n\nChất chỉ thị là acid hoặc base hữu cơ yếu, có màu ở dạng acid khác màu ở dạng base. Mỗi chất đổi màu trong một khoảng pH nhất định. Bảng dưới tổng hợp khoảng đổi màu của bốn chất chỉ thị phổ biến theo bảng tra cứu của LibreTexts Chemistry.\n\nNguyên tắc chọn: khoảng đổi màu của chất chỉ thị phải nằm trong bước nhảy chuẩn độ. Chuẩn độ acid mạnh bằng base mạnh (chẳng hạn chuẩn độ HCl bằng NaOH) có bước nhảy chuẩn độ rất rộng: với dung dịch NaOH 0,1 M, pH tăng từ 4,3 lên 9,7 khi lượng NaOH thêm vào tăng từ 99,9% đến 100,1% lượng cần dùng, do đó dùng được nhiều loại chất chỉ thị. Chuẩn độ acid yếu bằng base mạnh (CH₃COOH bằng NaOH) có điểm tương đương ở pH khoảng 8,7 (tính cho dung dịch 0,1 M, Ka = 1,75 × 10⁻⁵), bước nhảy hẹp hơn và nằm ở vùng base.\n\nMô phỏng “Acid-Base Solutions” của PhET giúp học sinh quan sát pH của acid mạnh, acid yếu ở cấp độ phân tử.",
+  "boi_canh": "Trong phép chuẩn độ acid – base, người làm thí nghiệm nhỏ từ từ dung dịch chuẩn từ burette vào dung dịch cần xác định nồng độ. Điểm tương đương là lúc lượng acid và base phản ứng vừa đủ. Mắt người không thấy được điểm này, nên cần dùng chất chỉ thị acid – base.\n\nChất chỉ thị là acid hoặc base hữu cơ yếu, có màu ở dạng acid khác màu ở dạng base. Mỗi chất đổi màu trong một khoảng pH nhất định. Bảng dưới tổng hợp khoảng đổi màu của bốn chất chỉ thị phổ biến (tra cứu từ bảng “Acid-Base Indicators” của nền tảng LibreTexts Chemistry).\n\nNguyên tắc chọn: khoảng đổi màu của chất chỉ thị phải nằm trong bước nhảy chuẩn độ. Chuẩn độ acid mạnh bằng base mạnh (chẳng hạn chuẩn độ HCl bằng NaOH) có bước nhảy chuẩn độ rất rộng: với dung dịch NaOH 0,1 M, pH tăng từ 4,3 lên 9,7 khi lượng NaOH thêm vào tăng từ 99,9% đến 100,1% lượng cần dùng, do đó dùng được nhiều loại chất chỉ thị. Chuẩn độ acid yếu bằng base mạnh (CH₃COOH bằng NaOH) có điểm tương đương ở pH khoảng 8,7 (tính cho dung dịch 0,1 M, Ka = 1,75 × 10⁻⁵), bước nhảy hẹp hơn và nằm ở vùng base.\n\nHọc sinh theo dõi pH của acid mạnh, acid yếu ở cấp độ phân tử qua mô phỏng “Acid-Base Solutions” của PhET (bên dưới).",
   "bang_so_lieu": {
    "tieu_de": "Khoảng pH đổi màu của một số chất chỉ thị",
    "cot": [
@@ -35,7 +35,7 @@ NL.add([
      "không màu → hồng"
     ]
    ],
-   "ghi_chu": "Theo bảng “Acid-Base Indicators” của LibreTexts Chemistry (truy cập 06/11/2026)."
+   "ghi_chu": "Tra cứu từ bảng “Acid-Base Indicators” của nền tảng LibreTexts Chemistry (truy cập 06/11/2026)."
   },
   "hinh_goi_y": "Ảnh dãy ống nghiệm chứa bốn chất chỉ thị ở các pH khác nhau (ảnh tự chụp).",
   "nguon": [
@@ -99,7 +99,13 @@ NL.add([
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "06/11/2026",
+  "mo_phong": {
+   "ten": "Acid-Base Solutions (PhET)",
+   "url_nhung": "https://phet.colorado.edu/sims/html/acid-base-solutions/latest/acid-base-solutions_vi.html",
+   "url": "https://phet.colorado.edu/en/simulations/acid-base-solutions",
+   "nguon": "PhET Interactive Simulations, University of Colorado Boulder (CC BY 4.0)."
+  }
  },
  {
   "id": "cd04-02",
@@ -214,7 +220,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Xác định oxygen hoà tan trong nước bằng phương pháp Winkler",
   "yccd": "Trình bày được nguyên tắc chuẩn độ oxi hoá – khử; vận dụng tính toán theo phương trình hoá học trong phép phân tích.",
-  "boi_canh": "Cá và các sinh vật thuỷ sinh cần oxygen hoà tan trong nước (Dissolved oxygen – DO) để hô hấp. Lượng oxygen hoà tan trong nước (DO) được tính bằng số miligam O₂ trong một lít nước (mg O₂/L). Chỉ số DO phụ thuộc nhiệt độ: nước càng ấm, càng hoà tan ít oxygen và hoạt động của các vi sinh vật phân huỷ chất hữu cơ cần tiêu thụ oxygen mạnh lên. Tính theo phương trình Benson – Krause mà Cục Khảo sát Địa chất Hoa Kỳ (USGS) sử dụng, ở 0 °C nước ngọt bão hoà chứa khoảng 14,6 mg O₂/L, ở 30 °C chỉ còn khoảng 7,6 mg/L.\n\nTừ năm 1888, nhà hoá học Hungary Lajos Winkler đã đưa ra phương pháp xác định DO bằng chuẩn độ oxi hoá – khử, đến nay vẫn là phương pháp chuẩn để kiểm tra các thiết bị đo DO. Nguyên tắc: oxygen trong mẫu nước oxi hoá Mn(II) thành MnO₂ trong môi trường base. Khi acid hoá, sản phẩm này oxi hoá ion I⁻ thành I₂. Lượng I₂ sinh ra được chuẩn độ bằng dung dịch sodium thiosulfate với chỉ thị hồ tinh bột (2S₂O₃²⁻ + I₂ → S₄O₆²⁻ + 2I⁻).\n\nTính tổng hợp cả chuỗi phản ứng: 1 mol O₂ tương ứng 2 mol I₂, và 4 mol S₂O₃²⁻ (O₂ + 4H⁺ + 4S₂O₃²⁻ → 2S₄O₆²⁻ + 2H₂O).\n\nVào mùa hè, nước ao hồ ấm lên, làm giảm khả năng hoà tan của oxygen trong nước, đồng thời hoạt động của các vi sinh vật phân huỷ chất hữu cơ cần tiêu thụ oxygen mạnh lên, từ đó làm giảm chỉ số DO của nước, có thể khiến cá chết hàng loạt.",
+  "boi_canh": "Cá và các sinh vật thuỷ sinh cần oxygen hoà tan trong nước (Dissolved oxygen – DO) để hô hấp. Lượng oxygen hoà tan trong nước (DO) được tính bằng số miligam O₂ trong một lít nước (mg O₂/L). Chỉ số DO phụ thuộc nhiệt độ: nước càng ấm, càng hoà tan ít oxygen và hoạt động của các vi sinh vật phân huỷ chất hữu cơ cần tiêu thụ oxygen mạnh lên. Tính theo phương trình (7) Benson – Krause mà Cục Khảo sát Địa chất Hoa Kỳ (USGS) sử dụng, ở 0 °C nước ngọt bão hoà chứa khoảng 14,6 mg O₂/L, ở 30 °C chỉ còn khoảng 7,6 mg/L.\n\nTừ năm 1888, nhà hoá học Hungary Lajos Winkler đã đưa ra phương pháp xác định DO bằng chuẩn độ oxi hoá – khử, đến nay vẫn là phương pháp chuẩn để kiểm tra các thiết bị đo DO. Nguyên tắc: oxygen trong mẫu nước oxi hoá Mn(II) thành MnO₂ trong môi trường base. Khi acid hoá, sản phẩm này oxi hoá ion I⁻ thành I₂. Lượng I₂ sinh ra được chuẩn độ bằng dung dịch sodium thiosulfate với chỉ thị hồ tinh bột (2S₂O₃²⁻ + I₂ → S₄O₆²⁻ + 2I⁻).\n\nTính tổng hợp cả chuỗi phản ứng: 1 mol O₂ tương ứng 2 mol I₂, và 4 mol S₂O₃²⁻ (O₂ + 4H⁺ + 4S₂O₃²⁻ → 2S₄O₆²⁻ + 2H₂O).\n\nVào mùa hè, nước ao hồ ấm lên, làm giảm khả năng hoà tan của oxygen trong nước, đồng thời hoạt động của các vi sinh vật phân huỷ chất hữu cơ cần tiêu thụ oxygen mạnh lên, từ đó làm giảm chỉ số DO của nước, có thể khiến cá chết hàng loạt.",
   "bang_so_lieu": {
    "tieu_de": "Độ hoà tan của oxygen trong nước ngọt (áp suất 1 atm)",
    "cot": [
@@ -318,7 +324,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Xác định chỉ số permanganate của nước",
   "yccd": "Trình bày được nguyên tắc chuẩn độ oxi hoá – khử bằng potassium permanganate; vận dụng trong kiểm tra chất lượng nước.",
-  "boi_canh": "Nước sinh hoạt có thể chứa chất hữu cơ từ lá cây mục, nước thải, rác thải. Một cách đánh giá nhanh lượng chất hữu cơ này là đo chỉ số permanganate. Ở Việt Nam, phương pháp được quy định trong tiêu chuẩn TCVN 6186:1996 (tương đương ISO 8467:1993).\n\nNguyên tắc: đun mẫu nước với một lượng dư potassium permanganate (KMnO₄) trong môi trường sulfuric acid. Các chất hữu cơ dễ bị oxi hoá sẽ khử một phần MnO₄⁻. Sau đó thêm lượng biết trước sodium oxalate để khử hết KMnO₄ còn dư, rồi chuẩn độ lượng oxalate dư bằng KMnO₄ cho đến khi xuất hiện màu hồng nhạt. Chính KMnO₄ đóng vai trò chất chỉ thị vì ion MnO₄⁻ có màu tím, còn Mn²⁺ gần như không màu.\n\nKết quả được quy đổi ra số mg oxygen tương ứng trong 1 lít nước. Chỉ số này càng cao, nước càng nhiều chất hữu cơ.\n\nQuy chuẩn kĩ thuật quốc gia về chất lượng nước sạch dùng cho mục đích sinh hoạt QCVN 01-1:2024/BYT (ban hành kèm Thông tư 52/2024/TT-BYT) có thông số “Permanganat” trong danh mục chỉ tiêu và dẫn TCVN 6186:1996 làm phương pháp thử. Phòng xét nghiệm ở các nhà máy nước, trung tâm y tế dự phòng thực hiện phép đo này định kì.",
+  "boi_canh": "Nước sinh hoạt có thể chứa chất hữu cơ từ lá cây mục, nước thải, rác thải. Một cách đánh giá nhanh lượng chất hữu cơ này là đo chỉ số permanganate. Ở Việt Nam, phương pháp được quy định trong tiêu chuẩn TCVN 6186:1996 (tương đương ISO 8467:1993).\n\nNguyên tắc: đun mẫu nước với một lượng dư potassium permanganate (KMnO₄) trong môi trường sulfuric acid. Các chất hữu cơ dễ bị oxi hoá sẽ khử một phần MnO₄⁻. Sau đó thêm lượng biết trước sodium oxalate để khử hết KMnO₄ còn dư, rồi chuẩn độ lượng oxalate dư bằng KMnO₄ cho đến khi xuất hiện màu hồng nhạt. Chính KMnO₄ đóng vai trò chất chỉ thị vì ion MnO₄⁻ có màu tím, còn Mn²⁺ gần như không màu.\n\nKết quả được quy đổi ra số mg oxygen tương ứng trong 1 lít nước. Chỉ số này càng cao, nước càng nhiều chất hữu cơ.\n\nQuy chuẩn kĩ thuật quốc gia về chất lượng nước sạch dùng cho mục đích sinh hoạt là QCVN 01-1:2024/BYT (ban hành kèm theo Thông tư 52/2024/TT-BYT) có thông số “Permanganat” trong danh mục chỉ tiêu và dẫn TCVN 6186:1996 làm phương pháp thử. Phòng xét nghiệm ở các nhà máy nước, trung tâm y tế dự phòng thực hiện phép đo này định kì.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Ảnh dãy bình tam giác ở các giai đoạn chuẩn độ permanganate (ảnh tự chụp tại phòng thí nghiệm khoa).",
   "nguon": [
@@ -382,9 +388,9 @@ NL.add([
   "id": "cd04-05",
   "chu_de": "cd04",
   "lop": "11",
-  "tieu_de": "Trung hoà acid tràn đổ trong phòng thí nghiệm",
+  "tieu_de": "Trung hoà acid khi xảy ra sự cố trong phòng thí nghiệm",
   "yccd": "Vận dụng phản ứng trung hoà và tính toán theo phương trình để đề xuất phương án xử lí sự cố hoá chất an toàn.",
-  "boi_canh": "Trong giờ thực hành, một học sinh làm vỡ chai chứa 500 mL dung dịch hydrochloric acid 1,0 M, acid chảy loang ra mặt bàn. Giáo viên cần quyết định nhanh: dùng chất gì để trung hoà?\n\nCó ba lựa chọn trong tủ hoá chất: dung dịch NaOH 1,0 M; bột sodium hydrogen carbonate (NaHCO₃, “baking soda”); bột calcium carbonate (CaCO₃, đá vôi nghiền).\n\nNaOH phản ứng nhanh: HCl + NaOH → NaCl + H₂O, nhưng chính NaOH cũng ăn mòn da và toả nhiều nhiệt khi trung hoà. Nếu đổ dư, mặt bàn lại có base mạnh. NaHCO₃ phản ứng: HCl + NaHCO₃ → NaCl + H₂O + CO₂, sủi bọt khí giúp nhận biết phản ứng đã kết thúc; NaHCO₃ dư chỉ là base rất yếu, ít nguy hiểm. CaCO₃ phản ứng chậm hơn, tạo CaCl₂ và CO₂.\n\nHướng dẫn xử lí tràn đổ hoá chất của nhiều trường đại học (ví dụ North Dakota State University, San José State University) liệt kê sodium bicarbonate là chất trung hoà dùng cho acid tràn đổ. Đây là một bài toán lựa chọn cần cân nhắc cả hoá học, an toàn và chi phí.",
+  "boi_canh": "Trong giờ thực hành, một học sinh làm vỡ chai chứa 500 mL dung dịch hydrochloric acid 1,0 M, acid chảy loang ra mặt bàn. Giáo viên cần quyết định nhanh: dùng chất gì để trung hoà?\n\nCó ba lựa chọn trong tủ hoá chất: dung dịch NaOH 1,0 M; bột sodium hydrogen carbonate (NaHCO₃, “baking soda”); bột calcium carbonate (CaCO₃, đá vôi nghiền).\n\nNaOH phản ứng nhanh: HCl + NaOH → NaCl + H₂O, nhưng chính NaOH cũng ăn mòn da và toả nhiều nhiệt khi trung hoà. Nếu đổ dư, mặt bàn lại có base mạnh. NaHCO₃ phản ứng: HCl + NaHCO₃ → NaCl + H₂O + CO₂, sủi bọt khí giúp nhận biết phản ứng đã kết thúc; NaHCO₃ dư chỉ là base rất yếu, ít nguy hiểm. CaCO₃ phản ứng chậm hơn, tạo CaCl₂ và CO₂.\n\nHướng dẫn xử lí tràn đổ hoá chất của nhiều trường đại học (North Dakota State University, San José State University) liệt kê sodium bicarbonate là chất trung hoà dùng cho acid tràn đổ. Đây là một bài toán lựa chọn cần cân nhắc cả hoá học, an toàn và chi phí.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Ảnh bộ dụng cụ xử lí tràn đổ hoá chất trong phòng thí nghiệm của khoa (ảnh tự chụp).",
   "nguon": [

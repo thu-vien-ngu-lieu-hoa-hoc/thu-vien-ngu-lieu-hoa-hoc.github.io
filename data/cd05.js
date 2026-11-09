@@ -5,7 +5,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Thế điện cực chuẩn và sức điện động của pin",
   "yccd": "Nêu được khái niệm thế điện cực chuẩn; so sánh được tính oxi hoá – khử của các cặp oxi hoá – khử; tính được sức điện động chuẩn của pin.",
-  "boi_canh": "Mỗi cặp oxi hoá – khử như Zn²⁺/Zn hay Cu²⁺/Cu có khả năng nhường, nhận electron khác nhau, đặc trưng bằng thế điện cực chuẩn E° (ở 25 °C, nồng độ ion 1 M, so với điện cực hydrogen chuẩn có E° = 0,00 V).\n\nBảng dưới trích thế điện cực chuẩn của một số cặp theo các bảng thế điện cực chuẩn của Bard, Parsons và Jordan (1985, IUPAC) và Milazzo, Caroli và Sharma (1978). E° càng âm, kim loại càng dễ nhường electron (tính khử mạnh). E° càng dương, ion kim loại càng dễ nhận electron (tính oxi hoá mạnh).\n\nKhi ghép hai điện cực thành pin điện, kim loại có E° nhỏ hơn đóng vai trò cực âm (anode), bị oxi hoá; kim loại có E° lớn hơn là cực dương (cathode). Sức điện động chuẩn của pin: E°pin = E°cathode − E°anode. Ví dụ pin Daniell Zn–Cu có E°pin = 0,34 − (−0,76) = 1,10 V.\n\nLithium có E° rất âm (−3,04 V) và khối lượng nguyên tử nhỏ. Đó là một lí do pin lithium-ion có điện áp cao, nhẹ, được dùng trong điện thoại và xe điện.",
+  "boi_canh": "Thế điện cực chuẩn E° đặc trưng cho xu hướng khử tương đối của các cặp oxi hoá – khử so với điện cực hydrogen chuẩn trong điều kiện chuẩn (hoạt độ các chất tan bằng 1, khí chuẩn 1 bar, thường quy ước 25 °C khi tra bảng). Việc dùng nồng độ 1 M chỉ là xấp xỉ thuận tiện cho dung dịch loãng.\n\nBảng dưới trích thế điện cực chuẩn của một số cặp theo các bảng thế điện cực chuẩn của Bard, Parsons và Jordan (1985, IUPAC) và Milazzo, Caroli và Sharma (1978). E° càng âm, kim loại càng dễ nhường electron (tính khử mạnh). E° càng dương, ion kim loại càng dễ nhận electron (tính oxi hoá mạnh).\n\nKhi ghép hai điện cực thành pin điện, kim loại có E° nhỏ hơn đóng vai trò cực âm (anode), bị oxi hoá; kim loại có E° lớn hơn là cực dương (cathode). Sức điện động chuẩn của pin: E°pin = E°cathode − E°anode. Ví dụ pin Daniell Zn–Cu có E°pin = 0,34 − (−0,76) = 1,10 V.\n\nLithium có E° rất âm (−3,04 V) và khối lượng nguyên tử nhỏ. Đó là một lí do pin lithium-ion có điện áp cao, nhẹ, được dùng trong điện thoại và xe điện.",
   "bang_so_lieu": {
    "tieu_de": "Thế điện cực chuẩn ở 25 °C",
    "cot": [
@@ -186,8 +186,8 @@ NL.add([
      "TH4"
     ],
     "dang": "Trả lời ngắn",
-    "noi_dung": "Mỗi quả chanh cho 0,8 V. Cần tối thiểu bao nhiêu quả nối tiếp để đạt điện áp 2,0 V cho đèn LED?",
-    "dap_an": "3. Cách tính: 2,0 : 0,8 = 2,5 nên cần ít nhất 3 quả."
+    "noi_dung": "Giả sử mỗi pin chanh có điện áp không tải 0,8 V, cần tối thiểu bao nhiêu pin ghép nối tiếp để tổng điện áp không tải ít nhất 2,0 V?",
+    "dap_an": "3. Cách tính: 2,0 : 0,8 = 2,5 nên cần ít nhất 3 pin chanh."
    },
    {
     "ma": [
@@ -215,7 +215,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Pin lithium-ion và số liệu tiêu thụ ô tô điện",
   "yccd": "Nêu được cấu tạo, nguyên tắc hoạt động của một số pin, ắc quy thông dụng; đánh giá được ưu, nhược điểm của chúng.",
-  "boi_canh": "Theo báo cáo Global EV Outlook 2024 của Cơ quan Năng lượng Quốc tế (IEA), doanh số ô tô điện trên thế giới năm 2023 đạt gần 14 triệu chiếc, chiếm khoảng 18% tổng số ô tô mới bán ra (năm 2022 là 14%). So với năm 2022, doanh số tăng thêm 3,5 triệu chiếc, tức tăng 35%. Trung Quốc chiếm khoảng 60%, châu Âu gần 25%, Hoa Kỳ khoảng 10%; cộng lại khoảng 95% doanh số.\n\nBộ phận chính của xe điện là bộ pin lithium-ion. Khi xe chạy, ion Li⁺ di chuyển từ cực âm (thường là graphite chứa lithium) qua chất điện li sang cực dương (oxide kim loại như LiFePO₄ hoặc oxide của nickel, manganese, cobalt), electron chạy qua mạch ngoài cung cấp điện cho động cơ. Khi sạc, quá trình xảy ra theo chiều ngược lại.\n\nNhu cầu pin tăng nhanh kéo theo nhu cầu lithium, nickel, cobalt, graphite. Việc khai thác các kim loại này gây áp lực lên môi trường và chuỗi cung ứng. Tái chế pin đã qua sử dụng đang trở thành ngành công nghiệp mới.\n\nXe điện không phát thải tại ống xả, nhưng lượng CO₂ gián tiếp phụ thuộc vào nguồn sản xuất điện để sạc pin.",
+  "boi_canh": "Theo báo cáo Global EV Outlook 2024 của Cơ quan Năng lượng Quốc tế (IEA), doanh số ô tô điện trên thế giới năm 2023 đạt gần 14 triệu chiếc, chiếm khoảng 18% tổng số ô tô mới bán ra (năm 2022 là 14%). So với năm 2022, doanh số tăng thêm 3,5 triệu chiếc, tức tăng 35%. Trung Quốc chiếm khoảng 60%, châu Âu gần 25%, Hoa Kỳ khoảng 10%; cộng lại khoảng 95% doanh số.\n\nBộ phận chính của xe điện là bộ pin lithium-ion. Khi xe chạy, ion Li⁺ di chuyển từ cực âm (thường là graphite chứa lithium) qua chất điện li sang cực dương (như LiFePO₄ hoặc oxide của nickel, manganese, cobalt), electron chạy qua mạch ngoài cung cấp điện cho động cơ. Khi sạc, quá trình xảy ra theo chiều ngược lại.\n\nNhu cầu pin tăng nhanh kéo theo nhu cầu lithium, nickel, cobalt, graphite. Việc khai thác các kim loại này gây áp lực lên môi trường và chuỗi cung ứng. Tái chế pin đã qua sử dụng đang trở thành ngành công nghiệp mới.\n\nXe điện không phát thải tại ống xả, nhưng lượng CO₂ gián tiếp phụ thuộc vào nguồn sản xuất điện để sạc pin.",
   "bang_so_lieu": {
    "tieu_de": "Một số chỉ số ô tô điện năm 2023 (IEA)",
    "cot": [
@@ -363,7 +363,7 @@ NL.add([
     ],
     "dang": "Tự luận",
     "noi_dung": "Vì sao phải hoà tan Al₂O₃ trong cryolite thay vì điện phân Al₂O₃ nóng chảy trực tiếp? Vì sao anode carbon phải được thay định kì?",
-    "dap_an": "Cryolite giúp giảm nhiệt độ làm việc từ trên 2 000 °C xuống khoảng 950–960 °C, tiết kiệm năng lượng, tăng độ dẫn điện. Anode carbon bị oxygen sinh ra đốt cháy thành CO₂ nên hao mòn dần."
+    "dap_an": "Cryolite tạo môi trường nóng chảy hoà tan alumina, giúp điện phân ở nhiệt độ vận hành thấp hơn nhiều so với Al₂O₃ nguyên chất; đồng thời ảnh hưởng tính chất dẫn điện và vận hành bể, tiết kiệm năng lượng, tăng độ dẫn điện. Anode carbon bị oxygen sinh ra đốt cháy thành CO₂ nên hao mòn dần."
    },
    {
     "ma": [
