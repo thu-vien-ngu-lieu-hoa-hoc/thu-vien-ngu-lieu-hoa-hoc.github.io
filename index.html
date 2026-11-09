@@ -189,6 +189,8 @@ p,li,td,.lead,.kv>div{text-wrap:pretty}
 .hero p{font-family:var(--f-read);color:var(--ink-2);max-width:520px;font-size:16.5px}
 .hero p.hero-lead{max-width:none;font-size:16px}
 .hero{container-type:inline-size}
+@container (max-width:740px){.hero h1 .h1-sub{font-size:.42em}}
+@container (max-width:520px){.hero .br-sub{display:none}}
 @container (max-width:760px){.hero p.hero-lead br{display:none}.hero p.hero-lead{max-width:560px}}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:12px;background:var(--cta);color:#fff;text-decoration:none;font-weight:700;border:1px solid var(--cta);cursor:pointer;font-size:15.5px;box-shadow:0 1px 2px rgba(249,115,22,.3);transition:background .15s,transform .15s,box-shadow .15s}
 .btn:hover{background:var(--cta-2);border-color:var(--cta-2);color:#fff;transform:translateY(-1px);box-shadow:0 6px 16px rgba(249,115,22,.3)}
@@ -1076,7 +1078,7 @@ function pageHome(){
   return `<div class="page wide">${errBox()}
     <section class="hero">${heroArt}<div class="hero-inner"><div>
       <div class="eyebrow">${icon('spark',15)} ${txt(C.don_vi)}</div>
-      <h1>Thư viện ngữ liệu <em>Hóa học</em><span class="h1-sub">Sử dụng trong dạy học và đánh giá năng lực <span class="nw">ở trường phổ thông</span></span></h1>
+      <h1>Thư viện ngữ liệu <em>Hóa học</em><span class="h1-sub">Sử dụng trong dạy học và <br class="br-sub">đánh giá năng lực <span class="nw">ở trường phổ thông</span></span></h1>
       <p class="hero-lead">Website cung cấp hệ thống ngữ liệu hóa học gắn với thực nghiệm <br>và các bối cảnh thực tiễn, được biên tập từ các nguồn dữ liệu tin cậy, <br>có thể sử dụng để phát triển thành các nhiệm vụ, câu hỏi, bài tập <br>trong dạy học và đánh giá năng lực hóa học.</p>
       <div class="btn-row"><a class="btn" href="#/tra-cuu">${icon('search',17)} Tra cứu ngữ liệu</a>${DS.length?`<button class="btn ghost" id="randBtn">${icon('dice',17)} Ngữ liệu ngẫu nhiên</button>`:''}<a class="btn ghost" href="#/huong-dan">${icon('book',17)} Hướng dẫn sử dụng</a></div>
     </div>${C.anh_qr?`<div class="qr"><img src="${esc(C.anh_qr)}" alt="Mã QR mở trang"><small>Quét để mở trên điện thoại</small></div>`:''}</div>
