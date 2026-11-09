@@ -5,7 +5,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Năng lượng ion hoá và khả năng phản ứng của kim loại kiềm",
   "yccd": "Giải thích được xu hướng biến đổi tính chất của các kim loại nhóm IA; liên hệ với năng lượng ion hoá và bán kính nguyên tử.",
-  "boi_canh": "Thả một mẩu lithium vào nước, nó sủi bọt nhẹ nhàng. Sodium chạy vòng tròn trên mặt nước, có thể bốc cháy. Potassium bốc cháy ngay với ngọn lửa tím. Rubidium và caesium phản ứng gần như nổ. Vì sao các nguyên tố cùng nhóm lại khác nhau như vậy?\n\nCâu trả lời nằm ở năng lượng ion hoá thứ nhất: năng lượng cần để tách electron ngoài cùng khỏi nguyên tử ở thể khí, M(g) → M⁺(g) + e⁻. Cơ sở dữ liệu phổ nguyên tử của Viện Tiêu chuẩn và Công nghệ Quốc gia Hoa Kỳ (NIST Atomic Spectra Database) cung cấp giá trị chính xác cho từng nguyên tố (bảng dưới, đơn vị electronvolt).\n\nTừ lithium đến caesium, số lớp electron tăng, bán kính nguyên tử lớn hơn và electron hoá trị ở xa hạt nhân hơn. Đồng thời, hiệu ứng chắn của các electron ở lớp bên trong tăng lên. Vì vậy, electron hoá trị dễ bị tách ra hơn, khiến năng lượng ion hoá thứ nhất giảm dần. Tuy nhiên, năng lượng ion hoá không phải yếu tố duy nhất quyết định mức độ phản ứng của các kim loại kiềm với nước. Cần xem xét thêm enthalpy nguyên tử hoá, enthalpy hydrat hoá và các yếu tố động học của phản ứng.\n\nTính chất này giải thích vì sao kim loại kiềm phải được bảo quản trong dầu hoả và chỉ được dùng lượng rất nhỏ trong phòng thí nghiệm trường học.",
+  "boi_canh": "Thả một mẩu lithium vào nước, nó sủi bọt nhẹ nhàng. Sodium chạy vòng tròn trên mặt nước, có thể bốc cháy. Potassium bốc cháy ngay với ngọn lửa tím. Rubidium và caesium phản ứng gần như nổ. Vì sao các nguyên tố cùng nhóm lại khác nhau như vậy?\nMột yếu tố quan trọng để giải thích là năng lượng ion hoá thứ nhất: năng lượng cần để tách electron ngoài cùng khỏi nguyên tử ở thể khí, M(g) → M⁺(g) + e⁻. Cơ sở dữ liệu phổ nguyên tử của Viện Tiêu chuẩn và Công nghệ Quốc gia Hoa Kỳ (NIST Atomic Spectra Database) cung cấp giá trị chính xác cho từng nguyên tố (bảng dưới, đơn vị electronvolt).\nTừ lithium đến caesium, số lớp electron tăng, electron ngoài cùng ở xa hạt nhân hơn và bị các lớp bên trong che chắn nhiều hơn. Vì vậy, electron này dễ bị tách ra hơn, khiến năng lượng ion hoá thứ nhất giảm dần. Tuy nhiên, năng lượng ion hoá không phải là yếu tố duy nhất quyết định mức độ phản ứng của kim loại kiềm với nước; cần xét thêm enthalpy nguyên tử hoá của kim loại, enthalpy hydrat hoá của ion và các yếu tố động học.\nTính chất này giải thích vì sao kim loại kiềm phải được bảo quản trong dầu hoả và chỉ được dùng lượng rất nhỏ trong phòng thí nghiệm trường học.",
   "bang_so_lieu": {
    "tieu_de": "Năng lượng ion hoá thứ nhất của kim loại kiềm",
    "cot": [
@@ -34,7 +34,7 @@ NL.add([
      "3,89"
     ]
    ],
-   "ghi_chu": "Theo NIST Atomic Spectra Database – Ionization Energies (Li 5,3917; Na 5,1391; K 4,3407; Rb 4,1771; Cs 3,8939 eV), làm tròn 2 chữ số thập phân. 1 eV/nguyên tử ≈ 96,49 kJ/mol."
+   "ghi_chu": "Theo NIST Atomic Spectra Database – Ionization Energies (Li 5,3917; Na 5,1391; K 4,3407; Rb 4,1771; Cs 3,8939 eV), làm tròn đến 2 chữ số thập phân. 1 eV/nguyên tử ≈ 96,49 kJ/mol."
   },
   "hinh_goi_y": "Video phản ứng của kim loại kiềm với nước (Royal Society of Chemistry, kiểm tra giấy phép).",
   "nguon": [
@@ -54,14 +54,14 @@ NL.add([
   "ma_VD": [
    "VD1"
   ],
-  "dinh_huong": "Lớp 12, bài Kim loại nhóm IA.\nHình thức: học sinh đọc bảng, vẽ đồ thị, dự đoán tính chất của francium; 15 phút.",
+  "dinh_huong": "Môn Hoá học 12, chủ đề Nguyên tố nhóm IA và nhóm IIA, nội dung Kim loại nhóm IA (xu hướng biến đổi tính chất trong nhóm). Sử dụng ở hoạt động hình thành kiến thức về xu hướng biến đổi năng lượng ion hoá và tính khử của kim loại kiềm.\nCách tổ chức: giáo viên chiếu video phản ứng của kim loại kiềm với nước để đặt vấn đề; học sinh làm việc nhóm (thời lượng gợi ý 15 phút): đọc bảng, vẽ đồ thị năng lượng ion hoá theo số hiệu nguyên tử, trả lời Câu 1 và Câu 2 (dự đoán tính chất của francium); Câu 3 dùng để kiểm tra nhanh cuối hoạt động.",
   "cau_hoi": [
    {
     "ma": [
      "TH4"
     ],
     "dang": "Trả lời ngắn",
-    "noi_dung": "Đổi năng lượng ion hoá thứ nhất của sodium ra kJ/mol (1 eV/nguyên tử ≈ 96,49 kJ/mol). (Làm tròn đến hàng đơn vị.)",
+    "noi_dung": "Đổi năng lượng ion hoá thứ nhất của sodium trong bảng sang đơn vị kJ/mol (1 eV/nguyên tử ≈ 96,49 kJ/mol). (Làm tròn đến hàng đơn vị.)",
     "dap_an": "496. Cách tính: 5,14 × 96,49 ≈ 496 kJ/mol."
    },
    {
@@ -70,7 +70,7 @@ NL.add([
      "TH2"
     ],
     "dang": "Tự luận",
-    "noi_dung": "Nhận xét xu hướng biến đổi năng lượng ion hoá trong bảng. Dự đoán phản ứng của francium (Fr, dưới Cs) với nước và giải thích.",
+    "noi_dung": "Nhận xét xu hướng biến đổi năng lượng ion hoá thứ nhất trong bảng. Dự đoán mức độ phản ứng của francium (Fr, nằm dưới Cs trong nhóm IA) với nước và giải thích.",
     "dap_an": "Năng lượng ion hoá giảm dần từ Li đến Cs. Fr có năng lượng ion hoá thấp (dự đoán khoảng 4 eV hoặc thấp hơn), tính khử rất mạnh, phản ứng với nước rất mạnh. Lưu ý: năng lượng ion hoá chỉ là một yếu tố; mức độ phản ứng với nước còn phụ thuộc enthalpy nguyên tử hoá, enthalpy hydrat hoá và yếu tố động học. (Thực tế Fr là nguyên tố phóng xạ, rất hiếm, chưa quan sát được phản ứng với lượng lớn.)"
    },
    {
@@ -79,12 +79,12 @@ NL.add([
     ],
     "dang": "Đúng/sai",
     "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Từ Li đến Cs, năng lượng ion hoá thứ nhất giảm dần.\nb) Potassium phản ứng với nước mãnh liệt hơn sodium.\nc) Kim loại kiềm được bảo quản trong nước để tránh tiếp xúc với không khí.\nd) Phản ứng của sodium với nước tạo dung dịch base và giải phóng khí hydrogen.",
-    "dap_an": "a) Đúng.\nb) Đúng.\nc) Sai – bảo quản trong dầu hoả vì phản ứng mạnh với nước.\nd) Đúng – 2Na + 2H₂O → 2NaOH + H₂."
+    "dap_an": "a) Đúng.\nb) Đúng.\nc) Sai – kim loại kiềm được bảo quản trong dầu hoả vì phản ứng mạnh với nước.\nd) Đúng – 2Na + 2H₂O → 2NaOH + H₂."
    }
   ],
   "luu_y_khoa_hoc": [
-   "Lithium có năng lượng ion hoá lớn nhất nhưng thế điện cực chuẩn lại âm nhất; hai đại lượng đo trong điều kiện khác nhau (khí và dung dịch).",
-   "Chỉ giáo viên được biểu diễn phản ứng Na với nước, lượng bằng hạt đậu xanh, có tấm chắn.",
+   "Lithium có năng lượng ion hoá lớn nhất nhưng thế điện cực chuẩn lại âm nhất; hai đại lượng này được xác định trong các điều kiện khác nhau (thể khí và dung dịch).",
+   "Chỉ giáo viên được biểu diễn phản ứng của Na với nước, với lượng Na nhỏ bằng hạt đậu xanh và có tấm chắn bảo vệ.",
    "Không biểu diễn K, Rb, Cs với nước ở trường phổ thông."
   ],
   "trang_thai": "nhap",
@@ -99,7 +99,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Phổ phát xạ và màu ngọn lửa của ion kim loại",
   "yccd": "Thực hiện được thí nghiệm thử màu ngọn lửa của hợp chất kim loại nhóm IA, IIA; nêu được ứng dụng.",
-  "boi_canh": "Màu của pháo hoa đến từ các muối kim loại: muối strontium cho màu đỏ, muối barium cho màu lục, muối sodium cho màu vàng, muối potassium cho màu tím nhạt.\n\nKhi bị đốt nóng, electron trong ion kim loại nhận năng lượng và nhảy lên mức năng lượng cao hơn. Khi trở về mức thấp, chúng phát ra ánh sáng có bước sóng xác định. Mỗi nguyên tố có một bộ vạch phổ riêng, đặc trưng cho nguyên tố đó. Theo bảng vạch phổ mạnh (Strong Lines) trong cơ sở dữ liệu của NIST, sodium có hai vạch vàng ở 589,0 và 589,6 nm, lithium có vạch đỏ ở 670,8 nm, potassium có hai vạch ở 766,5 và 769,9 nm (đỏ sẫm, gần hồng ngoại) cùng các vạch tím ở khoảng 404 nm.\n\nTrong phòng thí nghiệm, có thể thử màu ngọn lửa: nhúng que nichrome sạch vào dung dịch muối, đưa vào ngọn lửa đèn khí. Đây là phương pháp nhận biết nhanh nhiều ion kim loại.\n\nNguyên lí này còn được dùng trong máy quang phổ phát xạ để đo hàm lượng Na⁺, K⁺ trong máu, nước khoáng, đất trồng.",
+  "boi_canh": "Màu sắc của pháo hoa được tạo ra từ quá trình đốt cháy muối của một số kim loại: muối strontium cho màu đỏ, muối barium cho màu lục, muối sodium cho màu vàng, muối potassium cho màu tím nhạt.\nKhi bị đốt nóng, electron trong nguyên tử (hoặc ion) kim loại nhận năng lượng và chuyển lên mức năng lượng cao hơn. Khi trở về mức năng lượng thấp hơn, electron phát ra ánh sáng có bước sóng xác định. Mỗi nguyên tố có một bộ vạch phổ riêng, đặc trưng cho nguyên tố đó. Theo bảng vạch phổ mạnh (Strong Lines) trong cơ sở dữ liệu của NIST, sodium có hai vạch vàng ở 589,0 và 589,6 nm, lithium có vạch đỏ ở 670,8 nm, potassium có hai vạch ở 766,5 và 769,9 nm (đỏ sẫm, gần hồng ngoại) cùng các vạch tím ở khoảng 404 nm.\nTrong phòng thí nghiệm, có thể tiến hành thử màu ngọn lửa bằng cách nhúng que nichrome sạch vào dung dịch muối rồi đưa vào ngọn lửa đèn khí. Đây là phương pháp nhận biết nhanh nhiều ion kim loại.\nNguyên lí này còn được dùng trong máy quang phổ phát xạ ngọn lửa để xác định hàm lượng Na⁺, K⁺ trong máu, nước khoáng, đất trồng.",
   "bang_so_lieu": {
    "tieu_de": "Màu ngọn lửa và vạch phổ đặc trưng",
    "cot": [
@@ -177,22 +177,22 @@ NL.add([
    "VD1",
    "VD3"
   ],
-  "dinh_huong": "Lớp 12, bài Kim loại nhóm IA, IIA: thực hành nhận biết.\nHình thức: thực hành 20 phút, sau đó giải bài toán nhận biết ion chưa biết.",
+  "dinh_huong": "Môn Hoá học 12, chủ đề Nguyên tố nhóm IA và nhóm IIA, nội dung thực hành nhận biết ion kim loại nhóm IA, IIA bằng phương pháp thử màu ngọn lửa.\nCách tổ chức: trước giờ thực hành, các nhóm làm Câu 1 (lập kế hoạch nhận biết); trên lớp, các nhóm thực hành thử màu ngọn lửa (thời lượng gợi ý 20 phút) dưới sự giám sát của giáo viên và đối chiếu kết quả với kế hoạch; sau đó, giáo viên giao một mẫu chưa biết để học sinh nhận biết ion. Câu 2, Câu 3 dùng để luyện tập, củng cố.",
   "cau_hoi": [
    {
     "ma": [
      "TH3"
     ],
     "dang": "Tự luận",
-    "noi_dung": "Có 3 lọ mất nhãn chứa dung dịch NaCl, KCl, SrCl₂. Lập kế hoạch nhận biết bằng thử màu ngọn lửa, nêu các bước và cách tránh kết quả sai.",
-    "dap_an": "Làm sạch que nichrome bằng HCl đặc và đốt đến khi ngọn lửa không màu; nhúng que vào từng lọ, đưa vào ngọn lửa: vàng – NaCl, tím nhạt – KCl, đỏ – SrCl₂. Làm sạch que giữa các lần; quan sát K qua kính lam cobalt để lọc màu vàng của Na lẫn vào."
+    "noi_dung": "Có 3 lọ mất nhãn, mỗi lọ chứa một trong các dung dịch NaCl, KCl, SrCl₂. Hãy lập kế hoạch nhận biết các dung dịch bằng phương pháp thử màu ngọn lửa, trong đó nêu rõ các bước tiến hành và cách tránh kết quả sai.",
+    "dap_an": "Làm sạch que nichrome bằng HCl đặc và đốt đến khi ngọn lửa không màu; nhúng que vào từng lọ, đưa vào ngọn lửa: vàng – NaCl, tím nhạt – KCl, đỏ – SrCl₂. Làm sạch que giữa các lần; quan sát ngọn lửa của KCl qua kính lam cobalt để lọc màu vàng của Na lẫn vào."
    },
    {
     "ma": [
      "TH4"
     ],
     "dang": "Trả lời ngắn",
-    "noi_dung": "Tính khoảng cách (nm) giữa hai vạch vàng của sodium theo bảng. (Làm tròn đến hàng phần mười.)",
+    "noi_dung": "Tính hiệu bước sóng (nm) giữa hai vạch vàng của sodium theo bảng. (Làm tròn đến hàng phần mười.)",
     "dap_an": "0,6. Cách tính: 589,6 − 589,0 = 0,6 nm."
    },
    {
@@ -200,13 +200,13 @@ NL.add([
      "VD1"
     ],
     "dang": "Đúng/sai",
-    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Màu ngọn lửa do electron chuyển từ mức năng lượng cao về mức thấp phát ra ánh sáng.\nb) Muối strontium được dùng tạo màu đỏ cho pháo hoa.\nc) Màu tím của potassium dễ bị che bởi màu vàng của sodium lẫn vào.\nd) Hai muối khác nhau luôn cho hai màu ngọn lửa khác nhau.",
+    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Màu ngọn lửa là do electron chuyển từ mức năng lượng cao về mức năng lượng thấp và phát ra ánh sáng.\nb) Muối strontium được dùng để tạo màu đỏ cho pháo hoa.\nc) Màu tím của ngọn lửa potassium dễ bị màu vàng của sodium (lẫn vào) che lấp.\nd) Hai muối khác nhau luôn cho hai màu ngọn lửa khác nhau.",
     "dap_an": "a) Đúng.\nb) Đúng.\nc) Đúng.\nd) Sai – ví dụ NaCl và Na₂SO₄ đều cho màu vàng; màu đặc trưng cho ion kim loại."
    }
   ],
   "luu_y_khoa_hoc": [
-   "Muối barium tan độc; muối strontium chỉ dùng lượng nhỏ, rửa tay sau thí nghiệm.",
-   "Sodium lẫn rất ít cũng cho màu vàng mạnh; kết quả thử ngọn lửa cần thận trọng khi kết luận.",
+   "Các muối barium tan đều độc; muối strontium chỉ dùng lượng nhỏ, rửa tay sau thí nghiệm.",
+   "Chỉ cần lẫn một lượng rất nhỏ sodium cũng cho màu vàng mạnh; vì vậy, cần thận trọng khi kết luận từ kết quả thử màu ngọn lửa.",
    "Pháo hoa tự chế rất nguy hiểm và bị cấm; không hướng dẫn học sinh trộn chất oxi hoá với muối kim loại."
   ],
   "trang_thai": "nhap",
@@ -221,7 +221,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Lithium: sản lượng khai thác và ứng dụng trong pin",
   "yccd": "Nêu được trạng thái tự nhiên và ứng dụng của kim loại nhóm IA; đánh giá được vấn đề khai thác tài nguyên.",
-  "boi_canh": "Lithium là kim loại nhẹ nhất, nằm đầu nhóm IA. Trước đây lithium chủ yếu dùng trong gốm, thuỷ tinh, dầu bôi trơn. Ngày nay, theo USGS, khoảng 87% lượng lithium tiêu thụ trên thế giới dùng cho pin.\n\nTheo báo cáo Mineral Commodity Summaries 2024 của Cục Khảo sát Địa chất Hoa Kỳ (USGS), sản lượng lithium khai thác toàn cầu năm 2023 ước khoảng 180 nghìn tấn (tính theo lithium kim loại), tăng so với khoảng 146 nghìn tấn năm 2022. Úc, Chile và Trung Quốc là ba nước sản xuất lớn nhất.\n\nLithium được khai thác theo hai cách chính. Ở Úc, người ta khai thác quặng đá cứng spodumene. Ở vùng “tam giác lithium” Chile – Argentina – Bolivia, người ta bơm nước muối ngầm giàu lithium lên các hồ bay hơi dưới nắng sa mạc, sau nhiều tháng thu được muối lithium. Cách thứ hai tiêu tốn rất nhiều nước ở vùng vốn khô hạn.\n\nNhu cầu lithium được dự báo tiếp tục tăng. Tái chế pin và tìm loại pin thay thế (như pin sodium-ion) là những hướng nghiên cứu quan trọng.",
+  "boi_canh": "Lithium là kim loại nhẹ nhất, nằm đầu nhóm IA. Trước đây, lithium chủ yếu được dùng trong sản xuất gốm, thuỷ tinh, dầu bôi trơn. Ngày nay, theo USGS, khoảng 87% lượng lithium tiêu thụ trên thế giới được dùng để sản xuất pin.\nTheo báo cáo Mineral Commodity Summaries 2024 của Cục Khảo sát Địa chất Hoa Kỳ (USGS), sản lượng lithium khai thác toàn cầu năm 2023 ước tính khoảng 180 nghìn tấn (tính theo lithium kim loại), tăng so với khoảng 146 nghìn tấn năm 2022. Úc, Chile và Trung Quốc là ba nước sản xuất lớn nhất.\nLithium được khai thác theo hai cách chính. Ở Úc, người ta khai thác quặng đá cứng spodumene. Ở vùng “tam giác lithium” Chile – Argentina – Bolivia, người ta bơm nước muối ngầm giàu lithium lên các hồ bay hơi dưới nắng sa mạc, sau nhiều tháng bay hơi thu được muối lithium. Cách thứ hai tiêu tốn rất nhiều nước ở những vùng vốn đã khô hạn.\nNhu cầu lithium được dự báo tiếp tục tăng. Tái chế pin và tìm loại pin thay thế (như pin sodium-ion) là những hướng nghiên cứu quan trọng.",
   "bang_so_lieu": {
    "tieu_de": "Sản lượng lithium khai thác năm 2023 (ước tính)",
    "cot": [
@@ -266,7 +266,7 @@ NL.add([
    "VD2",
    "VD5"
   ],
-  "dinh_huong": "Lớp 12, bài Kim loại nhóm IA: ứng dụng, liên hệ tài nguyên.\nHình thức: đọc biểu đồ, tranh luận “Lợi ích và cái giá của lithium” 20 phút.",
+  "dinh_huong": "Môn Hoá học 12, chủ đề Nguyên tố nhóm IA và nhóm IIA, nội dung Trạng thái tự nhiên và ứng dụng của kim loại nhóm IA (lithium). Sử dụng ở hoạt động vận dụng, liên hệ vấn đề khai thác tài nguyên và phát triển bền vững.\nCách tổ chức: học sinh làm Câu 1 cá nhân (đọc bảng, tính tỉ lệ); sau đó giáo viên chia lớp thành hai nhóm tranh luận với chủ đề “Lợi ích và cái giá của lithium” (thời lượng gợi ý 20 phút), dùng Câu 2 làm định hướng lập luận; Câu 3 dùng để tổng kết.",
   "cau_hoi": [
    {
     "ma": [
@@ -282,8 +282,8 @@ NL.add([
      "VD2"
     ],
     "dang": "Tự luận",
-    "noi_dung": "So sánh hai cách khai thác lithium (quặng đá cứng và nước muối bay hơi). Mỗi cách có tác động môi trường gì đáng lo ngại?",
-    "dap_an": "Quặng đá cứng: phá rừng, đất; tiêu tốn năng lượng nghiền, nung, tạo bụi và chất thải đá. Nước muối bay hơi: tiêu tốn và làm cạn nguồn nước ngầm ở vùng sa mạc khô hạn, ảnh hưởng hệ sinh thái và cộng đồng bản địa; mất nhiều thời gian."
+    "noi_dung": "So sánh hai cách khai thác lithium (từ quặng đá cứng và từ nước muối bay hơi), trong đó nêu rõ tác động đáng lo ngại của mỗi cách đối với môi trường.",
+    "dap_an": "Khai thác quặng đá cứng: phá rừng, đào xới đất; tiêu tốn năng lượng để nghiền, nung; tạo bụi và chất thải đá. Khai thác từ nước muối bay hơi: tiêu tốn và làm cạn nguồn nước ngầm ở vùng sa mạc khô hạn, ảnh hưởng hệ sinh thái và cộng đồng bản địa; mất nhiều thời gian."
    },
    {
     "ma": [
@@ -297,7 +297,7 @@ NL.add([
   "luu_y_khoa_hoc": [
    "Sản lượng lithium có thể được tính theo lithium kim loại hoặc theo lithium carbonate tương đương (LCE); hai cách cho con số rất khác nhau.",
    "Số liệu của USGS cho năm gần nhất là ước tính và có thể được điều chỉnh ở báo cáo năm sau.",
-   "Không gọi lithium là “năng lượng sạch”: lithium là vật liệu lưu trữ điện, không phải nguồn năng lượng."
+   "Không gọi lithium là “năng lượng sạch”: lithium là vật liệu dùng trong thiết bị lưu trữ điện năng, không phải là nguồn năng lượng."
   ],
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
@@ -311,7 +311,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Nước cứng và cặn calcium carbonate",
   "yccd": "Trình bày được khái niệm nước cứng, tác hại và phương pháp làm mềm nước cứng; liên hệ quy chuẩn nước sinh hoạt Việt Nam.",
-  "boi_canh": "Ở nhiều vùng của Việt Nam, đặc biệt vùng núi đá vôi như Hà Giang, Ninh Bình, hoặc nơi dùng nước giếng khoan, đáy ấm đun nước nhanh chóng phủ một lớp cặn trắng. Đó là dấu hiệu của nước cứng.\n\nNước cứng chứa nhiều ion Ca²⁺ và Mg²⁺. Khi nước chảy qua núi đá vôi có CO₂ hoà tan, đá vôi bị hoà tan dần: CaCO₃ + CO₂ + H₂O → Ca(HCO₃)₂. Khi đun sôi, phản ứng xảy ra theo chiều ngược lại, CaCO₃ kết tủa bám vào ấm. Nước cứng còn làm xà phòng ít bọt, quần áo giặt bị cứng, đường ống nồi hơi bị tắc.\n\nQuy chuẩn kĩ thuật quốc gia về chất lượng nước sạch sử dụng cho mục đích sinh hoạt QCVN 01-1:2024/BYT có thông số “Độ cứng, tính theo CaCO₃” và dẫn TCVN 6224:1996 (xác định tổng calcium và magnesium – phương pháp chuẩn độ EDTA) làm một phương pháp thử.\n\nCó nhiều cách làm mềm nước: đun sôi (với nước cứng tạm thời), dùng hoá chất như sodium carbonate, hoặc dùng cột trao đổi ion trong máy lọc nước gia đình.",
+  "boi_canh": "Ở nhiều vùng của Việt Nam, đặc biệt vùng núi đá vôi như Hà Giang, Ninh Bình, hoặc nơi dùng nước giếng khoan, đáy ấm đun nước nhanh chóng bị phủ một lớp cặn trắng. Đó là dấu hiệu của nước cứng.\nNước cứng chứa nhiều ion Ca²⁺ và Mg²⁺. Khi nước có hoà tan CO₂ chảy qua núi đá vôi, đá vôi bị hoà tan dần: CaCO₃ + CO₂ + H₂O → Ca(HCO₃)₂. Khi đun sôi, phản ứng xảy ra theo chiều ngược lại, CaCO₃ kết tủa bám vào ấm. Nước cứng còn làm giảm khả năng tạo bọt của xà phòng, làm quần áo sau khi giặt bị cứng và gây đóng cặn, tắc đường ống nồi hơi.\nQuy chuẩn kĩ thuật quốc gia về chất lượng nước sạch sử dụng cho mục đích sinh hoạt (QCVN 01-1:2024/BYT) có thông số “Độ cứng, tính theo CaCO₃” và dẫn TCVN 6224:1996 (xác định tổng calcium và magnesium – phương pháp chuẩn độ EDTA) làm một phương pháp thử.\nCó nhiều cách làm mềm nước cứng: đun sôi (với nước cứng tạm thời), dùng hoá chất như sodium carbonate, hoặc dùng cột trao đổi ion trong máy lọc nước gia đình.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Ảnh đáy ấm đun nước có cặn (ảnh tự chụp); ảnh lõi lọc trao đổi ion.",
   "nguon": [
@@ -332,7 +332,7 @@ NL.add([
    "VD1",
    "VD3"
   ],
-  "dinh_huong": "Lớp 12, bài Kim loại nhóm IIA: nước cứng.\nHình thức: học sinh mang mẫu nước giếng, nước máy ở nhà; so sánh bằng xà phòng (độ tạo bọt) hoặc que thử độ cứng.",
+  "dinh_huong": "Môn Hoá học 12, chủ đề Nguyên tố nhóm IA và nhóm IIA, nội dung Nước cứng (khái niệm, tác hại, phương pháp làm mềm). Có thể sử dụng ở hoạt động mở đầu (đặt vấn đề từ hiện tượng cặn trong ấm đun nước) và ở hoạt động vận dụng.\nCách tổ chức: giáo viên giao nhiệm vụ trước 1–2 ngày để học sinh mang mẫu nước giếng, nước máy từ nhà đến lớp. Trên lớp, các nhóm so sánh độ cứng của các mẫu nước bằng xà phòng (khả năng tạo bọt) hoặc que thử độ cứng, sau đó trả lời Câu 1, Câu 2; Câu 3 dùng để củng cố.",
   "cau_hoi": [
    {
     "ma": [
@@ -340,15 +340,15 @@ NL.add([
      "TH2"
     ],
     "dang": "Tự luận",
-    "noi_dung": "Vì sao nước ở vùng núi đá vôi thường cứng? Viết phương trình giải thích sự hình thành cặn khi đun sôi.",
-    "dap_an": "Nước mưa có CO₂ hoà tan đá vôi: CaCO₃ + CO₂ + H₂O → Ca(HCO₃)₂, làm nước chứa nhiều Ca²⁺. Khi đun: Ca(HCO₃)₂ → CaCO₃↓ + CO₂ + H₂O; Mg(HCO₃)₂ → MgCO₃↓ + CO₂ + H₂O. CaCO₃ và MgCO₃ bám thành cặn."
+    "noi_dung": "Giải thích vì sao nước ở vùng núi đá vôi thường là nước cứng. Viết phương trình hoá học giải thích sự hình thành cặn khi đun sôi loại nước này.",
+    "dap_an": "Nước mưa có hoà tan CO₂ nên hoà tan được đá vôi: CaCO₃ + CO₂ + H₂O → Ca(HCO₃)₂, làm nước chứa nhiều Ca²⁺. Khi đun: Ca(HCO₃)₂ → CaCO₃↓ + CO₂ + H₂O; Mg(HCO₃)₂ → MgCO₃↓ + CO₂ + H₂O; CaCO₃, MgCO₃ bám thành cặn."
    },
    {
     "ma": [
      "TH4"
     ],
     "dang": "Trả lời ngắn",
-    "noi_dung": "Một mẫu nước có [Ca²⁺] = 2,0 × 10⁻³ M và [Mg²⁺] = 1,0 × 10⁻³ M. Tính độ cứng tổng theo mg CaCO₃/L (M(CaCO₃) = 100).",
+    "noi_dung": "Một mẫu nước có [Ca²⁺] = 2,0 × 10⁻³ M và [Mg²⁺] = 1,0 × 10⁻³ M. Tính độ cứng tổng của mẫu nước, biểu thị theo mg CaCO₃/L (M(CaCO₃) = 100; làm tròn đến hàng đơn vị).",
     "dap_an": "300. Cách tính: tổng ion = 3,0 × 10⁻³ mol/L, quy về CaCO₃: 3,0 × 10⁻³ × 100 = 0,300 g/L = 300 mg/L."
    },
    {
@@ -357,7 +357,7 @@ NL.add([
      "VD3"
     ],
     "dang": "Đúng/sai",
-    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Nước cứng tạm thời có thể làm mềm bằng cách đun sôi.\nb) Thêm Na₂CO₃ vào nước cứng làm kết tủa Ca²⁺ và Mg²⁺.\nc) Nước cứng chắc chắn gây sỏi thận cho người uống.\nd) Cột trao đổi ion thay Ca²⁺, Mg²⁺ trong nước bằng ion Na⁺ hoặc H⁺.",
+    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Nước cứng tạm thời có thể được làm mềm bằng cách đun sôi.\nb) Thêm Na₂CO₃ vào nước cứng làm kết tủa Ca²⁺ và Mg²⁺.\nc) Nước cứng chắc chắn gây sỏi thận cho người uống.\nd) Cột trao đổi ion thay thế ion Ca²⁺, Mg²⁺ trong nước bằng ion Na⁺ hoặc H⁺.",
     "dap_an": "a) Đúng.\nb) Đúng.\nc) Sai – chưa có bằng chứng chắc chắn; WHO không đặt giới hạn sức khoẻ cho độ cứng.\nd) Đúng."
    }
   ],
@@ -378,7 +378,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Lượng sodium trong khẩu phần ăn",
   "yccd": "Nêu được vai trò sinh học và ứng dụng của hợp chất kim loại nhóm IA; vận dụng tính toán để đề xuất giải pháp bảo vệ sức khoẻ.",
-  "boi_canh": "Sodium (Na⁺) cần thiết cho cơ thể: giữ cân bằng nước, dẫn truyền thần kinh, co cơ. Nhưng ăn quá nhiều sodium làm tăng huyết áp, nguy cơ đột quỵ và bệnh tim mạch.\n\nTổ chức Y tế Thế giới (WHO) khuyến cáo người trưởng thành nên ăn dưới 2 g sodium mỗi ngày, tương đương dưới 5 g muối ăn (NaCl). Theo phân tích dữ liệu điều tra STEPS của Việt Nam (Vu Thi Hoang Lan và cộng sự, 2025), người trưởng thành 18–69 tuổi ăn trung bình 9,42 g muối mỗi ngày năm 2015 và 8,07 g năm 2021, vẫn cao hơn nhiều so với khuyến cáo.\n\nPhần lớn sodium không đến từ lọ muối trên bàn mà từ nước mắm, nước chấm, bột canh, mì gói, đồ ăn chế biến sẵn. Trên nhãn dinh dưỡng, lượng sodium thường được ghi bằng mg. Để đổi sang lượng muối tương đương, có thể nhân với khoảng 2,54 (vì 58,44 : 23,0 ≈ 2,54); WHO dùng quy đổi gần đúng 1 g muối ≈ 400 mg sodium (hệ số 2,5).\n\nMuối “ít natri” thay một phần NaCl bằng KCl là một giải pháp. Nhưng ion potassium (K⁺) dư cũng có thể nguy hiểm với người bệnh thận. Giảm muối là bài toán cần cân nhắc nhiều mặt: sức khoẻ, khẩu vị, thói quen văn hoá và giá thành.",
+  "boi_canh": "Sodium (ở dạng ion Na⁺) cần thiết cho cơ thể: giúp giữ cân bằng nước, dẫn truyền xung thần kinh, co cơ. Tuy nhiên, ăn quá nhiều sodium làm tăng huyết áp, tăng nguy cơ đột quỵ và bệnh tim mạch.\nTổ chức Y tế Thế giới (WHO) khuyến cáo người trưởng thành nên ăn dưới 2 g sodium mỗi ngày, tương đương dưới 5 g muối ăn (NaCl). Theo phân tích dữ liệu điều tra STEPS của Việt Nam (Vu Thi Hoang Lan và cộng sự, 2025), người trưởng thành 18–69 tuổi tiêu thụ trung bình 9,42 g muối mỗi ngày vào năm 2015 và 8,07 g vào năm 2021; các mức này vẫn cao hơn nhiều so với khuyến cáo.\nPhần lớn lượng sodium không đến từ muối ăn rắc trực tiếp mà từ nước mắm, nước chấm, bột canh, mì gói, đồ ăn chế biến sẵn. Trên nhãn dinh dưỡng, lượng sodium thường được ghi bằng mg. Để đổi sang lượng muối tương đương, có thể nhân với khoảng 2,54 (vì 58,44 : 23,0 ≈ 2,54); WHO dùng quy đổi gần đúng 1 g muối ≈ 400 mg sodium (hệ số 2,5).\nMuối “ít natri” (thay một phần NaCl bằng KCl) là một giải pháp. Tuy nhiên, lượng ion potassium (K⁺) dư cũng có thể gây nguy hiểm cho người mắc bệnh thận. Giảm muối là bài toán cần cân nhắc nhiều mặt: sức khoẻ, khẩu vị, thói quen văn hoá và giá thành.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Ảnh nhãn dinh dưỡng của gói mì ăn liền ghi lượng sodium (ảnh tự chụp).",
   "nguon": [
@@ -405,14 +405,14 @@ NL.add([
    "VD2",
    "VD3"
   ],
-  "dinh_huong": "Lớp 12, bài Kim loại nhóm IA: hợp chất của sodium.\nHình thức: dự án “Thực đơn ít muối cho gia đình em”, học sinh đọc nhãn thực phẩm và tính toán.",
+  "dinh_huong": "Môn Hoá học 12, chủ đề Nguyên tố nhóm IA và nhóm IIA, nội dung Một số hợp chất của sodium (sodium chloride) và vai trò của sodium đối với cơ thể. Sử dụng ở hoạt động vận dụng, gắn với giáo dục sức khoẻ.\nCách tổ chức: thực hiện dự án nhỏ “Thực đơn ít muối cho gia đình em” (thời gian gợi ý 1 tuần): học sinh thu thập nhãn thực phẩm ở nhà, tính lượng muối tương đương (Câu 1) và đề xuất biện pháp giảm muối (Câu 2); giáo viên dùng Câu 3 để kiểm tra kiến thức khi học sinh báo cáo sản phẩm.",
   "cau_hoi": [
    {
     "ma": [
      "TH4"
     ],
     "dang": "Trả lời ngắn",
-    "noi_dung": "Một gói mì ăn liền ghi “Natri: 1 800 mg”. Lượng muối ăn tương đương là bao nhiêu gam? (Dùng hệ số 2,54; làm tròn đến hàng phần mười.)",
+    "noi_dung": "Trên nhãn một gói mì ăn liền ghi “Natri: 1 800 mg”. Tính lượng muối ăn (NaCl) tương đương (gam). (Dùng hệ số 2,54; làm tròn đến hàng phần mười.)",
     "dap_an": "4,6. Cách tính: 1,800 g × 2,54 ≈ 4,6 g muối, gần bằng giới hạn 5 g cả ngày theo WHO."
    },
    {
@@ -429,8 +429,8 @@ NL.add([
      "VD2"
     ],
     "dang": "Đúng/sai",
-    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) WHO khuyến cáo người trưởng thành ăn dưới 5 g muối mỗi ngày.\nb) 2 g sodium tương đương khoảng 5 g muối ăn.\nc) Muối ít natri dùng KCl an toàn tuyệt đối cho mọi người.\nd) Nước mắm, bột canh là nguồn sodium lớn trong bữa ăn người Việt.",
-    "dap_an": "a) Đúng.\nb) Đúng – 2 × 2,54 ≈ 5,1 g.\nc) Sai – người bệnh thận cần thận trọng với potassium.\nd) Đúng."
+    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) WHO khuyến cáo người trưởng thành ăn dưới 5 g muối mỗi ngày.\nb) 2 g sodium tương đương khoảng 5 g muối ăn.\nc) Muối ít natri (có chứa KCl) an toàn tuyệt đối với mọi người.\nd) Nước mắm, bột canh là nguồn sodium lớn trong bữa ăn người Việt.",
+    "dap_an": "a) Đúng.\nb) Đúng – 2 × 2,54 ≈ 5,1 g.\nc) Sai – người bệnh thận cần thận trọng với lượng ion K⁺ đưa vào cơ thể.\nd) Đúng."
    }
   ],
   "luu_y_khoa_hoc": [
@@ -450,7 +450,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Nhiệt phân calcium carbonate và phát thải CO₂ trong sản xuất vôi, xi măng",
   "yccd": "Trình bày được ứng dụng của hợp chất calcium trong xây dựng; vận dụng tính toán theo phương trình hoá học; liên hệ ngành nghề vật liệu.",
-  "boi_canh": "Vôi sống (CaO) và xi măng là vật liệu xây dựng không thể thiếu. Cả hai đều được sản xuất từ đá vôi bằng phản ứng nung: CaCO₃(s) → CaO(s) + CO₂(g), ΔrH° ≈ +179 kJ (tính từ nhiệt tạo thành chuẩn trong CRC Handbook of Chemistry and Physics (84th ed., 2004): CaCO₃ −1 207,6; CaO −634,9; CO₂ −393,5 kJ/mol). Phản ứng thu nhiệt mạnh nên phải nung ở nhiệt độ cao.\n\nCông nghiệp xi măng là một trong những nguồn phát thải CO₂ lớn nhất thế giới. Phát thải đến từ hai nguồn: đốt nhiên liệu để nung lò và chính phản ứng phân huỷ CaCO₃. Theo Andrew (2019), riêng CO₂ từ phản ứng phân huỷ (phát thải quá trình) của sản xuất xi măng toàn cầu năm 2018 khoảng 1,50 tỉ tấn, tương đương khoảng 4% lượng CO₂ từ nhiên liệu hoá thạch. Nguồn thứ hai không giảm được bằng cách đổi nhiên liệu: dù dùng năng lượng sạch, đá vôi vẫn giải phóng CO₂.\n\nTheo USGS, năm 2023 Việt Nam sản xuất khoảng 110 triệu tấn xi măng, đứng thứ ba thế giới sau Trung Quốc và Ấn Độ. Các kĩ sư vật liệu xây dựng đang nghiên cứu nhiều giải pháp: thay một phần clinker bằng tro bay, xỉ lò cao; thu giữ CO₂; phát triển xi măng mới.\n\nĐây là ngành nghề cần nhiều kĩ sư hoá học, kĩ sư vật liệu và chuyên gia môi trường.",
+  "boi_canh": "Vôi sống (CaO) và xi măng là vật liệu xây dựng không thể thiếu. Cả hai đều được sản xuất từ đá vôi bằng phản ứng nung: CaCO₃(s) → CaO(s) + CO₂(g), ΔrH° ≈ +179 kJ (tính từ enthalpy tạo thành chuẩn: CaCO₃ −1 207,6; CaO −634,9; CO₂ −393,5 kJ/mol). Phản ứng thu nhiệt mạnh nên phải nung ở nhiệt độ cao.\nCông nghiệp xi măng là một trong những nguồn phát thải CO₂ lớn nhất thế giới. Lượng CO₂ phát thải đến từ hai nguồn: đốt nhiên liệu để nung lò và chính phản ứng phân huỷ CaCO₃. Riêng lượng CO₂ sinh ra từ phản ứng phân huỷ (phát thải quá trình) trong sản xuất xi măng toàn cầu năm 2018 là khoảng 1,50 tỉ tấn, tương đương khoảng 4% lượng CO₂ từ nhiên liệu hoá thạch. Nguồn thứ hai không thể giảm bằng cách thay đổi nhiên liệu: dù sử dụng năng lượng sạch, đá vôi vẫn giải phóng CO₂ khi bị phân huỷ.\nTheo USGS, năm 2023 Việt Nam sản xuất khoảng 110 triệu tấn xi măng, đứng thứ ba thế giới sau Trung Quốc và Ấn Độ. Các kĩ sư vật liệu xây dựng đang nghiên cứu nhiều giải pháp: thay một phần clinker bằng tro bay, xỉ lò cao; thu giữ CO₂; phát triển các loại xi măng mới.\nĐây là lĩnh vực cần nhiều kĩ sư hoá học, kĩ sư vật liệu và chuyên gia môi trường.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Ảnh lò quay xi măng hoặc lò vôi thủ công (nhóm tìm ảnh giấy phép CC).",
   "nguon": [
@@ -483,14 +483,14 @@ NL.add([
    "VD4",
    "VD5"
   ],
-  "dinh_huong": "Lớp 12, bài Kim loại nhóm IIA: hợp chất calcium; tiết hướng nghiệp.\nHình thức: học sinh tìm hiểu một nhà máy xi măng ở địa phương, trình bày giải pháp giảm phát thải.",
+  "dinh_huong": "Môn Hoá học 12, chủ đề Nguyên tố nhóm IA và nhóm IIA, nội dung Một số hợp chất của calcium (calcium carbonate) và ứng dụng trong xây dựng; có thể kết hợp giáo dục hướng nghiệp.\nCách tổ chức: học sinh làm Câu 1 cá nhân, sau đó thảo luận nhóm Câu 2 (thời lượng gợi ý 15 phút); Câu 3 dùng để tổng kết. Giáo viên có thể giao nhiệm vụ về nhà: tìm hiểu qua tài liệu, website về một nhà máy xi măng ở địa phương và trình bày các giải pháp giảm phát thải của nhà máy.",
   "cau_hoi": [
    {
     "ma": [
      "TH4"
     ],
     "dang": "Trả lời ngắn",
-    "noi_dung": "Nung hoàn toàn 1,00 tấn CaCO₃ tinh khiết. Khối lượng CO₂ (tấn) thoát ra từ phản ứng phân huỷ là bao nhiêu? (M(CaCO₃) = 100; M(CO₂) = 44; làm tròn đến hàng phần trăm.)",
+    "noi_dung": "Nung hoàn toàn 1,00 tấn CaCO₃ tinh khiết. Tính khối lượng CO₂ (tấn) sinh ra từ phản ứng phân huỷ. (M(CaCO₃) = 100; M(CO₂) = 44; làm tròn đến hàng phần trăm.)",
     "dap_an": "0,44. Cách tính: 1,00 tấn CaCO₃ tạo 1,00 × 44/100 = 0,44 tấn CO₂."
    },
    {
@@ -499,7 +499,7 @@ NL.add([
      "VD2"
     ],
     "dang": "Tự luận",
-    "noi_dung": "Vì sao nói một phần CO₂ của ngành xi măng không giảm được ngay cả khi dùng điện mặt trời để nung lò? Đề xuất một hướng giảm phát thải.",
+    "noi_dung": "Giải thích vì sao một phần lượng CO₂ phát thải của ngành xi măng không thể giảm được ngay cả khi dùng điện mặt trời để nung lò. Đề xuất một hướng giảm phát thải CO₂ cho ngành này.",
     "dap_an": "Vì CO₂ sinh ra trực tiếp từ phản ứng phân huỷ CaCO₃, không liên quan đến nhiên liệu. Hướng giảm: thay một phần clinker bằng tro bay, xỉ; thu giữ, sử dụng CO₂; dùng bê tông bền hơn, ít xi măng hơn."
    },
    {
@@ -508,14 +508,14 @@ NL.add([
      "VD5"
     ],
     "dang": "Đúng/sai",
-    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Phản ứng nung vôi là phản ứng thu nhiệt.\nb) Theo Andrew (2019), CO₂ từ phản ứng phân huỷ đá vôi trong sản xuất xi măng năm 2018 tương đương khoảng 4% CO₂ từ nhiên liệu hoá thạch.\nc) Dùng nhiên liệu sạch có thể loại bỏ hoàn toàn CO₂ của nhà máy xi măng.\nd) Kĩ sư vật liệu có thể góp phần giảm phát thải bằng cách phát triển xi măng mới.",
-    "dap_an": "a) Đúng – ΔrH° > 0.\nb) Đúng.\nc) Sai – vẫn còn CO₂ từ phân huỷ CaCO₃.\nd) Đúng."
+    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Phản ứng nung vôi là phản ứng thu nhiệt.\nb) CO₂ từ phản ứng phân huỷ đá vôi trong sản xuất xi măng năm 2018 tương đương khoảng 4% CO₂ từ nhiên liệu hoá thạch.\nc) Dùng nhiên liệu sạch có thể loại bỏ hoàn toàn CO₂ của nhà máy xi măng.\nd) Kĩ sư vật liệu có thể góp phần giảm phát thải bằng cách phát triển xi măng mới.",
+    "dap_an": "a) Đúng – ΔrH° > 0.\nb) Đúng.\nc) Sai – vẫn còn lượng CO₂ sinh ra từ phản ứng phân huỷ CaCO₃.\nd) Đúng."
    }
   ],
   "luu_y_khoa_hoc": [
-   "Clinker xi măng không chỉ là CaO mà là hỗn hợp silicate, aluminate của calcium; ở phổ thông chỉ cần nắm phản ứng phân huỷ CaCO₃.",
+   "Clinker xi măng không chỉ là CaO mà là hỗn hợp silicate, aluminate của calcium; ở cấp trung học phổ thông chỉ cần nắm phản ứng phân huỷ CaCO₃.",
    "Các nguồn khác nhau đưa ra tỉ lệ khác nhau tuỳ có tính CO₂ từ nhiên liệu hay không; luôn ghi rõ phạm vi, năm và tổ chức công bố.",
-   "Vôi sống phản ứng mạnh với nước, toả nhiều nhiệt, gây bỏng; cảnh báo học sinh khi liên hệ thực tế."
+   "Vôi sống phản ứng mạnh với nước, toả nhiều nhiệt, gây bỏng; cần lưu ý học sinh khi liên hệ thực tế."
   ],
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",

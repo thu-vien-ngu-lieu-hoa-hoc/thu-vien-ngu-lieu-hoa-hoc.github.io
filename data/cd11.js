@@ -5,7 +5,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Amino acid thiết yếu và nhu cầu của cơ thể",
   "yccd": "Nêu được khái niệm, cấu tạo của amino acid; vai trò của amino acid và protein đối với sự sống.",
-  "boi_canh": "Protein trong cơ thể người được xây dựng từ khoảng 20 loại amino acid. Mỗi amino acid có nhóm amino (–NH₂) và nhóm carboxyl (–COOH) gắn vào cùng một nguyên tử carbon, cùng với một nhóm thế R riêng.\n\nCơ thể người tự tổng hợp được phần lớn amino acid, nhưng có 9 loại phải lấy từ thức ăn, gọi là amino acid thiết yếu: histidine, isoleucine, leucine, lysine, methionine, phenylalanine, threonine, tryptophan và valine.\n\nBáo cáo kĩ thuật số 935 (năm 2007) của WHO, FAO và UNU về nhu cầu protein và amino acid của con người đưa ra nhu cầu ước tính của người trưởng thành cho từng amino acid thiết yếu, tính bằng mg trên mỗi kg cân nặng mỗi ngày (bảng dưới).\n\nProtein động vật (thịt, cá, trứng, sữa) thường chứa đủ các amino acid thiết yếu. Nhiều protein thực vật thiếu một vài loại: ngũ cốc như gạo thường ít lysine, các loại đậu ít methionine. Kết hợp cơm với đậu, như món xôi đỗ hay cơm với đậu phụ, giúp bổ sung lẫn nhau.",
+  "boi_canh": "Protein trong cơ thể người được tạo thành từ khoảng 20 loại α-amino acid. Mỗi α-amino acid có nhóm amino (–NH₂) và nhóm carboxyl (–COOH) cùng liên kết với một nguyên tử carbon (carbon α), cùng với một nhóm thế R đặc trưng.\nCơ thể người tự tổng hợp được phần lớn amino acid, nhưng có 9 loại phải được cung cấp từ thức ăn, gọi là amino acid thiết yếu: histidine, isoleucine, leucine, lysine, methionine, phenylalanine, threonine, tryptophan và valine.\nBáo cáo kĩ thuật số 935 (năm 2007) của WHO, FAO và UNU về nhu cầu protein và amino acid của con người nêu nhu cầu ước tính của người trưởng thành cho từng amino acid thiết yếu, tính bằng mg trên mỗi kg cân nặng mỗi ngày (bảng dưới).\nProtein động vật (thịt, cá, trứng, sữa) thường chứa đủ các amino acid thiết yếu. Nhiều protein thực vật thiếu một vài loại: ngũ cốc như gạo thường ít lysine, các loại đậu ít methionine. Việc kết hợp ngũ cốc với các loại đậu (như món xôi đỗ, cơm với đậu phụ) giúp các protein bổ sung amino acid cho nhau.",
   "bang_so_lieu": {
    "tieu_de": "Nhu cầu amino acid thiết yếu của người trưởng thành (mg/kg/ngày)",
    "cot": [
@@ -70,14 +70,14 @@ NL.add([
    "VD1",
    "VD3"
   ],
-  "dinh_huong": "Lớp 12, bài Amino acid.\nHình thức: đọc bảng, tính nhu cầu của bản thân; liên hệ thực đơn gia đình.",
+  "dinh_huong": "Môn Hoá học 12, chủ đề Hợp chất chứa nitrogen, nội dung Amino acid (khái niệm, cấu tạo, vai trò). Sử dụng ở hoạt động vận dụng, liên hệ dinh dưỡng.\nCách tổ chức: học sinh đọc bảng, tính nhu cầu lysine của bản thân theo cân nặng (dựa trên Câu 1); thảo luận nhóm Câu 2, liên hệ thực đơn của gia đình; Câu 3 dùng để kiểm tra nhanh.",
   "cau_hoi": [
    {
     "ma": [
      "TH4"
     ],
     "dang": "Trả lời ngắn",
-    "noi_dung": "Một người nặng 50 kg cần bao nhiêu gam lysine mỗi ngày theo bảng? (Làm tròn đến hàng phần mười.)",
+    "noi_dung": "Theo bảng, một người trưởng thành nặng 50 kg cần bao nhiêu gam lysine mỗi ngày? (Làm tròn đến hàng phần mười.)",
     "dap_an": "1,5. Cách tính: 30 mg/kg × 50 kg = 1 500 mg = 1,5 g."
    },
    {
@@ -86,7 +86,7 @@ NL.add([
      "VD3"
     ],
     "dang": "Tự luận",
-    "noi_dung": "Một người ăn chay chỉ ăn cơm và rau. Họ có thể thiếu amino acid nào? Đề xuất cách bổ sung phù hợp với món ăn Việt Nam.",
+    "noi_dung": "Một người ăn chay chỉ ăn cơm và rau. Dự đoán người này có thể bị thiếu amino acid thiết yếu nào và đề xuất cách bổ sung phù hợp với món ăn Việt Nam.",
     "dap_an": "Có thể thiếu lysine (gạo ít lysine) và tổng lượng protein. Bổ sung bằng đậu phụ, đậu xanh, đậu đen, sữa đậu nành, vừng, lạc; kết hợp ngũ cốc với các loại đậu (xôi đỗ, cơm đậu phụ)."
    },
    {
@@ -100,7 +100,7 @@ NL.add([
   ],
   "luu_y_khoa_hoc": [
    "Nhu cầu amino acid ở trẻ em, phụ nữ mang thai khác người trưởng thành.",
-   "Một số tài liệu cũ chỉ liệt kê 8 amino acid thiết yếu (không có histidine); dùng theo báo cáo WHO 2007.",
+   "Một số tài liệu cũ chỉ liệt kê 8 amino acid thiết yếu (không có histidine); ngữ liệu này dùng danh sách 9 amino acid theo báo cáo WHO (2007).",
    "Glycine không có nguyên tử carbon bất đối; tránh nói “mọi amino acid đều có đồng phân quang học”."
   ],
   "trang_thai": "nhap",
@@ -115,7 +115,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Sự đông tụ protein trong lòng trắng trứng",
   "yccd": "Trình bày được tính chất của protein: sự đông tụ, phản ứng màu biuret; thực hiện được thí nghiệm.",
-  "boi_canh": "Lòng trắng trứng sống trong suốt, lỏng sánh; khi luộc, nó đông lại thành màu trắng đục. Khi vắt chanh vào sữa, sữa cũng vón cục. Đó là hiện tượng đông tụ protein.\n\nPhân tử protein là chuỗi dài các amino acid nối với nhau bằng liên kết peptide, cuộn gập thành hình dạng không gian xác định nhờ các liên kết hydrogen, tương tác ion, tương tác kị nước. Nhiệt độ cao, acid, base, muối kim loại nặng hoặc alcohol phá vỡ các tương tác này, làm protein mất hình dạng ban đầu (biến tính), các chuỗi duỗi ra và kết dính với nhau thành khối đông tụ.\n\nThí nghiệm gợi ý: chuẩn bị dung dịch lòng trắng trứng pha loãng, chia vào 5 ống nghiệm. Ống 1 để đối chứng; ống 2 đun nóng; ống 3 thêm vài giọt giấm hoặc nước chanh; ống 4 thêm vài giọt ethanol 90°; ống 5 thêm vài giọt dung dịch CuSO₄. Có thể lấy thêm một ống để làm phản ứng màu biuret: thêm NaOH rồi vài giọt CuSO₄ loãng, dung dịch chuyển màu tím đặc trưng cho liên kết peptide.\n\nHiện tượng biến tính giải thích nhiều điều trong đời sống: nấu chín thức ăn, khử trùng bằng cồn, làm đậu phụ, làm sữa chua.",
+  "boi_canh": "Lòng trắng trứng sống trong suốt, lỏng sánh; khi luộc, lòng trắng trứng đông lại, có màu trắng đục. Khi vắt chanh vào sữa, sữa bị vón cục. Đó là hiện tượng đông tụ protein.\nPhân tử protein được tạo thành từ các chuỗi dài α-amino acid liên kết với nhau bằng liên kết peptide; các chuỗi này cuộn gập thành cấu trúc không gian xác định nhờ liên kết hydrogen, tương tác ion, tương tác kị nước. Nhiệt độ cao, acid, base, muối của kim loại nặng hoặc alcohol phá vỡ các tương tác này, làm protein mất cấu trúc không gian ban đầu (biến tính); các chuỗi polypeptide duỗi ra và kết dính với nhau thành khối đông tụ.\nThí nghiệm gợi ý: chuẩn bị dung dịch lòng trắng trứng pha loãng, chia vào 5 ống nghiệm. Ống 1 để đối chứng; ống 2 đun nóng; ống 3 thêm vài giọt giấm hoặc nước chanh; ống 4 thêm vài giọt ethanol 90°; ống 5 thêm vài giọt dung dịch CuSO₄. Có thể lấy thêm một ống để làm phản ứng màu biuret: thêm dung dịch NaOH rồi vài giọt dung dịch CuSO₄ loãng, dung dịch chuyển sang màu tím (phản ứng màu biuret).\nHiện tượng biến tính giải thích nhiều điều trong đời sống: nấu chín thức ăn, khử trùng bằng cồn, làm đậu phụ, làm sữa chua.",
   "bang_so_lieu": {
    "tieu_de": "Bảng ghi kết quả (học sinh tự quan sát)",
    "cot": [
@@ -155,7 +155,7 @@ NL.add([
      ""
     ]
    ],
-   "ghi_chu": "Thí nghiệm gợi ý; kết quả do học sinh quan sát."
+   "ghi_chu": "Thiết kế thí nghiệm mang tính gợi ý; kết quả do học sinh tự quan sát."
   },
   "hinh_goi_y": "Ảnh các ống nghiệm sau thí nghiệm, nhất là ống biuret màu tím (ảnh tự chụp).",
   "nguon": [
@@ -175,7 +175,7 @@ NL.add([
   "ma_VD": [
    "VD1"
   ],
-  "dinh_huong": "Lớp 12, bài Protein: thực hành tính chất.\nHình thức: nhóm thực hành 25 phút; liên hệ đời sống cuối buổi.",
+  "dinh_huong": "Môn Hoá học 12, chủ đề Hợp chất chứa nitrogen, nội dung Protein (tính chất: sự đông tụ, phản ứng màu biuret). Phù hợp với tiết thực hành.\nCách tổ chức: trước khi làm thí nghiệm, các nhóm trả lời Câu 1 (dự đoán). Các nhóm thực hành với các ống nghiệm theo mô tả (thời lượng gợi ý 25 phút), ghi kết quả vào bảng; cuối buổi, giáo viên tổ chức liên hệ đời sống bằng Câu 2 và dùng Câu 3 để củng cố.",
   "cau_hoi": [
    {
     "ma": [
@@ -190,7 +190,7 @@ NL.add([
      "VD1"
     ],
     "dang": "Tự luận",
-    "noi_dung": "Giải thích vì sao uống sữa tươi hoặc lòng trắng trứng là một biện pháp sơ cứu tạm thời khi nuốt phải muối kim loại nặng (theo khuyến cáo của một số tài liệu cấp cứu cũ).",
+    "noi_dung": "Một số tài liệu sơ cứu trước đây khuyên cho người nuốt phải muối của kim loại nặng uống sữa tươi hoặc lòng trắng trứng như một biện pháp tạm thời. Dựa vào tính chất của protein, giải thích cơ sở của khuyến cáo này.",
     "dap_an": "Protein trong sữa, lòng trắng trứng kết hợp với ion kim loại nặng, đông tụ, giữ một phần ion lại, hạn chế ion tác dụng lên protein của cơ thể. Đây chỉ là biện pháp tạm thời, cần đưa đến cơ sở y tế ngay."
    },
    {
@@ -204,7 +204,7 @@ NL.add([
   ],
   "luu_y_khoa_hoc": [
    "Phân biệt biến tính (mất cấu trúc không gian) và thuỷ phân (đứt liên kết peptide).",
-   "Không dùng muối kim loại nặng độc như HgCl₂, Pb(NO₃)₂ ở trường phổ thông; CuSO₄ loãng là đủ.",
+   "Không sử dụng các muối kim loại nặng độc như HgCl₂, Pb(NO₃)₂ ở trường phổ thông; dùng dung dịch CuSO₄ loãng là đủ để quan sát hiện tượng.",
    "Khuyến cáo sơ cứu thay đổi theo thời gian; nhấn mạnh việc gọi cấp cứu thay vì tự xử lí."
   ],
   "trang_thai": "nhap",
@@ -219,7 +219,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Melamine và phương pháp xác định protein qua hàm lượng nitrogen",
   "yccd": "Trình bày được thành phần nguyên tố của protein; vận dụng tính toán phần trăm nguyên tố; đánh giá vấn đề an toàn thực phẩm.",
-  "boi_canh": "Năm 2008, Trung Quốc phát hiện sữa bột trẻ em bị pha melamine, một hoá chất dùng để sản xuất nhựa. Theo bài tổng quan của Gossner và cộng sự (2009) trên tạp chí Environmental Health Perspectives, khoảng 300 000 trẻ em bị ảnh hưởng; tính đến 1/12/2008 có 294 000 ca được ghi nhận và 6 trẻ tử vong, nhiều trẻ bị sỏi thận. Nhiều nước đã thu hồi các sản phẩm nghi nhiễm.\n\nVì sao lại pha melamine vào sữa? Phương pháp phổ biến để đo hàm lượng protein trong thực phẩm (phương pháp Kjeldahl) thực chất đo lượng nitrogen, rồi nhân với một hệ số (thường là 6,25 vì protein chứa khoảng 16% nitrogen). Phương pháp này không phân biệt được nitrogen của protein với nitrogen của chất khác.\n\nMelamine có công thức C₃H₆N₆, chứa tới khoảng 66,7% nitrogen về khối lượng. Thêm melamine vào sữa pha loãng làm kết quả đo hàm lượng protein tăng giả tạo, trong khi sữa không có thêm chút dinh dưỡng nào.\n\nSau sự cố, các phòng thí nghiệm phát triển thêm phương pháp phát hiện melamine trực tiếp. Năm 2010, Ủy ban Codex Alimentarius đặt giới hạn melamine: 1 mg/kg trong sữa bột trẻ em và 2,5 mg/kg trong các thực phẩm khác và thức ăn chăn nuôi.",
+  "boi_canh": "Năm 2008, Trung Quốc phát hiện sữa bột trẻ em bị pha trộn melamine – một hoá chất dùng trong sản xuất nhựa. Theo bài tổng quan của Gossner và cộng sự (2009), khoảng 300 000 trẻ em bị ảnh hưởng; tính đến 1/12/2008 có 294 000 ca được ghi nhận và 6 trẻ tử vong, nhiều trẻ bị sỏi thận. Nhiều nước đã thu hồi các sản phẩm nghi nhiễm.\nLí do melamine bị pha vào sữa liên quan đến phương pháp xác định protein. Phương pháp phổ biến để xác định hàm lượng protein trong thực phẩm (phương pháp Kjeldahl) thực chất là xác định hàm lượng nitrogen, rồi nhân với một hệ số (thường là 6,25 vì protein chứa khoảng 16% nitrogen). Phương pháp này không phân biệt được nitrogen của protein với nitrogen của chất khác.\nMelamine có công thức C₃H₆N₆, chứa tới khoảng 66,7% nitrogen về khối lượng. Thêm melamine vào sữa pha loãng làm kết quả đo hàm lượng protein tăng giả tạo, trong khi giá trị dinh dưỡng của sữa không hề tăng.\nSau sự cố, các phòng thí nghiệm phát triển thêm phương pháp phát hiện melamine trực tiếp. Năm 2010, Uỷ ban Codex Alimentarius đặt giới hạn melamine: 1 mg/kg trong sữa bột trẻ em và 2,5 mg/kg trong các thực phẩm khác và thức ăn chăn nuôi.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Công thức cấu tạo melamine từ PubChem.",
   "nguon": [
@@ -252,7 +252,7 @@ NL.add([
    "VD1",
    "VD2"
   ],
-  "dinh_huong": "Lớp 12, bài Protein: thành phần, an toàn thực phẩm.\nHình thức: nghiên cứu tình huống 20 phút; học sinh đóng vai chuyên gia kiểm nghiệm.",
+  "dinh_huong": "Môn Hoá học 12, chủ đề Hợp chất chứa nitrogen, nội dung Protein (thành phần nguyên tố); liên hệ an toàn thực phẩm.\nCách tổ chức: nghiên cứu tình huống theo nhóm (thời lượng gợi ý 20 phút): học sinh làm Câu 1, sau đó đóng vai chuyên gia kiểm nghiệm để trả lời Câu 2; Câu 3 dùng để tổng kết.",
   "cau_hoi": [
    {
     "ma": [
@@ -268,7 +268,7 @@ NL.add([
      "TH2"
     ],
     "dang": "Tự luận",
-    "noi_dung": "Vì sao phương pháp đo protein dựa trên nitrogen cho kết quả sai khi mẫu có melamine? Đề xuất hướng cải tiến phương pháp kiểm nghiệm.",
+    "noi_dung": "Giải thích vì sao phương pháp xác định protein dựa trên hàm lượng nitrogen cho kết quả sai khi mẫu có melamine. Đề xuất hướng cải tiến phương pháp kiểm nghiệm.",
     "dap_an": "Phương pháp đo tổng nitrogen rồi quy đổi ra protein, không phân biệt nguồn nitrogen; melamine giàu nitrogen nên làm kết quả tăng. Cải tiến: kết hợp phương pháp phát hiện riêng melamine (sắc kí, khối phổ); đo protein bằng phương pháp đặc hiệu cho liên kết peptide hoặc amino acid."
    },
    {
@@ -277,7 +277,7 @@ NL.add([
     ],
     "dang": "Đúng/sai",
     "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Protein chứa khoảng 16% nitrogen nên hệ số quy đổi thường là 6,25.\nb) Melamine có giá trị dinh dưỡng như protein.\nc) Sự cố melamine 2008 gây sỏi thận ở nhiều trẻ em.\nd) Một phép đo gián tiếp có thể bị sai nếu có chất gây nhiễu.",
-    "dap_an": "a) Đúng – 100 : 16 = 6,25.\nb) Sai.\nc) Đúng.\nd) Đúng."
+    "dap_an": "a) Đúng – 100 : 16 = 6,25.\nb) Sai – melamine không phải protein, không có giá trị dinh dưỡng và gây độc (sỏi thận).\nc) Đúng.\nd) Đúng."
    }
   ],
   "luu_y_khoa_hoc": [
@@ -297,7 +297,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Độ đạm của nước mắm",
   "yccd": "Trình bày được phản ứng thuỷ phân protein; liên hệ quá trình sản xuất thực phẩm truyền thống Việt Nam.",
-  "boi_canh": "Nước mắm là gia vị không thể thiếu của người Việt. Theo TCVN 5107:2018, nước mắm nguyên chất được làm từ chượp chín, tức hỗn hợp cá và muối được ủ lên men tự nhiên trong thời gian ít nhất 6 tháng.\n\nTrong thời gian ủ, các enzyme protease có sẵn trong thịt và ruột cá thuỷ phân dần protein thành peptide và amino acid. Chính các amino acid như glutamic acid tạo nên vị ngọt đậm, “umami” của nước mắm. Muối nồng độ cao ngăn vi khuẩn gây thối phát triển.\n\nTrên nhãn chai nước mắm thường ghi “độ đạm”, ví dụ 30 °N, 40 °N. Đây là lượng nitrogen toàn phần tính bằng gam trong 1 lít nước mắm. Tiêu chuẩn quốc gia TCVN 5107:2018 (thay thế TCVN 5107:2003) quy định các chỉ tiêu chất lượng của nước mắm, trong đó hàm lượng nitrogen toàn phần được tính bằng g/l.\n\nĐộ đạm cao thường cho nước mắm đậm đà hơn. Nhưng như bài học từ vụ melamine, độ đạm đo theo nitrogen cũng có thể bị làm giả bằng các chất giàu nitrogen; vì vậy cần thêm chỉ tiêu đạm amino acid và kiểm tra của cơ quan chức năng.",
+  "boi_canh": "Nước mắm là gia vị không thể thiếu của người Việt. Theo TCVN 5107:2018, nước mắm nguyên chất được làm từ chượp chín, tức hỗn hợp cá và muối được ủ lên men tự nhiên trong thời gian ít nhất 6 tháng.\nTrong thời gian ủ, các enzyme protease có sẵn trong thịt và ruột cá thuỷ phân dần protein thành peptide và amino acid. Chính các amino acid như glutamic acid tạo nên vị ngọt đậm, “umami” của nước mắm. Nồng độ muối cao ngăn cản vi khuẩn gây thối phát triển.\nTrên nhãn chai nước mắm thường ghi “độ đạm”, ví dụ 30 °N, 40 °N. Đây là lượng nitrogen toàn phần tính bằng gam trong 1 lít nước mắm. Tiêu chuẩn quốc gia TCVN 5107:2018 (thay thế TCVN 5107:2003) quy định các chỉ tiêu chất lượng của nước mắm, trong đó hàm lượng nitrogen toàn phần được tính bằng g/L.\nĐộ đạm cao thường cho nước mắm đậm đà hơn. Tuy nhiên, tương tự bài học từ vụ melamine, độ đạm xác định theo nitrogen cũng có thể bị làm giả bằng các chất giàu nitrogen; vì vậy, cần bổ sung chỉ tiêu đạm amino acid và sự kiểm tra của cơ quan chức năng.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Ảnh nhãn hai chai nước mắm có độ đạm khác nhau (ảnh tự chụp).",
   "nguon": [
@@ -318,14 +318,14 @@ NL.add([
    "VD2",
    "VD4"
   ],
-  "dinh_huong": "Lớp 12, bài Protein: phản ứng thuỷ phân.\nHình thức: học sinh mang nhãn nước mắm, so sánh độ đạm và thành phần; liên hệ CD11-03.",
+  "dinh_huong": "Môn Hoá học 12, chủ đề Hợp chất chứa nitrogen, nội dung Protein (phản ứng thuỷ phân); liên hệ sản xuất thực phẩm truyền thống Việt Nam. Có thể sử dụng kết hợp với ngữ liệu CD11-03.\nCách tổ chức: giáo viên giao nhiệm vụ trước để học sinh mang nhãn nước mắm đến lớp. Trên lớp, học sinh so sánh độ đạm và thành phần ghi trên nhãn, làm Câu 1 và thảo luận Câu 2; Câu 3 dùng để kiểm tra nhanh.",
   "cau_hoi": [
    {
     "ma": [
      "TH4"
     ],
     "dang": "Trả lời ngắn",
-    "noi_dung": "Một chai nước mắm 500 mL ghi độ đạm 40 °N (40 g N/L). Tính khối lượng nitrogen (gam) trong cả chai.",
+    "noi_dung": "Một chai nước mắm 500 mL ghi độ đạm 40 °N (40 g N/L). Tính khối lượng nitrogen (gam) trong cả chai. (Làm tròn đến hàng đơn vị.)",
     "dap_an": "20. Cách tính: 40 g/L × 0,500 L = 20 g."
    },
    {
@@ -334,7 +334,7 @@ NL.add([
      "VD1"
     ],
     "dang": "Tự luận",
-    "noi_dung": "Vì sao ủ cá với muối lâu ngày lại tạo ra nước mắm có vị ngọt đậm mà không bị thối?",
+    "noi_dung": "Giải thích vì sao ủ cá với muối lâu ngày lại tạo ra nước mắm có vị ngọt đậm mà không bị thối.",
     "dap_an": "Enzyme protease trong cá thuỷ phân protein thành peptide, amino acid (như glutamic acid) tạo vị ngọt umami. Nồng độ muối cao làm vi khuẩn gây thối mất nước, không phát triển được, trong khi enzyme vẫn hoạt động chậm."
    },
    {
@@ -350,7 +350,7 @@ NL.add([
   "luu_y_khoa_hoc": [
    "“Độ đạm” (°N) là cách gọi quen thuộc, thực chất là g N/L chứ không phải g protein/L.",
    "Bài không nêu ngưỡng nitrogen theo hạng; nếu cần, giáo viên tra trực tiếp toàn văn TCVN 5107:2018.",
-   "Nước mắm rất mặn; khi liên hệ sức khoẻ, nhắc CD07-05 về lượng muối."
+   "Nước mắm rất mặn; khi liên hệ với sức khoẻ, có thể kết hợp ngữ liệu CD07-05 (lượng sodium trong khẩu phần ăn)."
   ],
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
@@ -364,7 +364,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Nhu cầu protein và việc dùng bột protein bổ sung",
   "yccd": "Vận dụng hiểu biết về protein và nhu cầu dinh dưỡng để phản biện, đưa ra quyết định hợp lí.",
-  "boi_canh": "Trên mạng xã hội, nhiều quảng cáo khuyên học sinh, sinh viên tập thể hình uống bột protein (whey protein) hằng ngày để “tăng cơ nhanh”. Một hộp bột protein có giá vài trăm nghìn đến hơn một triệu đồng.\n\nTheo báo cáo của WHO, FAO và UNU (2007), lượng protein an toàn cho người trưởng thành khoẻ mạnh là khoảng 0,83 g cho mỗi kg cân nặng mỗi ngày. Người tập luyện thể thao cường độ cao có thể cần nhiều hơn, theo khuyến nghị của một số hiệp hội dinh dưỡng thể thao.\n\nMột bữa ăn Việt Nam thông thường đã có nhiều protein: Theo cơ sở dữ liệu FoodData Central (Bộ Nông nghiệp Hoa Kỳ): 100 g thịt lợn xay (84% nạc) chứa khoảng 18 g protein; trứng gà có 12,6 g/100 g, tức một quả 50 g khoảng 6,3 g; 100 g đậu phụ cứng khoảng 17,3 g; sữa tươi nguyên kem 3,15 g/100 g, tức một hộp 180 mL khoảng 5,7 g.\n\nProtein dư thừa không được cơ thể dự trữ dưới dạng cơ bắp. Cơ thể phân giải amino acid dư thừa, nhóm amino được chuyển thành urea và thải qua thận, phần còn lại có thể chuyển thành năng lượng hoặc chất béo. Cơ bắp chỉ tăng khi kết hợp tập luyện, ngủ đủ và ăn uống cân bằng.\n\nVậy có nên uống bột protein không?",
+  "boi_canh": "Trên mạng xã hội, nhiều quảng cáo khuyên học sinh, sinh viên tập thể hình uống bột protein (whey protein) hằng ngày để “tăng cơ nhanh”. Một hộp bột protein có giá vài trăm nghìn đến hơn một triệu đồng.\nTheo báo cáo của WHO, FAO và UNU (2007), lượng protein an toàn cho người trưởng thành khoẻ mạnh là khoảng 0,83 g cho mỗi kg cân nặng mỗi ngày. Người tập luyện thể thao cường độ cao có thể cần nhiều hơn, theo khuyến nghị của một số hiệp hội dinh dưỡng thể thao.\nCác bữa ăn Việt Nam thông thường đã cung cấp nhiều protein. Theo cơ sở dữ liệu FoodData Central của Bộ Nông nghiệp Hoa Kỳ (USDA), 100 g thịt lợn xay (84% nạc) chứa khoảng 18 g protein; trứng gà có 12,6 g/100 g, tức một quả 50 g khoảng 6,3 g; 100 g đậu phụ cứng khoảng 17,3 g; sữa tươi nguyên kem 3,15 g/100 g, tức một hộp 180 mL khoảng 5,7 g.\nProtein dư thừa không được cơ thể dự trữ dưới dạng cơ bắp. Cơ thể phân giải amino acid dư thừa, nhóm amino được chuyển thành urea và thải qua thận, phần còn lại có thể chuyển thành năng lượng hoặc chất béo. Cơ bắp chỉ tăng khi kết hợp tập luyện, ngủ đủ và ăn uống cân bằng.\nVấn đề đặt ra là học sinh có nên uống bột protein hay không.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Ảnh nhãn dinh dưỡng một hộp bột protein và một hộp sữa tươi (ảnh tự chụp).",
   "nguon": [
@@ -409,7 +409,7 @@ NL.add([
    "VD2",
    "VD3"
   ],
-  "dinh_huong": "Lớp 12, bài Protein: vai trò dinh dưỡng.\nHình thức: học sinh ghi lại thực đơn 1 ngày, tính lượng protein, thảo luận 20 phút.",
+  "dinh_huong": "Môn Hoá học 12, chủ đề Hợp chất chứa nitrogen, nội dung Protein (vai trò dinh dưỡng). Sử dụng ở hoạt động vận dụng, phát triển năng lực phản biện.\nCách tổ chức: giáo viên giao nhiệm vụ trước để học sinh ghi lại thực đơn 1 ngày của bản thân. Trên lớp, học sinh làm Câu 1, Câu 2 với thực đơn trong bài và thực đơn của mình, thảo luận nhóm (thời lượng gợi ý 20 phút); Câu 3 dùng để tổng kết.",
   "cau_hoi": [
    {
     "ma": [
@@ -425,7 +425,7 @@ NL.add([
      "VD2"
     ],
     "dang": "Tự luận",
-    "noi_dung": "Thực đơn một ngày của học sinh trên gồm 150 g thịt lợn xay, 2 quả trứng (50 g/quả), 100 g đậu phụ, 1 hộp sữa 180 mL (chưa tính cơm, rau). Dùng số liệu trong bài, ước tính lượng protein và đánh giá có cần uống thêm bột protein không.",
+    "noi_dung": "Thực đơn một ngày của học sinh trên gồm 150 g thịt lợn xay, 2 quả trứng (50 g/quả), 100 g đậu phụ, 1 hộp sữa 180 mL (chưa tính cơm, rau). Sử dụng số liệu trong bài, ước tính lượng protein từ thực đơn này và đánh giá học sinh có cần uống thêm bột protein hay không.",
     "dap_an": "Khoảng 150 × 0,18 = 27 g + 2 × 6,3 = 12,6 g + 17,3 g + 5,7 g ≈ 62,6 g, đã vượt 49,8 g (chưa tính protein trong cơm). Học sinh không cần bột protein; nên ăn đa dạng, tập luyện và ngủ đủ."
    },
    {
@@ -434,11 +434,11 @@ NL.add([
     ],
     "dang": "Đúng/sai",
     "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Protein dư thừa được chuyển hết thành cơ bắp.\nb) Nhóm amino của amino acid dư thừa được chuyển thành urea thải qua thận.\nc) Bữa ăn Việt Nam có thịt, trứng, đậu phụ có thể cung cấp đủ protein.\nd) Muốn tăng cơ chỉ cần uống thật nhiều protein, không cần tập luyện.",
-    "dap_an": "a) Sai.\nb) Đúng.\nc) Đúng.\nd) Sai."
+    "dap_an": "a) Sai – protein dư thừa không được dự trữ dưới dạng cơ bắp.\nb) Đúng.\nc) Đúng.\nd) Sai – cơ bắp chỉ tăng khi kết hợp tập luyện, nghỉ ngơi và ăn uống cân bằng."
    }
   ],
   "luu_y_khoa_hoc": [
-   "Hàm lượng protein lấy theo USDA FoodData Central (SR Legacy); thực phẩm Việt Nam có thể chênh lệch, khối lượng 1 ml sữa coi xấp xỉ 1 g.",
+   "Hàm lượng protein lấy theo USDA FoodData Central (SR Legacy); thực phẩm Việt Nam có thể chênh lệch, 1 mL sữa được coi có khối lượng xấp xỉ 1 g.",
    "Không khuyên học sinh dùng hay không dùng sản phẩm cụ thể; hướng dẫn cách đọc nhãn và đánh giá.",
    "Người có bệnh thận cần chế độ protein riêng theo chỉ định bác sĩ."
   ],
@@ -454,7 +454,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Cấu trúc không gian của protein và giải Nobel Hoá học 2024",
   "yccd": "Nêu được cấu trúc bậc một và cấu trúc không gian của protein; vai trò của protein; liên hệ ngành nghề hoá sinh, tin sinh học.",
-  "boi_canh": "Một protein có thể dài hàng trăm amino acid. Trình tự các amino acid (cấu trúc bậc một) quyết định cách chuỗi cuộn gập thành hình dạng không gian, và hình dạng quyết định chức năng: enzyme xúc tác phản ứng, kháng thể nhận diện virus, hemoglobin chở oxygen.\n\nTrong hơn 50 năm, xác định hình dạng một protein bằng thực nghiệm (tinh thể học tia X, kính hiển vi điện tử) có thể mất nhiều năm. Ngân hàng dữ liệu protein RCSB PDB lưu trữ hơn 260 000 cấu trúc xác định bằng thực nghiệm (số liệu trang chủ RCSB, tra cứu 06/11/2026), mở miễn phí cho mọi người.\n\nGiải Nobel Hoá học năm 2024 được trao cho David Baker (Đại học Washington) vì thiết kế protein mới bằng máy tính, và Demis Hassabis cùng John Jumper (Google DeepMind) vì phát triển mô hình trí tuệ nhân tạo AlphaFold dự đoán cấu trúc protein từ trình tự amino acid. AlphaFold đã dự đoán cấu trúc của gần như toàn bộ khoảng 200 triệu protein đã biết.\n\nNgành hoá sinh, tin sinh học (bioinformatics), công nghệ sinh học đang cần những người vừa hiểu hoá học, sinh học, vừa biết lập trình và phân tích dữ liệu. Đây là hướng nghề mới đầy triển vọng.",
+  "boi_canh": "Một protein có thể dài hàng trăm amino acid. Trình tự các amino acid (cấu trúc bậc một) quyết định cách chuỗi polypeptide cuộn gập thành cấu trúc không gian; cấu trúc không gian lại quyết định chức năng của protein: enzyme xúc tác phản ứng, kháng thể nhận diện virus, hemoglobin vận chuyển oxygen.\nTrong hơn 50 năm qua, việc xác định cấu trúc không gian của một protein bằng thực nghiệm (tinh thể học tia X, kính hiển vi điện tử) có thể mất nhiều năm. Ngân hàng dữ liệu protein RCSB PDB lưu trữ hơn 260 000 cấu trúc được xác định bằng thực nghiệm (số liệu trên trang chủ RCSB PDB, tra cứu ngày 06/11/2026) và cho phép mọi người truy cập miễn phí.\nGiải Nobel Hoá học năm 2024 được trao cho David Baker (Đại học Washington) vì thiết kế protein mới bằng máy tính, và Demis Hassabis cùng John Jumper (Google DeepMind) vì phát triển mô hình trí tuệ nhân tạo AlphaFold dự đoán cấu trúc protein từ trình tự amino acid. AlphaFold đã dự đoán cấu trúc của gần như toàn bộ khoảng 200 triệu protein đã biết.\nNgành hoá sinh, tin sinh học (bioinformatics), công nghệ sinh học đang cần những người vừa hiểu hoá học, sinh học, vừa biết lập trình và phân tích dữ liệu. Đây là hướng nghề nghiệp mới, nhiều triển vọng.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Ảnh chụp màn hình mô hình 3D một protein trên RCSB PDB (ví dụ insulin, mã 4INS).",
   "nguon": [
@@ -480,14 +480,14 @@ NL.add([
    "VD1",
    "VD4"
   ],
-  "dinh_huong": "Lớp 12, bài Protein: cấu trúc; tiết hướng nghiệp.\nHình thức: học sinh mở RCSB PDB trên máy tính/điện thoại, xoay mô hình 3D một protein, giới thiệu 2 phút.",
+  "dinh_huong": "Môn Hoá học 12, chủ đề Hợp chất chứa nitrogen, nội dung Peptide và protein (cấu trúc); có thể kết hợp giáo dục hướng nghiệp.\nCách tổ chức: giáo viên giới thiệu giải Nobel Hoá học 2024 để đặt vấn đề; học sinh truy cập RCSB PDB trên máy tính hoặc điện thoại, xoay mô hình 3D của một protein và giới thiệu trong 2 phút; Câu 1 dùng để thảo luận, Câu 2 và Câu 3 dùng để củng cố.",
   "cau_hoi": [
    {
     "ma": [
      "TH1"
     ],
     "dang": "Tự luận",
-    "noi_dung": "Vì sao biết được hình dạng không gian của protein lại quan trọng đối với việc tìm thuốc chữa bệnh?",
+    "noi_dung": "Giải thích vì sao việc xác định được cấu trúc không gian của protein lại có ý nghĩa quan trọng đối với việc tìm kiếm thuốc chữa bệnh.",
     "dap_an": "Thuốc thường hoạt động bằng cách gắn vào một vị trí trên protein (enzyme, thụ thể) của mầm bệnh hoặc tế bào. Biết hình dạng giúp thiết kế phân tử thuốc khớp với vị trí đó, rút ngắn thời gian và chi phí nghiên cứu."
    },
    {

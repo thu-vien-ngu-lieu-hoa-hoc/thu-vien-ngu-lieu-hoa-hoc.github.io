@@ -241,7 +241,7 @@ NL.add([
   "lop": "10",
   "tieu_de": "Phân bón cũng có thể phát nổ?",
   "yccd": "Tính được biến thiên enthalpy chuẩn của phản ứng dựa vào enthalpy tạo thành chuẩn. Nêu được ý nghĩa của dấu và giá trị ΔrH°.",
-  "boi_canh": "Ammonium nitrate (NH₄NO₃) là phân đạm phổ biến trên thế giới. Ở điều kiện bình thường, chất này khá bền. Nhưng khi bị nung nóng mạnh trong khối lớn, bị nhiễm bẩn hoặc gặp đám cháy, nó có thể phân huỷ dữ dội.\n\nNgày 17/4/2013, một đám cháy tại kho phân bón West Fertilizer ở bang Texas (Hoa Kỳ) đã dẫn tới vụ nổ ammonium nitrate. Ban Điều tra An toàn Hoá chất Hoa Kỳ (CSB) kết luận vụ nổ làm 15 người chết (trong đó có 12 lính cứu hoả tình nguyện), khoảng 260 người bị thương, và phá huỷ nhiều nhà dân, trường học xung quanh. Ngày 4/8/2020, vụ nổ khoảng 2 750 tấn ammonium nitrate lưu kho lâu năm tại cảng Beirut (Lebanon) tiếp tục gây thảm hoạ.\n\nMột phản ứng phân huỷ có thể xảy ra là: 2NH₄NO₃(s) → 2N₂(g) + O₂(g) + 4H₂O(g). Theo bảng số liệu nhiệt động chuẩn trong CRC Handbook of Chemistry and Physics (84th ed., 2004), enthalpy tạo thành chuẩn của NH₄NO₃(s) là −365,6 kJ/mol, của H₂O(g) là −241,8 kJ/mol. Từ đó có thể tính được lượng nhiệt toả ra.\n\nĐiều nguy hiểm không chỉ ở lượng nhiệt mà ở chỗ phản ứng tạo ra rất nhiều khí trong thời gian rất ngắn. Sau các thảm hoạ, nhiều nước đã siết chặt quy định lưu trữ phân bón này.",
+  "boi_canh": "Ammonium nitrate (NH₄NO₃) là loại phân đạm được sử dụng phổ biến trên thế giới. Ở điều kiện thường, chất này khá bền; tuy nhiên, khi bị nung nóng mạnh với khối lượng lớn, bị nhiễm tạp chất hoặc gặp đám cháy, ammonium nitrate có thể bị phân huỷ dữ dội.\nNgày 17/4/2013, một đám cháy tại kho phân bón West Fertilizer ở bang Texas (Hoa Kỳ) đã dẫn tới vụ nổ ammonium nitrate. Theo kết luận của Ban Điều tra An toàn và Nguy cơ Hoá chất Hoa Kỳ (CSB), vụ nổ làm 15 người chết (trong đó có 12 lính cứu hoả tình nguyện), khoảng 260 người bị thương, và phá huỷ nhiều nhà dân, trường học xung quanh. Ngày 4/8/2020, vụ nổ khoảng 2 750 tấn ammonium nitrate lưu kho lâu năm tại cảng Beirut (Lebanon) cũng gây ra một thảm hoạ nghiêm trọng.\nMột trong các phản ứng phân huỷ có thể xảy ra là: 2NH₄NO₃(s) → 2N₂(g) + O₂(g) + 4H₂O(g). Theo bảng số liệu nhiệt động chuẩn trong CRC Handbook of Chemistry and Physics (84th ed., 2004), enthalpy tạo thành chuẩn của NH₄NO₃(s) là −365,6 kJ/mol, của H₂O(g) là −241,8 kJ/mol. Từ các số liệu này, có thể tính được nhiệt lượng toả ra của phản ứng.\nMức độ nguy hiểm không chỉ phụ thuộc vào nhiệt lượng toả ra mà còn do phản ứng tạo ra lượng khí rất lớn trong thời gian rất ngắn. Sau các thảm hoạ trên, nhiều quốc gia đã siết chặt quy định về lưu trữ loại phân bón này.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Ảnh hiện trường trong báo cáo CSB (kiểm tra giấy phép trước khi dùng) hoặc sơ đồ kho chứa trong báo cáo.",
   "nguon": [
@@ -274,7 +274,7 @@ NL.add([
    "VD2",
    "VD5"
   ],
-  "dinh_huong": "Lớp 10, bài Enthalpy tạo thành và biến thiên enthalpy: luyện tập tính ΔrH° từ ΔfH°.\nHình thức: thảo luận nhóm 15 phút; câu 3 dùng làm câu hỏi mở về an toàn hoá chất.",
+  "dinh_huong": "Lớp 10, bài Enthalpy tạo thành và biến thiên enthalpy: luyện tập tính ΔrH° từ ΔfH°.\nHình thức: thảo luận nhóm trong 15 phút; Câu 3 dùng làm cơ sở để thảo luận về an toàn hoá chất.",
   "cau_hoi": [
    {
     "ma": [
@@ -290,8 +290,8 @@ NL.add([
      "VD1"
     ],
     "dang": "Tự luận",
-    "noi_dung": "Nhiệt toả ra khi phân huỷ 1 kg ammonium nitrate chỉ khoảng 1,5 MJ, ít hơn nhiều so với đốt 1 kg xăng (khoảng 47 MJ nếu coi xăng là octane). Vì sao vụ nổ ammonium nitrate vẫn có sức phá huỷ rất lớn? Nêu giả thuyết của em.",
-    "dap_an": "Phản ứng xảy ra cực nhanh, không cần oxygen từ không khí, tạo lượng lớn khí (7 mol khí từ 2 mol chất rắn) ở nhiệt độ cao, thể tích tăng đột ngột tạo sóng áp suất. Xăng cháy cần trộn với không khí nên giải phóng năng lượng chậm hơn."
+    "noi_dung": "Nhiệt toả ra khi phân huỷ 1 kg ammonium nitrate chỉ khoảng 1,5 MJ, ít hơn nhiều so với đốt 1 kg xăng (khoảng 47 MJ nếu coi xăng là octane). Hãy đưa ra giả thuyết giải thích vì sao vụ nổ ammonium nitrate vẫn có sức phá huỷ rất lớn.",
+    "dap_an": "Phản ứng xảy ra rất nhanh, không cần oxygen từ không khí, tạo lượng lớn khí (7 mol khí từ 2 mol chất rắn) ở nhiệt độ cao, thể tích tăng đột ngột tạo sóng áp suất. Trong khi đó, xăng cháy cần oxygen từ không khí nên tốc độ giải phóng năng lượng chậm hơn."
    },
    {
     "ma": [
@@ -299,12 +299,12 @@ NL.add([
      "VD5"
     ],
     "dang": "Đúng/sai",
-    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Phản ứng phân huỷ ammonium nitrate ở trên là phản ứng toả nhiệt.\nb) Vì ammonium nitrate có thể nổ nên cần cấm hoàn toàn sử dụng làm phân bón.\nc) Lưu trữ khối lượng lớn ammonium nitrate gần khu dân cư làm tăng rủi ro cho cộng đồng.\nd) Sản phẩm khí của phản ứng gồm N₂, O₂ và hơi nước.",
+    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Phản ứng phân huỷ ammonium nitrate ở trên là phản ứng toả nhiệt.\nb) Vì ammonium nitrate có thể nổ nên cần cấm hoàn toàn việc sử dụng chất này làm phân bón.\nc) Lưu trữ khối lượng lớn ammonium nitrate gần khu dân cư làm tăng rủi ro cho cộng đồng.\nd) Sản phẩm khí của phản ứng gồm N₂, O₂ và hơi nước.",
     "dap_an": "a) Đúng – ΔrH° < 0.\nb) Sai – đây là phân đạm quan trọng; giải pháp là quy định lưu trữ, phòng cháy và khoảng cách an toàn.\nc) Đúng.\nd) Đúng."
    }
   ],
   "luu_y_khoa_hoc": [
-   "Ammonium nitrate có nhiều kiểu phân huỷ (tạo N₂O, NO₂…) tuỳ nhiệt độ; phương trình trong bài là một trường hợp đơn giản hoá.",
+   "Ammonium nitrate có thể phân huỷ theo nhiều cách khác nhau (tạo N₂O, NO₂,…) tuỳ thuộc vào nhiệt độ; phương trình trong bài là một trường hợp đã được đơn giản hoá.",
    "Khả năng gây nổ phụ thuộc chủ yếu vào tốc độ giải phóng năng lượng và lượng khí sinh ra, không chỉ vào độ lớn ΔrH°.",
    "Không hướng dẫn học sinh thử nghiệm phân huỷ ammonium nitrate."
   ],
@@ -320,7 +320,7 @@ NL.add([
   "lop": "10",
   "tieu_de": "Nhiệt toả ra khi đốt cháy xăng E10 và xăng khoáng",
   "yccd": "Vận dụng biến thiên enthalpy của phản ứng đốt cháy để so sánh, đánh giá nhiên liệu trong thực tiễn.",
-  "boi_canh": "Theo Thông tư 50/2025/TT-BCT của Bộ Công Thương (ban hành ngày 7/11/2025), từ ngày 1/6/2026, xăng không chì phải được phối trộn thành xăng E10 để dùng cho động cơ xăng trên toàn quốc; xăng E5 RON92 vẫn được tiếp tục pha chế đến hết ngày 31/12/2030. Thông tư này thay cho lộ trình cũ tại Quyết định 53/2012/QĐ-TTg (đã bị bãi bỏ). Xăng E10 chứa khoảng 10% thể tích ethanol pha vào xăng khoáng.\n\nNhiều người lo lắng: ethanol toả ít nhiệt hơn xăng nên xe sẽ tốn nhiên liệu hơn. Để kiểm tra, có thể dùng octane (C₈H₁₈) làm chất đại diện cho xăng. Theo NIST Chemistry WebBook, ΔcH° của octane lỏng là −5 430 kJ/mol (giá trị trung bình), của ethanol lỏng là −1 367,6 kJ/mol. Ở 20 °C, khối lượng riêng của octane là 0,7026 g/mL (NIST), của ethanol là 0,7893 g/mL (PubChem).\n\nTheo tính toán, 1 lít octane cháy toả khoảng 33,4 MJ, 1 lít ethanol toả khoảng 23,4 MJ. Như vậy 1 lít hỗn hợp 90% octane – 10% ethanol toả khoảng 32,4 MJ, chỉ thấp hơn octane khoảng 3%.\n\nBên cạnh năng lượng, ethanol có lợi ích khác: được sản xuất từ sắn, mía; phân tử có oxygen giúp cháy sạch hơn, giảm CO. Việc chọn nhiên liệu vì vậy cần cân nhắc nhiều tiêu chí, không chỉ nhiệt toả ra.",
+  "boi_canh": "Theo Thông tư 50/2025/TT-BCT của Bộ Công Thương (ban hành ngày 7/11/2025), từ ngày 1/6/2026, xăng không chì phải được phối trộn thành xăng E10 để dùng cho động cơ xăng trên toàn quốc; xăng E5 RON92 vẫn được tiếp tục pha chế đến hết ngày 31/12/2030. Thông tư này thay cho lộ trình cũ tại Quyết định 53/2012/QĐ-TTg (đã bị bãi bỏ). Xăng E10 là hỗn hợp của xăng khoáng với khoảng 10% ethanol (theo thể tích).\nNhiều người lo ngại rằng ethanol toả ít nhiệt hơn xăng nên xe sẽ tiêu tốn nhiều nhiên liệu hơn. Để kiểm chứng, có thể dùng octane (C₈H₁₈) làm chất đại diện cho xăng. Theo NIST Chemistry WebBook, ΔcH° của octane lỏng là −5 430 kJ/mol (giá trị trung bình), của ethanol lỏng là −1 367,6 kJ/mol. Ở 20 °C, khối lượng riêng của octane là 0,7026 g/mL (NIST), của ethanol là 0,7893 g/mL (PubChem).\nTừ các số liệu trên, tính được: đốt cháy hoàn toàn 1 lít octane toả ra khoảng 33,4 MJ, 1 lít ethanol toả ra khoảng 23,4 MJ. Như vậy, 1 lít hỗn hợp 90% octane – 10% ethanol (theo thể tích) toả ra khoảng 32,4 MJ, chỉ thấp hơn octane khoảng 3%.\nNgoài yếu tố năng lượng, ethanol còn có những ưu thế khác: có thể được sản xuất từ sắn, mía; phân tử chứa oxygen giúp nhiên liệu cháy hoàn toàn hơn, giảm phát thải CO. Vì vậy, việc lựa chọn nhiên liệu cần cân nhắc nhiều tiêu chí, không chỉ dựa vào nhiệt lượng toả ra.",
   "bang_so_lieu": {
    "tieu_de": "Nhiệt toả ra khi đốt cháy hoàn toàn 1 lít nhiên liệu (20 °C)",
    "cot": [
@@ -345,7 +345,7 @@ NL.add([
      "23,4"
     ]
    ],
-   "ghi_chu": "Tính từ ΔcH° (NIST: octane −5 430; ethanol −1 367,6 kJ/mol), khối lượng mol (114,23; 46,07 g/mol) và khối lượng riêng ở 20 °C (octane 0,7026 – NIST; ethanol 0,7893 g/mL – PubChem); coi xăng là octane tinh khiết (đơn giản hoá)."
+   "ghi_chu": "Số liệu được tính từ ΔcH° (NIST: octane −5 430; ethanol −1 367,6 kJ/mol), khối lượng mol (114,23; 46,07 g/mol) và khối lượng riêng ở 20 °C (octane 0,7026 – NIST; ethanol 0,7893 g/mL – PubChem); coi xăng là octane tinh khiết (đơn giản hoá)."
   },
   "hinh_goi_y": "Ảnh cột bơm xăng E10 tại cửa hàng xăng dầu (ảnh tự chụp).",
   "nguon": [
@@ -389,14 +389,14 @@ NL.add([
    "VD2",
    "VD5"
   ],
-  "dinh_huong": "Lớp 10, bài Năng lượng hoá học: vận dụng sau bài biến thiên enthalpy.\nHình thức: tranh luận nhóm 20 phút “Có nên dùng xăng E5/E10?”, mỗi nhóm dùng số liệu để bảo vệ quan điểm.",
+  "dinh_huong": "Lớp 10, bài Năng lượng hoá học: sử dụng ở phần vận dụng, sau bài Biến thiên enthalpy của phản ứng.\nHình thức: tranh luận nhóm trong 20 phút với chủ đề “Có nên dùng xăng E5/E10?”; mỗi nhóm sử dụng số liệu để bảo vệ quan điểm.",
   "cau_hoi": [
    {
     "ma": [
      "TH4"
     ],
     "dang": "Trả lời ngắn",
-    "noi_dung": "Theo bảng, nhiệt toả ra của 1 lít E10 thấp hơn 1 lít octane bao nhiêu phần trăm? (Làm tròn đến hàng đơn vị.)",
+    "noi_dung": "Theo bảng, nhiệt lượng toả ra khi đốt cháy hoàn toàn 1 lít xăng E10 thấp hơn so với 1 lít octane bao nhiêu phần trăm? (Làm tròn đến hàng đơn vị.)",
     "dap_an": "3. Cách tính: (33,4 − 32,4) : 33,4 × 100% ≈ 3%."
    },
    {
@@ -405,23 +405,23 @@ NL.add([
      "VD2"
     ],
     "dang": "Tự luận",
-    "noi_dung": "Một người nói: “Đổ xăng E10 xe chạy yếu hẳn, tốn gấp rưỡi.” Dựa vào số liệu, em đánh giá ý kiến này thế nào? Nêu thêm một yếu tố ngoài năng lượng cần xem xét khi đánh giá xăng sinh học.",
-    "dap_an": "Năng lượng trên mỗi lít chỉ giảm khoảng 3%, không thể “tốn gấp rưỡi”. Yếu tố khác: phát thải CO, nguồn nguyên liệu tái tạo, giá thành, khả năng hút ẩm của ethanol, sự tương thích với động cơ."
+    "noi_dung": "Có ý kiến cho rằng: “Đổ xăng E10 xe chạy yếu hẳn, tốn gấp rưỡi.” Dựa vào số liệu đã cho, hãy đánh giá ý kiến này. Nêu thêm một yếu tố khác ngoài năng lượng cần xem xét khi đánh giá xăng sinh học.",
+    "dap_an": "Ý kiến này không có cơ sở: nhiệt lượng toả ra trên mỗi lít chỉ giảm khoảng 3%, nên không thể “tốn gấp rưỡi”. Yếu tố khác: phát thải CO, nguồn nguyên liệu tái tạo, giá thành, khả năng hút ẩm của ethanol, sự tương thích với động cơ."
    },
    {
     "ma": [
-     "VD5",
-     "TH4"
+     "HH2.4",
+     "HH3.5"
     ],
     "dang": "Đúng/sai",
-    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) 1 lít ethanol cháy toả ít nhiệt hơn 1 lít octane.\nb) Xăng E10 chứa 10% khối lượng là ethanol.\nc) Ethanol có thể sản xuất từ sắn, mía nên là nguồn nhiên liệu tái tạo.\nd) Theo Thông tư 50/2025/TT-BCT, xăng E5 RON92 vẫn được pha chế đến hết năm 2030.",
+    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Đốt cháy hoàn toàn 1 lít ethanol toả ít nhiệt hơn đốt cháy hoàn toàn 1 lít octane.\nb) Trong xăng E10, ethanol chiếm 10% về khối lượng.\nc) Ethanol có thể được sản xuất từ sắn, mía nên là nhiên liệu tái tạo.\nd) Theo Thông tư 50/2025/TT-BCT, xăng E5 RON92 vẫn được pha chế đến hết năm 2030.",
     "dap_an": "a) Đúng.\nb) Sai – 10% là theo thể tích.\nc) Đúng.\nd) Đúng."
    }
   ],
   "luu_y_khoa_hoc": [
-   "Xăng thực tế là hỗn hợp nhiều hydrocarbon, octane chỉ là chất đại diện; nhiệt trị thật của xăng có thể khác vài phần trăm.",
-   "Giá trị ΔcH° của octane trên NIST là trung bình của 6 giá trị, sai số ±100 kJ/mol; kết quả tính chỉ mang tính ước lượng.",
-   "Mức tiêu hao nhiên liệu của xe còn phụ thuộc động cơ, cách lái; không suy diễn trực tiếp từ nhiệt trị.",
+   "Xăng thực tế là hỗn hợp nhiều hydrocarbon, octane chỉ là chất đại diện; nhiệt trị thực tế của xăng có thể chênh lệch vài phần trăm so với octane.",
+   "Giá trị ΔcH° của octane trên NIST là giá trị trung bình của 6 kết quả đo, với sai số ±100 kJ/mol; kết quả tính chỉ mang tính ước lượng.",
+   "Mức tiêu hao nhiên liệu của xe còn phụ thuộc vào động cơ và cách vận hành; không thể suy ra trực tiếp từ nhiệt trị.",
    "Nên đối chiếu nguyên văn Thông tư 50/2025/TT-BCT trên Cơ sở dữ liệu quốc gia về văn bản pháp luật trước khi dạy."
   ],
   "trang_thai": "nhap",
@@ -436,9 +436,9 @@ NL.add([
   "lop": "10",
   "tieu_de": "Lượng CO₂ phát thải khi đốt một số nhiên liệu đun nấu",
   "yccd": "Vận dụng biến thiên enthalpy của phản ứng đốt cháy để đề xuất lựa chọn nhiên liệu phù hợp, bảo vệ môi trường.",
-  "boi_canh": "Một trường bán trú cần chọn nhiên liệu cho bếp ăn: than (coi là carbon), gas (propane, butane) hay khí thiên nhiên (methane). Ban giám hiệu muốn biết: để có cùng một lượng nhiệt, nhiên liệu nào thải ít khí CO₂ nhất?\n\nTừ phương trình đốt cháy, đốt 1 mol carbon tạo 1 mol CO₂, đốt 1 mol propane tạo 3 mol CO₂. Kết hợp với ΔcH° trong NIST Chemistry WebBook (C −393,5; CH₄ −890,7; C₃H₈ −2 219,2; C₄H₁₀ −2 877,5 kJ/mol), tính được khối lượng CO₂ thải ra khi mỗi nhiên liệu toả 1 MJ nhiệt (bảng dưới).\n\nKết quả cho thấy than thải CO₂ gấp hơn hai lần methane. Lí do là trong methane, phần lớn nhiệt sinh ra từ việc tạo liên kết O–H trong nước chứ không chỉ từ tạo CO₂.\n\nTuy vậy, lựa chọn thực tế còn phụ thuộc giá, sự sẵn có, an toàn và khói bụi. Than tổ ong còn sinh khí CO độc và bụi mịn trong bếp. Đây là một bài toán mở, không có một đáp án duy nhất.",
+  "boi_canh": "Một trường bán trú cần lựa chọn nhiên liệu cho bếp ăn: than (coi là carbon), gas (propane, butane) hay khí thiên nhiên (methane). Ban giám hiệu cần biết: để thu được cùng một nhiệt lượng, đốt nhiên liệu nào phát thải ít CO₂ nhất?\nTheo phương trình hoá học của phản ứng đốt cháy, đốt cháy hoàn toàn 1 mol carbon tạo ra 1 mol CO₂, 1 mol propane tạo ra 3 mol CO₂. Kết hợp với ΔcH° trong NIST Chemistry WebBook (C −393,5; CH₄ −890,7; C₃H₈ −2 219,2; C₄H₁₀ −2 877,5 kJ/mol), có thể tính được khối lượng CO₂ phát thải khi mỗi nhiên liệu toả ra 1 MJ nhiệt (bảng dưới).\nKết quả cho thấy, để toả ra cùng một nhiệt lượng, than phát thải lượng CO₂ gấp hơn hai lần methane. Nguyên nhân là khi đốt cháy methane, một phần lớn nhiệt lượng được giải phóng do sự tạo thành H₂O (hình thành liên kết O–H), chứ không chỉ do sự tạo thành CO₂.\nTuy nhiên, việc lựa chọn trong thực tế còn phụ thuộc vào giá thành, sự sẵn có, mức độ an toàn và khói bụi. Bếp than tổ ong còn sinh ra khí CO độc và bụi mịn. Đây là một bài toán mở, không có đáp án duy nhất.",
   "bang_so_lieu": {
-   "tieu_de": "Khối lượng CO₂ thải ra khi nhiên liệu toả 1 MJ nhiệt",
+   "tieu_de": "Khối lượng CO₂ phát thải khi đốt cháy nhiên liệu toả ra 1 MJ nhiệt",
    "cot": [
     "Nhiên liệu",
     "g CO₂/MJ"
@@ -461,7 +461,7 @@ NL.add([
      "111,8"
     ]
    ],
-   "ghi_chu": "Tính từ ΔcH° (NIST Chemistry WebBook) và M(CO₂) = 44,01 g/mol, coi cháy hoàn toàn."
+   "ghi_chu": "Số liệu được tính từ ΔcH° (NIST Chemistry WebBook) và M(CO₂) = 44,01 g/mol, coi nhiên liệu cháy hoàn toàn."
   },
   "hinh_goi_y": "",
   "nguon": [
@@ -500,14 +500,14 @@ NL.add([
    "VD3",
    "VD5"
   ],
-  "dinh_huong": "Lớp 10, bài Năng lượng hoá học: vận dụng, liên hệ môi trường.\nHình thức: dự án nhỏ 1 tuần “Tư vấn nhiên liệu cho bếp ăn trường”; học sinh tìm thêm giá nhiên liệu ở địa phương.",
+  "dinh_huong": "Lớp 10, bài Năng lượng hoá học: vận dụng, liên hệ môi trường.\nHình thức: dự án nhỏ trong 1 tuần với chủ đề “Tư vấn nhiên liệu cho bếp ăn trường”; học sinh tìm hiểu thêm giá nhiên liệu ở địa phương.",
   "cau_hoi": [
    {
     "ma": [
      "TH4"
     ],
     "dang": "Trả lời ngắn",
-    "noi_dung": "Kiểm tra lại số liệu của methane: đốt 1 mol CH₄ tạo 1 mol CO₂ và toả 890,6 kJ. Tính số gam CO₂ ứng với 1 MJ nhiệt. (Làm tròn đến hàng phần mười.)",
+    "noi_dung": "Kiểm tra lại số liệu của methane trong bảng: đốt cháy hoàn toàn 1 mol CH₄ tạo ra 1 mol CO₂ và toả ra 890,6 kJ. Tính khối lượng CO₂ (gam) phát thải ứng với 1 MJ nhiệt lượng toả ra. (Làm tròn đến hàng phần mười.)",
     "dap_an": "49,4. Cách tính: 44,01 g : 0,8906 MJ ≈ 49,4 g/MJ."
    },
    {
@@ -516,8 +516,8 @@ NL.add([
      "VD3"
     ],
     "dang": "Tự luận",
-    "noi_dung": "Em hãy đề xuất các tiêu chí (ít nhất 4) để chọn nhiên liệu cho bếp ăn trường và cách thu thập số liệu cho từng tiêu chí.",
-    "dap_an": "Tiêu chí: phát thải CO₂/MJ (tính như bảng); giá tiền/MJ (hỏi giá thị trường, tính từ nhiệt trị); an toàn cháy nổ (quy định PCCC); khí độc, bụi (tài liệu y tế); sự sẵn có; chi phí thiết bị. Mỗi tiêu chí nêu được nguồn hoặc cách đo."
+    "noi_dung": "Hãy đề xuất ít nhất 4 tiêu chí để lựa chọn nhiên liệu cho bếp ăn của trường và cách thu thập số liệu cho từng tiêu chí.",
+    "dap_an": "Tiêu chí: phát thải CO₂/MJ (tính như bảng); giá tiền/MJ (hỏi giá thị trường, tính từ nhiệt trị); an toàn cháy nổ (quy định PCCC); khí độc, bụi (tài liệu y tế); sự sẵn có; chi phí thiết bị. Yêu cầu: mỗi tiêu chí nêu được nguồn số liệu hoặc cách đo."
    },
    {
     "ma": [
@@ -525,14 +525,14 @@ NL.add([
      "VD5"
     ],
     "dang": "Đúng/sai",
-    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Để toả cùng lượng nhiệt, đốt than thải CO₂ nhiều hơn đốt methane.\nb) Propane và butane thải CO₂ trên mỗi MJ gần bằng nhau.\nc) Chỉ cần chọn nhiên liệu có g CO₂/MJ thấp nhất là đủ để quyết định.\nd) Bếp than tổ ong trong phòng kín có thể gây ngộ độc khí CO.",
-    "dap_an": "a) Đúng – 111,8 so với 49,4 g/MJ.\nb) Đúng – 59,5 và 61,2 g/MJ.\nc) Sai – còn giá, an toàn, sức khoẻ, sự sẵn có.\nd) Đúng."
+    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Để toả ra cùng một nhiệt lượng, đốt than phát thải nhiều CO₂ hơn đốt methane.\nb) Lượng CO₂ phát thải trên mỗi MJ nhiệt của propane và butane gần bằng nhau.\nc) Chỉ cần chọn nhiên liệu có chỉ số g CO₂/MJ thấp nhất là đủ để quyết định.\nd) Bếp than tổ ong trong phòng kín có thể gây ngộ độc khí CO.",
+    "dap_an": "a) Đúng – 111,8 so với 49,4 g/MJ.\nb) Đúng – 59,5 và 61,2 g/MJ.\nc) Sai – còn cần xét giá thành, mức độ an toàn, ảnh hưởng tới sức khoẻ và sự sẵn có.\nd) Đúng."
    }
   ],
   "luu_y_khoa_hoc": [
-   "Than thực tế không phải carbon tinh khiết, có thêm hydrogen, lưu huỳnh, tro; số liệu carbon chỉ là ước lượng.",
-   "Bảng chỉ tính CO₂ khi đốt, chưa tính phát thải khi khai thác, vận chuyển (vòng đời).",
-   "Methane rò rỉ chưa cháy là khí nhà kính mạnh hơn CO₂ nhiều lần; cần nhắc học sinh điều này khi kết luận."
+   "Than trong thực tế không phải là carbon tinh khiết mà còn chứa hydrogen, sulfur, tro,…; số liệu tính cho carbon chỉ mang tính ước lượng.",
+   "Bảng chỉ tính CO₂ khi đốt, chưa tính phát thải trong quá trình khai thác, vận chuyển (theo vòng đời sản phẩm).",
+   "Methane rò rỉ (chưa cháy) là khí gây hiệu ứng nhà kính mạnh hơn CO₂ nhiều lần; cần lưu ý học sinh điều này khi rút ra kết luận."
   ],
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
@@ -546,9 +546,9 @@ NL.add([
   "lop": "10",
   "tieu_de": "Hydrogen: nhiên liệu của tương lai?",
   "yccd": "Vận dụng biến thiên enthalpy của phản ứng để giải thích ưu, nhược điểm của nhiên liệu; liên hệ ngành nghề năng lượng.",
-  "boi_canh": "Hydrogen cháy chỉ tạo ra nước: 2H₂(g) + O₂(g) → 2H₂O(l), ΔrH° = −571,6 kJ. Vì vậy nhiều quốc gia xem hydrogen là giải pháp quan trọng để giảm phát thải trong công nghiệp thép, phân bón, vận tải nặng.\n\nTheo báo cáo Global Hydrogen Review 2023 của Cơ quan Năng lượng Quốc tế (IEA), nhu cầu hydrogen toàn cầu năm 2022 đạt khoảng 95 triệu tấn. Tuy nhiên, phần lớn được sản xuất từ khí thiên nhiên và than, quá trình này thải nhiều CO₂. Hydrogen phát thải thấp (từ điện phân nước bằng điện tái tạo, hoặc có thu giữ CO₂) chiếm chưa tới 1% sản lượng.\n\nMột khó khăn khác là lưu trữ. Theo NIST, ở 0 °C, 1 atm, khối lượng riêng của H₂ chỉ 0,0899 g/L, của CH₄ là 0,717 g/L. Dù 1 gam hydrogen toả nhiệt gấp 2,6 lần 1 gam methane, 1 lít khí hydrogen lại toả ít nhiệt hơn nhiều.\n\nNgành hydrogen cần kĩ sư hoá học, kĩ sư điện hoá, chuyên gia an toàn khí và vật liệu. Đây là hướng nghề nghiệp mới cho học sinh yêu thích hoá học.",
+  "boi_canh": "Hydrogen cháy chỉ tạo ra nước: 2H₂(g) + O₂(g) → 2H₂O(l), ΔrH° = −571,6 kJ. Vì vậy, nhiều quốc gia coi hydrogen là giải pháp quan trọng để giảm phát thải trong các ngành sản xuất thép, phân bón và vận tải nặng.\nTheo báo cáo Global Hydrogen Review 2023 của Cơ quan Năng lượng Quốc tế (IEA), nhu cầu hydrogen toàn cầu năm 2022 đạt khoảng 95 triệu tấn. Tuy nhiên, phần lớn lượng hydrogen này được sản xuất từ khí thiên nhiên và than, là các quá trình phát thải nhiều CO₂. Hydrogen phát thải thấp (sản xuất bằng cách điện phân nước sử dụng điện tái tạo, hoặc từ nhiên liệu hoá thạch có thu giữ CO₂) chiếm chưa tới 1% sản lượng.\nMột khó khăn khác là việc lưu trữ hydrogen. Theo NIST, ở 0 °C, 1 atm, khối lượng riêng của H₂ chỉ là 0,0899 g/L, của CH₄ là 0,717 g/L. Mặc dù đốt cháy 1 gam hydrogen toả nhiệt gấp khoảng 2,6 lần 1 gam methane, nhưng đốt cháy 1 lít khí hydrogen lại toả ít nhiệt hơn nhiều so với 1 lít khí methane.\nNgành công nghiệp hydrogen cần đội ngũ kĩ sư hoá học, kĩ sư điện hoá, chuyên gia về vật liệu và an toàn khí. Đây là hướng nghề nghiệp mới mà học sinh yêu thích hoá học có thể lựa chọn.",
   "bang_so_lieu": {
-   "tieu_de": "Nhiệt toả ra khi đốt 1 lít khí (0 °C, 1 atm)",
+   "tieu_de": "Nhiệt toả ra khi đốt cháy hoàn toàn 1 lít khí (0 °C, 1 atm)",
    "cot": [
     "Khí",
     "kJ/L"
@@ -602,14 +602,14 @@ NL.add([
    "VD4",
    "VD5"
   ],
-  "dinh_huong": "Lớp 10, bài Năng lượng hoá học: tiết vận dụng, hướng nghiệp.\nHình thức: học sinh đóng vai kĩ sư năng lượng, trình bày 3 phút về ưu – nhược điểm của hydrogen.",
+  "dinh_huong": "Lớp 10, bài Năng lượng hoá học: tiết vận dụng, hướng nghiệp.\nHình thức: học sinh đóng vai kĩ sư năng lượng, trình bày trong 3 phút về ưu điểm và nhược điểm của hydrogen khi sử dụng làm nhiên liệu.",
   "cau_hoi": [
    {
     "ma": [
      "TH4"
     ],
     "dang": "Trả lời ngắn",
-    "noi_dung": "Theo bảng, để toả cùng một lượng nhiệt, thể tích khí hydrogen cần dùng gấp bao nhiêu lần thể tích methane (cùng điều kiện)? (Làm tròn đến hàng phần mười.)",
+    "noi_dung": "Theo bảng, để toả cùng một lượng nhiệt, thể tích khí hydrogen cần dùng gấp bao nhiêu lần thể tích khí methane (cùng điều kiện)? (Làm tròn đến hàng phần mười.)",
     "dap_an": "3,1. Cách tính: 39,8 : 12,7 ≈ 3,1 lần."
    },
    {
@@ -618,8 +618,8 @@ NL.add([
      "VD3"
     ],
     "dang": "Tự luận",
-    "noi_dung": "Hydrogen cháy không tạo CO₂, nhưng vì sao IEA cho rằng hydrogen hiện nay chưa thật sự ít phát thải? Đề xuất một cách sản xuất hydrogen phát thải thấp.",
-    "dap_an": "Phần lớn hydrogen hiện nay được sản xuất từ khí thiên nhiên, than, quá trình thải nhiều CO₂; hydrogen phát thải thấp chưa tới 1%. Đề xuất: điện phân nước bằng điện mặt trời, điện gió; hoặc sản xuất từ khí thiên nhiên kèm thu giữ CO₂."
+    "noi_dung": "Đốt cháy hydrogen không tạo ra CO₂. Vì sao theo IEA, hydrogen được sử dụng hiện nay chưa thực sự là nhiên liệu ít phát thải? Hãy đề xuất một cách sản xuất hydrogen phát thải thấp.",
+    "dap_an": "Phần lớn hydrogen hiện nay được sản xuất từ khí thiên nhiên và than, là các quá trình phát thải nhiều CO₂; hydrogen phát thải thấp chưa tới 1%. Đề xuất: điện phân nước bằng điện mặt trời, điện gió; hoặc sản xuất từ khí thiên nhiên kèm thu giữ CO₂."
    },
    {
     "ma": [
@@ -633,8 +633,8 @@ NL.add([
   ],
   "luu_y_khoa_hoc": [
    "“Hydrogen xanh, xám, lam” là cách gọi theo nguồn sản xuất, không phải màu của chất khí; H₂ là khí không màu.",
-   "Hydrogen dễ rò rỉ, khoảng nồng độ cháy nổ trong không khí rộng (khoảng 4–75% thể tích); an toàn là thách thức lớn.",
-   "Số liệu IEA cập nhật hằng năm; nên kiểm tra phiên bản mới nhất trước khi dạy."
+   "Hydrogen dễ rò rỉ và có giới hạn nồng độ cháy nổ trong không khí rộng (khoảng 4–75% thể tích); vì vậy, đảm bảo an toàn là một thách thức lớn.",
+   "Số liệu của IEA được cập nhật hằng năm; nên kiểm tra phiên bản mới nhất trước khi dạy."
   ],
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",

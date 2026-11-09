@@ -920,9 +920,8 @@ function card(x){
     <div class="tags">${stTag(x)}${maCua(x).map(m=>`<span class="tag ma">${esc(m)}</span>`).join('')}</div></a>`;
 }
 function progress(ma){
-  const g = ofCd(ma), n = k => g.filter(x=>ttCua(x)===k).length, tot = Math.max(6, g.length);
-  const seg = (k, cls) => n(k) ? `<i class="${cls}" style="--w:${n(k)/tot*100}%"></i>` : '';
-  return `<div class="prog"><span class="track">${g.length?`<i class="td" style="--w:${g.length/tot*100}%"></i>`:''}</span><span>${g.length}/${Math.max(6, g.length)}</span></div>`;
+  const g = ofCd(ma), tot = g.length, xem = g.filter(x => SEEN.has(x.id)).length;
+  return `<div class="prog" title="Số ngữ liệu bạn đã xem trong chủ đề (lưu trên trình duyệt này)"><span class="track">${xem?`<i class="td" style="--w:${xem/(tot||1)*100}%"></i>`:''}</span><span>Đã xem ${xem}/${tot}</span></div>`;
 }
 const PAGES = ['', 'tra-cuu', 'khung-nang-luc', 'huong-dan', 'phan-hoi', 'nguon', 'minh-bach-ai'];
 const PAGE_T = {'':'Trang chủ','tra-cuu':'Tra cứu ngữ liệu','khung-nang-luc':'Khung năng lực','huong-dan':'Hướng dẫn sử dụng','phan-hoi':'Phản hồi và chia sẻ dữ liệu','nguon':'Nguồn & bản quyền','minh-bach-ai':'Minh bạch AI'};
@@ -1097,7 +1096,6 @@ function pageHome(){
     <div class="topics">${C.chu_de.map((c,i) => `<a class="topic rv" data-lop="${lopSo(c.lop).join(' ')}" style="${cvar(c)}" href="#/tra-cuu?cd=${c.ma}">
       <div class="topic-top"><span class="sym">${esc(c.ki_hieu)}</span><div><div class="no">Chủ đề ${String(i+1).padStart(2,'0')} · Lớp ${esc(c.lop)}</div><strong>${esc(c.ten)}</strong></div></div>
       <div class="src">${esc(c.nguon)}</div>${progress(c.ma)}</a>`).join('')}</div>
-    <p class="muted small">Thanh tiến độ: số ngữ liệu đã có so với mục tiêu 6 ngữ liệu mỗi chủ đề.</p>
     <h2>6 loại ngữ liệu trong mỗi chủ đề</h2>
     <div class="types">${Object.entries(LOAI).map(([k,v])=>`<a class="type rv" href="#/tra-cuu?loai=${k}"><b>${k}</b>${v}<span>${DS.filter(x=>x.id.endsWith('-'+k)).length}</span></a>`).join('')}</div></div>`;
 }
@@ -1260,7 +1258,7 @@ const NL_CHO = '[DÁN NỘI DUNG NGỮ LIỆU: tiêu đề, bối cảnh, bảng
 function nlText(x){
   if(!x) return NL_CHO;
   const b = x.bang_so_lieu, cd = CD(x.chu_de);
-  let t = `Mã: ${MA_NL(x.id)}\nTiêu đề: ${x.tieu_de}\nLớp ${x.lop||cd.lop} – Chủ đề: ${cd.ten}\nYêu cầu cần đạt: ${x.yccd||''}\n\nBỐI CẢNH:\n${x.boi_canh||''}`;
+  let t = `Mã ngữ liệu: ${MA_NL(x.id)}\nTiêu đề: ${x.tieu_de}\nLớp ${x.lop||cd.lop} – Chủ đề: ${cd.ten}\nYêu cầu cần đạt: ${x.yccd||''}\n\nBỐI CẢNH:\n${x.boi_canh||''}`;
   if(b && Array.isArray(b.cot) && Array.isArray(b.dong) && b.dong.length) t += `\n\nBẢNG SỐ LIỆU: ${b.tieu_de||''}\n${b.cot.join(' | ')}\n${b.dong.map(r => (Array.isArray(r)?r:[r]).join(' | ')).join('\n')}${b.ghi_chu?'\nGhi chú: '+b.ghi_chu:''}`;
   if((x.nguon||[]).length) t += `\n\nNGUỒN:\n${x.nguon.map(n => '- '+(n.trich_dan||'')+(n.url?' '+n.url:'')).join('\n')}`;
   if((x.luu_y_khoa_hoc||[]).length) t += `\n\nLƯU Ý KHOA HỌC (quan niệm dễ sai):\n${x.luu_y_khoa_hoc.map(l => '- '+l).join('\n')}`;

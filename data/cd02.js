@@ -5,7 +5,7 @@ NL.add([
   "lop": "10",
   "tieu_de": "Vì sao nồi áp suất nấu nhanh hơn?",
   "yccd": "Trình bày được ảnh hưởng của nhiệt độ đến tốc độ phản ứng; vận dụng hệ số nhiệt độ Van’t Hoff để giải thích các hiện tượng trong đời sống.",
-  "boi_canh": "Nấu chín thức ăn thực chất là hàng loạt phản ứng hoá học: protein bị biến tính, tinh bột bị hồ hoá, mô sợi bị phân huỷ. Tốc độ các phản ứng này phụ thuộc mạnh vào nhiệt độ.\n\nKhi nấu bằng nồi thường, nhiệt độ của nước không vượt quá nhiệt độ sôi. Nhiệt độ sôi lại phụ thuộc áp suất. Theo dữ liệu tính chất của nước trong NIST Chemistry WebBook, ở 101,4 kPa (xấp xỉ 1 atm) nước sôi ở 100 °C; ở khoảng 198,7 kPa, nước sôi ở 120 °C. Nồi áp suất giữ hơi nước lại, làm áp suất trong nồi tăng lên gần 2 atm, nên nước sôi ở khoảng 120 °C.\n\nNgược lại, ở vùng núi cao, áp suất khí quyển thấp hơn. Theo bảng dưới, khi áp suất chỉ còn khoảng 84,6 kPa, nước sôi ở 95 °C; nấu ăn trên núi cao vì vậy lâu chín hơn.\n\nQuy tắc Van’t Hoff cho biết: với nhiều phản ứng, khi tăng nhiệt độ thêm 10 °C, tốc độ tăng khoảng 2–4 lần (hệ số γ). Nhờ đó có thể ước lượng thời gian nấu ở các điều kiện khác nhau.",
+  "boi_canh": "Nấu chín thức ăn thực chất là hàng loạt phản ứng hoá học: protein bị biến tính, tinh bột bị hồ hoá, mô sợi bị phân huỷ. Tốc độ các phản ứng này phụ thuộc mạnh vào nhiệt độ.\nKhi nấu bằng nồi thông thường, nhiệt độ của nước không vượt quá nhiệt độ sôi, mà nhiệt độ sôi lại phụ thuộc vào áp suất. Theo dữ liệu tính chất của nước trong NIST Chemistry WebBook, ở 101,4 kPa (xấp xỉ 1 atm) nước sôi ở 100 °C; ở khoảng 198,7 kPa, nước sôi ở 120 °C. Nồi áp suất giữ hơi nước lại, làm áp suất trong nồi tăng lên gần 2 atm, nhờ đó nước sôi ở khoảng 120 °C.\nNgược lại, ở vùng núi cao, áp suất khí quyển thấp hơn. Theo bảng dưới, khi áp suất chỉ còn khoảng 84,6 kPa, nước sôi ở 95 °C; vì vậy, khi nấu ăn ở vùng núi cao, thức ăn lâu chín hơn.\nTheo quy tắc kinh nghiệm Van’t Hoff, đối với nhiều phản ứng, khi nhiệt độ tăng thêm 10 °C thì tốc độ phản ứng tăng khoảng 2–4 lần (hệ số nhiệt độ γ). Nhờ đó có thể ước lượng thời gian nấu ở các điều kiện khác nhau.",
   "bang_so_lieu": {
    "tieu_de": "Nhiệt độ sôi của nước theo áp suất",
    "cot": [
@@ -55,7 +55,7 @@ NL.add([
    "VD1",
    "VD3"
   ],
-  "dinh_huong": "Lớp 10, bài Tốc độ phản ứng: dùng khi học ảnh hưởng của nhiệt độ.\nHình thức: đặt vấn đề đầu giờ 5 phút, luyện tập tính toán 10 phút.",
+  "dinh_huong": "Lớp 10, bài Tốc độ phản ứng: sử dụng khi học về ảnh hưởng của nhiệt độ đến tốc độ phản ứng.\nHình thức: đặt vấn đề ở đầu tiết học (5 phút) và luyện tập tính toán (10 phút).",
   "cau_hoi": [
    {
     "ma": [
@@ -63,7 +63,7 @@ NL.add([
      "TH2"
     ],
     "dang": "Tự luận",
-    "noi_dung": "Từ bảng số liệu, em rút ra mối liên hệ gì giữa áp suất và nhiệt độ sôi của nước? Hãy giải thích vì sao nồi áp suất giúp nấu chín thức ăn nhanh hơn.",
+    "noi_dung": "Từ bảng số liệu, hãy nhận xét mối liên hệ giữa áp suất và nhiệt độ sôi của nước. Giải thích vì sao nồi áp suất giúp nấu chín thức ăn nhanh hơn.",
     "dap_an": "Áp suất càng cao, nhiệt độ sôi càng cao. Nồi áp suất làm áp suất tăng nên nước sôi ở khoảng 120 °C; nhiệt độ cao hơn làm các phản ứng làm chín thức ăn xảy ra nhanh hơn."
    },
    {
@@ -72,8 +72,8 @@ NL.add([
      "VD1"
     ],
     "dang": "Trả lời ngắn",
-    "noi_dung": "Ở Hà Nội (nước sôi ở 100 °C), luộc chín một quả trứng mất 10 phút. Ở Đà Lạt nước sôi ở 95 °C. Coi γ = 2, ước tính thời gian luộc ở Đà Lạt (phút). (Làm tròn đến hàng phần mười.)",
-    "dap_an": "14,1. Cách tính: tốc độ giảm 2^(5/10) = 2^0,5 ≈ 1,414 lần; thời gian ≈ 10 × 1,414 ≈ 14,1 phút."
+    "noi_dung": "Ở Hà Nội, nước sôi ở 100 °C và luộc chín một quả trứng mất 10 phút. Ở Đà Lạt, nước sôi ở 95 °C. Coi hệ số nhiệt độ γ = 2, hãy ước tính thời gian (phút) cần để luộc chín một quả trứng tương tự ở Đà Lạt. (Làm tròn đến hàng phần mười.)",
+    "dap_an": "14,1. Cách tính: tốc độ phản ứng giảm 2^(5/10) = 2^0,5 ≈ 1,414 lần; thời gian ≈ 10 × 1,414 ≈ 14,1 phút."
    },
    {
     "ma": [
@@ -81,14 +81,14 @@ NL.add([
      "VD3"
     ],
     "dang": "Đúng/sai",
-    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Trong nồi áp suất, nước sôi ở nhiệt độ cao hơn 100 °C.\nb) Với γ = 2, nấu ở 120 °C nhanh hơn nấu ở 100 °C khoảng 4 lần.\nc) Đun lửa to hơn làm nước đang sôi trong nồi thường nóng hơn 100 °C.\nd) Leo núi cao, người ta cần nấu lâu hơn để thức ăn chín.",
-    "dap_an": "a) Đúng.\nb) Đúng – 2^2 = 4.\nc) Sai – ở áp suất 1 atm, nước sôi giữ ở khoảng 100 °C; lửa to chỉ làm nước bay hơi nhanh hơn.\nd) Đúng – nước sôi ở nhiệt độ thấp hơn."
+    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Trong nồi áp suất, nước sôi ở nhiệt độ cao hơn 100 °C.\nb) Với γ = 2, nấu chín thức ăn ở 120 °C nhanh hơn ở 100 °C khoảng 4 lần.\nc) Đun lửa to hơn làm nhiệt độ của nước đang sôi trong nồi thường vượt quá 100 °C.\nd) Ở vùng núi cao, cần nấu lâu hơn để thức ăn chín.",
+    "dap_an": "a) Đúng.\nb) Đúng – 2^2 = 4.\nc) Sai – ở áp suất 1 atm, nhiệt độ của nước sôi được giữ ở khoảng 100 °C; lửa to chỉ làm nước bay hơi nhanh hơn.\nd) Đúng – nước sôi ở nhiệt độ thấp hơn."
    }
   ],
   "luu_y_khoa_hoc": [
    "Quy tắc Van’t Hoff chỉ là quy tắc kinh nghiệm, γ thay đổi theo từng phản ứng và khoảng nhiệt độ; không dùng như định luật chính xác.",
    "Nhiệt độ sôi phụ thuộc áp suất bên ngoài, không phụ thuộc cường độ đun nóng.",
-   "Áp suất ở Đà Lạt là giá trị ước tính theo độ cao; có thể thay đổi theo thời tiết."
+   "Áp suất khí quyển ở Đà Lạt là giá trị ước tính theo độ cao và có thể thay đổi theo thời tiết."
   ],
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
@@ -102,7 +102,7 @@ NL.add([
   "lop": "10",
   "tieu_de": "Ảnh hưởng của diện tích tiếp xúc tới tốc độ phản ứng",
   "yccd": "Thực hiện được thí nghiệm nghiên cứu ảnh hưởng của nồng độ, nhiệt độ, diện tích bề mặt đến tốc độ phản ứng; xử lí số liệu, rút ra kết luận.",
-  "boi_canh": "Phản ứng giữa đá vôi và dung dịch hydrochloric acid là thí nghiệm quen thuộc để nghiên cứu tốc độ phản ứng: CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g).\n\nKhí CO₂ thoát ra làm khối lượng cốc phản ứng giảm dần. Đặt cốc lên cân điện tử và ghi khối lượng sau mỗi 30 giây, học sinh có thể vẽ đồ thị khối lượng giảm theo thời gian. Độ dốc âm của đồ thị khối lượng – thời gian (g/s) phản ánh tốc độ khối lượng khí CO₂ thoát ra; để biểu diễn theo mol/s cần chia cho M(CO₂), và giả thiết lượng nước mất đi do bay hơi hoặc bắn khỏi dung dịch là không đáng kể.\n\nTheo định luật bảo toàn khối lượng, 1,00 g CaCO₃ (0,0100 mol) phản ứng hết sẽ giải phóng 0,0100 mol CO₂, tức 0,44 g. Đây là mức giảm khối lượng tối đa nếu acid dư.\n\nĐể so sánh, có thể làm bốn thí nghiệm với cùng 1,00 g CaCO₃ và 50 mL acid dư, chỉ thay đổi một yếu tố mỗi lần: dạng đá vôi (viên hay bột), nồng độ acid (1 M hay 2 M), nhiệt độ (phòng hay nước ấm 40 °C). Phương pháp thay đổi một biến, giữ nguyên các biến khác là nền tảng của nghiên cứu khoa học.",
+  "boi_canh": "Phản ứng giữa đá vôi và dung dịch hydrochloric acid là thí nghiệm quen thuộc để nghiên cứu tốc độ phản ứng: CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g).\nKhí CO₂ thoát ra làm khối lượng cốc phản ứng giảm dần. Bằng cách đặt cốc lên cân điện tử và ghi lại khối lượng sau mỗi 30 giây, học sinh có thể vẽ đồ thị biểu diễn sự giảm khối lượng theo thời gian. Độ dốc âm của đồ thị khối lượng – thời gian (g/s) phản ánh tốc độ khối lượng khí CO₂ thoát ra; để biểu diễn theo mol/s cần chia cho M(CO₂), và giả thiết lượng nước mất đi do bay hơi hoặc bắn khỏi dung dịch là không đáng kể.\nTheo định luật bảo toàn khối lượng, 1,00 g CaCO₃ (0,0100 mol) phản ứng hết sẽ giải phóng 0,0100 mol CO₂, tức 0,44 g. Đây là mức giảm khối lượng tối đa nếu acid dư.\nĐể so sánh, có thể làm bốn thí nghiệm với cùng 1,00 g CaCO₃ và 50 mL acid dư, chỉ thay đổi một yếu tố mỗi lần: dạng đá vôi (viên hay bột), nồng độ acid (1 M hay 2 M), nhiệt độ (phòng hay nước ấm 40 °C). Phương pháp thay đổi một biến, giữ nguyên các biến khác là nền tảng của nghiên cứu khoa học.",
   "bang_so_lieu": {
    "tieu_de": "Thiết kế bốn thí nghiệm (học sinh tự đo và điền kết quả)",
    "cot": [
@@ -114,30 +114,30 @@ NL.add([
    "dong": [
     [
      "1 (đối chứng)",
-     "viên nhỏ",
+     "Viên nhỏ",
      "1 M",
-     "phòng"
+     "Nhiệt độ phòng"
     ],
     [
      "2",
-     "bột",
+     "Bột",
      "1 M",
-     "phòng"
+     "Nhiệt độ phòng"
     ],
     [
      "3",
-     "viên nhỏ",
+     "Viên nhỏ",
      "2 M",
-     "phòng"
+     "Nhiệt độ phòng"
     ],
     [
      "4",
-     "viên nhỏ",
+     "Viên nhỏ",
      "1 M",
      "40 °C"
     ]
    ],
-   "ghi_chu": "Thí nghiệm gợi ý; số liệu khối lượng theo thời gian do học sinh đo."
+   "ghi_chu": "Thiết kế thí nghiệm mang tính gợi ý; số liệu khối lượng theo thời gian do học sinh tự đo."
   },
   "hinh_goi_y": "Đồ thị khối lượng – thời gian của bốn thí nghiệm do học sinh vẽ; hoặc mô phỏng tốc độ phản ứng trong ChemCollective / PhET “Reactions & Rates”.",
   "nguon": [
@@ -164,15 +164,15 @@ NL.add([
    "VD1",
    "VD3"
   ],
-  "dinh_huong": "Lớp 10, bài Tốc độ phản ứng: tiết thực hành.\nHình thức: mỗi nhóm làm 1 thí nghiệm, chia sẻ số liệu cả lớp, so sánh với thí nghiệm đối chứng.",
+  "dinh_huong": "Lớp 10, bài Tốc độ phản ứng: tiết thực hành.\nHình thức: mỗi nhóm thực hiện 1 thí nghiệm, sau đó chia sẻ số liệu với cả lớp và so sánh với thí nghiệm đối chứng.",
   "cau_hoi": [
    {
     "ma": [
      "TH2"
     ],
     "dang": "Tự luận",
-    "noi_dung": "Dự đoán thứ tự tốc độ (từ nhanh đến chậm) ở giai đoạn đầu của bốn thí nghiệm trong bảng và giải thích dự đoán.",
-    "dap_an": "Thí nghiệm 2, 3, 4 đều nhanh hơn thí nghiệm 1 vì tăng diện tích bề mặt, nồng độ hoặc nhiệt độ. Thứ tự giữa 2, 3, 4 phụ thuộc điều kiện cụ thể, cần đo để kết luận (chấp nhận dự đoán có lí do)."
+    "noi_dung": "Dự đoán thứ tự tốc độ phản ứng (từ nhanh đến chậm) ở giai đoạn đầu của bốn thí nghiệm trong bảng và giải thích dự đoán đó.",
+    "dap_an": "Thí nghiệm 2, 3, 4 đều nhanh hơn thí nghiệm 1 vì tăng diện tích bề mặt, nồng độ hoặc nhiệt độ. Thứ tự giữa 2, 3, 4 phụ thuộc điều kiện cụ thể, cần đo để kết luận (chấp nhận các dự đoán có giải thích hợp lí)."
    },
    {
     "ma": [
@@ -193,9 +193,9 @@ NL.add([
    }
   ],
   "luu_y_khoa_hoc": [
-   "Tốc độ phản ứng thay đổi theo thời gian; chỉ so sánh tốc độ ở giai đoạn đầu (độ dốc ban đầu của đồ thị).",
-   "Một phần hơi nước và giọt acid có thể bay theo khí, nên đậy lỏng miệng cốc bằng bông.",
-   "Đá vôi tự nhiên không phải CaCO₃ tinh khiết; khối lượng CO₂ đo được có thể nhỏ hơn 0,44 g."
+   "Tốc độ phản ứng thay đổi theo thời gian; vì vậy chỉ nên so sánh tốc độ ở giai đoạn đầu (độ dốc ban đầu của đồ thị).",
+   "Một phần hơi nước và các giọt acid nhỏ có thể bị cuốn theo dòng khí, vì vậy nên đậy lỏng miệng cốc bằng bông.",
+   "Đá vôi tự nhiên không phải là CaCO₃ tinh khiết nên khối lượng CO₂ đo được có thể nhỏ hơn 0,44 g."
   ],
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
@@ -209,7 +209,7 @@ NL.add([
   "lop": "10",
   "tieu_de": "Khi bụi đường trở thành “thuốc nổ”",
   "yccd": "Trình bày được ảnh hưởng của diện tích bề mặt tiếp xúc đến tốc độ phản ứng; vận dụng giải thích các sự cố trong thực tiễn.",
-  "boi_canh": "Đường ăn là chất quen thuộc, khó bắt lửa khi ở dạng hạt. Nhưng khi bị nghiền thành bụi mịn lơ lửng trong không khí, đường có thể cháy nhanh đến mức gây nổ.\n\nNgày 7/2/2008, tại nhà máy tinh luyện đường Imperial Sugar ở Port Wentworth, bang Georgia (Hoa Kỳ), lượng lớn bụi đường tích tụ trong toà nhà đóng gói đã bắt lửa và gây ra chuỗi vụ nổ. Theo Ban Điều tra An toàn Hoá chất Hoa Kỳ (CSB), vụ nổ làm 14 người chết và 38 người bị thương, trong đó 14 người bị bỏng nặng, nguy hiểm đến tính mạng. CSB kết luận nguyên nhân chính là bụi đường không được thu gom, vệ sinh thường xuyên.\n\nBụi bột mì, bột gỗ, bột nhôm, bụi than cũng có nguy cơ tương tự. Khi một khối chất rắn bị chia nhỏ, tổng diện tích bề mặt tăng rất nhanh, oxygen tiếp xúc với nhiều phân tử hơn, phản ứng cháy xảy ra gần như tức thời.\n\nVì vậy, các nhà máy chế biến bột, gỗ, than phải có hệ thống hút bụi, chống tĩnh điện và quy trình vệ sinh nghiêm ngặt.",
+  "boi_canh": "Đường ăn là chất quen thuộc và khó bắt lửa khi ở dạng hạt. Tuy nhiên, khi bị nghiền thành bụi mịn lơ lửng trong không khí, đường có thể cháy nhanh đến mức gây nổ.\nNgày 7/2/2008, tại nhà máy tinh luyện đường Imperial Sugar ở Port Wentworth, bang Georgia (Hoa Kỳ), một lượng lớn bụi đường tích tụ trong toà nhà đóng gói đã bắt lửa và gây ra chuỗi vụ nổ. Theo Ban Điều tra An toàn và Nguy cơ Hoá chất Hoa Kỳ (CSB), vụ nổ làm 14 người chết và 38 người bị thương, trong đó 14 người bị bỏng nặng, nguy hiểm đến tính mạng. CSB kết luận nguyên nhân chính là bụi đường tích tụ do không được thu gom, vệ sinh thường xuyên.\nBụi bột mì, bụi gỗ, bột nhôm, bụi than cũng có nguy cơ gây nổ tương tự. Khi một khối chất rắn bị chia nhỏ, tổng diện tích bề mặt tăng lên rất nhiều, oxygen tiếp xúc được với nhiều phân tử chất cháy hơn nên phản ứng cháy xảy ra gần như tức thời.\nVì vậy, các nhà máy chế biến bột, gỗ, than phải có hệ thống hút bụi, chống tĩnh điện và quy trình vệ sinh nghiêm ngặt.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Sơ đồ hoặc ảnh trong báo cáo CSB về vụ nổ Imperial Sugar (kiểm tra giấy phép); hoặc video an toàn của CSB.",
   "nguon": [
@@ -231,7 +231,7 @@ NL.add([
    "VD2",
    "VD3"
   ],
-  "dinh_huong": "Lớp 10, bài Tốc độ phản ứng: ảnh hưởng của diện tích bề mặt.\nHình thức: nghiên cứu tình huống 15 phút; học sinh đóng vai thanh tra an toàn đề xuất biện pháp.",
+  "dinh_huong": "Lớp 10, bài Tốc độ phản ứng: ảnh hưởng của diện tích bề mặt.\nHình thức: nghiên cứu tình huống trong 15 phút; học sinh đóng vai thanh tra an toàn và đề xuất các biện pháp phòng ngừa.",
   "cau_hoi": [
    {
     "ma": [
@@ -247,8 +247,8 @@ NL.add([
      "TH2"
     ],
     "dang": "Tự luận",
-    "noi_dung": "Hạt đường trong lọ không tự cháy, nhưng bụi đường trong nhà máy lại gây nổ. Hãy giải thích bằng kiến thức về tốc độ phản ứng.",
-    "dap_an": "Bụi mịn có tổng diện tích bề mặt rất lớn và lơ lửng, trộn đều với oxygen trong không khí; khi gặp tia lửa, phản ứng cháy lan rất nhanh, toả nhiệt và sinh khí đột ngột gây nổ. Hạt đường trong lọ có diện tích tiếp xúc nhỏ, thiếu oxygen."
+    "noi_dung": "Đường dạng hạt trong lọ không tự bốc cháy, nhưng bụi đường trong nhà máy lại có thể gây nổ. Vận dụng kiến thức về tốc độ phản ứng, hãy giải thích hiện tượng trên.",
+    "dap_an": "Bụi mịn có tổng diện tích bề mặt rất lớn và lơ lửng, trộn đều với oxygen trong không khí; khi gặp tia lửa, phản ứng cháy lan rất nhanh, toả nhiệt và sinh khí đột ngột gây nổ. Trong khi đó, đường dạng hạt trong lọ có diện tích bề mặt tiếp xúc nhỏ và ít tiếp xúc với oxygen."
    },
    {
     "ma": [
@@ -256,14 +256,14 @@ NL.add([
      "VD3"
     ],
     "dang": "Đúng/sai",
-    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Theo CSB, nguyên nhân chính của vụ nổ là bụi đường tích tụ không được thu gom.\nb) Chỉ những chất dễ cháy như xăng dầu mới gây nổ.\nc) Hệ thống hút bụi và vệ sinh thường xuyên là biện pháp phòng ngừa nổ bụi.\nd) Bột mì trong xưởng bánh cũng có nguy cơ nổ bụi.",
+    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Theo CSB, nguyên nhân chính của vụ nổ là bụi đường tích tụ không được thu gom.\nb) Chỉ những chất dễ cháy như xăng, dầu mới có thể gây nổ.\nc) Hệ thống hút bụi và vệ sinh thường xuyên là biện pháp phòng ngừa nổ bụi.\nd) Bột mì trong xưởng bánh cũng có nguy cơ nổ bụi.",
     "dap_an": "a) Đúng.\nb) Sai – nhiều chất rắn thông thường ở dạng bụi mịn cũng có thể gây nổ.\nc) Đúng.\nd) Đúng."
    }
   ],
   "luu_y_khoa_hoc": [
-   "Nổ bụi cần đủ 5 yếu tố: nhiên liệu dạng bụi, oxygen, nguồn đánh lửa, bụi lơ lửng và không gian kín.",
+   "Nổ bụi chỉ xảy ra khi có đủ 5 yếu tố: nhiên liệu dạng bụi, oxygen, nguồn đánh lửa, bụi lơ lửng và không gian kín.",
    "Không làm thí nghiệm thổi bột vào ngọn lửa trong lớp học khi không có biện pháp an toàn và sự cho phép.",
-   "Diện tích bề mặt tăng làm tăng tốc độ phản ứng, không làm thay đổi lượng nhiệt toả ra khi đốt cùng khối lượng chất."
+   "Tăng diện tích bề mặt làm tăng tốc độ phản ứng nhưng không làm thay đổi nhiệt lượng toả ra khi đốt cháy hoàn toàn cùng một khối lượng chất."
   ],
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
@@ -277,7 +277,7 @@ NL.add([
   "lop": "10",
   "tieu_de": "Ống xả xe máy và “phép màu” của chất xúc tác",
   "yccd": "Trình bày được ảnh hưởng của chất xúc tác đến tốc độ phản ứng; nêu được ứng dụng của chất xúc tác trong đời sống, sản xuất.",
-  "boi_canh": "Khí thải động cơ chứa các chất độc: carbon monoxide (CO), hydrocarbon chưa cháy hết và các oxide của nitrogen (NOₓ). Để giảm ô nhiễm, Việt Nam áp dụng các tiêu chuẩn khí thải theo lộ trình của Quyết định 49/2011/QĐ-TTg. Theo khoản 2 Điều 4 của Quyết định này, xe mô tô hai bánh sản xuất, lắp ráp và nhập khẩu mới phải áp dụng tiêu chuẩn khí thải mức 3 từ ngày 01/01/2017. Lộ trình sau đó tiếp tục được điều chỉnh, nâng dần mức tiêu chuẩn.\n\nĐể đạt tiêu chuẩn, nhiều xe được lắp bộ chuyển đổi xúc tác trong ống xả. Bên trong là khối gốm hình tổ ong, phủ một lớp rất mỏng các kim loại quý như platinum (Pt), palladium (Pd), rhodium (Rh).\n\nTrên bề mặt chất xúc tác, các phản ứng xảy ra nhanh hơn nhiều: 2CO + O₂ → 2CO₂; 2NO + 2CO → N₂ + 2CO₂; hydrocarbon bị oxi hoá thành CO₂ và H₂O.\n\nCác chất xúc tác không bị tiêu hao sau phản ứng. Tuy nhiên, chúng chỉ hoạt động tốt khi đã nóng và có thể bị mất hoạt tính bởi chì hoặc lưu huỳnh trong nhiên liệu kém chất lượng.",
+  "boi_canh": "Khí thải của động cơ đốt trong chứa các chất độc hại như carbon monoxide (CO), hydrocarbon chưa cháy hết và các oxide của nitrogen (NOₓ). Để giảm ô nhiễm, Việt Nam áp dụng các tiêu chuẩn khí thải theo lộ trình của Quyết định 49/2011/QĐ-TTg. Theo khoản 2 Điều 4 của Quyết định này, xe mô tô hai bánh sản xuất, lắp ráp và nhập khẩu mới phải áp dụng tiêu chuẩn khí thải mức 3 từ ngày 01/01/2017. Lộ trình sau đó tiếp tục được điều chỉnh, nâng dần mức tiêu chuẩn.\nĐể đạt tiêu chuẩn khí thải, nhiều xe được lắp bộ chuyển đổi xúc tác trong ống xả. Bên trong bộ chuyển đổi là khối gốm có cấu trúc tổ ong, được phủ một lớp rất mỏng các kim loại quý như platinum (Pt), palladium (Pd), rhodium (Rh).\nTrên bề mặt chất xúc tác, các phản ứng xảy ra nhanh hơn nhiều: 2CO + O₂ → 2CO₂; 2NO + 2CO → N₂ + 2CO₂; hydrocarbon bị oxi hoá thành CO₂ và H₂O.\nChất xúc tác không bị tiêu hao sau phản ứng. Tuy nhiên, chất xúc tác chỉ hoạt động hiệu quả khi đã được làm nóng và có thể bị mất hoạt tính bởi chì hoặc hợp chất của sulfur có trong nhiên liệu kém chất lượng.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Ảnh cắt ngang bộ chuyển đổi xúc tác dạng tổ ong (tìm ảnh giấy phép CC trên Wikimedia Commons).",
   "nguon": [
@@ -298,15 +298,15 @@ NL.add([
    "VD2",
    "VD5"
   ],
-  "dinh_huong": "Lớp 10, bài Tốc độ phản ứng: ảnh hưởng của chất xúc tác.\nHình thức: thảo luận cặp đôi 10 phút; liên hệ thực tế việc bảo dưỡng xe.",
+  "dinh_huong": "Lớp 10, bài Tốc độ phản ứng: ảnh hưởng của chất xúc tác.\nHình thức: thảo luận theo cặp trong 10 phút; liên hệ thực tế với việc bảo dưỡng xe.",
   "cau_hoi": [
    {
     "ma": [
      "TH1"
     ],
     "dang": "Tự luận",
-    "noi_dung": "Vì sao chất xúc tác trong ống xả được phủ trên khối gốm hình tổ ong thay vì đặt thành một tấm kim loại phẳng?",
-    "dap_an": "Cấu trúc tổ ong có diện tích bề mặt rất lớn, khí thải tiếp xúc với nhiều chất xúc tác hơn nên phản ứng nhanh hơn; đồng thời tiết kiệm kim loại quý đắt tiền."
+    "noi_dung": "Giải thích vì sao chất xúc tác trong ống xả được phủ trên khối gốm có cấu trúc tổ ong mà không chế tạo thành một tấm kim loại phẳng.",
+    "dap_an": "Cấu trúc tổ ong có diện tích bề mặt rất lớn, khí thải tiếp xúc với chất xúc tác nhiều hơn nên phản ứng xảy ra nhanh hơn; đồng thời tiết kiệm kim loại quý đắt tiền."
    },
    {
     "ma": [
@@ -314,7 +314,7 @@ NL.add([
      "VD1"
     ],
     "dang": "Tự luận",
-    "noi_dung": "Một người đi xe máy quãng đường rất ngắn (vài trăm mét) nhiều lần mỗi ngày. Dự đoán hiệu quả giảm khí thải của bộ xúc tác trong trường hợp này và giải thích.",
+    "noi_dung": "Một người thường xuyên đi xe máy những quãng đường rất ngắn (vài trăm mét), nhiều lần mỗi ngày. Hãy dự đoán hiệu quả giảm khí thải của bộ chuyển đổi xúc tác trong trường hợp này và giải thích.",
     "dap_an": "Hiệu quả thấp, vì chất xúc tác cần được làm nóng mới hoạt động tốt; quãng đường ngắn khiến ống xả chưa đủ nóng, khí thải chưa được chuyển hoá nhiều."
    },
    {
@@ -323,12 +323,12 @@ NL.add([
      "VD5"
     ],
     "dang": "Đúng/sai",
-    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Sau khi xúc tác, lượng Pt, Pd, Rh trong bộ chuyển đổi gần như không đổi.\nb) Chất xúc tác làm tăng lượng CO₂ sinh ra từ mỗi lít xăng so với khi không có xúc tác.\nc) Phản ứng 2NO + 2CO → N₂ + 2CO₂ đồng thời làm giảm hai chất độc.\nd) Tháo bỏ bộ chuyển đổi xúc tác giúp xe “thoáng” hơn và không ảnh hưởng môi trường.",
-    "dap_an": "a) Đúng.\nb) Đúng – CO chuyển thành CO₂ nên CO₂ tăng nhẹ, nhưng CO độc hơn nhiều.\nc) Đúng.\nd) Sai – khí thải độc tăng, vi phạm quy định khí thải."
+    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Sau quá trình xúc tác, lượng Pt, Pd, Rh trong bộ chuyển đổi gần như không đổi.\nb) Chất xúc tác làm tăng lượng CO₂ sinh ra từ mỗi lít xăng so với khi không có xúc tác.\nc) Phản ứng 2NO + 2CO → N₂ + 2CO₂ đồng thời làm giảm hai chất độc.\nd) Tháo bỏ bộ chuyển đổi xúc tác giúp xe “thoáng” hơn và không ảnh hưởng môi trường.",
+    "dap_an": "a) Đúng.\nb) Đúng – CO được chuyển hoá thành CO₂ nên lượng CO₂ tăng nhẹ, nhưng CO độc hơn CO₂ nhiều.\nc) Đúng.\nd) Sai – lượng khí thải độc hại tăng lên và vi phạm quy định về khí thải."
    }
   ],
   "luu_y_khoa_hoc": [
-   "Chất xúc tác làm tăng tốc độ phản ứng nhưng không làm thay đổi ΔrH và không làm một phản ứng không thể xảy ra trở thành xảy ra.",
+   "Chất xúc tác làm tăng tốc độ phản ứng nhưng không làm thay đổi ΔrH và không làm cho một phản ứng không thể tự xảy ra trở thành xảy ra được.",
    "Lộ trình khí thải đã được điều chỉnh bằng các quyết định sau năm 2011 (ví dụ Quyết định 19/2024/QĐ-TTg); cần tra mức tiêu chuẩn đang có hiệu lực trước khi dạy.",
    "Không phải mọi xe máy đều lắp bộ xúc tác giống ô tô; nhiều xe đạt chuẩn nhờ phun xăng điện tử kết hợp xúc tác."
   ],
@@ -344,7 +344,7 @@ NL.add([
   "lop": "10",
   "tieu_de": "Nhiệt độ bảo quản và tốc độ sinh trưởng của vi khuẩn trong thức ăn",
   "yccd": "Vận dụng kiến thức về ảnh hưởng của nhiệt độ đến tốc độ phản ứng để giải thích và đề xuất cách bảo quản thực phẩm.",
-  "boi_canh": "Một trường bán trú nấu cơm trưa từ 9 giờ sáng, đến 11 giờ 30 mới chia cho học sinh. Trời nóng 35 °C. Thức ăn có an toàn không?\n\nCơ quan An toàn và Kiểm định Thực phẩm thuộc Bộ Nông nghiệp Hoa Kỳ (USDA FSIS) gọi khoảng nhiệt độ từ 40 °F đến 140 °F (khoảng 4 °C đến 60 °C) là “vùng nguy hiểm”. Trong khoảng này, vi khuẩn có thể tăng gấp đôi số lượng chỉ sau khoảng 20 phút. USDA khuyến cáo không để thức ăn dễ hỏng ở nhiệt độ phòng quá 2 giờ; nếu trời nóng trên 90 °F (khoảng 32 °C) thì không quá 1 giờ.\n\nSự sinh trưởng của vi khuẩn và quá trình ôi thiu là chuỗi phản ứng hoá sinh do enzyme xúc tác. Tốc độ các phản ứng này phụ thuộc mạnh vào nhiệt độ. Làm lạnh dưới 4 °C làm chậm các quá trình này; USDA khuyến cáo giữ thức ăn nóng ở 140 °F (khoảng 60 °C) trở lên nếu chưa ăn ngay.\n\nBếp ăn trường cần cân đối giữa thời gian nấu, chia suất và điều kiện giữ nóng hoặc làm lạnh.",
+  "boi_canh": "Một trường bán trú nấu xong bữa trưa lúc 9 giờ sáng, đến 11 giờ 30 mới chia cho học sinh, trong điều kiện nhiệt độ không khí 35 °C. Liệu thức ăn có còn đảm bảo an toàn?\nCơ quan An toàn và Kiểm định Thực phẩm thuộc Bộ Nông nghiệp Hoa Kỳ (USDA FSIS) gọi khoảng nhiệt độ từ 40 °F đến 140 °F (khoảng 4 °C đến 60 °C) là “vùng nguy hiểm”. Trong khoảng này, vi khuẩn có thể tăng gấp đôi số lượng chỉ sau khoảng 20 phút. USDA khuyến cáo không để thức ăn dễ hỏng ở nhiệt độ phòng quá 2 giờ; nếu nhiệt độ môi trường trên 90 °F (khoảng 32 °C) thì không quá 1 giờ.\nSự sinh trưởng của vi khuẩn và quá trình ôi thiu là kết quả của chuỗi phản ứng hoá sinh do enzyme xúc tác. Tốc độ các phản ứng này phụ thuộc mạnh vào nhiệt độ. Làm lạnh dưới 4 °C làm chậm các quá trình này; USDA khuyến cáo giữ thức ăn nóng ở 140 °F (khoảng 60 °C) trở lên nếu chưa ăn ngay.\nVì vậy, bếp ăn của trường cần cân đối giữa thời gian nấu, chia suất và điều kiện giữ nóng hoặc làm lạnh.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Infographic “Danger Zone” của USDA FSIS (tài liệu công, ghi nguồn).",
   "nguon": [
@@ -364,7 +364,7 @@ NL.add([
    "VD2",
    "VD3"
   ],
-  "dinh_huong": "Lớp 10, bài Tốc độ phản ứng: vận dụng ảnh hưởng của nhiệt độ.\nHình thức: giải quyết vấn đề theo nhóm 20 phút; mỗi nhóm đề xuất quy trình cho bếp ăn trường.",
+  "dinh_huong": "Lớp 10, bài Tốc độ phản ứng: vận dụng ảnh hưởng của nhiệt độ.\nHình thức: giải quyết vấn đề theo nhóm trong 20 phút; mỗi nhóm đề xuất một quy trình bảo quản thức ăn cho bếp ăn của trường.",
   "cau_hoi": [
    {
     "ma": [
@@ -372,7 +372,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Giả sử ban đầu trong một suất ăn có 1 000 vi khuẩn, số vi khuẩn tăng gấp đôi sau mỗi 20 phút. Sau 2 giờ để ở nhiệt độ phòng, số vi khuẩn là bao nhiêu?",
-    "dap_an": "64000. Cách tính: 2 giờ = 6 lần nhân đôi; 1 000 × 2⁶ = 64 000."
+    "dap_an": "64 000. Cách tính: 2 giờ = 6 lần nhân đôi; 1 000 × 2⁶ = 64 000."
    },
    {
     "ma": [
@@ -380,7 +380,7 @@ NL.add([
      "VD3"
     ],
     "dang": "Tự luận",
-    "noi_dung": "Với tình huống ở bếp ăn trường (nấu xong 9 giờ, chia lúc 11 giờ 30, trời 35 °C), em hãy chỉ ra vấn đề và đề xuất ít nhất hai giải pháp.",
+    "noi_dung": "Với tình huống ở bếp ăn trường (nấu xong 9 giờ, chia lúc 11 giờ 30, trời 35 °C), hãy chỉ ra vấn đề về an toàn thực phẩm và đề xuất ít nhất hai giải pháp.",
     "dap_an": "Thức ăn nằm trong vùng nguy hiểm 2,5 giờ, vượt khuyến cáo 1 giờ khi trời nóng. Giải pháp: nấu muộn hơn, sát giờ ăn; giữ nóng trên 60 °C bằng tủ giữ nóng; hoặc làm lạnh nhanh dưới 4 °C và hâm lại kĩ trước khi ăn."
    },
    {
@@ -388,14 +388,14 @@ NL.add([
      "VD2"
     ],
     "dang": "Đúng/sai",
-    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Theo USDA, khoảng 4 °C – 60 °C là vùng vi khuẩn phát triển nhanh.\nb) Tủ lạnh tiêu diệt hoàn toàn vi khuẩn trong thức ăn.\nc) Khi trời trên 32 °C, thời gian để thức ăn ở ngoài nên được rút ngắn còn 1 giờ.\nd) Ôi thiu thức ăn liên quan đến các phản ứng do enzyme xúc tác.",
+    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Theo USDA, khoảng 4 °C – 60 °C là vùng vi khuẩn phát triển nhanh.\nb) Tủ lạnh tiêu diệt hoàn toàn vi khuẩn trong thức ăn.\nc) Khi nhiệt độ môi trường trên 32 °C, thời gian để thức ăn ở ngoài không nên quá 1 giờ.\nd) Sự ôi thiu của thức ăn liên quan đến các phản ứng do enzyme xúc tác.",
     "dap_an": "a) Đúng.\nb) Sai – nhiệt độ thấp chỉ làm chậm sự phát triển của vi khuẩn.\nc) Đúng.\nd) Đúng."
    }
   ],
   "luu_y_khoa_hoc": [
-   "Thời gian nhân đôi 20 phút là điều kiện thuận lợi nhất; thực tế phụ thuộc loại vi khuẩn và thực phẩm.",
+   "Thời gian nhân đôi 20 phút ứng với điều kiện thuận lợi nhất; trong thực tế, giá trị này phụ thuộc vào loại vi khuẩn và loại thực phẩm.",
    "Đun sôi lại không phá huỷ được mọi độc tố mà vi khuẩn đã tiết ra; không nên coi hâm nóng là cách loại bỏ độc tố.",
-   "Khuyến cáo của USDA dùng độ F; khi dạy cần đổi sang độ C và nêu rõ làm tròn."
+   "Khuyến cáo của USDA sử dụng thang nhiệt độ Fahrenheit (°F); khi dạy cần đổi sang thang Celsius (°C) và nêu rõ cách làm tròn."
   ],
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
@@ -409,7 +409,7 @@ NL.add([
   "lop": "10",
   "tieu_de": "Chất xúc tác trong quá trình cracking dầu mỏ",
   "yccd": "Nêu được ứng dụng của chất xúc tác trong sản xuất; liên hệ ngành nghề liên quan đến hoá học.",
-  "boi_canh": "Việt Nam có hai nhà máy lọc dầu lớn: Nhà máy lọc dầu Dung Quất (Quảng Ngãi), công suất thiết kế 6,5 triệu tấn dầu thô mỗi năm, và Liên hợp lọc hoá dầu Nghi Sơn (Thanh Hoá), công suất khoảng 10 triệu tấn mỗi năm. Hai nhà máy cung cấp phần lớn xăng dầu cho thị trường trong nước.\n\nCông đoạn chính của nhà máy là phân xưởng cracking xúc tác (FCC). Tại đây, các phân tử hydrocarbon dài, nặng trong dầu thô được phân cắt thành các phân tử ngắn hơn như thành phần của xăng và khí hoá lỏng. Nếu không có xúc tác, quá trình này cần nhiệt độ cao hơn nhiều và xảy ra rất chậm.\n\nChất xúc tác FCC thường là zeolite, một loại vật liệu có rất nhiều lỗ xốp kích thước phân tử. Sau một thời gian, chất xúc tác bị phủ một lớp than cốc và mất hoạt tính. Người ta đốt lớp than này để tái sinh xúc tác rồi đưa trở lại thiết bị phản ứng.\n\nKĩ sư hoá học, kĩ sư công nghệ lọc hoá dầu cần hiểu rõ tốc độ phản ứng, chất xúc tác và an toàn quy trình để vận hành nhà máy.",
+  "boi_canh": "Việt Nam có hai nhà máy lọc dầu lớn: Nhà máy lọc dầu Dung Quất (Quảng Ngãi), công suất thiết kế 6,5 triệu tấn dầu thô mỗi năm, và Liên hợp lọc hoá dầu Nghi Sơn (Thanh Hoá), công suất khoảng 10 triệu tấn mỗi năm. Hai nhà máy này cung cấp phần lớn xăng dầu cho thị trường trong nước.\nMột trong những công đoạn chính của nhà máy là cracking xúc tác, thực hiện tại phân xưởng cracking xúc tác tầng sôi (FCC). Tại đây, các phân tử hydrocarbon mạch dài trong các phân đoạn nặng của dầu mỏ được phân cắt thành các phân tử ngắn hơn như thành phần của xăng và khí hoá lỏng. Nếu không có xúc tác, quá trình này cần nhiệt độ cao hơn nhiều và xảy ra rất chậm.\nChất xúc tác FCC thường là zeolite, một loại vật liệu có rất nhiều lỗ xốp với kích thước cỡ phân tử. Sau một thời gian, chất xúc tác bị phủ một lớp than cốc và mất hoạt tính. Người ta đốt lớp than này để tái sinh xúc tác rồi đưa trở lại thiết bị phản ứng.\nKĩ sư hoá học, kĩ sư công nghệ lọc hoá dầu cần hiểu rõ tốc độ phản ứng, chất xúc tác và an toàn quy trình để vận hành nhà máy.",
   "bang_so_lieu": {
    "tieu_de": "Công suất thiết kế hai nhà máy lọc dầu của Việt Nam",
    "cot": [
@@ -452,7 +452,7 @@ NL.add([
    "VD1",
    "VD4"
   ],
-  "dinh_huong": "Lớp 10, bài Tốc độ phản ứng: tiết hướng nghiệp cuối chủ đề.\nHình thức: học sinh tìm hiểu và giới thiệu một nghề sử dụng chất xúc tác, trình bày 3 phút.",
+  "dinh_huong": "Lớp 10, bài Tốc độ phản ứng: tiết hướng nghiệp cuối chủ đề.\nHình thức: học sinh tìm hiểu và giới thiệu một nghề nghiệp có liên quan đến chất xúc tác, trình bày trong 3 phút.",
   "cau_hoi": [
    {
     "ma": [
@@ -481,7 +481,7 @@ NL.add([
    }
   ],
   "luu_y_khoa_hoc": [
-   "Chất xúc tác không bị biến đổi về lượng sau phản ứng theo định nghĩa, nhưng trong công nghiệp vẫn hao mòn dần và phải bổ sung.",
+   "Theo định nghĩa, chất xúc tác không bị biến đổi về lượng sau phản ứng; tuy nhiên, trong công nghiệp, chất xúc tác vẫn bị hao mòn dần và phải được bổ sung.",
    "Công suất thiết kế có thể khác sản lượng thực tế từng năm; khi dạy nên ghi rõ năm của số liệu.",
    "Số liệu công suất cần đối chiếu lại trên trang chính thức của doanh nghiệp."
   ],
