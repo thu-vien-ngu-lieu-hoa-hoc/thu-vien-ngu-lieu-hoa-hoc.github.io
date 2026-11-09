@@ -5,12 +5,12 @@ NL.add([
   "lop": "12",
   "tieu_de": "Hàm lượng đường trong nước ngọt và khuyến cáo của WHO",
   "yccd": "Nêu được trạng thái tự nhiên, vai trò của glucose, fructose, saccharose; vận dụng hiểu biết về carbohydrate để đánh giá chế độ ăn uống.",
-  "boi_canh": "Đường ăn (saccharose) là disaccharide tạo từ một gốc glucose và một gốc fructose. Trong nước ngọt, nước trái cây, sữa có đường, đường là nguồn năng lượng nhanh nhưng dễ bị tiêu thụ quá mức.\n\nTổ chức Y tế Thế giới (WHO) khuyến cáo lượng “đường tự do” (đường thêm vào thực phẩm và đường có sẵn trong mật ong, siro, nước ép trái cây) nên dưới 10% tổng năng lượng, và giảm xuống dưới 5% sẽ có thêm lợi ích. Với khẩu phần 2 000 kcal, 5% là 100 kcal, tương ứng khoảng 25 g đường (tính với 4 kcal/g đường).\n\nTheo cơ sở dữ liệu FoodData Central của Bộ Nông nghiệp Hoa Kỳ (USDA), nước ngọt có ga vị cola (loại bán ở cửa hàng ăn nhanh) chứa khoảng 9 g đường trong 100 g; nước cam ép tươi chứa khoảng 8,4 g đường (tự nhiên) trong 100 g; sữa bò nguyên kem chứa khoảng 5 g đường (lactose) trong 100 g.\n\nĐường trong nước ép trái cây vẫn được WHO tính là đường tự do vì đã tách khỏi chất xơ của quả. Uống nhiều đồ uống có đường liên quan đến thừa cân, béo phì, sâu răng và đái tháo đường type 2.",
+  "boi_canh": "Đường mía (đường ăn thường dùng) có thành phần chính là sucrose (hoặc saccharose) – một disaccharide được tạo thành từ một gốc α-glucose và một gốc β-fructose qua liên kết α-1,2-β-glycoside. Trong nước ngọt, nước trái cây hay sữa có đường, saccharose cùng các đường đơn khác là nguồn cung cấp năng lượng nhanh nhưng dễ bị tiêu thụ quá mức.\n\nTổ chức Y tế Thế giới (WHO) khuyến cáo lượng “đường tự do” (free sugars – gồm các đường đơn, đường đôi được thêm vào thực phẩm và đường tự nhiên có trong mật ong, siro, nước ép trái cây) nên chiếm dưới 10% tổng năng lượng khẩu phần hàng ngày, và giảm xuống dưới 5% sẽ mang lại nhiều lợi ích sức khỏe hơn. Với chế độ ăn 2 000 kcal/ngày, 5% tương đương 100 kcal, tức khoảng 25 g đường (dựa trên tỷ lệ 4 kcal/g carbohydrate).\n\nTheo dữ liệu FoodData Central của Bộ Nông nghiệp Hoa Kỳ (USDA), 100 g nước ngọt có ga vị cola chứa khoảng 9 g đường tự do; 100 g nước cam ép tươi chứa khoảng 8,4 g đường (fructose, sucrose, glucose); 100 g sữa bò nguyên kem chứa khoảng 5 g lactose (đường tự nhiên của sữa, không thuộc nhóm đường tự do).\n\nĐường trong nước ép trái cây vẫn xếp vào nhóm đường tự do vì quá trình ép đã loại bỏ phần lớn chất xơ hòa tan và không hòa tan của quả. Việc tiêu thụ nhiều đồ uống chứa đường tự do có liên quan trực tiếp đến tình trạng thừa cân, béo phì, sâu răng và bệnh đái tháo đường type 2.",
   "bang_so_lieu": {
    "tieu_de": "Hàm lượng đường trong 100 g đồ uống",
    "cot": [
     "Đồ uống",
-    "g đường/100 g"
+    "Số gam đường/100 g đồ uống"
    ],
    "dong": [
     [
@@ -72,7 +72,7 @@ NL.add([
      "TH4"
     ],
     "dang": "Trả lời ngắn",
-    "noi_dung": "Một chai nước ngọt cola 330 g. Theo bảng, chai chứa khoảng bao nhiêu gam đường? (Làm tròn đến hàng đơn vị.)",
+    "noi_dung": "Một chai nước ngọt cola chứa 330 g đồ uống. Theo bảng trên, hãy ước tính số gam đường tự do chứa trong chai nước ngọt trên. (Làm tròn đến hàng đơn vị.)",
     "dap_an": "30. Cách tính: 330 × 9,0 : 100 ≈ 29,7 ≈ 30 g, vượt mức 25 g/ngày (5% năng lượng) theo WHO."
    },
    {
@@ -90,7 +90,7 @@ NL.add([
      "VD2"
     ],
     "dang": "Đúng/sai",
-    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Saccharose được tạo từ một gốc glucose và một gốc fructose.\nb) Đường trong sữa bò tươi chủ yếu là lactose.\nc) WHO khuyến cáo đường tự do nên dưới 10% tổng năng lượng.\nd) Đường trong nước ép trái cây không được tính là đường tự do.",
+    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Saccharose được tạo từ một gốc glucose và một gốc fructose bằng liên kết α-1,2-β-glycoside.\nb) Đường trong sữa bò tươi chủ yếu là lactose.\nc) WHO khuyến cáo đường tự do nên dưới 10% tổng năng lượng.\nd) Đường trong nước ép trái cây không được tính là đường tự do.",
     "dap_an": "a) Đúng.\nb) Đúng.\nc) Đúng.\nd) Sai – WHO tính là đường tự do."
    }
   ],
@@ -111,14 +111,14 @@ NL.add([
   "lop": "12",
   "tieu_de": "Thuỷ phân tinh bột bởi amylase trong nước bọt",
   "yccd": "Trình bày được phản ứng thuỷ phân tinh bột; thực hiện được thí nghiệm nhận biết tinh bột bằng iodine và glucose bằng thuốc thử phù hợp.",
-  "boi_canh": "Nhai một miếng cơm trắng thật lâu, ta sẽ thấy vị ngọt dần. Nguyên nhân là trong nước bọt có enzyme amylase, xúc tác phản ứng thuỷ phân tinh bột thành các đường nhỏ hơn như maltose, có vị ngọt.\n\nCó thể kiểm chứng điều này bằng thí nghiệm đơn giản (dựa trên nguyên tắc thử iodine trong bài thực hành về amylase của Practical Biology). Chuẩn bị hồ tinh bột loãng (1%) và chia vào hai ống nghiệm. Ống 1 thêm nước cất, ống 2 thêm một ít nước bọt pha loãng. Giữ hai ống ở khoảng 37 °C trong 10–15 phút. Sau đó, lấy từng phần nhỏ thử với dung dịch iodine: tinh bột tạo màu xanh tím với iodine. Phần còn lại thử với thuốc thử Benedict (hoặc Cu(OH)₂ trong môi trường kiềm, đun nóng): đường khử tạo kết tủa đỏ gạch Cu₂O.\n\nCó thể mở rộng: thêm ống đun sôi nước bọt trước khi dùng, hoặc ống thêm giấm để thay đổi pH. Enzyme là protein nên bị mất hoạt tính khi đun nóng hoặc ở pH không phù hợp.\n\nThí nghiệm giúp học sinh liên hệ giữa hoá học carbohydrate và sinh học tiêu hoá.",
+  "boi_canh": "Nhai một miếng cơm trắng thật lâu, ta sẽ cảm nhận được vị ngọt tăng dần. Nguyên nhân là do trong nước bọt có chứa enzyme α-amylase, xúc tác cho phản ứng thủy phân tinh bột (không có vị ngọt) thành các phân tử đường ngắn hơn như maltose (đường mạch nha, có vị ngọt nhẹ).\n\nCó thể kiểm chứng điều này bằng thí nghiệm đối chứng đơn giản:\nChuẩn bị: Cho vào hai ống nghiệm lượng hồ tinh bột loãng (1%) như nhau. Ống 1 thêm nước cất; Ống 2 thêm một lượng nước bọt pha loãng tương đương.\nTiến hành: Giữ cả hai ống ở nhiệt độ tối thích khoảng 37–40 °C trong 10–15 phút.\n\nKết quả kiểm tra:\nThử với dung dịch iodine:\nỐng 1: Xuất hiện màu xanh tím đặc trưng do tinh bột chưa bị thủy phân.\nỐng 2: Không xuất hiện màu xanh tím rõ ràng do tinh bột đã bị enzyme amylase thủy phân hoàn toàn thành các đường nhỏ hơn.\nThử với dung dịch Cu(OH)₂ trong môi trường kiềm (đun nóng):\nỐng 1: Không có kết tủa đỏ gạch do tinh bột không có tính khử.\nỐng 2: Xuất hiện kết tủa đỏ gạch (Cu₂O) do sản phẩm thủy phân là maltose (và một phần glucose) đều là các đường khử.",
   "bang_so_lieu": {
    "tieu_de": "Bảng ghi kết quả (học sinh tự quan sát)",
    "cot": [
     "Ống",
     "Thành phần",
     "Thử iodine",
-    "Thử Benedict"
+    "Thử Cu(OH)₂/OH⁻"
    ],
    "dong": [
     [
@@ -179,8 +179,8 @@ NL.add([
      "TH2"
     ],
     "dang": "Tự luận",
-    "noi_dung": "Dự đoán kết quả thử iodine và Benedict của 4 ống nghiệm sau 15 phút. Giải thích.",
-    "dap_an": "Ống 1: iodine xanh tím, Benedict không đổi (tinh bột chưa thuỷ phân). Ống 2: iodine nhạt hoặc không xanh, Benedict đỏ gạch (amylase thuỷ phân tinh bột thành đường khử). Ống 3, 4: giống ống 1 hoặc gần giống, vì enzyme mất hoạt tính do nhiệt hoặc pH acid."
+    "noi_dung": "Dự đoán kết quả thử iodine và Cu(OH)₂/OH⁻ của 4 ống nghiệm sau 15 phút. Giải thích.",
+    "dap_an": "Ống 1: iodine xanh tím, Cu(OH)₂/OH⁻ không đổi (tinh bột chưa thuỷ phân). Ống 2: iodine nhạt hoặc không xanh, đỏ gạch (amylase thuỷ phân tinh bột thành đường khử). Ống 3, 4: giống ống 1 hoặc gần giống, vì enzyme mất hoạt tính do nhiệt hoặc pH acid."
    },
    {
     "ma": [
@@ -188,7 +188,7 @@ NL.add([
     ],
     "dang": "Tự luận",
     "noi_dung": "Vì sao cần ống 1 (chỉ có nước)? Vì sao giữ các ống ở khoảng 37 °C?",
-    "dap_an": "Ống 1 là đối chứng, chứng minh tinh bột không tự thuỷ phân trong cùng thời gian. 37 °C gần nhiệt độ cơ thể, enzyme amylase hoạt động tốt nhất."
+    "dap_an": "Ống 1 là đối chứng, chứng minh tinh bột ở ống 2 mất màu khi thêm iodine không phải do pha loãng hay do tinh bột tự thuỷ phân trong cùng thời gian. 37 °C gần nhiệt độ cơ thể, enzyme amylase hoạt động tốt nhất."
    },
    {
     "ma": [
@@ -203,7 +203,7 @@ NL.add([
   "luu_y_khoa_hoc": [
    "Mỗi học sinh chỉ dùng nước bọt của chính mình, không dùng chung; vệ sinh dụng cụ sau thí nghiệm.",
    "Sản phẩm chính của amylase nước bọt là maltose và dextrin, không phải glucose.",
-   "Đun ống nghiệm thử Benedict phải dùng kẹp, hướng miệng ống ra xa người."
+   "Đun ống nghiệm thử Cu(OH)₂/OH⁻ phải dùng kẹp, hướng miệng ống ra xa người."
   ],
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",
@@ -217,7 +217,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Sản xuất ethanol nhiên liệu từ mía ở Brazil",
   "yccd": "Trình bày được phản ứng lên men glucose tạo ethanol; vận dụng tính toán hiệu suất; đánh giá ứng dụng nhiên liệu sinh học.",
-  "boi_canh": "Theo Hiệp hội Nhiên liệu Tái tạo Hoa Kỳ (RFA), năm 2025 Hoa Kỳ sản xuất khoảng 52% và Brazil khoảng 27% ethanol nhiên liệu của thế giới. Ethanol ở Brazil được sản xuất chủ yếu từ mía. Từ ngày 1/8/2025, tỉ lệ ethanol bắt buộc pha vào xăng ở Brazil được nâng từ 27% lên 30% (E30).\n\nQuá trình sản xuất: ép mía lấy nước đường (chủ yếu là saccharose), thuỷ phân thành glucose và fructose, rồi lên men nhờ nấm men: C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂. Dung dịch sau lên men được chưng cất để thu ethanol nồng độ cao. Bã mía được đốt để cung cấp nhiệt và điện cho nhà máy.\n\nNhiên liệu sinh học là một trong những cách giảm phụ thuộc dầu mỏ trong giao thông, nhất là ở những nước có sẵn nguyên liệu nông nghiệp. Tuy nhiên, mở rộng diện tích trồng mía có thể gây cạnh tranh với đất trồng lương thực, phá rừng và tiêu tốn nước.\n\nViệt Nam bán xăng E10 trên toàn quốc từ ngày 1/6/2026 theo Thông tư 50/2025/TT-BCT. Bài học từ Brazil giúp cân nhắc lợi ích và rủi ro của nhiên liệu sinh học.",
+  "boi_canh": "Theo Hiệp hội Nhiên liệu Tái tạo Hoa Kỳ (RFA), năm 2025 Hoa Kỳ và Brazil sản xuất lần lượt khoảng 52% và 27% ethanol nhiên liệu của thế giới. Ethanol ở Brazil được sản xuất chủ yếu từ mía. Từ ngày 1/8/2025, tỉ lệ ethanol bắt buộc pha vào xăng ở Brazil được nâng từ 27% lên 30% (E30).\n\nQuá trình sản xuất: ép mía lấy nước đường (chủ yếu là saccharose), thuỷ phân thành glucose và fructose, rồi lên men nhờ nấm men rượu: C₆H₁₂O₆ —(men rượu)→ 2C₂H₅OH + 2CO₂. Dung dịch sau lên men được chưng cất để thu ethanol nồng độ cao. Bã mía được đốt để cung cấp nhiệt và điện cho nhà máy.\n\nNhiên liệu sinh học là một trong những cách giảm phụ thuộc dầu mỏ trong giao thông, nhất là ở những nước có sẵn nguyên liệu nông nghiệp. Tuy nhiên, mở rộng diện tích trồng mía có thể gây cạnh tranh với đất trồng lương thực, phá rừng và tiêu tốn nước.\n\nViệt Nam bán xăng E10 trên toàn quốc từ ngày 1/6/2026 theo Thông tư 50/2025/TT-BCT. Bài học từ Brazil giúp cân nhắc lợi ích và rủi ro của nhiên liệu sinh học.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Ảnh cánh đồng mía và nhà máy ethanol ở Brazil (Wikimedia Commons, giấy phép CC).",
   "nguon": [
@@ -250,7 +250,7 @@ NL.add([
    "VD3",
    "VD5"
   ],
-  "dinh_huong": "Lớp 12, bài Glucose: phản ứng lên men; liên hệ lớp 10 chủ đề năng lượng (cd01-04).\nHình thức: tranh luận “Nhiên liệu sinh học: nên hay không?” 20 phút.",
+  "dinh_huong": "Lớp 12, bài Glucose: phản ứng lên men; liên hệ lớp 10 chủ đề năng lượng (CD01-04).\nHình thức: tranh luận “Nhiên liệu sinh học: nên hay không?” 20 phút.",
   "cau_hoi": [
    {
     "ma": [
@@ -275,12 +275,12 @@ NL.add([
      "VD5"
     ],
     "dang": "Đúng/sai",
-    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Phản ứng lên men glucose tạo ra ethanol và CO₂.\nb) Ethanol nhiên liệu ở Brazil chủ yếu sản xuất từ sắn.\nc) Bã mía có thể dùng làm nhiên liệu cho nhà máy.\nd) Nhiên liệu sinh học hoàn toàn không có tác động môi trường.",
+    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Phản ứng lên men rượu từ glucose với xúc tác enzyme (men rượu) tạo ra ethanol và khí carbon dioxide (CO₂).\nb) Ethanol nhiên liệu ở Brazil chủ yếu sản xuất từ sắn.\nc) Bã mía có thể dùng làm nhiên liệu cho nhà máy.\nd) Nhiên liệu sinh học hoàn toàn không có tác động môi trường.",
     "dap_an": "a) Đúng.\nb) Sai – chủ yếu từ mía.\nc) Đúng.\nd) Sai."
    }
   ],
   "luu_y_khoa_hoc": [
-   "Saccharose phải thuỷ phân thành monosaccharide trước khi nấm men lên men (nấm men có enzyme invertase làm việc này).",
+   "Saccharose phải thuỷ phân thành các monosaccharide (ví dụ bằng enzyme invertase) trước khi nấm men rượu lên men.",
    "Tỉ lệ pha ethanol của Brazil đã thay đổi nhiều lần; con số E30 áp dụng từ 1/8/2025.",
    "“Trung hoà carbon” của nhiên liệu sinh học còn phụ thuộc phát thải khi trồng trọt, vận chuyển, chế biến."
   ],
@@ -296,9 +296,9 @@ NL.add([
   "lop": "12",
   "tieu_de": "Tinh bột trong củ sắn",
   "yccd": "Trình bày được cấu tạo, tính chất của tinh bột; phản ứng thuỷ phân tinh bột; liên hệ sản xuất ở Việt Nam.",
-  "boi_canh": "Sắn (khoai mì) từng là món ăn độn trong những năm khó khăn. Ngày nay, sắn là cây công nghiệp quan trọng, nguyên liệu cho tinh bột, thức ăn chăn nuôi và nhiên liệu sinh học.\n\nTheo cơ sở dữ liệu FoodData Central (USDA), 100 g củ sắn tươi chứa khoảng 59,7 g nước và 38,1 g carbohydrate, tức hơn một phần ba khối lượng, chủ yếu là tinh bột. Tinh bột gồm hai thành phần: amylose (mạch không phân nhánh) và amylopectin (mạch phân nhánh), đều tạo từ các gốc α-glucose.\n\nTinh bột sắn được dùng làm bánh, mì sợi, trân châu trà sữa; trong công nghiệp được thuỷ phân bằng acid hoặc enzyme thành glucose, siro, sau đó lên men thành ethanol (pha vào xăng sinh học), bột ngọt (monosodium glutamate), acid citric. Phản ứng thuỷ phân hoàn toàn: (C₆H₁₀O₅)ₙ + nH₂O → nC₆H₁₂O₆.\n\nLưu ý an toàn: theo FAO, củ sắn chứa glycoside sinh cyanide, có thể giải phóng hydrogen cyanide (HCN) gây ngộ độc; vỏ chứa nhiều hơn ruột. Bóc vỏ, ngâm nước (thay nước nhiều lần), luộc kĩ, mở vung khi luộc giúp giảm lượng chất độc.",
+  "boi_canh": "Sắn (khoai mì) từng là món ăn độn trong những năm khó khăn. Ngày nay, sắn là cây công nghiệp quan trọng, nguyên liệu cho tinh bột, thức ăn chăn nuôi và nhiên liệu sinh học.\n\nTheo cơ sở dữ liệu FoodData Central (USDA), 100 g củ sắn tươi chứa khoảng 59,7 g nước và 38,1 g carbohydrate, tức hơn một phần ba khối lượng củ sắn là carbohydrate (chủ yếu là tinh bột). Tinh bột gồm hai thành phần: amylose (mạch không phân nhánh) và amylopectin (mạch phân nhánh), đều tạo từ các gốc α-glucose.\n\nTinh bột sắn được dùng làm bánh, mì sợi; trong công nghiệp được thuỷ phân bằng acid hoặc enzyme thành glucose, siro, sau đó lên men thành ethanol (pha vào xăng sinh học), citric acid... Phản ứng thuỷ phân hoàn toàn: (C₆H₁₀O₅)ₙ + nH₂O —(H⁺ hoặc enzyme, t°)→ nC₆H₁₂O₆.\n\nLưu ý an toàn: Củ sắn tươi chứa các cyanogenic glycoside (chủ yếu là linamarin), khi bị cắt gọt hoặc đập dập sẽ bị enzyme thủy phân giải phóng hydrogen cyanide (HCN) – một chất cực độc. Độc tố này tập trung nhiều ở vỏ gỗ và hai đầu củ. Do HCN dễ tan trong nước và có nhiệt độ sôi thấp (26 °C), việc bóc sạch vỏ, cắt bỏ hai đầu, ngâm nước nhiều giờ (thay nước thường xuyên), luộc kỹ và mở vung khi sôi sẽ giúp độc tố HCN hòa tan và bay hơi triệt để, đảm bảo an toàn khi sử dụng.",
   "bang_so_lieu": null,
-  "hinh_goi_y": "Ảnh củ sắn, bột sắn và trân châu (ảnh tự chụp).",
+  "hinh_goi_y": "Ảnh củ sắn, bột sắn (ảnh tự chụp).",
   "nguon": [
    {
     "trich_dan": "USDA Agricultural Research Service. FoodData Central (SR Legacy): Cassava, raw – FDC ID 169985 (nước 59,7 g; carbohydrate 38,1 g/100 g). Truy cập 06/11/2026.",
@@ -354,13 +354,13 @@ NL.add([
      "VD4"
     ],
     "dang": "Đúng/sai",
-    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Tinh bột được tạo từ các gốc α-glucose.\nb) Amylopectin có mạch phân nhánh.\nc) Từ tinh bột sắn có thể sản xuất ethanol và bột ngọt.\nd) Ăn sắn sống an toàn như ăn khoai lang sống.",
+    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Tinh bột được tạo từ các gốc α-glucose.\nb) Amylopectin có mạch phân nhánh.\nc) Từ tinh bột sắn có thể sản xuất ethanol.\nd) Ăn sắn sống an toàn như ăn khoai lang sống.",
     "dap_an": "a) Đúng.\nb) Đúng.\nc) Đúng.\nd) Sai – sắn sống có nguy cơ ngộ độc cyanide."
    }
   ],
   "luu_y_khoa_hoc": [
    "Hàm lượng tinh bột trong sắn thay đổi theo giống, thời gian thu hoạch; số liệu USDA là giá trị trung bình. Nhiệt độ sôi của HCN theo PubChem là 25,63 °C.",
-   "Không mô tả liều độc cụ thể; tập trung vào cách chế biến an toàn.",
+   "Không mô tả liều độc cụ thể của củ sắn; tập trung vào cách chế biến an toàn.",
    "FAO lưu ý luộc trực tiếp củ tươi không phải lúc nào cũng loại hết cyanide; cần kết hợp nhiều bước chế biến."
   ],
   "trang_thai": "nhap",

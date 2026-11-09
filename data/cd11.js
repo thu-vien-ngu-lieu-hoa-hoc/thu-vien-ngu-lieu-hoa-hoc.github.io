@@ -318,7 +318,7 @@ NL.add([
    "VD2",
    "VD4"
   ],
-  "dinh_huong": "Lớp 12, bài Protein: phản ứng thuỷ phân.\nHình thức: học sinh mang nhãn nước mắm, so sánh độ đạm và thành phần; liên hệ cd11-03.",
+  "dinh_huong": "Lớp 12, bài Protein: phản ứng thuỷ phân.\nHình thức: học sinh mang nhãn nước mắm, so sánh độ đạm và thành phần; liên hệ CD11-03.",
   "cau_hoi": [
    {
     "ma": [
@@ -350,7 +350,7 @@ NL.add([
   "luu_y_khoa_hoc": [
    "“Độ đạm” (°N) là cách gọi quen thuộc, thực chất là g N/L chứ không phải g protein/L.",
    "Bài không nêu ngưỡng nitrogen theo hạng; nếu cần, giáo viên tra trực tiếp toàn văn TCVN 5107:2018.",
-   "Nước mắm rất mặn; khi liên hệ sức khoẻ, nhắc cd07-05 về lượng muối."
+   "Nước mắm rất mặn; khi liên hệ sức khoẻ, nhắc CD07-05 về lượng muối."
   ],
   "trang_thai": "nhap",
   "nguoi_bien_soan": "",

@@ -457,7 +457,7 @@ NL.add([
    "VD3",
    "VD5"
   ],
-  "dinh_huong": "Lớp 11, bài pH và cân bằng trong dung dịch: vận dụng, liên hệ môi trường. Dùng kèm ngữ liệu cd03-03.\nHình thức: dự án nhóm “Bảo vệ rạn san hô Việt Nam”, trình bày poster.",
+  "dinh_huong": "Lớp 11, bài pH và cân bằng trong dung dịch: vận dụng, liên hệ môi trường. Dùng kèm ngữ liệu CD03-03.\nHình thức: dự án nhóm “Bảo vệ rạn san hô Việt Nam”, trình bày poster.",
   "cau_hoi": [
    {
     "ma": [
@@ -626,7 +626,7 @@ NL.add([
    "VD2",
    "VD5"
   ],
-  "dinh_huong": "Lớp 11, bài pH của dung dịch; liên hệ cd03-05 (acid hoá đại dương).\nHình thức: đọc ngữ liệu, làm bài tập pH, sau đó thảo luận “bài học hợp tác quốc tế về môi trường”; ý tưởng từ bài sưu tầm của sinh viên Trần Gia Khánh.",
+  "dinh_huong": "Lớp 11, bài pH của dung dịch; liên hệ CD03-05 (acid hoá đại dương).\nHình thức: đọc ngữ liệu, làm bài tập pH, sau đó thảo luận “bài học hợp tác quốc tế về môi trường”; ý tưởng từ bài sưu tầm của sinh viên Trần Gia Khánh.",
   "cau_hoi": [
    {
     "ma": [

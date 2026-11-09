@@ -535,7 +535,7 @@ NL.add([
    "VD2",
    "VD5"
   ],
-  "dinh_huong": "Lớp 12, bài Vật liệu polymer (chất dẻo); ôn lại độ âm điện, liên kết cộng hoá trị phân cực (lớp 10); liên hệ cd12-01, cd12-05.\nHình thức: tính hiệu độ âm điện, thảo luận ưu – nhược điểm của vật liệu có độ bền hoá học cao; ý tưởng từ bài sưu tầm của sinh viên Lê Anh Đức.",
+  "dinh_huong": "Lớp 12, bài Vật liệu polymer (chất dẻo); ôn lại độ âm điện, liên kết cộng hoá trị phân cực (lớp 10); liên hệ CD12-01, CD12-05.\nHình thức: tính hiệu độ âm điện, thảo luận ưu – nhược điểm của vật liệu có độ bền hoá học cao; ý tưởng từ bài sưu tầm của sinh viên Lê Anh Đức.",
   "cau_hoi": [
    {
     "ma": [

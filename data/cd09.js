@@ -5,7 +5,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Thành phần acid béo no và không no của một số dầu, mỡ",
   "yccd": "Trình bày được khái niệm lipid, chất béo, acid béo; phân biệt acid béo no và không no; liên hệ chế độ ăn hợp lí.",
-  "boi_canh": "Chất béo trong dầu ăn, mỡ động vật chủ yếu là triglyceride: ester của glycerol với ba gốc acid béo. Gốc acid béo no (chỉ có liên kết đơn C–C, như palmitic, stearic acid) làm chất béo dễ đông đặc ở nhiệt độ thường. Gốc acid béo không no (có liên kết đôi C=C, như oleic, linoleic acid) làm chất béo ở dạng lỏng.\n\nCơ sở dữ liệu FoodData Central của Bộ Nông nghiệp Hoa Kỳ (USDA) cho biết hàm lượng acid béo no trong 100 g một số loại dầu, mỡ (bảng dưới). Dầu dừa chứa tới hơn 80% acid béo no, nên vào những ngày lạnh, chai dầu dừa thường đông lại thành màu trắng. Dầu cải (canola) và dầu ô liu chứa nhiều acid béo không no.\n\nTổ chức Y tế Thế giới (WHO) khuyến cáo năng lượng từ chất béo no không quá 10% tổng năng lượng khẩu phần, có thể thay bằng chất béo không no từ thực vật. Chế độ ăn nhiều chất béo no liên quan đến tăng cholesterol LDL trong máu và nguy cơ bệnh tim mạch.\n\nKhi đi siêu thị, đọc nhãn dinh dưỡng giúp người tiêu dùng lựa chọn dầu ăn phù hợp.",
+  "boi_canh": "Chất béo trong dầu ăn, mỡ động vật chủ yếu là triglyceride: ester của glycerol với ba gốc acid béo. Gốc acid béo no (chỉ có liên kết đơn C–C, như palmitic, stearic acid) làm chất béo dễ đông đặc ở nhiệt độ thường. Gốc acid béo không no (có liên kết đôi C=C, như oleic, linoleic acid) làm chất béo ở dạng lỏng.\n\nCơ sở dữ liệu FoodData Central của Bộ Nông nghiệp Hoa Kỳ (USDA) cho biết hàm lượng acid béo no trong 100 g một số loại dầu, mỡ (bảng dưới). Dầu dừa chứa tới hơn 80% acid béo no, nên vào những ngày lạnh, chai dầu dừa thường đông lại thành màu trắng. Dầu cải (canola) và dầu ô liu chứa nhiều acid béo không no.\n\nTổ chức Y tế Thế giới (WHO) khuyến cáo năng lượng từ chất béo no không quá 10% tổng năng lượng khẩu phần, có thể thay bằng chất béo không no từ thực vật. Chế độ ăn nhiều chất béo no liên quan đến tăng cholesterol LDL trong máu và nguy cơ bệnh tim mạch.\n\nKhi đi siêu thị, đọc nhãn dinh dưỡng giúp người tiêu dùng lựa chọn dầu ăn phù hợp nhu cầu dinh dưỡng và sức khỏe.",
   "bang_so_lieu": {
    "tieu_de": "Acid béo no trong 100 g dầu, mỡ",
    "cot": [
@@ -104,14 +104,14 @@ NL.add([
     ],
     "dang": "Tự luận",
     "noi_dung": "Vào mùa đông, chai dầu dừa đông đặc còn chai dầu đậu nành vẫn lỏng. Dựa vào bảng, giải thích hiện tượng.",
-    "dap_an": "Dầu dừa chứa khoảng 82,5% acid béo no; gốc acid béo no có mạch thẳng, các phân tử xếp khít, nhiệt độ nóng chảy cao hơn nên dễ đông. Dầu đậu nành chủ yếu là acid béo không no, mạch bị gấp khúc ở liên kết đôi cis, khó xếp khít, vẫn lỏng."
+    "dap_an": "Dầu dừa chứa khoảng 82,5% acid béo no; gốc acid béo no có mạch không phân nhánh, các phân tử xếp khít, nhiệt độ nóng chảy cao hơn nên dễ đông đặc ở nhiệt độ phòng. Dầu đậu nành chủ yếu là acid béo không no, mạch bị cứng nhắc gấp khúc ở liên kết đôi cis, khó xếp khít, vẫn lỏng."
    },
    {
     "ma": [
      "TH4"
     ],
     "dang": "Trả lời ngắn",
-    "noi_dung": "Một người ăn 2 000 kcal mỗi ngày. Theo WHO, năng lượng từ chất béo no nên dưới 10%. Lượng chất béo no tối đa là bao nhiêu gam mỗi ngày? (1 g chất béo cho khoảng 9 kcal; làm tròn đến hàng đơn vị.)",
+    "noi_dung": "Trung bình, một người có thể nạp 2 000 kcal mỗi ngày qua việc ăn uống. Theo WHO, năng lượng từ chất béo no nên dưới 10%. Lượng chất béo no tối đa là bao nhiêu gam mỗi ngày? (1 g chất béo cho khoảng 9 kcal; làm tròn đến hàng đơn vị.)",
     "dap_an": "22. Cách tính: 2 000 × 10% = 200 kcal; 200 : 9 ≈ 22 g."
    },
    {
@@ -120,7 +120,7 @@ NL.add([
      "VD2"
     ],
     "dang": "Đúng/sai",
-    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Triglyceride là ester của glycerol và acid béo.\nb) Theo bảng, mỡ lợn chứa nhiều acid béo no hơn dầu cọ.\nc) Dầu thực vật nào cũng ít acid béo no hơn mỡ động vật.\nd) Gốc acid béo không no có ít nhất một liên kết đôi C=C.",
+    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Triglyceride là ester của glycerol và acid béo.\nb) Theo bảng, mỡ lợn chứa nhiều acid béo no hơn dầu cọ.\nc) Dầu thực vật nào cũng ít acid béo no hơn mỡ động vật.\nd) Gốc acid béo không no có ít nhất một liên kết bội.",
     "dap_an": "a) Đúng.\nb) Sai – mỡ lợn 39,2 g, dầu cọ 49,3 g.\nc) Sai – dầu dừa, dầu cọ chứa nhiều acid béo no hơn mỡ lợn.\nd) Đúng."
    }
   ],
@@ -141,7 +141,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Phản ứng xà phòng hoá và chỉ số xà phòng hoá",
   "yccd": "Trình bày được phản ứng xà phòng hoá chất béo; thực hiện được thí nghiệm điều chế xà phòng; nêu được cơ chế tẩy rửa.",
-  "boi_canh": "Xà phòng đã được con người làm từ hàng nghìn năm trước bằng cách đun mỡ động vật với tro bếp (chứa base). Ngày nay, phản ứng này được gọi là phản ứng xà phòng hoá: chất béo + NaOH → glycerol + muối sodium của acid béo (xà phòng).\n\nCác nhà sản xuất xà phòng dùng chỉ số xà phòng hoá: số miligam KOH cần để xà phòng hoá hoàn toàn 1 gam chất béo. Chỉ số này khác nhau giữa các loại dầu. Theo tiêu chuẩn Codex về dầu thực vật (CXS 210-1999), dầu dừa có chỉ số 248–265 mg KOH/g vì chứa nhiều acid béo mạch ngắn; dầu đậu nành chỉ 189–195 mg KOH/g. Từ chỉ số này, có thể quy đổi ra lượng NaOH cần dùng (nhân với 40/56).\n\nThí nghiệm gợi ý cho lớp học (giáo viên cần làm thử trước): đun cách thuỷ 10 g dầu dừa với 15 mL dung dịch NaOH 20% trong khoảng 15–20 phút, khuấy đều. Sau đó thêm dung dịch NaCl bão hoà, xà phòng nổi lên trên (quá trình muối kết). Vớt xà phòng, rửa lại, để khô.\n\nPhân tử xà phòng có đầu ion ưa nước và đuôi hydrocarbon dài ưa dầu. Khi giặt, đuôi kị nước hoà tan vào vết dầu mỡ, đầu ưa nước kéo vết bẩn vào nước. Đó là cơ chế tẩy rửa.",
+  "boi_canh": "Xà phòng đã được con người làm từ hàng nghìn năm trước bằng cách đun mỡ động vật với tro bếp (có tính kiềm). Phản ứng này tương tự như phản ứng xà phòng hoá ngày nay: chất béo + NaOH → glycerol + muối sodium của acid béo (xà phòng).\n\nCác nhà sản xuất xà phòng dùng chỉ số xà phòng hoá: số miligam KOH cần để xà phòng hoá hoàn toàn 1 gam chất béo. Chỉ số này khác nhau giữa các loại dầu. Theo tiêu chuẩn Codex về dầu thực vật (CXS 210-1999), dầu dừa có chỉ số 248–265 mg KOH/g vì chứa nhiều acid béo mạch ngắn; dầu đậu nành chỉ 189–195 mg KOH/g. Từ chỉ số này, có thể quy đổi ra lượng NaOH cần dùng (nhân với 40/56).\n\nThí nghiệm gợi ý cho lớp học (giáo viên cần làm thử trước): đun cách thuỷ 10 g dầu dừa với 15 mL dung dịch NaOH 20% trong khoảng 15–20 phút, khuấy đều. Sau đó thêm dung dịch NaCl bão hoà, xà phòng nổi lên trên (quá trình muối kết). Vớt xà phòng, rửa lại, để khô.\n\nPhân tử xà phòng có đầu ion ưa nước và đuôi hydrocarbon dài ưa dầu. Khi giặt, đuôi kị nước hoà tan vào vết dầu mỡ, đầu ưa nước kéo vết bẩn vào nước. Đó là cơ chế tẩy rửa.",
   "bang_so_lieu": {
    "tieu_de": "Chỉ số xà phòng hoá của một số dầu thực vật (Codex CXS 210-1999)",
    "cot": [
@@ -198,7 +198,7 @@ NL.add([
      "TH4"
     ],
     "dang": "Trả lời ngắn",
-    "noi_dung": "Tính khối lượng NaOH (gam) tối thiểu để xà phòng hoá hoàn toàn 10 g dầu dừa, giả sử chỉ số xà phòng hoá là 250 mg KOH/g (nằm trong khoảng Codex 248–265). (Làm tròn đến hàng phần mười.)",
+    "noi_dung": "Tính khối lượng NaOH (gam) tối thiểu để xà phòng hoá hoàn toàn 10 g dầu dừa, giả sử chỉ số xà phòng hoá là 250 mg KOH/g. (Làm tròn đến hàng phần mười.)",
     "dap_an": "1,8. Cách tính: KOH cần = 10 × 250 = 2 500 mg = 2,5 g, tương ứng 2,5/56 ≈ 0,0446 mol; m(NaOH) = 0,0446 × 40 ≈ 1,8 g."
    },
    {
@@ -215,7 +215,7 @@ NL.add([
      "VD4"
     ],
     "dang": "Đúng/sai",
-    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Sản phẩm phụ của phản ứng xà phòng hoá chất béo là glycerol.\nb) Phân tử xà phòng có một đầu ưa nước và một đuôi ưa dầu.\nc) Xà phòng giặt tốt trong nước cứng như trong nước mềm.\nd) Dầu có chỉ số xà phòng hoá lớn cần nhiều base hơn cho cùng khối lượng.",
+    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Cùng với xà phòng, phản ứng xà phòng hoá chất béo còn tạo ra glycerol.\nb) Phân tử xà phòng có một đầu ưa nước và một đuôi ưa dầu.\nc) Xà phòng giặt tốt trong nước cứng như trong nước mềm.\nd) Dầu có chỉ số xà phòng hoá lớn cần nhiều base hơn cho cùng khối lượng.",
     "dap_an": "a) Đúng.\nb) Đúng.\nc) Sai – Ca²⁺, Mg²⁺ tạo kết tủa với xà phòng, giảm tác dụng.\nd) Đúng."
    }
   ],
@@ -236,7 +236,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Chất béo trans tạo thành khi hydrogen hoá một phần dầu thực vật",
   "yccd": "Phân biệt được chất béo no, không no, chất béo trans; đánh giá được ảnh hưởng của chất béo đến sức khoẻ.",
-  "boi_canh": "Từ đầu thế kỉ 20, các nhà sản xuất thực phẩm dùng phản ứng hydrogen hoá một phần dầu thực vật: cộng H₂ vào một số liên kết đôi C=C để biến dầu lỏng thành chất béo rắn như bơ thực vật (margarine), shortening. Sản phẩm rẻ, bền, giúp bánh giòn lâu.\n\nTrong quá trình này, một phần liên kết đôi cis chuyển thành dạng trans, tạo ra chất béo trans. Nhiều nghiên cứu cho thấy chất béo trans làm tăng cholesterol LDL và giảm cholesterol HDL, làm tăng nguy cơ bệnh tim mạch.\n\nNăm 2018, Tổ chức Y tế Thế giới (WHO) phát động gói hành động REPLACE, kêu gọi các nước loại bỏ chất béo trans công nghiệp khỏi nguồn cung thực phẩm. WHO khuyến cáo năng lượng từ chất béo trans dưới 1% tổng năng lượng, tức dưới 2,2 g/ngày với khẩu phần 2 000 kcal. Theo WHO, hơn 278 000 ca tử vong mỗi năm trên thế giới có thể quy cho chất béo trans công nghiệp.\n\nWHO khuyến nghị hai chính sách “thực hành tốt nhất”: giới hạn bắt buộc 2 g chất béo trans công nghiệp trên 100 g tổng chất béo trong mọi thực phẩm, hoặc cấm sản xuất, sử dụng dầu hydrogen hoá một phần.",
+  "boi_canh": "Từ đầu thế kỉ 20, các nhà sản xuất thực phẩm dùng phản ứng hydrogen hoá một phần dầu thực vật: cộng H₂ vào một số liên kết đôi C=C để biến dầu lỏng thành chất béo rắn như bơ thực vật (margarine), shortening.\n\nTrong quá trình này, một phần liên kết đôi cis chuyển thành dạng trans, tạo ra chất béo trans. Nhiều nghiên cứu cho thấy chất béo trans làm tăng cholesterol LDL và giảm cholesterol HDL, làm tăng nguy cơ bệnh tim mạch.\n\nNăm 2018, Tổ chức Y tế Thế giới (WHO) phát động gói hành động REPLACE, kêu gọi các nước loại bỏ chất béo trans công nghiệp khỏi nguồn cung thực phẩm. WHO khuyến cáo năng lượng từ chất béo trans dưới 1% tổng năng lượng, tức dưới 2,2 g/ngày với khẩu phần 2 000 kcal. Theo WHO, hơn 278 000 ca tử vong mỗi năm trên thế giới có thể quy cho chất béo trans công nghiệp.\n\nWHO khuyến nghị hai chính sách “thực hành tốt nhất”: giới hạn bắt buộc 2 g chất béo trans công nghiệp trên 100 g tổng chất béo trong mọi thực phẩm, hoặc cấm sản xuất, sử dụng dầu hydrogen hoá một phần.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Hình mô hình phân tử acid oleic (cis) và acid elaidic (trans) từ PubChem.",
   "nguon": [
@@ -288,7 +288,7 @@ NL.add([
      "VD5"
     ],
     "dang": "Đúng/sai",
-    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Chất béo trans công nghiệp chủ yếu sinh ra từ quá trình hydrogen hoá một phần dầu thực vật.\nb) Chất béo trans làm tăng cholesterol LDL.\nc) Sáng kiến REPLACE của WHO nhằm khuyến khích dùng thêm chất béo trans.\nd) Đọc nhãn “dầu hydrogen hoá một phần” giúp nhận biết thực phẩm có thể chứa chất béo trans.",
+    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Chất béo trans công nghiệp có thể sinh ra từ quá trình hydrogen hoá một phần dầu thực vật.\nb) Chất béo trans làm tăng cholesterol LDL.\nc) Sáng kiến REPLACE của WHO nhằm khuyến khích dùng thêm chất béo trans.\nd) Đọc nhãn “dầu hydrogen hoá một phần” giúp nhận biết thực phẩm có thể chứa chất béo trans.",
     "dap_an": "a) Đúng.\nb) Đúng.\nc) Sai.\nd) Đúng."
    }
   ],
@@ -619,7 +619,7 @@ NL.add([
    "VD1",
    "VD2"
   ],
-  "dinh_huong": "Lớp 12, bài Ester – lipid (chất béo); liên hệ cd09-01 và cd09-03 (chất béo trans).\nHình thức: so sánh hai đồng phân, tính chỉ số iodine; ý tưởng từ bài sưu tầm của sinh viên Hà Sỹ Thiện (dạng câu hỏi trong đề OCR A-level).",
+  "dinh_huong": "Lớp 12, bài Ester – lipid (chất béo); liên hệ CD09-01 và CD09-03 (chất béo trans).\nHình thức: so sánh hai đồng phân, tính chỉ số iodine; ý tưởng từ bài sưu tầm của sinh viên Hà Sỹ Thiện (dạng câu hỏi trong đề OCR A-level).",
   "cau_hoi": [
    {
     "ma": [
