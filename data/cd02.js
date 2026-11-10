@@ -217,7 +217,6 @@ NL.add([
   "yccd": "Trình bày được ảnh hưởng của diện tích bề mặt tiếp xúc đến tốc độ phản ứng; vận dụng giải thích các sự cố trong thực tiễn.",
   "boi_canh": "Đường ăn là chất quen thuộc và khó bắt lửa khi ở dạng hạt. Tuy nhiên, khi bị nghiền thành bụi mịn lơ lửng trong không khí, đường có thể cháy nhanh đến mức gây nổ.\nNgày 7/2/2008, tại nhà máy tinh luyện đường Imperial Sugar ở Port Wentworth, bang Georgia (Hoa Kỳ), một lượng lớn bụi đường tích tụ trong toà nhà đóng gói đã bắt lửa và gây ra chuỗi vụ nổ. Theo Ban Điều tra An toàn và Nguy cơ Hoá chất Hoa Kỳ (CSB), vụ nổ làm 14 người chết và 38 người bị thương, trong đó 14 người bị bỏng nặng, nguy hiểm đến tính mạng. CSB kết luận nguyên nhân chính là bụi đường tích tụ do không được thu gom, vệ sinh thường xuyên.\nBụi bột mì, bụi gỗ, bột nhôm, bụi than cũng có nguy cơ gây nổ tương tự. Khi một khối chất rắn bị chia nhỏ, tổng diện tích bề mặt tăng lên rất nhiều, oxygen tiếp xúc được với nhiều phân tử chất cháy hơn nên phản ứng cháy xảy ra gần như tức thời.\nVì vậy, các nhà máy chế biến bột, gỗ, than phải có hệ thống hút bụi, chống tĩnh điện và quy trình vệ sinh nghiêm ngặt.",
   "bang_so_lieu": null,
-  "hinh_goi_y": "Sơ đồ hoặc ảnh trong báo cáo CSB về vụ nổ Imperial Sugar (kiểm tra giấy phép); hoặc video an toàn của CSB.",
   "nguon": [
    {
     "trich_dan": "U.S. Chemical Safety and Hazard Investigation Board (CSB). Imperial Sugar Company dust explosion and fire – trang điều tra (ngày 7/2/2008; 14 người chết, 38 người bị thương). Truy cập 06/11/2026.",
@@ -275,7 +274,25 @@ NL.add([
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "06/11/2026",
+  "hinh": [
+   {
+    "src": "data/img/nl/cd02-03.jpg",
+    "chu_thich": "Nhà máy lọc đường Imperial Sugar (Port Wentworth, Georgia, Hoa Kỳ) nhìn từ trên cao sau vụ nổ bụi đường ngày 7/2/2008.",
+    "nguon": "U.S. Chemical Safety Board (CSB), trang điều tra “Imperial Sugar Company Dust Explosion and Fire”",
+    "url": "https://www.csb.gov/imperial-sugar-company-dust-explosion-and-fire/",
+    "giay_phep": "Phạm vi công cộng (tài liệu của cơ quan liên bang Hoa Kỳ)"
+   }
+  ],
+  "video": [
+   {
+    "youtube": "Jg7mLSG-Yws",
+    "ten": "Inferno: Dust Explosion at Imperial Sugar",
+    "kenh": "USCSB",
+    "ghi_chu": "Quan sát bụi tích tụ, đám mây bụi và sự lan truyền vụ nổ; không dùng dữ liệu trong video làm kết quả thực nghiệm của học sinh.",
+    "giay_phep": "Nhúng từ kênh gốc trên YouTube"
+   }
+  ]
  },
  {
   "id": "cd02-04",

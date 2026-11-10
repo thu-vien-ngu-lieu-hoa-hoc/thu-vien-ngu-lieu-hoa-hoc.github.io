@@ -105,7 +105,23 @@ NL.add([
    "url_nhung": "https://phet.colorado.edu/sims/html/acid-base-solutions/latest/acid-base-solutions_vi.html",
    "url": "https://phet.colorado.edu/en/simulations/acid-base-solutions",
    "nguon": "PhET Interactive Simulations, University of Colorado Boulder (CC BY 4.0)."
-  }
+  },
+  "video": [
+   {
+    "youtube": "rLc148UCT2w",
+    "ten": "Practical skills assessment video – titration procedure",
+    "kenh": "Royal Society of Chemistry",
+    "ghi_chu": "Minh hoạ kĩ thuật chuẩn độ chung: chuẩn bị burette, đọc thể tích, nhận biết điểm cuối.",
+    "giay_phep": "Nhúng từ kênh gốc trên YouTube"
+   },
+   {
+    "youtube": "c3Ehqt-uW0U",
+    "ten": "Practical skills assessment video – titration calculations",
+    "kenh": "Royal Society of Chemistry",
+    "ghi_chu": "Nên xem sau khi học sinh tự xử lí số liệu để đối chiếu cách tính.",
+    "giay_phep": "Nhúng từ kênh gốc trên YouTube"
+   }
+  ]
  },
  {
   "id": "cd04-02",
@@ -212,7 +228,30 @@ NL.add([
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu đo.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "06/11/2026",
+  "video": [
+   {
+    "youtube": "xBKyjXUhJy0",
+    "ten": "Practical skills assessment video – titration – standard solution",
+    "kenh": "Royal Society of Chemistry",
+    "ghi_chu": "Thao tác cân và pha dung dịch chuẩn bằng bình định mức; dung dịch trong video khác mẫu giấm của ngữ liệu.",
+    "giay_phep": "Nhúng từ kênh gốc trên YouTube"
+   },
+   {
+    "youtube": "rLc148UCT2w",
+    "ten": "Practical skills assessment video – titration procedure",
+    "kenh": "Royal Society of Chemistry",
+    "ghi_chu": "Minh hoạ kĩ thuật chuẩn độ chung; hệ chất và thể tích trong video không trùng với phép chuẩn độ giấm.",
+    "giay_phep": "Nhúng từ kênh gốc trên YouTube"
+   },
+   {
+    "youtube": "c3Ehqt-uW0U",
+    "ten": "Practical skills assessment video – titration calculations",
+    "kenh": "Royal Society of Chemistry",
+    "ghi_chu": "Nên xem sau khi học sinh tự tính; không dùng đáp số trong video cho mẫu giấm của ngữ liệu.",
+    "giay_phep": "Nhúng từ kênh gốc trên YouTube"
+   }
+  ]
  },
  {
   "id": "cd04-03",

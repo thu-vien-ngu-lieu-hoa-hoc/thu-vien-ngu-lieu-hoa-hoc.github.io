@@ -133,7 +133,23 @@ NL.add([
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "06/11/2026",
+  "hinh": [
+   {
+    "src": "data/img/nl/cd09-01a.webp",
+    "chu_thich": "Stearic acid – một acid béo no: mạch hydrocarbon chỉ có liên kết đơn. Chữ trong hình giữ nguyên bản gốc tiếng Anh.",
+    "nguon": "OpenStax, Biology 2e (Rice University), mục 3.3, Figure 3.14",
+    "url": "https://openstax.org/books/biology-2e/pages/3-3-lipids",
+    "giay_phep": "CC BY 4.0"
+   },
+   {
+    "src": "data/img/nl/cd09-01b.webp",
+    "chu_thich": "Oleic acid – một acid béo không no: mạch có một liên kết đôi C=C làm mạch bị gấp khúc.",
+    "nguon": "OpenStax, Biology 2e (Rice University), mục 3.3, Figure 3.15",
+    "url": "https://openstax.org/books/biology-2e/pages/3-3-lipids",
+    "giay_phep": "CC BY 4.0"
+   }
+  ]
  },
  {
   "id": "cd09-02",
@@ -301,7 +317,16 @@ NL.add([
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "06/11/2026",
+  "hinh": [
+   {
+    "src": "data/img/nl/cd09-cistrans.webp",
+    "chu_thich": "Acid béo no (chỉ có liên kết đơn) và acid béo không no; ở acid béo không no, cấu hình cis làm mạch gấp khúc, cấu hình trans làm mạch gần thẳng. Hình minh hoạ cấu tạo, không mô tả các bước của phản ứng hydrogen hoá. Chữ trong hình giữ nguyên bản gốc tiếng Anh.",
+    "nguon": "OpenStax, Biology 2e (Rice University), mục 3.3, Figure 3.16",
+    "url": "https://openstax.org/books/biology-2e/pages/3-3-lipids",
+    "giay_phep": "CC BY 4.0"
+   }
+  ]
  },
  {
   "id": "cd09-04",
@@ -589,7 +614,6 @@ NL.add([
    ],
    "ghi_chu": "Nhiệt độ nóng chảy theo PubChem (CID 445639 và 637517), truy cập 06/11/2026."
   },
-  "hinh_goi_y": "Công thức khung của hai đồng phân cis và trans (tự vẽ).",
   "nguon": [
    {
     "trich_dan": "PubChem. Oleic acid (CID 445639), mục Melting Point. Truy cập 06/11/2026.",
@@ -650,6 +674,15 @@ NL.add([
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ soạn nháp câu hỏi; số liệu tra trực tiếp trên PubChem; chỉ số iodine được tính thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "06/11/2026",
+  "hinh": [
+   {
+    "src": "data/img/nl/cd09-cistrans.webp",
+    "chu_thich": "Cấu hình cis (hai phần mạch carbon ở cùng phía liên kết đôi, mạch gấp khúc – như oleic acid) và cấu hình trans (hai phần mạch ở khác phía, mạch gần thẳng – như elaidic acid). Chữ trong hình giữ nguyên bản gốc tiếng Anh.",
+    "nguon": "OpenStax, Biology 2e (Rice University), mục 3.3, Figure 3.16",
+    "url": "https://openstax.org/books/biology-2e/pages/3-3-lipids",
+    "giay_phep": "CC BY 4.0"
+   }
+  ]
  }
 ]);

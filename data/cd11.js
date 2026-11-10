@@ -221,7 +221,6 @@ NL.add([
   "yccd": "Trình bày được thành phần nguyên tố của protein; vận dụng tính toán phần trăm nguyên tố; đánh giá vấn đề an toàn thực phẩm.",
   "boi_canh": "Năm 2008, Trung Quốc phát hiện sữa bột trẻ em bị pha trộn melamine – một hoá chất dùng trong sản xuất nhựa. Theo bài tổng quan của Gossner và cộng sự (2009), khoảng 300 000 trẻ em bị ảnh hưởng; tính đến 1/12/2008 có 294 000 ca được ghi nhận và 6 trẻ tử vong, nhiều trẻ bị sỏi thận. Nhiều nước đã thu hồi các sản phẩm nghi nhiễm.\nLí do melamine bị pha vào sữa liên quan đến phương pháp xác định protein. Phương pháp phổ biến để xác định hàm lượng protein trong thực phẩm (phương pháp Kjeldahl) thực chất là xác định hàm lượng nitrogen, rồi nhân với một hệ số (thường là 6,25 vì protein chứa khoảng 16% nitrogen). Phương pháp này không phân biệt được nitrogen của protein với nitrogen của chất khác.\nMelamine có công thức C₃H₆N₆, chứa tới khoảng 66,7% nitrogen về khối lượng. Thêm melamine vào sữa pha loãng làm kết quả đo hàm lượng protein tăng giả tạo, trong khi giá trị dinh dưỡng của sữa không hề tăng.\nSau sự cố, các phòng thí nghiệm phát triển thêm phương pháp phát hiện melamine trực tiếp. Năm 2010, Uỷ ban Codex Alimentarius đặt giới hạn melamine: 1 mg/kg trong sữa bột trẻ em và 2,5 mg/kg trong các thực phẩm khác và thức ăn chăn nuôi.",
   "bang_so_lieu": null,
-  "hinh_goi_y": "Công thức cấu tạo melamine từ PubChem.",
   "nguon": [
    {
     "trich_dan": "Gossner, C. M.-E., Schlundt, J., Ben Embarek, P., et al. (2009). The melamine incident: Implications for international food and feed safety. Environmental Health Perspectives, 117(12), 1803–1808. https://doi.org/10.1289/ehp.0900949. Truy cập 06/11/2026.",
@@ -289,7 +288,16 @@ NL.add([
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "06/11/2026",
+  "hinh": [
+   {
+    "src": "data/img/nl/cd11-03.png",
+    "chu_thich": "Công thức cấu tạo melamine (C₃H₆N₆): vòng triazine gắn ba nhóm amino –NH₂; nitrogen chiếm khoảng 66,7% khối lượng phân tử.",
+    "nguon": "PubChem, National Library of Medicine (NIH), Melamine, CID 7955",
+    "url": "https://pubchem.ncbi.nlm.nih.gov/compound/melamine",
+    "giay_phep": "Phạm vi công cộng (tài liệu của cơ quan liên bang Hoa Kỳ)"
+   }
+  ]
  },
  {
   "id": "cd11-04",
@@ -517,6 +525,15 @@ NL.add([
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "06/11/2026",
+  "video": [
+   {
+    "youtube": "_OYxAm-219s",
+    "ten": "Proteins and their structures | One-minute crash course | 2024 Nobel Prize in Chemistry",
+    "kenh": "Nobel Prize",
+    "ghi_chu": "Giới thiệu ngắn về thiết kế protein và dự đoán cấu trúc protein – hai hướng đóng góp được trao giải.",
+    "giay_phep": "Nhúng từ kênh gốc trên YouTube"
+   }
+  ]
  }
 ]);

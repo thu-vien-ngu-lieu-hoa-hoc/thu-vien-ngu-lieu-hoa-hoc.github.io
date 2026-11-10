@@ -367,7 +367,16 @@ NL.add([
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "06/11/2026",
+  "hinh": [
+   {
+    "src": "data/img/nl/cd10-04.webp",
+    "chu_thich": "Hai dạng tinh bột: amylose gồm các mắt xích glucose nối thành mạch không phân nhánh (liên kết α-1,4); amylopectin có thêm các nhánh (liên kết α-1,6). Hình minh hoạ chung, không riêng cho tinh bột sắn. Chữ trong hình giữ nguyên bản gốc tiếng Anh.",
+    "nguon": "OpenStax, Biology 2e (Rice University), mục 3.2, Figure 3.9",
+    "url": "https://openstax.org/books/biology-2e/pages/3-2-carbohydrates",
+    "giay_phep": "CC BY 4.0"
+   }
+  ]
  },
  {
   "id": "cd10-05",
@@ -523,6 +532,15 @@ NL.add([
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "06/11/2026",
+  "hinh": [
+   {
+    "src": "data/img/nl/cd10-06.webp",
+    "chu_thich": "Trong cellulose, các mạch glucose (liên kết β-1,4) xếp song song và liên kết hydrogen với nhau thành vi sợi bền chắc; đây là lí do cần tiền xử lí rơm rạ trước khi thuỷ phân. Chữ trong hình giữ nguyên bản gốc tiếng Anh.",
+    "nguon": "OpenStax, Biology 2e (Rice University), mục 3.2, Figure 3.10",
+    "url": "https://openstax.org/books/biology-2e/pages/3-2-carbohydrates",
+    "giay_phep": "CC BY 4.0"
+   }
+  ]
  }
 ]);

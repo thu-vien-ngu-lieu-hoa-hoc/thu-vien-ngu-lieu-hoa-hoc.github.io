@@ -384,7 +384,16 @@ NL.add([
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "06/11/2026",
+  "hinh": [
+   {
+    "src": "data/img/nl/cd05-04.jpg",
+    "chu_thich": "Một dây chuyền hiện đại gồm các bể điện phân nhôm (anode nung sẵn) đặt cạnh nhau. Ảnh cho thấy quy mô công nghiệp, không thay cho sơ đồ phản ứng ở các điện cực. Ảnh giữ nguyên như bản gốc.",
+    "nguon": "Kvande H., Drabløs P. A. (2014). The aluminum smelting process and innovative alternative technologies. Journal of Occupational and Environmental Medicine, 56(5 Suppl), S23–S32, Figure 1. doi:10.1097/JOM.0000000000000062",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4131935/",
+    "giay_phep": "CC BY-NC-ND 3.0 (giữ nguyên ảnh, không dùng thương mại)"
+   }
+  ]
  },
  {
   "id": "cd05-05",
@@ -458,7 +467,16 @@ NL.add([
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "06/11/2026",
+  "hinh": [
+   {
+    "src": "data/img/nl/cd05-05.png",
+    "chu_thich": "Nhãn cảnh báo dùng khi vận chuyển pin lithium: pin lithium bị hư hỏng, nghiền hoặc đâm thủng có thể phát nhiệt và gây cháy, vì vậy cần được thu gom riêng, không bỏ chung với rác sinh hoạt.",
+    "nguon": "U.S. Environmental Protection Agency (EPA), Used Lithium-Ion Batteries",
+    "url": "https://www.epa.gov/recycle/used-lithium-ion-batteries",
+    "giay_phep": "Phạm vi công cộng (tài liệu của cơ quan liên bang Hoa Kỳ)"
+   }
+  ]
  },
  {
   "id": "cd05-06",

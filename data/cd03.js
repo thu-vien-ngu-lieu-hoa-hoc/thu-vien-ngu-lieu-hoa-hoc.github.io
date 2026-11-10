@@ -501,7 +501,16 @@ NL.add([
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "06/11/2026",
+  "video": [
+   {
+    "youtube": "xuttOKcTPQs",
+    "ten": "NOAA Ocean Acidification Demonstration",
+    "kenh": "NOAA",
+    "ghi_chu": "Thí nghiệm minh hoạ CO₂ làm giảm pH của nước; không thay thế số liệu quan trắc pH đại dương.",
+    "giay_phep": "Nhúng từ kênh gốc trên YouTube"
+   }
+  ]
  },
  {
   "id": "cd03-06",

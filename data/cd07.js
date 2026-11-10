@@ -36,7 +36,6 @@ NL.add([
    ],
    "ghi_chu": "Theo NIST Atomic Spectra Database – Ionization Energies (Li 5,3917; Na 5,1391; K 4,3407; Rb 4,1771; Cs 3,8939 eV), làm tròn đến 2 chữ số thập phân. 1 eV/nguyên tử ≈ 96,49 kJ/mol."
   },
-  "hinh_goi_y": "Video phản ứng của kim loại kiềm với nước (Royal Society of Chemistry, kiểm tra giấy phép).",
   "nguon": [
    {
     "trich_dan": "Kramida, A., Ralchenko, Yu., Reader, J., & NIST ASD Team. NIST Atomic Spectra Database – Ionization Energies Data, truy vấn Li–Cs. National Institute of Standards and Technology. Truy cập 06/11/2026.",
@@ -91,7 +90,16 @@ NL.add([
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "06/11/2026",
+  "video": [
+   {
+    "youtube": "eaChisV5uR0",
+    "ten": "Alkali Metals – Reactions of the alkali metals with water",
+    "kenh": "Royal Society of Chemistry",
+    "ghi_chu": "Nên cho học sinh dự đoán trước khi xem; video minh hoạ định tính xu hướng phản ứng, không phải phép đo năng lượng ion hoá.",
+    "giay_phep": "Nhúng từ kênh gốc trên YouTube"
+   }
+  ]
  },
  {
   "id": "cd07-02",
@@ -248,7 +256,6 @@ NL.add([
    ],
    "ghi_chu": "Theo bảng World Mine Production của USGS Mineral Commodity Summaries 2024 – Lithium (2023, ước tính): Úc 86 000 t, Chile 44 000 t, Trung Quốc 33 000 t, tổng thế giới 180 000 t (không gồm Hoa Kỳ); “Các nước khác” tính bằng hiệu số."
   },
-  "hinh_goi_y": "Ảnh vệ tinh các hồ bay hơi lithium ở sa mạc Atacama (NASA Earth Observatory, phạm vi công cộng).",
   "nguon": [
    {
     "trich_dan": "U.S. Geological Survey. (2024). Mineral Commodity Summaries 2024: Lithium (bảng World Mine Production and Reserves; mục mục đích sử dụng: pin 87%). Truy cập 06/11/2026.",
@@ -303,7 +310,16 @@ NL.add([
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "06/11/2026",
+  "hinh": [
+   {
+    "src": "data/img/nl/cd07-03.jpg",
+    "chu_thich": "Các hồ bay hơi ở Salar de Atacama (Chile) do phi hành gia trên Trạm Vũ trụ Quốc tế chụp ngày 15/12/2009 (ảnh ISS022-E-12224). Nước muối được bơm vào các hồ để nước bay hơi, cô đặc muối lithium; đây không phải hồ chứa lithium kim loại.",
+    "nguon": "NASA Earth Observatory, “Evaporation Ponds, Salar de Atacama, Chile”",
+    "url": "https://science.nasa.gov/earth/earth-observatory/evaporation-ponds-salar-de-atacama-chile-42149/",
+    "giay_phep": "Phạm vi công cộng (tài liệu của cơ quan liên bang Hoa Kỳ)"
+   }
+  ]
  },
  {
   "id": "cd07-04",
@@ -370,7 +386,16 @@ NL.add([
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "06/11/2026",
+  "hinh": [
+   {
+    "src": "data/img/nl/cd07-04.jpg",
+    "chu_thich": "Mặt cắt ống trao đổi nhiệt có lớp cặn dày bám ở thành trong. Cặn (chủ yếu CaCO₃) làm hẹp ống và giảm khả năng truyền nhiệt.",
+    "nguon": "Ảnh của Alexander Yurievich Lebedev, Wikimedia Commons, tệp “Limescale-in-pipe.jpg”; ảnh được tiếp cận qua trang USGS Water Science School “Hardness in water: Lime scale buildup inside a water pipe”",
+    "url": "https://commons.wikimedia.org/wiki/File:Limescale-in-pipe.jpg",
+    "giay_phep": "Phạm vi công cộng (Wikimedia Commons)"
+   }
+  ]
  },
  {
   "id": "cd07-05",

@@ -287,7 +287,16 @@ NL.add([
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "06/11/2026",
+  "video": [
+   {
+    "youtube": "FJvVpP3yt9M",
+    "ten": "How System 03 Cleans the Great Pacific Garbage Patch",
+    "kenh": "The Ocean Cleanup",
+    "ghi_chu": "Video của đơn vị triển khai hệ thống thu gom; số liệu khảo sát vẫn dẫn theo bài báo gốc của Lebreton và cộng sự (2018).",
+    "giay_phep": "Nhúng từ kênh gốc trên YouTube"
+   }
+  ]
  },
  {
   "id": "cd12-04",

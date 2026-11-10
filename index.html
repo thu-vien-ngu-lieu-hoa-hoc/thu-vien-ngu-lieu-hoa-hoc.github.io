@@ -344,6 +344,7 @@ figure img{display:block;margin:0 auto;border-radius:8px;height:auto;cursor:zoom
 figcaption{font-size:14px;color:var(--ink-3);margin-top:10px}
 .fig-title{font:600 17px var(--f-display);margin-bottom:10px}
 .sim-box{aspect-ratio:16/10;display:grid;place-items:center;border:1px solid var(--line);border-radius:12px;background:var(--bg);overflow:hidden;margin-bottom:8px}
+.vid .sim-box{aspect-ratio:16/9}
 .sim-box iframe{width:100%;height:100%;border:0;display:block}
 figure .table-wrap{margin-bottom:0}
 .chart{position:relative;margin-bottom:12px}
@@ -1230,7 +1231,10 @@ function pageNL(id){
       <div class="table-wrap"><table class="sortable" id="tbl"><thead><tr>${b.cot.map((c,j)=>`<th class="${numCol[j]?'num':''}" title="Bấm để sắp xếp">${txt(c)}</th>`).join('')}</tr></thead><tbody>${b.dong.map(r=>`<tr>${(Array.isArray(r)?r:[r]).map((v,j)=>`<td class="${numCol[j]?'num':''}" data-v="${esc(v)}"><span>${txt(v)}</span></td>`).join('')}</tr>`).join('')}</tbody></table></div>
       ${b.ghi_chu?`<figcaption>${txt(b.ghi_chu)}</figcaption>`:''}</figure>`;
   }
-  x.hinh.forEach(f => { if(f && f.src) h += `<figure class="rv"><img src="${esc(f.src)}" alt="${esc(f.chu_thich||'')}" loading="lazy" data-zoom><figcaption>${txt(f.chu_thich||'')}${f.nguon?' Nguồn: '+txt(f.nguon)+'.':''}</figcaption></figure>`; });
+  x.hinh.forEach(f => { if(f && f.src) h += `<figure class="rv"><img src="${esc(f.src)}" alt="${esc(f.chu_thich||'')}" loading="lazy" data-zoom><figcaption>${txt(f.chu_thich||'')}${f.nguon?' Nguồn: '+txt(f.nguon)+'.':''}${f.giay_phep?' Giấy phép: '+txt(f.giay_phep)+'.':''}${f.url?' '+link(f.url):''}</figcaption></figure>`; });
+  (x.video||[]).forEach(v => { if(v && v.youtube) h += `<figure class="rv sim vid"><div class="fig-title">Video: ${txt(v.ten||'')}</div>
+    <div class="sim-box no-print"><button class="btn" type="button" data-sim="https://www.youtube-nocookie.com/embed/${esc(v.youtube)}?rel=0" data-sim-ten="${esc(v.ten||'')}" data-sim-loai="Video">${icon('play',16)} Xem video ngay trên trang</button></div>
+    <figcaption>${v.ghi_chu?txt(v.ghi_chu)+' ':''}Kênh: ${txt(v.kenh||'')} (YouTube). ${link('https://www.youtube.com/watch?v='+v.youtube)}</figcaption></figure>`; });
   if(x.hinh_goi_y) h += `<div class="box note gv-only small"><b>Hình gợi ý bổ sung (cho giáo viên):</b> ${txt(x.hinh_goi_y)}</div>`;
   h += `<div class="gv-only"><h2 id="s2">${sec(2,'Thông tin nguồn')}</h2>
     <ul class="src-list">${x.nguon.map(n=>`<li class="rv">${txt(n.trich_dan||'')}${n.url?`<br>${link(n.url)}`:''}<div class="muted small" style="margin-top:4px">${n.loai?'Loại: '+txt(n.loai)+' · ':''}Giấy phép: ${txt(n.giay_phep||'chưa ghi')}</div></li>`).join('') || '<li class="muted">Chưa có nguồn.</li>'}</ul>
@@ -1262,7 +1266,7 @@ function pageNL(id){
     $('[data-copyall]', root).addEventListener('click', () => copy(`${x.tieu_de}\n\n${x.boi_canh}\n\n` + x.cau_hoi.map(qText).join('\n\n')));
     root.querySelectorAll('[data-sim]').forEach(bt => bt.addEventListener('click', () => {
       const f = document.createElement('iframe');
-      f.src = bt.dataset.sim; f.title = 'Mô phỏng ' + bt.dataset.simTen; f.allowFullscreen = true; f.setAttribute('allow', 'fullscreen');
+      f.src = bt.dataset.sim; f.title = (bt.dataset.simLoai || 'Mô phỏng') + ' ' + bt.dataset.simTen; f.allowFullscreen = true; f.setAttribute('allow', bt.dataset.simLoai ? 'fullscreen; encrypted-media; picture-in-picture' : 'fullscreen');
       bt.parentNode.classList.add('on'); bt.replaceWith(f);
     }));
     /* Đánh dấu mục đang đọc trên thanh mục lục */
@@ -1642,7 +1646,9 @@ function pagePhanHoi(){
     ${pagePager('phan-hoi')}</div>`;
 }
 function pageNguon(){
-  const rows = []; DS.forEach(x => x.nguon.forEach(n => n && rows.push({x, n})));
+  const rows = []; DS.forEach(x => { x.nguon.forEach(n => n && rows.push({x, n}));
+    x.hinh.forEach(f => f && f.src && f.giay_phep && rows.push({x, n:{trich_dan: 'Hình: ' + (f.nguon||''), url: f.url, loai: 'Hình ảnh', giay_phep: f.giay_phep}}));
+    (x.video||[]).forEach(v => v && v.youtube && rows.push({x, n:{trich_dan: 'Video: ' + (v.ten||'') + '. Kênh ' + (v.kenh||'') + ' (YouTube)', url: 'https://www.youtube.com/watch?v=' + v.youtube, loai: 'Video', giay_phep: v.giay_phep||''}})); });
   return `<div class="page wide">${errBox()}${crumbs([['','Trang chủ'],['','Nguồn và bản quyền']])}
     <h1>Nguồn và bản quyền</h1>
     <h2>Nguyên tắc</h2>
@@ -1651,7 +1657,8 @@ function pageNguon(){
       <li><b>Nguồn và trích dẫn:</b> Ưu tiên nguồn khoa học, giáo dục uy tín và văn bản chính thức; cung cấp thông tin, đường dẫn để tra cứu. Khi sử dụng qua nguồn trung gian, ghi rõ nguồn đã tiếp cận và tài liệu gốc được dẫn lại.</li>
       <li><b>Biên soạn và kiểm tra:</b> Ngữ liệu được lựa chọn, biên dịch, biên tập cho phù hợp với dạy học; có thể gồm số liệu nguồn, kết quả tính toán và tình huống minh hoạ. Nhóm kiểm tra số liệu, đơn vị, giả thiết và điều kiện áp dụng, giữ đúng ý nghĩa khoa học khi quy đổi hoặc giản lược.</li>
       <li><b>Bản quyền tư liệu:</b> Văn bản, hình ảnh, bảng và đồ thị từ bên ngoài được ghi nguồn, tác giả hoặc đơn vị sở hữu khi có thông tin; sử dụng theo điều kiện của nguồn hoặc trường hợp pháp luật cho phép. Nhóm tự biên soạn phần dẫn, câu hỏi và hướng dẫn giải; không sao chép nguyên văn bài học, bài tập từ sách giáo khoa.</li>
-      <li><b>Mô phỏng:</b> Mô phỏng PhET được nhúng từ nguồn chính thức, giữ thông tin nhận diện và ghi nhận PhET Interactive Simulations, University of Colorado Boulder theo giấy phép áp dụng.</li>
+      <li><b>Hình ảnh:</b> Ảnh và sơ đồ minh hoạ được lấy từ trang gốc của nguồn, chỉ dùng ảnh thuộc phạm vi công cộng hoặc có giấy phép mở; mỗi ảnh ghi tác giả hoặc đơn vị sở hữu, giấy phép và đường dẫn. Ảnh có giấy phép không cho phép chỉnh sửa được giữ nguyên, phần giải thích tiếng Việt đặt ở chú thích.</li>
+      <li><b>Mô phỏng và video:</b> Mô phỏng PhET được nhúng từ nguồn chính thức, giữ thông tin nhận diện và ghi nhận PhET Interactive Simulations, University of Colorado Boulder theo giấy phép áp dụng. Video được nhúng từ kênh gốc trên YouTube (chế độ hạn chế cookie), ghi tên kênh và đường dẫn tới video gốc; video chỉ tải khi người dùng bấm xem.</li>
       <li><b>Sử dụng và phản hồi:</b> Câu hỏi đi kèm là ví dụ minh hoạ; giáo viên kiểm tra, lựa chọn và điều chỉnh trước khi sử dụng. Khi chia sẻ lại, cần ghi nguồn và tuân thủ điều kiện sử dụng của từng tư liệu. Góp ý về nội dung và quyền sử dụng được tiếp nhận tại mục <a href="#/phan-hoi">Phản hồi và chia sẻ dữ liệu</a>.</li>
     </ul>
     <h2>Danh mục nguồn (${rows.length})</h2>

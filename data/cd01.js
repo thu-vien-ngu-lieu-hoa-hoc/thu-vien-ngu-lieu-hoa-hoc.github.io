@@ -243,7 +243,6 @@ NL.add([
   "yccd": "Tính được biến thiên enthalpy chuẩn của phản ứng dựa vào enthalpy tạo thành chuẩn. Nêu được ý nghĩa của dấu và giá trị ΔrH°.",
   "boi_canh": "Ammonium nitrate (NH₄NO₃) là loại phân đạm được sử dụng phổ biến trên thế giới. Ở điều kiện thường, chất này khá bền; tuy nhiên, khi bị nung nóng mạnh với khối lượng lớn, bị nhiễm tạp chất hoặc gặp đám cháy, ammonium nitrate có thể bị phân huỷ dữ dội.\nNgày 17/4/2013, một đám cháy tại kho phân bón West Fertilizer ở bang Texas (Hoa Kỳ) đã dẫn tới vụ nổ ammonium nitrate. Theo kết luận của Ban Điều tra An toàn và Nguy cơ Hoá chất Hoa Kỳ (CSB), vụ nổ làm 15 người chết (trong đó có 12 lính cứu hoả tình nguyện), khoảng 260 người bị thương, và phá huỷ nhiều nhà dân, trường học xung quanh. Ngày 4/8/2020, vụ nổ khoảng 2 750 tấn ammonium nitrate lưu kho lâu năm tại cảng Beirut (Lebanon) cũng gây ra một thảm hoạ nghiêm trọng.\nMột trong các phản ứng phân huỷ có thể xảy ra là: 2NH₄NO₃(s) → 2N₂(g) + O₂(g) + 4H₂O(g). Theo bảng số liệu nhiệt động chuẩn trong CRC Handbook of Chemistry and Physics (84th ed., 2004), enthalpy tạo thành chuẩn của NH₄NO₃(s) là −365,6 kJ/mol, của H₂O(g) là −241,8 kJ/mol. Từ các số liệu này, có thể tính được nhiệt lượng toả ra của phản ứng.\nMức độ nguy hiểm không chỉ phụ thuộc vào nhiệt lượng toả ra mà còn do phản ứng tạo ra lượng khí rất lớn trong thời gian rất ngắn. Sau các thảm hoạ trên, nhiều quốc gia đã siết chặt quy định về lưu trữ loại phân bón này.",
   "bang_so_lieu": null,
-  "hinh_goi_y": "Ảnh hiện trường trong báo cáo CSB (kiểm tra giấy phép trước khi dùng) hoặc sơ đồ kho chứa trong báo cáo.",
   "nguon": [
    {
     "trich_dan": "U.S. Chemical Safety and Hazard Investigation Board (CSB). West Fertilizer Company fire and explosion – trang điều tra (ngày 17/4/2013; 15 người chết, 260 người bị thương; 12 lính cứu hoả tình nguyện thiệt mạng). Truy cập 06/11/2026.",
@@ -312,7 +311,25 @@ NL.add([
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "06/11/2026",
+  "hinh": [
+   {
+    "src": "data/img/nl/cd01-03.jpg",
+    "chu_thich": "Hiện trường nhìn từ trên cao sau vụ cháy, nổ ammonium nitrate tại West Fertilizer Company (West, Texas, Hoa Kỳ) ngày 17/4/2013.",
+    "nguon": "U.S. Chemical Safety Board (CSB), trang điều tra “West Fertilizer Explosion and Fire”",
+    "url": "https://www.csb.gov/west-fertilizer-explosion-and-fire-/",
+    "giay_phep": "Phạm vi công cộng (tài liệu của cơ quan liên bang Hoa Kỳ)"
+   }
+  ],
+  "video": [
+   {
+    "youtube": "pdDuHxwD5R4",
+    "ten": "Dangerously Close: Explosion in West, Texas",
+    "kenh": "USCSB",
+    "ghi_chu": "Video điều tra sự cố của CSB; nên chọn đoạn dựng lại diễn biến cháy và nguyên nhân ammonium nitrate phát nổ.",
+    "giay_phep": "Nhúng từ kênh gốc trên YouTube"
+   }
+  ]
  },
  {
   "id": "cd01-04",
@@ -640,6 +657,15 @@ NL.add([
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "06/11/2026",
+  "hinh": [
+   {
+    "src": "data/img/nl/cd01-06.png",
+    "chu_thich": "Sơ đồ thiết bị điện phân nước dùng màng trao đổi proton (PEM): ở anode, nước bị oxi hoá tạo O₂ và H⁺; H⁺ đi qua màng sang cathode và bị khử thành H₂. Đây là một trong các công nghệ điện phân; lượng phát thải của hydrogen còn phụ thuộc nguồn điện sử dụng.",
+    "nguon": "U.S. Department of Energy (DOE), Hydrogen Production: Electrolysis",
+    "url": "https://www.energy.gov/cmei/fuels/hydrogen-production-electrolysis",
+    "giay_phep": "Phạm vi công cộng (tài liệu của cơ quan liên bang Hoa Kỳ)"
+   }
+  ]
  }
 ]);

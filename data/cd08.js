@@ -130,7 +130,16 @@ NL.add([
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "06/11/2026",
+  "hinh": [
+   {
+    "src": "data/img/nl/cd08-01.webp",
+    "chu_thich": "(a) Vật có màu đen khi hấp thụ mọi ánh sáng, có màu trắng khi phản xạ mọi ánh sáng. (b) Vòng màu: màu ta nhìn thấy là màu bổ sung (nằm đối diện) của ánh sáng bị hấp thụ. (c) Dung dịch hấp thụ ánh sáng đỏ – cam nên ánh sáng truyền qua có màu xanh lam (trong hình: “White light” – ánh sáng trắng; “Blue-appearing light” – ánh sáng có màu xanh lam).",
+    "nguon": "OpenStax, Chemistry 2e (Rice University), mục 19.3, Figure 19.37",
+    "url": "https://openstax.org/books/chemistry-2e/pages/19-3-spectroscopic-and-magnetic-properties-of-coordination-compounds",
+    "giay_phep": "CC BY 4.0"
+   }
+  ]
  },
  {
   "id": "cd08-02",
@@ -245,7 +254,6 @@ NL.add([
   "yccd": "Nêu được vai trò của phức chất trong cơ thể sống; giải thích được tác hại của một số chất dựa trên khả năng tạo phức.",
   "boi_canh": "Theo PDB-101, mỗi phân tử hemoglobin trong hồng cầu gồm bốn chuỗi protein, mỗi chuỗi có một nhóm heme dạng vòng; ở trung tâm mỗi nhóm heme, ion iron(II) liên kết với bốn nguyên tử nitrogen, tạo thành một phức chất. Phân tử O₂ gắn vào ion sắt này như một phối tử và được vận chuyển từ phổi đến các tế bào.\nCarbon monoxide (CO) là khí không màu, không mùi, sinh ra khi đốt cháy nhiên liệu trong điều kiện thiếu oxygen, ví dụ: bếp than tổ ong trong phòng kín, máy phát điện, xe nổ máy trong ga-ra đóng cửa. CO cũng gắn vào ion sắt trong hemoglobin, với ái lực lớn hơn O₂ khoảng 200–250 lần (theo Hội đồng Nghiên cứu Quốc gia Hoa Kỳ – NRC). Khi đó, hemoglobin không còn vị trí liên kết để vận chuyển oxygen nên cơ thể bị thiếu oxygen dù vẫn thở bình thường.\nTheo Trung tâm Kiểm soát và Phòng ngừa Dịch bệnh Hoa Kỳ (CDC), triệu chứng ngộ độc CO thường gặp là đau đầu, chóng mặt, mệt yếu, khó chịu dạ dày, nôn, đau ngực và lú lẫn; hít phải nhiều CO có thể gây ngất và tử vong. Người đang ngủ có thể tử vong trước khi kịp có triệu chứng. Ở Việt Nam, mùa đông hằng năm vẫn có những vụ ngộ độc khí CO do đốt than sưởi trong phòng kín.\nBiện pháp cấp cứu chính là đưa nạn nhân ra nơi thoáng khí và cho thở oxygen nồng độ cao, để O₂ dần thay thế CO trong hemoglobin.",
   "bang_so_lieu": null,
-  "hinh_goi_y": "Mô hình 3D hemoglobin trên RCSB PDB-101 (Molecule of the Month: Hemoglobin).",
   "nguon": [
    {
     "trich_dan": "RCSB Protein Data Bank, PDB-101. Molecule of the Month: Hemoglobin. Truy cập 06/11/2026.",
@@ -314,7 +322,16 @@ NL.add([
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "06/11/2026",
+  "hinh": [
+   {
+    "src": "data/img/nl/cd08-03.gif",
+    "chu_thich": "Phân tử hemoglobin gồm bốn chuỗi protein; bốn nhóm heme (màu đỏ) chứa ion sắt là nơi liên kết O₂ hoặc CO.",
+    "nguon": "Minh hoạ của David S. Goodsell, RCSB PDB-101, Molecule of the Month: Hemoglobin (doi:10.2210/rcsb_pdb/mom_2003_5)",
+    "url": "https://pdb101.rcsb.org/motm/41",
+    "giay_phep": "CC BY 4.0"
+   }
+  ]
  },
  {
   "id": "cd08-04",
@@ -483,7 +500,6 @@ NL.add([
   "yccd": "Nêu được ứng dụng của phức chất trong y học; liên hệ ngành nghề hoá dược.",
   "boi_canh": "Năm 1965, nhà lí sinh học Barnett Rosenberg (Đại học Bang Michigan, Hoa Kỳ) nghiên cứu ảnh hưởng của dòng điện đến vi khuẩn E. coli. Ông nhận thấy vi khuẩn ngừng phân chia tế bào. Về sau, nguyên nhân được xác định không phải do dòng điện mà do một phức chất platinum hình thành từ điện cực platinum và các ion trong dung dịch.\nPhức chất đó là cisplatin, cis-[Pt(NH₃)₂Cl₂]: nguyên tử trung tâm platinum(II) liên kết với hai phối tử NH₃ và hai phối tử Cl⁻; bốn phối tử nằm ở bốn đỉnh của một hình vuông phẳng, hai phối tử Cl⁻ ở cùng một phía (cạnh nhau). Trong tế bào, cisplatin gắn vào DNA, làm chuỗi DNA bị uốn cong, khiến tế bào ung thư không phân chia được. Đồng phân trans (hai Cl⁻ ở hai phía đối diện) gần như không có tác dụng chữa bệnh.\nTheo Viện Ung thư Quốc gia Hoa Kỳ (NCI), năm 1978 cisplatin được Cục Quản lí Thực phẩm và Dược phẩm Hoa Kỳ (FDA) phê duyệt để điều trị ung thư tinh hoàn, sau đó mở rộng cho ung thư buồng trứng và ung thư bàng quang giai đoạn muộn. Ngày nay, cisplatin và các thuốc cùng họ (carboplatin, oxaliplatin) vẫn được dùng rộng rãi.\nCâu chuyện về cisplatin cho thấy một phát hiện tình cờ, kết hợp với tinh thần tò mò khoa học, có thể tạo ra bước tiến lớn trong y học. Các nhà hoá dược, dược sĩ nghiên cứu phát triển thuốc đang tiếp tục tìm kiếm những phức chất mới ít tác dụng phụ hơn.",
   "bang_so_lieu": null,
-  "hinh_goi_y": "Cấu trúc 2D và 3D của cisplatin từ PubChem (CID 5702198 – nhóm kiểm tra lại mã).",
   "nguon": [
    {
     "trich_dan": "National Cancer Institute. Cisplatin, Discovery to Practice (Rosenberg, Đại học Bang Michigan, 1965; FDA phê duyệt năm 1978). Truy cập 06/11/2026.",
@@ -552,6 +568,13 @@ NL.add([
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "06/11/2026",
+  "hinh": [
+   {
+    "src": "data/img/nl/cd08-06.svg",
+    "chu_thich": "Công thức cấu tạo phức chất vuông phẳng [PtCl₂(NH₃)₂]: ở cisplatin hai phối tử Cl⁻ ở cùng một phía (vị trí cis); ở đồng phân trans hai phối tử Cl⁻ ở hai phía đối diện.",
+    "nguon": "Nhóm tác giả vẽ"
+   }
+  ]
  }
 ]);
