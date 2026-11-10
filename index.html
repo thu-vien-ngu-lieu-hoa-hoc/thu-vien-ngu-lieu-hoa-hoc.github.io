@@ -98,6 +98,8 @@ body[data-page="huong-dan"] .hd-top{background:var(--accent);color:#fff}
 .results.open{display:block}
 .results a{display:block;padding:9px 12px;text-decoration:none;color:var(--ink);border-radius:10px;line-height:1.45}
 .results a:hover,.results a.active{background:var(--accent-soft)}
+.results a.all{margin-top:4px;border-top:1px solid var(--line);border-radius:0 0 10px 10px;font-weight:600;color:var(--accent-ink);display:flex;justify-content:space-between;gap:10px;align-items:center}
+.results a.all small{margin:0;flex:none;font-weight:500;border:1px solid var(--line);border-radius:6px;padding:1px 6px}
 .results mark{background:var(--warn-bg);color:inherit;border-radius:3px;padding:0 1px}
 .results small{display:block;color:var(--ink-3);font-size:13px}
 .results .empty{padding:12px;color:var(--ink-3)}
@@ -740,7 +742,7 @@ const CAU_HINH = {
   ten_ngan: 'Thư viện ngữ liệu Hóa học',
   khau_hieu: 'Từ dữ liệu thật đến nhiệm vụ năng lực',
   don_vi: 'Khoa Hóa học, Trường Khoa học Tự nhiên và Công nghệ – Trường Đại học Sư phạm Hà Nội',
-  nhom: 'Nhóm sinh viên Giải pháp nghiệp vụ số – Liên Chi đoàn – Khoa Hóa học, Trường Khoa học Tự nhiên và Công nghệ – Trường Đại học Sư phạm Hà Nội',
+  nhom: 'Nhóm sinh viên dự thi Giải pháp Nghiệp vụ số, Khoa Hóa học, Trường Khoa học Tự nhiên và Công nghệ – Trường Đại học Sư phạm Hà Nội',
   file_huong_dan: 'data/Gioi_thieu_va_Huong_dan_Thu_vien_ngu_lieu.docx',
   link_gop_y: 'https://docs.google.com/forms/d/e/1FAIpQLSedxVpFf3Q9Hd2KUtUu0saDOFOr0A0DE_jqGPIykzxYzidbtw/viewform',          // link Google Form góp ý
   link_dong_gop: 'https://docs.google.com/forms/d/e/1FAIpQLSf1qYCrakNzTiPdUBvYVu8a84MNqOq4VcplxAtpUatdjMtgLg/viewform',          // link Google Form ĐÓNG GÓP NGỮ LIỆU (riêng); để trống thì ẩn nút
@@ -831,6 +833,37 @@ const isUrl = u => /^https?:\/\//i.test(String(u||'').trim());
 const link = (u, t) => isUrl(u) ? `<a class="break" href="${esc(u.trim())}" target="_blank" rel="noopener">${esc(t || u.trim())}</a>` : (u ? txt(u) : '');
 const norm = s => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/đ/g,'d').replace(/[₀-₉]/g, c => String(c.charCodeAt(0)-8320));
 const CD = ma => C.chu_de.find(c=>c.ma===ma) || {ma, ten:ma, lop:'', ki_hieu:'?', mau:'#6b7280', nguon:''};
+/* Chấm điểm mức khớp từ khoá: tiêu đề > chủ đề, mã > bối cảnh, bảng > phần còn lại; khớp cả cụm, khớp đúng dấu được cộng thêm */
+const raw = s => String(s ?? '').toLowerCase().normalize('NFC');
+const toks = s => s.split(/[^a-z0-9]+/).filter(Boolean);
+function truongTim(parts){ return parts.filter(p => p[0]).map(([s, w]) => { const r = raw(s), n = norm(r); return {r, n, t: toks(n), rt: r.split(/[^\p{L}\p{N}]+/u), w}; }); }
+const TRUONG = new Map();
+function truongNL(x){
+  if(!TRUONG.has(x.id)){ const b = x.bang_so_lieu || {};
+    TRUONG.set(x.id, truongTim([[x.id + ' ' + x.tieu_de, 10], [CD(x.chu_de).ten + ' ' + maCua(x).join(' '), 4],
+      [[x.boi_canh, b.tieu_de, (b.cot||[]).join(' '), (b.dong||[]).flat().join(' ')].join(' '), 3],
+      [[x.dinh_huong, (x.luu_y_khoa_hoc||[]).join(' '), (x.cau_hoi||[]).map(q => q.noi_dung + ' ' + q.dap_an).join(' '), (x.nguon||[]).map(n => n.trich_dan).join(' ')].join(' '), 1]])); }
+  return TRUONG.get(x.id);
+}
+function diemTim(F, q){
+  const qr = raw(q).trim(), qn = norm(qr), ws = toks(qn), wr = qr.split(/[^\p{L}\p{N}]+/u).filter(Boolean);
+  if(!ws.length) return 0;
+  let d = 0;
+  for(const w of ws){ let best = 0;
+    for(const f of F){ let c = 0, p = 0; for(const t of f.t){ if(t === w) c++; else if(t.startsWith(w)) p++; }
+      const s = c ? f.w * (1 + Math.min(c, 5) * 0.1) : p ? f.w * 0.5 : 0; if(s > best) best = s; }
+    if(!best) return 0; d += best; }
+  for(const f of F){
+    if(ws.length > 1 && f.r.includes(qr)) d += 3 * f.w; else if(ws.length > 1 && (' ' + f.t.join(' ') + ' ').includes(' ' + ws.join(' ') + ' ')) d += 1.5 * f.w;
+    wr.forEach(w => { if(w !== norm(w) && f.rt.includes(w)) d += 0.3 * f.w; });
+  }
+  /* gõ có dấu: ngữ liệu chứa đúng các từ có dấu (vd "dầu mỏ", không phải "dầu mỡ") được xếp trước */
+  if(qr !== qn && wr.every(w => F.some(f => f.rt.includes(w)))) d += F.some(f => f.r.includes(qr)) ? 2000 : 1000;
+  return d;
+}
+/* nếu có kết quả khớp đúng dấu thì chỉ giữ các kết quả đó */
+const DUNG_DAU = 1000;
+const locDungDau = ds => ds.some(o => o.d >= DUNG_DAU) ? ds.filter(o => o.d >= DUNG_DAU) : ds;
 const cvar = cd => `--c:${cd.mau};--c-soft:color-mix(in srgb, ${cd.mau} 13%, var(--surface))`;
 const loaiCua = x => LOAI[String(x.id||'').split('-')[1]] || '';
 const lopSo = s => (String(s||'').match(/\d+/g)||[]).map(Number);
@@ -936,7 +969,7 @@ function progress(ma){
   return `<div class="prog" title="Số ngữ liệu bạn đã xem trong chủ đề (lưu trên trình duyệt này)"><span class="track">${xem?`<i class="td" style="--w:${xem/(tot||1)*100}%"></i>`:''}</span><span>Đã xem ${xem}/${tot}</span></div>`;
 }
 const PAGES = ['', 'tra-cuu', 'khung-nang-luc', 'huong-dan', 'phan-hoi', 'nguon', 'minh-bach-ai'];
-const PAGE_T = {'':'Trang chủ','tra-cuu':'Tra cứu ngữ liệu','khung-nang-luc':'Khung năng lực','huong-dan':'Hướng dẫn sử dụng','phan-hoi':'Phản hồi và chia sẻ dữ liệu','nguon':'Nguồn & bản quyền','minh-bach-ai':'Minh bạch AI'};
+const PAGE_T = {'':'Trang chủ','tra-cuu':'Tra cứu ngữ liệu','khung-nang-luc':'Khung năng lực','huong-dan':'Hướng dẫn sử dụng','phan-hoi':'Phản hồi và chia sẻ dữ liệu','nguon':'Nguồn và bản quyền','minh-bach-ai':'Minh bạch AI'};
 const pager = (prev, next) => `<nav class="pager" aria-label="Chuyển trang">${prev?`<a class="prev" href="#/${prev[0]}"><small>‹ Trước</small>${esc(prev[1])}</a>`:'<span></span>'}${next?`<a class="next" href="#/${next[0]}"><small>Sau ›</small>${esc(next[1])}</a>`:''}</nav>`;
 const pagePager = r => { const i = PAGES.indexOf(r); return pager(i>0?[PAGES[i-1],PAGE_T[PAGES[i-1]]]:null, i<PAGES.length-1?[PAGES[i+1],PAGE_T[PAGES[i+1]]]:null); };
 
@@ -946,7 +979,7 @@ function buildSidebar(){
   $('#sidebar').innerHTML = a('', 'Trang chủ', ic('home')) + a('tra-cuu', 'Tra cứu ngữ liệu', ic('search')) +
     '<h4>' + C.chu_de.length + ' chủ đề</h4>' + C.chu_de.map(c => a('tra-cuu?cd='+c.ma, c.ten, `<span class="sym">${esc(c.ki_hieu)}</span>`, `<span class="cnt">${ofCd(c.ma).length}</span>`, cvar(c))).join('') +
     '<h4>Dành cho giáo viên</h4>' + a('khung-nang-luc', 'Khung năng lực', ic('grid')) + a('huong-dan', 'Hướng dẫn sử dụng', ic('book')) + a('phan-hoi', 'Phản hồi và chia sẻ dữ liệu', ic('chat')) +
-    '<h4>Về sản phẩm</h4>' + a('nguon', 'Nguồn & bản quyền', ic('link')) + a('minh-bach-ai', 'Minh bạch AI', ic('spark'));
+    '<h4>Về sản phẩm</h4>' + a('nguon', 'Nguồn và bản quyền', ic('link')) + a('minh-bach-ai', 'Minh bạch AI', ic('spark'));
 }
 const setCurrent = r => $$('.sidebar a').forEach(a => a.classList.toggle('current', a.dataset.r === r));
 
@@ -1077,12 +1110,12 @@ function guideBand(home){
   return `<section class="guide">
     <div class="guide-hd"><h2>Dùng thư viện trong 4 bước</h2>${home?'<a href="#/huong-dan">Hướng dẫn chi tiết →</a>':''}</div>
     <div class="gsteps">
-      ${st(1,'#/tra-cuu','Tìm ngữ liệu','<span class="gp on">Lớp 11</span><span class="gp">Cân bằng</span><span class="gp">HH2.4</span>','Lọc theo lớp, chủ đề, năng lực cần phát triển hoặc gõ từ khoá.','Mở Tra cứu')}
-      ${st(2,vd,'Đọc bối cảnh',`<span class="gp ic">${icon('table',14)} Bảng số liệu</span><span class="gp">Nguồn: NOAA ↗</span>`,'Xem số liệu, mở nguồn gốc, đọc lưu ý khoa học.','Xem ngữ liệu mẫu')}
-      ${st(3,vd,'Dùng câu hỏi',`<span class="gb">${icon('print',14)} In bản học sinh</span><span class="gp">Bản GV</span>`,'Làm thử, chọn in biểu đồ hoặc bảng, in phiếu cho lớp.','Xem ngữ liệu mẫu')}
-      ${st(4,pr,'Soạn thêm với AI',`<span class="gb">${icon('copy',14)} Sao chép prompt</span><span class="gp">→ ChatGPT</span>`,'Dán Khối 0 rồi chọn 1 trong 12 prompt mẫu; trong mỗi ngữ liệu, prompt đã điền sẵn nội dung. Tự giải lại, thẩm định chéo trước khi dùng.','Mở bộ prompt')}
+      ${st(1,'#/tra-cuu','Tìm kiếm','<span class="gp on">Lớp 11</span><span class="gp">Cân bằng</span><span class="gp">HH2.4</span>','Tra cứu theo lớp, chủ đề, nhóm ngữ liệu, biểu hiện năng lực hoặc từ khoá.','Mở Tra cứu')}
+      ${st(2,vd,'Đọc hiểu',`<span class="gp ic">${icon('table',14)} Bảng số liệu</span><span class="gp">Nguồn: NOAA ↗</span>`,'Đọc bối cảnh và dữ liệu; mở liên kết nguồn để kiểm tra; xem các lưu ý khoa học.','Xem ngữ liệu mẫu')}
+      ${st(3,vd,'Khai thác',`<span class="gb">${icon('print',14)} In bản học sinh</span><span class="gp">Bản GV</span>`,'Dùng hoặc điều chỉnh câu hỏi minh hoạ theo mục đích dạy học, đánh giá. In bản học sinh hoặc bản giáo viên có đáp án.','Xem ngữ liệu mẫu')}
+      ${st(4,pr,'Phát triển câu hỏi với AI',`<span class="gb">${icon('copy',14)} Sao chép prompt</span><span class="gp">→ ChatGPT</span>`,'Tại mục 6 của ngữ liệu, chọn prompt phù hợp, sao chép và dán vào công cụ AI. Kiểm chứng số liệu, tự giải và kiểm tra đáp án trước khi sử dụng.','Mở bộ prompt')}
     </div>
-    <p class="guide-rule"><b>Lưu ý:</b> AI chỉ soạn nháp, không dùng AI để tạo số liệu. Thầy cô kiểm tra lại số liệu, đáp án và ghi nguồn ngữ liệu khi sử dụng.</p>
+    <p class="guide-rule"><b>Lưu ý:</b> AI chỉ hỗ trợ soạn nháp, không dùng để tạo số liệu. Giáo viên kiểm tra nội dung, đáp án và ghi nguồn ngữ liệu khi sử dụng.</p>
     ${home?`<div class="guide-act"><a class="btn" href="#/huong-dan">${icon('book',17)} Xem hướng dẫn sử dụng đầy đủ</a><a class="btn ghost" href="#/huong-dan?mo=shd-p">${icon('spark',17)} Bộ prompt AI</a></div>`:''}
   </section>`;
 }
@@ -1142,12 +1175,14 @@ function pageTraCuu(P){
     const NAME = {lop:'Lớp', cd:'Chủ đề', loai:'Loại ngữ liệu', ma:'Năng lực', tt:'Trạng thái', q:'Từ khoá'};
     Object.entries(map).forEach(([k,s]) => { const el = $(s); if(!P[k]) return; if(el.tagName === 'SELECT'){ if([...el.options].some(o=>o.value===P[k])) el.value = P[k]; } else el.value = P[k]; });
     const run = () => {
-      const v = k => $(map[k]).value, tk = norm(v('q').trim());
-      const rs = DS.filter(x => (!v('lop') || lopSo(x.lop||CD(x.chu_de).lop).includes(+v('lop'))) && (!v('cd') || x.chu_de===v('cd')) &&
+      const v = k => $(map[k]).value, tk = v('q').trim();
+      const diem = new Map();
+      let rs = DS.filter(x => (!v('lop') || lopSo(x.lop||CD(x.chu_de).lop).includes(+v('lop'))) && (!v('cd') || x.chu_de===v('cd')) &&
         (!v('loai') || x.id.endsWith('-'+v('loai'))) && (!v('ma') || maCua(x).includes(v('ma'))) &&
-        (!tk || tk.split(/\s+/).every(w => norm([x.id,x.tieu_de,x.boi_canh,CD(x.chu_de).ten,JSON.stringify(x.nguon),x.dinh_huong].join(' ')).includes(w))));
-      $('#fCount').innerHTML = `Tìm thấy <b>${rs.length}</b>/${DS.length} ngữ liệu`;
-      $('#fOut').innerHTML = rs.length ? C.chu_de.map(c => { const g = rs.filter(x=>x.chu_de===c.ma); return g.length ? `<div class="grp-h" style="${cvar(c)}"><span class="sym">${esc(c.ki_hieu)}</span><div><h2>${esc(c.ten)}</h2><span>Lớp ${esc(c.lop)} · ${g.length} ngữ liệu</span></div></div><div class="cards">${g.map(card).join('')}</div>` : ''; }).join('')
+        (!tk || (d => (diem.set(x.id, d), d > 0))(diemTim(truongNL(x), tk))));
+      if(tk) rs = locDungDau(rs.map(x => ({x, d: diem.get(x.id)}))).sort((a, b) => b.d - a.d).map(o => o.x);
+      $('#fCount').innerHTML = `Tìm thấy <b>${rs.length}</b>/${DS.length} ngữ liệu${tk && rs.length ? ' · xếp theo mức độ khớp từ khoá' : ''}`;
+      $('#fOut').innerHTML = rs.length ? tk ? `<div class="cards">${rs.map(card).join('')}</div>` : C.chu_de.map(c => { const g = rs.filter(x=>x.chu_de===c.ma); return g.length ? `<div class="grp-h" style="${cvar(c)}"><span class="sym">${esc(c.ki_hieu)}</span><div><h2>${esc(c.ten)}</h2><span>Lớp ${esc(c.lop)} · ${g.length} ngữ liệu</span></div></div><div class="cards">${g.map(card).join('')}</div>` : ''; }).join('')
         : `<div class="empty-state">${DS.length ? 'Không có ngữ liệu phù hợp. Hãy bỏ bớt điều kiện lọc.' : 'Chưa có ngữ liệu nào. Lưu các tệp data/cd01.js … data/cd12.js rồi tải lại trang.'}</div>`;
       reveal($('#fOut'));
       Object.values(map).forEach(s => { const el = $(s); if(el.tagName === 'SELECT') el.classList.toggle('set', !!el.value); });
@@ -1471,7 +1506,8 @@ function pageKhung(){
     return `<td><a href="#/tra-cuu?cd=${c.ma}&ma=${m[0]}" data-pop="${pop}" class="${n?'':'zero'}" style="${n?`background:color-mix(in srgb,var(--accent) ${pct}%,var(--surface));color:${pct>45?'#fff':'var(--accent-ink)'}`:''}">${n||'·'}</a></td>`; };
   return `<div class="page wide">${errBox()}${crumbs([['','Trang chủ'],['','Khung năng lực']])}
     <h1>Khung năng lực</h1>
-    <p class="lead">Chương trình Hoá học 2018 xác định năng lực hoá học gồm ba thành phần: Nhận thức hoá học; Tìm hiểu thế giới tự nhiên dưới góc độ hoá học; Vận dụng kiến thức, kĩ năng đã học. Kho tập trung vào hai thành phần sau.</p>
+    <p class="lead">Chương trình Giáo dục phổ thông môn Hoá học 2018 đặt trọng tâm vào việc phát triển năng lực hoá học, trong đó đặc biệt chú trọng hai thành phần năng lực: Tìm hiểu thế giới tự nhiên dưới góc độ hoá học và Vận dụng kiến thức, kĩ năng đã học. Thư viện tập trung hỗ trợ khai thác ngữ liệu theo hai thành phần này.</p>
+    <p>Các mã HH2.1–HH2.5 và HH3.1–HH3.5 được dùng trong thư viện để phân loại, tra cứu và gợi ý thiết kế nhiệm vụ. Nội dung dưới đây được diễn đạt tóm lược theo các biểu hiện trong chương trình.</p>
     <div class="table-wrap"><table><thead><tr><th>Mã</th><th>Biểu hiện</th><th class="num">Ngữ liệu</th></tr></thead><tbody>
     ${MA_BIEU_HIEN.map(m => `<tr><td><span class="tag ma">${m[0]}</span></td><td>${esc(m[1])}</td><td class="num"><a href="#/tra-cuu?ma=${m[0]}">${soMa(m[0])}</a></td></tr>`).join('')}</tbody></table></div>
     <p class="caption">HH2: Tìm hiểu thế giới tự nhiên dưới góc độ hoá học · HH3: Vận dụng kiến thức, kĩ năng đã học.</p>
@@ -1498,7 +1534,7 @@ function pageHuongDan(){
   const DUNG = ['Dán một lần ở đầu mỗi phiên chat','Soạn chùm câu đủ ba phần theo đề tốt nghiệp THPT','Cần câu tính toán điền đáp số','Cần câu 4 ý a, b, c, d','Đánh giá đúng một biểu hiện HH1, HH2, HH3','Ôn thi Đánh giá tư duy TSA','Ôn thi SPT','Ôn thi HSA','Tổ chức hoạt động trên lớp','Thẩm định câu hỏi AI vừa soạn (phiên chat mới hoặc mô hình khác)','Lập bảng đặc tả trước khi soạn câu','Soạn phương án nhiễu từ quan niệm sai','Tách bản học sinh, kiểm tra rò rỉ đáp án'];
   return `<div class="page hd">${errBox()}${crumbs([['','Trang chủ'],['','Hướng dẫn sử dụng']])}
     <h1>Hướng dẫn sử dụng</h1>
-    <p class="lead">Website cung cấp hệ thống ngữ liệu hoá học gắn với các bối cảnh thực tiễn, kèm theo dữ liệu có thật từ các nguồn tin cậy, là nguyên liệu để xây dựng bài tập, câu hỏi đánh giá năng lực môn Hoá học.</p>
+    <p class="lead">Website cung cấp hệ thống ngữ liệu hoá học gắn với thực nghiệm và các bối cảnh thực tiễn, được biên tập từ các nguồn dữ liệu tin cậy, có thể sử dụng để phát triển thành các nhiệm vụ, câu hỏi, bài tập trong dạy học và đánh giá năng lực hoá học.</p>
     <nav class="htoc" aria-label="Mục lục hướng dẫn"><b>Mục lục</b><ol>${TOC.map((x,i) => '<li><a href="#shd-' + (i+1) + '">' + x + '</a></li>').join('')}<li><a href="#shd-p">Phụ lục: Bộ prompt mẫu (Khối 0 và 12 prompt)</a></li></ol>
       <div class="htoc-act">${C.file_huong_dan ? '<a class="btn ghost" href="' + esc(C.file_huong_dan) + '" download>' + icon('print',16) + ' Tải giới thiệu và hướng dẫn (Word)</a>' : ''}<button class="btn ghost" data-hs="1">Mở tất cả</button><button class="btn ghost" data-hs="0">Thu gọn tất cả</button></div></nav>
     <p class="small muted">Bấm vào tên mục để mở hoặc thu gọn.</p>
@@ -1573,7 +1609,7 @@ function pageHuongDan(){
     ${sec('p', PROMPT_CACH_DUNG + promptList(P), 'Phụ lục. Bộ prompt mẫu: Khối 0 và 12 prompt', 'Trên từng trang ngữ liệu, prompt đã được điền sẵn nội dung')}
 
     <div class="hd-box team"><div><b>Nhóm thực hiện</b>
-      <div class="kv"><div>Đơn vị</div><div>${txt(C.don_vi)}</div><div>Sinh viên</div><div>${txt(C.nhom)}</div></div></div>
+      <div class="kv"><div>Đơn vị</div><div>${txt(C.don_vi)}</div><div>Tác giả</div><div>${txt(C.nhom)}</div></div></div>
     </div>
     ${pagePager('huong-dan')}</div>`;
 }
@@ -1607,16 +1643,16 @@ function pagePhanHoi(){
 }
 function pageNguon(){
   const rows = []; DS.forEach(x => x.nguon.forEach(n => n && rows.push({x, n})));
-  return `<div class="page wide">${errBox()}${crumbs([['','Trang chủ'],['','Nguồn & bản quyền']])}
-    <h1>Nguồn & bản quyền</h1>
+  return `<div class="page wide">${errBox()}${crumbs([['','Trang chủ'],['','Nguồn và bản quyền']])}
+    <h1>Nguồn và bản quyền</h1>
     <h2>Nguyên tắc</h2>
+    <p>Thư viện được chia sẻ miễn phí, phục vụ dạy học và đánh giá, không nhằm mục đích thương mại.</p>
     <ul>
-      <li>Ưu tiên dữ liệu công cộng, truy cập mở, giấy phép Creative Commons.</li>
-      <li>Với tài liệu không mở: chỉ lấy số liệu, tự vẽ lại bảng/đồ thị, tự viết phần dẫn, trích ngắn có ghi nguồn.</li>
-      <li>Không sao chép sách giáo khoa.</li>
-      <li>Trích dẫn nguồn gốc, không trích dẫn lại qua nguồn trung gian: khi một trang lấy số liệu từ tài liệu khác (ví dụ bảng tra lấy từ CRC Handbook of Chemistry and Physics), ghi trực tiếp tài liệu gốc đó.</li>
-      <li>Không dùng các trang chỉ đăng lại, chia sẻ tài liệu làm nguồn; văn bản pháp luật lấy từ cổng thông tin chính thức của cơ quan ban hành, bài báo khoa học dẫn theo tạp chí (DOI).</li>
-      <li>Số liệu quan trọng đối chiếu ít nhất hai nguồn; văn bản pháp quy kiểm tra hiệu lực; giá trị tính từ số liệu nguồn ghi rõ cách tính và nguồn dữ liệu.</li>
+      <li><b>Nguồn và trích dẫn:</b> Ưu tiên nguồn khoa học, giáo dục uy tín và văn bản chính thức; cung cấp thông tin, đường dẫn để tra cứu. Khi sử dụng qua nguồn trung gian, ghi rõ nguồn đã tiếp cận và tài liệu gốc được dẫn lại.</li>
+      <li><b>Biên soạn và kiểm tra:</b> Ngữ liệu được lựa chọn, biên dịch, biên tập cho phù hợp với dạy học; có thể gồm số liệu nguồn, kết quả tính toán và tình huống minh hoạ. Nhóm kiểm tra số liệu, đơn vị, giả thiết và điều kiện áp dụng, giữ đúng ý nghĩa khoa học khi quy đổi hoặc giản lược.</li>
+      <li><b>Bản quyền tư liệu:</b> Văn bản, hình ảnh, bảng và đồ thị từ bên ngoài được ghi nguồn, tác giả hoặc đơn vị sở hữu khi có thông tin; sử dụng theo điều kiện của nguồn hoặc trường hợp pháp luật cho phép. Nhóm tự biên soạn phần dẫn, câu hỏi và hướng dẫn giải; không sao chép nguyên văn bài học, bài tập từ sách giáo khoa.</li>
+      <li><b>Mô phỏng:</b> Mô phỏng PhET được nhúng từ nguồn chính thức, giữ thông tin nhận diện và ghi nhận PhET Interactive Simulations, University of Colorado Boulder theo giấy phép áp dụng.</li>
+      <li><b>Sử dụng và phản hồi:</b> Câu hỏi đi kèm là ví dụ minh hoạ; giáo viên kiểm tra, lựa chọn và điều chỉnh trước khi sử dụng. Khi chia sẻ lại, cần ghi nguồn và tuân thủ điều kiện sử dụng của từng tư liệu. Góp ý về nội dung và quyền sử dụng được tiếp nhận tại mục <a href="#/phan-hoi">Phản hồi và chia sẻ dữ liệu</a>.</li>
     </ul>
     <h2>Danh mục nguồn (${rows.length})</h2>
     <div class="filters" style="grid-template-columns:1fr"><label>Lọc nhanh trong danh mục<input id="srcQ" type="search" placeholder="Gõ tên nguồn, giấy phép, mã ngữ liệu…"></label></div>
@@ -1653,9 +1689,9 @@ function pageAI(){
 
 /* ---------- Tìm kiếm nhanh ---------- */
 const INDEX = [
-  ...DS.map(x => ({r:'nl/'+encodeURIComponent(x.id), t:MA_NL(x.id)+' · '+x.tieu_de, sub:CD(x.chu_de).ten, s:norm([x.id,x.tieu_de,x.boi_canh,CD(x.chu_de).ten,maCua(x).join(' '),JSON.stringify(x.nguon),JSON.stringify(x.cau_hoi)].join(' '))})),
-  ...C.chu_de.map(c => ({r:'tra-cuu?cd='+c.ma, t:c.ten, sub:'Chủ đề · Lớp '+c.lop, s:norm(c.ten+' '+c.nguon)})),
-  ...MA_BIEU_HIEN.map(m => ({r:'tra-cuu?ma='+m[0], t:m[0]+' – '+m[1], sub:'Mã biểu hiện', s:norm(m.join(' '))}))
+  ...DS.map(x => ({r:'nl/'+encodeURIComponent(x.id), t:MA_NL(x.id)+' · '+x.tieu_de, sub:CD(x.chu_de).ten, nl:true, F:() => truongNL(x)})),
+  ...C.chu_de.map(c => { let f; return {r:'tra-cuu?cd='+c.ma, t:c.ten, sub:'Chủ đề · Lớp '+c.lop, F:() => f || (f = truongTim([[c.ten, 12], [c.nguon, 1]]))}; }),
+  ...MA_BIEU_HIEN.map(m => { let f; return {r:'tra-cuu?ma='+m[0], t:m[0]+' – '+m[1], sub:'Mã biểu hiện', F:() => f || (f = truongTim([[m[0], 12], [m[1], 2]]))}; })
 ];
 function hl(t, ws){ /* tô đậm từ khoá khớp (so khớp không dấu) */
   const n = norm(t); let marks = new Array(t.length).fill(false);
@@ -1665,15 +1701,17 @@ function hl(t, ws){ /* tô đậm từ khoá khớp (so khớp không dấu) */
 }
 (function(){
   const inp = $('#q'), box = $('#results'); let sel = -1;
-  const render = () => { const v = norm(inp.value.trim()); sel = -1; if(!v){ box.classList.remove('open'); return; }
-    const ws = v.split(/\s+/), rs = INDEX.filter(x => ws.every(w => x.s.includes(w) || norm(x.t).includes(w))).slice(0, 8);
-    box.innerHTML = rs.length ? rs.map(x => `<a href="#/${x.r}">${norm(x.t).length===x.t.length?hl(x.t, ws):esc(x.t)}<small>${esc(x.sub)}</small></a>`).join('') : '<div class="empty">Không tìm thấy kết quả.</div>';
+  const tatCa = q => '#/tra-cuu?q=' + encodeURIComponent(q);
+  const render = () => { const q = inp.value.trim(), v = norm(q); sel = -1; if(!v){ box.classList.remove('open'); return; }
+    const ws = toks(v), all = locDungDau(INDEX.map((x, i) => ({x, i, d: diemTim(x.F(), q)})).filter(o => o.d > 0)).sort((a, b) => b.d - a.d || a.i - b.i);
+    const soNL = all.filter(o => o.x.nl).length, rs = all.slice(0, 8).map(o => o.x);
+    box.innerHTML = rs.length ? rs.map(x => `<a href="#/${x.r}">${norm(x.t).length===x.t.length?hl(x.t, ws):esc(x.t)}<small>${esc(x.sub)}</small></a>`).join('') + (soNL ? `<a class="all" href="${tatCa(q)}">Xem tất cả ${soNL} ngữ liệu khớp “${esc(q)}” <small>Enter</small></a>` : '') : '<div class="empty">Không tìm thấy kết quả.</div>';
     box.classList.add('open'); };
   const close = () => box.classList.remove('open');
-  inp.addEventListener('input', render); inp.addEventListener('focus', render);
+  let tmr; inp.addEventListener('input', () => { clearTimeout(tmr); tmr = setTimeout(render, 120); }); inp.addEventListener('focus', render);
   inp.addEventListener('keydown', e => { const it = $$('a', box);
     if((e.key==='ArrowDown'||e.key==='ArrowUp') && it.length){ e.preventDefault(); sel=(sel+(e.key==='ArrowDown'?1:-1)+it.length)%it.length; it.forEach((a,i)=>a.classList.toggle('active',i===sel)); }
-    if(e.key==='Enter' && it.length){ e.preventDefault(); location.hash = it[Math.max(sel,0)].getAttribute('href'); close(); inp.value=''; inp.blur(); }
+    if(e.key==='Enter' && inp.value.trim()){ e.preventDefault(); location.hash = sel >= 0 && it[sel] ? it[sel].getAttribute('href') : tatCa(inp.value.trim()); close(); inp.value=''; inp.blur(); }
     if(e.key==='Escape'){ close(); inp.blur(); } });
   document.addEventListener('click', e => { if(!e.target.closest('.search')) close(); });
   box.addEventListener('click', e => { if(e.target.closest('a')){ close(); inp.value=''; } });
