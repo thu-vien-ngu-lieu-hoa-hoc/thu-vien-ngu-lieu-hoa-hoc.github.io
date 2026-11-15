@@ -1607,7 +1607,7 @@ function pageHuongDan(){
       tb(['STT','Prompt','Dùng khi'], P.map((x,i) => [x.n, esc(x.ten), DUNG[i]||'']),[10,50,40]) +
       '<p class="small muted">Nguyên văn Khối 0 và 12 prompt ở <a href="#shd-p">Phụ lục</a> cuối trang.</p>')}
 
-    ${sec(9, '<ul class="hol"><li>Trang <a href="#/phan-hoi">Phản hồi và chia sẻ dữ liệu</a>: báo lỗi số liệu, nguồn, đáp án, câu hỏi; góp ý giao diện, cách tìm kiếm, cách in; hỏi cách dùng ngữ liệu. Khi báo lỗi, ghi kèm số thứ tự và tên ngữ liệu.</li><li>Đóng góp ngữ liệu qua biểu mẫu riêng. Ngữ liệu cần có: bối cảnh và số liệu kèm nguồn kiểm chứng được (tên tài liệu, đường dẫn, năm); chủ đề và lớp áp dụng; câu hỏi đã dùng với học sinh, nếu có.</li><li>Nhóm biên tập, xử lí theo mẫu của thư viện → chuyên gia kiểm tra số liệu, nguồn, mức độ phù hợp với chương trình → công khai, ghi tên người đóng góp. Nếu chưa đạt, nhóm liên hệ để cùng chỉnh sửa.</li></ul>' +
+    ${sec(9, '<ul class="hol"><li>Trang <a href="#/phan-hoi">Phản hồi và chia sẻ dữ liệu</a>: báo lỗi số liệu, nguồn, đáp án, câu hỏi; góp ý giao diện, cách tìm kiếm, cách in; hỏi cách dùng ngữ liệu. Khi báo lỗi, ghi kèm số thứ tự và tên ngữ liệu.</li><li>Đóng góp ngữ liệu qua biểu mẫu riêng. Thầy cô chỉ cần chia sẻ dữ liệu gốc, không cần tự biên tập: mô tả ngắn và nguồn gốc của dữ liệu; nội dung dữ liệu dạng đường dẫn, văn bản hoặc tệp (có dạng nào gửi dạng đó, không bắt buộc đủ cả ba).</li><li>Nhóm biên tập, xử lí theo mẫu của thư viện → chuyên gia kiểm tra số liệu, nguồn, mức độ phù hợp với chương trình → công khai, ghi tên người đóng góp. Nếu chưa đạt, nhóm liên hệ để cùng chỉnh sửa.</li></ul>' +
       '<div class="btn-row">' + (C.link_gop_y ? '<a class="btn" href="' + esc(C.link_gop_y) + '" target="_blank" rel="noopener">Gửi góp ý, báo lỗi</a>' : '') + (C.link_dong_gop ? '<a class="btn ghost" href="' + esc(C.link_dong_gop) + '" target="_blank" rel="noopener">Đóng góp ngữ liệu</a>' : '<a class="btn ghost" href="#/phan-hoi">Đóng góp ngữ liệu</a>') + '</div>')}
 
     ${sec('p', PROMPT_CACH_DUNG + promptList(P), 'Phụ lục. Bộ prompt mẫu: Khối 0 và 12 prompt', 'Trên từng trang ngữ liệu, prompt đã được điền sẵn nội dung')}
@@ -1634,12 +1634,13 @@ function pagePhanHoi(){
         <p>Khi báo lỗi, thầy cô ghi kèm số thứ tự và tên ngữ liệu để nhóm tìm và sửa nhanh hơn. Nhóm trân trọng mọi phản hồi mang tính xây dựng.</p>
         ${nut(C.link_gop_y, 'Link gửi đóng góp')}</div>
       <div class="ph-card" id="dong-gop"><span class="ph-ic">${icon('book',22)}</span><b>Đóng góp ngữ liệu</b>
-        <p>Nếu thầy cô đã dùng/sưu tầm được những bối cảnh có số liệu thật, tin cậy, khoa học, xin chia sẻ để đồng nghiệp cùng dùng. Ngữ liệu đóng góp cần có:</p>
+        <p>Nếu thầy cô đã dùng/sưu tầm được những bối cảnh có số liệu thật, tin cậy, khoa học, xin chia sẻ để đồng nghiệp cùng dùng. Thầy cô chỉ cần gửi dữ liệu gốc, không cần tự biên tập:</p>
         <ul class="need">
-          <li>bối cảnh và số liệu kèm nguồn kiểm chứng được (tên tài liệu, đường dẫn, năm);</li>
-          <li>chủ đề và lớp áp dụng;</li>
-          <li>câu hỏi đã dùng với học sinh, nếu có.</li>
+          <li>mô tả ngắn về dữ liệu và nêu nguồn gốc;</li>
+          <li>nội dung dữ liệu dạng đường dẫn hoặc văn bản;</li>
+          <li>hoặc tệp dữ liệu (bảng số liệu, tài liệu, hình ảnh…).</li>
         </ul>
+        <p class="small muted">Có dạng nào gửi dạng đó, các mục này đều không bắt buộc. Biểu mẫu có mục tải tệp nên cần đăng nhập tài khoản Google khi gửi.</p>
         <p>Nhóm biên tập, xử lí theo mẫu của thư viện. Sau đó, chuyên gia kiểm tra số liệu, nguồn và mức độ phù hợp với chương trình. Ngữ liệu đạt yêu cầu được công khai, ghi tên người đóng góp. Nếu chưa đạt, nhóm sẽ liên hệ để cùng chỉnh sửa.</p>
         ${C.link_dong_gop ? nut(C.link_dong_gop, 'Link đóng góp ngữ liệu', 'ghost') : '<p class="small muted">Link đóng góp ngữ liệu đang được cập nhật.</p>'}</div>
     </div>
