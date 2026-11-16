@@ -752,7 +752,7 @@ NL.add([
   "trang_thai": "doi_sanh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "nguoi_dong_gop": "Nguồn do cô Lưu Thị Lương Yến (Khoa Hóa học, Trường Đại học Sư phạm Hà Nội) chia sẻ qua biểu mẫu đóng góp ngữ liệu.",
+  "nguoi_dong_gop": "Ngữ liệu được xây dựng từ nguồn chia sẻ qua biểu mẫu đóng góp ngữ liệu của thư viện.",
   "ai_su_dung": "AI hỗ trợ đọc nguồn và soạn nháp; số liệu chép từ tài liệu gốc và được đối sánh lại; nội dung được chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "16/11/2026"
  },
@@ -878,7 +878,7 @@ NL.add([
   "trang_thai": "doi_sanh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "nguoi_dong_gop": "Nguồn do cô Lưu Thị Lương Yến (Khoa Hóa học, Trường Đại học Sư phạm Hà Nội) chia sẻ qua biểu mẫu đóng góp ngữ liệu.",
+  "nguoi_dong_gop": "Ngữ liệu được xây dựng từ nguồn chia sẻ qua biểu mẫu đóng góp ngữ liệu của thư viện.",
   "ai_su_dung": "AI hỗ trợ đọc nguồn và soạn nháp; số liệu chép từ tài liệu gốc và được đối sánh lại; nội dung được chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "16/11/2026"
  }

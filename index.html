@@ -1251,6 +1251,7 @@ function pageNL(id){
     ${x.luu_y_khoa_hoc.length?`<ol class="luuy">${x.luu_y_khoa_hoc.map(l=>`<li class="rv">${txt(l)}</li>`).join('')}</ol>`:'<p class="muted">Chưa có lưu ý.</p>'}
     <div class="meta-foot">
       ${(x.nguoi_bien_soan||x.nguoi_tham_dinh)?`<div>${[x.nguoi_bien_soan?`<b>Người biên soạn:</b> ${txt(x.nguoi_bien_soan)}`:'', x.nguoi_tham_dinh?`<b>Đối sánh / thẩm định:</b> ${txt(x.nguoi_tham_dinh)}`:''].filter(Boolean).join(' · ')}</div>`:''}
+      ${x.nguoi_dong_gop?`<div><b>Đóng góp:</b> ${txt(x.nguoi_dong_gop)}</div>`:''}
       <div><b>Cập nhật:</b> ${esc(x.cap_nhat||'')}</div>
       <div><b>Sử dụng AI:</b> ${txt(x.ai_su_dung||'')}</div>
     </div></div>
