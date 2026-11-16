@@ -568,3 +568,318 @@ NL.add([
   "cap_nhat": "06/11/2026"
  }
 ]);
+NL.add([
+ {
+  "id": "cd04-07",
+  "chu_de": "cd04",
+  "lop": "11",
+  "tieu_de": "Đường cong chuẩn độ: acid mạnh và acid yếu khác nhau thế nào?",
+  "yccd": "Trình bày được nguyên tắc chuẩn độ acid – base; xác định được điểm tương đương và bước nhảy pH từ số liệu chuẩn độ; giải thích được cách chọn chất chỉ thị.",
+  "boi_canh": "Khi chuẩn độ acid bằng base, người ta có thể nhúng điện cực của máy đo pH vào bình tam giác và ghi pH sau mỗi lần thêm dung dịch base từ burette. Đồ thị biểu diễn pH theo thể tích base đã thêm gọi là đường cong chuẩn độ. Đường cong này cho biết điểm tương đương nằm ở đâu, pH thay đổi mạnh nhất trong khoảng nào và vì sao phải chọn chất chỉ thị cho phù hợp.\nGiáo trình mở Chemistry 2e (OpenStax) trình bày hai phép chuẩn độ được thực hiện trong cùng điều kiện: chuẩn độ 25,00 mL dung dịch HCl 0,100 M và chuẩn độ 25,00 mL dung dịch CH₃COOH 0,100 M, đều bằng dung dịch NaOH 0,100 M. Mỗi bình chứa 0,00250 mol acid, nên cả hai phép chuẩn độ đều đạt điểm tương đương khi thêm 25,0 mL dung dịch NaOH. Các giá trị pH trong bảng được tính theo lí thuyết, trong đó hằng số phân li acid của CH₃COOH được lấy là Ka = 1,8 × 10⁻⁵.\nPhương trình phản ứng của hai phép chuẩn độ:\nHCl + NaOH → NaCl + H₂O\nCH₃COOH + NaOH → CH₃COONa + H₂O\nHCl là acid mạnh, phân li hoàn toàn trong nước; CH₃COOH là acid yếu, chỉ phân li một phần. Vì vậy, dù có cùng nồng độ và cùng số mol, hai dung dịch có pH ban đầu khác nhau, và đường cong chuẩn độ của chúng khác nhau rõ rệt ở giai đoạn trước và tại điểm tương đương. Sau điểm tương đương, pH của cả hai bình do lượng NaOH dư quyết định.\nKhoảng pH đổi màu của một số chất chỉ thị (theo bảng tra cứu của LibreTexts Chemistry): methyl da cam 3,2 – 4,4 (đỏ → vàng); methyl đỏ 4,8 – 6,0 (đỏ → vàng); phenolphthalein 8,2 – 10,0 (không màu → hồng). Chất chỉ thị phù hợp là chất đổi màu trong khoảng pH thay đổi đột ngột quanh điểm tương đương.",
+  "bang_so_lieu": {
+   "tieu_de": "pH của dung dịch khi chuẩn độ 25,00 mL HCl 0,100 M và 25,00 mL CH₃COOH 0,100 M bằng dung dịch NaOH 0,100 M",
+   "cot": [
+    "V(NaOH) đã thêm (mL)",
+    "pH (bình HCl)",
+    "pH (bình CH₃COOH)"
+   ],
+   "dong": [
+    [
+     "0,0",
+     "1,00",
+     "2,87"
+    ],
+    [
+     "5,0",
+     "1,18",
+     "4,14"
+    ],
+    [
+     "10,0",
+     "1,37",
+     "4,57"
+    ],
+    [
+     "15,0",
+     "1,60",
+     "4,92"
+    ],
+    [
+     "20,0",
+     "1,95",
+     "5,35"
+    ],
+    [
+     "22,0",
+     "2,20",
+     "5,61"
+    ],
+    [
+     "24,0",
+     "2,69",
+     "6,13"
+    ],
+    [
+     "24,5",
+     "3,00",
+     "6,44"
+    ],
+    [
+     "24,9",
+     "3,70",
+     "7,14"
+    ],
+    [
+     "25,0",
+     "7,00",
+     "8,72"
+    ],
+    [
+     "25,1",
+     "10,30",
+     "10,30"
+    ],
+    [
+     "25,5",
+     "11,00",
+     "11,00"
+    ],
+    [
+     "26,0",
+     "11,29",
+     "11,29"
+    ],
+    [
+     "28,0",
+     "11,75",
+     "11,75"
+    ],
+    [
+     "30,0",
+     "11,96",
+     "11,96"
+    ],
+    [
+     "35,0",
+     "12,22",
+     "12,22"
+    ],
+    [
+     "40,0",
+     "12,36",
+     "12,36"
+    ],
+    [
+     "45,0",
+     "12,46",
+     "12,46"
+    ],
+    [
+     "50,0",
+     "12,52",
+     "12,52"
+    ]
+   ],
+   "ghi_chu": "Số liệu theo Bảng 14.2, mục 14.7 giáo trình Chemistry 2e (OpenStax, 2019); pH tính theo lí thuyết ở 25 °C, Ka(CH₃COOH) = 1,8 × 10⁻⁵."
+  },
+  "nguon": [
+   {
+    "trich_dan": "Flowers, P., Theopold, K., Langley, R., & Robinson, W. R. (2019). Chemistry 2e. OpenStax. Mục 14.7 Acid-Base Titrations, Bảng 14.2. Truy cập 16/11/2026. Nguồn trung gian đã tiếp cận: LibreTexts Chemistry, CHEM 2200: General Chemistry II (Mink), mục 14.8 Acid-Base Titrations (bản chuyển thể từ OpenStax).",
+    "url": "https://openstax.org/books/chemistry-2e/pages/14-7-acid-base-titrations",
+    "loai": "giáo trình",
+    "giay_phep": "CC BY-NC-SA 4.0 – trích số liệu, ghi nguồn"
+   },
+   {
+    "trich_dan": "LibreTexts Chemistry. Reference Table: Acid-Base Indicators (methyl orange 3,2–4,4; methyl red 4,8–6,0; phenolphthalein 8,2–10,0). Truy cập 16/11/2026.",
+    "url": "https://chem.libretexts.org/Ancillary_Materials/Reference/Reference_Tables/Acid-Base_Indicators",
+    "loai": "CSDL",
+    "giay_phep": "CC BY-NC-SA – trích số liệu, ghi nguồn"
+   }
+  ],
+  "hinh_thuc": "Biên soạn lại",
+  "ma_TH": [
+   "TH4",
+   "TH5"
+  ],
+  "ma_VD": [
+   "VD1",
+   "VD2"
+  ],
+  "dinh_huong": "Lớp 11, bài Chuẩn độ acid – base: dùng sau tiết thực hành chuẩn độ, khi học sinh đã biết xác định điểm cuối bằng chất chỉ thị.\nHình thức: hoạt động nhóm 25–30 phút. Mỗi nhóm vẽ hai đường cong trên cùng một hệ trục (giấy kẻ ô hoặc bảng tính), đánh dấu điểm tương đương và khoảng pH thay đổi đột ngột, rồi trình bày lựa chọn chất chỉ thị. Nếu trường có máy đo pH hoặc cảm biến pH, có thể cho học sinh đo thực tế và so sánh với số liệu lí thuyết.",
+  "cau_hoi": [
+   {
+    "ma": [
+     "TH4"
+    ],
+    "dang": "Trả lời ngắn",
+    "noi_dung": "Trong phép chuẩn độ dung dịch HCl, pH tăng thêm bao nhiêu đơn vị khi thể tích dung dịch NaOH đã thêm tăng từ 24,9 mL lên 25,1 mL? (Làm tròn đến hàng phần mười.)",
+    "dap_an": "6,6. Cách tính: 10,30 − 3,70 = 6,60. Chỉ 0,2 mL NaOH (khoảng 4 giọt) làm pH tăng hơn 6 đơn vị, đây là bước nhảy pH của phép chuẩn độ."
+   },
+   {
+    "ma": [
+     "TH4",
+     "VD1"
+    ],
+    "dang": "Đúng/sai",
+    "noi_dung": "Dựa vào bảng số liệu, mỗi nhận định sau đúng hay sai?\na) Trước khi thêm NaOH, dung dịch CH₃COOH 0,100 M có pH lớn hơn dung dịch HCl 0,100 M vì CH₃COOH chỉ phân li một phần.\nb) Tại điểm tương đương, dung dịch trong cả hai bình đều có pH bằng 7.\nc) Khi đã thêm 26,0 mL NaOH, pH của hai bình bằng nhau vì pH lúc này do NaOH dư quyết định.\nd) Có thể dùng methyl da cam làm chất chỉ thị cho phép chuẩn độ CH₃COOH mà vẫn xác định đúng điểm tương đương.",
+    "dap_an": "a) Đúng – pH ban đầu 2,87 so với 1,00.\nb) Sai – bình HCl có pH 7,00 nhưng bình CH₃COOH có pH 8,72 vì ion CH₃COO⁻ tạo thành có tính base yếu.\nc) Đúng – cả hai bình đều có pH 11,29.\nd) Sai – bình CH₃COOH đã có pH 4,14 khi mới thêm 5,0 mL NaOH, nên methyl da cam (3,2 – 4,4) đổi màu quá sớm, xa điểm tương đương."
+   },
+   {
+    "ma": [
+     "TH4",
+     "TH5"
+    ],
+    "dang": "Tự luận",
+    "noi_dung": "Vẽ hai đường cong chuẩn độ (pH theo thể tích NaOH) trên cùng một hệ trục. Chỉ ra điểm tương đương và khoảng pH thay đổi đột ngột của mỗi phép chuẩn độ, sau đó nêu ba điểm khác nhau giữa hai đường cong và giải thích.",
+    "dap_an": "Điểm tương đương của cả hai phép chuẩn độ đều ở 25,0 mL NaOH. Khoảng thay đổi đột ngột (từ 24,9 mL đến 25,1 mL): bình HCl từ pH 3,70 đến 10,30; bình CH₃COOH từ pH 7,14 đến 10,30.\nBa điểm khác nhau:\n(1) pH ban đầu: 1,00 so với 2,87, vì HCl phân li hoàn toàn, CH₃COOH phân li một phần.\n(2) Trước điểm tương đương, pH bình CH₃COOH tăng nhanh lúc đầu rồi tăng chậm (dung dịch chứa CH₃COOH và CH₃COO⁻); bình HCl tăng rất chậm.\n(3) pH tại điểm tương đương: 7,00 so với 8,72, vì CH₃COO⁻ có tính base yếu; bước nhảy của phép chuẩn độ acid yếu hẹp hơn và nằm hoàn toàn trong vùng base.\nSau điểm tương đương, hai đường cong trùng nhau."
+   },
+   {
+    "ma": [
+     "VD2"
+    ],
+    "dang": "Tự luận",
+    "noi_dung": "Một bạn cho rằng: “Chỉ cần dùng phenolphthalein cho mọi phép chuẩn độ acid bằng NaOH là đủ.” Dựa vào số liệu, em đồng ý với ý kiến này ở mức độ nào? Nếu chỉ chuẩn độ HCl, có thể dùng chất chỉ thị nào khác?",
+    "dap_an": "Đồng ý với hai phép chuẩn độ trong bảng: khoảng đổi màu của phenolphthalein (8,2 – 10,0) nằm trong bước nhảy pH của cả bình HCl (3,70 – 10,30) và bình CH₃COOH (7,14 – 10,30). Tuy vậy, không thể khái quát cho “mọi phép chuẩn độ”, vì việc chọn chất chỉ thị còn phụ thuộc vào acid được chuẩn độ và nồng độ dung dịch, nên cần dựa vào đường cong chuẩn độ cụ thể.\nVới phép chuẩn độ HCl, bước nhảy rộng (3,70 – 10,30) nên dùng được cả methyl đỏ (4,8 – 6,0) và methyl da cam (3,2 – 4,4): chất chỉ thị chuyển hẳn sang màu vàng ở pH 4,4, nằm trong bước nhảy nên sai số nhỏ với dung dịch 0,1 M."
+   }
+  ],
+  "luu_y_khoa_hoc": [
+   "Các giá trị pH trong bảng là giá trị tính theo lí thuyết ở 25 °C, không phải số đo. Khi đo bằng máy, kết quả có thể lệch do nồng độ thực của dung dịch chuẩn, nhiệt độ và việc hiệu chuẩn điện cực.",
+   "OpenStax dùng Ka(CH₃COOH) = 1,8 × 10⁻⁵, một số tài liệu khác dùng 1,75 × 10⁻⁵ (CD04-02). Sự khác nhau này không làm thay đổi kết luận về đường cong chuẩn độ.",
+   "Bước nhảy pH phụ thuộc nồng độ: với dung dịch loãng hơn, bước nhảy hẹp lại nên việc chọn chất chỉ thị càng cần cẩn thận.",
+   "Ở đây bước nhảy được đọc trong khoảng 24,9 – 25,1 mL (99,6% – 100,4% lượng NaOH cần dùng) nên có pH 3,70 – 10,30. CD04-01 dùng khoảng hẹp hơn (99,9% – 100,1%) nên ghi pH 4,3 – 9,7. Hai cách ghi không mâu thuẫn; giáo viên nên nói rõ khoảng thể tích khi nêu bước nhảy.",
+   "Chương trình lớp 11 tập trung vào chuẩn độ acid mạnh – base mạnh; đường cong chuẩn độ acid yếu và hằng số Ka là nội dung mở rộng, phù hợp với học sinh khá giỏi hoặc chuyên đề."
+  ],
+  "trang_thai": "doi_sanh",
+  "nguoi_bien_soan": "",
+  "nguoi_tham_dinh": "",
+  "nguoi_dong_gop": "Nguồn do cô Lưu Thị Lương Yến (Khoa Hóa học, Trường Đại học Sư phạm Hà Nội) chia sẻ qua biểu mẫu đóng góp ngữ liệu.",
+  "ai_su_dung": "AI hỗ trợ đọc nguồn và soạn nháp; số liệu chép từ tài liệu gốc và được đối sánh lại; nội dung được chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
+  "cap_nhat": "16/11/2026"
+ },
+ {
+  "id": "cd04-08",
+  "chu_de": "cd04",
+  "lop": "12",
+  "tieu_de": "Định lượng sắt trong quặng: bước nhảy thế trong chuẩn độ oxi hoá – khử",
+  "yccd": "Trình bày được nguyên tắc chuẩn độ oxi hoá – khử; vận dụng tính toán theo phương trình hoá học để xác định hàm lượng chất; giải thích được cách chọn chất chỉ thị oxi hoá – khử.",
+  "boi_canh": "Hàm lượng sắt là một chỉ tiêu quan trọng khi đánh giá chất lượng quặng sắt trước khi đưa vào lò luyện. Một phương pháp kinh điển trong phòng thí nghiệm phân tích là chuẩn độ oxi hoá – khử bằng dung dịch potassium dichromate (K₂Cr₂O₇).\nTheo giáo trình Analytical Chemistry 2.1 của David Harvey (DePauw University), quy trình gồm các bước: hoà tan mẫu quặng trong dung dịch HCl; khử toàn bộ sắt về Fe²⁺ bằng cột khử Jones (kẽm hỗn hống); chuẩn độ Fe²⁺ bằng dung dịch K₂Cr₂O₇ với chất chỉ thị diphenylamine sulfonic acid. Phương trình phản ứng chuẩn độ:\nCr₂O₇²⁻ + 6Fe²⁺ + 14H⁺ → 2Cr³⁺ + 6Fe³⁺ + 7H₂O\nTrong một ví dụ của giáo trình, mẫu quặng nặng 0,4891 g cần 36,92 mL dung dịch K₂Cr₂O₇ 0,02153 M để đạt điểm cuối; kết quả được biểu diễn theo phần trăm khối lượng Fe₂O₃.\nLàm thế nào để nhận ra điểm tương đương? Trong chuẩn độ acid – base, pH thay đổi đột ngột quanh điểm tương đương. Trong chuẩn độ oxi hoá – khử, đại lượng thay đổi đột ngột là thế điện cực E của dung dịch. Bảng số liệu dưới đây là đường cong chuẩn độ 50,0 mL dung dịch Fe²⁺ 0,100 M bằng dung dịch Ce⁴⁺ 0,100 M trong môi trường HClO₄ 1 M (Fe²⁺ + Ce⁴⁺ → Fe³⁺ + Ce³⁺), cũng lấy từ giáo trình trên. Thế điện cực hình thức của các cặp trong môi trường này: Fe³⁺/Fe²⁺ là +0,767 V; Ce⁴⁺/Ce³⁺ là +1,70 V; thế tại điểm tương đương là +1,23 V.\nChất chỉ thị oxi hoá – khử là chất có màu ở dạng oxi hoá khác màu ở dạng khử, đổi màu quanh một giá trị thế xác định. Một số ví dụ: diphenylamine sulfonic acid, E° = 0,85 V (dạng oxi hoá đỏ tím, dạng khử không màu); ferroin, E° = 1,147 V (dạng oxi hoá xanh nhạt, dạng khử đỏ).",
+  "bang_so_lieu": {
+   "tieu_de": "Thế điện cực của dung dịch khi chuẩn độ 50,0 mL Fe²⁺ 0,100 M bằng Ce⁴⁺ 0,100 M (HClO₄ 1 M)",
+   "cot": [
+    "V(Ce⁴⁺) đã thêm (mL)",
+    "E (V)"
+   ],
+   "dong": [
+    [
+     "10,0",
+     "0,731"
+    ],
+    [
+     "20,0",
+     "0,757"
+    ],
+    [
+     "30,0",
+     "0,777"
+    ],
+    [
+     "40,0",
+     "0,803"
+    ],
+    [
+     "50,0",
+     "1,23"
+    ],
+    [
+     "60,0",
+     "1,66"
+    ],
+    [
+     "70,0",
+     "1,68"
+    ],
+    [
+     "80,0",
+     "1,69"
+    ],
+    [
+     "90,0",
+     "1,69"
+    ],
+    [
+     "100,0",
+     "1,70"
+    ]
+   ],
+   "ghi_chu": "Số liệu tính theo lí thuyết trong giáo trình Analytical Chemistry 2.1 (D. Harvey), mục 9.4 Redox Titrations; truy cập qua LibreTexts Chemistry."
+  },
+  "nguon": [
+   {
+    "trich_dan": "Harvey, D. Analytical Chemistry 2.1. DePauw University. Mục 9.4 Redox Titrations: bảng thế điện cực khi chuẩn độ Fe²⁺ bằng Ce⁴⁺; Bảng 9.4.2 Selected Examples of Redox Indicators; Ví dụ 9.4.2 (định lượng sắt trong quặng bằng K₂Cr₂O₇). Truy cập 16/11/2026 qua LibreTexts Chemistry (Shasta College, Analytical, mục 9.4).",
+    "url": "https://chem.libretexts.org/Courses/Shasta_College/Analytical/09%3A_Titrimetric_Methods/9.04%3A_Redox_Titrations",
+    "loai": "giáo trình",
+    "giay_phep": "CC BY-NC-SA 4.0 – trích số liệu, ghi nguồn"
+   }
+  ],
+  "hinh_thuc": "Biên soạn lại",
+  "ma_TH": [
+   "TH3",
+   "TH4",
+   "TH5"
+  ],
+  "ma_VD": [
+   "VD1",
+   "VD2"
+  ],
+  "dinh_huong": "Lớp 12, phần chuẩn độ oxi hoá – khử: dùng sau khi học sinh đã làm quen với phép chuẩn độ Fe²⁺ bằng KMnO₄ trong SGK.\nHình thức: hoạt động nhóm hoặc bài tập về nhà. Câu 1 và câu 2 dùng cho mọi học sinh; câu 3 và câu 4 dành cho học sinh khá giỏi, ôn thi chọn học sinh giỏi hoặc học chuyên đề. Giáo viên nên cho học sinh đặt bảng số liệu này cạnh đường cong chuẩn độ acid – base (CD04-07) để so sánh.",
+  "cau_hoi": [
+   {
+    "ma": [
+     "TH4"
+    ],
+    "dang": "Trả lời ngắn",
+    "noi_dung": "Mẫu quặng nặng 0,4891 g, sau khi khử toàn bộ sắt về Fe²⁺, cần 36,92 mL dung dịch K₂Cr₂O₇ 0,02153 M để chuẩn độ. Tính phần trăm khối lượng Fe₂O₃ trong quặng. (M(Fe₂O₃) = 159,69 g/mol; làm tròn đến hàng phần trăm.)",
+    "dap_an": "77,86. Cách tính: n(Cr₂O₇²⁻) = 0,02153 × 0,03692 = 7,949 × 10⁻⁴ mol; n(Fe²⁺) = 6 × 7,949 × 10⁻⁴ = 4,769 × 10⁻³ mol; n(Fe₂O₃) = 2,385 × 10⁻³ mol; m(Fe₂O₃) = 0,3808 g; %Fe₂O₃ = 0,3808 : 0,4891 × 100% = 77,86%."
+   },
+   {
+    "ma": [
+     "TH4",
+     "VD1"
+    ],
+    "dang": "Đúng/sai",
+    "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Trước điểm tương đương, thế của dung dịch tăng chậm; quanh 50,0 mL Ce⁴⁺, thế tăng đột ngột.\nb) Khi Ce⁴⁺ đã dư nhiều, thế của dung dịch tiến gần thế hình thức của cặp Ce⁴⁺/Ce³⁺.\nc) Trong phép định lượng sắt bằng K₂Cr₂O₇, 1 mol Cr₂O₇²⁻ phản ứng với 3 mol Fe²⁺.\nd) Ferroin phù hợp với phép chuẩn độ Fe²⁺ bằng Ce⁴⁺ hơn diphenylamine sulfonic acid.",
+    "dap_an": "a) Đúng – từ 10,0 mL đến 40,0 mL thế chỉ tăng từ 0,731 V lên 0,803 V, nhưng từ 40,0 mL đến 60,0 mL tăng từ 0,803 V lên 1,66 V.\nb) Đúng – ở 100,0 mL, E = 1,70 V, bằng thế hình thức của cặp Ce⁴⁺/Ce³⁺.\nc) Sai – mỗi ion Cr₂O₇²⁻ nhận 6 electron (2Cr⁺⁶ → 2Cr⁺³), mỗi ion Fe²⁺ nhường 1 electron, nên tỉ lệ là 1 : 6.\nd) Đúng – ferroin đổi màu quanh 1,147 V, gần thế tại điểm tương đương (1,23 V); diphenylamine sulfonic acid đổi màu quanh 0,85 V, tức là trước điểm tương đương, gây sai số."
+   },
+   {
+    "ma": [
+     "TH3",
+     "VD2"
+    ],
+    "dang": "Tự luận",
+    "noi_dung": "Vì sao phải khử toàn bộ sắt trong mẫu về Fe²⁺ trước khi chuẩn độ bằng K₂Cr₂O₇? Nếu khâu khử chưa hoàn toàn, phần trăm Fe₂O₃ tính được sẽ lớn hơn hay nhỏ hơn giá trị thực? Giải thích.",
+    "dap_an": "Trong quặng, sắt có thể ở dạng Fe(III) và Fe(II), nhưng K₂Cr₂O₇ chỉ oxi hoá Fe²⁺. Muốn xác định tổng lượng sắt thì phải đưa toàn bộ sắt về Fe²⁺. Nếu khử chưa hoàn toàn, một phần sắt vẫn ở dạng Fe³⁺ không phản ứng với Cr₂O₇²⁻, thể tích K₂Cr₂O₇ tiêu tốn giảm, nên phần trăm Fe₂O₃ tính được nhỏ hơn giá trị thực (sai số âm)."
+   },
+   {
+    "ma": [
+     "TH5"
+    ],
+    "dang": "Tự luận",
+    "noi_dung": "So sánh đường cong chuẩn độ oxi hoá – khử (bảng số liệu) với đường cong chuẩn độ acid – base về: đại lượng trên trục tung, hình dạng đường cong quanh điểm tương đương và nguyên tắc chọn chất chỉ thị.",
+    "dap_an": "Trục tung: chuẩn độ acid – base dùng pH; chuẩn độ oxi hoá – khử dùng thế điện cực E (V).\nHình dạng: cả hai đều thay đổi chậm ở xa điểm tương đương và thay đổi đột ngột quanh điểm tương đương (ở đây E tăng từ 0,803 V lên 1,66 V khi thể tích Ce⁴⁺ tăng từ 40,0 mL lên 60,0 mL).\nChọn chất chỉ thị: cùng một nguyên tắc – chất chỉ thị phải đổi màu trong bước nhảy, càng gần điểm tương đương càng tốt. Chất chỉ thị acid – base đổi màu theo pH; chất chỉ thị oxi hoá – khử đổi màu theo thế E."
+   }
+  ],
+  "luu_y_khoa_hoc": [
+   "Các giá trị thế trong bảng là giá trị tính theo lí thuyết, dùng thế hình thức trong HClO₄ 1 M, không phải số đo.",
+   "“Thế hình thức” là thế điện cực của cặp oxi hoá – khử đo trong một môi trường cụ thể (ở đây là HClO₄ 1 M), có thể khác thế điện cực chuẩn trong SGK. Khi dạy, có thể gọi gọn là thế điện cực của cặp trong môi trường đó.",
+   "Kết luận “diphenylamine sulfonic acid đổi màu quá sớm” chỉ đúng với phép chuẩn độ Fe²⁺ bằng Ce⁴⁺ trong bảng. Với phép chuẩn độ Fe²⁺ bằng Cr₂O₇²⁻ trong ví dụ định lượng quặng, giáo trình của Harvey cho biết chất chỉ thị này cho điểm cuối rất rõ. Cần nhắc học sinh không áp dụng kết luận của đường cong này cho mọi phép chuẩn độ sắt.",
+   "Ion Ce⁴⁺ và chất chỉ thị ferroin không có trong SGK phổ thông; ngữ liệu dùng chúng để minh hoạ nguyên tắc chung của bước nhảy thế, phù hợp với học sinh khá giỏi.",
+   "Cột khử Jones chứa kẽm hỗn hống (có thuỷ ngân) và K₂Cr₂O₇ là hợp chất Cr(VI) độc, có khả năng gây ung thư. Quy trình chỉ được giới thiệu, không thực hiện ở trường phổ thông."
+  ],
+  "trang_thai": "doi_sanh",
+  "nguoi_bien_soan": "",
+  "nguoi_tham_dinh": "",
+  "nguoi_dong_gop": "Nguồn do cô Lưu Thị Lương Yến (Khoa Hóa học, Trường Đại học Sư phạm Hà Nội) chia sẻ qua biểu mẫu đóng góp ngữ liệu.",
+  "ai_su_dung": "AI hỗ trợ đọc nguồn và soạn nháp; số liệu chép từ tài liệu gốc và được đối sánh lại; nội dung được chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
+  "cap_nhat": "16/11/2026"
+ }
+]);
