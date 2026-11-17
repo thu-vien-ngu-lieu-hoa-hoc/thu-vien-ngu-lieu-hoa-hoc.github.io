@@ -707,6 +707,9 @@ p{margin:0 0 16px}
   .lanes{grid-template-columns:repeat(3,1fr);gap:8px} .lanes .col{box-shadow:none}
 }
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" integrity="sha512-fHwaWebuwA7NSF5Qg/af4UeDx9XqUpYpOGgubo3yWu+b2IQR4UeQwbb42Ti7gVAjNtVoI/I9TEoYeu9omwcC6g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js" integrity="sha512-LQNxIMR5rXv7o+b1l8+N1EZMfhG7iFZ9HhnbJkTp4zjNr5Wvst75AqUeFDxeRUa7l5vEDyUiAip//r+EFLLCyA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<style>.katex{font-size:1.08em}.katex-display{margin:.6em 0;overflow-x:auto;overflow-y:hidden;padding:2px 0}</style>
 </head>
 <body>
 <div id="readbar" aria-hidden="true"></div>
@@ -749,7 +752,7 @@ const CAU_HINH = {
   khau_hieu: 'Từ dữ liệu thật đến nhiệm vụ năng lực',
   don_vi: 'Khoa Hóa học, Trường Khoa học Tự nhiên và Công nghệ – Trường Đại học Sư phạm Hà Nội',
   nhom: 'Nhóm sinh viên dự thi Giải pháp Nghiệp vụ số, Khoa Hóa học, Trường Khoa học Tự nhiên và Công nghệ – Trường Đại học Sư phạm Hà Nội',
-  file_huong_dan: 'data/Gioi_thieu_va_Huong_dan_Thu_vien_ngu_lieu.docx',
+  file_huong_dan: 'data/Huong-dan-su-dung-Thu-vien-ngu-lieu-Hoa-hoc.docx',
   link_gop_y: 'https://docs.google.com/forms/d/e/1FAIpQLSedxVpFf3Q9Hd2KUtUu0saDOFOr0A0DE_jqGPIykzxYzidbtw/viewform',          // link Google Form góp ý
   link_dong_gop: 'https://docs.google.com/forms/d/e/1FAIpQLSf1qYCrakNzTiPdUBvYVu8a84MNqOq4VcplxAtpUatdjMtgLg/viewform',          // link Google Form ĐÓNG GÓP NGỮ LIỆU (riêng); để trống thì ẩn nút
   link_tro_li_ai: '',      // link Gem / Custom GPT cho giáo viên (P6), để trống nếu không có
@@ -838,7 +841,14 @@ const MA_NL = id => String(id == null ? '' : id).toUpperCase();
 const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 /* Chỉ tô vàng ô chờ điền ([CẦN BỔ SUNG…], [họ tên…], [chưa…]) – không tô công thức phức chất như [Cu(NH₃)₄]²⁺ */
 const mark = s => s.replace(/\[((?:CẦN BỔ SUNG|cần bổ sung|họ tên|chưa)[^\]]*)\]/g, '<span class="todo">[$1]</span>');
-const txt = s => mark(esc(s));
+/* Ký hiệu chuẩn: Δ_rH°, Δ_fH°, Δ_cH°(gas/liquid), K_a, pK_a, K_b, K_c, E°_pin */
+const kyHieu = s => s
+  .replace(/Δ([rfc])H(°?)(gas|liquid)?/g, (_, a, o, t) => `Δ<sub>${a}</sub>H${o}${t ? `<sub>${t}</sub>` : ''}`)
+  .replace(/(^|[^A-Za-zÀ-ỹ])(p?)K([abcpw])(?![A-Za-zÀ-ỹ])/g, '$1$2K<sub>$3</sub>')
+  .replace(/E°(pin|anode|cathode)/g, 'E°<sub>$1</sub>');
+/* Công thức toán viết trong dữ liệu giữa $…$ (cùng dòng) hoặc $$…$$ (dòng riêng, căn giữa), hiển thị bằng KaTeX */
+const toan = (t, khoi) => window.katex ? katex.renderToString(t, {displayMode: !!khoi, throwOnError: false, strict: false, output: 'html'}) : esc(t);
+const txt = s => String(s == null ? '' : s).split(/(\$\$[^$]+\$\$|\$[^$]+\$)/).map((p, i) => i % 2 ? (p.startsWith('$$') ? toan(p.slice(2, -2), 1) : toan(p.slice(1, -1))) : kyHieu(mark(esc(p)))).join('');
 const paras = s => String(s||'').split(/\n\s*\n/).filter(p=>p.trim()).map(p => `<p>${txt(p.trim()).replace(/\n/g,'<br>')}</p>`).join('');
 const lines = s => txt(String(s||'').trim()).replace(/\n/g,'<br>');
 const isUrl = u => /^https?:\/\//i.test(String(u||'').trim());
@@ -1554,7 +1564,7 @@ function pageHuongDan(){
     <h1>Hướng dẫn sử dụng</h1>
     <p class="lead">Website cung cấp hệ thống ngữ liệu hoá học gắn với thực nghiệm và các bối cảnh thực tiễn, được biên tập từ các nguồn dữ liệu tin cậy, có thể sử dụng để phát triển thành các nhiệm vụ, câu hỏi, bài tập trong dạy học và đánh giá năng lực hoá học.</p>
     <nav class="htoc" aria-label="Mục lục hướng dẫn"><b>Mục lục</b><ol>${TOC.map((x,i) => '<li><a href="#shd-' + (i+1) + '">' + x + '</a></li>').join('')}<li><a href="#shd-p">Phụ lục: Bộ prompt mẫu (Khối 0 và 12 prompt)</a></li></ol>
-      <div class="htoc-act">${C.file_huong_dan ? '<a class="btn ghost" href="' + esc(C.file_huong_dan) + '" download>' + icon('print',16) + ' Tải giới thiệu và hướng dẫn (Word)</a>' : ''}<button class="btn ghost" data-hs="1">Mở tất cả</button><button class="btn ghost" data-hs="0">Thu gọn tất cả</button></div></nav>
+      <div class="htoc-act">${C.file_huong_dan ? '<a class="btn ghost" href="' + esc(C.file_huong_dan) + '" download="Hướng dẫn sử dụng - Thư viện ngữ liệu Hóa học.docx">' + icon('print',16) + ' Tải hướng dẫn sử dụng (Word)</a>' : ''}<button class="btn ghost" data-hs="1">Mở tất cả</button><button class="btn ghost" data-hs="0">Thu gọn tất cả</button></div></nav>
     <p class="small muted">Bấm vào tên mục để mở hoặc thu gọn.</p>
 
     ${sec(1, guideBand(false).replace('<div class="guide-hd"><h2>Dùng thư viện trong 4 bước</h2></div>',''))}

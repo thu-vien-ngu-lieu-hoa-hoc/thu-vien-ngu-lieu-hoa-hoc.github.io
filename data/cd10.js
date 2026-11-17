@@ -73,7 +73,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Một chai nước ngọt cola chứa 330 g đồ uống. Theo bảng trên, hãy ước tính số gam đường tự do chứa trong chai nước ngọt trên. (Làm tròn đến hàng đơn vị.)",
-    "dap_an": "30. Cách tính: 330 × 9,0 : 100 ≈ 29,7 ≈ 30 g, vượt mức 25 g/ngày (5% năng lượng) theo WHO."
+    "dap_an": "30. Cách tính: $\\dfrac{330 \\times  9{,}0}{100} \\approx  29{,}7 \\approx  30$ g, vượt mức 25 g/ngày (5% năng lượng) theo WHO."
    },
    {
     "ma": [
@@ -111,7 +111,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Thuỷ phân tinh bột bởi amylase trong nước bọt",
   "yccd": "Trình bày được phản ứng thuỷ phân tinh bột; thực hiện được thí nghiệm nhận biết tinh bột bằng iodine và glucose bằng thuốc thử phù hợp.",
-  "boi_canh": "Khi nhai kĩ một miếng cơm trắng, có thể cảm nhận vị ngọt tăng dần. Nguyên nhân là trong nước bọt có enzyme α-amylase xúc tác cho phản ứng thuỷ phân tinh bột (không có vị ngọt) thành các phân tử đường nhỏ hơn như maltose (đường mạch nha, có vị ngọt nhẹ).\nCó thể kiểm chứng điều này bằng một thí nghiệm có đối chứng đơn giản như sau:\nChuẩn bị: Cho vào bốn ống nghiệm lượng hồ tinh bột loãng (1%) như nhau. Ống 1 thêm nước cất; ống 2 thêm một lượng nước bọt pha loãng tương đương; ống 3 thêm nước bọt pha loãng đã đun sôi; ống 4 thêm nước bọt pha loãng và vài giọt giấm.\nTiến hành: Giữ các ống nghiệm ở nhiệt độ khoảng 37–40 °C (nhiệt độ thích hợp cho enzyme hoạt động) trong 10–15 phút.\nKết quả kiểm tra:\nThử với dung dịch iodine:\nỐng 1: Xuất hiện màu xanh tím đặc trưng do tinh bột chưa bị thuỷ phân.\nỐng 2: Không xuất hiện màu xanh tím rõ ràng do tinh bột đã bị enzyme amylase thuỷ phân (gần như hết) thành các đường nhỏ hơn.\nThử với dung dịch Cu(OH)₂ trong môi trường kiềm (đun nóng):\nỐng 1: Không có kết tủa đỏ gạch do tinh bột không có tính khử.\nỐng 2: Xuất hiện kết tủa đỏ gạch (Cu₂O) do sản phẩm thuỷ phân là maltose (và một lượng nhỏ glucose) – các đường có tính khử.",
+  "boi_canh": "Khi nhai kĩ một miếng cơm trắng, có thể cảm nhận vị ngọt tăng dần. Nguyên nhân là trong nước bọt có enzyme α-amylase xúc tác cho phản ứng thuỷ phân tinh bột (không có vị ngọt) thành các phân tử đường nhỏ hơn như maltose (đường mạch nha, có vị ngọt nhẹ).\nCó thể kiểm chứng điều này bằng một thí nghiệm có đối chứng đơn giản như sau:\nChuẩn bị: Cho vào bốn ống nghiệm lượng hồ tinh bột loãng (1%) như nhau.\nỐng 1: thêm nước cất.\nỐng 2: thêm một lượng nước bọt pha loãng tương đương.\nỐng 3: thêm nước bọt pha loãng đã đun sôi.\nỐng 4: thêm nước bọt pha loãng và vài giọt giấm.\nTiến hành: Giữ các ống nghiệm ở nhiệt độ khoảng 37–40 °C (nhiệt độ thích hợp cho enzyme hoạt động) trong 10–15 phút.\nKết quả kiểm tra:\nThử với dung dịch iodine:\nỐng 1: Xuất hiện màu xanh tím đặc trưng do tinh bột chưa bị thuỷ phân.\nỐng 2: Không xuất hiện màu xanh tím rõ ràng do tinh bột đã bị enzyme amylase thuỷ phân (gần như hết) thành các đường nhỏ hơn.\nThử với dung dịch Cu(OH)₂ trong môi trường kiềm (đun nóng):\nỐng 1: Không có kết tủa đỏ gạch do tinh bột không có tính khử.\nỐng 2: Xuất hiện kết tủa đỏ gạch (Cu₂O) do sản phẩm thuỷ phân là maltose (và một lượng nhỏ glucose) – các đường có tính khử.",
   "bang_so_lieu": {
    "tieu_de": "Bảng ghi kết quả (học sinh tự quan sát)",
    "cot": [
@@ -180,7 +180,7 @@ NL.add([
     ],
     "dang": "Tự luận",
     "noi_dung": "Dự đoán kết quả thử iodine và Cu(OH)₂/OH⁻ của 4 ống nghiệm sau 15 phút. Giải thích.",
-    "dap_an": "Ống 1: tạo màu xanh tím với iodine, không tạo kết tủa đỏ gạch với Cu(OH)₂/OH⁻ (tinh bột chưa bị thuỷ phân). Ống 2: màu với iodine nhạt hoặc không có màu xanh tím; tạo kết tủa đỏ gạch (amylase thuỷ phân tinh bột thành đường khử). Ống 3, 4: giống ống 1 hoặc gần giống, vì enzyme mất hoạt tính do nhiệt hoặc pH acid."
+    "dap_an": "Ống 1: tạo màu xanh tím với iodine, không tạo kết tủa đỏ gạch với Cu(OH)₂/OH⁻ (tinh bột chưa bị thuỷ phân).\nỐng 2: màu với iodine nhạt hoặc không có màu xanh tím; tạo kết tủa đỏ gạch (amylase thuỷ phân tinh bột thành đường khử).\nỐng 3, 4: giống ống 1 hoặc gần giống, vì enzyme mất hoạt tính do nhiệt hoặc pH acid."
    },
    {
     "ma": [
@@ -258,7 +258,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Lên men 1 000 kg glucose với hiệu suất 80%. Tính khối lượng ethanol (kg) thu được. (M(C₆H₁₂O₆) = 180; M(C₂H₅OH) = 46; làm tròn đến hàng đơn vị.)",
-    "dap_an": "409. Cách tính: lí thuyết 1 000 × 92/180 ≈ 511,1 kg; thực tế 511,1 × 80% ≈ 409 kg."
+    "dap_an": "409. Cách tính: lí thuyết $1\\,000 \\times  \\dfrac{92}{180} \\approx  511{,}1$ kg; thực tế 511,1 × 80% ≈ 409 kg."
    },
    {
     "ma": [
@@ -337,7 +337,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Tính khối lượng glucose (kg) tối đa thu được khi thuỷ phân hoàn toàn 1,00 kg tinh bột. (Gốc C₆H₁₀O₅ = 162; C₆H₁₂O₆ = 180; làm tròn đến hàng phần trăm.)",
-    "dap_an": "1,11. Cách tính: 1,00 × 180/162 ≈ 1,11 kg (khối lượng tăng do kết hợp nước)."
+    "dap_an": "1,11. Cách tính: $1{,}00 \\times  \\dfrac{180}{162} \\approx  1{,}11$ kg (khối lượng tăng do kết hợp nước)."
    },
    {
     "ma": [
@@ -425,7 +425,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Một lon nước 330 mL chứa 35 g đường. Tính hàm lượng đường của loại nước này (g/100 mL). (Làm tròn đến hàng phần mười.)",
-    "dap_an": "10,6. Cách tính: 35 : 330 × 100 ≈ 10,6 g/100 mL, thuộc diện chịu thuế (trên 5 g/100 mL)."
+    "dap_an": "10,6. Cách tính: $\\dfrac{35}{330} \\times  100 \\approx  10{,}6$ g/100 mL, thuộc diện chịu thuế (trên 5 g/100 mL)."
    },
    {
     "ma": [
@@ -511,7 +511,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Một tấn rơm khô chứa 40% cellulose (về khối lượng). Thuỷ phân cellulose rồi lên men glucose tạo thành ethanol với hiệu suất chung của cả quá trình là 50%. Tính khối lượng ethanol (kg) thu được. (C₆H₁₀O₅ = 162; C₂H₅OH = 46; làm tròn đến hàng đơn vị.)",
-    "dap_an": "114. Cách tính: cellulose = 400 kg; mỗi gốc C₆H₁₀O₅ cho 2 C₂H₅OH; ethanol lí thuyết = 400 × 92/162 ≈ 227,2 kg; thực tế 227,2 × 50% ≈ 114 kg."
+    "dap_an": "114. Cách tính: cellulose = 400 kg; mỗi gốc C₆H₁₀O₅ cho 2 C₂H₅OH; ethanol lí thuyết = $400 \\times  \\dfrac{92}{162} \\approx  227{,}2$ kg; thực tế 227,2 × 50% ≈ 114 kg."
    },
    {
     "ma": [

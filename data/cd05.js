@@ -187,7 +187,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Giả sử mỗi pin chanh tạo ra điện áp không tải 0,8 V. Cần ghép nối tiếp tối thiểu bao nhiêu pin chanh để tổng điện áp không tải đạt ít nhất 2,0 V?",
-    "dap_an": "3. Cách tính: 2,0 : 0,8 = 2,5 nên cần ít nhất 3 pin chanh."
+    "dap_an": "3. Cách tính: $\\dfrac{2{,}0}{0{,}8} = 2{,}5$ nên cần ít nhất 3 pin chanh."
    },
    {
     "ma": [
@@ -269,7 +269,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Theo IEA, doanh số ô tô điện năm 2023 tăng 3,5 triệu chiếc, tương ứng tăng 35% so với năm 2022. Doanh số năm 2022 khoảng bao nhiêu triệu chiếc? (Làm tròn đến hàng đơn vị.)",
-    "dap_an": "10. Cách tính: 3,5 : 0,35 = 10 triệu chiếc."
+    "dap_an": "10. Cách tính: $\\dfrac{3{,}5}{0{,}35} = 10$ triệu chiếc."
    },
    {
     "ma": [
@@ -307,7 +307,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Sản xuất nhôm bằng điện phân nóng chảy aluminium oxide",
   "yccd": "Trình bày được nguyên tắc điện phân nóng chảy; vận dụng định luật Faraday tính lượng chất thu được ở điện cực.",
-  "boi_canh": "Theo báo cáo Mineral Commodity Summaries của Cục Khảo sát Địa chất Hoa Kỳ (USGS), Việt Nam có trữ lượng bauxite khoảng 5,8 tỉ tấn, thuộc nhóm lớn nhất thế giới. Quặng bauxite được tinh chế thành alumina (Al₂O₃) theo quy trình Bayer.\nĐể sản xuất nhôm kim loại, alumina phải được điện phân nóng chảy theo quy trình Hall – Héroult. Al₂O₃ có nhiệt độ nóng chảy trên 2 000 °C (PubChem ghi 2 072 °C), nên trong công nghiệp, Al₂O₃ được hoà tan trong cryolite (Na₃AlF₆) nóng chảy; theo Kvande và Drabløs (2014), bể điện phân làm việc ở khoảng 950–960 °C. Ở cathode: Al³⁺ + 3e⁻ → Al. Ở anode (làm bằng carbon), oxygen sinh ra đốt cháy dần anode, tạo thành CO₂.\nQuá trình điện phân sản xuất nhôm cần dòng điện có cường độ rất lớn và tiêu tốn nhiều điện năng. Vì vậy, các nhà máy luyện nhôm thường được đặt gần nguồn điện giá rẻ.\nTrong khi đó, theo Viện Nhôm Quốc tế (IAI), tái chế nhôm tiết kiệm khoảng 95% năng lượng so với sản xuất nhôm mới (khoảng 8,3 GJ so với 186 GJ cho mỗi tấn). Vì vậy, thu gom lon nhôm để tái chế là cách tiết kiệm năng lượng đáng kể.",
+  "boi_canh": "Theo báo cáo Mineral Commodity Summaries của Cục Khảo sát Địa chất Hoa Kỳ (USGS), Việt Nam có trữ lượng bauxite khoảng 5,8 tỉ tấn, thuộc nhóm lớn nhất thế giới. Quặng bauxite được tinh chế thành alumina (Al₂O₃) theo quy trình Bayer.\nĐể sản xuất nhôm kim loại, alumina phải được điện phân nóng chảy theo quy trình Hall – Héroult. Al₂O₃ có nhiệt độ nóng chảy trên 2 000 °C (PubChem ghi 2 072 °C), nên trong công nghiệp, Al₂O₃ được hoà tan trong cryolite (Na₃AlF₆) nóng chảy; theo Kvande và Drabløs (2014), bể điện phân làm việc ở khoảng 950–960 °C.\nỞ cathode: Al³⁺ + 3e⁻ → Al.\nỞ anode (làm bằng carbon), oxygen sinh ra đốt cháy dần anode, tạo thành CO₂.\nQuá trình điện phân sản xuất nhôm cần dòng điện có cường độ rất lớn và tiêu tốn nhiều điện năng. Vì vậy, các nhà máy luyện nhôm thường được đặt gần nguồn điện giá rẻ.\nTrong khi đó, theo Viện Nhôm Quốc tế (IAI), tái chế nhôm tiết kiệm khoảng 95% năng lượng so với sản xuất nhôm mới (khoảng 8,3 GJ so với 186 GJ cho mỗi tấn). Vì vậy, thu gom lon nhôm để tái chế là cách tiết kiệm năng lượng đáng kể.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Sơ đồ bể điện phân Hall – Héroult (vẽ lại).",
   "nguon": [
@@ -354,7 +354,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Một bể điện phân nhôm hoạt động với dòng điện có cường độ 300 000 A trong 1 giờ. Tính khối lượng nhôm (kg) thu được ở cathode, coi hiệu suất 100% (F = 96 485 C/mol; M(Al) = 27). (Làm tròn đến hàng phần mười.)",
-    "dap_an": "100,7. Cách tính: Q = 300 000 × 3 600 = 1,08 × 10⁹ C; n(e) = 1,08 × 10⁹ : 96 485 ≈ 11 193 mol; n(Al) = 3 731 mol; m ≈ 100 744 g ≈ 100,7 kg."
+    "dap_an": "100,7. Cách tính: Q = 300 000 × 3 600 = 1,08 × 10⁹ C; n(e) = $\\dfrac{1{,}08 \\times  10^{9}}{96\\,485} \\approx  11\\,193$ mol; n(Al) = 3 731 mol; m ≈ 100 744 g ≈ 100,7 kg."
    },
    {
     "ma": [
@@ -484,7 +484,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Mạ điện và định luật Faraday",
   "yccd": "Trình bày được ứng dụng của điện phân trong mạ điện, tinh chế kim loại; vận dụng định luật Faraday.",
-  "boi_canh": "Vòi nước sáng bóng, khoá cửa, ốc vít, linh kiện điện tử thường được phủ một lớp kim loại mỏng bằng phương pháp mạ điện. Lớp mạ giúp chống ăn mòn, tăng độ cứng hoặc làm đẹp.\nNguyên tắc: vật cần mạ được nối với cực âm của nguồn điện một chiều (đóng vai trò cathode), thanh kim loại dùng để mạ được nối với cực dương (đóng vai trò anode). Cả hai được nhúng trong dung dịch chứa ion của kim loại mạ. Ví dụ, khi mạ đồng: tại anode, Cu → Cu²⁺ + 2e⁻; tại cathode, Cu²⁺ + 2e⁻ → Cu (bám lên vật). Nồng độ Cu²⁺ trong dung dịch gần như không đổi.\nĐịnh luật Faraday cho phép tính khối lượng kim loại bám vào: m = A·I·t / (n·F), với F = 96 485 C/mol (giá trị CODATA do NIST công bố: 96 485,332 12 C/mol). Người thợ mạ điều chỉnh cường độ dòng điện và thời gian để thu được lớp mạ có độ dày theo yêu cầu.\nNgười làm nghề mạ cần có hiểu biết về hoá học, an toàn hoá chất và xử lí nước thải, vì dung dịch mạ có thể chứa kim loại nặng, cyanide hoặc chromium(VI). Theo giáo trình Chemistry 2e (OpenStax), các kim loại thường dùng để mạ gồm cadmium, chromium, đồng, vàng, nickel, bạc và thiếc.",
+  "boi_canh": "Vòi nước sáng bóng, khoá cửa, ốc vít, linh kiện điện tử thường được phủ một lớp kim loại mỏng bằng phương pháp mạ điện. Lớp mạ giúp chống ăn mòn, tăng độ cứng hoặc làm đẹp.\nNguyên tắc: vật cần mạ được nối với cực âm của nguồn điện một chiều (đóng vai trò cathode), thanh kim loại dùng để mạ được nối với cực dương (đóng vai trò anode). Cả hai được nhúng trong dung dịch chứa ion của kim loại mạ. Ví dụ, khi mạ đồng:\nTại anode: Cu → Cu²⁺ + 2e⁻.\nTại cathode: Cu²⁺ + 2e⁻ → Cu (bám lên vật).\nNồng độ Cu²⁺ trong dung dịch gần như không đổi.\nĐịnh luật Faraday cho phép tính khối lượng kim loại bám vào: $m = \\dfrac{A\\cdot I\\cdot t}{n\\cdot F}$, với F = 96 485 C/mol (giá trị CODATA do NIST công bố: 96 485,332 12 C/mol). Người thợ mạ điều chỉnh cường độ dòng điện và thời gian để thu được lớp mạ có độ dày theo yêu cầu.\nNgười làm nghề mạ cần có hiểu biết về hoá học, an toàn hoá chất và xử lí nước thải, vì dung dịch mạ có thể chứa kim loại nặng, cyanide hoặc chromium(VI). Theo giáo trình Chemistry 2e (OpenStax), các kim loại thường dùng để mạ gồm cadmium, chromium, đồng, vàng, nickel, bạc và thiếc.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Sơ đồ bể mạ đồng (tự vẽ); ảnh vật trước và sau khi mạ trong thí nghiệm của khoa.",
   "nguon": [
@@ -519,7 +519,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Tiến hành mạ đồng cho một vật với dòng điện có cường độ 2,00 A trong 30 phút. Tính khối lượng đồng (gam) bám vào vật, coi hiệu suất 100% (M(Cu) = 63,5; F = 96 485 C/mol). (Làm tròn đến hàng phần trăm.)",
-    "dap_an": "1,18. Cách tính: Q = 2,00 × 1 800 = 3 600 C; m = 63,5 × 3 600 / (2 × 96 485) ≈ 1,18 g."
+    "dap_an": "1,18. Cách tính: Q = 2,00 × 1 800 = 3 600 C; $m = \\dfrac{63{,}5 \\times  3\\,600}{2 \\times  96\\,485} \\approx  1{,}18$ g."
    },
    {
     "ma": [

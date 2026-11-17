@@ -5,7 +5,7 @@ NL.add([
   "lop": "11",
   "tieu_de": "Cân bằng phân li của acetic acid trong dung dịch giấm ăn",
   "yccd": "Nêu được khái niệm acid, base theo Brønsted – Lowry; viết được biểu thức hằng số cân bằng; tính được pH của dung dịch; nêu được ý nghĩa của pH trong thực tiễn.",
-  "boi_canh": "Giấm ăn chứa khoảng 4–5% acetic acid (CH₃COOH). Nếu acetic acid phân li hoàn toàn như hydrochloric acid, giấm sẽ chua gắt và ăn mòn như acid trong ắc quy. Thực tế không phải vậy, vì acetic acid là acid yếu: trong nước chỉ một phần nhỏ phân tử nhường H⁺.\nCân bằng phân li: CH₃COOH ⇌ H⁺ + CH₃COO⁻, với hằng số phân li acid Ka = [H⁺][CH₃COO⁻] / [CH₃COOH]. Theo bảng “E1: Acid Dissociation Constants at 25°C” của CRC Handbook of Chemistry and Physics (84th ed., 2004), ở 25 °C, Ka của acetic acid là 1,75 × 10⁻⁵ (pKa = 4,76).\nĐể dễ so sánh, các nhà hoá học dùng pKa = −log Ka. pKa càng nhỏ, acid càng mạnh. Bảng dưới liệt kê pKa của một số acid và ion gặp trong đời sống: formic acid trong nọc kiến, hydrofluoric acid dùng khắc thuỷ tinh, carbonic acid trong nước có ga, ion ammonium trong phân đạm.\nTừ Ka và nồng độ, học sinh có thể tính được pH của dung dịch acid yếu.",
+  "boi_canh": "Giấm ăn chứa khoảng 4–5% acetic acid (CH₃COOH). Nếu acetic acid phân li hoàn toàn như hydrochloric acid, giấm sẽ chua gắt và ăn mòn như acid trong ắc quy. Thực tế không phải vậy, vì acetic acid là acid yếu: trong nước chỉ một phần nhỏ phân tử nhường H⁺.\nCân bằng phân li: CH₃COOH ⇌ H⁺ + CH₃COO⁻, với hằng số phân li acid $K_a = \\dfrac{[\\text{H}^+][\\text{CH}_3\\text{COO}^-]}{[\\text{CH}_3\\text{COOH}]}$. Theo bảng “E1: Acid Dissociation Constants at 25°C” của CRC Handbook of Chemistry and Physics (84th ed., 2004), ở 25 °C, Ka của acetic acid là 1,75 × 10⁻⁵ (pKa = 4,76).\nĐể dễ so sánh, các nhà hoá học dùng pKa = −log Ka. pKa càng nhỏ, acid càng mạnh. Bảng dưới liệt kê pKa của một số acid và ion gặp trong đời sống: formic acid trong nọc kiến, hydrofluoric acid dùng khắc thuỷ tinh, carbonic acid trong nước có ga, ion ammonium trong phân đạm.\nTừ Ka và nồng độ, học sinh có thể tính được pH của dung dịch acid yếu.",
   "bang_so_lieu": {
    "tieu_de": "pKa của một số acid ở 25 °C",
    "cot": [
@@ -68,7 +68,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Tính pH của dung dịch CH₃COOH 0,10 M ở 25 °C (Ka = 1,75 × 10⁻⁵, coi độ phân li rất nhỏ). (Làm tròn đến hàng phần trăm.)",
-    "dap_an": "2,88. Cách tính: [H⁺] ≈ √(1,75 × 10⁻⁵ × 0,10) ≈ 1,32 × 10⁻³ M; pH ≈ 2,88."
+    "dap_an": "2,88. Cách tính: $[\\text{H}^+] \\approx  \\sqrt{1{,}75 \\times  10^{-5} \\times  0{,}10} \\approx  1{,}32 \\times  10^{-3}$ M; pH ≈ 2,88."
    },
    {
     "ma": [
@@ -91,7 +91,7 @@ NL.add([
   ],
   "luu_y_khoa_hoc": [
    "HF là acid yếu (xét theo Ka) nhưng rất độc, ăn mòn thuỷ tinh và gây bỏng sâu; tính acid yếu không đồng nghĩa với an toàn.",
-   "Công thức gần đúng [H⁺] ≈ √(Ka·C) chỉ dùng khi độ phân li nhỏ (thường dưới 5%).",
+   "Công thức gần đúng $[\\text{H}^+] \\approx  \\sqrt{K_a\\cdot C}$ chỉ dùng khi độ phân li nhỏ (thường dưới 5%).",
    "Giá trị pKa có thể chênh lệch nhỏ giữa các nguồn do điều kiện đo khác nhau; cần ghi rõ nguồn khi dạy."
   ],
   "trang_thai": "tham_dinh",
@@ -106,7 +106,7 @@ NL.add([
   "lop": "11",
   "tieu_de": "Thí nghiệm chuyển dịch cân bằng tạo phức FeSCN²⁺",
   "yccd": "Thực hiện được thí nghiệm nghiên cứu ảnh hưởng của nồng độ, nhiệt độ đến chuyển dịch cân bằng; vận dụng nguyên lí Le Chatelier để giải thích.",
-  "boi_canh": "Khi nhỏ dung dịch iron(III) chloride vào dung dịch potassium thiocyanate, dung dịch chuyển ngay sang màu đỏ máu. Màu đỏ là màu của ion phức FeSCN²⁺, được tạo thành theo cân bằng: Fe³⁺(aq) + SCN⁻(aq) ⇌ FeSCN²⁺(aq).\nĐây là thí nghiệm thường được sử dụng để quan sát sự chuyển dịch cân bằng, vì chỉ cần quan sát sự thay đổi màu của dung dịch là có thể biết cân bằng chuyển dịch theo chiều nào: màu càng đậm thì nồng độ FeSCN²⁺ càng lớn.\nCách tiến hành gợi ý: pha một dung dịch có màu đỏ nhạt rồi chia đều vào 4 ống nghiệm. Ống 1 dùng để so sánh (đối chứng). Thêm vài giọt dung dịch FeCl₃ vào ống 2, vài giọt dung dịch KSCN vào ống 3 và một ít tinh thể NaF vào ống 4 (ion F⁻ kết hợp mạnh với Fe³⁺ tạo phức không màu). Có thể dùng thêm ống 5, ngâm vào cốc nước nóng để xét ảnh hưởng của nhiệt độ.\nĐể tìm hiểu tính động của cân bằng hoá học và ảnh hưởng của nhiệt độ đến trạng thái cân bằng, hãy truy cập mô phỏng Reversible Reactions của PhET và theo dõi sự biến đổi số hạt của hai dạng trong hệ mô hình. Mô phỏng minh hoạ nguyên lí chung về cân bằng; sự chuyển dịch cân bằng tạo phức FeSCN²⁺ được quan sát qua thí nghiệm với các ống nghiệm nêu trên.",
+  "boi_canh": "Khi nhỏ dung dịch iron(III) chloride vào dung dịch potassium thiocyanate, dung dịch chuyển ngay sang màu đỏ máu. Màu đỏ là màu của ion phức FeSCN²⁺, được tạo thành theo cân bằng: Fe³⁺(aq) + SCN⁻(aq) ⇌ FeSCN²⁺(aq).\nĐây là thí nghiệm thường được sử dụng để quan sát sự chuyển dịch cân bằng, vì chỉ cần quan sát sự thay đổi màu của dung dịch là có thể biết cân bằng chuyển dịch theo chiều nào: màu càng đậm thì nồng độ FeSCN²⁺ càng lớn.\nCách tiến hành gợi ý: pha một dung dịch có màu đỏ nhạt rồi chia đều vào 4 ống nghiệm.\nỐng 1: dùng để so sánh (đối chứng).\nỐng 2: thêm vài giọt dung dịch FeCl₃.\nỐng 3: thêm vài giọt dung dịch KSCN.\nỐng 4: thêm một ít tinh thể NaF (ion F⁻ kết hợp mạnh với Fe³⁺ tạo phức không màu).\nCó thể dùng thêm ống 5, ngâm vào cốc nước nóng để xét ảnh hưởng của nhiệt độ.\nĐể tìm hiểu tính động của cân bằng hoá học và ảnh hưởng của nhiệt độ đến trạng thái cân bằng, hãy truy cập mô phỏng Reversible Reactions của PhET và theo dõi sự biến đổi số hạt của hai dạng trong hệ mô hình. Mô phỏng minh hoạ nguyên lí chung về cân bằng; sự chuyển dịch cân bằng tạo phức FeSCN²⁺ được quan sát qua thí nghiệm với các ống nghiệm nêu trên.",
   "bang_so_lieu": {
    "tieu_de": "Bảng ghi kết quả (học sinh tự quan sát)",
    "cot": [
@@ -176,7 +176,7 @@ NL.add([
     ],
     "dang": "Tự luận",
     "noi_dung": "Trước khi làm thí nghiệm, hãy dự đoán màu của ống 2, 3, 4 so với ống 1 và giải thích bằng nguyên lí Le Chatelier.",
-    "dap_an": "Ống 2, 3: màu đỏ đậm hơn – do tăng nồng độ Fe³⁺ hoặc SCN⁻, cân bằng chuyển dịch theo chiều thuận. Ống 4: màu nhạt hơn – do F⁻ làm giảm nồng độ Fe³⁺ tự do, cân bằng chuyển dịch theo chiều nghịch."
+    "dap_an": "Ống 2, 3: màu đỏ đậm hơn – do tăng nồng độ Fe³⁺ hoặc SCN⁻, cân bằng chuyển dịch theo chiều thuận.\nỐng 4: màu nhạt hơn – do F⁻ làm giảm nồng độ Fe³⁺ tự do, cân bằng chuyển dịch theo chiều nghịch."
    },
    {
     "ma": [
@@ -315,7 +315,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Giả sử kể từ tháng 5/2024 (427 ppm), nồng độ CO₂ tiếp tục tăng với tốc độ bằng tốc độ trung bình của thập niên 2010–2019. Sau bao nhiêu năm, nồng độ CO₂ đạt 450 ppm? (Làm tròn đến hàng phần mười.)",
-    "dap_an": "9,5. Cách tính: (450 − 427) : 2,43 ≈ 9,5 năm."
+    "dap_an": "9,5. Cách tính: $\\dfrac{450 - 427}{2{,}43} \\approx  9{,}5$ năm."
    },
    {
     "ma": [
@@ -395,7 +395,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Viết biểu thức Kc của phản ứng tổng hợp ammonia. Nếu tăng áp suất bằng cách giảm thể tích bình đi một nửa (nhiệt độ không đổi), Kc thay đổi bao nhiêu lần?",
-    "dap_an": "1. Kc = [NH₃]² / ([N₂][H₂]³); Kc chỉ phụ thuộc nhiệt độ nên không đổi (gấp 1 lần), chỉ có vị trí cân bằng dịch chuyển."
+    "dap_an": "1. $K_c = \\dfrac{[\\text{NH}_3]^2}{[\\text{N}_2][\\text{H}_2]^3}$; Kc chỉ phụ thuộc nhiệt độ nên không đổi (gấp 1 lần), chỉ có vị trí cân bằng dịch chuyển."
    },
    {
     "ma": [
@@ -471,7 +471,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Khi pH giảm từ 8,2 xuống 8,1, nồng độ H⁺ tăng bao nhiêu phần trăm? (Làm tròn đến hàng đơn vị.)",
-    "dap_an": "26. Cách tính: 10^(−8,1) : 10^(−8,2) = 10^0,1 ≈ 1,26; tăng khoảng 26% (NOAA làm tròn là khoảng 30%)."
+    "dap_an": "26. Cách tính: $\\dfrac{10^{-8{,}1}}{10^{-8{,}2}} = 10^{0{,}1} \\approx  1{,}26$; tăng khoảng 26% (NOAA làm tròn là khoảng 30%)."
    },
    {
     "ma": [
@@ -547,7 +547,7 @@ NL.add([
      "7"
     ]
    ],
-   "ghi_chu": "Số liệu được tính từ pKa(HOCl) = 7,40 (CRC Handbook of Chemistry and Physics, 84th ed.): %HOCl = 100 / (1 + 10^(pH − 7,40))."
+   "ghi_chu": "Số liệu được tính từ pKa(HOCl) = 7,40 (CRC Handbook of Chemistry and Physics, 84th ed.): $\\%\\text{HOCl} = \\dfrac{100}{1 + 10^{\\text{pH} - 7{,}40}}$."
   },
   "hinh_goi_y": "Ảnh bộ test pH, chlorine của bể bơi (ảnh tự chụp).",
   "nguon": [
@@ -582,7 +582,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Dùng công thức trong ghi chú bảng, tính phần trăm chlorine ở dạng HOCl khi pH = 7,8. (Làm tròn đến hàng đơn vị.)",
-    "dap_an": "28. Cách tính: 100 / (1 + 10^0,4) = 100 / (1 + 2,51) ≈ 28%."
+    "dap_an": "28. Cách tính: $\\dfrac{100}{1 + 10^{0{,}4}} = \\dfrac{100}{1 + 2{,}51} \\approx  28\\%$."
    },
    {
     "ma": [
@@ -659,7 +659,7 @@ NL.add([
     ],
     "dang": "Đúng/sai",
     "noi_dung": "(Tình huống giả định) Một khu công nghiệp phát thải 24 000 tấn SO₂ vào năm 1980 và 16 000 tấn SO₂ vào năm 1993. Mỗi nhận định sau đúng hay sai?\na) Khu công nghiệp này đã đạt mục tiêu cắt giảm của Nghị định thư Helsinki.\nb) Lượng SO₂ phát thải đã giảm khoảng 33%.\nc) Lượng SO₂ khu công nghiệp cắt giảm được vượt mục tiêu 800 tấn.\nd) Nếu pH của nước một hồ giảm từ 6,5 xuống 5,5 thì nồng độ H⁺ tăng 10 lần.",
-    "dap_an": "a) Đúng.\nb) Đúng – 8 000 : 24 000 ≈ 33,3%.\nc) Đúng – mục tiêu giảm 24 000 × 30% = 7 200 tấn; thực tế giảm 8 000 tấn.\nd) Đúng – 10⁻⁵·⁵ : 10⁻⁶·⁵ = 10."
+    "dap_an": "a) Đúng.\nb) Đúng – $\\dfrac{8\\,000}{24\\,000} \\approx  33{,}3\\%$.\nc) Đúng – mục tiêu giảm 24 000 × 30% = 7 200 tấn; thực tế giảm 8 000 tấn.\nd) Đúng – $\\dfrac{10^{-5{,}5}}{10^{-6{,}5}} = 10$."
    },
    {
     "ma": [
@@ -668,7 +668,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "(Tình huống giả định) Lấy 100 mL nước của một hồ bị acid hoá, thêm vào 0,105 mg Ca(OH)₂; sau phản ứng, pH của mẫu nước là 5,5. Tính pH ban đầu của mẫu nước (bỏ qua các cân bằng khác và sự thay đổi thể tích; Ca = 40; O = 16; H = 1; làm tròn đến hàng phần mười).",
-    "dap_an": "4,5. Cách tính: n(Ca(OH)₂) = 0,105 × 10⁻³ : 74 ≈ 1,419 × 10⁻⁶ mol → n(OH⁻) ≈ 2,838 × 10⁻⁶ mol. Sau phản ứng n(H⁺) = 10⁻⁵·⁵ × 0,1 ≈ 3,16 × 10⁻⁷ mol. Ban đầu n(H⁺) ≈ 3,16 × 10⁻⁷ + 2,838 × 10⁻⁶ ≈ 3,15 × 10⁻⁶ mol → [H⁺] ≈ 3,15 × 10⁻⁵ M → pH ≈ 4,5."
+    "dap_an": "4,5. Cách tính: n(Ca(OH)₂) = $\\dfrac{0{,}105 \\times  10^{-3}}{74} \\approx  1{,}419 \\times  10^{-6}$ mol → n(OH⁻) ≈ 2,838 × 10⁻⁶ mol. Sau phản ứng n(H⁺) = $10^{-5{,}5} \\times  0{,}1 \\approx  3{,}16 \\times  10^{-7}$ mol. Ban đầu n(H⁺) ≈ 3,16 × 10⁻⁷ + 2,838 × 10⁻⁶ ≈ 3,15 × 10⁻⁶ mol → [H⁺] ≈ 3,15 × 10⁻⁵ M → pH ≈ 4,5."
    }
   ],
   "luu_y_khoa_hoc": [

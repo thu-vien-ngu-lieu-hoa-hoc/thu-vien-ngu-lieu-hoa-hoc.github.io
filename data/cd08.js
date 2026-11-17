@@ -209,7 +209,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Phương trình đường chuẩn của một dung dịch phức chất có dạng A = 0,0125·C (C tính bằng mM). Một mẫu chưa biết nồng độ có A = 0,55. Tính nồng độ (mM) của mẫu. (Làm tròn đến hàng đơn vị.)",
-    "dap_an": "44. Cách tính: C = 0,55 : 0,0125 = 44 mM."
+    "dap_an": "44. Cách tính: $C = \\dfrac{0{,}55}{0{,}0125} = 44$ mM."
    },
    {
     "ma": [
@@ -386,7 +386,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Từ 1,00 tấn quặng hematite chứa 80% Fe₂O₃ (về khối lượng), tính khối lượng sắt (tấn) tối đa thu được. (M(Fe₂O₃) = 160; M(Fe) = 56; làm tròn đến hàng phần trăm.)",
-    "dap_an": "0,56. Cách tính: m(Fe₂O₃) = 0,80 tấn; m(Fe) = 0,80 × 112/160 = 0,56 tấn."
+    "dap_an": "0,56. Cách tính: m(Fe₂O₃) = 0,80 tấn; m(Fe) = $0{,}80 \\times  \\dfrac{112}{160} = 0{,}56$ tấn."
    },
    {
     "ma": [
@@ -424,7 +424,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Chromium(III) và chromium(VI) trong nước thải thuộc da",
   "yccd": "Vận dụng kiến thức về các số oxi hoá của chromium và phản ứng oxi hoá – khử để đề xuất phương pháp xử lí ô nhiễm.",
-  "boi_canh": "Ngành thuộc da sử dụng muối chromium(III) để chuyển da sống thành da thuộc bền và mềm. Nước thải từ các cơ sở thuộc da, mạ điện có thể chứa chromium ở hai dạng có tính chất rất khác nhau.\nChromium(III) (Cr³⁺) ít độc hơn, ở lượng rất nhỏ còn là vi chất cần thiết. Chromium(VI), tồn tại dưới dạng ion chromate (CrO₄²⁻) hoặc dichromate (Cr₂O₇²⁻), là chất oxi hoá mạnh, dễ thấm qua màng tế bào và được xếp vào nhóm chất gây ung thư cho người. Vì vậy, quy chuẩn kĩ thuật quốc gia về nước thải công nghiệp QCVN 40:2025/BTNMT (ban hành kèm theo Thông tư 06/2025/TT-BTNMT, có hiệu lực từ 01/9/2025, thay thế QCVN 40:2011/BTNMT theo lộ trình) đặt giới hạn riêng cho Cr(VI): 0,1 mg/L (cột A) và 0,5 mg/L (cột B, C), thấp hơn nhiều so với giới hạn chromium tổng 0,5 mg/L (cột A) và 2,0 mg/L (cột B, C).\nMột phương pháp xử lí phổ biến gồm hai bước. Bước 1: trong môi trường acid, dùng chất khử như iron(II) sulfate hoặc sodium hydrogen sulfite để khử Cr(VI) thành Cr(III). Bước 2: nâng pH bằng vôi hoặc NaOH để kết tủa Cr(OH)₃, sau đó để lắng và tách bùn.\nMột làng nghề thuộc da dự kiến xây dựng hệ thống xử lí nước thải chung, cần lựa chọn hoá chất, tính toán lượng hoá chất sử dụng và quản lí bùn thải chứa chromium.",
+  "boi_canh": "Ngành thuộc da sử dụng muối chromium(III) để chuyển da sống thành da thuộc bền và mềm. Nước thải từ các cơ sở thuộc da, mạ điện có thể chứa chromium ở hai dạng có tính chất rất khác nhau.\nChromium(III) (Cr³⁺) ít độc hơn, ở lượng rất nhỏ còn là vi chất cần thiết. Chromium(VI), tồn tại dưới dạng ion chromate (CrO₄²⁻) hoặc dichromate (Cr₂O₇²⁻), là chất oxi hoá mạnh, dễ thấm qua màng tế bào và được xếp vào nhóm chất gây ung thư cho người. Vì vậy, quy chuẩn kĩ thuật quốc gia về nước thải công nghiệp QCVN 40:2025/BTNMT (ban hành kèm theo Thông tư 06/2025/TT-BTNMT, có hiệu lực từ 01/9/2025, thay thế QCVN 40:2011/BTNMT theo lộ trình) đặt giới hạn riêng cho Cr(VI): 0,1 mg/L (cột A) và 0,5 mg/L (cột B, C), thấp hơn nhiều so với giới hạn chromium tổng 0,5 mg/L (cột A) và 2,0 mg/L (cột B, C).\nMột phương pháp xử lí phổ biến gồm hai bước.\nBước 1: trong môi trường acid, dùng chất khử như iron(II) sulfate hoặc sodium hydrogen sulfite để khử Cr(VI) thành Cr(III).\nBước 2: nâng pH bằng vôi hoặc NaOH để kết tủa Cr(OH)₃, sau đó để lắng và tách bùn.\nMột làng nghề thuộc da dự kiến xây dựng hệ thống xử lí nước thải chung, cần lựa chọn hoá chất, tính toán lượng hoá chất sử dụng và quản lí bùn thải chứa chromium.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Sơ đồ quy trình xử lí nước thải chứa Cr(VI) hai bước (tự vẽ).",
   "nguon": [
@@ -547,7 +547,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Tính phần trăm khối lượng platinum trong cisplatin [Pt(NH₃)₂Cl₂] (Pt = 195; N = 14; H = 1; Cl = 35,5). (Làm tròn đến hàng phần mười.)",
-    "dap_an": "65,0. Cách tính: M = 195 + 2 × 17 + 2 × 35,5 = 300; %Pt = 195 : 300 × 100% = 65,0%."
+    "dap_an": "65,0. Cách tính: M = 195 + 2 × 17 + 2 × 35,5 = 300; %Pt = $\\dfrac{195}{300} \\times  100\\% = 65{,}0\\%$."
    },
    {
     "ma": [

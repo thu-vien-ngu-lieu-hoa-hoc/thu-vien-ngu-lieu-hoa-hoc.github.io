@@ -281,7 +281,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Theo bảng, Úc chiếm khoảng bao nhiêu phần trăm sản lượng lithium toàn cầu năm 2023? (Làm tròn đến hàng đơn vị.)",
-    "dap_an": "48. Cách tính: 86 : (86 + 44 + 33 + 17) = 86 : 180 ≈ 48%."
+    "dap_an": "48. Cách tính: $\\dfrac{86}{86 + 44 + 33 + 17} = \\dfrac{86}{180} \\approx  48\\%$."
    },
    {
     "ma": [
@@ -403,7 +403,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Lượng sodium trong khẩu phần ăn",
   "yccd": "Nêu được vai trò sinh học và ứng dụng của hợp chất kim loại nhóm IA; vận dụng tính toán để đề xuất giải pháp bảo vệ sức khoẻ.",
-  "boi_canh": "Sodium (ở dạng ion Na⁺) cần thiết cho cơ thể: giúp giữ cân bằng nước, dẫn truyền xung thần kinh, co cơ. Tuy nhiên, ăn quá nhiều sodium làm tăng huyết áp, tăng nguy cơ đột quỵ và bệnh tim mạch.\nTổ chức Y tế Thế giới (WHO) khuyến cáo người trưởng thành nên ăn dưới 2 g sodium mỗi ngày, tương đương dưới 5 g muối ăn (NaCl). Theo phân tích dữ liệu điều tra STEPS của Việt Nam (Vu Thi Hoang Lan và cộng sự, 2025), người trưởng thành 18–69 tuổi tiêu thụ trung bình 9,42 g muối mỗi ngày vào năm 2015 và 8,07 g vào năm 2021; các mức này vẫn cao hơn nhiều so với khuyến cáo.\nPhần lớn lượng sodium không đến từ muối ăn rắc trực tiếp mà từ nước mắm, nước chấm, bột canh, mì gói, đồ ăn chế biến sẵn. Trên nhãn dinh dưỡng, lượng sodium thường được ghi bằng mg. Để đổi sang lượng muối tương đương, có thể nhân với khoảng 2,54 (vì 58,44 : 23,0 ≈ 2,54); WHO dùng quy đổi gần đúng 1 g muối ≈ 400 mg sodium (hệ số 2,5).\nMuối “ít natri” (thay một phần NaCl bằng KCl) là một giải pháp. Tuy nhiên, lượng ion potassium (K⁺) dư cũng có thể gây nguy hiểm cho người mắc bệnh thận. Giảm muối là bài toán cần cân nhắc nhiều mặt: sức khoẻ, khẩu vị, thói quen văn hoá và giá thành.",
+  "boi_canh": "Sodium (ở dạng ion Na⁺) cần thiết cho cơ thể: giúp giữ cân bằng nước, dẫn truyền xung thần kinh, co cơ. Tuy nhiên, ăn quá nhiều sodium làm tăng huyết áp, tăng nguy cơ đột quỵ và bệnh tim mạch.\nTổ chức Y tế Thế giới (WHO) khuyến cáo người trưởng thành nên ăn dưới 2 g sodium mỗi ngày, tương đương dưới 5 g muối ăn (NaCl). Theo phân tích dữ liệu điều tra STEPS của Việt Nam (Vu Thi Hoang Lan và cộng sự, 2025), người trưởng thành 18–69 tuổi tiêu thụ trung bình 9,42 g muối mỗi ngày vào năm 2015 và 8,07 g vào năm 2021; các mức này vẫn cao hơn nhiều so với khuyến cáo.\nPhần lớn lượng sodium không đến từ muối ăn rắc trực tiếp mà từ nước mắm, nước chấm, bột canh, mì gói, đồ ăn chế biến sẵn. Trên nhãn dinh dưỡng, lượng sodium thường được ghi bằng mg. Để đổi sang lượng muối tương đương, có thể nhân với khoảng 2,54 (vì $\\dfrac{58{,}44}{23{,}0} \\approx  2{,}54$); WHO dùng quy đổi gần đúng 1 g muối ≈ 400 mg sodium (hệ số 2,5).\nMuối “ít natri” (thay một phần NaCl bằng KCl) là một giải pháp. Tuy nhiên, lượng ion potassium (K⁺) dư cũng có thể gây nguy hiểm cho người mắc bệnh thận. Giảm muối là bài toán cần cân nhắc nhiều mặt: sức khoẻ, khẩu vị, thói quen văn hoá và giá thành.",
   "bang_so_lieu": null,
   "hinh_goi_y": "Ảnh nhãn dinh dưỡng của gói mì ăn liền ghi lượng sodium (ảnh tự chụp).",
   "nguon": [
@@ -516,7 +516,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Nung hoàn toàn 1,00 tấn CaCO₃ tinh khiết. Tính khối lượng CO₂ (tấn) sinh ra từ phản ứng phân huỷ. (M(CaCO₃) = 100; M(CO₂) = 44; làm tròn đến hàng phần trăm.)",
-    "dap_an": "0,44. Cách tính: 1,00 tấn CaCO₃ tạo 1,00 × 44/100 = 0,44 tấn CO₂."
+    "dap_an": "0,44. Cách tính: 1,00 tấn CaCO₃ tạo $1{,}00 \\times  \\dfrac{44}{100} = 0{,}44$ tấn CO₂."
    },
    {
     "ma": [

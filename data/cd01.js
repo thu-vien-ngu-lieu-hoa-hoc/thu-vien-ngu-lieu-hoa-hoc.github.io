@@ -114,7 +114,7 @@ NL.add([
     ],
     "dang": "Đúng/sai",
     "noi_dung": "Dựa vào bảng số liệu đã cho, mỗi nhận định sau đúng hay sai?\na) Tất cả phản ứng đốt cháy trong bảng đều có ΔcH° < 0.\nb) Butane toả nhiều nhiệt nhất khi tính trên mỗi mol nên cũng toả nhiều nhiệt nhất khi tính trên mỗi gam.\nc) Ở điều kiện chuẩn, đốt cháy hoàn toàn 1 g hydrogen toả nhiệt nhiều gấp khoảng 2,6 lần đốt cháy hoàn toàn 1 g methane.\nd) Ethanol có nhiệt toả ra trên mỗi gam thấp hơn methane vì phân tử ethanol đã chứa sẵn nguyên tử oxygen.",
-    "dap_an": "a) Đúng. Phản ứng đốt cháy nhiên liệu luôn giải phóng năng lượng dưới dạng nhiệt, do đó biến thiên enthalpy phản ứng luôn âm (ΔcH° < 0).\nb) Sai. Khi tính theo gam, butane (49,5 kJ/g) đứng sau hydrogen, methane và propane.\nc) Đúng. 141,8 : 55,5 ≈ 2,6.\nd) Đúng. Phân tử ethanol (C₂H₅OH) đã chứa sẵn nguyên tử oxygen trong cấu trúc (tương đương đã bị oxi hoá một phần), khối lượng mol lớn hơn nhiều nhưng không đóng góp thêm vào năng lượng giải phóng nên nhiệt lượng toả ra tính trên mỗi gam thấp hơn so với methane."
+    "dap_an": "a) Đúng. Phản ứng đốt cháy nhiên liệu luôn giải phóng năng lượng dưới dạng nhiệt, do đó biến thiên enthalpy phản ứng luôn âm (ΔcH° < 0).\nb) Sai. Khi tính theo gam, butane (49,5 kJ/g) đứng sau hydrogen, methane và propane.\nc) Đúng. $\\dfrac{141{,}8}{55{,}5} \\approx  2{,}6$.\nd) Đúng. Phân tử ethanol (C₂H₅OH) đã chứa sẵn nguyên tử oxygen trong cấu trúc (tương đương đã bị oxi hoá một phần), khối lượng mol lớn hơn nhiều nhưng không đóng góp thêm vào năng lượng giải phóng nên nhiệt lượng toả ra tính trên mỗi gam thấp hơn so với methane."
    }
   ],
   "luu_y_khoa_hoc": [
@@ -134,7 +134,7 @@ NL.add([
   "lop": "10",
   "tieu_de": "Xác định nhiệt của phản ứng trung hoà bằng nhiệt lượng kế cốc xốp đơn giản",
   "yccd": "Trình bày được khái niệm phản ứng toả nhiệt, thu nhiệt. Thực hiện được thí nghiệm đo nhiệt của phản ứng trung hoà và rút ra kết luận từ số liệu đo.",
-  "boi_canh": "Không cần đến các thiết bị chuyên dụng đắt tiền, học sinh hoàn toàn có thể tự đo nhiệt phản ứng bằng một nhiệt lượng kế cốc xốp đơn giản với cấu tạo như sau: hai cốc xốp được lồng vào nhau, có nắp xốp đậy kín và một nhiệt kế cắm xuyên qua nắp. Để xác định nhiệt phản ứng, người ta cho các dung dịch phản ứng với nhau trong cốc xốp và theo dõi sự thay đổi nhiệt độ của hệ trước và sau phản ứng thông qua nhiệt kế. Đây là bài thực hành quen thuộc trong chương trình hoá học phổ thông tại nhiều quốc gia.\n\nTheo dữ liệu nhiệt động chuẩn ở 25 °C (tra cứu từ CRC Handbook of Chemistry and Physics qua nền tảng LibreTexts), phản ứng H⁺(aq) + OH⁻(aq) → H₂O(l) có ΔrH° = −55,8 kJ/mol. Xét bài toán lí thuyết khi cho 50 mL dung dịch HCl 1,0 M tác dụng với 50 mL dung dịch NaOH 1,0 M: giả định hệ không thất thoát nhiệt ra môi trường, dung dịch sau phản ứng có khối lượng m ≈ 100 g, nhiệt dung riêng xấp xỉ nhiệt dung riêng của nước tinh khiết c = 4,18 J/(g·K), độ tăng nhiệt độ lí thuyết của dung dịch là:\n\nΔT(lí thuyết) = Q : (m·c) = (1,0 mol/L × 0,05 L × 55 800 J/mol) : (100 g × 4,18 J/(g·K)) ≈ 6,7 °C\n\nTuy nhiên, khi thực hiện thí nghiệm, độ tăng nhiệt độ thực tế đo được thường thấp hơn lí thuyết do trao đổi nhiệt với dụng cụ và môi trường: một phần nhiệt toả ra đã truyền sang cốc, nhiệt kế và không khí. Việc đối chiếu kết quả đo thực tế với giá trị tính toán lí thuyết là cơ hội tốt để học sinh phân tích sai số thực nghiệm, đồng thời rèn luyện tư duy tối ưu hoá khi thiết kế quy trình thí nghiệm.",
+  "boi_canh": "Không cần đến các thiết bị chuyên dụng đắt tiền, học sinh hoàn toàn có thể tự đo nhiệt phản ứng bằng một nhiệt lượng kế cốc xốp đơn giản với cấu tạo như sau: hai cốc xốp được lồng vào nhau, có nắp xốp đậy kín và một nhiệt kế cắm xuyên qua nắp. Để xác định nhiệt phản ứng, người ta cho các dung dịch phản ứng với nhau trong cốc xốp và theo dõi sự thay đổi nhiệt độ của hệ trước và sau phản ứng thông qua nhiệt kế. Đây là bài thực hành quen thuộc trong chương trình hoá học phổ thông tại nhiều quốc gia.\n\nTheo dữ liệu nhiệt động chuẩn ở 25 °C (tra cứu từ CRC Handbook of Chemistry and Physics qua nền tảng LibreTexts), phản ứng H⁺(aq) + OH⁻(aq) → H₂O(l) có ΔrH° = −55,8 kJ/mol. Xét bài toán lí thuyết khi cho 50 mL dung dịch HCl 1,0 M tác dụng với 50 mL dung dịch NaOH 1,0 M: giả định hệ không thất thoát nhiệt ra môi trường, dung dịch sau phản ứng có khối lượng m ≈ 100 g, nhiệt dung riêng xấp xỉ nhiệt dung riêng của nước tinh khiết c = 4,18 J/(g·K), độ tăng nhiệt độ lí thuyết của dung dịch là:\n\n$$\\Delta T_{\\text{lí thuyết}} = \\dfrac{Q}{m\\cdot c} = \\dfrac{1{,}0\\ \\text{mol/L} \\times  0{,}05\\ \\text{L} \\times  55\\,800\\ \\text{J/mol}}{100\\ \\text{g} \\times  4{,}18\\ \\text{J}/(\\text{g}\\cdot \\text{K})} \\approx  6{,}7\\ ^\\circ\\text{C}$$\n\nTuy nhiên, khi thực hiện thí nghiệm, độ tăng nhiệt độ thực tế đo được thường thấp hơn lí thuyết do trao đổi nhiệt với dụng cụ và môi trường: một phần nhiệt toả ra đã truyền sang cốc, nhiệt kế và không khí. Việc đối chiếu kết quả đo thực tế với giá trị tính toán lí thuyết là cơ hội tốt để học sinh phân tích sai số thực nghiệm, đồng thời rèn luyện tư duy tối ưu hoá khi thiết kế quy trình thí nghiệm.",
   "bang_so_lieu": {
    "tieu_de": "Bảng số liệu tham khảo",
    "cot": [
@@ -204,7 +204,7 @@ NL.add([
     ],
     "dang": "Tự luận",
     "noi_dung": "Dựa vào mô tả cấu tạo nhiệt lượng kế cốc xốp và bài toán lí thuyết, hãy đề xuất cách tiến hành thí nghiệm nhằm xác định độ tăng nhiệt độ của phản ứng trung hoà. Bản kế hoạch cần nêu rõ:\n– Các dụng cụ, hoá chất cần thiết;\n– Trình tự các thao tác thực hiện thí nghiệm;\n– Các thời điểm và giá trị nhiệt độ cần ghi nhận;\n– Những biện pháp kĩ thuật giúp giảm thiểu sự thất thoát nhiệt ra môi trường.",
-    "dap_an": "Dụng cụ: 2 cốc xốp có kích thước vừa vặn để lồng khít vào nhau, dung tích khoảng 150–250 mL; 1 nắp xốp đậy vừa khít miệng cốc, đục sẵn 1 lỗ nhỏ (để cắm vừa nhiệt kế); 1 nhiệt kế; 2 ống đong dung tích 50 mL hoặc 100 mL. Hoá chất: dung dịch HCl 1,0 M, dung dịch NaOH 1,0 M (đều ở nhiệt độ phòng).\nTrình tự thao tác: (1) Lồng 2 cốc xốp vào nhau, đặt nắp xốp lên trên, luồn nhiệt kế qua lỗ trên nắp sao cho đầu nhiệt kế không chạm sát đáy cốc. (2) Dùng ống đong thứ nhất lấy chính xác 50 mL dung dịch HCl 1,0 M, rót vào cốc xốp, đậy nắp cốc và theo dõi nhiệt độ trên nhiệt kế. (3) Dùng ống đong thứ hai lấy chính xác 50 mL dung dịch NaOH 1,0 M. (4) Mở nắp cốc và rót nhanh toàn bộ dung dịch NaOH vào cốc. Lập tức đậy kín nắp cốc, lắc nhẹ cốc và theo dõi sự thay đổi nhiệt độ trên nhiệt kế.\nCác thời điểm và giá trị nhiệt độ cần ghi nhận: nhiệt độ ban đầu (T₁): đọc và ghi nhiệt độ của dung dịch HCl trong cốc xốp ngay trước khi thêm NaOH. Nhiệt độ cực đại (T₂): theo dõi liên tục sau khi rót dung dịch NaOH vào cốc và ghi lại giá trị nhiệt độ cao nhất trên nhiệt kế trước khi nhiệt độ bắt đầu có xu hướng giảm dần. Độ tăng nhiệt độ của phản ứng: ΔT = T₂ − T₁.\nBiện pháp giảm thất thoát nhiệt: thao tác rót hoá chất vào cốc cần nhanh, dứt khoát và đậy nắp kín ngay sau khi rót; bảo đảm 2 cốc xốp lồng khít vào nhau và nắp đậy khít chặt miệng cốc; bầu nhiệt kế phải được nhúng ngập hoàn toàn trong lòng dung dịch nhưng không chạm đáy hoặc thành cốc; lắc nhẹ cốc sau khi rót dung dịch NaOH để nhiệt phân tán đều khắp dung dịch."
+    "dap_an": "Dụng cụ: 2 cốc xốp có kích thước vừa vặn để lồng khít vào nhau, dung tích khoảng 150–250 mL; 1 nắp xốp đậy vừa khít miệng cốc, đục sẵn 1 lỗ nhỏ (để cắm vừa nhiệt kế); 1 nhiệt kế; 2 ống đong dung tích 50 mL hoặc 100 mL.\nHoá chất: dung dịch HCl 1,0 M, dung dịch NaOH 1,0 M (đều ở nhiệt độ phòng).\nTrình tự thao tác:\n(1) Lồng 2 cốc xốp vào nhau, đặt nắp xốp lên trên, luồn nhiệt kế qua lỗ trên nắp sao cho đầu nhiệt kế không chạm sát đáy cốc.\n(2) Dùng ống đong thứ nhất lấy chính xác 50 mL dung dịch HCl 1,0 M, rót vào cốc xốp, đậy nắp cốc và theo dõi nhiệt độ trên nhiệt kế.\n(3) Dùng ống đong thứ hai lấy chính xác 50 mL dung dịch NaOH 1,0 M.\n(4) Mở nắp cốc và rót nhanh toàn bộ dung dịch NaOH vào cốc. Lập tức đậy kín nắp cốc, lắc nhẹ cốc và theo dõi sự thay đổi nhiệt độ trên nhiệt kế.\nCác thời điểm và giá trị nhiệt độ cần ghi nhận:\nNhiệt độ ban đầu (T₁): đọc và ghi nhiệt độ của dung dịch HCl trong cốc xốp ngay trước khi thêm NaOH.\nNhiệt độ cực đại (T₂): theo dõi liên tục sau khi rót dung dịch NaOH vào cốc và ghi lại giá trị nhiệt độ cao nhất trên nhiệt kế trước khi nhiệt độ bắt đầu có xu hướng giảm dần.\nĐộ tăng nhiệt độ của phản ứng: ΔT = T₂ − T₁.\nBiện pháp giảm thất thoát nhiệt: thao tác rót hoá chất vào cốc cần nhanh, dứt khoát và đậy nắp kín ngay sau khi rót; bảo đảm 2 cốc xốp lồng khít vào nhau và nắp đậy khít chặt miệng cốc; bầu nhiệt kế phải được nhúng ngập hoàn toàn trong lòng dung dịch nhưng không chạm đáy hoặc thành cốc; lắc nhẹ cốc sau khi rót dung dịch NaOH để nhiệt phân tán đều khắp dung dịch."
    },
    {
     "ma": [
@@ -212,7 +212,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Một nhóm học sinh tiến hành thí nghiệm với 50 mL dung dịch HCl 1,0 M và 50 mL dung dịch NaOH 1,0 M (cùng ở nhiệt độ phòng) thì đo được độ tăng nhiệt độ là 6,0 °C. Giả thiết hệ hoàn toàn không thất thoát nhiệt ra môi trường, dung dịch sau phản ứng có khối lượng 100 gam và nhiệt dung riêng là 4,18 J/(g·K). Tính ΔrH (kJ/mol) theo số liệu của nhóm. (Làm tròn đến hàng phần mười.)",
-    "dap_an": "-50,2. Cách tính: Q = m·c·ΔT = 100 × 4,18 × 6,0 = 2 508 J = 2,508 kJ; ΔrH = −2,508 : 0,050 ≈ −50,2 kJ/mol."
+    "dap_an": "-50,2. Cách tính: Q = m·c·ΔT = 100 × 4,18 × 6,0 = 2 508 J = 2,508 kJ; $\\Delta_r H = \\dfrac{-2{,}508}{0{,}050} \\approx  -50{,}2$ kJ/mol."
    },
    {
     "ma": [
@@ -414,7 +414,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Theo bảng, nhiệt lượng toả ra khi đốt cháy hoàn toàn 1 lít xăng E10 thấp hơn so với 1 lít octane bao nhiêu phần trăm? (Làm tròn đến hàng đơn vị.)",
-    "dap_an": "3. Cách tính: (33,4 − 32,4) : 33,4 × 100% ≈ 3%."
+    "dap_an": "3. Cách tính: $\\dfrac{33{,}4 - 32{,}4}{33{,}4} \\times  100\\% \\approx  3\\%$."
    },
    {
     "ma": [
@@ -525,7 +525,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Kiểm tra lại số liệu của methane trong bảng: đốt cháy hoàn toàn 1 mol CH₄ tạo ra 1 mol CO₂ và toả ra 890,6 kJ. Tính khối lượng CO₂ (gam) phát thải ứng với 1 MJ nhiệt lượng toả ra. (Làm tròn đến hàng phần mười.)",
-    "dap_an": "49,4. Cách tính: 44,01 g : 0,8906 MJ ≈ 49,4 g/MJ."
+    "dap_an": "49,4. Cách tính: $\\dfrac{44{,}01\\ \\text{g}}{0{,}8906\\ \\text{MJ}} \\approx  49{,}4$ g/MJ."
    },
    {
     "ma": [
@@ -627,7 +627,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Theo bảng, để toả cùng một lượng nhiệt, thể tích khí hydrogen cần dùng gấp bao nhiêu lần thể tích khí methane (cùng điều kiện)? (Làm tròn đến hàng phần mười.)",
-    "dap_an": "3,1. Cách tính: 39,8 : 12,7 ≈ 3,1 lần."
+    "dap_an": "3,1. Cách tính: $\\dfrac{39{,}8}{12{,}7} \\approx  3{,}1$ lần."
    },
    {
     "ma": [

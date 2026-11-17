@@ -193,7 +193,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Một mẩu nhựa có khối lượng 2,76 g và thể tích 2,00 cm³. Tính khối lượng riêng (g/cm³). (Làm tròn đến hàng phần trăm.)",
-    "dap_an": "1,38. Cách tính: 2,76 : 2,00 = 1,38 g/cm³; giá trị này nằm trong khoảng của PET (1,35–1,38) nhưng cũng trong khoảng của PVC (1,32–1,42), nên cần thêm thông tin (mã in trên vật, nguồn gốc mẫu) để kết luận."
+    "dap_an": "1,38. Cách tính: $\\dfrac{2{,}76}{2{,}00} = 1{,}38$ g/cm³; giá trị này nằm trong khoảng của PET (1,35–1,38) nhưng cũng trong khoảng của PVC (1,32–1,42), nên cần thêm thông tin (mã in trên vật, nguồn gốc mẫu) để kết luận."
    },
    {
     "ma": [
@@ -257,7 +257,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Vùng rác rộng 1,6 triệu km² và chứa 79 nghìn tấn nhựa. Mật độ trung bình là bao nhiêu kg nhựa trên mỗi km²? (Làm tròn đến hàng phần mười.)",
-    "dap_an": "49,4. Cách tính: 79 000 000 kg : 1 600 000 km² ≈ 49,4 kg/km²."
+    "dap_an": "49,4. Cách tính: $\\dfrac{79\\,000\\,000\\ \\text{kg}}{1\\,600\\,000\\ \\text{km}^2} \\approx  49{,}4$ kg/km²."
    },
    {
     "ma": [
@@ -480,7 +480,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Một mẫu nylon-6,6 có phân tử khối trung bình 22 600. Mắt xích –NH(CH₂)₆NH–CO(CH₂)₄CO– có M = 226. Tính số mắt xích trung bình. (Làm tròn đến hàng đơn vị.)",
-    "dap_an": "100. Cách tính: 22 600 : 226 = 100."
+    "dap_an": "100. Cách tính: $\\dfrac{22\\,600}{226} = 100$."
    },
    {
     "ma": [

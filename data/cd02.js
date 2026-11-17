@@ -73,7 +73,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Ở Hà Nội, nước sôi ở 100 °C và luộc chín một quả trứng mất 10 phút. Ở Đà Lạt, nước sôi ở 95 °C. Coi hệ số nhiệt độ γ = 2, hãy ước tính thời gian (phút) cần để luộc chín một quả trứng tương tự ở Đà Lạt. (Làm tròn đến hàng phần mười.)",
-    "dap_an": "14,1. Cách tính: tốc độ phản ứng giảm 2^(5/10) = 2^0,5 ≈ 1,414 lần; thời gian ≈ 10 × 1,414 ≈ 14,1 phút."
+    "dap_an": "14,1. Cách tính: tốc độ phản ứng giảm $2^{5/10} = 2^{0{,}5} \\approx  1{,}414$ lần; thời gian ≈ 10 × 1,414 ≈ 14,1 phút."
    },
    {
     "ma": [
@@ -82,7 +82,7 @@ NL.add([
     ],
     "dang": "Đúng/sai",
     "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Trong nồi áp suất, nước sôi ở nhiệt độ cao hơn 100 °C.\nb) Với γ = 2, nấu chín thức ăn ở 120 °C nhanh hơn ở 100 °C khoảng 4 lần.\nc) Đun lửa to hơn làm nhiệt độ của nước đang sôi trong nồi thường vượt quá 100 °C.\nd) Ở vùng núi cao, cần nấu lâu hơn để thức ăn chín.",
-    "dap_an": "a) Đúng.\nb) Đúng – 2^2 = 4.\nc) Sai – ở áp suất 1 atm, nhiệt độ của nước sôi được giữ ở khoảng 100 °C; lửa to chỉ làm nước bay hơi nhanh hơn.\nd) Đúng – nước sôi ở nhiệt độ thấp hơn."
+    "dap_an": "a) Đúng.\nb) Đúng – $2^2 = 4$.\nc) Sai – ở áp suất 1 atm, nhiệt độ của nước sôi được giữ ở khoảng 100 °C; lửa to chỉ làm nước bay hơi nhanh hơn.\nd) Đúng – nước sôi ở nhiệt độ thấp hơn."
    }
   ],
   "luu_y_khoa_hoc": [
@@ -180,7 +180,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Khi 1,00 g CaCO₃ phản ứng hết với acid dư, khối lượng cốc giảm tối đa bao nhiêu gam? (Làm tròn đến hàng phần trăm.)",
-    "dap_an": "0,44. Cách tính: n(CO₂) = n(CaCO₃) = 1,00 : 100 = 0,0100 mol; m(CO₂) = 0,0100 × 44 = 0,44 g."
+    "dap_an": "0,44. Cách tính: n(CO₂) = n(CaCO₃) = $\\dfrac{1{,}00}{100} = 0{,}0100$ mol; m(CO₂) = 0,0100 × 44 = 0,44 g."
    },
    {
     "ma": [

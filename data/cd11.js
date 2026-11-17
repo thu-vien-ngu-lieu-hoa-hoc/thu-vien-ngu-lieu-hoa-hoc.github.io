@@ -115,7 +115,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Sự đông tụ protein trong lòng trắng trứng",
   "yccd": "Trình bày được tính chất của protein: sự đông tụ, phản ứng màu biuret; thực hiện được thí nghiệm.",
-  "boi_canh": "Lòng trắng trứng sống trong suốt, lỏng sánh; khi luộc, lòng trắng trứng đông lại, có màu trắng đục. Khi vắt chanh vào sữa, sữa bị vón cục. Đó là hiện tượng đông tụ protein.\nPhân tử protein được tạo thành từ các chuỗi dài α-amino acid liên kết với nhau bằng liên kết peptide; các chuỗi này cuộn gập thành cấu trúc không gian xác định nhờ liên kết hydrogen, tương tác ion, tương tác kị nước. Nhiệt độ cao, acid, base, muối của kim loại nặng hoặc alcohol phá vỡ các tương tác này, làm protein mất cấu trúc không gian ban đầu (biến tính); các chuỗi polypeptide duỗi ra và kết dính với nhau thành khối đông tụ.\nThí nghiệm gợi ý: chuẩn bị dung dịch lòng trắng trứng pha loãng, chia vào 5 ống nghiệm. Ống 1 để đối chứng; ống 2 đun nóng; ống 3 thêm vài giọt giấm hoặc nước chanh; ống 4 thêm vài giọt ethanol 90°; ống 5 thêm vài giọt dung dịch CuSO₄. Có thể lấy thêm một ống để làm phản ứng màu biuret: thêm dung dịch NaOH rồi vài giọt dung dịch CuSO₄ loãng, dung dịch chuyển sang màu tím (phản ứng màu biuret).\nHiện tượng biến tính giải thích nhiều điều trong đời sống: nấu chín thức ăn, khử trùng bằng cồn, làm đậu phụ, làm sữa chua.",
+  "boi_canh": "Lòng trắng trứng sống trong suốt, lỏng sánh; khi luộc, lòng trắng trứng đông lại, có màu trắng đục. Khi vắt chanh vào sữa, sữa bị vón cục. Đó là hiện tượng đông tụ protein.\nPhân tử protein được tạo thành từ các chuỗi dài α-amino acid liên kết với nhau bằng liên kết peptide; các chuỗi này cuộn gập thành cấu trúc không gian xác định nhờ liên kết hydrogen, tương tác ion, tương tác kị nước. Nhiệt độ cao, acid, base, muối của kim loại nặng hoặc alcohol phá vỡ các tương tác này, làm protein mất cấu trúc không gian ban đầu (biến tính); các chuỗi polypeptide duỗi ra và kết dính với nhau thành khối đông tụ.\nThí nghiệm gợi ý: chuẩn bị dung dịch lòng trắng trứng pha loãng, chia vào 5 ống nghiệm.\nỐng 1: để đối chứng.\nỐng 2: đun nóng.\nỐng 3: thêm vài giọt giấm hoặc nước chanh.\nỐng 4: thêm vài giọt ethanol 90°.\nỐng 5: thêm vài giọt dung dịch CuSO₄.\nCó thể lấy thêm một ống để làm phản ứng màu biuret: thêm dung dịch NaOH rồi vài giọt dung dịch CuSO₄ loãng, dung dịch chuyển sang màu tím (phản ứng màu biuret).\nHiện tượng biến tính giải thích nhiều điều trong đời sống: nấu chín thức ăn, khử trùng bằng cồn, làm đậu phụ, làm sữa chua.",
   "bang_so_lieu": {
    "tieu_de": "Bảng ghi kết quả (học sinh tự quan sát)",
    "cot": [
@@ -259,7 +259,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Tính phần trăm khối lượng nitrogen trong melamine C₃H₆N₆ (C = 12; H = 1; N = 14). (Làm tròn đến hàng phần mười.)",
-    "dap_an": "66,7. Cách tính: M = 36 + 6 + 84 = 126; %N = 84 : 126 × 100% ≈ 66,7%."
+    "dap_an": "66,7. Cách tính: M = 36 + 6 + 84 = 126; %N = $\\dfrac{84}{126} \\times  100\\% \\approx  66{,}7\\%$."
    },
    {
     "ma": [
@@ -276,7 +276,7 @@ NL.add([
     ],
     "dang": "Đúng/sai",
     "noi_dung": "Mỗi nhận định sau đúng hay sai?\na) Protein chứa khoảng 16% nitrogen nên hệ số quy đổi thường là 6,25.\nb) Melamine có giá trị dinh dưỡng như protein.\nc) Sự cố melamine 2008 gây sỏi thận ở nhiều trẻ em.\nd) Một phép đo gián tiếp có thể bị sai nếu có chất gây nhiễu.",
-    "dap_an": "a) Đúng – 100 : 16 = 6,25.\nb) Sai – melamine không phải protein, không có giá trị dinh dưỡng và gây độc (sỏi thận).\nc) Đúng.\nd) Đúng."
+    "dap_an": "a) Đúng – $\\dfrac{100}{16} = 6{,}25$.\nb) Sai – melamine không phải protein, không có giá trị dinh dưỡng và gây độc (sỏi thận).\nc) Đúng.\nd) Đúng."
    }
   ],
   "luu_y_khoa_hoc": [

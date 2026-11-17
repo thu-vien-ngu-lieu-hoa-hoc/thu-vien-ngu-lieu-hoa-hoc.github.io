@@ -79,7 +79,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Chuẩn độ 10,00 mL dung dịch HCl bằng dung dịch NaOH 0,100 M thì dùng hết 12,50 mL dung dịch NaOH. Tính nồng độ mol (M) của dung dịch HCl. (Làm tròn đến hàng phần nghìn.)",
-    "dap_an": "0,125. Cách tính: n(NaOH) = 0,100 × 0,01250 = 1,25 × 10⁻³ mol = n(HCl); C(HCl) = 1,25 × 10⁻³ : 0,01000 = 0,125 M."
+    "dap_an": "0,125. Cách tính: n(NaOH) = 0,100 × 0,01250 = 1,25 × 10⁻³ mol = n(HCl); C(HCl) = $\\dfrac{1{,}25 \\times  10^{-3}}{0{,}01000} = 0{,}125$ M."
    },
    {
     "ma": [
@@ -325,7 +325,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Để chuẩn độ lượng I₂ sinh ra từ 200 mL mẫu nước theo phương pháp Winkler, cần dùng 10,0 mL dung dịch Na₂S₂O₃ 0,0250 M. Tính chỉ số DO của mẫu nước (mg O₂/L). (Làm tròn đến hàng đơn vị.)",
-    "dap_an": "10. Cách tính: n(S₂O₃²⁻) = 2,50 × 10⁻⁴ mol; n(O₂) = 2,50 × 10⁻⁴ : 4 = 6,25 × 10⁻⁵ mol = 2,00 mg; DO = 2,00 mg : 0,200 L = 10,0 mg/L."
+    "dap_an": "10. Cách tính: n(S₂O₃²⁻) = 2,50 × 10⁻⁴ mol; n(O₂) = $\\dfrac{2{,}50 \\times  10^{-4}}{4} = 6{,}25 \\times  10^{-5}$ mol = 2,00 mg; $\\text{DO} = \\dfrac{2{,}00\\ \\text{mg}}{0{,}200\\ \\text{L}} = 10{,}0$ mg/L."
    },
    {
     "ma": [
@@ -400,7 +400,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Cho phương trình hoá học đã cân bằng: 2MnO₄⁻ + 5C₂O₄²⁻ + 16H⁺ → 2Mn²⁺ + 10CO₂ + 8H₂O. Tính thể tích (mL) dung dịch KMnO₄ 0,0200 M cần dùng để phản ứng vừa đủ với 1,00 × 10⁻³ mol C₂O₄²⁻.",
-    "dap_an": "20. Cách tính: n(MnO₄⁻) = 1,00 × 10⁻³ × 2/5 = 4,00 × 10⁻⁴ mol; V = 4,00 × 10⁻⁴ : 0,0200 = 0,0200 L = 20,0 mL."
+    "dap_an": "20. Cách tính: n(MnO₄⁻) = $1{,}00 \\times  10^{-3} \\times  \\dfrac{2}{5} = 4{,}00 \\times  10^{-4}$ mol; $V = \\dfrac{4{,}00 \\times  10^{-4}}{0{,}0200} = 0{,}0200$ L = 20,0 mL."
    },
    {
     "ma": [
@@ -839,7 +839,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Mẫu quặng nặng 0,4891 g, sau khi khử toàn bộ sắt về Fe²⁺, cần 36,92 mL dung dịch K₂Cr₂O₇ 0,02153 M để chuẩn độ. Tính phần trăm khối lượng Fe₂O₃ trong quặng. (M(Fe₂O₃) = 159,69 g/mol; làm tròn đến hàng phần trăm.)",
-    "dap_an": "77,86. Cách tính: n(Cr₂O₇²⁻) = 0,02153 × 0,03692 = 7,949 × 10⁻⁴ mol; n(Fe²⁺) = 6 × 7,949 × 10⁻⁴ = 4,769 × 10⁻³ mol; n(Fe₂O₃) = 2,385 × 10⁻³ mol; m(Fe₂O₃) = 0,3808 g; %Fe₂O₃ = 0,3808 : 0,4891 × 100% = 77,86%."
+    "dap_an": "77,86. Cách tính: n(Cr₂O₇²⁻) = 0,02153 × 0,03692 = 7,949 × 10⁻⁴ mol; n(Fe²⁺) = 6 × 7,949 × 10⁻⁴ = 4,769 × 10⁻³ mol; n(Fe₂O₃) = 2,385 × 10⁻³ mol; m(Fe₂O₃) = 0,3808 g; %Fe₂O₃ = $\\dfrac{0{,}3808}{0{,}4891} \\times  100\\% = 77{,}86\\%$."
    },
    {
     "ma": [

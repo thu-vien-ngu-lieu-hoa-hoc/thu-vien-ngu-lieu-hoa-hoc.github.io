@@ -112,7 +112,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Khẩu phần ăn của một người cung cấp 2 000 kcal mỗi ngày. Theo WHO, năng lượng từ chất béo no không nên vượt quá 10% tổng năng lượng. Tính lượng chất béo no tối đa (gam) người này nên tiêu thụ mỗi ngày. (1 g chất béo cho khoảng 9 kcal; làm tròn đến hàng đơn vị.)",
-    "dap_an": "22. Cách tính: 2 000 × 10% = 200 kcal; 200 : 9 ≈ 22 g."
+    "dap_an": "22. Cách tính: 2 000 × 10% = 200 kcal; $\\dfrac{200}{9} \\approx  22$ g."
    },
    {
     "ma": [
@@ -215,7 +215,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Tính khối lượng NaOH (gam) tối thiểu để xà phòng hoá hoàn toàn 10 g dầu dừa, giả sử chỉ số xà phòng hoá là 250 mg KOH/g. (Làm tròn đến hàng phần mười.)",
-    "dap_an": "1,8. Cách tính: KOH cần = 10 × 250 = 2 500 mg = 2,5 g, tương ứng 2,5/56 ≈ 0,0446 mol; m(NaOH) = 0,0446 × 40 ≈ 1,8 g."
+    "dap_an": "1,8. Cách tính: KOH cần = 10 × 250 = 2 500 mg = 2,5 g, tương ứng $\\dfrac{2{,}5}{56} \\approx  0{,}0446$ mol; m(NaOH) = 0,0446 × 40 ≈ 1,8 g."
    },
    {
     "ma": [
@@ -296,7 +296,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Khẩu phần ăn của một học sinh cung cấp 2 000 kcal mỗi ngày. Theo WHO, năng lượng từ chất béo trans không nên vượt quá 1% tổng năng lượng. Tính lượng chất béo trans tối đa (gam) học sinh này nên tiêu thụ mỗi ngày. (1 g chất béo cho khoảng 9 kcal; làm tròn đến hàng phần mười.)",
-    "dap_an": "2,2. Cách tính: 2 000 × 1% = 20 kcal; 20 : 9 ≈ 2,2 g."
+    "dap_an": "2,2. Cách tính: 2 000 × 1% = 20 kcal; $\\dfrac{20}{9} \\approx  2{,}2$ g."
    },
    {
     "ma": [
@@ -654,7 +654,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Tính chỉ số iodine của oleic acid (số gam I₂ cộng vào 100 g acid). (M(C₁₇H₃₃COOH) = 282; M(I₂) = 253,8; làm tròn đến hàng phần mười.)",
-    "dap_an": "90,0. Cách tính: mỗi phân tử có 1 liên kết C=C cộng 1 phân tử I₂; chỉ số = 253,8 × 100 : 282 ≈ 90,0. Elaidic acid có cùng giá trị; stearic acid (no) có chỉ số 0."
+    "dap_an": "90,0. Cách tính: mỗi phân tử có 1 liên kết C=C cộng 1 phân tử I₂; chỉ số = $\\dfrac{253{,}8 \\times  100}{282} \\approx  90{,}0$. Elaidic acid có cùng giá trị; stearic acid (no) có chỉ số 0."
    },
    {
     "ma": [

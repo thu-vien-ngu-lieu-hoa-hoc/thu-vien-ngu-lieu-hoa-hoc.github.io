@@ -87,7 +87,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Một tấm thép dày 3,0 mm đặt trong môi trường cấp C5, có tốc độ ăn mòn 150 µm/năm (coi tốc độ không đổi và tấm thép chỉ bị ăn mòn ở một mặt). Sau bao nhiêu năm thì tấm thép bị ăn mòn hết? (Làm tròn đến hàng đơn vị.)",
-    "dap_an": "20. Cách tính: 3,0 mm = 3 000 µm; 3 000 : 150 = 20 năm."
+    "dap_an": "20. Cách tính: 3,0 mm = 3 000 µm; $\\dfrac{3\\,000}{150} = 20$ năm."
    },
    {
     "ma": [
@@ -125,7 +125,7 @@ NL.add([
   "lop": "12",
   "tieu_de": "Điều kiện gây gỉ sắt: thí nghiệm với đinh sắt",
   "yccd": "Thực hiện được thí nghiệm nghiên cứu điều kiện gây ăn mòn kim loại; đề xuất được biện pháp chống ăn mòn.",
-  "boi_canh": "Để nghiên cứu các yếu tố ảnh hưởng đến sự ăn mòn kim loại, người ta tiến hành thí nghiệm sau:\nChuẩn bị 4 ống nghiệm, mỗi ống chứa một chiếc đinh sắt sạch (đã đánh bằng giấy nhám). Ống 1: không khí khô (đáy có calcium chloride khan hút ẩm, đậy kín). Ống 2: nước cất đã đun sôi để đuổi hết khí, phủ một lớp dầu ăn ở trên để không khí không tan vào. Ống 3: nước máy, để hở. Ống 4: dung dịch sodium chloride, để hở. Để yên ít nhất 3 ngày rồi quan sát.\nĐể xác định vị trí vùng anode (nơi sắt bị oxi hoá) và vùng cathode (nơi oxygen bị khử) trên bề mặt đinh sắt, có thể dùng thêm dung dịch chỉ thị ferroxyl chứa potassium hexacyanoferrate(III) và phenolphthalein (có thể làm đông bằng thạch agar). Tại vùng anode, ion Fe²⁺ sinh ra phản ứng với ion hexacyanoferrate(III) tạo kết tủa màu xanh lam: 3Fe²⁺ + 2[Fe(CN)₆]³⁻ → Fe₃[Fe(CN)₆]₂↓. Tại vùng cathode, ion OH⁻ sinh ra (O₂ + 2H₂O + 4e⁻ → 4OH⁻) làm phenolphthalein chuyển sang màu hồng. Thông thường, vùng màu xanh (anode) xuất hiện ở đầu, mũi và những chỗ đinh bị uốn cong; vùng màu hồng (cathode) xuất hiện dọc thân đinh. Bài “Nailing corrosion demonstrations” trên RSC Education (2016) mô tả thí nghiệm này: màu hồng xuất hiện sau vài phút quanh đinh quấn magnesium, màu xanh xuất hiện trong khoảng một giờ quanh các đinh còn lại.\nHọc sinh có thể mở rộng: quấn dây đồng hoặc dải kẽm quanh đinh để so sánh.",
+  "boi_canh": "Để nghiên cứu các yếu tố ảnh hưởng đến sự ăn mòn kim loại, người ta tiến hành thí nghiệm sau:\nChuẩn bị 4 ống nghiệm, mỗi ống chứa một chiếc đinh sắt sạch (đã đánh bằng giấy nhám).\nỐng 1: không khí khô (đáy có calcium chloride khan hút ẩm, đậy kín).\nỐng 2: nước cất đã đun sôi để đuổi hết khí, phủ một lớp dầu ăn ở trên để không khí không tan vào.\nỐng 3: nước máy, để hở.\nỐng 4: dung dịch sodium chloride, để hở.\nĐể yên ít nhất 3 ngày rồi quan sát.\nĐể xác định vị trí vùng anode (nơi sắt bị oxi hoá) và vùng cathode (nơi oxygen bị khử) trên bề mặt đinh sắt, có thể dùng thêm dung dịch chỉ thị ferroxyl chứa potassium hexacyanoferrate(III) và phenolphthalein (có thể làm đông bằng thạch agar).\nTại vùng anode: ion Fe²⁺ sinh ra phản ứng với ion hexacyanoferrate(III) tạo kết tủa màu xanh lam: 3Fe²⁺ + 2[Fe(CN)₆]³⁻ → Fe₃[Fe(CN)₆]₂↓.\nTại vùng cathode: ion OH⁻ sinh ra (O₂ + 2H₂O + 4e⁻ → 4OH⁻) làm phenolphthalein chuyển sang màu hồng.\nThông thường, vùng màu xanh (anode) xuất hiện ở đầu, mũi và những chỗ đinh bị uốn cong; vùng màu hồng (cathode) xuất hiện dọc thân đinh. Bài “Nailing corrosion demonstrations” trên RSC Education (2016) mô tả thí nghiệm này: màu hồng xuất hiện sau vài phút quanh đinh quấn magnesium, màu xanh xuất hiện trong khoảng một giờ quanh các đinh còn lại.\nHọc sinh có thể mở rộng: quấn dây đồng hoặc dải kẽm quanh đinh để so sánh.",
   "bang_so_lieu": {
    "tieu_de": "Bảng ghi kết quả (học sinh tự quan sát)",
    "cot": [
@@ -188,7 +188,7 @@ NL.add([
    "VD1",
    "VD3"
   ],
-  "dinh_huong": "Môn Hoá học 12, chủ đề Đại cương về kim loại, nội dung Sự ăn mòn kim loại (điều kiện xảy ra ăn mòn điện hoá, biện pháp chống ăn mòn). Ngữ liệu phù hợp với tiết thực hành hoặc nhiệm vụ học tập theo dự án ngắn, theo dõi kết quả trong 1 tuần.\nCách tổ chức: (1) Trên lớp, giáo viên chia nhóm; mỗi nhóm chuẩn bị 4 ống nghiệm theo mô tả và trả lời Câu 1 (dự đoán) trước khi theo dõi. (2) Trong 1 tuần, các nhóm quan sát, chụp ảnh hằng ngày và ghi kết quả vào bảng. (3) Ở tiết học tiếp theo, các nhóm báo cáo, đối chiếu kết quả với dự đoán; giáo viên dùng Câu 2 để mở rộng sang phương pháp bảo vệ điện hoá và Câu 3 để chốt kiến thức. Thí nghiệm với chỉ thị ferroxyl nên do giáo viên biểu diễn.",
+  "dinh_huong": "Môn Hoá học 12, chủ đề Đại cương về kim loại, nội dung Sự ăn mòn kim loại (điều kiện xảy ra ăn mòn điện hoá, biện pháp chống ăn mòn). Ngữ liệu phù hợp với tiết thực hành hoặc nhiệm vụ học tập theo dự án ngắn, theo dõi kết quả trong 1 tuần.\nCách tổ chức:\n(1) Trên lớp, giáo viên chia nhóm; mỗi nhóm chuẩn bị 4 ống nghiệm theo mô tả và trả lời Câu 1 (dự đoán) trước khi theo dõi.\n(2) Trong 1 tuần, các nhóm quan sát, chụp ảnh hằng ngày và ghi kết quả vào bảng.\n(3) Ở tiết học tiếp theo, các nhóm báo cáo, đối chiếu kết quả với dự đoán; giáo viên dùng Câu 2 để mở rộng sang phương pháp bảo vệ điện hoá và Câu 3 để chốt kiến thức.\nThí nghiệm với chỉ thị ferroxyl nên do giáo viên biểu diễn.",
   "cau_hoi": [
    {
     "ma": [
@@ -196,7 +196,7 @@ NL.add([
     ],
     "dang": "Tự luận",
     "noi_dung": "Dự đoán đinh sắt trong ống nghiệm nào bị gỉ nhiều nhất, ống nào gần như không bị gỉ. Giải thích vai trò của lớp dầu ăn ở ống 2.",
-    "dap_an": "Ống 4 gỉ nhiều nhất (có nước, O₂, ion Cl⁻ làm tăng độ dẫn điện); ống 1 và ống 2 gần như không gỉ (thiếu nước hoặc thiếu O₂). Lớp dầu ngăn O₂ từ không khí hoà tan vào nước đã đun sôi."
+    "dap_an": "Ống 4 gỉ nhiều nhất (có nước, O₂, ion Cl⁻ làm tăng độ dẫn điện).\nỐng 1 và ống 2 gần như không gỉ (thiếu nước hoặc thiếu O₂).\nLớp dầu ngăn O₂ từ không khí hoà tan vào nước đã đun sôi."
    },
    {
     "ma": [
@@ -351,7 +351,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Một khối kẽm có khối lượng 10 kg bị ăn mòn với tốc độ trung bình 2,5 kg/năm. Khối kẽm cần được thay khi khối lượng chỉ còn 20% so với ban đầu. Sau bao nhiêu năm thì cần thay khối kẽm này? (Làm tròn đến hàng phần mười.)",
-    "dap_an": "3,2. Cách tính: lượng bị ăn mòn = 10 × 80% = 8 kg; 8 : 2,5 = 3,2 năm."
+    "dap_an": "3,2. Cách tính: lượng bị ăn mòn = 10 × 80% = 8 kg; $\\dfrac{8}{2{,}5} = 3{,}2$ năm."
    },
    {
     "ma": [
@@ -518,7 +518,7 @@ NL.add([
     ],
     "dang": "Trả lời ngắn",
     "noi_dung": "Một cột điện có lớp mạ kẽm dày 85 µm, đặt trong môi trường cấp C3 với tốc độ ăn mòn kẽm là 2,0 µm/năm (coi không đổi). Lớp mạ bảo vệ được cột điện trong khoảng bao nhiêu năm? (Làm tròn đến hàng đơn vị.)",
-    "dap_an": "43. Cách tính: 85 : 2,0 = 42,5 ≈ 43 năm."
+    "dap_an": "43. Cách tính: $\\dfrac{85}{2{,}0} = 42{,}5 \\approx  43$ năm."
    },
    {
     "ma": [
