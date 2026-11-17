@@ -90,11 +90,11 @@ NL.add([
    "Nhiệt độ sôi phụ thuộc áp suất bên ngoài, không phụ thuộc cường độ đun nóng.",
    "Áp suất khí quyển ở Đà Lạt là giá trị ước tính theo độ cao và có thể thay đổi theo thời tiết."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd02-02",
@@ -197,11 +197,11 @@ NL.add([
    "Một phần hơi nước và các giọt acid nhỏ có thể bị cuốn theo dòng khí, vì vậy nên đậy lỏng miệng cốc bằng bông.",
    "Đá vôi tự nhiên không phải là CaCO₃ tinh khiết nên khối lượng CO₂ đo được có thể nhỏ hơn 0,44 g."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu đo.",
-  "cap_nhat": "06/11/2026",
+  "cap_nhat": "09/11/2026",
   "mo_phong": {
    "ten": "Reactions & Rates (PhET)",
    "url_nhung": "https://phet.colorado.edu/sims/cheerpj/reactions-and-rates/latest/reactions-and-rates.html?simulation=reactions-and-rates&locale=vi",
@@ -270,11 +270,11 @@ NL.add([
    "Không làm thí nghiệm thổi bột vào ngọn lửa trong lớp học khi không có biện pháp an toàn và sự cho phép.",
    "Tăng diện tích bề mặt làm tăng tốc độ phản ứng nhưng không làm thay đổi nhiệt lượng toả ra khi đốt cháy hoàn toàn cùng một khối lượng chất."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026",
+  "cap_nhat": "10/11/2026",
   "hinh": [
    {
     "src": "data/img/nl/cd02-03.jpg",
@@ -355,11 +355,11 @@ NL.add([
    "Lộ trình khí thải đã được điều chỉnh bằng các quyết định sau năm 2011 (ví dụ Quyết định 19/2024/QĐ-TTg); cần tra mức tiêu chuẩn đang có hiệu lực trước khi dạy.",
    "Không phải mọi xe máy đều lắp bộ xúc tác giống ô tô; nhiều xe đạt chuẩn nhờ phun xăng điện tử kết hợp xúc tác."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd02-05",
@@ -420,11 +420,11 @@ NL.add([
    "Đun sôi lại không phá huỷ được mọi độc tố mà vi khuẩn đã tiết ra; không nên coi hâm nóng là cách loại bỏ độc tố.",
    "Khuyến cáo của USDA sử dụng thang nhiệt độ Fahrenheit (°F); khi dạy cần đổi sang thang Celsius (°C) và nêu rõ cách làm tròn."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn, dịch nháp và soạn câu hỏi; nội dung được đối sánh với nguồn và chỉnh sửa thủ công.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd02-06",
@@ -508,10 +508,10 @@ NL.add([
    "Công suất thiết kế có thể khác sản lượng thực tế từng năm; khi dạy nên ghi rõ năm của số liệu.",
    "Số liệu công suất cần đối chiếu lại trên trang chính thức của doanh nghiệp."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  }
 ]);

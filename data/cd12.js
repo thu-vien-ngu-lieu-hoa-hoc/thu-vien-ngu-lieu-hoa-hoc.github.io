@@ -89,11 +89,11 @@ NL.add([
    "Số liệu toàn cầu khác nhau giữa các nguồn do cách tính; ghi rõ tổ chức và năm.",
    "Không phải mọi polymer đều là nhựa tổng hợp: tinh bột, cellulose, protein cũng là polymer."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd12-02",
@@ -210,11 +210,11 @@ NL.add([
    "Mẩu nhựa có bọt khí hoặc dính nhãn giấy có thể cho kết quả nổi sai; cần cắt mẩu nhựa sạch, nhỏ và gõ nhẹ để loại bọt khí.",
    "Mã số 7 gồm nhiều loại nhựa khác nhau, không phân loại được bằng một con số."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd12-03",
@@ -283,11 +283,11 @@ NL.add([
    "Tránh dùng ảnh “đảo rác” giả mạo lan truyền trên mạng xã hội; chỉ dùng hình từ nguồn khoa học.",
    "Ảnh hưởng của vi nhựa đến sức khoẻ con người vẫn đang được nghiên cứu; không kết luận quá mức."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026",
+  "cap_nhat": "10/11/2026",
   "video": [
    {
     "youtube": "FJvVpP3yt9M",
@@ -372,11 +372,11 @@ NL.add([
    "Túi giấy cũng có tác động môi trường (khai thác gỗ, nước, năng lượng); khuyến khích tái sử dụng hơn là “đổi loại túi dùng một lần”.",
    "Tỉ lệ 33% là số liệu năm 2019 của World Bank, chỉ tính các loại hạt nhựa chính."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd12-05",
@@ -440,11 +440,11 @@ NL.add([
    "Ngưỡng trên 50 °C theo UNEP (2015); các tiêu chuẩn ủ phân như EN 13432, ISO 17088 quy định điều kiện chi tiết.",
    "Không khẳng định một vật liệu “tốt nhất” tuyệt đối; khuyến khích đánh giá theo vòng đời."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd12-06",
@@ -505,17 +505,18 @@ NL.add([
    "Các mốc năm theo Science History Institute (tiểu sử Wallace Hume Carothers).",
    "Phân biệt nylon-6,6 và nylon-6 (tạo từ caprolactam)."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd12-07",
   "chu_de": "cd12",
   "lop": "12",
   "tieu_de": "Liên kết C–F và độ bền của polytetrafluoroethylene (PTFE)",
+  "loai": "06",
   "yccd": "Nêu được tính chất, ứng dụng của một số chất dẻo; giải thích tính chất dựa vào cấu tạo; đánh giá được tác động của chất thải polymer đến môi trường.",
   "boi_canh": "Teflon là tên thương mại của polytetrafluoroethylene (PTFE) – một polymer có mạch carbon được bao bọc bởi các nguyên tử fluorine: (–CF₂–CF₂–)ₙ. PTFE được dùng làm lớp chống dính của chảo, vỏ cách điện, gioăng, ống dẫn hoá chất…\nTheo thang Pauling, độ âm điện của F là 3,98, của C là 2,55. Liên kết C–F vì thế phân cực mạnh và rất bền; lớp nguyên tử fluorine bao quanh mạch carbon khiến PTFE gần như không phản ứng với acid, base hay dung môi thông thường.\nTuy nhiên, chính độ bền này lại trở thành vấn đề khi thải bỏ. Theo bài tổng quan của Lowe và cộng sự (2026), PTFE tồn tại rất lâu trong bãi chôn lấp; nhiệt phân PTFE tạo ra các “hoá chất vĩnh cửu” (forever chemicals) phân tử nhỏ; và muốn phân huỷ hoàn toàn thường phải dùng điều kiện rất khắc nghiệt. Vì thế nhiều nhóm nghiên cứu đang tìm cách phân huỷ PTFE ở nhiệt độ thấp (không quá 100 °C), có trường hợp còn thu hồi được fluoride để làm nguyên liệu hoá chất.",
   "bang_so_lieu": null,
@@ -578,10 +579,10 @@ NL.add([
    "Không đưa nhiệt độ phân huỷ cụ thể của PTFE khi chưa có nguồn đối chiếu.",
    "Ranh giới 0,4 và 1,7 là quy ước của SGK Hoá học 10, không phải ranh giới tuyệt đối."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ đọc tóm tắt bài báo, soạn nháp câu hỏi; nội dung được đối sánh với bản gốc. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  }
 ]);

@@ -122,7 +122,7 @@ NL.add([
    "Hydrogen có mật độ năng lượng theo khối lượng cao nhất (141,8 kJ/g) nhưng do khối lượng riêng của chất khí rất nhỏ nên mật độ năng lượng theo thể tích lại rất thấp ở điều kiện thường. Để ứng dụng làm nhiên liệu vận tải hoặc hàng không vũ trụ, hydrogen phải được nén ở áp suất rất cao hoặc hoá lỏng ở nhiệt độ rất thấp (−253 °C).",
    "Không đồng nhất “toả nhiều nhiệt” với “cháy nhanh”: ΔH là đại lượng nhiệt động, không cho biết tốc độ phản ứng."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nhóm đối sánh, chỉnh sửa. Số liệu được lấy từ NIST, các phép quy đổi do nhóm tự thực hiện.",
@@ -229,7 +229,7 @@ NL.add([
    "ΔT không phụ thuộc thể tích nếu nồng độ không đổi; nhiều học sinh nhầm “nhiều chất hơn thì nhiệt độ tăng nhiều hơn”.",
    "NaOH và HCl 1,0 M gây bỏng da, mắt. Nên trang bị găng tay, kính bảo hộ cho học sinh khi thực hiện thí nghiệm."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu đo.",
@@ -307,11 +307,11 @@ NL.add([
    "Khả năng gây nổ phụ thuộc chủ yếu vào tốc độ giải phóng năng lượng và lượng khí sinh ra, không chỉ vào độ lớn ΔrH°.",
    "Không hướng dẫn học sinh thử nghiệm phân huỷ ammonium nitrate."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026",
+  "cap_nhat": "10/11/2026",
   "hinh": [
    {
     "src": "data/img/nl/cd01-03.jpg",
@@ -441,11 +441,11 @@ NL.add([
    "Mức tiêu hao nhiên liệu của xe còn phụ thuộc vào động cơ và cách vận hành; không thể suy ra trực tiếp từ nhiệt trị.",
    "Nên đối chiếu nguyên văn Thông tư 50/2025/TT-BCT trên Cơ sở dữ liệu quốc gia về văn bản pháp luật trước khi dạy."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd01-05",
@@ -551,11 +551,11 @@ NL.add([
    "Bảng chỉ tính CO₂ khi đốt, chưa tính phát thải trong quá trình khai thác, vận chuyển (theo vòng đời sản phẩm).",
    "Methane rò rỉ (chưa cháy) là khí gây hiệu ứng nhà kính mạnh hơn CO₂ nhiều lần; cần lưu ý học sinh điều này khi rút ra kết luận."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Số liệu tính từ NIST.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd01-06",
@@ -653,11 +653,11 @@ NL.add([
    "Hydrogen dễ rò rỉ và có giới hạn nồng độ cháy nổ trong không khí rộng (khoảng 4–75% thể tích); vì vậy, đảm bảo an toàn là một thách thức lớn.",
    "Số liệu của IEA được cập nhật hằng năm; nên kiểm tra phiên bản mới nhất trước khi dạy."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026",
+  "cap_nhat": "10/11/2026",
   "hinh": [
    {
     "src": "data/img/nl/cd01-06.png",

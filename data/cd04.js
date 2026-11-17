@@ -95,11 +95,11 @@ NL.add([
    "Khoảng đổi màu có thể chênh lệch nhỏ giữa các tài liệu; khi dạy nên dùng một nguồn thống nhất.",
    "Dung dịch NaOH hấp thụ CO₂ từ không khí nên nồng độ thay đổi theo thời gian; cần xác định lại nồng độ (chuẩn hoá) trước khi dùng."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026",
+  "cap_nhat": "10/11/2026",
   "mo_phong": {
    "ten": "Acid-Base Solutions (PhET)",
    "url_nhung": "https://phet.colorado.edu/sims/html/acid-base-solutions/latest/acid-base-solutions_vi.html",
@@ -224,11 +224,11 @@ NL.add([
    "Giấm có màu đậm (giấm táo, giấm gạo lứt) cần pha loãng nhiều hơn để nhận ra điểm cuối.",
    "Không dùng miệng hút pipette; dung dịch NaOH 0,1 M có thể gây kích ứng mắt."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu đo.",
-  "cap_nhat": "06/11/2026",
+  "cap_nhat": "10/11/2026",
   "video": [
    {
     "youtube": "xBKyjXUhJy0",
@@ -351,11 +351,11 @@ NL.add([
    "Độ hoà tan oxygen còn phụ thuộc áp suất và độ mặn; số liệu trong bảng áp dụng cho nước ngọt ở 1 atm.",
    "Chuỗi phản ứng của Mn(II) trong phương pháp Winkler khá phức tạp; ở cấp trung học phổ thông, học sinh chỉ cần nắm được tỉ lệ mol tổng O₂ : S₂O₃²⁻ = 1 : 4."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd04-04",
@@ -417,11 +417,11 @@ NL.add([
    "Khi có nồng độ cao, ion Cl⁻ có thể bị KMnO₄ oxi hoá, gây sai số; tiêu chuẩn có hướng dẫn cách xử lí.",
    "Dung dịch KMnO₄ kém bền nên cần xác định lại nồng độ bằng sodium oxalate trước khi dùng."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd04-05",
@@ -488,11 +488,11 @@ NL.add([
    "Khí CO₂ sinh ra không độc nhưng bọt khí có thể làm acid bắn ra; cần rắc bột từ từ.",
    "Quy trình chi tiết cần được đối chiếu với nội quy an toàn phòng thí nghiệm của trường."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd04-06",
@@ -561,19 +561,18 @@ NL.add([
    "Nước cam đóng hộp có màu đậm, có thể cần pha loãng để dễ nhận ra điểm cuối.",
    "Giá trị 53,2 mg/100 g là trung bình; giá trị thực tế thay đổi theo giống cam và độ chín."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
- }
-]);
-NL.add([
+  "cap_nhat": "09/11/2026"
+ },
  {
   "id": "cd04-07",
   "chu_de": "cd04",
   "lop": "11",
   "tieu_de": "Đường cong chuẩn độ: acid mạnh và acid yếu khác nhau thế nào?",
+  "loai": "01",
   "yccd": "Trình bày được nguyên tắc chuẩn độ acid – base; xác định được điểm tương đương và bước nhảy pH từ số liệu chuẩn độ; giải thích được cách chọn chất chỉ thị.",
   "boi_canh": "Khi chuẩn độ acid bằng base, người ta có thể nhúng điện cực của máy đo pH vào bình tam giác và ghi pH sau mỗi lần thêm dung dịch base từ burette. Đồ thị biểu diễn pH theo thể tích base đã thêm gọi là đường cong chuẩn độ. Đường cong này cho biết điểm tương đương nằm ở đâu, pH thay đổi mạnh nhất trong khoảng nào và vì sao phải chọn chất chỉ thị cho phù hợp.\nGiáo trình mở Chemistry 2e (OpenStax) trình bày hai phép chuẩn độ được thực hiện trong cùng điều kiện: chuẩn độ 25,00 mL dung dịch HCl 0,100 M và chuẩn độ 25,00 mL dung dịch CH₃COOH 0,100 M, đều bằng dung dịch NaOH 0,100 M. Mỗi bình chứa 0,00250 mol acid, nên cả hai phép chuẩn độ đều đạt điểm tương đương khi thêm 25,0 mL dung dịch NaOH. Các giá trị pH trong bảng được tính theo lí thuyết, trong đó hằng số phân li acid của CH₃COOH được lấy là Ka = 1,8 × 10⁻⁵.\nPhương trình phản ứng của hai phép chuẩn độ:\nHCl + NaOH → NaCl + H₂O\nCH₃COOH + NaOH → CH₃COONa + H₂O\nHCl là acid mạnh, phân li hoàn toàn trong nước; CH₃COOH là acid yếu, chỉ phân li một phần. Vì vậy, dù có cùng nồng độ và cùng số mol, hai dung dịch có pH ban đầu khác nhau, và đường cong chuẩn độ của chúng khác nhau rõ rệt ở giai đoạn trước và tại điểm tương đương. Sau điểm tương đương, pH của cả hai bình do lượng NaOH dư quyết định.\nKhoảng pH đổi màu của một số chất chỉ thị (theo bảng tra cứu của LibreTexts Chemistry): methyl da cam 3,2 – 4,4 (đỏ → vàng); methyl đỏ 4,8 – 6,0 (đỏ → vàng); phenolphthalein 8,2 – 10,0 (không màu → hồng). Chất chỉ thị phù hợp là chất đổi màu trong khoảng pH thay đổi đột ngột quanh điểm tương đương.",
   "bang_so_lieu": {
@@ -752,7 +751,7 @@ NL.add([
   "trang_thai": "doi_sanh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "nguoi_dong_gop": "Ngữ liệu được xây dựng từ nguồn chia sẻ qua biểu mẫu đóng góp ngữ liệu của thư viện.",
+  "nguoi_dong_gop": "Nguồn do cô Lưu Thị Lương Yến (Khoa Hóa học, Trường Đại học Sư phạm Hà Nội) chia sẻ qua biểu mẫu đóng góp ngữ liệu.",
   "ai_su_dung": "AI hỗ trợ đọc nguồn và soạn nháp; số liệu chép từ tài liệu gốc và được đối sánh lại; nội dung được chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "16/11/2026"
  },
@@ -761,6 +760,7 @@ NL.add([
   "chu_de": "cd04",
   "lop": "12",
   "tieu_de": "Định lượng sắt trong quặng: bước nhảy thế trong chuẩn độ oxi hoá – khử",
+  "loai": "01",
   "yccd": "Trình bày được nguyên tắc chuẩn độ oxi hoá – khử; vận dụng tính toán theo phương trình hoá học để xác định hàm lượng chất; giải thích được cách chọn chất chỉ thị oxi hoá – khử.",
   "boi_canh": "Hàm lượng sắt là một chỉ tiêu quan trọng khi đánh giá chất lượng quặng sắt trước khi đưa vào lò luyện. Một phương pháp kinh điển trong phòng thí nghiệm phân tích là chuẩn độ oxi hoá – khử bằng dung dịch potassium dichromate (K₂Cr₂O₇).\nTheo giáo trình Analytical Chemistry 2.1 của David Harvey (DePauw University), quy trình gồm các bước: hoà tan mẫu quặng trong dung dịch HCl; khử toàn bộ sắt về Fe²⁺ bằng cột khử Jones (kẽm hỗn hống); chuẩn độ Fe²⁺ bằng dung dịch K₂Cr₂O₇ với chất chỉ thị diphenylamine sulfonic acid. Phương trình phản ứng chuẩn độ:\nCr₂O₇²⁻ + 6Fe²⁺ + 14H⁺ → 2Cr³⁺ + 6Fe³⁺ + 7H₂O\nTrong một ví dụ của giáo trình, mẫu quặng nặng 0,4891 g cần 36,92 mL dung dịch K₂Cr₂O₇ 0,02153 M để đạt điểm cuối; kết quả được biểu diễn theo phần trăm khối lượng Fe₂O₃.\nLàm thế nào để nhận ra điểm tương đương? Trong chuẩn độ acid – base, pH thay đổi đột ngột quanh điểm tương đương. Trong chuẩn độ oxi hoá – khử, đại lượng thay đổi đột ngột là thế điện cực E của dung dịch. Bảng số liệu dưới đây là đường cong chuẩn độ 50,0 mL dung dịch Fe²⁺ 0,100 M bằng dung dịch Ce⁴⁺ 0,100 M trong môi trường HClO₄ 1 M (Fe²⁺ + Ce⁴⁺ → Fe³⁺ + Ce³⁺), cũng lấy từ giáo trình trên. Thế điện cực hình thức của các cặp trong môi trường này: Fe³⁺/Fe²⁺ là +0,767 V; Ce⁴⁺/Ce³⁺ là +1,70 V; thế tại điểm tương đương là +1,23 V.\nChất chỉ thị oxi hoá – khử là chất có màu ở dạng oxi hoá khác màu ở dạng khử, đổi màu quanh một giá trị thế xác định. Một số ví dụ: diphenylamine sulfonic acid, E° = 0,85 V (dạng oxi hoá đỏ tím, dạng khử không màu); ferroin, E° = 1,147 V (dạng oxi hoá xanh nhạt, dạng khử đỏ).",
   "bang_so_lieu": {
@@ -878,7 +878,7 @@ NL.add([
   "trang_thai": "doi_sanh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
-  "nguoi_dong_gop": "Ngữ liệu được xây dựng từ nguồn chia sẻ qua biểu mẫu đóng góp ngữ liệu của thư viện.",
+  "nguoi_dong_gop": "Nguồn do cô Lưu Thị Lương Yến (Khoa Hóa học, Trường Đại học Sư phạm Hà Nội) chia sẻ qua biểu mẫu đóng góp ngữ liệu.",
   "ai_su_dung": "AI hỗ trợ đọc nguồn và soạn nháp; số liệu chép từ tài liệu gốc và được đối sánh lại; nội dung được chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
   "cap_nhat": "16/11/2026"
  }

@@ -113,11 +113,11 @@ NL.add([
    "Bảng chỉ trích cột tốc độ ăn mòn của thép carbon; nguyên văn tiêu chuẩn còn có cột khối lượng mất (g/m²) và các kim loại khác.",
    "Gỉ sắt không phải một chất duy nhất; tránh viết “gỉ sắt là Fe₂O₃” một cách tuyệt đối."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd06-02",
@@ -222,11 +222,11 @@ NL.add([
    "Nếu dùng đinh đã mạ kẽm sẵn, kết quả sẽ bị sai lệch; cần dùng đinh sắt thường và đánh sạch bề mặt.",
    "Calcium chloride khan hút ẩm mạnh; cần đậy kín ống 1 bằng nút cao su."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu đo.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd06-03",
@@ -288,11 +288,11 @@ NL.add([
    "Số liệu được đối chiếu trực tiếp trên trang “Economic Impact” của báo cáo IMPACT (impact.nace.org).",
    "Tránh cường điệu: ăn mòn cũng có mặt có lợi, ví dụ lớp gỉ đồng (patina) có tác dụng bảo vệ kim loại bên dưới."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd06-04",
@@ -368,11 +368,11 @@ NL.add([
    "Bảo vệ điện hoá chỉ có hiệu quả khi kim loại hi sinh và vật cần bảo vệ cùng nằm trong một môi trường điện li và được nối dẫn điện.",
    "Chiều dài bờ biển phụ thuộc cách đo: con số 3 260 km là số liệu chính thức thường được trích; khi đo trên bản đồ 1/50 000 (phần lục địa), Bùi Quang Dũng và Uông Đình Khanh (2016) thu được 3 289 km (đơn vị đo 1 000 m) và 3 658 km (đơn vị đo 200 m)."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd06-05",
@@ -446,11 +446,11 @@ NL.add([
    "Độ dày tấm đồng (3/32 inch) lấy từ trang Statue Statistics của NPS; các nguồn khác nhau đưa ra số thanh sắt được thay không thống nhất nên không đưa con số này vào.",
    "Ăn mòn điện hoá do hai kim loại tiếp xúc nhau (ăn mòn galvanic) chỉ xảy ra khi hai kim loại cùng tiếp xúc với dung dịch chất điện li."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd06-06",
@@ -544,10 +544,10 @@ NL.add([
    "Kẽm có tính khử mạnh hơn sắt nhưng trong khí quyển, kẽm tạo thành lớp sản phẩm ăn mòn bền nên bị ăn mòn chậm; hai ý này không mâu thuẫn.",
    "Giá trị trong bảng là khoảng tham khảo; với công trình thực tế, cần khảo sát môi trường cụ thể."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  }
 ]);

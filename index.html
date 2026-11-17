@@ -866,7 +866,7 @@ function diemTim(F, q){
 const DUNG_DAU = 1000;
 const locDungDau = ds => ds.some(o => o.d >= DUNG_DAU) ? ds.filter(o => o.d >= DUNG_DAU) : ds;
 const cvar = cd => `--c:${cd.mau};--c-soft:color-mix(in srgb, ${cd.mau} 13%, var(--surface))`;
-const loaiCua = x => LOAI[String(x.id||'').split('-')[1]] || '';
+const loaiCua = x => LOAI[x.loai || String(x.id||'').split('-')[1]] || '';
 const lopSo = s => (String(s||'').match(/\d+/g)||[]).map(Number);
 const ttCua = x => TRANG_THAI[x.trang_thai] ? x.trang_thai : 'nhap';
 const stTag = x => '';
@@ -1121,7 +1121,7 @@ function guideBand(home){
   </section>`;
 }
 function pageHome(){
-  const tdi = DS.filter(x=>ttCua(x)==='tham_dinh').length, nQ = DS.reduce((s,x)=>s+x.cau_hoi.length,0), nNg = new Set(DS.flatMap(x=>(x.nguon||[]).map(n=>n.url||n.trich_dan))).size;
+  const tdi = DS.filter(x=>ttCua(x)==='tham_dinh').length, nQ = DS.reduce((s,x)=>s+x.cau_hoi.length,0), nNg = demNguon().tong;
   return `<div class="page wide">${errBox()}
     <section class="hero">${heroArt}<div class="hero-inner"><div>
       <div class="eyebrow">${icon('spark',15)} ${txt(C.don_vi)}</div>
@@ -1133,7 +1133,7 @@ function pageHome(){
       <div class="stat rv"><b data-count="${C.chu_de.length}">0</b><span>chủ đề CT 2018</span></div>
       <div class="stat rv"><b data-count="${DS.length}">0</b><span>ngữ liệu</span></div>
       <div class="stat rv"><b data-count="${nQ}">0</b><span>câu hỏi minh hoạ</span></div>
-      ${tdi?`<div class="stat rv good"><b data-count="${tdi}">0</b><span>đã thẩm định</span></div>`:`<div class="stat rv good"><b data-count="${nNg}">0</b><span>nguồn trích dẫn</span></div>`}
+      ${tdi?`<div class="stat rv good"><b data-count="${tdi}">0</b><span>đã thẩm định</span></div>`:`<div class="stat rv good"><b data-count="${nNg}">0</b><span>mục trích dẫn</span></div>`}
     </div></section>
     <div class="box note loi-ngo"><b>Lời ngỏ.</b> Thư viện chia sẻ các ngữ liệu có đường dẫn đến nguồn. Các câu hỏi đi kèm là một số ví dụ minh hoạ, được phát triển từ dữ liệu mà ngữ liệu cung cấp. Ngoài ra, trang web có gợi ý prompt để giáo viên tham khảo nếu sử dụng AI thiết kế câu hỏi. Việc lựa chọn và sử dụng thuộc quyết định của giáo viên.</div>
     ${guideBand(true)}
@@ -1142,8 +1142,8 @@ function pageHome(){
     <div class="topics">${C.chu_de.map((c,i) => `<a class="topic rv" data-lop="${lopSo(c.lop).join(' ')}" style="${cvar(c)}" href="#/tra-cuu?cd=${c.ma}">
       <div class="topic-top"><span class="sym">${esc(c.ki_hieu)}</span><div><div class="no">Chủ đề ${String(i+1).padStart(2,'0')} · Lớp ${esc(c.lop)}</div><strong>${esc(c.ten)}</strong></div></div>
       <div class="src">${esc(c.nguon)}</div>${progress(c.ma)}</a>`).join('')}</div>
-    <h2>6 loại ngữ liệu trong mỗi chủ đề</h2>
-    <div class="types">${Object.entries(LOAI).map(([k,v])=>`<a class="type rv" href="#/tra-cuu?loai=${k}"><b>${k}</b>${v}<span>${DS.filter(x=>x.id.endsWith('-'+k)).length}</span></a>`).join('')}</div></div>`;
+    <h2>6 loại ngữ liệu</h2>
+    <div class="types">${Object.entries(LOAI).map(([k,v])=>`<a class="type rv" href="#/tra-cuu?loai=${k}"><b>${k}</b>${v}<span>${DS.filter(x=>(x.loai||x.id.split('-')[1])===k).length}</span></a>`).join('')}</div></div>`;
 }
 function wireHome(){
   const words = ['bảng số liệu', 'đồ thị', 'thí nghiệm', 'quy chuẩn', 'tình huống']; let w = 0; const rot = $('#rot');
@@ -1179,7 +1179,7 @@ function pageTraCuu(P){
       const v = k => $(map[k]).value, tk = v('q').trim();
       const diem = new Map();
       let rs = DS.filter(x => (!v('lop') || lopSo(x.lop||CD(x.chu_de).lop).includes(+v('lop'))) && (!v('cd') || x.chu_de===v('cd')) &&
-        (!v('loai') || x.id.endsWith('-'+v('loai'))) && (!v('ma') || maCua(x).includes(v('ma'))) &&
+        (!v('loai') || (x.loai||x.id.split('-')[1])===v('loai')) && (!v('ma') || maCua(x).includes(v('ma'))) &&
         (!tk || (d => (diem.set(x.id, d), d > 0))(diemTim(truongNL(x), tk))));
       if(tk) rs = locDungDau(rs.map(x => ({x, d: diem.get(x.id)}))).sort((a, b) => b.d - a.d).map(o => o.x);
       $('#fCount').innerHTML = `Tìm thấy <b>${rs.length}</b>/${DS.length} ngữ liệu${tk && rs.length ? ' · xếp theo mức độ khớp từ khoá' : ''}`;
@@ -1305,7 +1305,7 @@ const GOI_Y_MA = {
   'HH3.4':'Nêu ngành, nghề, vị trí việc làm liên quan và kiến thức, kĩ năng cần có.',
   'HH3.5':'Lựa chọn hành vi, giải pháp phù hợp với phát triển bền vững; lập luận bằng số liệu.'
 };
-const loaiMa = x => String(x && x.id || '').split('-')[1] || '';
+const loaiMa = x => (x && x.loai) || String(x && x.id || '').split('-')[1] || '';
 const NL_CHO = '[DÁN NỘI DUNG NGỮ LIỆU: tiêu đề, bối cảnh, bảng số liệu, nguồn, lưu ý khoa học – sao chép từ trang ngữ liệu]';
 function nlText(x){
   if(!x) return NL_CHO;
@@ -1647,6 +1647,8 @@ function pagePhanHoi(){
     </div>
     ${pagePager('phan-hoi')}</div>`;
 }
+/* Đếm mục trích dẫn một cách thống nhất cho trang chủ và trang Nguồn */
+const demNguon = () => { const tl = DS.reduce((s,x)=>s+(x.nguon||[]).filter(Boolean).length,0), ha = DS.reduce((s,x)=>s+(x.hinh||[]).filter(f=>f&&f.src&&f.giay_phep).length,0), vd = DS.reduce((s,x)=>s+(x.video||[]).filter(v=>v&&v.youtube).length,0); return {tl, ha, vd, tong: tl+ha+vd}; };
 function pageNguon(){
   const rows = []; DS.forEach(x => { x.nguon.forEach(n => n && rows.push({x, n}));
     x.hinh.forEach(f => f && f.src && f.giay_phep && rows.push({x, n:{trich_dan: 'Hình: ' + (f.nguon||''), url: f.url, loai: 'Hình ảnh', giay_phep: f.giay_phep}}));
@@ -1663,7 +1665,7 @@ function pageNguon(){
       <li><b>Mô phỏng và video:</b> Mô phỏng PhET được nhúng từ nguồn chính thức, giữ thông tin nhận diện và ghi nhận PhET Interactive Simulations, University of Colorado Boulder theo giấy phép áp dụng. Video được nhúng từ kênh gốc trên YouTube (chế độ hạn chế cookie), ghi tên kênh và đường dẫn tới video gốc; video chỉ tải khi người dùng bấm xem.</li>
       <li><b>Sử dụng và phản hồi:</b> Câu hỏi đi kèm là ví dụ minh hoạ; giáo viên kiểm tra, lựa chọn và điều chỉnh trước khi sử dụng. Khi chia sẻ lại, cần ghi nguồn và tuân thủ điều kiện sử dụng của từng tư liệu. Góp ý về nội dung và quyền sử dụng được tiếp nhận tại mục <a href="#/phan-hoi">Phản hồi và chia sẻ dữ liệu</a>.</li>
     </ul>
-    <h2>Danh mục nguồn (${rows.length})</h2>
+    <h2>Danh mục nguồn (${rows.length} mục trích dẫn: ${demNguon().tl} tài liệu, ${demNguon().ha} hình ảnh, ${demNguon().vd} video)</h2>
     <div class="filters" style="grid-template-columns:1fr"><label>Lọc nhanh trong danh mục<input id="srcQ" type="search" placeholder="Gõ tên nguồn, giấy phép, mã ngữ liệu…"></label></div>
     <div class="table-wrap"><table class="sortable" id="srcT"><thead><tr><th>Ngữ liệu</th><th>Trích dẫn</th><th>Loại</th><th>Giấy phép</th></tr></thead><tbody>
     ${rows.map(({x,n}) => `<tr><td data-v="${esc(x.id)}"><a href="#/nl/${encodeURIComponent(x.id)}">${esc(MA_NL(x.id))}</a></td><td class="break" data-v="${esc(n.trich_dan||'')}">${txt(n.trich_dan||'')}${n.url?`<br>${link(n.url)}`:''}</td><td data-v="${esc(n.loai||'')}">${txt(n.loai||'')}</td><td data-v="${esc(n.giay_phep||'')}">${txt(n.giay_phep||'')}</td></tr>`).join('') || '<tr><td colspan="4" class="muted">Chưa có nguồn.</td></tr>'}
@@ -1807,7 +1809,9 @@ $('#sideTab').addEventListener('click', doiThanhBen);
 capNhatNutMenu(); window.addEventListener('resize', capNhatNutMenu);
 $('#scrim').addEventListener('click', () => document.body.classList.remove('nav-open'));
 $('#brandName').textContent = C.ten_ngan || C.ten_san_pham; $('#brandSub').textContent = C.khau_hieu;
-$('#siteFoot').innerHTML = `${esc(C.ten_san_pham)} · ${txt(C.don_vi)} · Sản phẩm miễn phí, phi thương mại, không thu thập dữ liệu cá nhân · Cập nhật ${esc(C.cap_nhat)}`;
+/* Ngày cập nhật chân trang = ngày mới nhất của trang và các ngữ liệu */
+function ngayMoiNhat(){ const k = d => { const m = String(d||'').match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/); return m ? +m[3]*10000 + +m[2]*100 + +m[1] : 0; }; return [C.cap_nhat, ...NL.ds.map(x => x.cap_nhat)].reduce((a, d) => k(d) > k(a) ? d : a, C.cap_nhat); }
+$('#siteFoot').innerHTML = `${esc(C.ten_san_pham)} · ${txt(C.don_vi)} · Sản phẩm miễn phí, phi thương mại, không thu thập dữ liệu cá nhân · Cập nhật ${esc(ngayMoiNhat())}`;
 buildSidebar();
 window.addEventListener('hashchange', route);
 route();

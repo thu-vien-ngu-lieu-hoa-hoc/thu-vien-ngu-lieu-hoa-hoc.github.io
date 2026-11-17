@@ -103,11 +103,11 @@ NL.add([
    "Một số tài liệu cũ chỉ liệt kê 8 amino acid thiết yếu (không có histidine); ngữ liệu này dùng danh sách 9 amino acid theo báo cáo WHO (2007).",
    "Glycine không có nguyên tử carbon bất đối; tránh nói “mọi amino acid đều có đồng phân quang học”."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd11-02",
@@ -207,11 +207,11 @@ NL.add([
    "Không sử dụng các muối kim loại nặng độc như HgCl₂, Pb(NO₃)₂ ở trường phổ thông; dùng dung dịch CuSO₄ loãng là đủ để quan sát hiện tượng.",
    "Khuyến cáo sơ cứu thay đổi theo thời gian; nhấn mạnh việc gọi cấp cứu thay vì tự xử lí."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu đo.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd11-03",
@@ -284,11 +284,11 @@ NL.add([
    "Hệ số 6,25 là trung bình; mỗi loại thực phẩm có hệ số riêng (sữa khoảng 6,38).",
    "Tránh quy kết cho một dân tộc hay quốc gia; nhấn mạnh vai trò kiểm nghiệm và đạo đức nghề nghiệp."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026",
+  "cap_nhat": "10/11/2026",
   "hinh": [
    {
     "src": "data/img/nl/cd11-03.png",
@@ -360,11 +360,11 @@ NL.add([
    "Bài không nêu ngưỡng nitrogen theo hạng; nếu cần, giáo viên tra trực tiếp toàn văn TCVN 5107:2018.",
    "Nước mắm rất mặn; khi liên hệ với sức khoẻ, có thể kết hợp ngữ liệu CD07-05 (lượng sodium trong khẩu phần ăn)."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd11-05",
@@ -450,11 +450,11 @@ NL.add([
    "Không khuyên học sinh dùng hay không dùng sản phẩm cụ thể; hướng dẫn cách đọc nhãn và đánh giá.",
    "Người có bệnh thận cần chế độ protein riêng theo chỉ định bác sĩ."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd11-06",
@@ -521,11 +521,11 @@ NL.add([
    "Số lượng cấu trúc trong PDB tăng liên tục; ghi rõ thời điểm tra cứu.",
    "Không yêu cầu học sinh ghi nhớ cấu trúc bậc ba, bậc bốn chi tiết ngoài phạm vi chương trình."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026",
+  "cap_nhat": "10/11/2026",
   "video": [
    {
     "youtube": "_OYxAm-219s",

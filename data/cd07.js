@@ -86,11 +86,11 @@ NL.add([
    "Chỉ giáo viên được biểu diễn phản ứng của Na với nước, với lượng Na nhỏ bằng hạt đậu xanh và có tấm chắn bảo vệ.",
    "Không biểu diễn K, Rb, Cs với nước ở trường phổ thông."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026",
+  "cap_nhat": "10/11/2026",
   "video": [
    {
     "youtube": "eaChisV5uR0",
@@ -217,11 +217,11 @@ NL.add([
    "Chỉ cần lẫn một lượng rất nhỏ sodium cũng cho màu vàng mạnh; vì vậy, cần thận trọng khi kết luận từ kết quả thử màu ngọn lửa.",
    "Pháo hoa tự chế rất nguy hiểm và bị cấm; không hướng dẫn học sinh trộn chất oxi hoá với muối kim loại."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd07-03",
@@ -306,11 +306,11 @@ NL.add([
    "Số liệu của USGS cho năm gần nhất là ước tính và có thể được điều chỉnh ở báo cáo năm sau.",
    "Không gọi lithium là “năng lượng sạch”: lithium là vật liệu dùng trong thiết bị lưu trữ điện năng, không phải là nguồn năng lượng."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026",
+  "cap_nhat": "10/11/2026",
   "hinh": [
    {
     "src": "data/img/nl/cd07-03.jpg",
@@ -382,11 +382,11 @@ NL.add([
    "Phân biệt nước cứng tạm thời (chứa HCO₃⁻) và nước cứng vĩnh cửu (chứa Cl⁻, SO₄²⁻).",
    "Giấm có thể dùng để tẩy cặn ấm (acid hoà tan CaCO₃); đây là ứng dụng gần gũi để học sinh liên hệ."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026",
+  "cap_nhat": "10/11/2026",
   "hinh": [
    {
     "src": "data/img/nl/cd07-04.jpg",
@@ -463,11 +463,11 @@ NL.add([
    "Lượng muối trong nghiên cứu STEPS được ước tính từ sodium niệu, không phải cân trực tiếp khẩu phần.",
    "Không đưa ra lời khuyên y tế cá nhân; người có bệnh cần hỏi ý kiến bác sĩ."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd07-06",
@@ -542,10 +542,10 @@ NL.add([
    "Các nguồn khác nhau đưa ra tỉ lệ khác nhau tuỳ có tính CO₂ từ nhiên liệu hay không; luôn ghi rõ phạm vi, năm và tổ chức công bố.",
    "Vôi sống phản ứng mạnh với nước, toả nhiều nhiệt, gây bỏng; cần lưu ý học sinh khi liên hệ thực tế."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  }
 ]);

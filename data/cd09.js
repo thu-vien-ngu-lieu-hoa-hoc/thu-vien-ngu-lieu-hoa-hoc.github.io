@@ -129,11 +129,11 @@ NL.add([
    "Số liệu là trung bình; thành phần dầu thực tế thay đổi theo giống cây trồng, vật nuôi và cách chế biến.",
    "Nhiệt độ nóng chảy của chất béo còn phụ thuộc vào độ dài mạch carbon, không chỉ phụ thuộc vào số liên kết đôi."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026",
+  "cap_nhat": "10/11/2026",
   "hinh": [
    {
     "src": "data/img/nl/cd09-01a.webp",
@@ -240,11 +240,11 @@ NL.add([
    "Không sử dụng xà phòng tự làm ở lớp học để tắm, rửa mặt khi chưa kiểm tra pH.",
    "Chỉ số xà phòng hoá là một khoảng, không phải một giá trị cố định."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd09-03",
@@ -313,11 +313,11 @@ NL.add([
    "Hydrogen hoá hoàn toàn không tạo chất béo trans nhưng tạo ra chất béo no.",
    "Khi liên hệ Việt Nam, giáo viên cần tra văn bản hiện hành của Bộ Y tế về chất béo trans; ngữ liệu này không nêu tình trạng quy định trong nước."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026",
+  "cap_nhat": "10/11/2026",
   "hinh": [
    {
     "src": "data/img/nl/cd09-cistrans.webp",
@@ -389,11 +389,11 @@ NL.add([
    "Triolein chỉ là chất đại diện; mỡ cá thực tế là hỗn hợp nhiều triglyceride.",
    "Phản ứng có thể dùng methanol (tạo methyl ester) hoặc ethanol (tạo ethyl ester); nghiên cứu của Trường Đại học Cần Thơ (2008) dùng ethanol."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd09-05",
@@ -464,11 +464,11 @@ NL.add([
    "Dầu chiên nhiều lần có thể chứa sản phẩm oxi hoá có hại; không khuyến khích tái sử dụng để nấu ăn.",
    "Bẫy mỡ (grease trap) hoạt động dựa trên nguyên tắc chất béo nhẹ hơn nước nên nổi lên và được giữ lại."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd09-06",
@@ -577,17 +577,18 @@ NL.add([
    "H₂SO₄ đặc gây bỏng nặng; chỉ giáo viên thao tác.",
    "“Hương tổng hợp giống tự nhiên” không có nghĩa là độc hại; việc đánh giá an toàn cần dựa vào quy định về phụ gia thực phẩm."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd09-07",
   "chu_de": "cd09",
   "lop": "12",
   "tieu_de": "Đồng phân cis – trans: oleic acid và elaidic acid",
+  "loai": "01",
   "yccd": "Nêu được khái niệm acid béo, chất béo; phân biệt acid béo no và không no; giải thích được trạng thái của chất béo dựa vào cấu tạo.",
   "boi_canh": "Oleic acid và elaidic acid có cùng công thức phân tử C₁₇H₃₃COOH, mạch 18 carbon với một liên kết đôi C=C ở vị trí số 9 (giữa C9 và C10). Điểm khác nhau duy nhất là cấu hình của liên kết đôi: oleic acid là đồng phân cis (Z), hai phần mạch carbon nằm cùng phía; elaidic acid là đồng phân trans (E), hai phần mạch nằm khác phía.\nOleic acid có nhiều trong dầu ô liu. Elaidic acid là acid béo trans chủ yếu được hình thành khi hydrogen hoá không hoàn toàn dầu thực vật trong sản xuất bơ thực vật, shortening.\nOleic acid nóng chảy ở khoảng 13,4 °C, nên là chất lỏng ở nhiệt độ phòng; elaidic acid nóng chảy ở 42–44 °C, nên là chất rắn. Mạch carbon của đồng phân cis bị uốn cong tại liên kết đôi nên các phân tử khó xếp sát nhau; còn mạch gần thẳng của đồng phân trans xếp khít tương tự mạch của acid béo no.\nMức độ không no của chất béo được đánh giá bằng chỉ số iodine, là số gam iodine có thể cộng vào 100 g chất béo hoặc acid béo.",
   "bang_so_lieu": {
@@ -670,11 +671,11 @@ NL.add([
    "Đề OCR (Anh) chỉ là gợi ý dạng câu hỏi; số liệu lấy từ PubChem.",
    "Theo Chương trình Hoá học 2018, có thể gọi tên theo IUPAC: (9Z)-octadec-9-enoic acid và (9E)-octadec-9-enoic acid."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ soạn nháp câu hỏi; số liệu tra trực tiếp trên PubChem; chỉ số iodine được tính thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026",
+  "cap_nhat": "10/11/2026",
   "hinh": [
    {
     "src": "data/img/nl/cd09-cistrans.webp",

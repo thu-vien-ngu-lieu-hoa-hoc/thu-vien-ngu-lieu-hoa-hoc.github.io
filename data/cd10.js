@@ -99,11 +99,11 @@ NL.add([
    "Quy đổi 25 g đường ra số thìa phụ thuộc cỡ thìa; không dùng làm số liệu chính xác.",
    "Không kì thị đường: glucose là nguồn năng lượng chính của não; vấn đề nằm ở lượng dư thừa."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd10-02",
@@ -205,11 +205,11 @@ NL.add([
    "Sản phẩm chính của quá trình thuỷ phân bởi amylase nước bọt là maltose và dextrin, không phải glucose.",
    "Đun ống nghiệm thử Cu(OH)₂/OH⁻ phải dùng kẹp, hướng miệng ống ra xa người."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu đo.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd10-03",
@@ -284,11 +284,11 @@ NL.add([
    "Tỉ lệ pha ethanol của Brazil đã thay đổi nhiều lần; con số E30 áp dụng từ 1/8/2025.",
    "“Trung hoà carbon” của nhiên liệu sinh học còn phụ thuộc phát thải khi trồng trọt, vận chuyển, chế biến."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd10-04",
@@ -363,11 +363,11 @@ NL.add([
    "Không mô tả liều độc cụ thể của củ sắn; tập trung vào cách chế biến an toàn.",
    "FAO lưu ý luộc trực tiếp củ tươi không phải lúc nào cũng loại hết cyanide; cần kết hợp nhiều bước chế biến."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026",
+  "cap_nhat": "10/11/2026",
   "hinh": [
    {
     "src": "data/img/nl/cd10-04.webp",
@@ -450,11 +450,11 @@ NL.add([
    "Giáo viên giữ vai trò trung lập khi tổ chức tranh biện, không áp đặt quan điểm.",
    "Đồ uống dùng chất tạo ngọt thay cho đường không phải là lựa chọn “hoàn toàn tốt”; nên khuyến khích uống nước lọc."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd10-06",
@@ -528,11 +528,11 @@ NL.add([
    "Rơm rạ còn có hemicellulose và lignin; tỉ lệ 40% cellulose trong câu hỏi là giả định để tính toán.",
    "Tránh gọi cellulose là “chất xơ vô dụng”: chất xơ có vai trò quan trọng với tiêu hoá."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026",
+  "cap_nhat": "10/11/2026",
   "hinh": [
    {
     "src": "data/img/nl/cd10-06.webp",

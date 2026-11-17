@@ -126,11 +126,11 @@ NL.add([
    "Dung dịch Fe³⁺ có màu vàng nâu một phần do thuỷ phân tạo phức hydroxo; [Fe(H₂O)₆]³⁺ (chưa thuỷ phân) có màu nhạt hơn.",
    "Cr₂O₇²⁻ (chromium(VI)) độc và có khả năng gây ung thư; chỉ giáo viên được thao tác, với lượng nhỏ."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026",
+  "cap_nhat": "10/11/2026",
   "hinh": [
    {
     "src": "data/img/nl/cd08-01.webp",
@@ -234,11 +234,11 @@ NL.add([
    "Dung dịch ammonia đặc có mùi khai, xốc, gây kích ứng; cần thao tác trong tủ hút hoặc nơi thoáng khí.",
    "Công thức phức trong dung dịch nước chính xác là [Cu(NH₃)₄(H₂O)₂]²⁺; có thể giới thiệu cả hai cách viết."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu đo.",
-  "cap_nhat": "06/11/2026",
+  "cap_nhat": "09/11/2026",
   "mo_phong": {
    "ten": "Beer’s Law Lab (PhET)",
    "url_nhung": "https://phet.colorado.edu/sims/html/beers-law-lab/latest/beers-law-lab_vi.html",
@@ -318,11 +318,11 @@ NL.add([
    "Không mô tả chi tiết liều lượng gây chết; tập trung vào phòng tránh và nhận biết triệu chứng.",
    "Triệu chứng lấy theo trang “Carbon Monoxide (CO) Poisoning Basics” của CDC."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026",
+  "cap_nhat": "10/11/2026",
   "hinh": [
    {
     "src": "data/img/nl/cd08-03.gif",
@@ -412,11 +412,11 @@ NL.add([
    "Sản lượng thép theo quốc gia thay đổi hằng năm; số liệu trên lấy từ World Steel in Figures 2024 (năm 2023).",
    "Quá trình khử oxide của sắt trong lò cao xảy ra theo nhiều giai đoạn (Fe₂O₃ → Fe₃O₄ → FeO → Fe)."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd08-05",
@@ -486,11 +486,11 @@ NL.add([
    "Không đưa hoá chất Cr(VI) cho học sinh tự thao tác.",
    "Thực tế còn có phương pháp hấp phụ, trao đổi ion, sinh học; phương pháp khử – kết tủa chỉ là phương pháp phổ biến nhất."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd08-06",
@@ -564,11 +564,11 @@ NL.add([
    "Ở cấp trung học phổ thông, chỉ giới thiệu dạng hình học vuông phẳng ở mức nhận biết.",
    "Các mốc lịch sử được đối chiếu với bài báo gốc trên Nature (1965) và trang lịch sử phát hiện cisplatin của NCI."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026",
+  "cap_nhat": "10/11/2026",
   "hinh": [
    {
     "src": "data/img/nl/cd08-06.svg",

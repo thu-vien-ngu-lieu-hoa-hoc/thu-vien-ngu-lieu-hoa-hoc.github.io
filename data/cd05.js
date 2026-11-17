@@ -95,11 +95,11 @@ NL.add([
    "Sức điện động không phụ thuộc kích thước điện cực; kích thước ảnh hưởng đến dung lượng và cường độ dòng điện.",
    "Quy ước dấu trong bảng là thế khử chuẩn; tránh nhầm với “thế oxi hoá” trong một số tài liệu cũ."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd05-02",
@@ -203,11 +203,11 @@ NL.add([
    "Không được ăn quả chanh, khoai tây sau thí nghiệm vì có thể nhiễm ion kim loại.",
    "Số liệu điện áp và dòng điện thay đổi theo độ tươi của quả và độ sâu cắm điện cực; nên khuyến khích học sinh đo lặp lại."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu đo.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd05-03",
@@ -295,11 +295,11 @@ NL.add([
    "Cực dương của pin lithium-ion có nhiều loại (LFP, NMC…), tính chất và giá thành khác nhau.",
    "Số liệu IEA được cập nhật hằng năm; nên kiểm tra phiên bản mới nhất."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd05-04",
@@ -380,11 +380,11 @@ NL.add([
    "Quá trình chế biến bauxite thành alumina (quy trình Bayer) tạo ra bùn đỏ có tính base mạnh, là vấn đề môi trường cần lưu ý khi liên hệ với thực tế khai thác, chế biến bauxite ở Tây Nguyên.",
    "Hiệu suất dòng điện thực tế trong bể điện phân nhôm khoảng 90–95%, không phải 100%."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026",
+  "cap_nhat": "10/11/2026",
   "hinh": [
    {
     "src": "data/img/nl/cd05-04.jpg",
@@ -463,11 +463,11 @@ NL.add([
    "Nghị định 08/2022/NĐ-CP đã được sửa đổi, bổ sung (Nghị định 05/2025/NĐ-CP và các văn bản sau); tỉ lệ, lộ trình tái chế từng loại pin có thể đã thay đổi – cần tra văn bản hợp nhất còn hiệu lực trước khi dạy.",
    "Không tháo rời, cắt pin trong lớp học."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026",
+  "cap_nhat": "10/11/2026",
   "hinh": [
    {
     "src": "data/img/nl/cd05-05.png",
@@ -544,10 +544,10 @@ NL.add([
    "Trong thí nghiệm ở trường, chỉ sử dụng dung dịch CuSO₄; không dùng dung dịch mạ công nghiệp chứa cyanide.",
    "Bề mặt vật phải được làm sạch dầu mỡ, gỉ trước khi mạ để lớp mạ bám chắc."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  }
 ]);

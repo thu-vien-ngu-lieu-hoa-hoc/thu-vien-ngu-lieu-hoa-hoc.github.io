@@ -94,11 +94,11 @@ NL.add([
    "Công thức gần đúng [H⁺] ≈ √(Ka·C) chỉ dùng khi độ phân li nhỏ (thường dưới 5%).",
    "Giá trị pKa có thể chênh lệch nhỏ giữa các nguồn do điều kiện đo khác nhau; cần ghi rõ nguồn khi dạy."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd03-02",
@@ -201,11 +201,11 @@ NL.add([
    "Dung dịch ban đầu nên có màu đỏ nhạt; nếu màu quá đậm, học sinh khó nhận ra sự đậm lên của màu.",
    "NaF gây độc khi nuốt phải; chỉ dùng lượng nhỏ và cần hướng dẫn an toàn cho học sinh."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu đo.",
-  "cap_nhat": "06/11/2026",
+  "cap_nhat": "09/11/2026",
   "mo_phong": {
    "ten": "Reversible Reactions (PhET)",
    "url_nhung": "https://phet.colorado.edu/sims/cheerpj/ideal-gas/latest/ideal-gas.html?simulation=reversible-reactions&locale=vi",
@@ -333,11 +333,11 @@ NL.add([
    "Đỉnh CO₂ rơi vào tháng 5, không phải giữa mùa đông, vì CO₂ tích luỹ suốt thu – đông và chỉ giảm khi mùa sinh trưởng ở Bắc bán cầu đủ mạnh.",
    "Một năm tăng mạnh (như 2023–2024) có thể có yếu tố tự nhiên (El Niño, cháy rừng); xu hướng dài hạn là do đốt nhiên liệu hoá thạch. Cần tránh rút ra kết luận từ số liệu của một năm riêng lẻ."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ dịch nháp và soạn câu hỏi; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd03-04",
@@ -412,11 +412,11 @@ NL.add([
    "Áp suất cao làm tăng hiệu suất nhưng tốn năng lượng nén khí và chi phí thiết bị; đó cũng là lí do phải chọn điều kiện dung hoà.",
    "Tỉ lệ chuyển hoá mỗi lượt (nhỏ) khác với mức tận dụng nguyên liệu của toàn quá trình (cao nhờ tuần hoàn khí)."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd03-05",
@@ -497,11 +497,11 @@ NL.add([
    "Hệ CO₂ – HCO₃⁻ – CO₃²⁻ trong nước biển là hệ đệm phức tạp; mô hình trong bài đã được đơn giản hoá.",
    "Rạn san hô còn chịu tác động mạnh của sự gia tăng nhiệt độ nước biển (gây hiện tượng tẩy trắng san hô), không chỉ do pH giảm."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026",
+  "cap_nhat": "10/11/2026",
   "video": [
    {
     "youtube": "xuttOKcTPQs",
@@ -608,17 +608,18 @@ NL.add([
    "Tuyệt đối không trộn chất tẩy chứa hypochlorite với acid hoặc chất chứa ammonia vì tạo khí độc.",
    "Quy chuẩn của từng địa phương có thể quy định khoảng pH khác; cần đối chiếu khi áp dụng."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ tìm nguồn và soạn nháp; nội dung được đối sánh với nguồn và chỉnh sửa thủ công. Bảng được tính từ pKa.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  },
  {
   "id": "cd03-07",
   "chu_de": "cd03",
   "lop": "11",
   "tieu_de": "Mưa acid ở Châu Âu và quá trình cắt giảm phát thải SO₂",
+  "loai": "03",
   "yccd": "Vận dụng kiến thức về pH và cân bằng acid – base để giải thích, đánh giá một vấn đề môi trường (mưa acid).",
   "boi_canh": "Tháng 10/1967, nhà khoa học Thuỵ Điển Svante Odén đăng trên báo Dagens Nyheter bài viết với tựa đề như một lời cảnh báo: “Một cuộc chiến hoá học ngấm ngầm giữa các quốc gia châu Âu”. Dựa trên mạng lưới quan trắc nước mưa và nước mặt, ông chỉ ra hiện tượng acid hoá đang diễn ra, phần lớn do khí thải chứa sulfur phát tán từ quốc gia này sang quốc gia khác.\nNăm 1972, báo cáo của Thuỵ Điển gửi Hội nghị Liên Hợp Quốc về Môi trường con người ở Stockholm ước tính 50% số hồ và sông ở Thuỵ Điển sẽ đạt tới mức pH tới hạn trong vòng 50 năm nếu phát thải tiếp tục như cũ. Trong những năm 1980, báo chí đăng tải nhiều hình ảnh rừng bị chết ở vùng “Tam giác đen” (biên giới Ba Lan, Đông Đức và Tiệp Khắc cũ), nơi sử dụng nhiều than nâu giàu sulfur làm nhiên liệu.\nNghị định thư Helsinki năm 1985 yêu cầu các nước tham gia giảm ít nhất 30% phát thải sulfur trong giai đoạn 1980–1993. Theo bài tổng quan của Grennfelt và cộng sự (2020), phát thải SO₂ ở châu Âu đến nay đã giảm 80% trở lên so với thời kì đỉnh điểm (khoảng 1980–1990), trong khi phát thải ammonia mới chỉ giảm 20–30%.",
   "bang_so_lieu": null,
@@ -675,10 +676,10 @@ NL.add([
    "Phương trình 2SO₂ + O₂ → 2SO₃ là cách viết đơn giản hoá; trong khí quyển, SO₂ bị oxi hoá theo nhiều con đường (gốc OH, trong giọt nước…).",
    "Bón vôi chỉ khắc phục tạm thời; giải pháp gốc rễ là giảm phát thải SO₂, NOₓ."
   ],
-  "trang_thai": "nhap",
+  "trang_thai": "tham_dinh",
   "nguoi_bien_soan": "",
   "nguoi_tham_dinh": "",
   "ai_su_dung": "AI hỗ trợ đọc bài báo, soạn nháp câu hỏi; các mốc và tỉ lệ được đối sánh với bản gốc, bài pH được tính lại thủ công. Không dùng AI tạo số liệu.",
-  "cap_nhat": "06/11/2026"
+  "cap_nhat": "09/11/2026"
  }
 ]);
