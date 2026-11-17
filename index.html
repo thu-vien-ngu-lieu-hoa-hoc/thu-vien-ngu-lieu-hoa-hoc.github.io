@@ -346,6 +346,11 @@ figcaption{font-size:14px;color:var(--ink-3);margin-top:10px}
 .sim-box{aspect-ratio:16/10;display:grid;place-items:center;border:1px solid var(--line);border-radius:12px;background:var(--bg);overflow:hidden;margin-bottom:8px}
 .vid .sim-box{aspect-ratio:16/9}
 .sim-box iframe{width:100%;height:100%;border:0;display:block}
+.sim-box.on{display:block}
+.sim-thumb{position:relative;width:100%;height:100%;padding:0;border:0;background:var(--bg);cursor:pointer;display:grid;place-items:center;overflow:hidden}
+.sim-thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .3s,filter .3s}
+.sim-thumb:hover img,.sim-thumb:focus-visible img{transform:scale(1.03);filter:brightness(.85)}
+.sim-play{position:relative;display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;background:var(--accent);color:#fff;font-weight:600;box-shadow:0 2px 10px rgba(0,0,0,.25)}
 figure .table-wrap{margin-bottom:0}
 .chart{position:relative;margin-bottom:12px}
 .chart svg{display:block;width:100%;max-width:620px;height:auto;margin:0 auto}
@@ -770,6 +775,12 @@ const CAU_HINH = {
 };
 /* ======================= HẾT KHỐI CAU_HINH ========================== */
 
+/* Chú thích ảnh chỉ ghi tác giả/cơ quan; chi tiết (tên tài liệu, giấy phép, đường dẫn) đưa xuống mục Thông tin nguồn */
+const nguonNgan = f => { if(f.nguon_ngan) return f.nguon_ngan; const n = String(f.nguon||''), y = n.match(/^.*?\(\d{4}\)/); return y ? y[0] : n.split(', ')[0]; };
+const nguonDayDu = x => [...(x.nguon||[]).filter(Boolean),
+  ...(x.mo_phong&&x.mo_phong.url_nhung ? [{trich_dan:'Mô phỏng: '+(x.mo_phong.ten||'')+'. '+(x.mo_phong.nguon||''), url:x.mo_phong.url, loai:'Mô phỏng', giay_phep:x.mo_phong.giay_phep||((x.mo_phong.nguon||'').match(/CC BY[^)]*/)||[''])[0]}] : []),
+  ...(x.hinh||[]).filter(f=>f&&f.src&&f.nguon).map(f=>({trich_dan:'Hình: '+f.nguon, url:f.url, loai:'Hình ảnh', giay_phep:f.giay_phep})),
+  ...(x.video||[]).filter(v=>v&&v.youtube).map(v=>({trich_dan:'Video: '+(v.ten||'')+'. Kênh '+(v.kenh||'')+' (YouTube)', url:'https://www.youtube.com/watch?v='+v.youtube, loai:'Video', giay_phep:v.giay_phep}))];
 /* Mã theo quy ước CT Hoá học 2018: HH2.1–HH2.5 (Tìm hiểu thế giới tự nhiên), HH3.1–HH3.5 (Vận dụng); nhận cả mã cũ HH2.1–HH2.5, HH3.1–HH3.5 */
 function maChuan(m){ return String(m == null ? '' : m).trim().replace(/^(TH|VD)\s*([1-5])$/i, (_, a, n) => (a.toUpperCase() === 'TH' ? 'HH2.' : 'HH3.') + n); }
 const MA_BIEU_HIEN = [
@@ -914,13 +925,12 @@ NL.ds = NL.ds.filter(x => {
   if(seenId[x.id]){ NL.loi.push({tep:x._tep, msg:`Trùng id "${x.id}" (đã có trong ${seenId[x.id]}).`}); return false; }
   seenId[x.id] = x._tep;
   if(!C.chu_de.some(c=>c.ma===x.chu_de)) NL.loi.push({tep:x._tep, msg:`Ngữ liệu "${x.id}": chu_de "${x.chu_de}" không có trong CAU_HINH.`});
-  if(x.trang_thai && !TRANG_THAI[x.trang_thai]) NL.loi.push({tep:x._tep, msg:`Ngữ liệu "${x.id}": trang_thai "${x.trang_thai}" không hợp lệ (chỉ dùng nhap, doi_sanh, tham_dinh) – đang coi là nhap.`});
   ['cau_hoi','nguon','luu_y_khoa_hoc','hinh','ma_TH','ma_VD'].forEach(k => { if(!Array.isArray(x[k])) x[k] = []; });
   x.ma_TH = x.ma_TH.map(maChuan); x.ma_VD = x.ma_VD.map(maChuan);
   x.cau_hoi.forEach(q => { if(q && Array.isArray(q.ma)) q.ma = q.ma.map(maChuan); });
   return true;
 }).sort((a,b) => a.id.localeCompare(b.id));
-const DS = NL.ds.filter(x => C.hien_ban_nhap || ttCua(x) !== 'nhap');
+const DS = NL.ds; // Mặc định: ngữ liệu đã đưa lên web là đã thẩm định, không hiển thị/lọc theo trạng thái
 const ofCd = ma => DS.filter(x=>x.chu_de===ma);
 const TT_HIEN = Object.keys(TRANG_THAI).filter(k => C.hien_ban_nhap || k !== 'nhap');
 const soMa = m => DS.filter(x=>maCua(x).includes(m)).length;
@@ -1121,7 +1131,7 @@ function guideBand(home){
   </section>`;
 }
 function pageHome(){
-  const tdi = DS.filter(x=>ttCua(x)==='tham_dinh').length, nQ = DS.reduce((s,x)=>s+x.cau_hoi.length,0), nNg = demNguon().tong;
+  const nQ = DS.reduce((s,x)=>s+x.cau_hoi.length,0), nNg = demNguon().tong;
   return `<div class="page wide">${errBox()}
     <section class="hero">${heroArt}<div class="hero-inner"><div>
       <div class="eyebrow">${icon('spark',15)} ${txt(C.don_vi)}</div>
@@ -1133,7 +1143,7 @@ function pageHome(){
       <div class="stat rv"><b data-count="${C.chu_de.length}">0</b><span>chủ đề CT 2018</span></div>
       <div class="stat rv"><b data-count="${DS.length}">0</b><span>ngữ liệu</span></div>
       <div class="stat rv"><b data-count="${nQ}">0</b><span>câu hỏi minh hoạ</span></div>
-      ${tdi?`<div class="stat rv good"><b data-count="${tdi}">0</b><span>đã thẩm định</span></div>`:`<div class="stat rv good"><b data-count="${nNg}">0</b><span>mục trích dẫn</span></div>`}
+      <div class="stat rv good"><b data-count="${nNg}">0</b><span>mục trích dẫn</span></div>
     </div></section>
     <div class="box note loi-ngo"><b>Lời ngỏ.</b> Thư viện chia sẻ các ngữ liệu có đường dẫn đến nguồn. Các câu hỏi đi kèm là một số ví dụ minh hoạ, được phát triển từ dữ liệu mà ngữ liệu cung cấp. Ngoài ra, trang web có gợi ý prompt để giáo viên tham khảo nếu sử dụng AI thiết kế câu hỏi. Việc lựa chọn và sử dụng thuộc quyết định của giáo viên.</div>
     ${guideBand(true)}
@@ -1203,6 +1213,9 @@ function pageTraCuu(P){
 }
 
 /* ---------- Trang ngữ liệu ---------- */
+/* Ô chờ có ảnh thumbnail (ảnh chính thức của YouTube/PhET); bấm mới tải video/mô phỏng */
+const anhPhet = mp => { if(mp.anh) return mp.anh; const slug = String(mp.url||'').split('/').filter(Boolean).pop() || '', goi = ((mp.url_nhung||'').match(/\/cheerpj\/([^/]+)\//)||[])[1]; if(goi && goi !== slug) return `https://phet.colorado.edu/sims/${goi}/${slug}-600.png`; return (mp.url_nhung||'').includes('/sims/html/') ? `https://phet.colorado.edu/sims/html/${slug}/latest/${slug}-600.png` : `https://phet.colorado.edu/sims/${slug}/${slug}-600.png`; };
+const simNut = (src, ten, loai, anh, nhan) => `<button class="sim-thumb" type="button" data-sim="${esc(src)}" data-sim-ten="${esc(ten||'')}"${loai?` data-sim-loai="${esc(loai)}"`:''} aria-label="${esc(nhan+': '+(ten||''))}">${anh?`<img src="${esc(anh)}" alt="" loading="lazy" onerror="this.remove()">`:''}<span class="sim-play">${icon('play',18)} ${esc(nhan)}</span></button>`;
 function pageNL(id){
   const x = DS.find(n => n.id === id);
   if(!x) return `<div class="page">${errBox()}<h1>Không tìm thấy ngữ liệu</h1><p>Ngữ liệu "${esc(id)}" không tồn tại.</p><p><a href="#/tra-cuu">← Về trang tra cứu</a></p></div>`;
@@ -1222,8 +1235,8 @@ function pageNL(id){
     <h2 id="s1">${sec(1,'Bối cảnh')}</h2><div class="prose">${paras(x.boi_canh)}</div>`;
   const mp = x.mo_phong;
   if(mp && mp.url_nhung) h += `<figure class="rv sim"><div class="fig-title">Mô phỏng: ${txt(mp.ten||'')}</div>
-    <div class="sim-box no-print"><button class="btn" type="button" data-sim="${esc(mp.url_nhung)}" data-sim-ten="${esc(mp.ten||'')}">${icon('play',16)} Mở mô phỏng ngay trên trang</button></div>
-    <figcaption>${txt(mp.nguon||'')}${mp.url?` ${link(mp.url)}`:''}</figcaption></figure>`;
+    <div class="sim-box no-print">${simNut(mp.url_nhung, mp.ten, '', anhPhet(mp), 'Mở mô phỏng ngay trên trang')}</div>
+    <figcaption>Nguồn: ${txt(mp.nguon||'')}</figcaption></figure>`;
   if(b && Array.isArray(b.cot) && Array.isArray(b.dong) && b.dong.length){
     const numCol = b.cot.map((_,c) => c>0 && b.dong.every(r => Array.isArray(r) && !isNaN(soHoc(r[c]))));
     const ch = chartFrom(b,'ch1');
@@ -1231,13 +1244,13 @@ function pageNL(id){
       <div class="table-wrap"><table class="sortable" id="tbl"><thead><tr>${b.cot.map((c,j)=>`<th class="${numCol[j]?'num':''}" title="Bấm để sắp xếp">${txt(c)}</th>`).join('')}</tr></thead><tbody>${b.dong.map(r=>`<tr>${(Array.isArray(r)?r:[r]).map((v,j)=>`<td class="${numCol[j]?'num':''}" data-v="${esc(v)}"><span>${txt(v)}</span></td>`).join('')}</tr>`).join('')}</tbody></table></div>
       ${b.ghi_chu?`<figcaption>${txt(b.ghi_chu)}</figcaption>`:''}</figure>`;
   }
-  x.hinh.forEach(f => { if(f && f.src) h += `<figure class="rv"><img src="${esc(f.src)}" alt="${esc(f.chu_thich||'')}" loading="lazy" data-zoom><figcaption>${txt(f.chu_thich||'')}${f.nguon?' Nguồn: '+txt(f.nguon)+'.':''}${f.giay_phep?' Giấy phép: '+txt(f.giay_phep)+'.':''}${f.url?' '+link(f.url):''}</figcaption></figure>`; });
+  x.hinh.forEach(f => { if(f && f.src) h += `<figure class="rv"><img src="${esc(f.src)}" alt="${esc(f.chu_thich||'')}" loading="lazy" data-zoom><figcaption>${txt(f.chu_thich||'')}${f.nguon?' Nguồn: '+txt(nguonNgan(f))+'.':''}</figcaption></figure>`; });
   (x.video||[]).forEach(v => { if(v && v.youtube) h += `<figure class="rv sim vid"><div class="fig-title">Video: ${txt(v.ten||'')}</div>
-    <div class="sim-box no-print"><button class="btn" type="button" data-sim="https://www.youtube-nocookie.com/embed/${esc(v.youtube)}?rel=0" data-sim-ten="${esc(v.ten||'')}" data-sim-loai="Video">${icon('play',16)} Xem video ngay trên trang</button></div>
-    <figcaption>${v.ghi_chu?txt(v.ghi_chu)+' ':''}Kênh: ${txt(v.kenh||'')} (YouTube). ${link('https://www.youtube.com/watch?v='+v.youtube)}</figcaption></figure>`; });
+    <div class="sim-box no-print">${simNut('https://www.youtube-nocookie.com/embed/'+v.youtube+'?rel=0&autoplay=1', v.ten, 'Video', 'https://i.ytimg.com/vi/'+v.youtube+'/hqdefault.jpg', 'Xem video ngay trên trang')}</div>
+    <figcaption>${v.ghi_chu?txt(v.ghi_chu)+' ':''}Nguồn: kênh ${txt(v.kenh||'')} (YouTube).</figcaption></figure>`; });
   if(x.hinh_goi_y) h += `<div class="box note gv-only small"><b>Hình gợi ý bổ sung (cho giáo viên):</b> ${txt(x.hinh_goi_y)}</div>`;
   h += `<div class="gv-only"><h2 id="s2">${sec(2,'Thông tin nguồn')}</h2>
-    <ul class="src-list">${x.nguon.map(n=>`<li class="rv">${txt(n.trich_dan||'')}${n.url?`<br>${link(n.url)}`:''}<div class="muted small" style="margin-top:4px">${n.loai?'Loại: '+txt(n.loai)+' · ':''}Giấy phép: ${txt(n.giay_phep||'chưa ghi')}</div></li>`).join('') || '<li class="muted">Chưa có nguồn.</li>'}</ul>
+    <ul class="src-list">${nguonDayDu(x).map(n=>`<li class="rv">${txt(n.trich_dan||'')}${n.url?`<br>${link(n.url)}`:''}<div class="muted small" style="margin-top:4px">${n.loai?'Loại: '+txt(n.loai)+' · ':''}Giấy phép: ${txt(n.giay_phep||'chưa ghi')}</div></li>`).join('') || '<li class="muted">Chưa có nguồn.</li>'}</ul>
     <h2 id="s3">${sec(3,'Định hướng sử dụng')}</h2>
     <div class="kv"><div>Lớp – chủ đề</div><div>Lớp ${esc(x.lop||cd.lop)} – ${esc(cd.ten)}</div>
       <div>Yêu cầu cần đạt</div><div>${lines(x.yccd||'[CẦN BỔ SUNG: YCCĐ]')}</div>
@@ -1662,7 +1675,7 @@ function pageNguon(){
       <li><b>Biên soạn và kiểm tra:</b> Ngữ liệu được lựa chọn, biên dịch, biên tập cho phù hợp với dạy học; có thể gồm số liệu nguồn, kết quả tính toán và tình huống minh hoạ. Nhóm kiểm tra số liệu, đơn vị, giả thiết và điều kiện áp dụng, giữ đúng ý nghĩa khoa học khi quy đổi hoặc giản lược.</li>
       <li><b>Bản quyền tư liệu:</b> Văn bản, hình ảnh, bảng và đồ thị từ bên ngoài được ghi nguồn, tác giả hoặc đơn vị sở hữu khi có thông tin; sử dụng theo điều kiện của nguồn hoặc trường hợp pháp luật cho phép. Nhóm tự biên soạn phần dẫn, câu hỏi và hướng dẫn giải; không sao chép nguyên văn bài học, bài tập từ sách giáo khoa.</li>
       <li><b>Hình ảnh:</b> Ảnh và sơ đồ minh hoạ được lấy từ trang gốc của nguồn, chỉ dùng ảnh thuộc phạm vi công cộng hoặc có giấy phép mở; mỗi ảnh ghi tác giả hoặc đơn vị sở hữu, giấy phép và đường dẫn. Ảnh có giấy phép không cho phép chỉnh sửa được giữ nguyên, phần giải thích tiếng Việt đặt ở chú thích.</li>
-      <li><b>Mô phỏng và video:</b> Mô phỏng PhET được nhúng từ nguồn chính thức, giữ thông tin nhận diện và ghi nhận PhET Interactive Simulations, University of Colorado Boulder theo giấy phép áp dụng. Video được nhúng từ kênh gốc trên YouTube (chế độ hạn chế cookie), ghi tên kênh và đường dẫn tới video gốc; video chỉ tải khi người dùng bấm xem.</li>
+      <li><b>Mô phỏng và video:</b> Mô phỏng PhET được nhúng từ nguồn chính thức, giữ thông tin nhận diện và ghi nhận PhET Interactive Simulations, University of Colorado Boulder theo giấy phép áp dụng. Video được nhúng từ kênh gốc trên YouTube (chế độ hạn chế cookie), ghi tên kênh và đường dẫn tới video gốc; trang ngữ liệu hiện sẵn ảnh thumbnail chính thức; video và mô phỏng chỉ tải khi người dùng bấm xem.</li>
       <li><b>Sử dụng và phản hồi:</b> Câu hỏi đi kèm là ví dụ minh hoạ; giáo viên kiểm tra, lựa chọn và điều chỉnh trước khi sử dụng. Khi chia sẻ lại, cần ghi nguồn và tuân thủ điều kiện sử dụng của từng tư liệu. Góp ý về nội dung và quyền sử dụng được tiếp nhận tại mục <a href="#/phan-hoi">Phản hồi và chia sẻ dữ liệu</a>.</li>
     </ul>
     <h2>Danh mục nguồn (${rows.length} mục trích dẫn: ${demNguon().tl} tài liệu, ${demNguon().ha} hình ảnh, ${demNguon().vd} video)</h2>
