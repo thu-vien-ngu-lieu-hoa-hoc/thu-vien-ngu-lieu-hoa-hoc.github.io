@@ -709,7 +709,12 @@ p{margin:0 0 16px}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" integrity="sha512-fHwaWebuwA7NSF5Qg/af4UeDx9XqUpYpOGgubo3yWu+b2IQR4UeQwbb42Ti7gVAjNtVoI/I9TEoYeu9omwcC6g==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js" integrity="sha512-LQNxIMR5rXv7o+b1l8+N1EZMfhG7iFZ9HhnbJkTp4zjNr5Wvst75AqUeFDxeRUa7l5vEDyUiAip//r+EFLLCyA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<style>.katex{font-size:1.08em}.katex-display{margin:.6em 0;overflow-x:auto;overflow-y:hidden;padding:2px 0}</style>
+<style>.pt{display:block;text-align:center !important;margin:.45em 0;overflow-x:auto;white-space:nowrap}
+ul.dsach{margin:.3em 0 .6em;padding-left:1.4em;list-style:disc}
+ul.dsach li{margin:.25em 0;text-align:justify}
+ul.dsach li .pt{margin:.35em 0 .2em}
+@media (min-width:560px){.pt-in{white-space:nowrap}}
+.katex{font-size:1.08em}.katex-display{margin:.6em 0;overflow-x:auto;overflow-y:hidden;padding:2px 0}</style>
 </head>
 <body>
 <div id="readbar" aria-hidden="true"></div>
@@ -848,9 +853,30 @@ const kyHieu = s => s
   .replace(/E°(pin|anode|cathode)/g, 'E°<sub>$1</sub>');
 /* Công thức toán viết trong dữ liệu giữa $…$ (cùng dòng) hoặc $$…$$ (dòng riêng, căn giữa), hiển thị bằng KaTeX */
 const toan = (t, khoi) => window.katex ? katex.renderToString(t, {displayMode: !!khoi, throwOnError: false, strict: false, output: 'html'}) : esc(t);
-const txt = s => String(s == null ? '' : s).split(/(\$\$[^$]+\$\$|\$[^$]+\$)/).map((p, i) => i % 2 ? (p.startsWith('$$') ? toan(p.slice(2, -2), 1) : toan(p.slice(1, -1))) : kyHieu(mark(esc(p)))).join('');
-const paras = s => String(s||'').split(/\n\s*\n/).filter(p=>p.trim()).map(p => `<p>${txt(p.trim()).replace(/\n/g,'<br>')}</p>`).join('');
-const lines = s => txt(String(s||'').trim()).replace(/\n/g,'<br>');
+/* Phương trình hoá học nằm giữa câu: giữ trọn trên một dòng (không bị ngắt giữa chừng) */
+const PT_TK = '[0-9nₙ]*(?:[A-Z\\[(]|e⁻)[^\\s,;]*';
+const PT_RE = new RegExp(`${PT_TK}(?:\\s\\+\\s${PT_TK})*\\s(?:→|⇌|—\\([^)]*\\)→)\\s${PT_TK}(?:\\s(?:\\+|→|⇌)\\s${PT_TK})*(?=[\\s,;]|$)`, 'gu');
+const giuPT = s => s.replace(PT_RE, m => {
+  const dem = (t, c) => t.split(c).length - 1; let truoc = '', sau = '';
+  while(/[.)]$/.test(m) && (m.endsWith('.') || dem(m, ')') > dem(m, '('))){ sau = m.slice(-1) + sau; m = m.slice(0, -1); }
+  while(m.startsWith('(') && dem(m, '(') > dem(m, ')')){ truoc += '('; m = m.slice(1); }
+  return `${truoc}<span class="pt-in">${m}</span>${sau}`;
+});
+const txt = s => String(s == null ? '' : s).split(/(\$\$[^$]+\$\$|\$[^$]+\$)/).map((p, i) => i % 2 ? (p.startsWith('$$') ? toan(p.slice(2, -2), 1) : toan(p.slice(1, -1))) : kyHieu(giuPT(mark(esc(p))))).join('');
+/* Trình bày khối: dòng bắt đầu bằng "- " thành gạch đầu dòng; dòng chỉ gồm phương trình hoá học được căn giữa */
+const laPT = l => /[→⇌]/.test(l) && !/\p{Ll}{3,}/u.test(l.replace(/\([^()]*\)/g, ''));
+const khoi = (s, boc) => {
+  const B = [];
+  String(s||'').split('\n').map(l => l.trim()).filter(Boolean).forEach(l => {
+    const cuoi = B[B.length-1];
+    if(/^[-–•]\s+/.test(l)){ const li = txt(l.replace(/^[-–•]\s+/, '')); if(cuoi && cuoi.k === 'ul') cuoi.li.push(li); else B.push({k:'ul', li:[li]}); }
+    else if(laPT(l)){ const h = `<span class="pt">${txt(l)}</span>`; if(cuoi && cuoi.k === 'ul') cuoi.li[cuoi.li.length-1] += h; else B.push({k:'pt', h}); }
+    else if(cuoi && cuoi.k === 'p') cuoi.d.push(txt(l)); else B.push({k:'p', d:[txt(l)]});
+  });
+  return B.map(b => b.k === 'ul' ? `<ul class="dsach">${b.li.map(x => `<li>${x}</li>`).join('')}</ul>` : b.k === 'pt' ? b.h : (boc ? `<p>${b.d.join('<br>')}</p>` : b.d.join('<br>'))).join(boc ? '' : '');
+};
+const paras = s => String(s||'').split(/\n\s*\n/).filter(p=>p.trim()).map(p => khoi(p, true)).join('');
+const lines = s => khoi(String(s||'').trim(), false);
 const isUrl = u => /^https?:\/\//i.test(String(u||'').trim());
 const link = (u, t) => isUrl(u) ? `<a class="break" href="${esc(u.trim())}" target="_blank" rel="noopener">${esc(t || u.trim())}</a>` : (u ? txt(u) : '');
 const norm = s => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/đ/g,'d').replace(/[₀-₉]/g, c => String(c.charCodeAt(0)-8320));
