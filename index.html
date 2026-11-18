@@ -1734,16 +1734,18 @@ function pageAI(){
   return `<div class="page wide">${errBox()}${crumbs([['','Trang chủ'],['','Minh bạch AI']])}
     <h1>Minh bạch về sử dụng AI</h1>
     <div class="motto rv"><span class="motto-k">Nguyên tắc</span><p class="motto-t">AI hỗ trợ, <em>con người kiểm soát.</em></p><p class="motto-s">AI không được dùng để tạo hoặc ước lượng số liệu.</p></div>
-    <h2>Quy trình 5 bước xây dựng ngữ liệu</h2>
-    <ol class="flow5" aria-label="Quy trình 5 bước xây dựng ngữ liệu">
+    <h2>Quy trình 6 bước xây dựng ngữ liệu</h2>
+    <ol class="flow5" aria-label="Quy trình 6 bước xây dựng ngữ liệu">
       ${[
-        ['Lập bản đồ ngữ liệu','Chủ đề, YCCĐ, biểu hiện, nguồn ưu tiên 4 tầng','Con người',''],
-        ['Tìm nguồn, soạn nháp','Theo bộ câu lệnh chuẩn hoá','AI hỗ trợ','ai'],
-        ['Kiểm tra, đối sánh','Mở bản gốc; chấm 8 tiêu chí; đối chiếu từng số liệu; đọc chéo','Con người',''],
-        ['Thẩm định','Chuyên gia Hoá học và chuyên gia Lí luận và PPDH Hoá học đọc, nhận xét, góp ý; nhóm sinh viên hoàn thiện theo góp ý','Chuyên gia',''],
-        ['Công bố, thử nghiệm','Đưa lên web; kiểm tra nội dung, thao tác; GV, SV dùng thử','Con người','']
+        ['Lập ma trận, cấu trúc ngữ liệu','Chủ đề, lớp, loại ngữ liệu, số lượng','Con người',''],
+        ['Tìm nguồn, soạn nháp','Tìm nguồn uy tín, biên tập','AI hỗ trợ','ai'],
+        ['Xác minh, đối chiếu với nguồn','Xác minh nguồn, đối chiếu thông tin','Con người',''],
+        ['Thẩm định bởi chuyên gia','Giảng viên Hóa học &amp; LL – PPDH','Chuyên gia',''],
+        ['Số hóa, dựng website','Chuẩn hóa, gắn thẻ, lập trình','AI hỗ trợ','ai'],
+        ['Dùng thử và điều chỉnh','Nhận phản hồi &amp; dữ liệu chia sẻ','Con người','']
       ].map((s,i)=>`<li class="rv"><span class="no" aria-hidden="true">${i+1}</span><div class="tx"><b>${s[0]}</b><span>${s[1]}</span></div><span class="who${s[3]?' '+s[3]:''}">${s[2]}</span></li>`).join('')}
     </ol>
+    <p>Quy trình lặp lại liên tục: ngữ liệu mới được bổ sung quay lại bước 3 (xác minh, đối chiếu với nguồn); các nội dung cần rà soát, điều chỉnh quay lại bước 5 (số hóa, dựng website).</p>
     <h2>Công khai trên từng ngữ liệu</h2>
     <p>Chân trang mỗi ngữ liệu ghi ngày cập nhật và mức độ dùng AI. Không nhập dữ liệu cá nhân của học sinh, giáo viên vào công cụ AI. Sản phẩm miễn phí, phi thương mại.</p>
     ${pagePager('minh-bach-ai')}</div>`;
